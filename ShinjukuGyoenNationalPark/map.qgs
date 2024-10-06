@@ -1,4 +1,4 @@
-<qgis projectname="" saveDateTime="2024-10-07T00:12:58" saveUser="uebayasi" saveUserFull="Masao Uebayashi" version="3.34.11-Prizren">
+<qgis projectname="" saveDateTime="2024-10-07T00:25:37" saveUser="uebayasi" saveUserFull="Masao Uebayashi" version="3.34.11-Prizren">
   <homePath path=""></homePath>
   <title></title>
   <transaction mode="Disabled"></transaction>
@@ -51,25 +51,10 @@
         </customproperties>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group checked="Qt::Checked" expanded="1" groupLayer="" name="group1">
+    <layer-tree-group checked="Qt::Checked" expanded="1" groupLayer="" name="data">
       <customproperties>
         <Option></Option>
       </customproperties>
-      <layer-tree-layer checked="Qt::Unchecked" expanded="1" id="viewbox_59e89b8f_cdb6_4c9e_ad92_ee5c8ac1ba4f" legend_exp="" legend_split_behavior="0" name="viewbox" patch_size="-1,-1" providerKey="ogr" source="./viewbox.geojson|layername=viewbox">
-        <customproperties>
-          <Option></Option>
-        </customproperties>
-      </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Unchecked" expanded="1" id="measures_4d89f594_994d_4803_8b62_3a84687ad8f8" legend_exp="" legend_split_behavior="0" name="measures" patch_size="-1,-1" providerKey="ogr" source="./measures.geojson|layername=measures">
-        <customproperties>
-          <Option></Option>
-        </customproperties>
-      </layer-tree-layer>
-      <layer-tree-layer checked="Qt::Unchecked" expanded="1" id="origin_504f1d89_d62a_43d9_8c77_c43b96917dd2" legend_exp="" legend_split_behavior="0" name="origin" patch_size="-1,-1" providerKey="ogr" source="./origin.geojson">
-        <customproperties>
-          <Option></Option>
-        </customproperties>
-      </layer-tree-layer>
       <layer-tree-layer checked="Qt::Checked" expanded="1" id="pasted_features_2171860f_05fe_4de1_9b14_95a0dc1c22e3" legend_exp="" legend_split_behavior="0" name="points" patch_size="-1,-1" providerKey="ogr" source="./points.geojson|layername=points">
         <customproperties>
           <Option></Option>
@@ -86,6 +71,21 @@
         </customproperties>
       </layer-tree-layer>
       <layer-tree-layer checked="Qt::Checked" expanded="1" id="pasted_features_8fd0a995_2f6c_4b8c_8c28_63b2515f19c8" legend_exp="" legend_split_behavior="0" name="multipolygons" patch_size="-1,-1" providerKey="ogr" source="./multipolygons.geojson|layername=multipolygons">
+        <customproperties>
+          <Option></Option>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer checked="Qt::Unchecked" expanded="1" id="viewbox_59e89b8f_cdb6_4c9e_ad92_ee5c8ac1ba4f" legend_exp="" legend_split_behavior="0" name="viewbox" patch_size="-1,-1" providerKey="ogr" source="./viewbox.geojson|layername=viewbox">
+        <customproperties>
+          <Option></Option>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer checked="Qt::Unchecked" expanded="1" id="measures_4d89f594_994d_4803_8b62_3a84687ad8f8" legend_exp="" legend_split_behavior="0" name="measures" patch_size="-1,-1" providerKey="ogr" source="./measures.geojson|layername=measures">
+        <customproperties>
+          <Option></Option>
+        </customproperties>
+      </layer-tree-layer>
+      <layer-tree-layer checked="Qt::Unchecked" expanded="1" id="origin_504f1d89_d62a_43d9_8c77_c43b96917dd2" legend_exp="" legend_split_behavior="0" name="origin" patch_size="-1,-1" providerKey="ogr" source="./origin.geojson">
         <customproperties>
           <Option></Option>
         </customproperties>
@@ -190,22 +190,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup checked="Qt::Checked" name="group1" open="true">
-      <legendlayer checked="Qt::Unchecked" drawingOrder="-1" name="viewbox" open="true" showFeatureCount="0">
-        <filegroup hidden="false" open="true">
-          <legendlayerfile isInOverview="0" layerid="viewbox_59e89b8f_cdb6_4c9e_ad92_ee5c8ac1ba4f" visible="0"></legendlayerfile>
-        </filegroup>
-      </legendlayer>
-      <legendlayer checked="Qt::Unchecked" drawingOrder="-1" name="measures" open="true" showFeatureCount="0">
-        <filegroup hidden="false" open="true">
-          <legendlayerfile isInOverview="0" layerid="measures_4d89f594_994d_4803_8b62_3a84687ad8f8" visible="0"></legendlayerfile>
-        </filegroup>
-      </legendlayer>
-      <legendlayer checked="Qt::Unchecked" drawingOrder="-1" name="origin" open="true" showFeatureCount="0">
-        <filegroup hidden="false" open="true">
-          <legendlayerfile isInOverview="0" layerid="origin_504f1d89_d62a_43d9_8c77_c43b96917dd2" visible="0"></legendlayerfile>
-        </filegroup>
-      </legendlayer>
+    <legendgroup checked="Qt::Checked" name="data" open="true">
       <legendlayer checked="Qt::Checked" drawingOrder="-1" name="points" open="true" showFeatureCount="0">
         <filegroup hidden="false" open="true">
           <legendlayerfile isInOverview="0" layerid="pasted_features_2171860f_05fe_4de1_9b14_95a0dc1c22e3" visible="1"></legendlayerfile>
@@ -224,6 +209,21 @@
       <legendlayer checked="Qt::Checked" drawingOrder="-1" name="multipolygons" open="true" showFeatureCount="0">
         <filegroup hidden="false" open="true">
           <legendlayerfile isInOverview="0" layerid="pasted_features_8fd0a995_2f6c_4b8c_8c28_63b2515f19c8" visible="1"></legendlayerfile>
+        </filegroup>
+      </legendlayer>
+      <legendlayer checked="Qt::Unchecked" drawingOrder="-1" name="viewbox" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" layerid="viewbox_59e89b8f_cdb6_4c9e_ad92_ee5c8ac1ba4f" visible="0"></legendlayerfile>
+        </filegroup>
+      </legendlayer>
+      <legendlayer checked="Qt::Unchecked" drawingOrder="-1" name="measures" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" layerid="measures_4d89f594_994d_4803_8b62_3a84687ad8f8" visible="0"></legendlayerfile>
+        </filegroup>
+      </legendlayer>
+      <legendlayer checked="Qt::Unchecked" drawingOrder="-1" name="origin" open="true" showFeatureCount="0">
+        <filegroup hidden="false" open="true">
+          <legendlayerfile isInOverview="0" layerid="origin_504f1d89_d62a_43d9_8c77_c43b96917dd2" visible="0"></legendlayerfile>
         </filegroup>
       </legendlayer>
       <legendlayer checked="Qt::Checked" drawingOrder="-1" name="areas" open="true" showFeatureCount="0">
@@ -6948,7 +6948,7 @@ def my_form_open(dialog, layer, feature):
       </spatialrefsys>
     </CoordinateCustomCrs>
   </ProjectDisplaySettings>
-  <ProjectGpsSettings autoAddTrackVertices="0" autoCommitFeatures="0" destinationFollowsActiveLayer="1" destinationLayer="Extent_755ae8f1_0d19_4c66_ba2f_eb74d95050af" destinationLayerName="areas_extent" destinationLayerProvider="ogr" destinationLayerSource="/Users/uebayasi/Documents/Sources/DaijiMaps/svgmapviewer-demos/ShinjukuGyoenNationalPark/areas_extent.geojson|layername=areas_extent">
+  <ProjectGpsSettings autoAddTrackVertices="0" autoCommitFeatures="0" destinationFollowsActiveLayer="1" destinationLayer="pasted_features_2171860f_05fe_4de1_9b14_95a0dc1c22e3" destinationLayerName="points" destinationLayerProvider="ogr" destinationLayerSource="/Users/uebayasi/Documents/Sources/DaijiMaps/svgmapviewer-demos/ShinjukuGyoenNationalPark/points.geojson|layername=points">
     <timeStampFields></timeStampFields>
   </ProjectGpsSettings>
 </qgis>
