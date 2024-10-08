@@ -10,17 +10,9 @@ import typing
 
 #### COMMON INITIALIZATION
 
-sys.path.append("/Applications/QGIS-LTR.app/Contents/Resources/python")
-sys.path.append("/Applications/QGIS-LTR.app/Contents/Resources/python/plugins")
-sys.path.append("/Applications/QGIS-LTR.app/Contents/Resources/python/plugins/processing")
-
-os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = '/Applications/QGIS-LTR.app/Contents/PlugIns'
-
 from PyQt5.QtCore import *
 from qgis.core import *
 from qgis.gui import *
-
-QgsApplication.setPrefixPath("/Applications/QGIS-LTR.app/Contents/MacOS", True)
 
 qgs = QgsApplication([], False)
 qgs.initQgis()
