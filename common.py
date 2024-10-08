@@ -4,6 +4,7 @@ import os.path
 import re
 import subprocess
 import sys
+import typing
 
 ################################################################################
 
@@ -34,7 +35,7 @@ from plugins import processing
 from processing.core.Processing import Processing
 Processing.initialize()
 
-prj = {}
+prj: QgsProject = {}
 
 ################################################################################
 
@@ -44,7 +45,7 @@ def exit():
     del qgs
     print('DONE!')
 
-def path2name(p):
+def path2name(p) -> str:
     return pathlib.PurePath(os.path.basename(p)).stem
 
 osmLayerNames = [
@@ -59,7 +60,7 @@ osmLayerNames = [
 
 #### PROCESSING WRAPPERS
 
-def mergeVectorLayers(layers, dst):
+def mergeVectorLayers(layers: list[QgsVectorLayer], dst: QgsVectorLayer) -> QgsVectorLayer:
     p = {
         'CRS' : None,
         'LAYERS' : layers,
@@ -67,14 +68,14 @@ def mergeVectorLayers(layers, dst):
     }
     return processing.run("qgis:mergevectorlayers", p)['OUTPUT']
 
-def fixGeometries(src, dst):
+def fixGeometries(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVectorLayer:
     p = {
         'INPUT': src,
         'OUTPUT' : dst
     }
     return processing.run("qgis:fixgeometries", p)['OUTPUT']
 
-def deleteColumn(src, dst, column):
+def deleteColumn(src: QgsVectorLayer, dst: QgsVectorLayer, column) -> QgsVectorLayer:
     p = {
         'INPUT': src,
         'OUTPUT': dst,
@@ -82,14 +83,14 @@ def deleteColumn(src, dst, column):
     }
     return processing.run("qgis:deletecolumn", p)['OUTPUT']
 
-def deleteDuplicateGeometries(src, dst):
+def deleteDuplicateGeometries(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVectorLayer:
     p = {
         'INPUT' : src,
         'OUTPUT' : dst
     }
     return processing.run("qgis:deleteduplicategeometries", p)['OUTPUT']
 
-def joinAttributesByLocation(src, join, predicates, dst, method = 0, discard = False):
+def joinAttributesByLocation(src: QgsVectorLayer, join, predicates: int, dst: QgsVectorLayer, method = 0, discard = False) -> QgsVectorLayer:
     # https://docs.qgis.org/testing/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#id58
     # PREDICATE:
     #   0 — intersects
@@ -124,7 +125,7 @@ locationPredicates = [
     (6, 'crosses')
 ]
 
-def centroids(src, dst):
+def centroids(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVectorLayer:
     p = {
         'ALL_PARTS' : False,
         'INPUT' : src,
@@ -136,19 +137,19 @@ def centroids(src, dst):
 
 #### FILTER OPERATIONS
 
-def filterPoint(l, exp):
+def filterPoint(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
     return filter(l, "Point", exp)
 
-def filterLine(l, exp):
+def filterLine(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
     return filter(l, "Line", exp)
 
-def filterMultiLineString(l, exp):
+def filterMultiLineString(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
     return filter(l, "MultiLineString", exp)
 
-def filterPolygon(l, exp):
+def filterPolygon(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
     return filter(l, "Polygon", exp)
 
-def filter(l, typ, exp):
+def filter(l: QgsVectorLayer, typ: str, exp: str) -> QgsVectorLayer:
     fields = l.fields()
 
     m = makeVector(typ, "XXX")
@@ -157,7 +158,7 @@ def filter(l, typ, exp):
     md.addAttributes(fields)
     m.updateFields()
 
-    l.selectByExpression(exp, 0) # SelectBehavior = SetSelection
+    l.selectByExpression(exp, Qgis.SelectBehavior.SetSelection) # SelectBehavior = SetSelection
     #print('l', len(l.selectedFeatures()))
     for f in l.selectedFeatures():
         m.addFeature(f)
@@ -200,19 +201,19 @@ def dumpCSV(l, fn):
 
 # Merging multiple vectors
 # Needed when the target area is large and covered by multiple map.osm
-def mergeVectors(olayers, layername):
+def mergeVectors(olayers, layername) -> QgsVectorLayer:
     out = mergeVectorLayers(olayers, 'memory:')
     # XXX GeoJSON needs fixgeometries
     out = fixGeometries(out, 'memory:')
     out = trimLayer(out)
     return deleteDuplicateGeometries(out, 'memory:')
 
-def trimLayer(l):
+def trimLayer(l: QgsVectorLayer) -> QgsVectorLayer:
     for c in ['layer', 'path']:
         l = deleteColumn(l, 'memory:', c)
     return l
 
-def getBoundingBox(l):
+def getBoundingBox(l: QgsVectorLayer) -> QgsVectorLayer:
     l.selectAll()
     return l.boundingBoxOfSelected()
 
@@ -228,7 +229,7 @@ def createEmptyPointGeoJSON(outGJ, rect):
     g = emptyPoint(rect)
     return createEmptyGeoJSON2(outGJ, "Point", g)
 
-def emptyPoint(rect):
+def emptyPoint(rect) -> QgsGeometry:
     (x1, y1, x2, y2) = rect2tuple(rect)
     x0 = (x1 + x2) / 2
     y0 = (y1 + y2) / 2
@@ -236,7 +237,7 @@ def emptyPoint(rect):
     mp = [p0]
     return QgsGeometry.fromMultiPointXY(mp)
 
-def emptyLine(rect):
+def emptyLine(rect) -> QgsGeometry:
     (x1, y1, x2, y2) = rect2tuple(rect)
     p1 = QgsPointXY(x1, y1)
     p2 = QgsPointXY(x2, y2)
@@ -244,7 +245,7 @@ def emptyLine(rect):
     mpl = [pl]
     return QgsGeometry.fromMultiPolylineXY(mpl)
 
-def emptyPolygon(rect):
+def emptyPolygon(rect) -> QgsGeometry:
     (x1, y1, x2, y2) = rect2tuple(rect)
     pl = [
         QgsPointXY(x1, y1),
@@ -256,10 +257,10 @@ def emptyPolygon(rect):
     mpg = [pg]
     return QgsGeometry.fromMultiPolygonXY(mpg)
 
-def rect2tuple(rect):
+def rect2tuple(rect) -> tuple[float, float, float, float]:
     return (rect.xMinimum(), rect.yMinimum(), rect.xMaximum(), rect.yMaximum())
 
-def createEmptyGeoJSON2(outGJ, typ, g):
+def createEmptyGeoJSON2(outGJ: str, typ: str, g: QgsGeometry):
     if os.path.exists(outGJ):
         return None
 
@@ -270,7 +271,7 @@ def createEmptyGeoJSON2(outGJ, typ, g):
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGJ, tx,opts)
 
-def createEmptyLayer(typ, g):
+def createEmptyLayer(typ: str, g: QgsGeometry):
     fields = QgsFields()
     fields.append(QgsField("id", QVariant.Int))
 
@@ -288,7 +289,7 @@ def createEmptyLayer(typ, g):
     m.commitChanges()
     return m
 
-def createPrj(prjPath):
+def createPrj(prjPath: str):
     if os.path.exists(prjPath):
         return
 
@@ -298,7 +299,7 @@ def createPrj(prjPath):
     prj.write(prjPath)
     del prj
 
-def openPrj(prjPath):
+def openPrj(prjPath: str):
     if not os.path.exists(prjPath):
         return
 
@@ -306,7 +307,7 @@ def openPrj(prjPath):
     prj = QgsProject.instance()
     prj.read(prjPath)
 
-def classifyGeometries(l, areas):
+def classifyGeometries(l: QgsVectorLayer, areas: QgsVectorLayer) -> QgsVectorLayer:
     # - Classify each geometry in l by location
     # - Have 7 criteria (intersects, ..., crosses) represented as 0/1
     # - Append fields to l
@@ -316,7 +317,7 @@ def classifyGeometries(l, areas):
     # XXX l = packCriteria(l)
     return m
 
-def classifyGeometries1(l, areas, predicate, predicateName):
+def classifyGeometries1(l: QgsVectorLayer, areas: QgsVectorLayer, predicate, predicateName: str) -> QgsVectorLayer:
     fields = QgsFields()
     fields.append(QgsField('areas_%s' % predicateName, QVariant.Int))
 
@@ -342,7 +343,7 @@ def classifyGeometries1(l, areas, predicate, predicateName):
         1
     )
 
-def extractFields(l, typ, field, pattern):
+def extractFields(l: QgsVectorLayer, typ: str, field: QgsField, pattern: str) -> QgsVectorLayer:
     print("extractAreas: %s: %s" % (field, pattern))
     fields = QgsFields()
     #for f in fields:
@@ -373,7 +374,7 @@ def extractFields(l, typ, field, pattern):
     print("m: %d" % m.featureCount())
     return m
 
-def guessOrigin(l):
+def guessOrigin(l: QgsVectorLayer) -> typing.Union[QgsVectorLayer, None]:
     l.selectAll()
     for f in l.selectedFeatures():
         bb = f.geometry().boundingBox()
@@ -387,7 +388,7 @@ def guessOrigin(l):
 
 # Represent 'areas' information in one integer (0xef)
 # To reduce .geojson size
-def packCriteria(l):
+def packCriteria(l: QgsVectorLayer, m: QgsVectorLayer) -> QgsVectorLayer:
     # Append 'areas'
     fields = QgsFields()
     fields.append(QgsField('areas', QVariant.Int))
@@ -415,7 +416,7 @@ def packCriteria(l):
 
     return l
 
-def tagAddresses(al, fname, srcShp, dstShp):
+def tagAddresses(al: QgsVectorLayer, fname: str, srcShp, dstShp) -> QgsVectorLayer:
     print("tagAddress: %d" % srcShp.featureCount())
     al.selectAll()
 
@@ -451,30 +452,30 @@ def tagAddresses(al, fname, srcShp, dstShp):
     #olayers.append(out)
     #return mergeVectorLayers(olayers, dstShp)
 
-def getOrigin(gj):
+def getOrigin(gj: str) -> QgsPoint:
     l = openVector('%s|geometrytype=Point' % gj, "origin")
     # Return the first feature
     # XXX getFeature(0) does NOT work
     l.selectAll()
     for f in l.selectedFeatures():
-        mp = f.geometry().asMultiPoint()
-        return (mp[0])
+        p = f.geometry().asPoint()
+        return p
 
-def fixupAttributes(prefix, l, outGeoJSON, origin):
+def fixupAttributes(prefix: str, l: QgsVectorLayer, outGeoJSON, origin: QgsPoint) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     addrTmpl = '%s-%%s-%%s-%%d' % prefix
 
     #fields = QgsFields()
-    ofields = l.dataProvider().fields()
-    fields = QgsFields(ofields)
+    ofields: QgsFields = l.dataProvider().fields()
+    fields: QgsFields = QgsFields(ofields)
     fields.append(QgsField('address1', QVariant.Double))
     fields.append(QgsField('address2', QVariant.Double))
     fields.append(QgsField('distance', QVariant.Double))
     fields.append(QgsField('rank', QVariant.Double))
     fields.append(QgsField('address', QVariant.String))
 
-    m = makeVector("Polygon", "XXX")
+    m: QgsVectorLayer = makeVector("Polygon", "XXX")
     m.startEditing()
-    md = m.dataProvider()
+    md: QgsVectorDataProvider = m.dataProvider()
     md.addAttributes(fields)
     m.updateFields()
 
@@ -532,7 +533,13 @@ def fixupAttributes(prefix, l, outGeoJSON, origin):
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGeoJSON, tx, opts)
 
-def copyFeature(f, fields):
+def calcEllipsoidalDistance(f: QgsFeature) -> float:
+    g: QgsGeometry = f.geometry()
+    d = QgsDistanceArea()
+    d.setEllipsoid('WGS84')
+    return d.measureLength(g)
+
+def copyFeature(f: QgsFeature, fields: QgsFields) -> QgsFeature:
     g = QgsFeature()
     g.setGeometry(f.geometry())
     g.setFields(fields)
@@ -542,8 +549,8 @@ def copyFeature(f, fields):
         g[fn] = f[fn]
     return g
 
-def openVector(uri, name):
+def openVector(uri: str, name: str) -> QgsVectorLayer:
     return QgsVectorLayer(uri, name, "ogr")
 
-def makeVector(uri, name):
+def makeVector(uri: str, name: str) -> QgsVectorLayer:
     return QgsVectorLayer(uri, name, "memory")
