@@ -34,6 +34,8 @@ from plugins import processing
 from processing.core.Processing import Processing
 Processing.initialize()
 
+prj = {}
+
 ################################################################################
 
 def exit():
@@ -172,26 +174,29 @@ def filter(l, typ, exp):
 def expandOsm(osm, layername, name, outGeoJSON):
     l = openVector('%s|layername=%s' % (osm, layername), name)
 
+    tx = prj.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
-    QgsVectorFileWriter.writeAsVectorFormat(l, outGeoJSON, opts)
+    QgsVectorFileWriter.writeAsVectorFormatV3(l, outGeoJSON, tx, opts)
 
 def dumpGeoJSON(l, fn):
+    tx = prj.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
-    QgsVectorFileWriter.writeAsVectorFormat(l, fn, opts)
+    QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
     tmp = '%s.tmp' % fn
     subprocess.call(['gjfmt-exe', fn, tmp])
     os.rename(tmp, fn)
 
 def dumpCSV(l, fn):
+    tx = prj.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "CSV"
     opts.layerOptions = [
         "GEOMETRY=AS_WKT",
         "SEPARATOR=COMMA"
     ]
-    QgsVectorFileWriter.writeAsVectorFormat(l, fn, opts)
+    QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
 
 # Merging multiple vectors
 # Needed when the target area is large and covered by multiple map.osm
@@ -260,9 +265,10 @@ def createEmptyGeoJSON2(outGJ, typ, g):
 
     m = createEmptyLayer(typ, g)
 
+    tx = prj.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
-    return QgsVectorFileWriter.writeAsVectorFormat(m, outGJ, opts)
+    return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGJ, tx,opts)
 
 def createEmptyLayer(typ, g):
     fields = QgsFields()
@@ -286,10 +292,19 @@ def createPrj(prjPath):
     if os.path.exists(prjPath):
         return
 
+    global prj
     prj = QgsProject.instance()
     # XXX Add vector layers
     prj.write(prjPath)
     del prj
+
+def openPrj(prjPath):
+    if not os.path.exists(prjPath):
+        return
+
+    global prj
+    prj = QgsProject.instance()
+    prj.read(prjPath)
 
 def classifyGeometries(l, areas):
     # - Classify each geometry in l by location
@@ -512,9 +527,10 @@ def fixupAttributes(prefix, l, outGeoJSON, origin):
 
     m.commitChanges()
 
+    tx = prj.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
-    return QgsVectorFileWriter.writeAsVectorFormat(m, outGeoJSON, opts)
+    return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGeoJSON, tx, opts)
 
 def copyFeature(f, fields):
     g = QgsFeature()

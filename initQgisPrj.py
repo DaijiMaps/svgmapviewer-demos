@@ -11,11 +11,12 @@ prefix = sys.argv[1]
 osmFiles = sys.argv
 osmFiles.pop(0)
 osmFiles.pop(0)
+
 addrTmpl = 'A-1f-%s-%s-%d'
-#docdir = '/Users/uebayasi/Documents'
-prjdir = './%s' % prefix # '%s/Sources/DaijiMaps/QGIS' % docdir
-datdir = './%s' % prefix # '%s/Sources/DaijiMaps/daijimaps-data/%s' % (docdir, prefix)
-prjdat = '%s/map.qgz' % prjdir # '%s/%s.qgz' % (prjdir, prefix)
+
+prjdir = './%s' % prefix
+datdir = './%s' % prefix
+prjdat = '%s/map.qgz' % prjdir
 
 # Templates
 areasGJ = '%s/areas.geojson' % datdir
