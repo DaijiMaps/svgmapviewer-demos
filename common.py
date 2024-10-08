@@ -10,13 +10,9 @@ import typing
 
 #### COMMON INITIALIZATION
 
-sys.path.append("/Applications/QGIS-LTR.app/Contents/Resources/python/qgis")
-sys.path.append("/Applications/QGIS-LTR.app/Contents/Resources/python/qgis/processing")
-
-#qgis_gdal_dir = '/Applications/QGIS-LTR.app/Contents/Resources/gdal'
-#qgis_python_dir = '/Applications/QGIS-LTR.app/Contents/Resources/python'
-#qgis_plugin_dir = '/Applications/QGIS-LTR.app/Contents/PlugIns'
-#qgis_app_dir = '/Applications/QGIS-LTR.app/Contents/MacOS'
+sys.path.append("/Applications/QGIS-LTR.app/Contents/Resources/python")
+sys.path.append("/Applications/QGIS-LTR.app/Contents/Resources/python/plugins")
+sys.path.append("/Applications/QGIS-LTR.app/Contents/Resources/python/plugins/processing")
 
 os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = '/Applications/QGIS-LTR.app/Contents/PlugIns'
 
@@ -25,8 +21,6 @@ from qgis.core import *
 from qgis.gui import *
 
 QgsApplication.setPrefixPath("/Applications/QGIS-LTR.app/Contents/MacOS", True)
-
-################################################################################
 
 qgs = QgsApplication([], False)
 qgs.initQgis()
