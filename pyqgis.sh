@@ -9,11 +9,10 @@ bin="${QGIS_PREFIX_PATH}/bin"
 
 exe="${bin}/python3.9"
 
-python="${QGIS_PREFIX_PATH}/../Resources/python"
-
-p1=${python}
-p2=${python}/plugins
-p3=${python}/plugins/processing
+p="${QGIS_PREFIX_PATH}/../Resources/python"
+p1=${p}
+p2=${p}/plugins
+p3=${p}/plugins/processing
 PYTHONPATH="${p1}:${p2}:${p3}"
 
 GDAL_DATA="${python}/../gdal"
