@@ -54,7 +54,7 @@ rect = rects['multipolygons']
 common.createEmptyPolygonGeoJSON(areasGJ, rect)
 common.createEmptyPolygonGeoJSON(a1GJ, rect)
 common.createEmptyPolygonGeoJSON(a2GJ, rect)
-common.createEmptyPointGeoJSON(orgGJ, rect)
+common.createEmptyMultiPointGeoJSON(orgGJ, rect)
 
 common.exit()
 

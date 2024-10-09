@@ -1,6 +1,8 @@
-import pathlib
+import decimal
+import math
 import os
 import os.path
+import pathlib
 import re
 import subprocess
 import sys
@@ -8,7 +10,7 @@ import typing
 
 ################################################################################
 
-#### COMMON INITIALIZATION
+#### QGIS INITIALIZATION
 
 from PyQt5.QtCore import *
 from qgis.core import *
@@ -21,7 +23,7 @@ from plugins import processing
 from processing.core.Processing import Processing
 Processing.initialize()
 
-prj: QgsProject = {}
+prj: QgsProject = None
 
 ################################################################################
 
@@ -119,6 +121,14 @@ def centroids(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVectorLayer:
     }
     return processing.run("qgis:centroids", p)['OUTPUT']
 
+def getExtent(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVectorLayer:
+    p = {
+        'INPUT': src,
+        'OUTPUT': dst,
+        'ROUND_TO': 0,
+    }
+    return processing.run("native:polygonfromlayerextent", p)['OUTPUT']
+
 ################################################################################
 
 #### FILTER OPERATIONS
@@ -158,32 +168,31 @@ def filter(l: QgsVectorLayer, typ: str, exp: str) -> QgsVectorLayer:
 
 #### OTHER OPERATIONS
 
-def expandOsm(osm, layername, name, outGeoJSON):
+def expandOsm(osm, layername, name, outGeoJSON) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     l = openVector('%s|layername=%s' % (osm, layername), name)
-
-    tx = prj.transformContext()
+    tx = l.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
-    QgsVectorFileWriter.writeAsVectorFormatV3(l, outGeoJSON, tx, opts)
+    return QgsVectorFileWriter.writeAsVectorFormatV3(l, outGeoJSON, tx, opts)
 
-def dumpGeoJSON(l, fn):
-    tx = prj.transformContext()
+def dumpGeoJSON(l, fn) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
+    tx = l.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
-    QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
-    tmp = '%s.tmp' % fn
-    subprocess.call(['gjfmt-exe', fn, tmp])
-    os.rename(tmp, fn)
+    return QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
+    # XXX tmp = '%s.tmp' % fn
+    # XXX subprocess.call(['gjfmt-exe', fn, tmp])
+    # XXX os.rename(tmp, fn)
 
-def dumpCSV(l, fn):
-    tx = prj.transformContext()
+def dumpCSV(l, fn) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
+    tx = l.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "CSV"
     opts.layerOptions = [
         "GEOMETRY=AS_WKT",
         "SEPARATOR=COMMA"
     ]
-    QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
+    return QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
 
 # Merging multiple vectors
 # Needed when the target area is large and covered by multiple map.osm
@@ -199,23 +208,34 @@ def trimLayer(l: QgsVectorLayer) -> QgsVectorLayer:
         l = deleteColumn(l, 'memory:', c)
     return l
 
-def getBoundingBox(l: QgsVectorLayer) -> QgsVectorLayer:
+def getBoundingBox(l: QgsVectorLayer) -> QgsRectangle:
     l.selectAll()
     return l.boundingBoxOfSelected()
 
-def createEmptyPolygonGeoJSON(outGJ, rect):
+def createEmptyPolygonGeoJSON(outGJ, rect: QgsRectangle):
     g = emptyPolygon(rect)
-    return createEmptyGeoJSON2(outGJ, "Polygon", g)
+    return createEmptyGeoJSON(outGJ, "Polygon", g)
 
-def createEmptyLineGeoJSON(outGJ, rect):
+def createEmptyLineGeoJSON(outGJ, rect: QgsRectangle):
     g = emptyLine(rect)
-    return createEmptyGeoJSON2(outGJ, "Line", g)
+    return createEmptyGeoJSON(outGJ, "Line", g)
 
-def createEmptyPointGeoJSON(outGJ, rect):
+def createEmptyMultiPointGeoJSON(outGJ, rect: QgsRectangle):
+    g = emptyMultiPoint(rect)
+    return createEmptyGeoJSON(outGJ, "MultiPoint", g)
+
+def createEmptyPointGeoJSON(outGJ, rect: QgsRectangle):
     g = emptyPoint(rect)
-    return createEmptyGeoJSON2(outGJ, "Point", g)
+    return createEmptyGeoJSON(outGJ, "Point", g)
 
-def emptyPoint(rect) -> QgsGeometry:
+def emptyPoint(rect: QgsRectangle) -> QgsGeometry:
+    (x1, y1, x2, y2) = rect2tuple(rect)
+    x0 = (x1 + x2) / 2
+    y0 = (y1 + y2) / 2
+    p0 = QgsPointXY(x0, y0)
+    return QgsGeometry.fromPointXY(p0)
+
+def emptyMultiPoint(rect: QgsRectangle) -> QgsGeometry:
     (x1, y1, x2, y2) = rect2tuple(rect)
     x0 = (x1 + x2) / 2
     y0 = (y1 + y2) / 2
@@ -223,7 +243,7 @@ def emptyPoint(rect) -> QgsGeometry:
     mp = [p0]
     return QgsGeometry.fromMultiPointXY(mp)
 
-def emptyLine(rect) -> QgsGeometry:
+def emptyLine(rect: QgsRectangle) -> QgsGeometry:
     (x1, y1, x2, y2) = rect2tuple(rect)
     p1 = QgsPointXY(x1, y1)
     p2 = QgsPointXY(x2, y2)
@@ -231,7 +251,10 @@ def emptyLine(rect) -> QgsGeometry:
     mpl = [pl]
     return QgsGeometry.fromMultiPolylineXY(mpl)
 
-def emptyPolygon(rect) -> QgsGeometry:
+# XXX Line vs. MultiLineString
+# XXX Polygon vs. MultiPolygon
+
+def emptyPolygon(rect: QgsRectangle) -> QgsGeometry:
     (x1, y1, x2, y2) = rect2tuple(rect)
     pl = [
         QgsPointXY(x1, y1),
@@ -243,21 +266,21 @@ def emptyPolygon(rect) -> QgsGeometry:
     mpg = [pg]
     return QgsGeometry.fromMultiPolygonXY(mpg)
 
-def rect2tuple(rect) -> tuple[float, float, float, float]:
+def rect2tuple(rect: QgsRectangle) -> tuple[float, float, float, float]:
     return (rect.xMinimum(), rect.yMinimum(), rect.xMaximum(), rect.yMaximum())
 
-def createEmptyGeoJSON2(outGJ: str, typ: str, g: QgsGeometry):
+def createEmptyGeoJSON(outGJ: str, typ: str, g: QgsGeometry) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     if os.path.exists(outGJ):
         return None
 
     m = createEmptyLayer(typ, g)
 
-    tx = prj.transformContext()
+    tx = m.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGJ, tx,opts)
 
-def createEmptyLayer(typ: str, g: QgsGeometry):
+def createEmptyLayerV1(typ: str, g: QgsGeometry) -> QgsVectorLayer:
     fields = QgsFields()
     fields.append(QgsField("id", QVariant.Int))
 
@@ -275,15 +298,28 @@ def createEmptyLayer(typ: str, g: QgsGeometry):
     m.commitChanges()
     return m
 
+# id is automatic; starting from 1 (l.getFeature(1))
+def createEmptyLayer(typ: str, g: QgsGeometry) -> QgsVectorLayer:
+    f = QgsFeature()
+    f.setGeometry(g)
+    l = makeVector(typ, "XXX")
+    l.startEditing()
+    l.addFeature(f)
+    l.commitChanges()
+    return l
+
+def createPointGeoJSON(outGJ: str, p: QgsPoint) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
+    g = QgsGeometry.fromPoint(p)
+    return createEmptyGeoJSON(outGJ, "Point", g)
+
 def createPrj(prjPath: str):
     if os.path.exists(prjPath):
         return
 
     global prj
     prj = QgsProject.instance()
-    # XXX Add vector layers
+    # XXX Add known vector layers
     prj.write(prjPath)
-    del prj
 
 def openPrj(prjPath: str):
     if not os.path.exists(prjPath):
@@ -329,8 +365,7 @@ def classifyGeometries1(l: QgsVectorLayer, areas: QgsVectorLayer, predicate, pre
         1
     )
 
-def extractFields(l: QgsVectorLayer, typ: str, field: QgsField, pattern: str) -> QgsVectorLayer:
-    print("extractAreas: %s: %s" % (field, pattern))
+def extractFieldsV1(l: QgsVectorLayer, typ: str, field: QgsField, pattern: str) -> QgsVectorLayer:
     fields = QgsFields()
     #for f in fields:
     #    print("field: %s" % f.name())
@@ -360,10 +395,26 @@ def extractFields(l: QgsVectorLayer, typ: str, field: QgsField, pattern: str) ->
     print("m: %d" % m.featureCount())
     return m
 
+def extractFields(l: QgsVectorLayer, typ: str, field: QgsField, pattern: str) -> QgsVectorLayer:
+    m = makeVector(typ, "XXX")
+    m.startEditing()
+    l.selectAll()
+    for f in l.selectedFeatures():
+        p = re.compile(pattern)
+        v = f[field]
+        #print("field: %s" % v)
+        if p.match(str(v)) != None:
+            print("extractFields: match!")
+            g = QgsFeature()
+            g.setGeometry(f.geometry())
+            m.addFeature(g)
+    m.commitChanges()
+    return m
+
 def guessOrigin(l: QgsVectorLayer) -> typing.Union[QgsVectorLayer, None]:
     l.selectAll()
     for f in l.selectedFeatures():
-        bb = f.geometry().boundingBox()
+        bb: QgsRectangle = f.geometry().boundingBox()
         oX = bb.xMinimum() - bb.width()
         oY = bb.yMinimum() - bb.height()
         p0 = QgsPointXY(oX, oY)
@@ -440,13 +491,50 @@ def tagAddresses(al: QgsVectorLayer, fname: str, srcShp, dstShp) -> QgsVectorLay
 
 def getOrigin(gj: str) -> QgsPoint:
     l = openVector('%s|geometrytype=Point' % gj, "origin")
-    # Return the first feature
-    # XXX getFeature(0) does NOT work
-    l.selectAll()
-    for f in l.selectedFeatures():
-        p = f.geometry().asPoint()
-        return p
+    f = l.getFeature(1)
+    p = f.geometry().asPoint()
+    return p
 
+def extentCenter(extent: QgsVectorLayer) -> QgsPoint:
+    f = extent.getFeature(1)
+    ox = float(f['CNTX'])
+    oy = float(f['CNTY'])
+    return QgsPoint(ox, oy)
+
+def getRoundedOrigin(extent: QgsVectorLayer) -> QgsPoint:
+    p = extentCenter(extent)
+    x = roundFloatToFracPrec(p.x(), 6)
+    y = roundFloatToFracPrec(p.y(), 6)
+    return QgsPoint(x, y)
+
+# if fracprec = 3:
+# 1.11111 -> 1.111
+# 11.11111 -> 11.111
+# 111.11111 -> 111.111
+def roundFloatToFracPrec(n: float, fracprec: int) -> float:
+    prec = round(math.log(n, 10)) + 6
+    decimal.getcontext().prec = prec
+    return float(decimal.Decimal(n) * decimal.Decimal(1))
+
+def getMeasures(o: QgsPoint, maxx: float, miny: float) -> QgsVectorLayer:
+    p = QgsPoint(maxx, o.y())
+    q = QgsPoint(o.x(), miny)
+    op = o.distance(p.x(), p.y())
+    oq = o.distance(q.x(), q.y())
+
+    a = QgsDistanceArea()
+    a.setEllipsoid('WGS84')
+    dp = a.measureLength(QgsGeometry.fromPolyline(QgsLineString(o, p)))
+    dq = a.measureLength(QgsGeometry.fromPolyline(QgsLineString(o, q)))
+    invx = o.x() > p.x() if -1 else 1
+    invy = o.y() < q.y() if -1 else 1
+    print(op, oq, dp * invx, dq * invy, invx, invy)
+
+    return None
+
+# XXX
+# XXX refactor
+# XXX
 def fixupAttributes(prefix: str, l: QgsVectorLayer, outGeoJSON, origin: QgsPoint) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     addrTmpl = '%s-%%s-%%s-%%d' % prefix
 
@@ -514,7 +602,7 @@ def fixupAttributes(prefix: str, l: QgsVectorLayer, outGeoJSON, origin: QgsPoint
 
     m.commitChanges()
 
-    tx = prj.transformContext()
+    tx = m.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGeoJSON, tx, opts)
@@ -531,7 +619,7 @@ def copyFeature(f: QgsFeature, fields: QgsFields) -> QgsFeature:
     g.setFields(fields)
     for i in fields:
         fn = i.name()
-        print('fn', fn)
+        #print('fn', fn)
         g[fn] = f[fn]
     return g
 

@@ -1,0 +1,8 @@
+{
+  "python.analysis.extraPaths": [
+    "/Applications/QGIS-LTR.app/Contents/Resources/python",
+    "/Applications/QGIS-LTR.app/Contents/Resources/python/qgis",
+    "/Applications/QGIS-LTR.app/Contents/Resources/python/plugins",
+    "/Applications/QGIS-LTR.app/Contents/Resources/python/plugins/processing"
+  ]
+}
