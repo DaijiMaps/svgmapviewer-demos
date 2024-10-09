@@ -63,12 +63,13 @@ osmLayerNames = [
 
 #### PROCESSING WRAPPERS
 
-def mergeVectorLayers(layers: list[QgsVectorLayer], dst: QgsVectorLayer) -> QgsVectorLayer:
+def mergeVectorLayers(layers: list[str], dst: QgsVectorLayer) -> QgsVectorLayer:
     p = {
         'CRS' : None,
         'LAYERS' : layers,
         'OUTPUT' : dst
     }
+    print(p)
     return processing.run("qgis:mergevectorlayers", p)['OUTPUT']
 
 def fixGeometries(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVectorLayer:
@@ -92,6 +93,15 @@ def deleteDuplicateGeometries(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVe
         'OUTPUT' : dst
     }
     return processing.run("qgis:deleteduplicategeometries", p)['OUTPUT']
+
+def selectByLocation(src: QgsVectorLayer, predicate: int, intersect: QgsVectorLayer = 0, method = 0) -> QgsVectorLayer:
+    p = {
+        'INPUT' : src,
+        'PREDICATE' : predicate,
+        'INTERSECT' : intersect,
+        'METHOD' : method,
+    }
+    return processing.run("qgis:selectbylocation", p)['OUTPUT']
 
 def joinAttributesByLocation(src: QgsVectorLayer, join, predicates: int, dst: QgsVectorLayer, method = 0, discard = False) -> QgsVectorLayer:
     # https://docs.qgis.org/testing/en/docs/user_manual/processing_algs/qgis/vectorgeneral.html#id58
@@ -182,6 +192,47 @@ def filter(l: QgsVectorLayer, typ: str, exp: str) -> QgsVectorLayer:
 ################################################################################
 
 #### OTHER OPERATIONS
+
+def readOsm(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLayer]:
+    allLayers: dict[str, list[QgsVectorLayer]] = {}
+    mapLayers: dict[str, QgsVectorLayer] = {}
+    for (layername, typ) in osmLayerNames:
+        layers: list[QgsVectorLayer] = []
+        for osm in osmFiles:
+            path = os.path.basename(osm)
+            name = path2name(osm)
+            uri = '%s|layername=%s' % (path, layername)
+            l = openVector(uri, name)
+            print('layer', uri, l.featureCount())
+            layers.append(l)
+        #out = makeVector(typ, 'map-%s' % layername)
+        #out = makeVector(typ, 'TEMPORARY_OUTPUT')
+        #l = mergeVectorLayers(layers, 'memory:')
+        #print(layername, l)
+        allLayers[layername] = layers
+    for (layername, typ) in osmLayerNames:
+        layers = allLayers[layername]
+        print(layername, layers)
+        fields = layers[0].fields()
+
+        name = 'map-%s' % layername
+
+        m = makeVector(typ, name)
+        m.startEditing()
+        md = m.dataProvider()
+        md.addAttributes(fields)
+        m.updateFields()
+
+        for l in layers:
+            print(l.featureCount())
+            selectByLocation(l, 0, areas, 0)
+            for f in l.selectedFeatures():
+                print(f)
+                m.addFeature(f)
+        m.commitChanges()
+
+        mapLayers[layername] = m
+    return mapLayers
 
 def expandOsm(osm: str, layername: str, name: str, outGeoJSON: str) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     l = openVector('%s|layername=%s' % (osm, layername), name)
@@ -451,6 +502,9 @@ def tagAddresses(al: QgsVectorLayer, fname: str, srcShp, dstShp) -> QgsVectorLay
     #print("tagAddress: oid=%d: %d" % (oid, out.featureCount()))
     #olayers.append(out)
     #return mergeVectorLayers(olayers, dstShp)
+
+def getAreas(gj: str) -> QgsVectorLayer:
+    return openVector('%s|geometrytype=MultiPolygon' % gj, "areas")
 
 def getOrigin(gj: str) -> QgsPoint:
     l = openVector('%s|geometrytype=Point' % gj, "origin")

@@ -1,7 +1,5 @@
 import glob
-import pathlib
 import os
-import os.path
 import sys
 
 import common
@@ -43,22 +41,18 @@ for osm in osmFiles:
         print('Expanding %s:%s...' % (osm, layername), file = sys.stderr)
         common.expandOsm(osm, layername, name, outGJ)
 
-print('Merging .geojson...', file = sys.stderr)
-rects = {}
-for (layername, typ) in common.osmLayerNames:
-    olayers = list(map(lambda osm: osm2gj(osm, layername), osmFiles))
-    out = common.mergeVectors(olayers, layername)
-    rects[layername] = common.getBoundingBox(out)
-    mapdat = '%s/%s-%s.geojson' % (datdir, 'map', layername)
-    common.dumpGeoJSON(out, mapdat)
+common.exit()
 
-#rect = rects['multipolygons']
-#common.createEmptyPolygonGeoJSON(areasGJ, rect)
-#common.createEmptyPolygonGeoJSON(a1GJ, rect)
-#common.createEmptyPolygonGeoJSON(a2GJ, rect)
-#common.createEmptyMultiPointGeoJSON(orgGJ, rect)
+exit()
 
-# XXX add layers to project
+areas = common.getAreas(areasGJ)
+
+mapLayers = common.readOsm(osmFiles, areas)
+
+for (layername, _) in common.osmLayerNames:
+    l = mapLayers[layername]
+    gj = '%s/map-%s.geojson' % (datdir, layername)
+    common.dumpGeoJSON(l, gj)
 
 common.exit()
 
