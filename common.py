@@ -27,6 +27,21 @@ prj: QgsProject = None
 
 ################################################################################
 
+#### COMMON FILES
+
+# Name/map*.osm
+# Name/map.qgz
+# Name/areas.geojson
+# Name/origin.geojson
+# Name/measures.geojson
+# Name/map-points.geojson
+# Name/map-lines.geojson
+# Name/map-multilinestrings.geojson
+# Name/map-multipolygons.geojson
+# Name/map-other_relations.geojson
+
+################################################################################
+
 def exit():
     global qgs
     qgs.exitQgis()
@@ -168,23 +183,20 @@ def filter(l: QgsVectorLayer, typ: str, exp: str) -> QgsVectorLayer:
 
 #### OTHER OPERATIONS
 
-def expandOsm(osm, layername, name, outGeoJSON) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
+def expandOsm(osm: str, layername: str, name: str, outGeoJSON: str) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     l = openVector('%s|layername=%s' % (osm, layername), name)
     tx = l.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(l, outGeoJSON, tx, opts)
 
-def dumpGeoJSON(l, fn) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
+def dumpGeoJSON(l: QgsVectorLayer, fn: str) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     tx = l.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
-    # XXX tmp = '%s.tmp' % fn
-    # XXX subprocess.call(['gjfmt-exe', fn, tmp])
-    # XXX os.rename(tmp, fn)
 
-def dumpCSV(l, fn) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
+def dumpCSV(l: QgsVectorLayer, fn: str) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     tx = l.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "CSV"
@@ -280,25 +292,6 @@ def createEmptyGeoJSON(outGJ: str, typ: str, g: QgsGeometry) -> tuple[QgsVectorF
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGJ, tx,opts)
 
-def createEmptyLayerV1(typ: str, g: QgsGeometry) -> QgsVectorLayer:
-    fields = QgsFields()
-    fields.append(QgsField("id", QVariant.Int))
-
-    m = makeVector(typ, "XXX")
-    m.startEditing()
-    md = m.dataProvider()
-    md.addAttributes(fields)
-    m.updateFields()
-    # Add a empty feature with geometry g
-    f = QgsFeature()
-    f.setFields(fields)
-    f['id'] = 0
-    f.setGeometry(g)
-    m.addFeature(f)
-    m.commitChanges()
-    return m
-
-# id is automatic; starting from 1 (l.getFeature(1))
 def createEmptyLayer(typ: str, g: QgsGeometry) -> QgsVectorLayer:
     f = QgsFeature()
     f.setGeometry(g)
@@ -364,36 +357,6 @@ def classifyGeometries1(l: QgsVectorLayer, areas: QgsVectorLayer, predicate, pre
         'memory:',
         1
     )
-
-def extractFieldsV1(l: QgsVectorLayer, typ: str, field: QgsField, pattern: str) -> QgsVectorLayer:
-    fields = QgsFields()
-    #for f in fields:
-    #    print("field: %s" % f.name())
-    fields.append(QgsField("id", QVariant.Int))
-
-    m = makeVector(typ, "XXX")
-    m.startEditing()
-    md = m.dataProvider()
-    md.addAttributes(fields)
-    m.updateFields()
-    l.selectAll()
-    id = 0
-    for f in l.selectedFeatures():
-        p = re.compile(pattern)
-        v = f[field]
-        #print("field: %s" % v)
-        if p.match(str(v)) != None:
-            print("extractFields: match!")
-            g = QgsFeature()
-            g.setGeometry(f.geometry())
-            g.setFields(fields)
-            g['id'] = id
-            id = id + 1
-            m.addFeature(g)
-    m.commitChanges()
-    print("m" , m)
-    print("m: %d" % m.featureCount())
-    return m
 
 def extractFields(l: QgsVectorLayer, typ: str, field: QgsField, pattern: str) -> QgsVectorLayer:
     m = makeVector(typ, "XXX")
@@ -491,12 +454,12 @@ def tagAddresses(al: QgsVectorLayer, fname: str, srcShp, dstShp) -> QgsVectorLay
 
 def getOrigin(gj: str) -> QgsPoint:
     l = openVector('%s|geometrytype=Point' % gj, "origin")
-    f = l.getFeature(1)
+    f = next(l.getFeatures())
     p = f.geometry().asPoint()
     return p
 
 def extentCenter(extent: QgsVectorLayer) -> QgsPoint:
-    f = extent.getFeature(1)
+    f = next(extent.getFeatures())
     ox = float(f['CNTX'])
     oy = float(f['CNTY'])
     return QgsPoint(ox, oy)
@@ -516,21 +479,57 @@ def roundFloatToFracPrec(n: float, fracprec: int) -> float:
     decimal.getcontext().prec = prec
     return float(decimal.Decimal(n) * decimal.Decimal(1))
 
-def getMeasures(o: QgsPoint, maxx: float, miny: float) -> QgsVectorLayer:
+def getMeasures(extent: QgsVectorLayer, origin: QgsVectorLayer) -> QgsVectorLayer:
+    f = next(extent.getFeatures())
+    maxx = float(f['MAXX'])
+    miny = float(f['MINY'])
+
+    f = next(origin.getFeatures())
+    g = f.geometry()
+    o = QgsPoint(g.asPoint())
+
     p = QgsPoint(maxx, o.y())
     q = QgsPoint(o.x(), miny)
-    op = o.distance(p.x(), p.y())
-    oq = o.distance(q.x(), q.y())
+    dp = o.distance(p.x(), p.y())
+    dq = o.distance(q.x(), q.y())
 
-    a = QgsDistanceArea()
-    a.setEllipsoid('WGS84')
-    dp = a.measureLength(QgsGeometry.fromPolyline(QgsLineString(o, p)))
-    dq = a.measureLength(QgsGeometry.fromPolyline(QgsLineString(o, q)))
-    invx = o.x() > p.x() if -1 else 1
-    invy = o.y() < q.y() if -1 else 1
-    print(op, oq, dp * invx, dq * invy, invx, invy)
+    lp = QgsGeometry.fromPolyline(QgsLineString(o, p))
+    lq = QgsGeometry.fromPolyline(QgsLineString(o, q))
+    invx = -1 if (o.x() > p.x()) else 1
+    invy = -1 if (o.y() < q.y()) else 1
+    edp = calcEllipsoidalDistance(lp) * invx
+    edq = calcEllipsoidalDistance(lq) * invy
 
-    return None
+    m = createMeasures()
+    fields = m.fields()
+
+    m.startEditing()
+    for (dir, l, d, ed) in [('x', lp, dp, edp), ('y', lq, dq, edq)]:
+        f = QgsFeature()
+        f.setGeometry(l)
+        f.setFields(fields)
+        f['direction'] = dir
+        f['distance'] = d
+        f['ellipsoidal.distance'] = ed
+        m.addFeature(f)
+    m.commitChanges()
+
+    return m
+
+def createMeasures() -> QgsVectorLayer:
+    fields = QgsFields()
+    fields.append(QgsField('direction', QVariant.String))
+    fields.append(QgsField('distance', QVariant.Double))
+    fields.append(QgsField('ellipsoidal.distance', QVariant.Double))
+
+    m = makeVector("LineString", "XXX")
+    m.startEditing()
+    md = m.dataProvider()
+    md.addAttributes(fields)
+    m.updateFields()
+    m.commitChanges()
+
+    return m
 
 # XXX
 # XXX refactor
@@ -607,8 +606,7 @@ def fixupAttributes(prefix: str, l: QgsVectorLayer, outGeoJSON, origin: QgsPoint
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGeoJSON, tx, opts)
 
-def calcEllipsoidalDistance(f: QgsFeature) -> float:
-    g: QgsGeometry = f.geometry()
+def calcEllipsoidalDistance(g: QgsGeometry) -> float:
     d = QgsDistanceArea()
     d.setEllipsoid('WGS84')
     return d.measureLength(g)

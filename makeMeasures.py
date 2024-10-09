@@ -12,9 +12,10 @@ prjdat = '%s/map.qgz' % prjdir
 # INPUT
 areasGJ = '%s/areas.geojson' % datdir
 areas_extentGJ = '%s/areas_extent.geojson' % datdir
+originGJ = '%s/origin.geojson' % datdir
 
 # OUTPUT
-originGJ = '%s/origin.geojson' % datdir
+measuresGJ = '%s/measures.geojson' % datdir
 
 ####
 
@@ -25,17 +26,12 @@ common.openPrj(prjdir)
 areas = common.openVector(areasGJ, "areas")
 
 extent = common.getExtent(areas, 'memory:')
-f = next(extent.getFeatures())
-print(f)
-print(f.attributes())
 
-origin = common.getRoundedOrigin(extent)
-print(origin)
-print(origin.x())
-print(origin.y())
+origin = common.openVector(originGJ, "origin")
 
-# XXX save origin.geojson
-res = common.createPointGeoJSON(originGJ, origin)
+measures = common.getMeasures(extent, origin)
+
+res = common.dumpGeoJSON(measures, measuresGJ)
 print(res)
 
 common.exit()
