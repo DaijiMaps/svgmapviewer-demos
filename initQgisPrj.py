@@ -1,3 +1,4 @@
+import glob
 import pathlib
 import os
 import os.path
@@ -8,9 +9,8 @@ import common
 ####
 
 prefix = sys.argv[1]
-osmFiles = sys.argv
-osmFiles.pop(0)
-osmFiles.pop(0)
+
+osmFiles = glob.glob('%s/map*.osm' % prefix)
 
 addrTmpl = 'A-1f-%s-%s-%d'
 
@@ -55,6 +55,8 @@ common.createEmptyPolygonGeoJSON(areasGJ, rect)
 common.createEmptyPolygonGeoJSON(a1GJ, rect)
 common.createEmptyPolygonGeoJSON(a2GJ, rect)
 common.createEmptyMultiPointGeoJSON(orgGJ, rect)
+
+# XXX add layers to project
 
 common.exit()
 
