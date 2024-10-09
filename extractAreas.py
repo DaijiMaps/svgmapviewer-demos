@@ -1,5 +1,3 @@
-#! /Applications/QGIS3.14.app/Contents/MacOS/bin/python
-
 import pathlib
 import os
 import os.path
@@ -9,17 +7,19 @@ import sys
 ####
 
 prefix = sys.argv[1]
+
 args = sys.argv
 args.pop(0)
 args.pop(0)
+
 #field = sys.argv[2]
 #pattern = sys.argv[3]
 
 addrTmpl = 'A-1f-%s-%s-%d'
-docdir = '/Users/uebayasi/Documents'
-prjdir = '%s/Sources/DaijiMaps/QGIS' % docdir
-datdir = '%s/Sources/DaijiMaps/daijimaps-data/%s' % (docdir, prefix)
-prjdat = '%s/%s.qgz' % (prjdir, prefix)
+
+prjdir = './%s' % prefix
+datdir = './%s' % prefix
+prjdat = '%s/map.qgz' % prjdir
 
 areasGJ = '%s/areas.geojson' % datdir
 
@@ -32,21 +32,25 @@ areasGJ = '%s/areas.geojson' % datdir
 
 import common
 
+common.openPrj(prjdat)
+
 srcGJ = '%s/%s-%s.geojson' % (datdir, 'init', 'multipolygons')
 s = common.openVector(srcGJ, 'init-multipolygons')
 olayers = []
 while len(args) > 0:
     field = args[0]
+    pattern = args[1]
     args.pop(0)
-    pattern = args[0]
     args.pop(0)
-    d = common.extractFields(s, "Polygon", field, pattern)
-    olayers.append(d)
-d = common.mergeVectorLayers(olayers, 'memory:')
-common.dumpGeoJSON(d, '%s/areas.geojson' % datdir)
-common.dumpGeoJSON(d, '%s/address1.geojson' % datdir)
-common.dumpGeoJSON(d, '%s/address2.geojson' % datdir)
-o = common.guessOrigin(d)
+
+    l = common.extractFields(s, "Polygon", field, pattern)
+    olayers.append(l)
+
+l = common.mergeVectorLayers(olayers, 'memory:')
+common.dumpGeoJSON(l, '%s/areas.geojson' % datdir)
+common.dumpGeoJSON(l, '%s/address1.geojson' % datdir)
+common.dumpGeoJSON(l, '%s/address2.geojson' % datdir)
+o = common.guessOrigin(l)
 common.dumpGeoJSON(o, '%s/origin.geojson' % datdir)
 
 # cp areas.geojson internal.geojson
