@@ -196,21 +196,23 @@ def filter(l: QgsVectorLayer, typ: str, exp: str) -> QgsVectorLayer:
 def readOsm(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLayer]:
     allLayers: dict[str, list[QgsVectorLayer]] = {}
     mapLayers: dict[str, QgsVectorLayer] = {}
+
     for (layername, typ) in osmLayerNames:
         layers: list[QgsVectorLayer] = []
         for osm in osmFiles:
             name = path2name(osm)
-            uri = '%s|layername=%s' % (osm, layername)
+            uri = '%s|layername=%s' % (osm, name)
             l = openVector(uri, layername)
             layers.append(l)
         allLayers[layername] = layers
+
     for (layername, typ) in osmLayerNames:
         layers = allLayers[layername]
         fields = layers[0].fields()
 
         name = 'map-%s' % layername
 
-        m = makeVector(typ, layername)
+        m = makeVector(typ, name)
         m.startEditing()
         md = m.dataProvider()
         md.addAttributes(fields)
@@ -218,8 +220,6 @@ def readOsm(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLa
 
         for l in layers:
             selectByLocation(l, 0, areas, 0)
-            #f1 = l.selectedFeatures()[0]
-            #print(layername, f1.geometry())
             for f in l.selectedFeatures():
                 m.addFeature(f)
         m.commitChanges()

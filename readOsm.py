@@ -36,8 +36,6 @@ mapLayers = common.readOsm(osmFiles, areas)
 for (layername, _) in common.osmLayerNames:
     l = mapLayers[layername]
     gj = '%s/map-%s.geojson' % (datdir, layername)
-    #f1 = next(l.getFeatures())
-    print(gj, l, l.geometryType())
     common.dumpGeoJSON(l, gj)
 
 common.exit()
