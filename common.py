@@ -53,8 +53,8 @@ def path2name(p) -> str:
 
 osmLayerNames = [
     ('points', 'Point'),
-    ('lines', 'Line'),
-    ('multilinestrings', 'Line'),
+    ('lines', 'LineString'),
+    ('multilinestrings', 'LineString'),
     ('multipolygons', 'Polygon'),
     ('other_relations', 'Polygon')
 ]
@@ -199,35 +199,28 @@ def readOsm(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLa
     for (layername, typ) in osmLayerNames:
         layers: list[QgsVectorLayer] = []
         for osm in osmFiles:
-            path = os.path.basename(osm)
             name = path2name(osm)
-            uri = '%s|layername=%s' % (path, layername)
-            l = openVector(uri, name)
-            print('layer', uri, l.featureCount())
+            uri = '%s|layername=%s' % (osm, layername)
+            l = openVector(uri, layername)
             layers.append(l)
-        #out = makeVector(typ, 'map-%s' % layername)
-        #out = makeVector(typ, 'TEMPORARY_OUTPUT')
-        #l = mergeVectorLayers(layers, 'memory:')
-        #print(layername, l)
         allLayers[layername] = layers
     for (layername, typ) in osmLayerNames:
         layers = allLayers[layername]
-        print(layername, layers)
         fields = layers[0].fields()
 
         name = 'map-%s' % layername
 
-        m = makeVector(typ, name)
+        m = makeVector(typ, layername)
         m.startEditing()
         md = m.dataProvider()
         md.addAttributes(fields)
         m.updateFields()
 
         for l in layers:
-            print(l.featureCount())
             selectByLocation(l, 0, areas, 0)
+            #f1 = l.selectedFeatures()[0]
+            #print(layername, f1.geometry())
             for f in l.selectedFeatures():
-                print(f)
                 m.addFeature(f)
         m.commitChanges()
 
@@ -235,7 +228,9 @@ def readOsm(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLa
     return mapLayers
 
 def expandOsm(osm: str, layername: str, name: str, outGeoJSON: str) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
-    l = openVector('%s|layername=%s' % (osm, layername), name)
+    uri = '%s|layername=%s' % (osm, layername)
+    l = openVector(uri, name)
+    print('layer', uri, l.featureCount())
     tx = l.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"

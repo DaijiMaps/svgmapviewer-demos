@@ -29,22 +29,6 @@ orgGJ = '%s/origin.geojson' % datdir
 print('Creating project...', file = sys.stderr)
 common.createPrj(prjdat)
 
-def osm2gj(osm, layername):
-    name = common.path2name(osm)
-    return '%s/tmp-%s-%s.geojson' % (datdir, name, layername)
-
-print('Expanding .osm layers...', file = sys.stderr)
-for osm in osmFiles:
-    name = common.path2name(osm)
-    for (layername, _) in common.osmLayerNames:
-        outGJ = osm2gj(osm, layername)
-        print('Expanding %s:%s...' % (osm, layername), file = sys.stderr)
-        common.expandOsm(osm, layername, name, outGJ)
-
-common.exit()
-
-exit()
-
 areas = common.getAreas(areasGJ)
 
 mapLayers = common.readOsm(osmFiles, areas)
@@ -52,6 +36,8 @@ mapLayers = common.readOsm(osmFiles, areas)
 for (layername, _) in common.osmLayerNames:
     l = mapLayers[layername]
     gj = '%s/map-%s.geojson' % (datdir, layername)
+    #f1 = next(l.getFeatures())
+    print(gj, l, l.geometryType())
     common.dumpGeoJSON(l, gj)
 
 common.exit()
