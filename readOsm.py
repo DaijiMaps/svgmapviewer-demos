@@ -31,7 +31,7 @@ common.createPrj(prjdat)
 
 areas = common.getAreas(areasGJ)
 
-mapLayers = common.readOsm(osmFiles, areas)
+mapLayers = common.readOsmByAreas(osmFiles, areas)
 
 for (layername, _) in common.osmLayerNames:
     l = mapLayers[layername]

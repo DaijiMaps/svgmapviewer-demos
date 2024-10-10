@@ -4,8 +4,6 @@ import os
 import os.path
 import pathlib
 import re
-import subprocess
-import sys
 import typing
 
 ################################################################################
@@ -40,6 +38,42 @@ prj: QgsProject = None
 # Name/map-multipolygons.geojson
 # Name/map-other_relations.geojson
 
+class Context:
+    prefix = ''
+    prjdir = ''
+    prj = ''
+
+    areasGJ = ''
+    areas_extentGJ = ''
+    originGJ = ''
+    measuresGJ = ''
+
+    map_pointsGJ = ''
+    map_linesGJ = ''
+    map_multilinestringsGJ = ''
+    map_multipolygonsGJ = ''
+    map_other_relationsGJ = ''
+
+    def __init__(self, prefix: str):
+        pwd = os.getcwd()
+        prjdir = '%s/%s' % (pwd, prefix)
+
+        self.prefix = prefix
+        self.prjdir = prjdir
+
+        self.prj = '%s/map.qgz' % prjdir
+
+        self.areasGJ = '%s/areas.geojson' % prjdir
+        self.areas_extentGJ = '%s/areas_extent.geojson' % prjdir
+        self.originGJ = '%s/origin.geojson' % prjdir
+        self.measuresGJ = '%s/measures.geojson' % prjdir
+
+        self.pointsGJ = '%s/map-points.geojson' % prjdir
+        self.linesGJ = '%s/map-lines.geojson' % prjdir
+        self.multilinestringsGJ = '%s/map-multilinestrings.geojson' % prjdir
+        self.multipolygonsGJ = '%s/map-multipolygons.geojson' % prjdir
+        self.other_relationsGJ = '%s/map-other_relations.geojson' % prjdir
+
 ################################################################################
 
 def exit():
@@ -51,12 +85,25 @@ def exit():
 def path2name(p) -> str:
     return pathlib.PurePath(os.path.basename(p)).stem
 
+# QgsVectorLayer geometry type
+# https://qgis.org/pyqgis/master/core/QgsVectorLayer.html
+# memory data provider
+# - “point”
+# - “linestring”
+# - “polygon”
+# - “multipoint”
+# - ”multilinestring”
+# - ”multipolygon”
+#type VectorGeometryType = typing.Literal['point', 'linestring', 'polygon', 'multipoint', 'multilinestring', 'multipolygon']
+
+# layername -> QgsVectorLayer geometry type
+# c.f. osmconf.ini
 osmLayerNames = [
-    ('points', 'Point'),
-    ('lines', 'LineString'),
-    ('multilinestrings', 'LineString'),
-    ('multipolygons', 'Polygon'),
-    ('other_relations', 'Polygon')
+    ('points', 'point'),
+    ('lines', 'linestring'),
+    ('multipolygons', 'multipolygon'),
+    ('multilinestrings', 'multilinestring'),
+    #('other_relations', 'Polygon')
 ]
 
 ################################################################################
@@ -159,16 +206,22 @@ def getExtent(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVectorLayer:
 #### FILTER OPERATIONS
 
 def filterPoint(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
-    return filter(l, "Point", exp)
+    return filter(l, "point", exp)
+
+def filterMultiPoint(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
+    return filter(l, "multipoint", exp)
 
 def filterLine(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
-    return filter(l, "Line", exp)
+    return filter(l, "line", exp)
 
 def filterMultiLineString(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
-    return filter(l, "MultiLineString", exp)
+    return filter(l, "multilinestring", exp)
 
 def filterPolygon(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
-    return filter(l, "Polygon", exp)
+    return filter(l, "polygon", exp)
+
+def filterMultiPolygon(l: QgsVectorLayer, exp: str) -> QgsVectorLayer:
+    return filter(l, "multipolygon", exp)
 
 def filter(l: QgsVectorLayer, typ: str, exp: str) -> QgsVectorLayer:
     fields = l.fields()
@@ -193,16 +246,24 @@ def filter(l: QgsVectorLayer, typ: str, exp: str) -> QgsVectorLayer:
 
 #### OTHER OPERATIONS
 
-def readOsm(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLayer]:
+def readOsmAll(osmFiles: list[str]) -> dict[str, QgsVectorLayer]:
+    selector: typing.Callable[[QgsVectorLayer], None] = lambda l: l.selectAll()
+    return readOsm(osmFiles, selector)
+
+def readOsmByAreas(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLayer]:
+    selector: typing.Callable[[QgsVectorLayer], None] = lambda l: selectByLocation(l, 0, areas, 0)
+    return readOsm(osmFiles, selector)
+
+def readOsm(osmFiles: list[str], selector: typing.Callable[[QgsVectorLayer], None]) -> dict[str, QgsVectorLayer]:
     allLayers: dict[str, list[QgsVectorLayer]] = {}
     mapLayers: dict[str, QgsVectorLayer] = {}
 
     for (layername, typ) in osmLayerNames:
         layers: list[QgsVectorLayer] = []
         for osm in osmFiles:
+            uri = '%s|layername=%s' % (osm, layername)
             name = path2name(osm)
-            uri = '%s|layername=%s' % (osm, name)
-            l = openVector(uri, layername)
+            l = openVector(uri, name)
             layers.append(l)
         allLayers[layername] = layers
 
@@ -210,6 +271,7 @@ def readOsm(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLa
         layers = allLayers[layername]
         fields = layers[0].fields()
 
+        # XXX prefix
         name = 'map-%s' % layername
 
         m = makeVector(typ, name)
@@ -219,7 +281,7 @@ def readOsm(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLa
         m.updateFields()
 
         for l in layers:
-            selectByLocation(l, 0, areas, 0)
+            selector(l)
             for f in l.selectedFeatures():
                 m.addFeature(f)
         m.commitChanges()
@@ -272,19 +334,19 @@ def getBoundingBox(l: QgsVectorLayer) -> QgsRectangle:
 
 def createEmptyPolygonGeoJSON(outGJ, rect: QgsRectangle):
     g = emptyPolygon(rect)
-    return createEmptyGeoJSON(outGJ, "Polygon", g)
+    return createEmptyGeoJSON(outGJ, "polygon", g)
 
 def createEmptyLineGeoJSON(outGJ, rect: QgsRectangle):
     g = emptyLine(rect)
-    return createEmptyGeoJSON(outGJ, "Line", g)
+    return createEmptyGeoJSON(outGJ, "line", g)
 
 def createEmptyMultiPointGeoJSON(outGJ, rect: QgsRectangle):
     g = emptyMultiPoint(rect)
-    return createEmptyGeoJSON(outGJ, "MultiPoint", g)
+    return createEmptyGeoJSON(outGJ, "multipoint", g)
 
 def createEmptyPointGeoJSON(outGJ, rect: QgsRectangle):
     g = emptyPoint(rect)
-    return createEmptyGeoJSON(outGJ, "Point", g)
+    return createEmptyGeoJSON(outGJ, "point", g)
 
 def emptyPoint(rect: QgsRectangle) -> QgsGeometry:
     (x1, y1, x2, y2) = rect2tuple(rect)
@@ -349,7 +411,7 @@ def createEmptyLayer(typ: str, g: QgsGeometry) -> QgsVectorLayer:
 
 def createPointGeoJSON(outGJ: str, p: QgsPoint) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
     g = QgsGeometry.fromPoint(p)
-    return createEmptyGeoJSON(outGJ, "Point", g)
+    return createEmptyGeoJSON(outGJ, "point", g)
 
 def createPrj(prjPath: str):
     if os.path.exists(prjPath):
@@ -382,7 +444,7 @@ def classifyGeometries1(l: QgsVectorLayer, areas: QgsVectorLayer, predicate, pre
     fields = QgsFields()
     fields.append(QgsField('areas_%s' % predicateName, QVariant.Int))
 
-    m = makeVector("Polygon", "XXX")
+    m = makeVector("polygon", "XXX")
     m.startEditing()
     md = m.dataProvider()
     md.addAttributes(fields)
@@ -404,7 +466,7 @@ def classifyGeometries1(l: QgsVectorLayer, areas: QgsVectorLayer, predicate, pre
         1
     )
 
-def extractFields(l: QgsVectorLayer, typ: str, field: QgsField, pattern: str) -> QgsVectorLayer:
+def extractFields(l: QgsVectorLayer, typ: str, field: str, pattern: str) -> QgsVectorLayer:
     m = makeVector(typ, "XXX")
     m.startEditing()
     l.selectAll()
@@ -429,7 +491,7 @@ def guessOrigin(l: QgsVectorLayer) -> typing.Union[QgsVectorLayer, None]:
         p0 = QgsPointXY(oX, oY)
         mp = [p0]
         g = QgsGeometry.fromMultiPointXY(mp)
-        return createEmptyLayer("Point", g)
+        return createEmptyLayer("point", g)
     return None
 
 # Represent 'areas' information in one integer (0xef)
@@ -469,7 +531,7 @@ def tagAddresses(al: QgsVectorLayer, fname: str, srcShp, dstShp) -> QgsVectorLay
     fields = QgsFields()
     fields.append(QgsField(fname, QVariant.Int))
 
-    m = makeVector("Polygon", "XXX")
+    m = makeVector("polygon", "XXX")
     m.startEditing()
     md = m.dataProvider()
     md.addAttributes(fields)
@@ -571,7 +633,7 @@ def createMeasures() -> QgsVectorLayer:
     fields.append(QgsField('distance', QVariant.Double))
     fields.append(QgsField('ellipsoidal.distance', QVariant.Double))
 
-    m = makeVector("LineString", "XXX")
+    m = makeVector("linestring", "XXX")
     m.startEditing()
     md = m.dataProvider()
     md.addAttributes(fields)
@@ -595,7 +657,7 @@ def fixupAttributes(prefix: str, l: QgsVectorLayer, outGeoJSON, origin: QgsPoint
     fields.append(QgsField('rank', QVariant.Double))
     fields.append(QgsField('address', QVariant.String))
 
-    m: QgsVectorLayer = makeVector("Polygon", "XXX")
+    m: QgsVectorLayer = makeVector("polygon", "XXX")
     m.startEditing()
     md: QgsVectorDataProvider = m.dataProvider()
     md.addAttributes(fields)
@@ -673,5 +735,8 @@ def copyFeature(f: QgsFeature, fields: QgsFields) -> QgsFeature:
 def openVector(uri: str, name: str) -> QgsVectorLayer:
     return QgsVectorLayer(uri, name, "ogr")
 
+# https://qgis.org/pyqgis/master/core/QgsVectorLayer.html
+# memory data provider
+# “point”, “linestring”, “polygon”, “multipoint”, ”multilinestring”, ”multipolygon”
 def makeVector(uri: str, name: str) -> QgsVectorLayer:
     return QgsVectorLayer(uri, name, "memory")
