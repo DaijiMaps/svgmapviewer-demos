@@ -1,4 +1,5 @@
 import decimal
+import glob
 import math
 import os
 import os.path
@@ -27,61 +28,6 @@ prj: QgsProject = None
 
 #### COMMON FILES
 
-# Name/map*.osm
-# Name/map.qgz
-# Name/areas.geojson
-# Name/origin.geojson
-# Name/measures.geojson
-# Name/map-points.geojson
-# Name/map-lines.geojson
-# Name/map-multilinestrings.geojson
-# Name/map-multipolygons.geojson
-# Name/map-other_relations.geojson
-
-class Context:
-    prefix = ''
-    prjdir = ''
-    prj = ''
-
-    areasGJ = ''
-    areas_extentGJ = ''
-    originGJ = ''
-    measuresGJ = ''
-
-    map_pointsGJ = ''
-    map_linesGJ = ''
-    map_multilinestringsGJ = ''
-    map_multipolygonsGJ = ''
-    map_other_relationsGJ = ''
-
-    def __init__(self, prefix: str):
-        pwd = os.getcwd()
-        prjdir = '%s/%s' % (pwd, prefix)
-
-        self.prefix = prefix
-        self.prjdir = prjdir
-
-        self.prj = '%s/map.qgz' % prjdir
-
-        self.areasGJ = '%s/areas.geojson' % prjdir
-        self.areas_extentGJ = '%s/areas_extent.geojson' % prjdir
-        self.originGJ = '%s/origin.geojson' % prjdir
-        self.measuresGJ = '%s/measures.geojson' % prjdir
-
-        self.pointsGJ = '%s/map-points.geojson' % prjdir
-        self.linesGJ = '%s/map-lines.geojson' % prjdir
-        self.multilinestringsGJ = '%s/map-multilinestrings.geojson' % prjdir
-        self.multipolygonsGJ = '%s/map-multipolygons.geojson' % prjdir
-        self.other_relationsGJ = '%s/map-other_relations.geojson' % prjdir
-
-################################################################################
-
-def exit():
-    global qgs
-    qgs.exitQgis()
-    del qgs
-    print('DONE!')
-
 def path2name(p) -> str:
     return pathlib.PurePath(os.path.basename(p)).stem
 
@@ -105,6 +51,67 @@ osmLayerNames = [
     ('multilinestrings', 'multilinestring'),
     #('other_relations', 'Polygon')
 ]
+
+# Name/map*.osm
+# Name/map.qgz
+# Name/areas.geojson
+# Name/origin.geojson
+# Name/measures.geojson
+# Name/map-points.geojson
+# Name/map-lines.geojson
+# Name/map-multilinestrings.geojson
+# Name/map-multipolygons.geojson
+# Name/map-other_relations.geojson
+
+class Context:
+    prefix = ''
+    prjdir = ''
+    prj = ''
+    srcdir = ''
+
+    osmFiles = []
+
+    areasGJ = ''
+    areas_extentGJ = ''
+    originGJ = ''
+    measuresGJ = ''
+
+    # points, lines, multilinestrings, multipolygons, other_relations
+    map_layerGJs = {}
+
+    def __init__(self):
+        prjdir = os.getcwd()
+        prefix = os.path.basename(prjdir)
+        srcdir = '%s/src/data' % prjdir
+
+        self.prefix = prefix
+        self.prjdir = prjdir
+        self.srcdir = srcdir
+
+        self.prj = '%s/map.qgz' % prjdir
+
+        # XXX osmFiles must NOT be []
+        self.osmFiles = glob.glob('%s/map*.osm' % prjdir)
+
+        self.areasGJ = '%s/areas.geojson' % srcdir
+        self.areas_extentGJ = '%s/areas_extent.geojson' % srcdir
+        self.originGJ = '%s/origin.geojson' % srcdir
+        self.measuresGJ = '%s/measures.geojson' % srcdir
+
+        for (layername, _) in osmLayerNames:
+            self.map_layerGJs[layername] = '%s/map-%s.geojson' % (srcdir, layername)
+
+addrTmpl = 'A-1f-%s-%s-%d'
+
+ctx = Context()
+
+################################################################################
+
+def exit():
+    global qgs
+    qgs.exitQgis()
+    del qgs
+    print('DONE!')
 
 ################################################################################
 
@@ -246,21 +253,21 @@ def filter(l: QgsVectorLayer, typ: str, exp: str) -> QgsVectorLayer:
 
 #### OTHER OPERATIONS
 
-def readOsmAll(osmFiles: list[str]) -> dict[str, QgsVectorLayer]:
+def readOsmAll() -> dict[str, QgsVectorLayer]:
     selector: typing.Callable[[QgsVectorLayer], None] = lambda l: l.selectAll()
-    return readOsm(osmFiles, selector)
+    return readOsm(selector)
 
-def readOsmByAreas(osmFiles: list[str], areas: QgsVectorLayer) -> dict[str, QgsVectorLayer]:
+def readOsmByAreas(areas: QgsVectorLayer) -> dict[str, QgsVectorLayer]:
     selector: typing.Callable[[QgsVectorLayer], None] = lambda l: selectByLocation(l, 0, areas, 0)
-    return readOsm(osmFiles, selector)
+    return readOsm(selector)
 
-def readOsm(osmFiles: list[str], selector: typing.Callable[[QgsVectorLayer], None]) -> dict[str, QgsVectorLayer]:
+def readOsm(selector: typing.Callable[[QgsVectorLayer], None]) -> dict[str, QgsVectorLayer]:
     allLayers: dict[str, list[QgsVectorLayer]] = {}
     mapLayers: dict[str, QgsVectorLayer] = {}
 
     for (layername, typ) in osmLayerNames:
         layers: list[QgsVectorLayer] = []
-        for osm in osmFiles:
+        for osm in ctx.osmFiles:
             uri = '%s|layername=%s' % (osm, layername)
             name = path2name(osm)
             l = openVector(uri, name)
@@ -413,22 +420,22 @@ def createPointGeoJSON(outGJ: str, p: QgsPoint) -> tuple[QgsVectorFileWriter.Wri
     g = QgsGeometry.fromPoint(p)
     return createEmptyGeoJSON(outGJ, "point", g)
 
-def createPrj(prjPath: str):
-    if os.path.exists(prjPath):
+def createPrj():
+    if os.path.exists(ctx.prj):
         return
 
     global prj
     prj = QgsProject.instance()
     # XXX Add known vector layers
-    prj.write(prjPath)
+    prj.write(ctx.prj)
 
-def openPrj(prjPath: str):
-    if not os.path.exists(prjPath):
+def openPrj():
+    if not os.path.exists(ctx.prj):
         return
 
     global prj
     prj = QgsProject.instance()
-    prj.read(prjPath)
+    prj.read(ctx.prj)
 
 def classifyGeometries(l: QgsVectorLayer, areas: QgsVectorLayer) -> QgsVectorLayer:
     # - Classify each geometry in l by location
@@ -560,7 +567,8 @@ def tagAddresses(al: QgsVectorLayer, fname: str, srcShp, dstShp) -> QgsVectorLay
     #olayers.append(out)
     #return mergeVectorLayers(olayers, dstShp)
 
-def getAreas(gj: str) -> QgsVectorLayer:
+def getAreas() -> QgsVectorLayer:
+    gj = ctx.areasGJ
     return openVector('%s|geometrytype=MultiPolygon' % gj, "areas")
 
 def getOrigin(gj: str) -> QgsPoint:
