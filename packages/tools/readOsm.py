@@ -19,7 +19,7 @@ for (layername, _) in common.osmLayerNames:
 
 centroids = common.centroids(mapLayers['multipolygons'], 'memory:')
 gj = '%s/map-centroids.geojson' % common.ctx.srcdir
-common.dumpGeoJSON(l, gj)
+common.dumpGeoJSON(centroids, gj)
 
 common.exit()
 
