@@ -53,16 +53,16 @@ osmLayerNames = [
     #('other_relations', 'Polygon')
 ]
 
-# Name/map*.osm
-# Name/map.qgz
-# Name/areas.geojson
-# Name/origin.geojson
-# Name/measures.geojson
-# Name/map-points.geojson
-# Name/map-lines.geojson
-# Name/map-multilinestrings.geojson
-# Name/map-multipolygons.geojson
-# Name/map-other_relations.geojson
+# ./map*.osm
+# ./map.qgz
+# ./src/data/areas.geojson
+# ./src/data/origin.geojson
+# ./src/data/measures.geojson
+# ./src/data/map-points.geojson
+# ./src/data/map-lines.geojson
+# ./src/data/map-multilinestrings.geojson
+# ./src/data/map-multipolygons.geojson
+# ./src/data/map-other_relations.geojson
 
 class Context:
     prefix = ''
@@ -76,6 +76,7 @@ class Context:
     areas_extentGJ = ''
     originGJ = ''
     measuresGJ = ''
+    viewboxGJ = ''
 
     # points, lines, multilinestrings, multipolygons, other_relations
     map_layerGJs = {}
@@ -98,6 +99,7 @@ class Context:
         self.areas_extentGJ = '%s/areas_extent.geojson' % srcdir
         self.originGJ = '%s/origin.geojson' % srcdir
         self.measuresGJ = '%s/measures.geojson' % srcdir
+        self.viewboxGJ = '%s/viewbox.geojson' % srcdir
 
         for (layername, _) in osmLayerNames:
             self.map_layerGJs[layername] = '%s/map-%s.geojson' % (srcdir, layername)
@@ -590,6 +592,34 @@ def getRoundedOrigin(extent: QgsVectorLayer) -> QgsPoint:
     y = roundFloatToFracPrec(p.y(), 6)
     return QgsPoint(x, y)
 
+def getViewbox():
+    extent = openVector('%s|geometrytype=Polygon' % ctx.areas_extentGJ, "areas_extent")
+    f = next(extent.getFeatures())
+    minx = float(f['MINX'])
+    miny = float(f['MINY'])
+    maxx = float(f['MAXX'])
+    maxy = float(f['MAXY'])
+    p: QgsPoint = QgsPoint(minx, maxy)
+    q: QgsPoint = QgsPoint(maxx, miny)
+
+    o: QgsPoint = getOrigin(ctx.originGJ)
+
+    lop = QgsGeometry.fromPolyline(QgsLineString([o, p]))
+    lpq = QgsGeometry.fromPolyline(QgsLineString([p, q]))
+
+    m = createMeasures()
+    fields = m.fields()
+
+    m.startEditing()
+    for l in [lop, lpq]:
+        f = QgsFeature()
+        f.setGeometry(l)
+        f.setFields(fields)
+        m.addFeature(f)
+    m.commitChanges()
+
+    return m
+
 # if fracprec = 3:
 # 1.11111 -> 1.111
 # 11.11111 -> 11.111
@@ -613,8 +643,8 @@ def getMeasures(extent: QgsVectorLayer, origin: QgsVectorLayer) -> QgsVectorLaye
     dp = o.distance(p.x(), p.y())
     dq = o.distance(q.x(), q.y())
 
-    lp = QgsGeometry.fromPolyline(QgsLineString(o, p))
-    lq = QgsGeometry.fromPolyline(QgsLineString(o, q))
+    lp = QgsGeometry.fromPolyline(QgsLineString([o, p]))
+    lq = QgsGeometry.fromPolyline(QgsLineString([o, q]))
     invx = -1 if (o.x() > p.x()) else 1
     invy = -1 if (o.y() < q.y()) else 1
     edp = calcEllipsoidalDistance(lp) * invx
@@ -641,6 +671,18 @@ def createMeasures() -> QgsVectorLayer:
     fields.append(QgsField('direction', QVariant.String))
     fields.append(QgsField('distance', QVariant.Double))
     fields.append(QgsField('ellipsoidal.distance', QVariant.Double))
+
+    m = makeVector("linestring", "XXX")
+    m.startEditing()
+    md = m.dataProvider()
+    md.addAttributes(fields)
+    m.updateFields()
+    m.commitChanges()
+
+    return m
+
+def createViewbox() -> QgsVectorLayer:
+    fields = QgsFields()
 
     m = makeVector("linestring", "XXX")
     m.startEditing()
