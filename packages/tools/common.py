@@ -154,7 +154,7 @@ def mergeVectorLayers(layers: list[str], dst: QgsVectorLayer) -> QgsVectorLayer:
         'OUTPUT' : dst
     }
     print(p)
-    return processing.run("qgis:mergevectorlayers", p, geometryCheck = QgsFeatureRequest.GeometrySkipInvalid)['OUTPUT']
+    return processing.run("qgis:mergevectorlayers", p, context = context)['OUTPUT']
 
 def fixGeometries(src: QgsVectorLayer, dst: QgsVectorLayer) -> QgsVectorLayer:
     p = {
@@ -512,6 +512,8 @@ def extractFields(l: QgsVectorLayer, typ: str, field: str, pattern: str) -> QgsV
     count = 0
     for f in l.selectedFeatures():
         v = f[field]
+        if v == None or v == 'NULL':
+            continue
         print("field: %s" % v)
         if p.match(str(v)) != None:
             print("extractFields: match!")

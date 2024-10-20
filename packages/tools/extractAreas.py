@@ -13,11 +13,16 @@ import common
 
 common.openPrj()
 
-srcGJ = common.ctx.map_layerGJs['multipolygons']
-print('GJ=%s' % srcGJ)
-s = common.openVector(srcGJ, 'map-multipolygons')
+#srcGJ = common.ctx.map_layerGJs['multipolygons']
+#print('GJ=%s' % srcGJ)
+#s = common.openVector(srcGJ, 'map-multipolygons')
+
+mapLayers = common.readOsmAll()
+s = mapLayers['multipolygons']
+
 print(s)
 print(next(s.getFeatures()))
+
 olayers = []
 while len(args) > 0:
     field = args[0]
