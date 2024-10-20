@@ -1,0 +1,103 @@
+.content.svg {
+  background-color: rgba(204, 204, 204, 0.5);
+}
+
+.map {
+}
+
+.area {
+  fill: #88aa00;
+  fill-opacity: 0.5;
+}
+
+.building {
+  fill: lightgray;
+}
+
+.pedestrian-area {
+  fill: white;
+  stroke: white;
+  stroke-width: 0.5px;
+}
+
+.water {
+  fill: #aaeeff;
+}
+
+.stream {
+  fill: none;
+  stroke: #aaeeff;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.forest {
+  fill: darkgreen;
+  fill-opacity: 0.25;
+}
+
+.road {
+  fill: none;
+  stroke: gainsboro;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service {
+  fill: none;
+  stroke: gainsboro;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cycleway {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footway {
+  fill: none;
+  stroke: white;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footway-bridge {
+  fill: none;
+  stroke: black;
+  stroke-width: 4px;
+}
+
+.steps > .bg {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1px;
+}
+.steps > .fg {
+  fill: none;
+  stroke: gainsboro;
+  stroke-width: 1px;
+  stroke-dasharray: 0.5, 0.5;
+}
+
+.wall {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+text,
+tspan {
+  font-size: 2.5px;
+  font-weight: initial;
+  text-anchor: middle;
+}
