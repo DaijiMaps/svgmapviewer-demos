@@ -54,7 +54,7 @@ function Areas() {
 
 function Buildings() {
   const xs: MultiPolygon[] = svgMapViewerConfig.mapData.multipolygons.features
-    .filter((f) => f.properties.building !== null)
+    .filter((f) => f.properties.building?.match(/./))
     .map((f) => f.geometry.coordinates) as MultiPolygon[]
 
   const d = xs.map(multiPolygonToPath).join('')
@@ -74,7 +74,7 @@ function PedestrianAreas() {
 
 function Waters() {
   const xs = svgMapViewerConfig.mapData.multipolygons.features
-    .filter((f) => f.properties.natural === 'water')
+    .filter((f) => f.properties.natural?.match(/water/))
     .map((f) => f.geometry.coordinates) as MultiPolygon[]
 
   const d = xs.map(multiPolygonToPath).join('')
@@ -84,7 +84,7 @@ function Waters() {
 
 function Streams() {
   const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) => f.properties.waterway === 'stream')
+    .filter((f) => f.properties.waterway?.match(/stream/))
     .map((f) => f.geometry.coordinates) as Line[]
 
   const d = xs.map(lineToPath).join('')
@@ -94,7 +94,7 @@ function Streams() {
 
 function Forests() {
   const xs = svgMapViewerConfig.mapData.multipolygons.features
-    .filter((f) => f.properties.landuse === 'forest')
+    .filter((f) => f.properties.landuse?.match(/forest/))
     .map((f) => f.geometry.coordinates) as MultiPolygon[]
 
   const d = xs.map(multiPolygonToPath).join('')
@@ -104,14 +104,9 @@ function Forests() {
 
 function Roads() {
   const xs = svgMapViewerConfig.mapData.lines.features
-    .filter( (f) =>
-      f.properties.highway !== null &&
-      f.properties.highway !== 'footway' &&
-      f.properties.highway !== 'path' &&
-      f.properties.highway !== 'steps' &&
-      f.properties.highway !== 'pedestrian' &&
-      f.properties.highway !== 'cycleway' &&
-      f.properties.highway !== 'service')
+    .filter((f) =>
+      f.properties.highway?.match(/footway|path|steps|pedestrian|cycleway|service/)
+    )
     .map((f) => f.geometry.coordinates) as Line[]
 
   const d = xs.map(lineToPath).join('')
@@ -121,7 +116,7 @@ function Roads() {
 
 function Services() {
   const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) => f.properties.highway === 'service')
+    .filter((f) => f.properties.highway?.match(/service/))
     .map((f) => f.geometry.coordinates) as Line[]
 
   const d = xs.map(lineToPath).join('')
@@ -131,7 +126,7 @@ function Services() {
 
 function Cycleways() {
   const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) => f.properties.highway === 'cycleway')
+    .filter((f) => f.properties.highway?.match(/cycleway/))
     .map((f) => f.geometry.coordinates) as Line[]
 
   const d = xs.map(lineToPath).join('')
@@ -144,8 +139,8 @@ function Bridges() {
   const xs = svgMapViewerConfig.mapData.lines.features
     .filter(
       (f) =>
-        (f.properties.highway === 'footway' ||
-          f.properties.highway === 'pedestrian') &&
+        (f.properties.highway?.match(/footway/) ||
+          f.properties.highway?.match(/pedestrian/)) &&
         f.properties.other_tags?.match(/"bridge"/)
     )
     .map((f) => f.geometry.coordinates) as Line[]
@@ -160,10 +155,7 @@ function Footways() {
   const xs = svgMapViewerConfig.mapData.lines.features
     .filter(
       (f) =>
-        f.properties.highway === 'path' ||
-        f.properties.highway === 'footway' ||
-        f.properties.highway === 'steps' ||
-        f.properties.highway === 'pedestrian'
+        f.properties.highway?.match(/path|footway|steps|pedestrian/)
     )
     .map((f) => f.geometry.coordinates) as Line[]
 
@@ -175,7 +167,7 @@ function Footways() {
 /*
 function Steps() {
   const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) => f.properties.highway === 'steps')
+    .filter((f) => f.properties.highway?.match(/steps/))
     .map((f) => f.geometry.coordinates) as Line[]
 
   const d = xs.map(lineToPath).join('')
@@ -193,10 +185,7 @@ function Walls() {
   const xs = svgMapViewerConfig.mapData.lines.features
     .filter(
       (f) =>
-        f.properties.barrier !== null ||
-        f.properties.barrier === 'wall' ||
-        f.properties.barrier === 'fence' ||
-        f.properties.barrier === 'retaining_wall'
+        f.properties.barrier?.match(/wall|fence|retaining_wall/)
     )
     .map((f) => f.geometry.coordinates) as Line[]
 
@@ -218,41 +207,36 @@ function Objects() {
 }
 
 function Benches() {
-  const re = /"bench"/
   const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(re),
+    points: (f) => !!f.properties.other_tags?.match(/"bench"/),
   })
   return <RenderObjects width={0.05} path={BenchPath} vs={vs} />
 }
 
 function GuidePosts() {
-  const re = /"guidepost"/
   const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(re),
+    points: (f) => !!f.properties.other_tags?.match(/"guidepost"/),
   })
   return <RenderObjects width={0.05} path={GuidePostPath} vs={vs} />
 }
 
 function InfoBoards() {
-  const re = /"information"=>"(board|map)"/
   const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(re),
+    points: (f) => !!f.properties.other_tags?.match(/"information"=>"(board|map)"/),
   })
   return <RenderObjects width={0.05} path={InfoBoardPath} vs={vs} />
 }
 
 function Monuments() {
-  const re = /"historic"=>"(historial|monument)"/
   const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(re),
+    points: (f) => !!f.properties.other_tags?.match(/"historic"=>"(historial|monument)"/),
   })
   return <RenderObjects width={0.05} path={MonumentPath} vs={vs} />
 }
 
 function Trees() {
-  const re = /"tree"/
   const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(re),
+    points: (f) => !!f.properties.other_tags?.match(/"tree"/),
   })
   return (
     <>
@@ -277,7 +261,7 @@ function Toilets(props: { sz: number }) {
     points: (f) => !!f.properties.other_tags?.match(/"toilets"/),
     centroids: (f) =>
       !!f.properties.other_tags?.match(/"toilets"/) ||
-      f.properties.amenity === 'toilets',
+      f.properties.amenity?.match(/toilets/),
   })
   return <RenderUses href="#XToilets" vs={vs} sz={props.sz} />
 }
