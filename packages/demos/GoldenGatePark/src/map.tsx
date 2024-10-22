@@ -37,6 +37,7 @@ export function RenderMap(props: RenderMapProps) {
         </g>
         <Objects />
         <Facilities {...props} />
+        <Markers {...props} />
       </g>
     </>
   )
@@ -105,7 +106,8 @@ function Forests() {
 function Roads() {
   const xs = svgMapViewerConfig.mapData.lines.features
     .filter((f) =>
-      f.properties.highway?.match(/footway|path|steps|pedestrian|cycleway|service/)
+      f.properties.highway?.match(/./) &&
+      !f.properties.highway?.match(/footway|path|steps|pedestrian|cycleway|service/)
     )
     .map((f) => f.geometry.coordinates) as Line[]
 
@@ -234,6 +236,13 @@ function Monuments() {
   return <RenderObjects width={0.05} path={MonumentPath} vs={vs} />
 }
 
+function NamedMonuments(props: { sz: numberr }) {
+  const vs = getAll({
+    points: (f) => f.properties.name?.match(/./),
+  })
+  return <RenderMarkers vs={vs} sz={props.sz} />
+}
+
 function Trees() {
   const vs = getAll({
     points: (f) => !!f.properties.other_tags?.match(/"tree"/),
@@ -245,9 +254,19 @@ function Trees() {
   )
 }
 
+function Markers(props: RenderMapProps) {
+  const { config, svgScale } = props.layout
+  const sz = svgScale.s * config.fontSize * 0.9
+  return (
+    <g>
+      <NamedMonuments sz={sz} />
+    </g>
+  )
+}
+
 function Facilities(props: RenderMapProps) {
   const { config, svgScale } = props.layout
-  const sz = svgScale.s / config.fontSize * 0.9
+  const sz = svgScale.s * config.fontSize * 0.9
   return (
     <g>
       <Toilets sz={sz} />
@@ -279,7 +298,7 @@ function RenderUses(props: { href: string; vs: V[]; sz: number }) {
   return (
     <>
       {props.vs.map(([x, y], idx) => (
-        <use key={idx} href={props.href} transform={`translate(${x}, ${y}) scale(${props.sz * 72 * 0.625})`} />
+        <use key={idx} href={props.href} transform={`translate(${x}, ${y}) scale(${props.sz / 72 * 1.25})`} />
       ))}
     </>
   )
@@ -292,6 +311,20 @@ function RenderObjects(props: { width: number; path: string; vs: V[] }) {
       stroke="black"
       strokeWidth={props.width}
       d={props.vs.map(([x, y]) => `M ${x},${y}` + props.path).join('')}
+    />
+  )
+}
+
+function RenderMarkers(props: { vs: V[]; sz: number }) {
+  const h = props.sz * 1 / 2
+  const r = Math.sqrt(2) * h
+  return (
+    <path
+      fill="white"
+      fillOpacity="1"
+      stroke="gray"
+      strokeWidth={r / 20}
+      d={props.vs.map(([x, y]) => `M ${x},${y} l ${-h},${-h} a ${r},${r} 0,1,1 ${2*h},0 z`).join('')}
     />
   )
 }

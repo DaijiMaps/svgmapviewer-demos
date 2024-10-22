@@ -21,7 +21,7 @@ export const configUser = {
   mapData,
   mapCoord,
   mapHtmlStyle,
-  mapNames,
+  //mapNames,
 }
 
 svgmapviewer(configUser)
