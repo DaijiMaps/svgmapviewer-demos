@@ -826,3 +826,37 @@ def openVector(uri: str, name: str) -> QgsVectorLayer:
 # geometry type: “point”, “linestring”, “polygon”, “multipoint”, ”multilinestring”, ”multipolygon”
 def makeVector(uri: str, name: str) -> QgsVectorLayer:
     return QgsVectorLayer(uri, name, "memory")
+
+####
+
+def makeExtent():
+    areas = openVector(ctx.areasGJ, "areas")
+
+    extent = getExtent(areas, 'memory:')
+    res = dumpGeoJSON(extent, ctx.areas_extentGJ)
+    print(res)
+
+def makeOrigin():
+    areas = openVector(ctx.areasGJ, "areas")
+    extent = openVector(ctx.areas_extentGJ, "areas_extent")
+
+    origin = getRoundedOrigin(extent)
+    res = createPointGeoJSON(ctx.originGJ, origin)
+    print(res)
+
+def makeMeasures():
+    areas = openVector(ctx.areasGJ, "areas")
+    extent = openVector(ctx.areas_extentGJ, "areas_extent")
+    origin = openVector(ctx.originGJ, "origin")
+
+    measures = getMeasures(extent, origin)
+    res = dumpGeoJSON(measures, ctx.measuresGJ)
+    print(res)
+
+def makeViewbox():
+    extent = openVector(ctx.areas_extentGJ, "areas_extent")
+    origin = openVector(ctx.originGJ, "origin")
+
+    viewbox = getViewbox()
+    res = dumpGeoJSON(viewbox, ctx.viewboxGJ)
+    print(res)

@@ -5,9 +5,9 @@ import sys
 
 import common
 
-####
-
 common.openPrj()
+
+####
 
 areas = common.openVector(common.ctx.areasGJ, "areas")
 
@@ -19,6 +19,8 @@ measures = common.getMeasures(extent, origin)
 
 res = common.dumpGeoJSON(measures, common.ctx.measuresGJ)
 print(res)
+
+####
 
 common.exit()
 

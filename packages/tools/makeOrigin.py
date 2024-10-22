@@ -5,9 +5,9 @@ import sys
 
 import common
 
-####
-
 common.openPrj()
+
+####
 
 areas = common.openVector(common.ctx.areasGJ, "areas")
 
@@ -24,6 +24,8 @@ print(origin.y())
 # XXX save origin.geojson
 res = common.createPointGeoJSON(common.ctx.originGJ, origin)
 print(res)
+
+####
 
 common.exit()
 
