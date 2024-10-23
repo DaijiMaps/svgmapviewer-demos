@@ -17,7 +17,6 @@ import {
 } from '@daijimaps/svgmapviewer/carto-objects'
 import { MultiPolygon, PointGeoJSON } from '@daijimaps/svgmapviewer/geo'
 import { V } from '@daijimaps/svgmapviewer/tuple'
-import { RenderMapAssets } from './map-assets'
 import { conv } from './map-data'
 import './map.css'
 
