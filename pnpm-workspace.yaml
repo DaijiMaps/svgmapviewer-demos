@@ -4,4 +4,5 @@ packages:
   - 'packages/demos/KodomoNoKuni'
   - 'packages/demos/Sankeien'
   - 'packages/demos/ShinjukuGyoenNationalPark'
+  - 'packages/demos/Yugyoji'
   - 'packages/tools'

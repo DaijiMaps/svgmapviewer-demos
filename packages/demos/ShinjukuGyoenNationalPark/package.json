@@ -19,7 +19,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@daijimaps/svgmapviewer": "link:../../svgmapviewer",
     "@xstate/react": "^4.1.3",
     "flatbush": "^4.4.0",
     "react": "^18.3.1",
