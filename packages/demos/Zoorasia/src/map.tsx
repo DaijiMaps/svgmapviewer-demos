@@ -31,7 +31,9 @@ export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'forest',
-    filter: (f) => !!f.properties.landuse?.match(/forest/),
+    filter: (f) =>
+      !!f.properties.landuse?.match(/forest/) ||
+      !!f.properties.natural?.match(/wood/),
   },
   {
     type: 'multipolygon',
@@ -49,11 +51,6 @@ export const getMapLayers: () => MapLayer[] = () => [
     filter: (f) => !!f.properties.building?.match(/./),
   },
   {
-    type: 'line',
-    name: 'service',
-    filter: (f) => !!f.properties.highway?.match(/^(service)$/),
-  },
-  {
     type: 'multipolygon',
     name: 'pedestrian-area',
     filter: (f) => !!f.properties.other_tags?.match(/"pedestrian"/),
@@ -66,15 +63,8 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
-    name: 'cycleway',
-    filter: (f) =>
-      !!f.properties.highway?.match(/^(cycleway)$/),
-  },
-  {
-    type: 'line',
     name: 'service',
-    filter: (f) =>
-      !!f.properties.highway?.match(/^(service)$/),
+    filter: (f) => !!f.properties.highway?.match(/^(service)$/),
   },
   {
     type: 'line',
@@ -82,6 +72,11 @@ export const getMapLayers: () => MapLayer[] = () => [
     filter: (f) =>
       !!f.properties.highway?.match(/./) &&
       !f.properties.highway?.match(/^(footway|path|pedestrian|steps|cycleway|service)$/),
+  },
+  {
+    type: 'line',
+    name: 'hedge',
+    filter: (f) => !!f.properties.barrier?.match(/^(hedge)$/),
   },
   {
     type: 'line',

@@ -1,13 +1,13 @@
 .content.svg {
-  background-color: rgba(204, 204, 204, 0.5);
+  background-color: darkgrey;
 }
 
 .map {
 }
 
 .area {
-  fill: #88aa00;
-  fill-opacity: 0.5;
+  fill: #bcd35f;
+  fill-opacity: 1;
 }
 
 .building {

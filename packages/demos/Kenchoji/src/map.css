@@ -39,7 +39,7 @@
 
 .road {
   fill: none;
-  stroke: gainsboro;
+  stroke: whitesmoke;
   stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -47,7 +47,7 @@
 
 .service {
   fill: none;
-  stroke: gainsboro;
+  stroke: whitesmoke;
   stroke-width: 4px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -87,6 +87,15 @@
   stroke: gainsboro;
   stroke-width: 1px;
   stroke-dasharray: 0.5, 0.5;
+}
+
+.hedge {
+  fill: none;
+  stroke: green;
+  stroke-opacity: 0.5;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .wall {
