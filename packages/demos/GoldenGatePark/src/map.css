@@ -1,13 +1,13 @@
 .content.svg {
-  background-color: rgba(204, 204, 204, 0.5);
+  background-color: grey;
 }
 
 .map {
 }
 
 .area {
-  fill: #88aa00;
-  fill-opacity: 0.5;
+  fill: #bcd35f;
+  fill-opacity: 1;
 }
 
 .building {
@@ -39,7 +39,7 @@
 
 .road {
   fill: none;
-  stroke: gainsboro;
+  stroke: whitesmoke;
   stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -47,7 +47,7 @@
 
 .service {
   fill: none;
-  stroke: gainsboro;
+  stroke: whitesmoke;
   stroke-width: 4px;
   stroke-linecap: round;
   stroke-linejoin: round;
