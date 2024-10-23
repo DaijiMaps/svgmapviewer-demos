@@ -21,21 +21,7 @@ import { RenderMapAssets } from './map-assets'
 import { conv } from './map-data'
 import './map.css'
 
-export function RenderMap(props: RenderMapProps) {
-  return (
-    <>
-      <RenderMapAssets />
-      <g id={svgMapViewerConfig.map} className="map">
-        <RenderMapLayers mapLayers={getMapLayers()} />
-        <RenderMapObjects mapObjects={getMapObjects()} />
-        <RenderMapSymbols {...props} mapSymbols={getMapSymbols()} />
-        <RenderMapMarkers {...props} mapMarkers={getMapMarkers()} />
-      </g>
-    </>
-  )
-}
-
-const getMapLayers: () => MapLayer[] = () => [
+export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'area',
@@ -91,7 +77,7 @@ const getMapLayers: () => MapLayer[] = () => [
   },
 ]
 
-const getMapObjects: () => MapObjects[] = () => [
+export const getMapObjects: () => MapObjects[] = () => [
   {
     name: 'benches',
     path: benchPath,
@@ -119,7 +105,7 @@ const getMapObjects: () => MapObjects[] = () => [
   },
 ]
 
-const getMapSymbols: () => MapSymbols[] = () => [
+export const getMapSymbols: () => MapSymbols[] = () => [
   {
     name: 'toilets',
     href: '#XToilets',
@@ -136,7 +122,7 @@ const getMapSymbols: () => MapSymbols[] = () => [
   },
 ]
 
-const getMapMarkers: () => MapMarkers[] = () => [
+export const getMapMarkers: () => MapMarkers[] = () => [
   {
     name: 'all',
     pointsFilter: (f) => !!f.properties.name?.match(/./),
