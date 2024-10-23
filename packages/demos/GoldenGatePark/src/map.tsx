@@ -1,364 +1,149 @@
-import { svgMapViewerConfig } from '@daijimaps/svgmapviewer'
+import { RenderMapProps, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
-  Layout,
-  Line,
-  lineToPath,
-  MultiPolygon,
-  multiPolygonToPath,
-  RenderMapProps,
-} from '@daijimaps/svgmapviewer/geo'
+  MapLayer,
+  MapMarkers,
+  MapObjects,
+  MapSymbols,
+  RenderMapLayers,
+  RenderMapMarkers,
+  RenderMapObjects,
+  RenderMapSymbols,
+} from '@daijimaps/svgmapviewer/carto'
+import {
+  benchPath,
+  guidePostPath,
+  infoBoardPath,
+  tree4x8Path,
+} from '@daijimaps/svgmapviewer/carto-objects'
+import { MultiPolygon, PointGeoJSON } from '@daijimaps/svgmapviewer/geo'
 import { V } from '@daijimaps/svgmapviewer/tuple'
-import { Assets } from './map-assets'
-import { getAll } from './map-data'
+import { RenderMapAssets } from './map-assets'
+import { conv } from './map-data'
 import './map.css'
-import { BenchPath } from './objects/bench'
-import { GuidePostPath } from './objects/guide-post'
-import { InfoBoardPath } from './objects/info-board'
-import { MonumentPath } from './objects/monument'
-import { Tree8x8Path } from './objects/tree'
 
-export function RenderMap(props: RenderMapProps) {
-  return (
-    <>
-      <Assets />
-      <g id={svgMapViewerConfig.map} className="map">
-        <g>
-          <Areas />
-          <Buildings />
-          <Waters />
-          <Streams />
-          <PedestrianAreas />
-          <Footways />
-          <Cycleways />
-          <Services />
-          <Roads />
-          <Walls />
-          <Forests />
-        </g>
-        <Objects />
-        <Facilities {...props} />
-        <Markers {...props} />
-      </g>
-    </>
-  )
-}
+export const getMapLayers: () => MapLayer[] = () => [
+  {
+    type: 'multipolygon',
+    name: 'area',
+    data: svgMapViewerConfig.mapData.areas.features.map(
+      (f) => f.geometry.coordinates
+    ) as unknown as MultiPolygon[],
+  },
+  {
+    type: 'multipolygon',
+    name: 'water',
+    filter: (f) => !!f.properties.natural?.match(/^water$/),
+  },
+  {
+    type: 'line',
+    name: 'stream',
+    filter: (f) => !!f.properties.waterway?.match(/^(stream|ditch)$/),
+  },
+  {
+    type: 'multipolygon',
+    name: 'forest',
+    filter: (f) => !!f.properties.landuse?.match(/forest/),
+  },
+  {
+    type: 'multipolygon',
+    name: 'building',
+    filter: (f) => !!f.properties.building?.match(/./),
+  },
+  {
+    type: 'line',
+    name: 'service',
+    filter: (f) => !!f.properties.highway?.match(/^(service)$/),
+  },
+  {
+    type: 'multipolygon',
+    name: 'pedestrian-area',
+    filter: (f) => !!f.properties.other_tags?.match(/"pedestrian"/),
+  },
+  {
+    type: 'line',
+    name: 'footway',
+    filter: (f) =>
+      !!f.properties.highway?.match(/^(footway|path|pedestrian|steps)$/),
+  },
+  {
+    type: 'line',
+    name: 'cycleway',
+    filter: (f) =>
+      !!f.properties.highway?.match(/^(cycleway)$/),
+  },
+  {
+    type: 'line',
+    name: 'service',
+    filter: (f) =>
+      !!f.properties.highway?.match(/^(service)$/),
+  },
+  {
+    type: 'line',
+    name: 'road',
+    filter: (f) =>
+      !!f.properties.highway?.match(/./) &&
+      !f.properties.highway?.match(/^(footway|path|pedestrian|steps|cycleway|service)$/),
+  },
+  {
+    type: 'line',
+    name: 'wall',
+    filter: (f) => !!f.properties.barrier?.match(/^(wall|fence)$/),
+  },
+  {
+    type: 'line',
+    name: 'retaining-wall',
+    filter: (f) => !!f.properties.barrier?.match(/^(retaining_wall)$/),
+  },
+]
 
-function Areas() {
-  const xs: MultiPolygon[] = svgMapViewerConfig.mapData.areas.features.map(
-    (f) => f.geometry.coordinates
-  ) as MultiPolygon[]
+export const getMapObjects: () => MapObjects[] = () => [
+  {
+    name: 'benches',
+    path: benchPath,
+    width: 0.05,
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"bench"/),
+  },
+  {
+    name: 'guide-posts',
+    path: guidePostPath,
+    width: 0.05,
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"guidepost"/),
+  },
+  {
+    name: 'info-boards',
+    path: infoBoardPath,
+    width: 0.05,
+    pointsFilter: (f) =>
+      !!f.properties.other_tags?.match(/"information"=>"(board|map)"/),
+  },
+  {
+    name: 'trees1',
+    path: tree4x8Path,
+    width: 0.15,
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"tree"/),
+  },
+]
 
-  const d = xs.map(multiPolygonToPath).join('')
-
-  return <path className="area" d={d} />
-}
-
-function Buildings() {
-  const xs: MultiPolygon[] = svgMapViewerConfig.mapData.multipolygons.features
-    .filter((f) => f.properties.building?.match(/./))
-    .map((f) => f.geometry.coordinates) as MultiPolygon[]
-
-  const d = xs.map(multiPolygonToPath).join('')
-
-  return <path className="building" d={d} />
-}
-
-function PedestrianAreas() {
-  const xs: MultiPolygon[] = svgMapViewerConfig.mapData.multipolygons.features
-    .filter((f) => f.properties.other_tags?.match(/"pedestrian"/))
-    .map((f) => f.geometry.coordinates) as MultiPolygon[]
-
-  const d = xs.map(multiPolygonToPath).join('')
-
-  return <path className="pedestrian-area" d={d} />
-}
-
-function Waters() {
-  const xs = svgMapViewerConfig.mapData.multipolygons.features
-    .filter((f) => f.properties.natural?.match(/water/))
-    .map((f) => f.geometry.coordinates) as MultiPolygon[]
-
-  const d = xs.map(multiPolygonToPath).join('')
-
-  return <path className="water" d={d} />
-}
-
-function Streams() {
-  const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) => f.properties.waterway?.match(/stream/))
-    .map((f) => f.geometry.coordinates) as Line[]
-
-  const d = xs.map(lineToPath).join('')
-
-  return <path className="stream" d={d} />
-}
-
-function Forests() {
-  const xs = svgMapViewerConfig.mapData.multipolygons.features
-    .filter((f) => f.properties.landuse?.match(/forest/))
-    .map((f) => f.geometry.coordinates) as MultiPolygon[]
-
-  const d = xs.map(multiPolygonToPath).join('')
-
-  return <path className="forest" d={d} />
-}
-
-function Roads() {
-  const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) =>
-      f.properties.highway?.match(/./) &&
-      !f.properties.highway?.match(/footway|path|steps|pedestrian|cycleway|service/)
-    )
-    .map((f) => f.geometry.coordinates) as Line[]
-
-  const d = xs.map(lineToPath).join('')
-
-  return <path className="road" d={d} />
-}
-
-function Services() {
-  const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) => f.properties.highway?.match(/service/))
-    .map((f) => f.geometry.coordinates) as Line[]
-
-  const d = xs.map(lineToPath).join('')
-
-  return <path className="service" d={d} />
-}
-
-function Cycleways() {
-  const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) => f.properties.highway?.match(/cycleway/))
-    .map((f) => f.geometry.coordinates) as Line[]
-
-  const d = xs.map(lineToPath).join('')
-
-  return <path className="cycleway" d={d} />
-}
-
-/*
-function Bridges() {
-  const xs = svgMapViewerConfig.mapData.lines.features
-    .filter(
-      (f) =>
-        (f.properties.highway?.match(/footway/) ||
-          f.properties.highway?.match(/pedestrian/)) &&
-        f.properties.other_tags?.match(/"bridge"/)
-    )
-    .map((f) => f.geometry.coordinates) as Line[]
-
-  const d = xs.map(lineToPath).join('')
-
-  return <path className="footway-bridge" d={d} />
-}
-*/
-
-function Footways() {
-  const xs = svgMapViewerConfig.mapData.lines.features
-    .filter(
-      (f) =>
-        f.properties.highway?.match(/path|footway|steps|pedestrian/)
-    )
-    .map((f) => f.geometry.coordinates) as Line[]
-
-  const d = xs.map(lineToPath).join('')
-
-  return <path className="footway" d={d} />
-}
-
-/*
-function Steps() {
-  const xs = svgMapViewerConfig.mapData.lines.features
-    .filter((f) => f.properties.highway?.match(/steps/))
-    .map((f) => f.geometry.coordinates) as Line[]
-
-  const d = xs.map(lineToPath).join('')
-
-  return (
-    <g className="steps">
-      <path className="bg" d={d} />
-      <path className="fg" d={d} />
-    </g>
-  )
-}
-*/
-
-function Walls() {
-  const xs = svgMapViewerConfig.mapData.lines.features
-    .filter(
-      (f) =>
-        f.properties.barrier?.match(/wall|fence|retaining_wall/)
-    )
-    .map((f) => f.geometry.coordinates) as Line[]
-
-  const d = xs.map(lineToPath).join('')
-
-  return <path className="wall" d={d} />
-}
-
-function Objects() {
-  return (
-    <g>
-      <Benches />
-      <GuidePosts />
-      <InfoBoards />
-      <Monuments />
-      <Trees />
-    </g>
-  )
-}
-
-function Benches() {
-  const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(/"bench"/),
-  })
-  return <RenderObjects width={0.05} path={BenchPath} vs={vs} />
-}
-
-function GuidePosts() {
-  const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(/"guidepost"/),
-  })
-  return <RenderObjects width={0.05} path={GuidePostPath} vs={vs} />
-}
-
-function InfoBoards() {
-  const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(/"information"=>"(board|map)"/),
-  })
-  return <RenderObjects width={0.05} path={InfoBoardPath} vs={vs} />
-}
-
-function Monuments() {
-  const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(/"historic"=>"(historial|monument)"/),
-  })
-  return <RenderObjects width={0.05} path={MonumentPath} vs={vs} />
-}
-
-function NamedMonuments(props: { sz: numberr }) {
-  const vs = getAll({
-    points: (f) => f.properties.name?.match(/./),
-  })
-  return <RenderMarkers vs={vs} sz={props.sz} />
-}
-
-function Trees() {
-  const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(/"tree"/),
-  })
-  return (
-    <>
-      <RenderObjects width={0.15} path={Tree8x8Path} vs={vs} />
-    </>
-  )
-}
-
-function Markers(props: RenderMapProps) {
-  const { config, svgScale } = props.layout
-  const sz = svgScale.s * config.fontSize * 0.9
-  return (
-    <g>
-      <NamedMonuments sz={sz} />
-    </g>
-  )
-}
-
-function Facilities(props: RenderMapProps) {
-  const { config, svgScale } = props.layout
-  const sz = svgScale.s * config.fontSize * 0.9
-  return (
-    <g>
-      <Toilets sz={sz} />
-      <Parkings sz={sz} />
-    </g>
-  )
-}
-
-function Toilets(props: { sz: number }) {
-  const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(/"toilets"/),
-    centroids: (f) =>
+export const getMapSymbols: () => MapSymbols[] = () => [
+  {
+    name: 'toilets',
+    href: '#XToilets',
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"toilets"/),
+    centroidsFilter: (f) =>
       !!f.properties.other_tags?.match(/"toilets"/) ||
-      f.properties.amenity?.match(/toilets/),
-  })
-  return <RenderUses href="#XToilets" vs={vs} sz={props.sz} />
-}
+      f.properties.amenity === 'toilets',
+  },
+  {
+    name: 'parkings',
+    href: '#XParking',
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"parking"/),
+    centroidsFilter: (f) => !!f.properties.other_tags?.match(/"parking"/),
+  },
+]
 
-function Parkings(props: { sz: number }) {
-  const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(/"parking"/),
-    centroids: (f) => !!f.properties.other_tags?.match(/"parking"/),
-  })
-
-  return <RenderUses href="#XParking" vs={vs} sz={props.sz} />
-}
-
-function RenderUses(props: { href: string; vs: V[]; sz: number }) {
-  return (
-    <>
-      {props.vs.map(([x, y], idx) => (
-        <use key={idx} href={props.href} transform={`translate(${x}, ${y}) scale(${props.sz / 72 * 1.25})`} />
-      ))}
-    </>
-  )
-}
-
-function RenderObjects(props: { width: number; path: string; vs: V[] }) {
-  return (
-    <path
-      fill="none"
-      stroke="black"
-      strokeWidth={props.width}
-      d={props.vs.map(([x, y]) => `M ${x},${y}` + props.path).join('')}
-    />
-  )
-}
-
-function RenderMarkers(props: { vs: V[]; sz: number }) {
-  const h = props.sz * 1 / 2
-  const r = Math.sqrt(2) * h
-  return (
-    <path
-      fill="white"
-      fillOpacity="1"
-      stroke="gray"
-      strokeWidth={r / 20}
-      d={props.vs.map(([x, y]) => `M ${x},${y} l ${-h},${-h} a ${r},${r} 0,1,1 ${2*h},0 z`).join('')}
-    />
-  )
-}
-
-/*
-function Labels() {
-  const re = /"tree"/
-  const vs = getAll({
-    points: (f) => !!f.properties.other_tags?.match(re),
-  })
-  const d = vs
-    .map(
-      ([x, y]) => `M${x},${y} m7.5,0 a7.5,7.5 0,0,1 -15,0a7.5,7.5 0,1,1 15,0z`
-    )
-    .join('')
-  return (
-    <g>
-      <path d={d} fill="white" fillOpacity="0.5" />
-      <text>
-        {vs.map(([x, y], idx) => (
-          <>
-            <tspan key={idx*4+0} x={x} y={y + 0.9 - 3.75}>
-              日本語
-            </tspan>
-            <tspan key={idx*4+1} x={x} y={y + 0.9}>
-              テスト
-            </tspan>
-            <tspan key={idx*4+2} x={x} y={y + 0.9 + 3.75}>
-              123
-            </tspan>
-          </>
-        ))}
-      </text>
-    </g>
-  )
-}
-*/
+export const getMapMarkers: () => MapMarkers[] = () => [
+  {
+    name: 'all',
+    pointsFilter: (f) => !!f.properties.name?.match(/./),
+  },
+]

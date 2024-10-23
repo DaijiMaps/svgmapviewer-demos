@@ -1,29 +1,40 @@
 import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
-import { RenderMap } from './map'
+import {
+  RenderMap,
+  getMapLayers,
+  getMapObjects,
+  getMapSymbols,
+  getMapMarkers,
+} from './map'
 import {
   mapCoord,
   mapData,
   mapHtmlStyle,
   mapNames,
+  mapSymbols,
   mapViewBox,
 } from './map-data'
 import { RenderInfo } from './render'
 import { workerSearchStart } from './search'
 
-export const configUser = {
+svgmapviewer({
   root: 'root',
   map: 'map1',
   origViewBox: mapViewBox,
   zoomFactor: 2,
-  renderMap: RenderMap,
+  getMapLayers,
+  getMapObjects,
+  getMapSymbols,
+  getMapMarkers,
   renderInfo: RenderInfo,
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   mapData,
   mapCoord,
   mapHtmlStyle,
-  //mapNames,
-}
+  mapSymbols,
+  mapNames,
+})
 
-svgmapviewer(configUser)
+svgMapViewerConfig.searchCbs.add(workerSearchStart)
 
 document.title = `svgmapviewer @ ${window.location.host}`

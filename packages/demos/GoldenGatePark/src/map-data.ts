@@ -1,24 +1,26 @@
 import {
   calcScale,
-  LineFeature,
+  CentroidsFilter,
   MapData,
-  MultiPolygonFeature,
-  OsmLineProperties,
   OsmPointProperties,
   OsmPolygonProperties,
   POI,
+  Point,
   PointFeature,
+  PointsFilter,
 } from '@daijimaps/svgmapviewer/geo'
 import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
 import areas from './data/areas.json'
 import centroids from './data/map-centroids.json'
 import lines from './data/map-lines.json'
-import multipolygons from './data/map-multipolygons.json'
 import multilinestrings from './data/map-multilinestrings.json'
+import multipolygons from './data/map-multipolygons.json'
 import points from './data/map-points.json'
 import measures from './data/measures.json'
 import origin from './data/origin.json'
 import viewbox from './data/viewbox.json'
+
+//// mapData
 
 export const mapData: MapData = {
   areas,
@@ -33,11 +35,18 @@ export const mapData: MapData = {
   centroids,
 }
 
+//// mapCoord
+//// mapViewBox
+
 export const { mapCoord, mapViewBox } = calcScale(mapData)
 
+//// mapHtmlStyle
+//// mapSymbols
+//// mapNames
+
 export const mapHtmlStyle = `
-.poi-names {
-  font-size: 0.5em;
+poi-names {
+  font-size: small;
 }
 .poi-names-item {
   position: absolute;
@@ -61,70 +70,22 @@ export const mapHtmlStyle = `
 }
 `
 
-/*
-`
-@font-face {
-  font-family: 'aiga';
-  src: url('aiga.eot?t=1728818923481');
-  src:
-    url('aiga.eot?t=1728818923481#iefix') format('embedded-opentype'),
-    url('aiga.woff2?t=1728818923481') format('woff2'),
-    url('aiga.woff?t=1728818923481') format('woff'),
-    url('aiga.ttf?t=1728818923481') format('truetype'),
-    url('aiga.svg?t=1728818923481#aiga') format('svg');
-}
+export const mapSymbols: POI[] = []
 
-[class^='aiga-'],
-[class*=' aiga-'] {
-  font-family: 'aiga' !important;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.aiga-toilets:before {
-  content: '\\ea01';
-}
-`
-*/
-
-export const mapSymbols: POI[] = [mapData.points, mapData.centroids].flatMap(
-  (d) =>
-    d.features.flatMap(
-      (
-        f: PointFeature<OsmPointProperties> | PointFeature<OsmPolygonProperties>
-      ) => {
-        //const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-
-        if (
-          !!f.properties.other_tags?.match(/"toilets"/) ||
-          ('amenity' in f.properties && f.properties.amenity === 'toilets')
-        ) {
-          //return [{ name: ['aiga-toilets'], pos }]
-          return []
-        } else {
-          return []
-        }
-      }
-    )
-)
+type PointOrCentroidFeature =
+  | PointFeature<OsmPointProperties>
+  | PointFeature<OsmPolygonProperties>
 
 export const mapNames: POI[] = [mapData.points, mapData.centroids].flatMap(
   (d) =>
-    d.features.flatMap(
-      (
-        f: PointFeature<OsmPointProperties> | PointFeature<OsmPolygonProperties>
-      ) => {
-        const name = filterName(f)
-        const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-        return name === null ? [] : [{ name: splitName(name), pos }]
-      }
-    )
+    d.features.flatMap((f: PointOrCentroidFeature) => {
+      const name = filterName(f)
+      const pos = vVec(conv(f.geometry.coordinates as unknown as V))
+      return name === null ? [] : [{ name: splitName(name), pos }]
+    })
 )
 
-function filterName(
-  f: PointFeature<OsmPointProperties> | PointFeature<OsmPolygonProperties>
-): null | string {
+function filterName(f: PointOrCentroidFeature): null | string {
   const name = f.properties.name
   if (name === null) {
     return null
@@ -160,47 +121,27 @@ function splitName(s: string): string[] {
     .map((s) => s.trim())
 }
 
-type PointsFilter = (f: PointFeature<OsmPointProperties>) => boolean
-type LinesFilter = (f: LineFeature<OsmLineProperties>) => boolean
-type MultiPolygonsFilter = (
-  f: MultiPolygonFeature<OsmPolygonProperties>
-) => boolean
-type CentroidsFilter = (f: PointFeature<OsmPolygonProperties>) => boolean
+////  getAll
 
-interface Filters {
+export interface AllFilters {
   points?: PointsFilter
-  lines?: LinesFilter
-  multipolygons?: MultiPolygonsFilter
   centroids?: CentroidsFilter
 }
 
-export function getAll({ points, lines, multipolygons, centroids }: Filters) {
+export function getAll({ points, centroids }: AllFilters): V[] {
   return [
     points === undefined ? [] : getPoints(points),
-    lines === undefined ? [] : getLines(lines),
-    multipolygons === undefined ? [] : getMultiPolygons(multipolygons),
     centroids === undefined ? [] : getCentroids(centroids),
   ].flatMap((vs) => vs)
 }
 
-export function getPoints(filter: PointsFilter) {
+export function getPoints(filter: PointsFilter): Point[] {
   return mapData.points.features
     .filter(filter)
     .map((f) => f.geometry.coordinates as unknown as V)
     .map(conv)
 }
-export function getLines(filter: LinesFilter) {
-  return mapData.lines.features
-    .filter(filter)
-    .map((f) => f.geometry.coordinates as unknown as V)
-    .map(conv)
-}
-export function getMultiPolygons(filter: MultiPolygonsFilter) {
-  return mapData.multipolygons.features
-    .filter(filter)
-    .map((f) => f.geometry.coordinates as unknown as V)
-    .map(conv)
-}
+
 export function getCentroids(filter: CentroidsFilter) {
   return mapData.centroids.features
     .filter(filter)
