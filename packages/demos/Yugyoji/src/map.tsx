@@ -1,13 +1,8 @@
-import { RenderMapProps, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
   MapLayer,
   MapMarkers,
   MapObjects,
   MapSymbols,
-  RenderMapLayers,
-  RenderMapMarkers,
-  RenderMapObjects,
-  RenderMapSymbols,
 } from '@daijimaps/svgmapviewer/carto'
 import {
   benchPath,
@@ -15,16 +10,15 @@ import {
   infoBoardPath,
   tree4x8Path,
 } from '@daijimaps/svgmapviewer/carto-objects'
-import { MultiPolygon, PointGeoJSON } from '@daijimaps/svgmapviewer/geo'
-import { V } from '@daijimaps/svgmapviewer/tuple'
-import { conv } from './map-data'
+import { MultiPolygon } from '@daijimaps/svgmapviewer/geo'
 import './map.css'
+import internals from './data/internals.json'
 
 export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'area',
-    data: svgMapViewerConfig.mapData.areas.features.map(
+    data: internals.features.map(
       (f) => f.geometry.coordinates
     ) as unknown as MultiPolygon[],
   },
@@ -40,8 +34,14 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
+    name: 'ditch',
+    width: 0.25,
+    filter: (f) => !!f.properties.waterway?.match(/^(ditch)$/),
+  },
+  {
+    type: 'line',
     name: 'stream',
-    filter: (f) => !!f.properties.waterway?.match(/^(stream|ditch)$/),
+    filter: (f) => !!f.properties.waterway?.match(/^(stream)$/),
   },
   {
     type: 'multipolygon',

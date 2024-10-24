@@ -1,6 +1,5 @@
 import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
 import {
-  RenderMap,
   getMapLayers,
   getMapObjects,
   getMapSymbols,
