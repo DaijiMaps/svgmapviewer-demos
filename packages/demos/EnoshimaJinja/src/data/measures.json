@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "measures",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "direction": "x", "distance": 0.0069574000000045544, "ellipsoidal_distance": 632.80083029755804 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.48108, 35.300089 ], [ 139.4880374, 35.300089 ] ] } },
+{ "type": "Feature", "properties": { "direction": "y", "distance": 0.0028781999999978325, "ellipsoidal_distance": 319.32493145311906 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.48108, 35.300089 ], [ 139.48108, 35.2972108 ] ] } }
+]
+}

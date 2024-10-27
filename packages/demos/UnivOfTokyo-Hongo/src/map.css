@@ -1,0 +1,129 @@
+html,
+body,
+:root,
+.content.svg {
+  background-color: darkgrey;
+}
+
+.map {
+}
+
+.area {
+  fill: #bcd35f;
+  fill-opacity: 1;
+}
+
+.building {
+  fill: lightgray;
+}
+
+.pedestrian-area {
+  fill: white;
+  stroke: white;
+  stroke-width: 0.5px;
+}
+
+.water {
+  fill: #aaeeff;
+}
+
+.ditch {
+  fill: none;
+  stroke: #aaeeff;
+  stroke-width: 0.25px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.stream {
+  fill: none;
+  stroke: #aaeeff;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.river {
+  fill: none;
+  stroke: #aaeeff;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.forest {
+  fill: darkgreen;
+  fill-opacity: 0.25;
+}
+
+.road {
+  fill: none;
+  stroke: whitesmoke;
+  stroke-width: 6px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service {
+  fill: none;
+  stroke: whitesmoke;
+  stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cycleway {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footway {
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.footway-bridge {
+  fill: none;
+  stroke: black;
+  stroke-width: 4px;
+}
+
+.steps > .bg {
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+}
+.steps > .fg {
+  fill: none;
+  stroke: lightgrey;
+  stroke-width: 2px;
+  stroke-dasharray: 0.5, 0.5;
+}
+
+.wall {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.5px;
+}
+
+.retaining-wall {
+  fill: none;
+  stroke: black;
+  stroke-opacity: 0.2;
+  stroke-width: 0.5px;
+}
+
+text,
+tspan {
+  font-size: 2.5px;
+  font-weight: initial;
+  text-anchor: middle;
+}
