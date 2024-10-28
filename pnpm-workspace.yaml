@@ -26,6 +26,7 @@ packages:
   - 'packages/demos/TaimaDera'
   - 'packages/demos/TohokuUniv'
   - 'packages/demos/TokyoDisneyLand'
+  - 'packages/demos/TokyoNationalMuseum'
   - 'packages/demos/UnivOfTokyo-Hongo'
   - 'packages/demos/UnivOfTokyo-Komaba'
   - 'packages/demos/Yugyoji'
