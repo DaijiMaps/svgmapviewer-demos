@@ -18,7 +18,10 @@ import multipolygons from './data/map-multipolygons.json'
 import points from './data/map-points.json'
 import measures from './data/measures.json'
 import origin from './data/origin.json'
+import trees from './data/trees.json'
 import viewbox from './data/viewbox.json'
+
+export { trees }
 
 //// mapData
 
@@ -54,8 +57,6 @@ export const mapHtmlStyle = `
   background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   border-radius: 5em;
-  max-width: 20em;
-  font-size: xx-small;
 }
 .poi-symbols-item > p,
 .poi-names-item > p {
@@ -78,14 +79,19 @@ type PointOrCentroidFeature =
   | PointFeature<OsmPointProperties>
   | PointFeature<OsmPolygonProperties>
 
-export const mapNames: POI[] = [mapData.centroids].flatMap(
-  (d) =>
-    d.features.flatMap((f: PointOrCentroidFeature) => {
-      const name = filterName(f)
-      const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-      return name === null ? [] : [{ name: splitName(name), pos }]
-    })
-)
+const pointNames: POI[] = mapData.points.features.flatMap((f) => {
+  const name = filterName(f)
+  const pos = vVec(conv(f.geometry.coordinates as unknown as V))
+  return name === null ? [] : [{ name: splitName(name), pos, size: 1 }]
+})
+
+const centroidNames: POI[] = mapData.centroids.features.flatMap((f) => {
+  const name = filterName(f)
+  const pos = vVec(conv(f.geometry.coordinates as unknown as V))
+  return name === null ? [] : [{ name: splitName(name), pos, size: 10 }]
+})
+
+export const mapNames: POI[] = [...pointNames, ...centroidNames]
 
 function filterName(f: PointOrCentroidFeature): null | string {
   const name = f.properties.name
@@ -117,7 +123,6 @@ function filterName(f: PointOrCentroidFeature): null | string {
 }
 
 function splitName(s: string): string[] {
-  return [s]
   return s
     .trim()
     .split(/  */)
