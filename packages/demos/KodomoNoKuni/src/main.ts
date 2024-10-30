@@ -1,5 +1,5 @@
 import { svgmapviewer, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
-import mapSvg from './assets/kodomomap_2024_mono.svg'
+import mapSvg from './assets/floors.svg'
 import { RenderMap } from './map'
 import { workerSearchStart } from './search'
 
