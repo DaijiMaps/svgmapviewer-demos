@@ -1,6 +1,7 @@
-import { svgmapviewer } from '@daijimaps/svgmapviewer'
+import { svgmapviewer, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import mapSvg from './assets/kodomomap_2024_mono.svg'
 import { RenderMap } from './map'
+import { workerSearchStart } from './search'
 
 svgmapviewer({
   root: 'root',
@@ -19,3 +20,5 @@ svgmapviewer({
   //mapSymbols,
   //mapNames,
 })
+
+svgMapViewerConfig.searchCbs.add(workerSearchStart)
