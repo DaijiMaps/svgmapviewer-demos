@@ -4,9 +4,17 @@ import addresses_GF from './data/addresses/addresses_GF.json'
 import infos from './data/infos.json'
 import { Info } from './info'
 
+const dx = 5
+const dy = 155
+
+// XXX adjust viewBox offset
+function conv({ x, y }: Vec): Vec {
+  return { x: x - dx, y: y - dy }
+}
+
 const addressEntries: { a: string; lonlat: Vec }[] = Object.entries(
   addresses_GF
-).map(([a, { x, y }]) => ({ a, lonlat: { x, y } }))
+).map(([a, v]) => ({ a, lonlat: conv(v) }))
 
 ////
 
