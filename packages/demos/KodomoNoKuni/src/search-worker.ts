@@ -1,8 +1,41 @@
+import { initAddresses, searchAddress } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
-import { initAddresses, searchAddress } from './address'
-import { addressEntries } from './address-data'
-import { searchInfo } from './data'
+import addresses_GF from './data/addresses/addresses_GF.json'
+import infos from './data/infos.json'
 import { Info } from './info'
+
+const addressEntries: { a: string; lonlat: Vec }[] = Object.entries(
+  addresses_GF
+).map(([a, { x, y }]) => ({ a, lonlat: { x, y } }))
+
+////
+
+function searchInfo(address: string, lonlat: Vec): null | Info {
+  if (address in infos) {
+    const d = infos[address]
+    const info: Info = {
+      title: d.name,
+      x: {
+        tag: 'shop',
+        name: d.name,
+        address: address,
+      },
+    }
+    return info
+  }
+  // XXX switch by address string
+  const info: Info = {
+    title: `Found: POI: (${lonlat.x},${lonlat.y})`,
+    x: {
+      tag: 'shop',
+      name: `${address} @ ${lonlat.x}, ${lonlat.y}`,
+      address: address,
+    },
+  }
+  return info
+}
+
+////
 
 const ctx = initAddresses(addressEntries)
 

@@ -12,4 +12,3 @@ export function RenderMap(/*props: { zoom: number, z: null | number }*/) {
     </>
   )
 }
-
