@@ -3,3 +3,9 @@ body,
 .content.svg {
   background-color: darkgray;
 }
+
+#root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}

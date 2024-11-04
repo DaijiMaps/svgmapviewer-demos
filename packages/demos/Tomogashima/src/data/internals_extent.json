@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "internals_extent",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "MINX": 134.9989689, "MINY": 34.2758092, "MAXX": 135.0236179, "MAXY": 34.293219, "CNTX": 135.0112934, "CNTY": 34.2845141, "AREA": 0.00042913416020025997, "PERIM": 0.084117600000027437, "HEIGHT": 0.017409800000002917, "WIDTH": 0.024649000000010801 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 134.9989689, 34.2758092 ], [ 135.0236179, 34.2758092 ], [ 135.0236179, 34.293219 ], [ 134.9989689, 34.293219 ], [ 134.9989689, 34.2758092 ] ] ] } }
+]
+}
