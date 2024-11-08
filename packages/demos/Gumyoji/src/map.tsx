@@ -1,49 +1,50 @@
-import { RenderMapProps, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
   MapLayer,
   MapMarkers,
   MapObjects,
   MapSymbols,
-  RenderMapLayers,
-  RenderMapMarkers,
-  RenderMapObjects,
-  RenderMapSymbols,
 } from '@daijimaps/svgmapviewer/carto'
 import {
   benchPath,
   guidePostPath,
   infoBoardPath,
+  monumentPath,
+  statuePath,
+  toriiPath,
   tree4x8Path,
 } from '@daijimaps/svgmapviewer/carto-objects'
-import { MultiPolygon, PointGeoJSON } from '@daijimaps/svgmapviewer/geo'
-import { V } from '@daijimaps/svgmapviewer/tuple'
-import { conv } from './map-data'
+import { MultiPolygon } from '@daijimaps/svgmapviewer/geo'
 import './map.css'
+import internals from './data/internals.json'
 
 export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'area',
-    data: svgMapViewerConfig.mapData.areas.features.map(
+    data: internals.features.map(
       (f) => f.geometry.coordinates
     ) as unknown as MultiPolygon[],
   },
   {
     type: 'multipolygon',
     name: 'forest',
-    filter: (f) =>
-      !!f.properties.landuse?.match(/forest/) ||
-      !!f.properties.natural?.match(/wood/),
+    filter: (f) => !!f.properties['landuse']?.match(/forest/),
   },
   {
     type: 'multipolygon',
     name: 'water',
-    filter: (f) => !!f.properties.natural?.match(/^water$/),
+    filter: (f) => !!f.properties['natural']?.match(/^water$/),
+  },
+  {
+    type: 'line',
+    name: 'ditch',
+    width: 0.25,
+    filter: (f) => !!f.properties.waterway?.match(/^(ditch)$/),
   },
   {
     type: 'line',
     name: 'stream',
-    filter: (f) => !!f.properties.waterway?.match(/^(stream|ditch)$/),
+    filter: (f) => !!f.properties.waterway?.match(/^(stream)$/),
   },
   {
     type: 'multipolygon',
@@ -52,8 +53,18 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
+    name: 'trunk',
+    filter: (f) => !!f.properties.highway?.match(/^(trunk)$/),
+  },
+  {
+    type: 'line',
+    name: 'road',
+    filter: (f) => !!f.properties.highway?.match(/^(tertiary|secondary)$/),
+  },
+  {
+    type: 'line',
     name: 'service',
-    filter: (f) => !!f.properties.highway?.match(/^(service)$/),
+    filter: (f) => !!f.properties.highway?.match(/^(service|residential|unclassified)$/),
   },
   {
     type: 'multipolygon',
@@ -65,25 +76,6 @@ export const getMapLayers: () => MapLayer[] = () => [
     name: 'footway',
     filter: (f) =>
       !!f.properties.highway?.match(/^(footway|path|pedestrian|steps)$/),
-  },
-  {
-    type: 'line',
-    name: 'cycleway',
-    filter: (f) =>
-      !!f.properties.highway?.match(/^(cycleway)$/),
-  },
-  {
-    type: 'line',
-    name: 'service',
-    filter: (f) =>
-      !!f.properties.highway?.match(/^(service)$/),
-  },
-  {
-    type: 'line',
-    name: 'road',
-    filter: (f) =>
-      !!f.properties.highway?.match(/./) &&
-      !f.properties.highway?.match(/^(footway|path|pedestrian|steps|cycleway|service)$/),
   },
   {
     type: 'line',
@@ -116,6 +108,24 @@ export const getMapObjects: () => MapObjects[] = () => [
     width: 0.05,
     pointsFilter: (f) =>
       !!f.properties.other_tags?.match(/"information"=>"(board|map)"/),
+  },
+  {
+    name: 'monument',
+    path: monumentPath,
+    width: 0.05,
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"historic"=>"memorial"/),
+  },
+  {
+    name: 'statue',
+    path: statuePath,
+    width: 0.05,
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"artwork_type"=>"statue"/),
+  },
+  {
+    name: 'torii',
+    path: toriiPath,
+    width: 0.075,
+    pointsFilter: (f) => !!f.properties.man_made?.match(/^torii$/),
   },
   {
     name: 'trees1',

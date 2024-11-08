@@ -25,7 +25,9 @@ export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'forest',
-    filter: (f) => !!f.properties.landuse?.match(/forest/),
+    filter: (f) =>
+      !!f.properties.landuse?.match(/forest/) ||
+      !!f.properties.natural?.match(/wood/),
   },
   {
     type: 'multipolygon',

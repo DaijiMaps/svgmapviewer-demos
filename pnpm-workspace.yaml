@@ -4,6 +4,7 @@ packages:
   - 'packages/demos/EnoshimaJinja'
   - 'packages/demos/FushimiInari'
   - 'packages/demos/GoldenGatePark'
+  - 'packages/demos/Gumyoji'
   - 'packages/demos/Hamarikyu'
   - 'packages/demos/Hasedera'
   - 'packages/demos/Hieizan'
