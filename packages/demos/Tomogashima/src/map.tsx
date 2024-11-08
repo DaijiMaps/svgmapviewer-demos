@@ -21,9 +21,7 @@ export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'area',
-    data: internals.features.map(
-      (f) => f.geometry.coordinates
-    ) as unknown as MultiPolygon[],
+    filter: (f) => !!f.properties.place?.match(/^(island|islet)/),
   },
   {
     type: 'multipolygon',

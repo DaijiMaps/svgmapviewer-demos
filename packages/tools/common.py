@@ -59,7 +59,7 @@ osmLayerNames = [
     ('lines', 'linestring'),
     ('multipolygons', 'multipolygon'),
     ('multilinestrings', 'multilinestring'),
-    #('other_relations', 'Polygon')
+    ('other_relations', 'Polygon')
 ]
 
 extraLayerNames = [

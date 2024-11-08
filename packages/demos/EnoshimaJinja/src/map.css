@@ -10,6 +10,11 @@ body {
 .map {
 }
 
+.island {
+  fill: #bcd35f;
+  fill-opacity: 1;
+}
+
 .area {
   fill: #bcd35f;
   fill-opacity: 1;
@@ -26,7 +31,7 @@ body {
 }
 
 .water {
-  fill: #aaeeff;
+  fill: lightblue;
 }
 
 .ditch {
