@@ -3,7 +3,7 @@
 "name": "measures",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "direction": "x", "distance": 0.0055997000000047592, "ellipsoidal_distance": 506.89704170392673 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.75083, 35.683856 ], [ 139.756429700000012, 35.683856 ] ] } },
-{ "type": "Feature", "properties": { "direction": "y", "distance": 0.0056044999999969036, "ellipsoidal_distance": 621.83664477514549 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.75083, 35.683856 ], [ 139.75083, 35.6782515 ] ] } }
+{ "type": "Feature", "properties": { "direction": "x", "distance": 0.012858905725806835, "ellipsoidal_distance": 1164.0161558969053 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.75083, 35.683856 ], [ 139.763688905725814, 35.683856 ] ] } },
+{ "type": "Feature", "properties": { "direction": "y", "distance": 0.009415229734145214, "ellipsoidal_distance": 1044.6485879098102 }, "geometry": { "type": "LineString", "coordinates": [ [ 139.75083, 35.683856 ], [ 139.75083, 35.674440770265853 ] ] } }
 ]
 }

@@ -1,13 +1,9 @@
-import { RenderMapProps, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
+import { svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
   MapLayer,
   MapMarkers,
   MapObjects,
   MapSymbols,
-  RenderMapLayers,
-  RenderMapMarkers,
-  RenderMapObjects,
-  RenderMapSymbols,
 } from '@daijimaps/svgmapviewer/carto'
 import {
   benchPath,
@@ -15,9 +11,7 @@ import {
   infoBoardPath,
   tree4x8Path,
 } from '@daijimaps/svgmapviewer/carto-objects'
-import { MultiPolygon, PointGeoJSON } from '@daijimaps/svgmapviewer/geo'
-import { V } from '@daijimaps/svgmapviewer/tuple'
-import { conv } from './map-data'
+import { MultiPolygon } from '@daijimaps/svgmapviewer/geo'
 import './map.css'
 
 export const getMapLayers: () => MapLayer[] = () => [
@@ -51,11 +45,6 @@ export const getMapLayers: () => MapLayer[] = () => [
     filter: (f) => !!f.properties.building?.match(/./),
   },
   {
-    type: 'line',
-    name: 'service',
-    filter: (f) => !!f.properties.highway?.match(/^(service)$/),
-  },
-  {
     type: 'multipolygon',
     name: 'pedestrian-area',
     filter: (f) => !!f.properties.other_tags?.match(/"pedestrian"/),
@@ -68,15 +57,8 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
-    name: 'cycleway',
-    filter: (f) =>
-      !!f.properties.highway?.match(/^(cycleway)$/),
-  },
-  {
-    type: 'line',
     name: 'service',
-    filter: (f) =>
-      !!f.properties.highway?.match(/^(service)$/),
+    filter: (f) => !!f.properties.highway?.match(/^(service)$/),
   },
   {
     type: 'line',
@@ -84,6 +66,11 @@ export const getMapLayers: () => MapLayer[] = () => [
     filter: (f) =>
       !!f.properties.highway?.match(/./) &&
       !f.properties.highway?.match(/^(footway|path|pedestrian|steps|cycleway|service)$/),
+  },
+  {
+    type: 'line',
+    name: 'hedge',
+    filter: (f) => !!f.properties.barrier?.match(/^(hedge)$/),
   },
   {
     type: 'line',

@@ -13,9 +13,7 @@ import {
   toriiPath,
   tree4x8Path,
 } from '@daijimaps/svgmapviewer/carto-objects'
-import { MultiPolygon } from '@daijimaps/svgmapviewer/geo'
 import './map.css'
-import internals from './data/internals.json'
 
 export const getMapLayers: () => MapLayer[] = () => [
   {

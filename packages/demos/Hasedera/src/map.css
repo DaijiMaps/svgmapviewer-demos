@@ -24,14 +24,6 @@
   fill: #aaeeff;
 }
 
-.ditch {
-  fill: none;
-  stroke: #aaeeff;
-  stroke-width: 0.5px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
 .stream {
   fill: none;
   stroke: #aaeeff;
@@ -48,7 +40,7 @@
 .road {
   fill: none;
   stroke: whitesmoke;
-  stroke-width: 4px;
+  stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
