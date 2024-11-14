@@ -1,6 +1,6 @@
 import { svgmapviewer, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import mapSvg from './assets/floors.svg'
-import { RenderMapCommon } from './carto'
+import { RenderMap } from './map'
 import { workerSearchStart } from './search'
 
 svgmapviewer({
@@ -11,7 +11,7 @@ svgmapviewer({
   height: 610,
   //origViewBox: { x: 5, y: 155, width: 580, height: 610 },
   zoomFactor: 2,
-  renderMap: RenderMapCommon,
+  renderMap: RenderMap,
   //renderInfo: RenderInfo,
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   //mapData,
