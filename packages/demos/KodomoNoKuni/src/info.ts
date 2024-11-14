@@ -12,9 +12,13 @@ export interface FacilityInfo {
   address?: string
 }
 
+export type XInfo = ShopInfo | FacilityInfo
+
+export type InfosJson = Record<string, Required<Pick<XInfo, 'name'>>>
+
 declare module '@daijimaps/svgmapviewer' {
   interface Info {
-    x: ShopInfo | FacilityInfo
+    x: XInfo
   }
 }
 

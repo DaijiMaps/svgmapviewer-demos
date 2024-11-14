@@ -1,8 +1,10 @@
 import { initAddresses, searchAddress } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
 import addresses_GF from './data/addresses/addresses_GF.json'
-import infos from './data/infos.json'
-import { Info } from './info'
+import infosJson from './data/infos.json'
+import { Info, InfosJson } from './info'
+
+const infos: InfosJson = infosJson
 
 const dx = 5
 const dy = 155
