@@ -59,7 +59,7 @@ export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'line',
     name: 'road',
-    filter: (f) => !!f.properties.highway?.match(/^(tertiary|secondary)$/),
+    filter: (f) => !!f.properties.highway?.match(/^(primary|secondary|tertiary)$/),
   },
   {
     type: 'line',

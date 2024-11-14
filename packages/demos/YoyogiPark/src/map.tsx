@@ -59,17 +59,12 @@ export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'line',
     name: 'road',
-    filter: (f) => !!f.properties.highway?.match(/^(tertiary|secondary)$/),
+    filter: (f) => !!f.properties.highway?.match(/^(primary|secondary|tertiary)$/),
   },
   {
     type: 'line',
     name: 'service',
     filter: (f) => !!f.properties.highway?.match(/^(service|residential|unclassified)$/),
-  },
-  {
-    type: 'line',
-    name: 'cycleway',
-    filter: (f) => !!f.properties.highway?.match(/^(cycleway)$/),
   },
   {
     type: 'multipolygon',
