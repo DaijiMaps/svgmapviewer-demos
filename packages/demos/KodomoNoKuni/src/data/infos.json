@@ -1,11 +1,20 @@
 {
   "AGF-Point-1": {
-    "name": "しょうめんいりぐち"
+    "name": "しょうめんいりぐち",
+    "descrs": [
+      "XXX 1"
+    ]
   },
   "AGF-Point-2": {
-    "name": "あんない所"
+    "name": "あんない所",
+    "descrs": [
+      "XXX 2"
+    ]
   },
   "AGF-Point-3": {
-    "name": "らくがきひろば"
+    "name": "らくがきひろば",
+    "descrs": [
+      "XXX 3"
+    ]
   }
 }

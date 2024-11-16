@@ -2,9 +2,9 @@ import { initAddresses, searchAddress } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
 import addresses_GF from './data/addresses/addresses_GF.json'
 import infosJson from './data/infos.json'
-import { Info, InfosJson } from './info'
+import { Info, ShopInfosJson } from './info'
 
-const infos: InfosJson = infosJson
+const infos: ShopInfosJson = infosJson
 
 const dx = 5
 const dy = 155
@@ -24,10 +24,11 @@ function searchInfo(address: string, lonlat: Vec): null | Info {
   if (address in infos) {
     const d = infos[address]
     const info: Info = {
-      title: d.name,
+      title: d.name ?? '',
       x: {
         tag: 'shop',
         name: d.name,
+        descrs: d.descrs,
         address: address,
       },
     }
@@ -35,7 +36,7 @@ function searchInfo(address: string, lonlat: Vec): null | Info {
   }
   // XXX switch by address string
   const info: Info = {
-    title: `Found: POI: (${lonlat.x},${lonlat.y})`,
+    title: `POI: (${lonlat.x},${lonlat.y})`,
     x: {
       tag: 'shop',
       name: `${address} @ ${lonlat.x}, ${lonlat.y}`,
