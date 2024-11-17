@@ -1,4 +1,3 @@
-import { svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
   MapLayer,
   MapMarkers,
@@ -9,16 +8,20 @@ import {
   benchPath,
   guidePostPath,
   infoBoardPath,
+  monumentPath,
+  statuePath,
+  toriiPath,
   tree4x8Path,
 } from '@daijimaps/svgmapviewer/carto-objects'
 import { MultiPolygon } from '@daijimaps/svgmapviewer/geo'
 import './map.css'
+import internals from './data/internals.json'
 
 export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'area',
-    data: svgMapViewerConfig.mapData.areas.features.map(
+    data: internals.features.map(
       (f) => f.geometry.coordinates
     ) as unknown as MultiPolygon[],
   },
@@ -36,13 +39,24 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
+    name: 'ditch',
+    width: 0.25,
+    filter: (f) => !!f.properties.waterway?.match(/^(ditch)$/),
+  },
+  {
+    type: 'line',
     name: 'stream',
-    filter: (f) => !!f.properties.waterway?.match(/^(stream|ditch)$/),
+    filter: (f) => !!f.properties.waterway?.match(/^(stream)$/),
   },
   {
     type: 'multipolygon',
     name: 'building',
     filter: (f) => !!f.properties.building?.match(/./),
+  },
+  {
+    type: 'line',
+    name: 'service',
+    filter: (f) => !!f.properties.highway?.match(/^(service|residential)$/),
   },
   {
     type: 'multipolygon',
@@ -54,23 +68,6 @@ export const getMapLayers: () => MapLayer[] = () => [
     name: 'footway',
     filter: (f) =>
       !!f.properties.highway?.match(/^(footway|path|pedestrian|steps)$/),
-  },
-  {
-    type: 'line',
-    name: 'service',
-    filter: (f) => !!f.properties.highway?.match(/^(service)$/),
-  },
-  {
-    type: 'line',
-    name: 'road',
-    filter: (f) =>
-      !!f.properties.highway?.match(/./) &&
-      !f.properties.highway?.match(/^(footway|path|pedestrian|steps|cycleway|service)$/),
-  },
-  {
-    type: 'line',
-    name: 'hedge',
-    filter: (f) => !!f.properties.barrier?.match(/^(hedge)$/),
   },
   {
     type: 'line',
@@ -103,6 +100,24 @@ export const getMapObjects: () => MapObjects[] = () => [
     width: 0.05,
     pointsFilter: (f) =>
       !!f.properties.other_tags?.match(/"information"=>"(board|map)"/),
+  },
+  {
+    name: 'monument',
+    path: monumentPath,
+    width: 0.05,
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"historic"=>"memorial"/),
+  },
+  {
+    name: 'statue',
+    path: statuePath,
+    width: 0.05,
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"artwork_type"=>"statue"/),
+  },
+  {
+    name: 'torii',
+    path: toriiPath,
+    width: 0.075,
+    pointsFilter: (f) => !!f.properties.man_made?.match(/^torii$/),
   },
   {
     name: 'trees1',

@@ -12,13 +12,14 @@ import {
   tree4x8Path,
 } from '@daijimaps/svgmapviewer/carto-objects'
 import { MultiPolygon } from '@daijimaps/svgmapviewer/geo'
+import internals from './data/internals.json'
 import './map.css'
 
 export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'area',
-    data: svgMapViewerConfig.mapData.areas.features.map(
+    data: internals.features.map(
       (f) => f.geometry.coordinates
     ) as unknown as MultiPolygon[],
   },

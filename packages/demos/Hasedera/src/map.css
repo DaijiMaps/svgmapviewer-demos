@@ -24,6 +24,14 @@
   fill: #aaeeff;
 }
 
+.ditch {
+  fill: none;
+  stroke: #aaeeff;
+  stroke-width: 0.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .stream {
   fill: none;
   stroke: #aaeeff;

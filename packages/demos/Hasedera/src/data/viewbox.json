@@ -3,7 +3,7 @@
 "name": "viewbox",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "direction": null, "distance": null, "ellipsoidal_distance": null }, "geometry": { "type": "LineString", "coordinates": [ [ 139.53325, 35.31234 ], [ 139.532321700000011, 35.3131707 ] ] } },
-{ "type": "Feature", "properties": { "direction": null, "distance": null, "ellipsoidal_distance": null }, "geometry": { "type": "LineString", "coordinates": [ [ 139.532321700000011, 35.3131707 ], [ 139.5341771, 35.3115084 ] ] } }
+{ "type": "Feature", "properties": { "direction": null, "distance": null, "ellipsoidal_distance": null }, "geometry": { "type": "LineString", "coordinates": [ [ 139.53325, 35.31234 ], [ 139.532490700000011, 35.3131707 ] ] } },
+{ "type": "Feature", "properties": { "direction": null, "distance": null, "ellipsoidal_distance": null }, "geometry": { "type": "LineString", "coordinates": [ [ 139.532490700000011, 35.3131707 ], [ 139.5338888, 35.3115084 ] ] } }
 ]
 }
