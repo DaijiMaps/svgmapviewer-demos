@@ -9,8 +9,10 @@ import common
 common.createPrj()
 
 areas = common.getAreas()
+internals = common.getInternals()
 
-mapLayers = common.readOsmByAreas(areas)
+areasLayers = common.readOsmByAreas(areas)
+internalsLayers = common.readOsmByAreas(internals)
 
 layernames = [
     x[0] for names in [common.osmLayerNames, common.extraLayerNames]
@@ -18,13 +20,15 @@ layernames = [
 ]
 
 for layername in layernames:
-    l = mapLayers[layername]
+    layers = internalsLayers if layername in { 'points', 'midpoints', 'centroids' } else areasLayers
     gj = common.ctx.map_layerGJs[layername]
-    common.dumpGeoJSON(l, gj)
+    common.dumpGeoJSON(layers[layername], gj)
 
 ####
 
-mapLayers = None
+internalsLayers = None
+areasLayers = None
+internals = None
 areas = None
 
 common.exit()

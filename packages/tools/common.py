@@ -623,6 +623,10 @@ def getAreas() -> QgsVectorLayer:
     gj = ctx.areasGJ
     return openVector('%s|geometrytype=MultiPolygon' % gj, "areas")
 
+def getInternals() -> QgsVectorLayer:
+    gj = ctx.internalsGJ
+    return openVector('%s|geometrytype=MultiPolygon' % gj, "internals")
+
 def getOrigin(gj: str) -> QgsPoint:
     l = openVector('%s|geometrytype=Point' % gj, "origin")
     f = next(l.getFeatures())
