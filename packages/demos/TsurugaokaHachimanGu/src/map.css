@@ -48,7 +48,7 @@
 .road {
   fill: none;
   stroke: whitesmoke;
-  stroke-width: 4px;
+  stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
