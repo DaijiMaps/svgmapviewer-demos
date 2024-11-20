@@ -15,6 +15,7 @@ packages:
   - 'packages/demos/ImperialPalace'
   - 'packages/demos/KanazawaZoo'
   - 'packages/demos/KasugaTaisha'
+  - 'packages/demos/KawasakiDaishi'
   - 'packages/demos/Kenchoji'
   - 'packages/demos/KiiFudokiNoOka'
   - 'packages/demos/KodomoNoKuni'
