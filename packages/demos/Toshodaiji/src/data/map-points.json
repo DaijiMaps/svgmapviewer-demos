@@ -1,0 +1,16 @@
+{
+"type": "FeatureCollection",
+"name": "map-points",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "4539704660", "name": null, "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"entrance\"=>\"main\"" }, "geometry": { "type": "Point", "coordinates": [ 135.7861833, 34.6758718 ] } },
+{ "type": "Feature", "properties": { "osm_id": "10264940466", "name": "戒壇", "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"historic\"=>\"monument\"" }, "geometry": { "type": "Point", "coordinates": [ 135.783929300000011, 34.6757205 ] } },
+{ "type": "Feature", "properties": { "osm_id": "10266651031", "name": null, "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"natural\"=>\"tree\"" }, "geometry": { "type": "Point", "coordinates": [ 135.7841545, 34.675804 ] } },
+{ "type": "Feature", "properties": { "osm_id": "10266651032", "name": null, "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"natural\"=>\"tree\"" }, "geometry": { "type": "Point", "coordinates": [ 135.7841407, 34.6756315 ] } },
+{ "type": "Feature", "properties": { "osm_id": "10266651033", "name": null, "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"natural\"=>\"tree\"" }, "geometry": { "type": "Point", "coordinates": [ 135.7841386, 34.6755578 ] } },
+{ "type": "Feature", "properties": { "osm_id": "11795793633", "name": null, "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"shop\"=>\"ticket\"" }, "geometry": { "type": "Point", "coordinates": [ 135.7847926, 34.6747524 ] } },
+{ "type": "Feature", "properties": { "osm_id": "11795793643", "name": null, "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"emergency\"=>\"fire_hydrant\",\"fire_hydrant:type\"=>\"pillar\"" }, "geometry": { "type": "Point", "coordinates": [ 135.7851729, 34.6754886 ] } },
+{ "type": "Feature", "properties": { "osm_id": "11795793644", "name": null, "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"natural\"=>\"tree\"" }, "geometry": { "type": "Point", "coordinates": [ 135.7851887, 34.6754881 ] } },
+{ "type": "Feature", "properties": { "osm_id": "11795793662", "name": null, "barrier": null, "highway": null, "ref": null, "address": null, "is_in": null, "place": null, "man_made": null, "other_tags": "\"shop\"=>\"gift\"" }, "geometry": { "type": "Point", "coordinates": [ 135.785404199999988, 34.6752894 ] } }
+]
+}

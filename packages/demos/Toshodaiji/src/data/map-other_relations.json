@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "map-other_relations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "13044154", "name": "古都奈良の文化財", "type": "site", "other_tags": "\"heritage\"=>\"1\",\"heritage:operator\"=>\"whc\",\"name:en\"=>\"Historic Monuments of Ancient Nara\",\"name:fr\"=>\"Monuments historiques de l'ancienne Nara\",\"ref:whc\"=>\"870\",\"whc:criteria\"=>\"(ii),(iii),(iv),(vi)\",\"whc:inscription_date\"=>\"1998\",\"wikidata\"=>\"Q1055749\",\"wikipedia\"=>\"ja:古都奈良の文化財\"" }, "geometry": { "type": "GeometryCollection", "geometries": [ { "type": "Polygon", "coordinates": [ [ [ 135.7870893, 34.6747685 ], [ 135.785831, 34.6747634 ], [ 135.7855481, 34.6747622 ], [ 135.7852714, 34.674754 ], [ 135.7851302, 34.6747376 ], [ 135.7849907, 34.6747276 ], [ 135.7846559, 34.6747225 ], [ 135.7841874, 34.6747083 ], [ 135.7842123, 34.675462 ], [ 135.7835268, 34.6754659 ], [ 135.7835476, 34.6760088 ], [ 135.783556800000014, 34.6769809 ], [ 135.7857434, 34.6769979 ], [ 135.7859741, 34.6770051 ], [ 135.7862673, 34.6770181 ], [ 135.7865482, 34.6769957 ], [ 135.7871364, 34.676927 ], [ 135.7872456, 34.6769142 ], [ 135.7871182, 34.6751736 ], [ 135.7870893, 34.6747685 ] ] ] } ] } }
+]
+}
