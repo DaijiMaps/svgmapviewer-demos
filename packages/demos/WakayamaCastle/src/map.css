@@ -50,10 +50,18 @@ body {
   fill-opacity: 0.25;
 }
 
+.trunk {
+  fill: none;
+  stroke: whitesmoke;
+  stroke-width: 12px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .road {
   fill: none;
   stroke: whitesmoke;
-  stroke-width: 4px;
+  stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
