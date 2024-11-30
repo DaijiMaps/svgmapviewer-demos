@@ -106,6 +106,12 @@
   stroke-linejoin: round;
 }
 
+.fence {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.1px;
+}
+
 .wall {
   fill: none;
   stroke: black;

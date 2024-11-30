@@ -71,8 +71,13 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
+    name: 'fence',
+    filter: (f) => !!f.properties.barrier?.match(/^(fence)$/),
+  },
+  {
+    type: 'line',
     name: 'wall',
-    filter: (f) => !!f.properties.barrier?.match(/^(wall|fence)$/),
+    filter: (f) => !!f.properties.barrier?.match(/^(wall)$/),
   },
   {
     type: 'line',
