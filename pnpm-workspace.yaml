@@ -2,6 +2,7 @@ packages:
   - 'packages/demos/CentralPark'
   - 'packages/demos/Engakuji'
   - 'packages/demos/EnoshimaJinja'
+  - 'packages/demos/Expo2025'
   - 'packages/demos/FushimiInari'
   - 'packages/demos/GoldenGatePark'
   - 'packages/demos/Gumyoji'
