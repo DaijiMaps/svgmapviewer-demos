@@ -352,7 +352,8 @@ def expandOsm(osm: str, layername: str, name: str, outGeoJSON: str) -> tuple[Qgs
     return QgsVectorFileWriter.writeAsVectorFormatV3(l, outGeoJSON, tx, opts)
 
 def dumpGeoJSON(l: QgsVectorLayer, fn: str) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
-    tx = l.transformContext()
+    tx = prj.transformContext()
+
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
@@ -451,7 +452,7 @@ def createEmptyGeoJSON(outGJ: str, typ: str, g: QgsGeometry) -> tuple[QgsVectorF
     tx = m.transformContext()
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
-    return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGJ, tx,opts)
+    return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGJ, tx, opts)
 
 def createEmptyLayer(typ: str, g: QgsGeometry) -> QgsVectorLayer:
     f = QgsFeature()
@@ -870,8 +871,10 @@ def makeOrigin():
     areas = openVector(ctx.areasGJ, "areas")
     extent = openVector(ctx.areas_extentGJ, "areas_extent")
 
-    origin = getRoundedOrigin(extent)
-    res = createPointGeoJSON(ctx.originGJ, origin)
+    l = extent.transformContext()
+    g = getRoundedOrigin(extent)
+    origin = createEmptyLayer("point", g)
+    res = dumpGeoJSON(origin, ctx.originGJ)
     print(res)
 
 def makeMeasures():
