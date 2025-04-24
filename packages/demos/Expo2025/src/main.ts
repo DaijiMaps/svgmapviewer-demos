@@ -26,7 +26,7 @@ svgmapviewer({
   getMapSymbols,
   getMapMarkers,
   renderInfo: RenderInfo,
-  title: 'Shinjuku-Gyoen Natioan Park',
+  title: 'Expo 2025',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   mapData,
   mapCoord,
