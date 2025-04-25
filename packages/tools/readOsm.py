@@ -21,8 +21,9 @@ layernames = [
 
 for layername in layernames:
     layers = internalsLayers if layername in { 'points', 'midpoints', 'centroids' } else areasLayers
+    layer = common.fixupVectorLayer(layers[layername])
     gj = common.ctx.map_layerGJs[layername]
-    common.dumpGeoJSON(layers[layername], gj)
+    common.dumpGeoJSON(layer, gj)
 
 ####
 

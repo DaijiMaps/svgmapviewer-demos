@@ -352,7 +352,9 @@ def expandOsm(osm: str, layername: str, name: str, outGeoJSON: str) -> tuple[Qgs
     return QgsVectorFileWriter.writeAsVectorFormatV3(l, outGeoJSON, tx, opts)
 
 def dumpGeoJSON(l: QgsVectorLayer, fn: str) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
-    tx = prj.transformContext()
+    tx = l.transformContext()
+    if tx is None:
+        tx = prj.transformContext()
 
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
@@ -828,6 +830,18 @@ def fixupAttributes(prefix: str, l: QgsVectorLayer, outGeoJSON, origin: QgsPoint
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
     return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGeoJSON, tx, opts)
+
+def fixupVectorLayer(l: QgsVectorLayer) -> QgsVectorLayer:
+    caps = l.dataProvider().capabilities()
+    if not (caps & QgsVectorDataProvider.ChangeGeometries):
+        return l
+
+    l.selectAll()
+    for f in l.selectedFeatures():
+        # fixup multipolygon clockwise-ness for SVG rendering
+        fid = f.id()
+        l.dataProvider().changeGeometryValues({ fid: f.geometry().forcePolygonClockwise() })
+    return l
 
 def calcEllipsoidalDistance(g: QgsGeometry) -> float:
     d = QgsDistanceArea()
