@@ -6,7 +6,8 @@ dirs=$@
 
 for d in ${dirs}; do
   pushd ${orig}
-  cp *.html *.init *.json *.ts ../${d}
+  mkdir -p ../${d}/src/data
+  cp *.html *.ini *.json *.ts ../${d}
   cp src/*.* ../${d}/src
   popd
   pushd ${d}
