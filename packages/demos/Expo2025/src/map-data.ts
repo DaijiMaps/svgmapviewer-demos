@@ -117,7 +117,7 @@ function filterName(f: PointOrCentroidFeature): null | string {
   }
   // split name by keywords
   return name.replace(
-    /(カフェ|レストラン|ミュージアム|センター|門衛所|御休所|休憩所|案内図)/,
+    /(カフェ|レストラン|ミュージアム|センター|門衛所|御休所|休憩所|案内図|パビリオン|マーケットプレイス)/,
     ' $1 '
   )
 }

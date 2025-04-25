@@ -6,6 +6,7 @@ import {
 } from '@daijimaps/svgmapviewer/carto'
 import {
   benchPath,
+  entrancePath,
   guidePostPath,
   infoBoardPath,
   monumentPath,
@@ -13,6 +14,8 @@ import {
   toriiPath,
   tree16x16Path,
   tree4x8Path,
+  vendingMachinePath,
+  wasteBasketPath,
 } from '@daijimaps/svgmapviewer/carto-objects'
 import { MultiPolygon, PointGeoJSON } from '@daijimaps/svgmapviewer/geo'
 import { V } from '@daijimaps/svgmapviewer/tuple'
@@ -122,6 +125,12 @@ export const getMapObjects: () => MapObjects[] = () => [
     pointsFilter: (f) => !!f.properties.other_tags?.match(/"bench"/),
   },
   {
+    name: 'entrances',
+    path: entrancePath,
+    width: 0.05,
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"entrance"/),
+  },
+  {
     name: 'guide-posts',
     path: guidePostPath,
     width: 0.05,
@@ -136,8 +145,8 @@ export const getMapObjects: () => MapObjects[] = () => [
   },
   {
     name: 'trees1',
-    path: tree16x16Path,
-    width: 0.3,
+    path: tree4x8Path,
+    width: 0.15,
     pointsFilter: (f) => !!f.properties.other_tags?.match(/"tree"/),
   },
   {
@@ -151,22 +160,36 @@ export const getMapObjects: () => MapObjects[] = () => [
   {
     name: 'torii',
     path: toriiPath,
-    width: 0.075,
+    width: 0.05,
     pointsFilter: (f) => !!f.properties.man_made?.match(/^torii$/),
   },
   {
     name: 'monument',
     path: monumentPath,
-    width: 0.075,
+    width: 0.05,
     pointsFilter: (f) =>
       !!f.properties.other_tags?.match(/"historic"=>"memorial"/),
   },
   {
     name: 'statue',
     path: statuePath,
-    width: 0.075,
+    width: 0.05,
     pointsFilter: (f) =>
       !!f.properties.other_tags?.match(/"artwork_type"=>"statue"/),
+  },
+  {
+    name: 'vending-machine',
+    path: vendingMachinePath,
+    width: 0.05,
+    pointsFilter: (f) =>
+      !!f.properties.other_tags?.match(/"amenity"=>"vending_machine"/),
+  },
+  {
+    name: 'waste-basket',
+    path: wasteBasketPath,
+    width: 0.05,
+    pointsFilter: (f) =>
+      !!f.properties.other_tags?.match(/"amenity"=>"waste_basket"/),
   },
 ]
 
