@@ -12,7 +12,6 @@ import {
   monumentPath,
   statuePath,
   toriiPath,
-  tree16x16Path,
   tree4x8Path,
   vendingMachinePath,
   wasteBasketPath,
@@ -209,16 +208,46 @@ export const getMapSymbols: () => MapSymbols[] = () => [
     centroidsFilter: (f) => !!f.properties.other_tags?.match(/"parking"/),
   },
   {
-    name: 'drinking-fountain',
+    name: 'drinking-fountains',
     href: '#XDrinkingFountain',
     pointsFilter: (f) =>
       !!f.properties.other_tags?.match(/"amenity"=>"drinking_water"/),
+  },
+  {
+    name: 'elevators',
+    href: '#XElevator',
+    pointsFilter: (f) => !!f.properties.highway?.match(/elevator/),
+  },
+  {
+    name: 'escalators',
+    href: '#XEscalator',
+    midpointsFilter: (f) =>
+      !!f.properties.highway?.match(/steps/) &&
+      !!f.properties.other_tags?.match(/incline/),
+  },
+  {
+    name: 'buses',
+    href: '#XBus',
+    pointsFilter: (f) => !!f.properties.other_tags?.match(/"bus"=>"yes"/),
+  },
+  {
+    name: 'informations',
+    href: '#XInformation',
+    pointsFilter: (f) =>
+      !!f.properties.other_tags?.match(/"tourism"=>"information"/) &&
+      !!f.properties.other_tags?.match(/"information"=>"office"/),
+    centroidsFilter: (f) =>
+      !!f.properties.other_tags?.match(/"tourist"=>"information"/) &&
+      !!f.properties.other_tags?.match(/"information"=>"office"/),
   },
 ]
 
 export const getMapMarkers: () => MapMarkers[] = () => [
   {
     name: 'all',
-    pointsFilter: (f) => !!f.properties.name?.match(/./),
+    pointsFilter: (f) =>
+      !!f.properties.name?.match(/./) &&
+      // exclude amenity/bus/information
+      !f.properties.other_tags?.match(/"(amenity|bus|information)"/),
   },
 ]

@@ -13,6 +13,7 @@ import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
 import areas from './data/areas.json'
 import centroids from './data/map-centroids.json'
 import lines from './data/map-lines.json'
+import midpoints from './data/map-midpoints.json'
 import multilinestrings from './data/map-multilinestrings.json'
 import multipolygons from './data/map-multipolygons.json'
 import points from './data/map-points.json'
@@ -36,6 +37,7 @@ export const mapData: MapData = {
   multilinestrings,
   multipolygons,
   centroids,
+  midpoints,
 }
 
 //// mapCoord
