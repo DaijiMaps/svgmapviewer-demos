@@ -25,6 +25,11 @@ import './map.css'
 export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
+    name: 'island',
+    filter: (f) => !!f.properties.natural?.match(/coastline/),
+  },
+  {
+    type: 'multipolygon',
     name: 'area',
     data: internals.features.map(
       (f) => f.geometry.coordinates
