@@ -228,7 +228,14 @@ export const getMapSymbols: () => MapSymbols[] = () => [
     href: '#XEscalator',
     midpointsFilter: (f) =>
       !!f.properties.highway?.match(/steps/) &&
-      !!f.properties.other_tags?.match(/incline/),
+      !!f.properties.other_tags?.match(/"conveying"=>"yes"/),
+  },
+  {
+    name: 'stairs',
+    href: '#XStairs',
+    midpointsFilter: (f) =>
+      !!f.properties.highway?.match(/steps/) &&
+      !f.properties.other_tags?.match(/"conveying"=>"yes"/),
   },
   {
     name: 'buses',
