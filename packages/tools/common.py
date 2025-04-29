@@ -832,15 +832,60 @@ def fixupAttributes(prefix: str, l: QgsVectorLayer, outGeoJSON, origin: QgsPoint
     return QgsVectorFileWriter.writeAsVectorFormatV3(m, outGeoJSON, tx, opts)
 
 def fixupVectorLayer(l: QgsVectorLayer) -> QgsVectorLayer:
-    caps = l.dataProvider().capabilities()
+    provider = l.dataProvider()
+    caps = provider.capabilities()
     if not (caps & QgsVectorDataProvider.ChangeGeometries):
         return l
+    if not (caps & QgsVectorDataProvider.ChangeAttributeValues):
+        return l
 
+    # 1. fixup clockwise-ness
     l.selectAll()
     for f in l.selectedFeatures():
         # fixup multipolygon clockwise-ness for SVG rendering
         fid = f.id()
-        l.dataProvider().changeGeometryValues({ fid: f.geometry().forcePolygonClockwise() })
+        provider.changeGeometryValues({ fid: f.geometry().forcePolygonClockwise() })
+
+    # 2. add area field
+    sourceCrs = QgsCoordinateReferenceSystem.fromOgcWmsCrs("EPSG:4326")
+    destCrs = QgsCoordinateReferenceSystem.fromOgcWmsCrs("EPSG:3857") # XXX
+    tr = QgsCoordinateTransform(sourceCrs, destCrs, prj)
+
+    area_field = QgsField("area", QVariant.Double)
+    provider.addAttributes([area_field])
+    l.updateFields()
+
+    idx = provider.fieldNameIndex("area")
+
+    for f in l.getFeatures():
+        fid = f.id()
+        g = f.geometry()
+        g.transform(tr)
+        area = g.area()
+        if area > 0:
+            attrs = { idx: area }
+            provider.changeAttributeValues({ fid: attrs })
+
+    # 3. add centroid_x/centroid_y fields
+    centroid_x = QgsField("centroid_x", QVariant.Double)
+    centroid_y = QgsField("centroid_y", QVariant.Double)
+    provider.addAttributes([centroid_x, centroid_y])
+    l.updateFields()
+
+    idx_x = provider.fieldNameIndex("centroid_x")
+    idx_y = provider.fieldNameIndex("centroid_y")
+
+    for f in l.getFeatures():
+        fid = f.id()
+        g = f.geometry()
+        centroid = g.centroid()
+        for part in centroid.constParts():
+            for v in part.vertices():
+                attrs = { idx_x: v.x(), idx_y: v.y() }
+                provider.changeAttributeValues({ fid: attrs })
+                break
+            break
+
     return l
 
 def calcEllipsoidalDistance(g: QgsGeometry) -> float:
