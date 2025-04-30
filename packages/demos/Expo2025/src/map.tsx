@@ -78,6 +78,7 @@ export const getMapLayers: () => MapLayer[] = () => [
     name: 'footway',
     filter: (f) =>
       !!f.properties.highway?.match(/^(footway|path|pedestrian|steps)$/) &&
+      !f.properties.other_tags?.match(/"service"=>/) &&
       !f.properties.other_tags?.match(/"tunnel"/),
   },
   {
@@ -85,6 +86,7 @@ export const getMapLayers: () => MapLayer[] = () => [
     name: 'cycleway',
     filter: (f) =>
       !!f.properties.highway?.match(/^(cycleway)$/) &&
+      !f.properties.other_tags?.match(/"service"=>/) &&
       !f.properties.other_tags?.match(/"tunnel"/),
   },
   {
@@ -92,6 +94,7 @@ export const getMapLayers: () => MapLayer[] = () => [
     name: 'service',
     filter: (f) =>
       !!f.properties.highway?.match(/^(service)$/) &&
+      !f.properties.other_tags?.match(/"service"=>/) &&
       !f.properties.other_tags?.match(/"tunnel"/),
   },
   {
@@ -102,6 +105,7 @@ export const getMapLayers: () => MapLayer[] = () => [
       !f.properties.highway?.match(
         /^(footway|path|pedestrian|steps|cycleway|service)$/
       ) &&
+      !f.properties.other_tags?.match(/"service"=>/) &&
       !f.properties.other_tags?.match(/"tunnel"/),
   },
   {
