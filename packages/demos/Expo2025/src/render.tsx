@@ -27,8 +27,8 @@ function RenderShopInfo(props: Readonly<ShopInfo>) {
     <>
       <p>{props.properties.name ?? props.name}</p>
       {website !== null && <p>website: <a target="_blank" href={website}>{website}</a></p>}
-      {props.properties.osm_id ?? <p>osm_id: {props.osm_id}</p>}
-      {props.properties.osm_way_id ?? <p>osm_way_id: {props.osm_way_id}</p>}
+      {typeof props.properties.osm_id === 'string' && <p>osm_id: {props.properties.osm_id}</p>}
+      {typeof props.properties.osm_way_id === 'string' && <p>osm_way_id: {props.properties.osm_way_id}</p>}
     </>
   )
 }
