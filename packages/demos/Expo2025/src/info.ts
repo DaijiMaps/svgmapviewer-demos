@@ -6,6 +6,7 @@ export interface ShopInfo {
   properties: OsmPolygonProperties | OsmPolygonProperties
   name?: string
   address?: string
+  website?: string
 }
 
 export interface FacilityInfo {

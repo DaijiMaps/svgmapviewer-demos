@@ -1,5 +1,5 @@
 import { svgMapViewerConfig as cfg } from '@daijimaps/svgmapviewer'
-import { findProperties } from '@daijimaps/svgmapviewer/geo'
+import { getPropertyValue, findProperties } from '@daijimaps/svgmapviewer/geo'
 import { FacilityInfo, Info, ShopInfo } from './info'
 
 export interface Props {
@@ -21,9 +21,14 @@ export function RenderInfo(props: Readonly<Props>) {
 }
 
 function RenderShopInfo(props: Readonly<ShopInfo>) {
+  const website = getPropertyValue(props.properties, 'website')
+
   return (
     <>
       <p>{props.properties.name ?? props.name}</p>
+      {website !== null && <p>website: <a target="_blank" href={website}>{website}</a></p>}
+      {props.properties.osm_id ?? <p>osm_id: {props.osm_id}</p>}
+      {props.properties.osm_way_id ?? <p>osm_way_id: {props.osm_way_id}</p>}
     </>
   )
 }
