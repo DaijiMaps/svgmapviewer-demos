@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529601 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2557198 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.6410800" minlon="135.3723400" maxlat="34.6606700" maxlon="135.4052000"/>
  <node id="419618925" visible="true" version="4" changeset="153090909" timestamp="2024-06-24T02:02:17Z" user="taketaketake" uid="4757277" lat="34.6617561" lon="135.4014095"/>
  <node id="558661790" visible="true" version="2" changeset="44914082" timestamp="2017-01-05T02:16:20Z" user="Jeffrey Friedl" uid="3091368" lat="34.6392716" lon="135.4053574"/>
@@ -5269,8 +5269,9 @@
   <tag k="unisex" v="yes"/>
   <tag k="wheelchair" v="yes"/>
  </node>
- <node id="12751984760" visible="true" version="2" changeset="164885173" timestamp="2025-04-13T09:13:56Z" user="Cotep4" uid="22644084" lat="34.6473354" lon="135.3867673">
+ <node id="12751984760" visible="true" version="3" changeset="165702302" timestamp="2025-05-02T05:43:20Z" user="K_Sakanoshita" uid="389520" lat="34.6472382" lon="135.3868521">
   <tag k="amenity" v="toilets"/>
+  <tag k="check_date" v="2025-05-02"/>
   <tag k="female" v="yes"/>
   <tag k="male" v="yes"/>
   <tag k="unisex" v="no"/>
@@ -11418,10 +11419,11 @@
   <tag k="check_date" v="2025-04-20"/>
   <tag k="shop" v="gift"/>
  </node>
- <node id="12769751718" visible="true" version="1" changeset="165179866" timestamp="2025-04-20T07:21:20Z" user="K_Sakanoshita" uid="389520" lat="34.6501371" lon="135.3857332">
+ <node id="12769751718" visible="true" version="2" changeset="165700701" timestamp="2025-05-02T04:07:09Z" user="K_Sakanoshita" uid="389520" lat="34.6501371" lon="135.3857332">
   <tag k="amenity" v="restaurant"/>
-  <tag k="check_date" v="2025-04-20"/>
+  <tag k="check_date" v="2025-05-02"/>
   <tag k="cuisine" v="malaysian"/>
+  <tag k="name" v="WAGURI"/>
  </node>
  <node id="12769762576" visible="true" version="2" changeset="165487161" timestamp="2025-04-27T01:05:16Z" user="K_Sakanoshita" uid="389520" lat="34.6501805" lon="135.3840418">
   <tag k="information" v="map"/>
@@ -16070,7 +16072,7 @@
   <tag k="information" v="map"/>
   <tag k="tourism" v="information"/>
  </node>
- <node id="12794662466" visible="true" version="1" changeset="165546260" timestamp="2025-04-28T12:10:39Z" user="K_Sakanoshita" uid="389520" lat="34.6467893" lon="135.3860018">
+ <node id="12794662466" visible="true" version="2" changeset="165702119" timestamp="2025-05-02T05:34:05Z" user="K_Sakanoshita" uid="389520" lat="34.6468206" lon="135.3860369">
   <tag k="addr:floor" v="1;2"/>
   <tag k="highway" v="elevator"/>
   <tag k="level" v="0;1"/>
@@ -16091,7 +16093,7 @@
   <tag k="name" v="WORLD EXPO 2025"/>
   <tag k="tourism" v="artwork"/>
  </node>
- <node id="12796986853" visible="true" version="1" changeset="165571854" timestamp="2025-04-29T02:54:22Z" user="Daiji Maps" uid="10880270" lat="34.6470699" lon="135.3856176">
+ <node id="12796986853" visible="true" version="2" changeset="165702116" timestamp="2025-05-02T05:33:40Z" user="K_Sakanoshita" uid="389520" lat="34.6471182" lon="135.3856777">
   <tag k="amenity" v="drinking_water"/>
  </node>
  <node id="12796986854" visible="true" version="1" changeset="165571854" timestamp="2025-04-29T02:54:22Z" user="Daiji Maps" uid="10880270" lat="34.6497322" lon="135.3865342">
@@ -19932,10 +19934,318 @@
   <tag k="check_date" v="2025-05-02"/>
   <tag k="cuisine" v="ルーマニア"/>
  </node>
+ <node id="12803415649" visible="true" version="1" changeset="165700055" timestamp="2025-05-02T03:15:33Z" user="K_Sakanoshita" uid="389520" lat="34.6480675" lon="135.3851210">
+  <tag k="entrance" v="yes"/>
+ </node>
+ <node id="12803415650" visible="true" version="1" changeset="165700055" timestamp="2025-05-02T03:15:33Z" user="K_Sakanoshita" uid="389520" lat="34.6479962" lon="135.3851122">
+  <tag k="amenity" v="fast_food"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="cuisine" v="cake"/>
+ </node>
  <node id="12803424115" visible="true" version="1" changeset="165699962" timestamp="2025-05-02T03:06:25Z" user="K_Sakanoshita" uid="389520" lat="34.6484442" lon="135.3822934">
   <tag k="artist_name" v="奥中章人"/>
   <tag k="name" v="INTER-WORLD/Cocooner: Apparent motion of celestial bodies"/>
   <tag k="tourism" v="artwork"/>
+ </node>
+ <node id="12803439247" visible="true" version="1" changeset="165700810" timestamp="2025-05-02T04:13:34Z" user="K_Sakanoshita" uid="389520" lat="34.6496853" lon="135.3854421">
+  <tag k="entrance" v="yes"/>
+ </node>
+ <node id="12803439248" visible="true" version="1" changeset="165700810" timestamp="2025-05-02T04:13:34Z" user="K_Sakanoshita" uid="389520" lat="34.6498096" lon="135.3852763">
+  <tag k="highway" v="street_lamp"/>
+ </node>
+ <node id="12803439249" visible="true" version="1" changeset="165700810" timestamp="2025-05-02T04:13:34Z" user="K_Sakanoshita" uid="389520" lat="34.6496903" lon="135.3852493">
+  <tag k="artist_name" v="宮内 紗也果"/>
+  <tag k="artwork_type" v="mural"/>
+  <tag k="fixme" v="Please merge me into a nearby wall"/>
+  <tag k="name" v="retto"/>
+  <tag k="tourism" v="artwork"/>
+ </node>
+ <node id="12803442772" visible="true" version="1" changeset="165700559" timestamp="2025-05-02T03:57:15Z" user="K_Sakanoshita" uid="389520" lat="34.6501398" lon="135.3855024">
+  <tag k="amenity" v="waste_basket"/>
+ </node>
+ <node id="12803452320" visible="true" version="1" changeset="165700632" timestamp="2025-05-02T04:02:40Z" user="K_Sakanoshita" uid="389520" lat="34.6500947" lon="135.3855497">
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="craft" v="confectionery"/>
+  <tag k="name" v="うなぎパイ"/>
+ </node>
+ <node id="12803452321" visible="true" version="1" changeset="165700632" timestamp="2025-05-02T04:02:40Z" user="K_Sakanoshita" uid="389520" lat="34.6501091" lon="135.3854471">
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="craft" v="confectionery"/>
+  <tag k="name" v="月化粧"/>
+ </node>
+ <node id="12803452322" visible="true" version="1" changeset="165700632" timestamp="2025-05-02T04:02:40Z" user="K_Sakanoshita" uid="389520" lat="34.6502888" lon="135.3855670">
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="craft" v="confectionery"/>
+ </node>
+ <node id="12803459685" visible="true" version="1" changeset="165701765" timestamp="2025-05-02T05:13:19Z" user="K_Sakanoshita" uid="389520" lat="34.6487378" lon="135.3809647">
+  <tag k="artist_name" v="田中かえ"/>
+  <tag k="artwork_type" v="mural"/>
+  <tag k="fixme" v="Please merge me into a nearby wall"/>
+  <tag k="name" v="これから"/>
+  <tag k="tourism" v="artwork"/>
+ </node>
+ <node id="12803459687" visible="true" version="1" changeset="165701823" timestamp="2025-05-02T05:16:31Z" user="K_Sakanoshita" uid="389520" lat="34.6485292" lon="135.3807354">
+  <tag k="amenity" v="shelter"/>
+  <tag k="bench" v="yes"/>
+  <tag k="bin" v="no"/>
+  <tag k="name" v="氷のクールスポット"/>
+  <tag k="shelter_type" v="sun_shelter"/>
+ </node>
+ <node id="12803459689" visible="true" version="1" changeset="165702004" timestamp="2025-05-02T05:26:51Z" user="K_Sakanoshita" uid="389520" lat="34.6475670" lon="135.3823469">
+  <tag k="advertising" v="billboard"/>
+  <tag k="message" v="commercial"/>
+  <tag k="name" v="水と空気のスペクタクルショー アオと夜の虹のパレード"/>
+ </node>
+ <node id="12803484028" visible="true" version="1" changeset="165701697" timestamp="2025-05-02T05:10:42Z" user="K_Sakanoshita" uid="389520" lat="34.6487210" lon="135.3805999">
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="コモングラウンド"/>
+  <tag k="shop" v="gift"/>
+ </node>
+ <node id="12803490324" visible="true" version="1" changeset="165701200" timestamp="2025-05-02T04:41:00Z" user="K_Sakanoshita" uid="389520" lat="34.6486527" lon="135.3804764">
+  <tag k="entrance" v="main"/>
+ </node>
+ <node id="12803498388" visible="true" version="1" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520" lat="34.6483080" lon="135.3809272">
+  <tag k="natural" v="stone"/>
+ </node>
+ <node id="12803498389" visible="true" version="1" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520" lat="34.6483201" lon="135.3809453">
+  <tag k="natural" v="stone"/>
+ </node>
+ <node id="12803498390" visible="true" version="1" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520" lat="34.6483365" lon="135.3810345">
+  <tag k="natural" v="stone"/>
+ </node>
+ <node id="12803498391" visible="true" version="1" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520" lat="34.6483371" lon="135.3810131">
+  <tag k="natural" v="stone"/>
+ </node>
+ <node id="12803498392" visible="true" version="1" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520" lat="34.6482525" lon="135.3811158">
+  <tag k="man_made" v="water_tap"/>
+ </node>
+ <node id="12803498393" visible="true" version="1" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520" lat="34.6478771" lon="135.3817787">
+  <tag k="name" v="TELEPHONE"/>
+  <tag k="tourism" v="artwork"/>
+ </node>
+ <node id="12803501899" visible="true" version="1" changeset="165701783" timestamp="2025-05-02T05:14:21Z" user="K_Sakanoshita" uid="389520" lat="34.6485973" lon="135.3808606">
+  <tag k="information" v="board"/>
+  <tag k="name" v="氷のクールスポット"/>
+  <tag k="tourism" v="information"/>
+ </node>
+ <node id="12803502011" visible="true" version="1" changeset="165703378" timestamp="2025-05-02T06:27:14Z" user="K_Sakanoshita" uid="389520" lat="34.6467462" lon="135.3865213">
+  <tag k="addr:floor" v="3"/>
+  <tag k="amenity" v="restaurant"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="level" v="2"/>
+  <tag k="name" v="LOUNGE&amp;DINING"/>
+  <tag k="name:ja" v="ラウンジ＆ダイニング"/>
+ </node>
+ <node id="12803504709" visible="true" version="1" changeset="165701724" timestamp="2025-05-02T05:11:33Z" user="K_Sakanoshita" uid="389520" lat="34.6486573" lon="135.3805858">
+  <tag k="entrance" v="yes"/>
+ </node>
+ <node id="12803519517" visible="true" version="1" changeset="165702479" timestamp="2025-05-02T05:51:22Z" user="K_Sakanoshita" uid="389520" lat="34.6472906" lon="135.3866326">
+  <tag k="natural" v="tree"/>
+ </node>
+ <node id="12803519518" visible="true" version="1" changeset="165702479" timestamp="2025-05-02T05:51:22Z" user="K_Sakanoshita" uid="389520" lat="34.6473325" lon="135.3866597">
+  <tag k="natural" v="tree"/>
+ </node>
+ <node id="12803519519" visible="true" version="1" changeset="165702479" timestamp="2025-05-02T05:51:22Z" user="K_Sakanoshita" uid="389520" lat="34.6473680" lon="135.3866493">
+  <tag k="natural" v="tree"/>
+ </node>
+ <node id="12803522545" visible="true" version="1" changeset="165702363" timestamp="2025-05-02T05:45:46Z" user="K_Sakanoshita" uid="389520" lat="34.6472454" lon="135.3866653">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="コカ・コーラ"/>
+  <tag k="brand:en" v="Coca-Cola"/>
+  <tag k="brand:ja" v="コカ・コーラ"/>
+  <tag k="brand:wikidata" v="Q2813"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="drink:cola" v="yes"/>
+  <tag k="name" v="コカ・コーラ"/>
+  <tag k="name:en" v="Coca-Cola"/>
+  <tag k="name:ja" v="コカ・コーラ"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803522546" visible="true" version="1" changeset="165702363" timestamp="2025-05-02T05:45:46Z" user="K_Sakanoshita" uid="389520" lat="34.6472498" lon="135.3866480">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="コカ・コーラ"/>
+  <tag k="brand:en" v="Coca-Cola"/>
+  <tag k="brand:ja" v="コカ・コーラ"/>
+  <tag k="brand:wikidata" v="Q2813"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="drink:cola" v="yes"/>
+  <tag k="name" v="コカ・コーラ"/>
+  <tag k="name:en" v="Coca-Cola"/>
+  <tag k="name:ja" v="コカ・コーラ"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803522547" visible="true" version="1" changeset="165702363" timestamp="2025-05-02T05:45:46Z" user="K_Sakanoshita" uid="389520" lat="34.6472546" lon="135.3866255">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="コカ・コーラ"/>
+  <tag k="brand:en" v="Coca-Cola"/>
+  <tag k="brand:ja" v="コカ・コーラ"/>
+  <tag k="brand:wikidata" v="Q2813"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="drink:cola" v="yes"/>
+  <tag k="name" v="コカ・コーラ"/>
+  <tag k="name:en" v="Coca-Cola"/>
+  <tag k="name:ja" v="コカ・コーラ"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803522548" visible="true" version="1" changeset="165702363" timestamp="2025-05-02T05:45:46Z" user="K_Sakanoshita" uid="389520" lat="34.6472598" lon="135.3866094">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="サントリー"/>
+  <tag k="brand:en" v="Suntory"/>
+  <tag k="brand:ja" v="サントリー"/>
+  <tag k="brand:wikidata" v="Q1345267"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="サントリー"/>
+  <tag k="name:en" v="Suntory"/>
+  <tag k="name:ja" v="サントリー"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803522549" visible="true" version="1" changeset="165702363" timestamp="2025-05-02T05:45:46Z" user="K_Sakanoshita" uid="389520" lat="34.6472627" lon="135.3865893">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="サントリー"/>
+  <tag k="brand:en" v="Suntory"/>
+  <tag k="brand:ja" v="サントリー"/>
+  <tag k="brand:wikidata" v="Q1345267"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="サントリー"/>
+  <tag k="name:en" v="Suntory"/>
+  <tag k="name:ja" v="サントリー"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803522550" visible="true" version="1" changeset="165702363" timestamp="2025-05-02T05:45:46Z" user="K_Sakanoshita" uid="389520" lat="34.6472701" lon="135.3865683">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="サントリー"/>
+  <tag k="brand:en" v="Suntory"/>
+  <tag k="brand:ja" v="サントリー"/>
+  <tag k="brand:wikidata" v="Q1345267"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="サントリー"/>
+  <tag k="name:en" v="Suntory"/>
+  <tag k="name:ja" v="サントリー"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803522602" visible="true" version="1" changeset="165701789" timestamp="2025-05-02T05:14:42Z" user="K_Sakanoshita" uid="389520" lat="34.6485455" lon="135.3807633">
+  <tag k="information" v="board"/>
+  <tag k="name" v="氷のクールスポット"/>
+  <tag k="tourism" v="information"/>
+ </node>
+ <node id="12803535943" visible="true" version="1" changeset="165702015" timestamp="2025-05-02T05:27:36Z" user="K_Sakanoshita" uid="389520" lat="34.6475813" lon="135.3823393">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="サントリー"/>
+  <tag k="brand:en" v="Suntory"/>
+  <tag k="brand:ja" v="サントリー"/>
+  <tag k="brand:wikidata" v="Q1345267"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="サントリー"/>
+  <tag k="name:en" v="Suntory"/>
+  <tag k="name:ja" v="サントリー"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803535944" visible="true" version="1" changeset="165702015" timestamp="2025-05-02T05:27:36Z" user="K_Sakanoshita" uid="389520" lat="34.6475647" lon="135.3823388">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="サントリー"/>
+  <tag k="brand:en" v="Suntory"/>
+  <tag k="brand:ja" v="サントリー"/>
+  <tag k="brand:wikidata" v="Q1345267"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="サントリー"/>
+  <tag k="name:en" v="Suntory"/>
+  <tag k="name:ja" v="サントリー"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803535945" visible="true" version="1" changeset="165702015" timestamp="2025-05-02T05:27:36Z" user="K_Sakanoshita" uid="389520" lat="34.6475471" lon="135.3823392">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="サントリー"/>
+  <tag k="brand:en" v="Suntory"/>
+  <tag k="brand:ja" v="サントリー"/>
+  <tag k="brand:wikidata" v="Q1345267"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="サントリー"/>
+  <tag k="name:en" v="Suntory"/>
+  <tag k="name:ja" v="サントリー"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803535946" visible="true" version="1" changeset="165702015" timestamp="2025-05-02T05:27:36Z" user="K_Sakanoshita" uid="389520" lat="34.6475335" lon="135.3823386">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="サントリー"/>
+  <tag k="brand:en" v="Suntory"/>
+  <tag k="brand:ja" v="サントリー"/>
+  <tag k="brand:wikidata" v="Q1345267"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="サントリー"/>
+  <tag k="name:en" v="Suntory"/>
+  <tag k="name:ja" v="サントリー"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803538039" visible="true" version="1" changeset="165702113" timestamp="2025-05-02T05:33:21Z" user="K_Sakanoshita" uid="389520" lat="34.6475478" lon="135.3824559">
+  <tag k="amenity" v="waste_basket"/>
+ </node>
+ <node id="12803538040" visible="true" version="1" changeset="165702113" timestamp="2025-05-02T05:33:21Z" user="K_Sakanoshita" uid="389520" lat="34.6471470" lon="135.3856269">
+  <tag k="artist_name" v="前田豆コ"/>
+  <tag k="artwork_type" v="mural"/>
+  <tag k="fixme" v="Please merge me into a nearby wall"/>
+  <tag k="name" v="浪漫、ここにあり"/>
+  <tag k="tourism" v="artwork"/>
+ </node>
+ <node id="12803547528" visible="true" version="1" changeset="165702302" timestamp="2025-05-02T05:43:20Z" user="K_Sakanoshita" uid="389520" lat="34.6473803" lon="135.3868065">
+  <tag k="amenity" v="shelter"/>
+ </node>
+ <node id="12803547529" visible="true" version="2" changeset="165702336" timestamp="2025-05-02T05:44:29Z" user="K_Sakanoshita" uid="389520" lat="34.6473876" lon="135.3867700">
+  <tag k="amenity" v="studio"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="2025年日本国際博覧会 特別記念局 8K3EXPO"/>
+  <tag k="studio" v="radio"/>
+ </node>
+ <node id="12803547530" visible="true" version="1" changeset="165702302" timestamp="2025-05-02T05:43:20Z" user="K_Sakanoshita" uid="389520" lat="34.6473504" lon="135.3868117">
+  <tag k="amenity" v="drinking_water"/>
+  <tag k="bottle" v="yes"/>
+ </node>
+ <node id="12803547531" visible="true" version="1" changeset="165702302" timestamp="2025-05-02T05:43:20Z" user="K_Sakanoshita" uid="389520" lat="34.6473790" lon="135.3868100">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="コカ・コーラ"/>
+  <tag k="brand:en" v="Coca-Cola"/>
+  <tag k="brand:ja" v="コカ・コーラ"/>
+  <tag k="brand:wikidata" v="Q2813"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="drink:cola" v="yes"/>
+  <tag k="name" v="コカ・コーラ"/>
+  <tag k="name:en" v="Coca-Cola"/>
+  <tag k="name:ja" v="コカ・コーラ"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803547532" visible="true" version="1" changeset="165702302" timestamp="2025-05-02T05:43:20Z" user="K_Sakanoshita" uid="389520" lat="34.6473499" lon="135.3867982">
+  <tag k="amenity" v="vending_machine"/>
+  <tag k="brand" v="サントリー"/>
+  <tag k="brand:en" v="Suntory"/>
+  <tag k="brand:ja" v="サントリー"/>
+  <tag k="brand:wikidata" v="Q1345267"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="サントリー"/>
+  <tag k="name:en" v="Suntory"/>
+  <tag k="name:ja" v="サントリー"/>
+  <tag k="vending" v="drinks"/>
+ </node>
+ <node id="12803554338" visible="true" version="1" changeset="165703264" timestamp="2025-05-02T06:24:18Z" user="K_Sakanoshita" uid="389520" lat="34.6472848" lon="135.3863178">
+  <tag k="board_type" v="traffic"/>
+  <tag k="information" v="board"/>
+  <tag k="name" v="74"/>
+  <tag k="tourism" v="information"/>
+ </node>
+ <node id="12803559058" visible="true" version="1" changeset="165703173" timestamp="2025-05-02T06:21:16Z" user="K_Sakanoshita" uid="389520" lat="34.6475765" lon="135.3868263">
+  <tag k="information" v="board"/>
+  <tag k="name" v="E11 EXPOホール「シャインハット」"/>
+  <tag k="tourism" v="information"/>
+ </node>
+ <node id="12803578847" visible="true" version="1" changeset="165703206" timestamp="2025-05-02T06:22:28Z" user="K_Sakanoshita" uid="389520" lat="34.6476583" lon="135.3866388">
+  <tag k="board_type" v="traffic"/>
+  <tag k="information" v="board"/>
+  <tag k="name" v="72"/>
+  <tag k="tourism" v="information"/>
+ </node>
+ <node id="12803589012" visible="true" version="1" changeset="165703489" timestamp="2025-05-02T06:29:41Z" user="K_Sakanoshita" uid="389520" lat="34.6469720" lon="135.3862932">
+  <tag k="board_type" v="traffic"/>
+  <tag k="information" v="board"/>
+  <tag k="name" v="E12 EXPOナショナルデーホール「レイガーデン」"/>
+  <tag k="tourism" v="information"/>
  </node>
  <way id="35898937" visible="true" version="13" changeset="162230753" timestamp="2025-02-07T04:40:26Z" user="setokynet" uid="21931672">
   <nd ref="700891151"/>
@@ -28285,10 +28595,12 @@
   <tag k="name" v="ウォータープラザマーケットプレイス西"/>
   <tag k="name:en" v="Water Plaza Marketplace West"/>
  </way>
- <way id="1366067877" visible="true" version="7" changeset="165695293" timestamp="2025-05-01T21:42:28Z" user="K_Sakanoshita" uid="389520">
+ <way id="1366067877" visible="true" version="9" changeset="165701724" timestamp="2025-05-02T05:11:33Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12650712928"/>
   <nd ref="12650712927"/>
   <nd ref="12650712926"/>
+  <nd ref="12803504709"/>
+  <nd ref="12803490324"/>
   <nd ref="12650712925"/>
   <nd ref="12787778371"/>
   <nd ref="12650712928"/>
@@ -29534,7 +29846,7 @@
   <tag k="building" v="yes"/>
   <tag k="name:en" v="Group rest area"/>
  </way>
- <way id="1366083944" visible="true" version="7" changeset="165695293" timestamp="2025-05-01T21:42:28Z" user="K_Sakanoshita" uid="389520">
+ <way id="1366083944" visible="true" version="8" changeset="165700055" timestamp="2025-05-02T03:15:33Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12650830787"/>
   <nd ref="12650830786"/>
   <nd ref="12650830785"/>
@@ -29545,6 +29857,7 @@
   <nd ref="12768219851"/>
   <nd ref="12650830781"/>
   <nd ref="12799770547"/>
+  <nd ref="12803415649"/>
   <nd ref="12650830780"/>
   <nd ref="12650830779"/>
   <nd ref="12650830787"/>
@@ -30088,7 +30401,7 @@
   <nd ref="12650865898"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="1366084865" visible="true" version="6" changeset="165686513" timestamp="2025-05-01T17:24:40Z" user="K_Sakanoshita" uid="389520">
+ <way id="1366084865" visible="true" version="7" changeset="165702863" timestamp="2025-05-02T06:08:13Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12650869323"/>
   <nd ref="12802681194"/>
   <nd ref="12802681193"/>
@@ -30126,6 +30439,7 @@
   <nd ref="12650865899"/>
   <nd ref="12650869323"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
  </way>
  <way id="1366084866" visible="true" version="4" changeset="165576079" timestamp="2025-04-29T06:25:18Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12797219232"/>
@@ -31531,7 +31845,7 @@
   <nd ref="12752334009"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="1377215433" visible="true" version="6" changeset="165695293" timestamp="2025-05-01T21:42:28Z" user="K_Sakanoshita" uid="389520">
+ <way id="1377215433" visible="true" version="7" changeset="165700810" timestamp="2025-05-02T04:13:34Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12752334035"/>
   <nd ref="12752334032"/>
   <nd ref="12752334033"/>
@@ -31540,6 +31854,7 @@
   <nd ref="12752334036"/>
   <nd ref="12752334039"/>
   <nd ref="12799770536"/>
+  <nd ref="12803439247"/>
   <nd ref="12752334038"/>
   <nd ref="12752334035"/>
   <tag k="building" v="yes"/>
@@ -31762,7 +32077,7 @@
   <nd ref="12753512612"/>
   <tag k="natural" v="water"/>
  </way>
- <way id="1377350309" visible="true" version="2" changeset="164988354" timestamp="2025-04-15T14:30:02Z" user="PoCoSoFo" uid="20246541">
+ <way id="1377350309" visible="true" version="3" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12753512647"/>
   <nd ref="12753512648"/>
   <nd ref="12753512649"/>
@@ -31784,9 +32099,11 @@
   <nd ref="12753512642"/>
   <nd ref="12753512647"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
   <tag k="layer" v="1"/>
+  <tag k="roof:shape" v="flat"/>
  </way>
- <way id="1377350310" visible="true" version="2" changeset="164988354" timestamp="2025-04-15T14:30:02Z" user="PoCoSoFo" uid="20246541">
+ <way id="1377350310" visible="true" version="3" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12753512664"/>
   <nd ref="12753512665"/>
   <nd ref="12753512666"/>
@@ -31808,9 +32125,11 @@
   <nd ref="12753512656"/>
   <nd ref="12753512664"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
   <tag k="layer" v="1"/>
+  <tag k="roof:shape" v="flat"/>
  </way>
- <way id="1377350311" visible="true" version="2" changeset="164988354" timestamp="2025-04-15T14:30:02Z" user="PoCoSoFo" uid="20246541">
+ <way id="1377350311" visible="true" version="3" changeset="165701975" timestamp="2025-05-02T05:25:12Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12753512683"/>
   <nd ref="12753512684"/>
   <nd ref="12753512685"/>
@@ -31832,7 +32151,9 @@
   <nd ref="12753512675"/>
   <nd ref="12753512683"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
   <tag k="layer" v="1"/>
+  <tag k="roof:shape" v="flat"/>
  </way>
  <way id="1377350312" visible="true" version="3" changeset="165178255" timestamp="2025-04-20T06:01:54Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12753512702"/>
@@ -31859,13 +32180,15 @@
   <tag k="building:levels" v="1"/>
   <tag k="layer" v="1"/>
  </way>
- <way id="1377350313" visible="true" version="1" changeset="164919745" timestamp="2025-04-14T04:12:10Z" user="taketaketake" uid="4757277">
+ <way id="1377350313" visible="true" version="2" changeset="165701765" timestamp="2025-05-02T05:13:19Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12753512710"/>
   <nd ref="12753512711"/>
   <nd ref="12753512712"/>
   <nd ref="12753512713"/>
   <nd ref="12753512710"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
+  <tag k="roof:shape" v="flat"/>
  </way>
  <way id="1377350314" visible="true" version="1" changeset="164919745" timestamp="2025-04-14T04:12:10Z" user="taketaketake" uid="4757277">
   <nd ref="12753512725"/>
@@ -39196,7 +39519,7 @@
   <tag k="name:ja" v="コロンビアパビリオン"/>
   <tag k="website" v="https://www.expo2025.or.jp/official-participant/colombia/"/>
  </way>
- <way id="1381316132" visible="true" version="1" changeset="165450371" timestamp="2025-04-26T06:32:04Z" user="あじさか" uid="12327793">
+ <way id="1381316132" visible="true" version="2" changeset="165701309" timestamp="2025-05-02T04:48:12Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12787556538"/>
   <nd ref="12787556539"/>
   <nd ref="12787556540"/>
@@ -39204,9 +39527,10 @@
   <nd ref="12787556542"/>
   <nd ref="12787556538"/>
   <tag k="amenity" v="exhibition_centre"/>
-  <tag k="name" v="クウェート国館"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="クウェートパビリオン"/>
   <tag k="name:en" v="The State of Kuwait Pavilion"/>
-  <tag k="name:ja" v="クウェート国館"/>
+  <tag k="name:ja" v="クウェートパビリオン"/>
   <tag k="website" v="https://www.expo2025.or.jp/official-participant/kuwait/"/>
  </way>
  <way id="1381316133" visible="true" version="1" changeset="165450371" timestamp="2025-04-26T06:32:04Z" user="あじさか" uid="12327793">
@@ -45232,7 +45556,7 @@
   <nd ref="12802622037"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="1382805111" visible="true" version="1" changeset="165683984" timestamp="2025-05-01T16:24:38Z" user="K_Sakanoshita" uid="389520">
+ <way id="1382805111" visible="true" version="2" changeset="165701336" timestamp="2025-05-02T04:49:33Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12802622049"/>
   <nd ref="12802622046"/>
   <nd ref="12802622045"/>
@@ -45247,6 +45571,8 @@
   <nd ref="12802622041"/>
   <nd ref="12802622049"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
+  <tag k="roof:shape" v="flat"/>
  </way>
  <way id="1382805112" visible="true" version="1" changeset="165683984" timestamp="2025-05-01T16:24:38Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12790713081"/>
@@ -45401,7 +45727,7 @@
   <tag k="name:en" v="Japan Pavilion"/>
   <tag k="name:ja" v="日本館"/>
  </way>
- <way id="1382815783" visible="true" version="1" changeset="165686513" timestamp="2025-05-01T17:24:40Z" user="K_Sakanoshita" uid="389520">
+ <way id="1382815783" visible="true" version="2" changeset="165702863" timestamp="2025-05-02T06:08:13Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12802681172"/>
   <nd ref="12802681178"/>
   <nd ref="12802681177"/>
@@ -45425,8 +45751,9 @@
   <nd ref="12650869318"/>
   <nd ref="12802681172"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
  </way>
- <way id="1382815784" visible="true" version="1" changeset="165686513" timestamp="2025-05-01T17:24:40Z" user="K_Sakanoshita" uid="389520">
+ <way id="1382815784" visible="true" version="2" changeset="165702850" timestamp="2025-05-02T06:07:31Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12650869316"/>
   <nd ref="12802681180"/>
   <nd ref="12802681179"/>
@@ -45467,8 +45794,10 @@
   <nd ref="12802681181"/>
   <nd ref="12650869316"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="4"/>
+  <tag k="roof:levels" v="1"/>
  </way>
- <way id="1382815785" visible="true" version="1" changeset="165686513" timestamp="2025-05-01T17:24:40Z" user="K_Sakanoshita" uid="389520">
+ <way id="1382815785" visible="true" version="2" changeset="165702591" timestamp="2025-05-02T05:57:22Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12802712113"/>
   <nd ref="12802712112"/>
   <nd ref="12802712111"/>
@@ -45478,8 +45807,9 @@
   <nd ref="12802712107"/>
   <nd ref="12802712113"/>
   <tag k="amenity" v="theatre"/>
-  <tag k="name" v="EXPOホール 「シャインハット」"/>
-  <tag k="name:en" v="EXPO Hall &quot;Shining hat&quot;"/>
+  <tag k="check_date" v="2025-05-02"/>
+  <tag k="name" v="シャインハット"/>
+  <tag k="name:en" v="Shining hat"/>
  </way>
  <way id="1382815786" visible="true" version="1" changeset="165686513" timestamp="2025-05-01T17:24:40Z" user="K_Sakanoshita" uid="389520">
   <nd ref="12802712114"/>
