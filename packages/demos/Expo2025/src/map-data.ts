@@ -50,21 +50,31 @@ export const { mapCoord, mapViewBox } = calcScale(mapData)
 //// mapNames
 
 export const mapHtmlStyle = `
+.poi-stars {
+  font-size: x-large;
+}
 .poi-names {
   font-size: small;
+}
+.poi-stars-item {
+  position: absolute;
+  padding: 0;
+  text-align: center;
 }
 .poi-names-item {
   position: absolute;
   padding: 0.5em;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.375);
   text-align: center;
   border-radius: 5em;
 }
 .poi-symbols-item > p,
+.poi-stars-item > p,
 .poi-names-item > p {
   margin: 0;
 }
 .poi-symbols-item {
+  position: absolute;
   font-size: 1.5em;
   color: white;
   background-color: black;
@@ -82,18 +92,20 @@ type PointOrCentroidFeature =
   | PointFeature<OsmPolygonProperties>
 
 const pointNames: POI[] = mapData.points.features.flatMap((f) => {
+  const id = Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
   const name = filterName(f)
   const pos = vVec(conv(f.geometry.coordinates as unknown as V))
   const area = 100 // XXX
-  return name === null ? [] : [{ name: splitName(name), pos, size: 1, area }]
+  return name === null ? [] : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 1, area }]
 })
 
 const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
+  const id = Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
   const name = filterName(f)
   const centroid = [f.properties.centroid_x, f.properties.centroid_y]
   const pos = vVec(conv(centroid))
   const area = 'area' in f.properties ? f.properties.area : undefined
-  return name === null ? [] : [{ name: splitName(name), pos, size: 10, area }]
+  return name === null ? [] : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 10, area }]
 })
 
 export const mapNames: POI[] = [...pointNames, ...centroidNames]
