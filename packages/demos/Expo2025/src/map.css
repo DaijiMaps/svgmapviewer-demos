@@ -124,6 +124,12 @@ body,
   stroke-width: 0.5px;
 }
 
+.fence {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.1px;
+}
+
 .retaining-wall {
   fill: none;
   stroke: black;

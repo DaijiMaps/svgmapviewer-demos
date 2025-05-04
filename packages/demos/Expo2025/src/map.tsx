@@ -40,7 +40,8 @@ export const getMapLayers: () => MapLayer[] = () => [
     name: 'forest',
     filter: (f) =>
       !!f.properties.landuse?.match(/forest/) ||
-      !!f.properties.natural?.match(/wood/),
+      !!f.properties.natural?.match(/wood/) ||
+      !!f.properties.leisure?.match(/garden/) ,
   },
   {
     type: 'multipolygon',
@@ -114,7 +115,12 @@ export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'line',
     name: 'wall',
-    filter: (f) => !!f.properties.barrier?.match(/^(wall|fence)$/),
+    filter: (f) => !!f.properties.barrier?.match(/^(wall)$/),
+  },
+  {
+    type: 'line',
+    name: 'fence',
+    filter: (f) => !!f.properties.barrier?.match(/^(fence)$/),
   },
   {
     type: 'line',
