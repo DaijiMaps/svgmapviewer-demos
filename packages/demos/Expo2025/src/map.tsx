@@ -71,7 +71,9 @@ export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'building',
-    filter: (f) => !!f.properties.building?.match(/./),
+    filter: (f) =>
+      !!f.properties.building?.match(/./) &&
+      !f.properties.building?.match(/roof/),
   },
   {
     type: 'line',
@@ -118,6 +120,13 @@ export const getMapLayers: () => MapLayer[] = () => [
     type: 'line',
     name: 'retaining-wall',
     filter: (f) => !!f.properties.barrier?.match(/^(retaining_wall)$/),
+  },
+  {
+    type: 'multipolygon',
+    name: 'roof',
+    filter: (f) =>
+      !!f.properties.building?.match(/./) &&
+      !!f.properties.building?.match(/roof/),
   },
 ]
 
