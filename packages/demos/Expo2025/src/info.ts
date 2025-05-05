@@ -1,5 +1,8 @@
 import { Info } from '@daijimaps/svgmapviewer'
-import { OsmPointProperties, OsmPolygonProperties } from '@daijimaps/svgmapviewer/geo'
+import {
+  OsmPointProperties,
+  OsmPolygonProperties,
+} from '@daijimaps/svgmapviewer/geo'
 
 export interface ShopInfo {
   tag: 'shop'
