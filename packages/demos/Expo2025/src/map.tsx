@@ -40,8 +40,12 @@ export const getMapLayers: () => MapLayer[] = () => [
     name: 'forest',
     filter: (f) =>
       !!f.properties.landuse?.match(/forest/) ||
-      !!f.properties.natural?.match(/wood/) ||
-      !!f.properties.leisure?.match(/garden/) ,
+      !!f.properties.natural?.match(/wood/)
+  },
+  {
+    type: 'multipolygon',
+    name: 'garden',
+    filter: (f) => !!f.properties.leisure?.match(/garden/) ,
   },
   {
     type: 'multipolygon',
