@@ -5,6 +5,10 @@ body,
   background-color: lightblue;
 }
 
+.container {
+  contain: paint;
+}
+
 .map {
 }
 
