@@ -52,6 +52,7 @@ packages:
   - 'packages/demos/WakayamaCastle'
   - 'packages/demos/Yakushiji'
   - 'packages/demos/YamashitaPark'
+  - 'packages/demos/YokohamaMunicipalChildrensBotanicalGarden'
   - 'packages/demos/YoyogiPark'
   - 'packages/demos/Yugyoji'
   - 'packages/demos/Zoorasia'
