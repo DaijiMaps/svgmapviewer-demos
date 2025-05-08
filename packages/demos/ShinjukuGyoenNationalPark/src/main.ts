@@ -26,6 +26,7 @@ svgmapviewer({
   getMapSymbols,
   getMapMarkers,
   renderInfo: RenderInfo,
+  title: 'Shinjuku-Gyoen Natioan Park',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   mapData,
   mapCoord,
