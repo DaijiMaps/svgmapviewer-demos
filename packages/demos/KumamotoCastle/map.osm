@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2051400 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2270294 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="32.8009800" minlon="130.6997100" maxlat="32.8105100" maxlon="130.7118300"/>
  <node id="269156421" visible="true" version="4" changeset="34655913" timestamp="2015-10-15T14:20:39Z" user="DannyAiquipa" uid="2226712" lat="32.8021112" lon="130.7132925">
   <tag k="highway" v="crossing"/>
@@ -104,22 +104,7 @@
   <tag k="tram" v="yes"/>
   <tag k="wikidata" v="Q11639598"/>
  </node>
- <node id="270881746" visible="true" version="7" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.7989255" lon="130.7049771">
-  <tag k="KSJ2:LIN" v="幹線"/>
-  <tag k="KSJ2:STN" v="辛島町"/>
-  <tag k="name" v="辛島町"/>
-  <tag k="name:en" v="Karashimacho"/>
-  <tag k="name:ja" v="辛島町"/>
-  <tag k="note" v="National-Land Numerical Information (Railway) 2007, MLIT Japan"/>
-  <tag k="note:ja" v="国土数値情報（鉄道データ）平成19年　国土交通省"/>
-  <tag k="public_transport" v="stop_position"/>
-  <tag k="railway" v="tram_stop"/>
-  <tag k="ref" v="8"/>
-  <tag k="source" v="KSJ2"/>
-  <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-N02-v1_1.html"/>
-  <tag k="tram" v="yes"/>
-  <tag k="wikidata" v="Q11637818"/>
- </node>
+ <node id="270881746" visible="true" version="8" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.7989255" lon="130.7049771"/>
  <node id="270881755" visible="true" version="3" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.8040658" lon="130.7080762">
   <tag k="KSJ2:LIN" v="幹線"/>
   <tag k="note" v="National-Land Numerical Information (Railway) 2007, MLIT Japan"/>
@@ -198,11 +183,11 @@
   <tag k="source" v="KSJ2"/>
   <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-N02-v1_1.html"/>
  </node>
- <node id="270881813" visible="true" version="6" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.8024893" lon="130.7123327">
+ <node id="270881813" visible="true" version="7" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.8024735" lon="130.7123314">
   <tag k="KSJ2:LIN" v="幹線"/>
   <tag k="KSJ2:STN" v="水道町"/>
   <tag k="name" v="水道町"/>
-  <tag k="name:en" v="Suidochi"/>
+  <tag k="name:en" v="Suidocho"/>
   <tag k="name:ja" v="水道町"/>
   <tag k="note" v="National-Land Numerical Information (Railway) 2007, MLIT Japan"/>
   <tag k="note:ja" v="国土数値情報（鉄道データ）平成19年　国土交通省"/>
@@ -682,9 +667,6 @@
  </node>
  <node id="1516131990" visible="true" version="3" changeset="34655454" timestamp="2015-10-15T13:57:40Z" user="DannyAiquipa" uid="2226712" lat="32.8086284" lon="130.7148867"/>
  <node id="1522316104" visible="true" version="2" changeset="55264710" timestamp="2018-01-08T13:24:30Z" user="55 tonmaru (55tonma)" uid="5644451" lat="32.7988583" lon="130.7075350"/>
- <node id="1522316143" visible="true" version="4" changeset="34655913" timestamp="2015-10-15T14:20:37Z" user="DannyAiquipa" uid="2226712" lat="32.7989934" lon="130.7002063">
-  <tag k="highway" v="traffic_signals"/>
- </node>
  <node id="1522316145" visible="true" version="1" changeset="9983585" timestamp="2011-11-29T00:08:59Z" user="yamasan" uid="32308" lat="32.7990110" lon="130.7064840"/>
  <node id="1522316258" visible="true" version="2" changeset="55264710" timestamp="2018-01-08T13:24:30Z" user="55 tonmaru (55tonma)" uid="5644451" lat="32.7993465" lon="130.7077415"/>
  <node id="1522316345" visible="true" version="2" changeset="55264710" timestamp="2018-01-08T13:24:30Z" user="55 tonmaru (55tonma)" uid="5644451" lat="32.7995765" lon="130.7066047"/>
@@ -943,7 +925,11 @@
  <node id="1522318132" visible="true" version="3" changeset="61640955" timestamp="2018-08-13T22:51:51Z" user="k_zoar" uid="236217" lat="32.8063900" lon="130.7113387"/>
  <node id="1522318135" visible="true" version="2" changeset="158914538" timestamp="2024-11-08T22:55:41Z" user="mcdlee" uid="116515" lat="32.8062601" lon="130.7003889"/>
  <node id="1522318140" visible="true" version="3" changeset="34808867" timestamp="2015-10-22T19:53:27Z" user="DannyAiquipa" uid="2226712" lat="32.8063635" lon="130.7101259"/>
- <node id="1522318151" visible="true" version="2" changeset="34643065" timestamp="2015-10-14T22:34:59Z" user="DannyAiquipa" uid="2226712" lat="32.8062857" lon="130.7080492"/>
+ <node id="1522318151" visible="true" version="3" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8062857" lon="130.7080492">
+  <tag k="crossing" v="uncontrolled"/>
+  <tag k="crossing:markings" v="zebra"/>
+  <tag k="highway" v="crossing"/>
+ </node>
  <node id="1522318174" visible="true" version="1" changeset="9983585" timestamp="2011-11-29T00:09:31Z" user="yamasan" uid="32308" lat="32.8063140" lon="130.6997230"/>
  <node id="1522318176" visible="true" version="2" changeset="158914538" timestamp="2024-11-08T22:55:41Z" user="mcdlee" uid="116515" lat="32.8063277" lon="130.7003924"/>
  <node id="1522318179" visible="true" version="2" changeset="31345307" timestamp="2015-05-21T14:59:12Z" user="Human65536" uid="1502046" lat="32.8064109" lon="130.7137781"/>
@@ -1231,9 +1217,9 @@
  <node id="1751153576" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8028286" lon="130.7046228"/>
  <node id="1751153577" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8033007" lon="130.7065614"/>
  <node id="1751153578" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8034977" lon="130.7068285"/>
- <node id="1751153579" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8035093" lon="130.7069956"/>
+ <node id="1751153579" visible="true" version="2" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8035442" lon="130.7069849"/>
  <node id="1751153580" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8035325" lon="130.7073058"/>
- <node id="1751153586" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8035788" lon="130.7071352"/>
+ <node id="1751153586" visible="true" version="2" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8036036" lon="130.7071352"/>
  <node id="1751153588" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8036643" lon="130.7074953"/>
  <node id="1751153590" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8037497" lon="130.7073644"/>
  <node id="1751153593" visible="true" version="1" changeset="11587153" timestamp="2012-05-13T15:40:59Z" user="som-tam" uid="362391" lat="32.8039977" lon="130.7075961"/>
@@ -1316,9 +1302,6 @@
  <node id="1990336286" visible="true" version="2" changeset="55264710" timestamp="2018-01-08T13:24:30Z" user="55 tonmaru (55tonma)" uid="5644451" lat="32.8008821" lon="130.7054282"/>
  <node id="1990336288" visible="true" version="3" changeset="56443634" timestamp="2018-02-17T15:56:29Z" user="N-Milzaness" uid="7620907" lat="32.8011877" lon="130.7055740"/>
  <node id="1990813827" visible="true" version="2" changeset="34655454" timestamp="2015-10-15T13:57:40Z" user="DannyAiquipa" uid="2226712" lat="32.8084313" lon="130.7130921"/>
- <node id="1992253942" visible="true" version="3" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.7990985" lon="130.7002130">
-  <tag k="highway" v="traffic_signals"/>
- </node>
  <node id="1992281374" visible="true" version="2" changeset="56445463" timestamp="2018-02-17T17:13:06Z" user="N-Milzaness" uid="7620907" lat="32.8015686" lon="130.7126995"/>
  <node id="1992281376" visible="true" version="5" changeset="49416804" timestamp="2017-06-10T10:05:25Z" user="higa4" uid="162590" lat="32.8022050" lon="130.7129633">
   <tag k="highway" v="traffic_signals"/>
@@ -1899,6 +1882,22 @@
  <node id="3049833462" visible="true" version="1" changeset="25109626" timestamp="2014-08-30T03:21:11Z" user="KSJ2_adm_bnd_imprt" uid="2068203" lat="32.8205962" lon="130.7093968"/>
  <node id="3049833463" visible="true" version="2" changeset="36401490" timestamp="2016-01-06T12:05:18Z" user="つ～やん" uid="3485086" lat="32.8208265" lon="130.7095051"/>
  <node id="3049833464" visible="true" version="2" changeset="36401490" timestamp="2016-01-06T12:05:18Z" user="つ～やん" uid="3485086" lat="32.8208829" lon="130.7095373"/>
+ <node id="3049850599" visible="true" version="23" changeset="159351021" timestamp="2024-11-20T05:20:16Z" user="Rukkhadevata" uid="13203370" lat="32.8031228" lon="130.7079265">
+  <tag k="name" v="中央区"/>
+  <tag k="name:en" v="Chuo Ward"/>
+  <tag k="name:ja" v="中央区"/>
+  <tag k="name:ja_kana" v="ちゅうおうく"/>
+  <tag k="name:ja_rm" v="Chuo-Ku"/>
+  <tag k="name:ru" v="Тюо"/>
+  <tag k="name:zh" v="中央区"/>
+  <tag k="name:zh-Hans" v="中央区"/>
+  <tag k="name:zh-Hant" v="中央區"/>
+  <tag k="place" v="suburb"/>
+  <tag k="population" v="186300"/>
+  <tag k="source:population" v="Census 2015"/>
+  <tag k="wikidata" v="Q137716"/>
+  <tag k="wikipedia" v="ja:中央区 (熊本市)"/>
+ </node>
  <node id="3335571679" visible="true" version="2" changeset="148692450" timestamp="2024-03-15T14:50:31Z" user="tartiflex" uid="507417" lat="32.8030949" lon="130.7045368"/>
  <node id="3335571680" visible="true" version="2" changeset="148692450" timestamp="2024-03-15T14:50:31Z" user="tartiflex" uid="507417" lat="32.8031220" lon="130.7045606"/>
  <node id="3335571681" visible="true" version="3" changeset="148692450" timestamp="2024-03-15T14:50:31Z" user="tartiflex" uid="507417" lat="32.8033865" lon="130.7051718"/>
@@ -2149,7 +2148,6 @@
  <node id="3491625647" visible="true" version="1" changeset="30700177" timestamp="2015-05-01T18:39:08Z" user="Human65536" uid="1502046" lat="32.8043059" lon="130.7101839"/>
  <node id="3491625648" visible="true" version="1" changeset="30700177" timestamp="2015-05-01T18:39:08Z" user="Human65536" uid="1502046" lat="32.8043069" lon="130.7099627"/>
  <node id="3491625649" visible="true" version="1" changeset="30700177" timestamp="2015-05-01T18:39:08Z" user="Human65536" uid="1502046" lat="32.8043597" lon="130.7099827"/>
- <node id="3493148129" visible="true" version="2" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.7990616" lon="130.7002089"/>
  <node id="3493148747" visible="true" version="1" changeset="30720789" timestamp="2015-05-02T13:14:15Z" user="Human65536" uid="1502046" lat="32.8018434" lon="130.7107591"/>
  <node id="3493148749" visible="true" version="1" changeset="30720789" timestamp="2015-05-02T13:14:15Z" user="Human65536" uid="1502046" lat="32.8019807" lon="130.7102776"/>
  <node id="3493148751" visible="true" version="1" changeset="30720789" timestamp="2015-05-02T13:14:15Z" user="Human65536" uid="1502046" lat="32.8020226" lon="130.7108313"/>
@@ -2600,9 +2598,7 @@
  <node id="3787197638" visible="true" version="2" changeset="34712650" timestamp="2015-10-18T14:49:46Z" user="HikaruKinkakuji" uid="1878070" lat="32.8061744" lon="130.7075813"/>
  <node id="3787197639" visible="true" version="2" changeset="34712650" timestamp="2015-10-18T14:49:46Z" user="HikaruKinkakuji" uid="1878070" lat="32.8061733" lon="130.7076470"/>
  <node id="3787197640" visible="true" version="2" changeset="34712650" timestamp="2015-10-18T14:49:46Z" user="HikaruKinkakuji" uid="1878070" lat="32.8058003" lon="130.7076301"/>
- <node id="3787647213" visible="true" version="1" changeset="34655976" timestamp="2015-10-15T14:24:23Z" user="DannyAiquipa" uid="2226712" lat="32.7991979" lon="130.7002347"/>
  <node id="3787651333" visible="true" version="1" changeset="34655454" timestamp="2015-10-15T13:57:39Z" user="DannyAiquipa" uid="2226712" lat="32.8084617" lon="130.7132487"/>
- <node id="3787673621" visible="true" version="2" changeset="34655976" timestamp="2015-10-15T14:24:24Z" user="DannyAiquipa" uid="2226712" lat="32.7992967" lon="130.7002797"/>
  <node id="3787673623" visible="true" version="1" changeset="34655913" timestamp="2015-10-15T14:20:29Z" user="DannyAiquipa" uid="2226712" lat="32.8004627" lon="130.7011201"/>
  <node id="3787673624" visible="true" version="2" changeset="74466583" timestamp="2019-09-14T08:56:39Z" user="U20" uid="1687166" lat="32.8013821" lon="130.7029820"/>
  <node id="3787673625" visible="true" version="2" changeset="74466583" timestamp="2019-09-14T08:56:39Z" user="U20" uid="1687166" lat="32.8014971" lon="130.7031894"/>
@@ -6894,17 +6890,6 @@
   <tag k="name:en" v="TSUTAYA"/>
   <tag k="shop" v="books"/>
  </node>
- <node id="4247892346" visible="true" version="2" changeset="93382582" timestamp="2020-11-01T21:19:45Z" user="Yukinobu Koyama" uid="3703864" lat="32.8021407" lon="130.7100889">
-  <tag k="brand" v="ダイソー"/>
-  <tag k="brand:en" v="Daiso"/>
-  <tag k="brand:ja" v="ダイソー"/>
-  <tag k="brand:wikidata" v="Q866991"/>
-  <tag k="brand:wikipedia" v="ja:大創産業"/>
-  <tag k="name" v="ダイソー"/>
-  <tag k="name:en" v="Daiso"/>
-  <tag k="name:ja" v="ダイソー"/>
-  <tag k="shop" v="variety_store"/>
- </node>
  <node id="4247892739" visible="true" version="2" changeset="93382582" timestamp="2020-11-01T21:19:45Z" user="Yukinobu Koyama" uid="3703864" lat="32.8018341" lon="130.7098660">
   <tag k="amenity" v="cafe"/>
   <tag k="brand" v="スターバックス"/>
@@ -7446,8 +7431,15 @@
  <node id="4813493368" visible="true" version="1" changeset="48090567" timestamp="2017-04-24T13:02:07Z" user="Hartmut Holzgraefe" uid="12448" lat="32.8031252" lon="130.7000141">
   <tag k="highway" v="crossing"/>
  </node>
- <node id="4813493369" visible="true" version="1" changeset="48090567" timestamp="2017-04-24T13:02:07Z" user="Hartmut Holzgraefe" uid="12448" lat="32.8030763" lon="130.7004692">
+ <node id="4813493369" visible="true" version="2" changeset="159556117" timestamp="2024-11-25T03:40:23Z" user="Usatohu" uid="21219675" lat="32.8030763" lon="130.7004692">
   <tag k="amenity" v="shelter"/>
+  <tag k="bus" v="yes"/>
+  <tag k="departures_board" v="timetable"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="国立病院前"/>
+  <tag k="network" v="熊本都市バス"/>
+  <tag k="public_transport" v="platform"/>
+  <tag k="shelter" v="yes"/>
   <tag k="shelter_type" v="public_transport"/>
  </node>
  <node id="4813493370" visible="true" version="1" changeset="48090567" timestamp="2017-04-24T13:02:07Z" user="Hartmut Holzgraefe" uid="12448" lat="32.8071739" lon="130.7050168"/>
@@ -8171,7 +8163,7 @@
   <tag k="opening_hours" v="Mo-Fr 10:00-19:00; Sa-Su 10:00-19:30"/>
   <tag k="shop" v="bakery"/>
  </node>
- <node id="5504161122" visible="true" version="3" changeset="123539761" timestamp="2022-07-12T23:50:34Z" user="lizzyd710" uid="11896050" lat="32.8021862" lon="130.7100550">
+ <node id="5504161122" visible="true" version="4" changeset="165413012" timestamp="2025-04-25T09:03:11Z" user="Tobias235" uid="14827393" lat="32.8021701" lon="130.7100989">
   <tag k="branch" v="大創"/>
   <tag k="brand" v="ダイソー"/>
   <tag k="brand:en" v="Daiso"/>
@@ -8181,8 +8173,10 @@
   <tag k="name:en" v="Daiso"/>
   <tag k="name:fr" v="DAISO - magasin tout à 100¥"/>
   <tag k="name:ja" v="ダイソー"/>
-  <tag k="opening_hours" v="Mo-Su 10:00-20:30"/>
+  <tag k="opening_hours" v="Mo-Su 09:30-21:00"/>
+  <tag k="phone" v="+818040619015"/>
   <tag k="shop" v="variety_store"/>
+  <tag k="website" v="https://www.daiso-sangyo.co.jp/shop/detail/8251?utm_source=google&amp;utm_medium=maps&amp;utm_campaign=top"/>
  </node>
  <node id="5504161221" visible="true" version="1" changeset="57520624" timestamp="2018-03-26T01:30:21Z" user="Dean  Chi" uid="4752811" lat="32.8040420" lon="130.7108682">
   <tag k="name" v="蜂樂饅頭(紅豆餅)"/>
@@ -9001,7 +8995,7 @@
  <node id="6189665604" visible="true" version="1" changeset="66093183" timestamp="2019-01-07T11:14:39Z" user="muramototomoya" uid="610947" lat="32.8050740" lon="130.7078078"/>
  <node id="6189665605" visible="true" version="1" changeset="66093183" timestamp="2019-01-07T11:14:39Z" user="muramototomoya" uid="610947" lat="32.8050081" lon="130.7080878"/>
  <node id="6189665606" visible="true" version="1" changeset="66093183" timestamp="2019-01-07T11:14:39Z" user="muramototomoya" uid="610947" lat="32.8050267" lon="130.7078896"/>
- <node id="6189665607" visible="true" version="2" changeset="66093766" timestamp="2019-01-07T11:35:57Z" user="muramototomoya" uid="610947" lat="32.8060345" lon="130.7080794"/>
+ <node id="6189665607" visible="true" version="3" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8061134" lon="130.7080760"/>
  <node id="6189665608" visible="true" version="1" changeset="66093183" timestamp="2019-01-07T11:14:39Z" user="muramototomoya" uid="610947" lat="32.8053446" lon="130.7080874"/>
  <node id="6189665609" visible="true" version="1" changeset="66093183" timestamp="2019-01-07T11:14:39Z" user="muramototomoya" uid="610947" lat="32.8048091" lon="130.7080881"/>
  <node id="6189665610" visible="true" version="1" changeset="66093183" timestamp="2019-01-07T11:14:39Z" user="muramototomoya" uid="610947" lat="32.8046390" lon="130.7080814"/>
@@ -9478,12 +9472,6 @@
   <tag k="name:en" v="MaxValu"/>
   <tag k="shop" v="supermarket"/>
  </node>
- <node id="7045498985" visible="true" version="2" changeset="103804498" timestamp="2021-04-28T23:30:59Z" user="lizzyd710" uid="11896050" lat="32.8013112" lon="130.7027228">
-  <tag k="bus" v="yes"/>
-  <tag k="highway" v="bus_stop"/>
-  <tag k="name" v="Sakura bus stop"/>
-  <tag k="public_transport" v="platform"/>
- </node>
  <node id="7099293485" visible="true" version="1" changeset="79075259" timestamp="2020-01-01T07:56:27Z" user="Kailash Sapkota" uid="6058212" lat="32.8013066" lon="130.7026575">
   <tag k="amenity" v="college"/>
   <tag k="name" v="ymca going road from stop"/>
@@ -9607,11 +9595,8 @@
  <node id="9199387013" visible="true" version="1" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.8030813" lon="130.7102400"/>
  <node id="9199387014" visible="true" version="1" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.8026055" lon="130.7118725"/>
  <node id="9199387015" visible="true" version="1" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.8025827" lon="130.7119714"/>
- <node id="9199387016" visible="true" version="1" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.8025525" lon="130.7121062"/>
- <node id="9199387017" visible="true" version="1" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.8025313" lon="130.7121936"/>
- <node id="9199387243" visible="true" version="1" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.7990297" lon="130.7002077">
-  <tag k="railway" v="tram_level_crossing"/>
- </node>
+ <node id="9199387016" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.8025525" lon="130.7120754"/>
+ <node id="9199387017" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.8025212" lon="130.7121815"/>
  <node id="9199387256" visible="true" version="1" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722" lat="32.8002469" lon="130.7052237">
   <tag k="railway" v="tram_level_crossing"/>
  </node>
@@ -9786,13 +9771,27 @@
  <node id="9909807208" visible="true" version="1" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340" lat="32.8008937" lon="130.7031530"/>
  <node id="9909807209" visible="true" version="1" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340" lat="32.8008675" lon="130.7031265"/>
  <node id="9909807210" visible="true" version="1" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340" lat="32.8009826" lon="130.7023342"/>
- <node id="9909807211" visible="true" version="1" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340" lat="32.8010562" lon="130.7028783"/>
+ <node id="9909807211" visible="true" version="3" changeset="159593428" timestamp="2024-11-25T23:22:53Z" user="Usatohu" uid="21219675" lat="32.8010562" lon="130.7028783">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="local_ref" v="13"/>
+  <tag k="name" v="桜町バスターミナル"/>
+  <tag k="public_transport" v="stop_position"/>
+ </node>
  <node id="9909807212" visible="true" version="1" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340" lat="32.8009027" lon="130.7028989"/>
  <node id="9909807213" visible="true" version="1" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340" lat="32.8008929" lon="130.7029756"/>
  <node id="9909870422" visible="true" version="1" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340" lat="32.8008728" lon="130.7029162"/>
- <node id="9909870423" visible="true" version="1" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340" lat="32.8008630" lon="130.7029913"/>
+ <node id="9909870423" visible="true" version="3" changeset="159593428" timestamp="2024-11-25T23:22:53Z" user="Usatohu" uid="21219675" lat="32.8008630" lon="130.7029913">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="local_ref" v="11"/>
+  <tag k="name" v="桜町バスターミナル"/>
+  <tag k="public_transport" v="stop_position"/>
+ </node>
  <node id="9956968121" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7985318" lon="130.7040791"/>
- <node id="9956968122" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7986534" lon="130.7031738"/>
+ <node id="9956968122" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.7986534" lon="130.7031738">
+  <tag k="railway" v="switch"/>
+ </node>
  <node id="9956968262" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7984611" lon="130.7046137"/>
  <node id="9956968263" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7984602" lon="130.7046620"/>
  <node id="9956968264" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7984635" lon="130.7047112"/>
@@ -9804,13 +9803,31 @@
  <node id="9956968270" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7986163" lon="130.7049434"/>
  <node id="9956968271" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7986557" lon="130.7049597"/>
  <node id="9956968272" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7986989" lon="130.7049696"/>
- <node id="9956968273" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7987475" lon="130.7049786"/>
+ <node id="9956968273" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.7989222" lon="130.7050108">
+  <tag k="name" v="辛島町"/>
+  <tag k="name:en" v="Karashimacho"/>
+  <tag k="name:ja" v="辛島町"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="railway" v="tram_stop"/>
+  <tag k="ref" v="8"/>
+  <tag k="tram" v="yes"/>
+  <tag k="wikidata" v="Q11637818"/>
+ </node>
  <node id="9956968274" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8008549" lon="130.7053666"/>
  <node id="9956968275" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8009110" lon="130.7053774"/>
  <node id="9956968276" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8009672" lon="130.7053963"/>
  <node id="9956968277" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8010331" lon="130.7054207"/>
  <node id="9956968278" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8010999" lon="130.7054532"/>
- <node id="9956968279" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8011590" lon="130.7054865"/>
+ <node id="9956968279" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.8011590" lon="130.7054865">
+  <tag k="name" v="花畑町"/>
+  <tag k="name:en" v="Hanabatacho"/>
+  <tag k="name:ja" v="花畑町"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="railway" v="tram_stop"/>
+  <tag k="ref" v="9"/>
+  <tag k="tram" v="yes"/>
+  <tag k="wikidata" v="Q11615600"/>
+ </node>
  <node id="9956968280" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8012204" lon="130.7055253"/>
  <node id="9956968281" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8012690" lon="130.7055569"/>
  <node id="9956968282" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8013258" lon="130.7056074"/>
@@ -9818,7 +9835,15 @@
  <node id="9956968284" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8024966" lon="130.7066766"/>
  <node id="9956968285" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8028986" lon="130.7069961"/>
  <node id="9956968286" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8030298" lon="130.7071105"/>
- <node id="9956968287" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8031170" lon="130.7071980"/>
+ <node id="9956968287" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.8031959" lon="130.7072785">
+  <tag k="name" v="熊本城・市役所前"/>
+  <tag k="name:en" v="Kumamoto Castle / City Hall"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="railway" v="tram_stop"/>
+  <tag k="ref" v="10"/>
+  <tag k="tram" v="yes"/>
+  <tag k="wikidata" v="Q11567971"/>
+ </node>
  <node id="9956968288" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8035295" lon="130.7076211"/>
  <node id="9956968289" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8035932" lon="130.7076834"/>
  <node id="9956968290" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8040566" lon="130.7081056"/>
@@ -9841,7 +9866,7 @@
  <node id="9956968307" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8030268" lon="130.7103060"/>
  <node id="9956968308" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8029619" lon="130.7105179"/>
  <node id="9956968309" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8025718" lon="130.7118975"/>
- <node id="9956968310" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8025202" lon="130.7121275"/>
+ <node id="9956968310" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.8025067" lon="130.7121235"/>
  <node id="9956968375" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7984626" lon="130.7046981">
   <tag k="railway" v="tram_level_crossing"/>
  </node>
@@ -9868,10 +9893,27 @@
   <tag k="railway" v="tram_level_crossing"/>
  </node>
  <node id="9956968462" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7990914" lon="130.7050099"/>
- <node id="9956968463" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.7993445" lon="130.7050568"/>
+ <node id="9956968463" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.7996094" lon="130.7051078">
+  <tag k="name" v="辛島町"/>
+  <tag k="name:en" v="Karashimacho"/>
+  <tag k="name:ja" v="辛島町"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="railway" v="tram_stop"/>
+  <tag k="ref" v="8"/>
+  <tag k="tram" v="yes"/>
+  <tag k="wikidata" v="Q11637818"/>
+ </node>
  <node id="9956968464" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8001821" lon="130.7052116"/>
  <node id="9956968465" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8003550" lon="130.7052439"/>
- <node id="9956968466" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722" lat="32.8024619" lon="130.7123274"/>
+ <node id="9956968466" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.8024472" lon="130.7123167">
+  <tag k="name" v="水道町"/>
+  <tag k="name:en" v="Suidocho"/>
+  <tag k="name:ja" v="水道町"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="railway" v="tram_stop"/>
+  <tag k="ref" v="12"/>
+  <tag k="tram" v="yes"/>
+ </node>
  <node id="10187391580" visible="true" version="1" changeset="128965701" timestamp="2022-11-16T01:53:14Z" user="長谷川寛太" uid="11863237" lat="32.8054267" lon="130.7108822">
   <tag k="amenity" v="restaurant"/>
   <tag k="cuisine" v="noodle"/>
@@ -10061,10 +10103,6 @@
   <tag k="level" v="1"/>
   <tag k="name" v="星野珈琲店"/>
  </node>
- <node id="11055763368" visible="true" version="1" changeset="138738341" timestamp="2023-07-19T23:15:08Z" user="KasaiToushi2004" uid="15251517" lat="32.8025751" lon="130.7114834">
-  <tag k="amenity" v="telephone"/>
-  <tag k="covered" v="booth"/>
- </node>
  <node id="11055763369" visible="true" version="1" changeset="138738341" timestamp="2023-07-19T23:15:08Z" user="KasaiToushi2004" uid="15251517" lat="32.8016886" lon="130.7086336">
   <tag k="amenity" v="internet_cafe"/>
   <tag k="branch" v="熊本下通店"/>
@@ -10193,9 +10231,11 @@
  <node id="11924620564" visible="true" version="1" changeset="151656298" timestamp="2024-05-22T05:23:55Z" user="Usatohu" uid="21219675" lat="32.8014739" lon="130.6997855"/>
  <node id="11924620565" visible="true" version="1" changeset="151656298" timestamp="2024-05-22T05:23:55Z" user="Usatohu" uid="21219675" lat="32.8013581" lon="130.6998175"/>
  <node id="11924620566" visible="true" version="1" changeset="151656298" timestamp="2024-05-22T05:23:55Z" user="Usatohu" uid="21219675" lat="32.8013235" lon="130.6999366"/>
- <node id="11927876970" visible="true" version="1" changeset="151711477" timestamp="2024-05-23T08:50:21Z" user="Roman Salzmann" uid="4779260" lat="32.8016961" lon="130.7090888">
+ <node id="11927876970" visible="true" version="2" changeset="160487640" timestamp="2024-12-22T00:38:26Z" user="yetzt" uid="26734" lat="32.8016961" lon="130.7090888">
   <tag k="amenity" v="restaurant"/>
-  <tag k="cuisine" v="japanese;vegan;vegetarian"/>
+  <tag k="cuisine" v="japanese"/>
+  <tag k="diet:vegan" v="yes"/>
+  <tag k="diet:vegetarian" v="yes"/>
   <tag k="name" v="鑑真食堂"/>
   <tag k="name:en" v="Ganjin Shokudo"/>
  </node>
@@ -10373,18 +10413,290 @@
   <tag k="public_transport" v="platform"/>
   <tag k="shelter" v="no"/>
  </node>
- <way id="24768317" visible="true" version="27" changeset="155652668" timestamp="2024-08-23T13:17:33Z" user="Usatohu" uid="21219675">
-  <nd ref="269158235"/>
-  <nd ref="269158965"/>
-  <nd ref="1522316990"/>
-  <nd ref="5417960770"/>
-  <nd ref="1989709617"/>
-  <nd ref="12131496575"/>
-  <nd ref="5508710667"/>
-  <nd ref="1522317281"/>
-  <nd ref="767578576"/>
-  <nd ref="3787673629"/>
-  <nd ref="6390878577"/>
+ <node id="12372832672" visible="true" version="1" changeset="159556117" timestamp="2024-11-25T03:40:23Z" user="Usatohu" uid="21219675" lat="32.8031535" lon="130.7001046">
+  <tag k="bus" v="yes"/>
+  <tag k="departures_board" v="timetable"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="国立病院前"/>
+  <tag k="network" v="熊本都市バス"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12372832673" visible="true" version="1" changeset="159556117" timestamp="2024-11-25T03:40:23Z" user="Usatohu" uid="21219675" lat="32.8027794" lon="130.7014681">
+  <tag k="bus" v="yes"/>
+  <tag k="departures_board" v="timetable"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="第一高校東門"/>
+  <tag k="network" v="熊本都市バス"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12372832674" visible="true" version="1" changeset="159556117" timestamp="2024-11-25T03:40:23Z" user="Usatohu" uid="21219675" lat="32.8028186" lon="130.7015099">
+  <tag k="bus" v="yes"/>
+  <tag k="departures_board" v="timetable"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="第一高校東門"/>
+  <tag k="network" v="熊本都市バス"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12373016388" visible="true" version="2" changeset="159593428" timestamp="2024-11-25T23:22:53Z" user="Usatohu" uid="21219675" lat="32.8009497" lon="130.7029417">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="local_ref" v="12"/>
+  <tag k="name" v="桜町バスターミナル"/>
+  <tag k="public_transport" v="stop_position"/>
+ </node>
+ <node id="12377354632" visible="true" version="1" changeset="159637847" timestamp="2024-11-26T23:18:42Z" user="Usatohu" uid="21219675" lat="32.8046249" lon="130.7086351">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="市役所前・日本郵政横"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12377354633" visible="true" version="1" changeset="159637847" timestamp="2024-11-26T23:18:42Z" user="Usatohu" uid="21219675" lat="32.8047085" lon="130.7085988">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="市役所前・日本郵政横"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12377354634" visible="true" version="1" changeset="159637847" timestamp="2024-11-26T23:18:42Z" user="Usatohu" uid="21219675" lat="32.8052555" lon="130.7092129">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="熊本ホテルキャッスル前"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378712891" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8068004" lon="130.7102155">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="城東町"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378712892" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8071034" lon="130.7099472">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="城東町"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378712893" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8094467" lon="130.7094581">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="壺井橋"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378712894" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8093610" lon="130.7091491">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="壺井橋"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378712895" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8096943" lon="130.7058974">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="磐根橋"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378712896" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8096048" lon="130.7057695">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="磐根橋"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378712897" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8100739" lon="130.7032955">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="新堀橋"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378712898" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8099565" lon="130.7029906">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="新堀橋"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12378731316" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8040775" lon="130.6988532"/>
+ <node id="12378731317" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8041182" lon="130.6986143"/>
+ <node id="12378731318" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8049613" lon="130.6986127"/>
+ <node id="12378731319" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8046031" lon="130.6992262"/>
+ <node id="12378731320" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8051253" lon="130.7008047"/>
+ <node id="12378731321" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8058221" lon="130.6994015"/>
+ <node id="12378731322" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8065537" lon="130.6999909"/>
+ <node id="12378731323" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8058982" lon="130.7006975"/>
+ <node id="12378731324" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8060173" lon="130.7009437"/>
+ <node id="12378731325" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8066962" lon="130.7009858"/>
+ <node id="12378731326" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8064201" lon="130.7007390"/>
+ <node id="12378731327" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675" lat="32.8067045" lon="130.7007527"/>
+ <node id="12381693748" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675" lat="32.8033338" lon="130.7037621">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="桜の馬場 城彩苑"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12381693751" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675" lat="32.8058752" lon="130.7021885">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="熊本城・二の丸駐車場"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12381693752" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675" lat="32.8075735" lon="130.7059946">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="KKRホテル熊本前"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12381693753" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675" lat="32.8062410" lon="130.7083784">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="県立美術館分館横"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12381693754" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675" lat="32.8033153" lon="130.7038655"/>
+ <node id="12381693755" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675" lat="32.8031289" lon="130.7040120"/>
+ <node id="12381693756" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675" lat="32.8030436" lon="130.7038014"/>
+ <node id="12392835187" visible="true" version="1" changeset="159863882" timestamp="2024-12-03T01:52:05Z" user="Usatohu" uid="21219675" lat="32.8013103" lon="130.7062731">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="熊本城前"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12392835188" visible="true" version="1" changeset="159863882" timestamp="2024-12-03T01:52:05Z" user="Usatohu" uid="21219675" lat="32.8012517" lon="130.7060124">
+  <tag k="bus" v="yes"/>
+  <tag k="highway" v="bus_stop"/>
+  <tag k="name" v="熊本城前"/>
+  <tag k="public_transport" v="platform"/>
+ </node>
+ <node id="12413945617" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8015656" lon="130.7086722">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945618" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8030224" lon="130.7099331">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945619" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8030352" lon="130.7099059">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945620" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8028194" lon="130.7098022">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945621" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8026532" lon="130.7095243">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945622" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8024784" lon="130.7094805">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945623" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8024405" lon="130.7094521">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945624" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8025002" lon="130.7094336">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945625" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8024600" lon="130.7094079">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945626" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8024003" lon="130.7093562">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945627" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8022584" lon="130.7093625">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945628" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8021899" lon="130.7092652">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945629" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8021556" lon="130.7091443">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945630" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8018852" lon="130.7090249">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945631" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8018341" lon="130.7089903">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945632" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8019004" lon="130.7089520">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945633" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8018510" lon="130.7089223">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945634" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8016986" lon="130.7089076">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945635" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8016483" lon="130.7086796">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945636" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8015487" lon="130.7087274">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945637" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8015121" lon="130.7086975">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945638" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8030125" lon="130.7099640">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945639" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8014888" lon="130.7086286">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945640" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8013513" lon="130.7085320">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945641" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8013566" lon="130.7086377">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945642" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8011612" lon="130.7085607">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945643" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8011869" lon="130.7084784">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12413945644" visible="true" version="1" changeset="160188099" timestamp="2024-12-11T23:02:57Z" user="makoragi" uid="3618340" lat="32.8011332" lon="130.7083957">
+  <tag k="man_made" v="surveillance"/>
+  <tag k="surveillance:type" v="camera"/>
+ </node>
+ <node id="12507150386" visible="true" version="1" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705" lat="32.8033197" lon="130.7097571">
+  <tag k="name" v="通町筋"/>
+  <tag k="name:en" v="Torichosuji"/>
+  <tag k="name:ja" v="通町筋"/>
+  <tag k="public_transport" v="stop_position"/>
+  <tag k="railway" v="tram_stop"/>
+  <tag k="ref" v="11"/>
+  <tag k="tram" v="yes"/>
+  <tag k="wikidata" v="Q11639598"/>
+ </node>
+ <node id="12672856249" visible="true" version="1" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8061677" lon="130.7081940">
+  <tag k="crossing" v="uncontrolled"/>
+  <tag k="crossing:markings" v="zebra"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="12672856250" visible="true" version="1" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8061139" lon="130.7081188">
+  <tag k="crossing" v="uncontrolled"/>
+  <tag k="crossing:markings" v="zebra"/>
+  <tag k="highway" v="crossing"/>
+ </node>
+ <node id="12672856251" visible="true" version="1" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8056444" lon="130.7065541"/>
+ <node id="12672856252" visible="true" version="1" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8055937" lon="130.7061573"/>
+ <node id="12672856253" visible="true" version="1" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417" lat="32.8053271" lon="130.7065709"/>
+ <way id="24768317" visible="true" version="28" changeset="159725396" timestamp="2024-11-29T03:26:43Z" user="Usatohu" uid="21219675">
   <nd ref="269157378"/>
   <nd ref="6390878578"/>
   <nd ref="3787673630"/>
@@ -10487,7 +10799,7 @@
   <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-N02-v1_1.html"/>
   <tag k="voltage" v="600"/>
  </way>
- <way id="59932207" visible="true" version="4" changeset="148692450" timestamp="2024-03-15T14:50:31Z" user="tartiflex" uid="507417">
+ <way id="59932207" visible="true" version="5" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="744746647"/>
   <nd ref="744699163"/>
   <nd ref="744835494"/>
@@ -10640,7 +10952,6 @@
   <tag k="name" v="坪井川"/>
   <tag k="name:en" v="Tsuboi River"/>
   <tag k="name:fr" v="Rivière Tsuboi"/>
-  <tag k="name:ja" v="坪井川"/>
   <tag k="name:ja-Hira" v="つぼいがわ"/>
   <tag k="name:ja-Latn" v="Tsuboi-gawa"/>
   <tag k="note" v="National-Land Numerical Information (River) 2006, MLIT Japan"/>
@@ -10648,6 +10959,7 @@
   <tag k="source" v="KSJ2"/>
   <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-W05.html"/>
   <tag k="waterway" v="river"/>
+  <tag k="wikidata" v="Q11425698"/>
  </way>
  <way id="61511557" visible="true" version="4" changeset="34712650" timestamp="2015-10-18T14:49:44Z" user="HikaruKinkakuji" uid="1878070">
   <nd ref="767578582"/>
@@ -10715,7 +11027,7 @@
   <tag k="highway" v="tertiary"/>
   <tag k="name" v="銀座通り"/>
  </way>
- <way id="66444559" visible="true" version="13" changeset="69008212" timestamp="2019-04-08T13:55:54Z" user="matx17" uid="602634">
+ <way id="66444559" visible="true" version="15" changeset="161128324" timestamp="2025-01-08T10:47:21Z" user="setokynet" uid="21931672">
   <nd ref="1516131898"/>
   <nd ref="276382502"/>
   <nd ref="5469385268"/>
@@ -10743,17 +11055,11 @@
   <nd ref="3787673628"/>
   <nd ref="6390878580"/>
   <nd ref="269157971"/>
-  <nd ref="6390878579"/>
-  <nd ref="6390704689"/>
-  <nd ref="276382195"/>
-  <nd ref="5469385270"/>
-  <nd ref="1522317116"/>
-  <nd ref="1522316973"/>
-  <nd ref="269158052"/>
   <tag k="highway" v="primary"/>
   <tag k="name" v="熊本高森線"/>
   <tag k="oneway" v="yes"/>
   <tag k="ref" v="28"/>
+  <tag k="surface" v="asphalt"/>
  </way>
  <way id="138836991" visible="true" version="1" changeset="9983585" timestamp="2011-11-29T00:14:50Z" user="yamasan" uid="32308">
   <nd ref="1522319078"/>
@@ -10772,8 +11078,7 @@
   <tag k="yh:WIDTH" v="5.5m〜13.0m"/>
   <tag k="yh:WIDTH_RANK" v="2"/>
  </way>
- <way id="138836994" visible="true" version="4" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722">
-  <nd ref="1522317479"/>
+ <way id="138836994" visible="true" version="5" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <nd ref="269157378"/>
   <nd ref="3491625645"/>
   <nd ref="9956968384"/>
@@ -10795,7 +11100,7 @@
   <tag k="source" v="YahooJapan/ALPSMAP"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="138837007" visible="true" version="7" changeset="69008212" timestamp="2019-04-08T13:55:54Z" user="matx17" uid="602634">
+ <way id="138837007" visible="true" version="8" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="2194864342"/>
   <nd ref="6390878563"/>
   <nd ref="1522318247"/>
@@ -10816,6 +11121,10 @@
   <nd ref="1522318651"/>
   <tag k="highway" v="secondary"/>
   <tag k="name" v="四方寄熊本線"/>
+  <tag k="name:en" v="Yomogi Kumamoto Road"/>
+  <tag k="name:fr" v="Route Yomogi Kumamoto"/>
+  <tag k="name:ja-Hira" v="よもぎ くまもとせん"/>
+  <tag k="name:ja-Latn" v="Yomogi Kumamoto sen"/>
   <tag k="ref" v="303"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
@@ -10889,7 +11198,7 @@
   <tag k="yh:WIDTH" v="5.5m〜13.0m"/>
   <tag k="yh:WIDTH_RANK" v="2"/>
  </way>
- <way id="138837160" visible="true" version="9" changeset="152879633" timestamp="2024-06-19T07:21:28Z" user="Edison lu" uid="20204470">
+ <way id="138837160" visible="true" version="10" changeset="159725396" timestamp="2024-11-29T03:26:43Z" user="Usatohu" uid="21219675">
   <nd ref="1516131990"/>
   <nd ref="1992281392"/>
   <nd ref="3533645503"/>
@@ -10917,7 +11226,6 @@
   <nd ref="1522318954"/>
   <nd ref="1522318978"/>
   <nd ref="1522319053"/>
-  <nd ref="1522319024"/>
   <tag k="highway" v="primary"/>
   <tag k="lit" v="yes"/>
   <tag k="name" v="熊本玉名線"/>
@@ -11374,11 +11682,7 @@
   <tag k="oneway" v="yes"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
- <way id="138838891" visible="true" version="7" changeset="152879633" timestamp="2024-06-19T07:21:35Z" user="Edison lu" uid="20204470">
-  <nd ref="269157378"/>
-  <nd ref="1522317533"/>
-  <nd ref="1522317730"/>
-  <nd ref="1522317823"/>
+ <way id="138838891" visible="true" version="8" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <nd ref="3533645307"/>
   <nd ref="1522317938"/>
   <nd ref="1522317952"/>
@@ -11547,9 +11851,7 @@
   <tag k="name" v="安政町通り"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
- <way id="138839727" visible="true" version="5" changeset="152921441" timestamp="2024-06-20T02:36:14Z" user="Edison lu" uid="20204470">
-  <nd ref="5418506946"/>
-  <nd ref="5420002403"/>
+ <way id="138839727" visible="true" version="6" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <nd ref="5418506947"/>
   <nd ref="5418506948"/>
   <nd ref="1522316874"/>
@@ -11702,15 +12004,13 @@
   <tag k="highway" v="unclassified"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
- <way id="138840429" visible="true" version="2" changeset="30697113" timestamp="2015-05-01T16:42:13Z" user="Human65536" uid="1502046">
+ <way id="138840429" visible="true" version="3" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <nd ref="1522319633"/>
   <nd ref="1522319574"/>
   <nd ref="1522319333"/>
   <nd ref="3491412446"/>
-  <nd ref="1522319212"/>
   <tag k="highway" v="unclassified"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
-  <tag k="yh:WIDTH" v="3.0m〜5.5m"/>
  </way>
  <way id="138840432" visible="true" version="3" changeset="38338182" timestamp="2016-04-06T04:01:08Z" user="つ～やん" uid="3485086">
   <nd ref="1522318651"/>
@@ -11823,20 +12123,16 @@
   <tag k="yh:WIDTH" v="3.0m〜5.5m"/>
   <tag k="yh:WIDTH_RANK" v="3"/>
  </way>
- <way id="138840590" visible="true" version="1" changeset="9983585" timestamp="2011-11-29T00:32:20Z" user="yamasan" uid="32308">
+ <way id="138840590" visible="true" version="2" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="1522317984"/>
   <nd ref="1522317997"/>
   <nd ref="1522318034"/>
   <nd ref="1522318049"/>
   <nd ref="1522318088"/>
+  <nd ref="12672856249"/>
   <nd ref="1522318086"/>
   <tag k="highway" v="unclassified"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
-  <tag k="yh:STRUCTURE" v="地上"/>
-  <tag k="yh:TOTYUMONO" v="供用中"/>
-  <tag k="yh:TYPE" v="その他一般道"/>
-  <tag k="yh:WIDTH" v="3.0m〜5.5m"/>
-  <tag k="yh:WIDTH_RANK" v="3"/>
  </way>
  <way id="138840592" visible="true" version="3" changeset="158914538" timestamp="2024-11-08T22:55:41Z" user="mcdlee" uid="116515">
   <nd ref="1522317700"/>
@@ -12302,7 +12598,7 @@
   <tag k="parking" v="surface"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="248210348" visible="true" version="7" changeset="148692450" timestamp="2024-03-15T14:50:31Z" user="tartiflex" uid="507417">
+ <way id="248210348" visible="true" version="8" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="2550397780"/>
   <nd ref="2550397790"/>
   <nd ref="4154096276"/>
@@ -12325,7 +12621,7 @@
   <tag k="name:ja-Latn" v="Bizen-hori"/>
   <tag k="natural" v="water"/>
   <tag k="source" v="Bing"/>
-  <tag k="water" v="pond"/>
+  <tag k="water" v="moat"/>
  </way>
  <way id="248210349" visible="true" version="3" changeset="93382582" timestamp="2020-11-01T21:19:45Z" user="Yukinobu Koyama" uid="3703864">
   <nd ref="2550397822"/>
@@ -12429,7 +12725,7 @@
   <tag k="name:ja-Latn" v="chū-kyoku"/>
   <tag k="source" v="bing"/>
  </way>
- <way id="277264847" visible="true" version="7" changeset="148692450" timestamp="2024-03-15T14:50:31Z" user="tartiflex" uid="507417">
+ <way id="277264847" visible="true" version="8" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="2817908489"/>
   <nd ref="2817908485"/>
   <nd ref="2817908484"/>
@@ -12438,11 +12734,13 @@
   <nd ref="2817908479"/>
   <nd ref="2817908478"/>
   <nd ref="2817908481"/>
+  <nd ref="12672856253"/>
   <nd ref="2817908480"/>
   <nd ref="3791429613"/>
   <nd ref="2817908495"/>
   <nd ref="2817908494"/>
   <nd ref="2817908490"/>
+  <nd ref="12672856251"/>
   <nd ref="2817908491"/>
   <nd ref="3801769198"/>
   <nd ref="2817908486"/>
@@ -12451,11 +12749,12 @@
   <nd ref="3801769197"/>
   <nd ref="2817908487"/>
   <nd ref="2817908488"/>
+  <nd ref="12672856252"/>
   <nd ref="2817908489"/>
   <tag k="building" v="yes"/>
   <tag k="name" v="本丸御殿"/>
   <tag k="name:en" v="Hon-Maru Goten"/>
-  <tag k="name:fr" v="Palais de Honmaru"/>
+  <tag k="name:fr" v="Palais Honmaru"/>
   <tag k="name:ja-Hira" v="ほんまる ごてん"/>
   <tag k="name:ja-Latn" v="Honmaru-goten"/>
   <tag k="source" v="bing"/>
@@ -12490,7 +12789,7 @@
   <tag k="name" v="熊本城三の丸第2駐車場"/>
   <tag k="source" v="bing"/>
  </way>
- <way id="331477851" visible="true" version="4" changeset="148692450" timestamp="2024-03-15T14:50:31Z" user="tartiflex" uid="507417">
+ <way id="331477851" visible="true" version="5" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="3385562335"/>
   <nd ref="3385562336"/>
   <nd ref="3385562337"/>
@@ -12505,11 +12804,12 @@
   <nd ref="3385562346"/>
   <nd ref="3385562335"/>
   <tag k="building" v="yes"/>
+  <tag k="height" v="29.5"/>
   <tag k="name" v="天守閣"/>
   <tag k="name:en" v="Main Castle Tower"/>
   <tag k="name:fr" v="Tour du Château"/>
   <tag k="name:ja-Hira" v="てんしゅかく"/>
-  <tag k="name:ja-Latn" v="Tenshukaku"/>
+  <tag k="name:ja-Latn" v="Tenshu-kaku"/>
   <tag k="name:ko" v="천수각"/>
  </way>
  <way id="331477852" visible="true" version="8" changeset="148692450" timestamp="2024-03-15T14:50:31Z" user="tartiflex" uid="507417">
@@ -13233,11 +13533,9 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="bing"/>
  </way>
- <way id="375059249" visible="true" version="2" changeset="66093766" timestamp="2019-01-07T11:35:57Z" user="muramototomoya" uid="610947">
-  <nd ref="2194864342"/>
-  <nd ref="1522318185"/>
-  <nd ref="1522318151"/>
+ <way id="375059249" visible="true" version="4" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="1522318086"/>
+  <nd ref="12672856250"/>
   <nd ref="1522318003"/>
   <nd ref="1522317820"/>
   <nd ref="6189707803"/>
@@ -13245,6 +13543,10 @@
   <nd ref="767578590"/>
   <tag k="highway" v="secondary"/>
   <tag k="name" v="四方寄熊本線"/>
+  <tag k="name:en" v="Yomogi Kumamoto Road"/>
+  <tag k="name:fr" v="Route Yomogi Kumamoto"/>
+  <tag k="name:ja-Hira" v="よもぎ くまもとせん"/>
+  <tag k="name:ja-Latn" v="Yomogi Kumamoto sen"/>
   <tag k="ref" v="303"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
@@ -13282,7 +13584,7 @@
   <tag k="name:ja-Latn" v="Hira-yagura"/>
   <tag k="source" v="bing"/>
  </way>
- <way id="375062710" visible="true" version="24" changeset="150682169" timestamp="2024-04-29T21:26:29Z" user="tartiflex" uid="507417">
+ <way id="375062710" visible="true" version="25" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="3784481676"/>
   <nd ref="3784481677"/>
   <nd ref="3784481678"/>
@@ -13311,6 +13613,8 @@
   <tag k="alt_name:ja-Hira" v="ぎんなんじょう"/>
   <tag k="alt_name:ja-Latn" v="Gin'nan-jō"/>
   <tag k="castle_type" v="shriro"/>
+  <tag k="charge:adult" v="800 JPY"/>
+  <tag k="charge:child" v="300 JPY;0 JPY"/>
   <tag k="contact:email" v="kumamotojou@city.kumamoto.lg.jp"/>
   <tag k="contact:facebook" v="KumamotoCastle"/>
   <tag k="contact:fax" v="+81 96-356-5655"/>
@@ -13322,9 +13626,8 @@
   <tag k="contact:website" v="https://castle.kumamoto-guide.jp/"/>
   <tag k="contact:youtube" v="UC-StqMX7Qsa1wp87kRrfuCw"/>
   <tag k="fee" v="yes"/>
-  <tag k="height" v="29.5"/>
   <tag k="historic" v="castle"/>
-  <tag k="historic:civilization" v="middle-ages"/>
+  <tag k="historic:period" v="azuchi-momoyama"/>
   <tag k="leisure" v="park"/>
   <tag k="name" v="熊本城"/>
   <tag k="name:be" v="Замак Кумамота"/>
@@ -13348,7 +13651,7 @@
   <tag k="name:vi" v="Lâu đài Kumamoto"/>
   <tag k="name:zh" v="熊本城"/>
   <tag k="note" v="改修者:加藤清正 1469年–1487年頃築城"/>
-  <tag k="opening_hours" v="Mo-Su 09:00-17:00; Dec 30-Dec 31 off"/>
+  <tag k="opening_hours" v="Mo-Su 09:00-17:00; Dec 29-Dec 31 off"/>
   <tag k="start_date" v="1601"/>
   <tag k="wikidata" v="Q613355"/>
   <tag k="wikimedia_commons" v="Category:Kumamoto Castle"/>
@@ -14451,13 +14754,13 @@
   <nd ref="767578612"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="375801230" visible="true" version="2" changeset="37413039" timestamp="2016-02-24T14:02:54Z" user="HikaruKinkakuji" uid="1878070">
+ <way id="375801230" visible="true" version="3" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="3791429613"/>
   <nd ref="767578599"/>
   <nd ref="767578615"/>
   <nd ref="767578602"/>
   <tag k="highway" v="footway"/>
-  <tag k="layer" v="-1"/>
+  <tag k="location" v="indoor"/>
  </way>
  <way id="375801231" visible="true" version="1" changeset="34712650" timestamp="2015-10-18T14:49:42Z" user="HikaruKinkakuji" uid="1878070">
   <nd ref="3791429394"/>
@@ -14476,14 +14779,14 @@
   <nd ref="3791429691"/>
   <tag k="highway" v="steps"/>
  </way>
- <way id="375801234" visible="true" version="1" changeset="34712650" timestamp="2015-10-18T14:49:42Z" user="HikaruKinkakuji" uid="1878070">
-  <nd ref="3335571689"/>
+ <way id="375801234" visible="true" version="2" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
+  <nd ref="12672856252"/>
   <nd ref="3335571688"/>
   <nd ref="767578602"/>
   <nd ref="767578577"/>
-  <nd ref="3791429629"/>
+  <nd ref="12672856251"/>
   <tag k="highway" v="footway"/>
-  <tag k="layer" v="-1"/>
+  <tag k="location" v="indoor"/>
  </way>
  <way id="375803920" visible="true" version="1" changeset="34713043" timestamp="2015-10-18T15:09:56Z" user="HikaruKinkakuji" uid="1878070">
   <nd ref="3791449579"/>
@@ -15388,8 +15691,8 @@
   <nd ref="4023668548"/>
   <tag k="highway" v="steps"/>
  </way>
- <way id="399658885" visible="true" version="1" changeset="37413039" timestamp="2016-02-24T14:02:53Z" user="HikaruKinkakuji" uid="1878070">
-  <nd ref="767578615"/>
+ <way id="399658885" visible="true" version="2" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
+  <nd ref="12672856253"/>
   <nd ref="4023668479"/>
   <nd ref="4023668480"/>
   <tag k="highway" v="footway"/>
@@ -15597,7 +15900,7 @@
   <tag k="psv" v="yes"/>
   <tag k="surface" v="paved"/>
  </way>
- <way id="410997637" visible="true" version="6" changeset="112939484" timestamp="2021-10-25T10:13:21Z" user="tutuw002" uid="4531722">
+ <way id="410997637" visible="true" version="7" changeset="159725396" timestamp="2024-11-29T03:26:43Z" user="Usatohu" uid="21219675">
   <nd ref="1522316723"/>
   <nd ref="1522316644"/>
   <nd ref="4813493675"/>
@@ -15608,12 +15911,6 @@
   <nd ref="1522316504"/>
   <nd ref="5513044670"/>
   <nd ref="1522316404"/>
-  <nd ref="3787673621"/>
-  <nd ref="3787647213"/>
-  <nd ref="1992253942"/>
-  <nd ref="3493148129"/>
-  <nd ref="9199387243"/>
-  <nd ref="1522316143"/>
   <tag k="highway" v="primary"/>
   <tag k="name" v="熊本高森線"/>
   <tag k="ref" v="28"/>
@@ -18742,7 +19039,7 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="412382247" visible="true" version="2" changeset="57618456" timestamp="2018-03-29T03:02:32Z" user="gee-nori" uid="7856789">
+ <way id="412382247" visible="true" version="3" changeset="160332463" timestamp="2024-12-18T04:34:49Z" user="koreanmonster" uid="12095725">
   <nd ref="4138277509"/>
   <nd ref="4138277508"/>
   <nd ref="4138277511"/>
@@ -18753,6 +19050,8 @@
   <nd ref="4138277509"/>
   <tag k="leisure" v="park"/>
   <tag k="name" v="高橋公園"/>
+  <tag k="name:ja" v="高橋公園"/>
+  <tag k="name:ko" v="다카하시 공원"/>
  </way>
  <way id="412382248" visible="true" version="2" changeset="66093183" timestamp="2019-01-07T11:14:40Z" user="muramototomoya" uid="610947">
   <nd ref="4138273778"/>
@@ -22060,19 +22359,17 @@
   <tag k="access" v="private"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="660865718" visible="true" version="1" changeset="66062388" timestamp="2019-01-06T04:39:26Z" user="muramototomoya" uid="610947">
-  <nd ref="6187275084"/>
+ <way id="660865718" visible="true" version="2" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <nd ref="6187275083"/>
-  <nd ref="6187275082"/>
+  <nd ref="12381693756"/>
   <tag k="highway" v="service"/>
  </way>
- <way id="660865719" visible="true" version="2" changeset="152879630" timestamp="2024-06-19T07:21:40Z" user="Edison lu" uid="20204470">
+ <way id="660865719" visible="true" version="3" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <nd ref="6187275081"/>
   <nd ref="6187276287"/>
   <nd ref="6187276286"/>
   <nd ref="6187276285"/>
   <nd ref="6187275084"/>
-  <nd ref="1522317042"/>
   <tag k="highway" v="service"/>
   <tag k="surface" v="asphalt"/>
  </way>
@@ -22307,7 +22604,7 @@
   <nd ref="6189665605"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="661132522" visible="true" version="2" changeset="66093766" timestamp="2019-01-07T11:35:57Z" user="muramototomoya" uid="610947">
+ <way id="661132522" visible="true" version="3" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <nd ref="6189665610"/>
   <nd ref="6189707807"/>
   <nd ref="6189665609"/>
@@ -22317,6 +22614,7 @@
   <nd ref="6189707791"/>
   <nd ref="6189707794"/>
   <nd ref="6189665607"/>
+  <nd ref="12672856250"/>
   <tag k="footway" v="sidewalk"/>
   <tag k="highway" v="footway"/>
  </way>
@@ -22487,10 +22785,11 @@
   <tag k="source" v="YahooJapan/ALPSMAP"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="724518269" visible="true" version="2" changeset="124056849" timestamp="2022-07-25T15:07:40Z" user="makoragi" uid="3618340">
+ <way id="724518269" visible="true" version="3" changeset="159558772" timestamp="2024-11-25T06:30:38Z" user="Usatohu" uid="21219675">
   <nd ref="1522316723"/>
   <nd ref="6794731493"/>
   <nd ref="9909807211"/>
+  <nd ref="12373016388"/>
   <nd ref="9909807213"/>
   <nd ref="9909870423"/>
   <nd ref="6794731486"/>
@@ -22567,7 +22866,7 @@
   <nd ref="9909807198"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="1086686017" visible="true" version="1" changeset="124971906" timestamp="2022-08-16T13:03:52Z" user="tutuw002" uid="4531722">
+ <way id="1086686017" visible="true" version="2" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705">
   <nd ref="9956968466"/>
   <nd ref="9956968310"/>
   <nd ref="9956968309"/>
@@ -22578,6 +22877,7 @@
   <nd ref="9956968385"/>
   <nd ref="9956968304"/>
   <nd ref="9956968303"/>
+  <nd ref="12507150386"/>
   <nd ref="9956968302"/>
   <nd ref="9956968301"/>
   <nd ref="9956968300"/>
@@ -22647,7 +22947,7 @@
   <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-N02-v1_1.html"/>
   <tag k="voltage" v="600"/>
  </way>
- <way id="1136352223" visible="true" version="1" changeset="131862500" timestamp="2023-01-30T04:29:55Z" user="3539" uid="18377038">
+ <way id="1136352223" visible="true" version="2" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <nd ref="1522321147"/>
   <nd ref="1522321140"/>
   <nd ref="3536494639"/>
@@ -22659,7 +22959,6 @@
   <nd ref="1522319413"/>
   <nd ref="3786839632"/>
   <nd ref="1522319168"/>
-  <nd ref="1522319163"/>
   <tag k="highway" v="secondary"/>
   <tag k="name" v="四方寄熊本線"/>
   <tag k="ref" v="303"/>
@@ -22820,7 +23119,7 @@
   <tag k="name" v="くまもと街なか広場区分4"/>
   <tag k="operator:type" v="designated_managementator"/>
  </way>
- <way id="1285452587" visible="true" version="1" changeset="151656298" timestamp="2024-05-22T05:23:55Z" user="Usatohu" uid="21219675">
+ <way id="1285452587" visible="true" version="2" changeset="159554579" timestamp="2024-11-25T01:40:41Z" user="Usatohu" uid="21219675">
   <nd ref="11924620530"/>
   <nd ref="11924620531"/>
   <nd ref="11924620543"/>
@@ -22851,7 +23150,7 @@
   <tag k="addr:neighbourhood" v="古城町3丁目"/>
   <tag k="addr:province" v="熊本県"/>
   <tag k="addr:suburb" v="中央区"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="school"/>
   <tag k="building:levels" v="4"/>
  </way>
  <way id="1285452588" visible="true" version="1" changeset="151656298" timestamp="2024-05-22T05:23:55Z" user="Usatohu" uid="21219675">
@@ -23560,6 +23859,161 @@
   <tag k="highway" v="footway"/>
   <tag k="surface" v="paving_stones"/>
  </way>
+ <way id="1338279160" visible="true" version="1" changeset="159658100" timestamp="2024-11-27T12:52:57Z" user="Usatohu" uid="21219675">
+  <nd ref="12378731316"/>
+  <nd ref="12378731317"/>
+  <nd ref="12378731318"/>
+  <nd ref="12378731321"/>
+  <nd ref="12378731322"/>
+  <nd ref="12378731326"/>
+  <nd ref="12378731327"/>
+  <nd ref="12378731325"/>
+  <nd ref="12378731324"/>
+  <nd ref="12378731323"/>
+  <nd ref="12378731320"/>
+  <nd ref="12378731319"/>
+  <nd ref="12378731316"/>
+  <tag k="leisure" v="garden"/>
+ </way>
+ <way id="1338538533" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="5418506946"/>
+  <nd ref="5420002403"/>
+  <nd ref="5418506947"/>
+  <tag k="highway" v="unclassified"/>
+  <tag k="source" v="YahooJapan/ALPSMAP"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1338538534" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="6187275084"/>
+  <nd ref="1522317042"/>
+  <tag k="highway" v="service"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1338538535" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="6187275083"/>
+  <nd ref="12381693754"/>
+  <nd ref="12381693755"/>
+  <nd ref="12381693756"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="1338538536" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="6187275084"/>
+  <nd ref="6187275083"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="1338538537" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="12381693756"/>
+  <nd ref="6187275082"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="1338538539" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="3491412446"/>
+  <nd ref="1522319212"/>
+  <tag k="highway" v="unclassified"/>
+  <tag k="source" v="YahooJapan/ALPSMAP"/>
+ </way>
+ <way id="1338538540" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="1522319168"/>
+  <nd ref="1522319163"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="四方寄熊本線"/>
+  <tag k="ref" v="303"/>
+  <tag k="source" v="YahooJapan/ALPSMAP"/>
+ </way>
+ <way id="1338538541" visible="true" version="2" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
+  <nd ref="2194864342"/>
+  <nd ref="1522318185"/>
+  <nd ref="1522318151"/>
+  <nd ref="1522318086"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="四方寄熊本線"/>
+  <tag k="name:en" v="Yomogi Kumamoto Road"/>
+  <tag k="name:fr" v="Route Yomogi Kumamoto"/>
+  <tag k="name:ja-Hira" v="よもぎ くまもとせん"/>
+  <tag k="name:ja-Latn" v="Yomogi Kumamoto sen"/>
+  <tag k="ref" v="303"/>
+  <tag k="source" v="YahooJapan/ALPSMAP"/>
+ </way>
+ <way id="1338538542" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="269157378"/>
+  <nd ref="1522317533"/>
+  <nd ref="1522317730"/>
+  <nd ref="1522317823"/>
+  <nd ref="3533645307"/>
+  <tag k="highway" v="tertiary"/>
+  <tag k="lit" v="yes"/>
+  <tag k="source" v="YahooJapan/ALPSMAP"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1338538543" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="1522317479"/>
+  <nd ref="269157378"/>
+  <tag k="highway" v="secondary"/>
+  <tag k="name" v="四方寄熊本線"/>
+  <tag k="ref" v="303"/>
+  <tag k="source" v="YahooJapan/ALPSMAP"/>
+ </way>
+ <way id="1338538544" visible="true" version="1" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <nd ref="269157971"/>
+  <nd ref="6390878579"/>
+  <nd ref="6390704689"/>
+  <nd ref="276382195"/>
+  <nd ref="5469385270"/>
+  <nd ref="1522317116"/>
+  <nd ref="1522316973"/>
+  <nd ref="269158052"/>
+  <tag k="highway" v="primary"/>
+  <tag k="name" v="熊本高森線"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="28"/>
+ </way>
+ <way id="1338765350" visible="true" version="1" changeset="159725396" timestamp="2024-11-29T03:26:43Z" user="Usatohu" uid="21219675">
+  <nd ref="269158235"/>
+  <nd ref="269158965"/>
+  <nd ref="1522316990"/>
+  <nd ref="5417960770"/>
+  <nd ref="1989709617"/>
+  <nd ref="12131496575"/>
+  <nd ref="5508710667"/>
+  <nd ref="1522317281"/>
+  <nd ref="767578576"/>
+  <nd ref="3787673629"/>
+  <nd ref="6390878577"/>
+  <nd ref="269157378"/>
+  <tag k="highway" v="primary"/>
+  <tag k="name" v="熊本高森線"/>
+  <tag k="oneway" v="yes"/>
+  <tag k="ref" v="28"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1338765351" visible="true" version="1" changeset="159725396" timestamp="2024-11-29T03:26:43Z" user="Usatohu" uid="21219675">
+  <nd ref="1522319053"/>
+  <nd ref="1522319024"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lit" v="yes"/>
+  <tag k="name" v="熊本玉名線"/>
+  <tag k="ref" v="1"/>
+  <tag k="source" v="YahooJapan/ALPSMAP"/>
+  <tag k="surface" v="asphalt"/>
+ </way>
+ <way id="1368368713" visible="true" version="1" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
+  <nd ref="767578615"/>
+  <nd ref="12672856253"/>
+  <tag k="highway" v="footway"/>
+  <tag k="location" v="indoor"/>
+ </way>
+ <way id="1368368714" visible="true" version="1" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
+  <nd ref="12672856251"/>
+  <nd ref="3791429629"/>
+  <tag k="highway" v="footway"/>
+  <tag k="layer" v="-1"/>
+ </way>
+ <way id="1368368715" visible="true" version="1" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
+  <nd ref="3335571689"/>
+  <nd ref="12672856252"/>
+  <tag k="highway" v="footway"/>
+  <tag k="layer" v="-1"/>
+ </way>
  <relation id="1842185" visible="true" version="83" changeset="157464449" timestamp="2024-10-04T14:42:08Z" user="lucka-me" uid="15048116">
   <member type="node" ref="642042925" role="admin_centre"/>
   <member type="node" ref="739281222" role="label"/>
@@ -23703,7 +24157,7 @@
   <tag k="wikidata" v="Q130308"/>
   <tag k="wikipedia" v="ja:熊本県"/>
  </relation>
- <relation id="1842245" visible="true" version="142" changeset="152174082" timestamp="2024-06-02T19:24:55Z" user="Jordi MF" uid="8278438">
+ <relation id="1842245" visible="true" version="145" changeset="165057361" timestamp="2025-04-17T07:27:16Z" user="Zunyu" uid="19079224">
   <member type="node" ref="1504057971" role="label"/>
   <member type="way" ref="262103460" role="outer"/>
   <member type="way" ref="262103419" role="outer"/>
@@ -23865,6 +24319,7 @@
   <tag k="name:ilo" v="Kyushu"/>
   <tag k="name:is" v="Kyushu"/>
   <tag k="name:it" v="Kyūshū"/>
+  <tag k="name:ja" v="九州地方"/>
   <tag k="name:ja-Hira" v="きゅうしゅうちほう"/>
   <tag k="name:ja-Latn" v="Kyūshū-chiho"/>
   <tag k="name:ka" v="კიუსიუ"/>
@@ -23925,7 +24380,35 @@
   <tag k="wikidata" v="Q13393883"/>
   <tag k="wikipedia" v="ja:九州"/>
  </relation>
- <relation id="2578716" visible="true" version="6" changeset="158927990" timestamp="2024-11-09T11:02:07Z" user="mcdlee" uid="116515">
+ <relation id="2578716" visible="true" version="7" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705">
+  <member type="node" ref="270882640" role="stop"/>
+  <member type="node" ref="3491622654" role="stop"/>
+  <member type="node" ref="270881740" role="stop"/>
+  <member type="node" ref="270881731" role="stop"/>
+  <member type="node" ref="270881744" role="stop"/>
+  <member type="node" ref="270881724" role="stop"/>
+  <member type="node" ref="270881757" role="stop"/>
+  <member type="node" ref="9956968463" role="stop"/>
+  <member type="node" ref="270881739" role="stop"/>
+  <member type="node" ref="270881738" role="stop"/>
+  <member type="node" ref="270881743" role="stop"/>
+  <member type="node" ref="270881813" role="stop"/>
+  <member type="node" ref="12507150384" role="stop"/>
+  <member type="node" ref="270882256" role="stop"/>
+  <member type="node" ref="270882263" role="stop"/>
+  <member type="node" ref="270882173" role="stop"/>
+  <member type="node" ref="270882251" role="stop"/>
+  <member type="node" ref="685192456" role="stop"/>
+  <member type="node" ref="270867346" role="stop"/>
+  <member type="node" ref="270867366" role="stop"/>
+  <member type="node" ref="270867371" role="stop"/>
+  <member type="node" ref="12507150373" role="stop"/>
+  <member type="node" ref="12507150374" role="stop"/>
+  <member type="node" ref="270867484" role="stop"/>
+  <member type="node" ref="12507150378" role="stop"/>
+  <member type="node" ref="270867348" role="stop"/>
+  <member type="way" ref="1351848263" role=""/>
+  <member type="way" ref="1351848262" role=""/>
   <member type="way" ref="24927290" role=""/>
   <member type="way" ref="24927288" role=""/>
   <member type="way" ref="24927220" role=""/>
@@ -23942,42 +24425,52 @@
   <member type="way" ref="188452402" role=""/>
   <member type="way" ref="24926148" role=""/>
   <member type="way" ref="24926137" role=""/>
-  <member type="node" ref="270882640" role="stop"/>
-  <member type="node" ref="3491622654" role="stop"/>
-  <member type="node" ref="270881740" role="stop"/>
-  <member type="node" ref="270881731" role="stop"/>
-  <member type="node" ref="270881744" role="stop"/>
-  <member type="node" ref="270881724" role="stop"/>
-  <member type="node" ref="270881757" role="stop"/>
-  <member type="node" ref="270881746" role="stop"/>
+  <tag k="colour" v="#F00"/>
+  <tag k="from" v="田崎橋"/>
+  <tag k="from:en" v="Tasakibashi"/>
+  <tag k="name" v="A系統 (田崎橋 =&gt; 健軍町)"/>
+  <tag k="name:en" v="A-Line (Tasakibashi =&gt; Kengunmachi)"/>
+  <tag k="network" v="熊本市電"/>
+  <tag k="operator" v="熊本市交通局"/>
+  <tag k="operator:en" v="Kumamoto City Transportation Bureau"/>
+  <tag k="operator:ja" v="熊本市交通局"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="A"/>
+  <tag k="route" v="tram"/>
+  <tag k="to" v="健軍町"/>
+  <tag k="to:en" v="Kengunmachi"/>
+  <tag k="type" v="route"/>
+  <tag k="wikidata" v="Q48759284"/>
+ </relation>
+ <relation id="2578717" visible="true" version="9" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705">
+  <member type="node" ref="270867052" role="stop"/>
+  <member type="node" ref="12507150368" role="stop"/>
+  <member type="node" ref="270867050" role="stop"/>
+  <member type="node" ref="12507150369" role="stop"/>
+  <member type="node" ref="270867066" role="stop"/>
+  <member type="node" ref="270867070" role="stop"/>
+  <member type="node" ref="270867072" role="stop"/>
+  <member type="node" ref="270867039" role="stop"/>
+  <member type="node" ref="9199386922" role="stop"/>
+  <member type="node" ref="9956968463" role="stop"/>
   <member type="node" ref="270881739" role="stop"/>
   <member type="node" ref="270881738" role="stop"/>
   <member type="node" ref="270881743" role="stop"/>
   <member type="node" ref="270881813" role="stop"/>
-  <member type="node" ref="270882109" role="stop"/>
+  <member type="node" ref="12507150384" role="stop"/>
   <member type="node" ref="270882256" role="stop"/>
   <member type="node" ref="270882263" role="stop"/>
   <member type="node" ref="270882173" role="stop"/>
   <member type="node" ref="270882251" role="stop"/>
-  <member type="node" ref="270882268" role="stop"/>
+  <member type="node" ref="685192456" role="stop"/>
   <member type="node" ref="270867346" role="stop"/>
   <member type="node" ref="270867366" role="stop"/>
   <member type="node" ref="270867371" role="stop"/>
-  <member type="node" ref="270867342" role="stop"/>
-  <member type="node" ref="270867340" role="stop"/>
+  <member type="node" ref="12507150373" role="stop"/>
+  <member type="node" ref="12507150374" role="stop"/>
   <member type="node" ref="270867484" role="stop"/>
-  <member type="node" ref="270867360" role="stop"/>
-  <member type="node" ref="270867368" role="stop"/>
-  <tag k="name" v="熊本市電 A"/>
-  <tag k="name:en" v="A-Line"/>
-  <tag k="network" v="熊本市電"/>
-  <tag k="public_transport:version" v="1"/>
-  <tag k="ref" v="2"/>
-  <tag k="route" v="tram"/>
-  <tag k="type" v="route"/>
-  <tag k="wikidata" v="Q48759284"/>
- </relation>
- <relation id="2578717" visible="true" version="8" changeset="158927990" timestamp="2024-11-09T11:02:07Z" user="mcdlee" uid="116515">
+  <member type="node" ref="12507150378" role="stop"/>
+  <member type="node" ref="270867348" role="stop"/>
   <member type="way" ref="24926099" role=""/>
   <member type="way" ref="342293984" role=""/>
   <member type="way" ref="342293983" role=""/>
@@ -23992,40 +24485,20 @@
   <member type="way" ref="188452402" role=""/>
   <member type="way" ref="24926148" role=""/>
   <member type="way" ref="24926137" role=""/>
-  <member type="node" ref="270867052" role="stop"/>
-  <member type="node" ref="1522321710" role="stop"/>
-  <member type="node" ref="270867050" role="stop"/>
-  <member type="node" ref="1522319470" role="stop"/>
-  <member type="node" ref="270867066" role="stop"/>
-  <member type="node" ref="270867070" role="stop"/>
-  <member type="node" ref="270867072" role="stop"/>
-  <member type="node" ref="270867039" role="stop"/>
-  <member type="node" ref="3493148123" role="stop"/>
-  <member type="node" ref="270881746" role="stop"/>
-  <member type="node" ref="270881739" role="stop"/>
-  <member type="node" ref="270881738" role="stop"/>
-  <member type="node" ref="270881743" role="stop"/>
-  <member type="node" ref="270881813" role="stop"/>
-  <member type="node" ref="270882109" role="stop"/>
-  <member type="node" ref="270882256" role="stop"/>
-  <member type="node" ref="270882263" role="stop"/>
-  <member type="node" ref="270882173" role="stop"/>
-  <member type="node" ref="270882251" role="stop"/>
-  <member type="node" ref="270882268" role="stop"/>
-  <member type="node" ref="270867346" role="stop"/>
-  <member type="node" ref="270867366" role="stop"/>
-  <member type="node" ref="270867371" role="stop"/>
-  <member type="node" ref="270867342" role="stop"/>
-  <member type="node" ref="270867340" role="stop"/>
-  <member type="node" ref="270867484" role="stop"/>
-  <member type="node" ref="270867360" role="stop"/>
-  <member type="node" ref="270867368" role="stop"/>
-  <tag k="name" v="熊本市電 B"/>
-  <tag k="name:en" v="B-Line"/>
+  <tag k="colour" v="#00F"/>
+  <tag k="from" v="上熊本駅"/>
+  <tag k="from:en" v="Kami-Kumamoto Station"/>
+  <tag k="name" v="B系統 (上熊本駅 =&gt; 健軍町)"/>
+  <tag k="name:en" v="B-Line (Kami-Kumamoto Station =&gt; Kengunmachi)"/>
   <tag k="network" v="熊本市電"/>
-  <tag k="public_transport:version" v="1"/>
-  <tag k="ref" v="3"/>
+  <tag k="operator" v="熊本市交通局"/>
+  <tag k="operator:en" v="Kumamoto City Transportation Bureau"/>
+  <tag k="operator:ja" v="熊本市交通局"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="B"/>
   <tag k="route" v="tram"/>
+  <tag k="to" v="健軍町"/>
+  <tag k="to:en" v="Kengunmachi"/>
   <tag k="type" v="route"/>
   <tag k="wikidata" v="Q48759291"/>
  </relation>
@@ -24104,7 +24577,7 @@
   <tag k="wikidata" v="Q137716"/>
   <tag k="wikipedia" v="ja:中央区 (熊本市)"/>
  </relation>
- <relation id="4000503" visible="true" version="24" changeset="153645426" timestamp="2024-07-07T02:57:59Z" user="Olyon" uid="1443767">
+ <relation id="4000503" visible="true" version="26" changeset="165001761" timestamp="2025-04-15T20:22:42Z" user="woodpeck_repair" uid="145231">
   <member type="node" ref="642042925" role="label"/>
   <member type="way" ref="300222293" role="outer"/>
   <member type="way" ref="300222289" role="outer"/>
@@ -24175,7 +24648,7 @@
   <tag k="source" v="GSI/KIBAN 2500;NARO"/>
   <tag k="type" v="multipolygon"/>
  </relation>
- <relation id="8114692" visible="true" version="10" changeset="158927990" timestamp="2024-11-09T11:02:07Z" user="mcdlee" uid="116515">
+ <relation id="8114692" visible="true" version="12" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <member type="node" ref="5479290026" role="stop"/>
   <member type="node" ref="5479388030" role="stop"/>
   <member type="node" ref="11212400477" role="stop"/>
@@ -24202,7 +24675,7 @@
   <member type="node" ref="5469385268" role="stop"/>
   <member type="node" ref="5469385269" role="stop"/>
   <member type="node" ref="5469385270" role="stop"/>
-  <member type="node" ref="5479290027" role="stop"/>
+  <member type="node" ref="5479290027" role="stop_exit_only"/>
   <member type="way" ref="569801654" role=""/>
   <member type="way" ref="569801652" role=""/>
   <member type="way" ref="138184843" role=""/>
@@ -24229,11 +24702,13 @@
   <member type="way" ref="1332169626" role=""/>
   <member type="way" ref="342111157" role=""/>
   <member type="way" ref="66444559" role=""/>
+  <member type="way" ref="1338538544" role=""/>
   <member type="way" ref="188409334" role=""/>
   <member type="way" ref="571844149" role=""/>
   <member type="way" ref="724518264" role=""/>
   <member type="way" ref="138840251" role=""/>
   <member type="way" ref="724518271" role=""/>
+  <member type="way" ref="1337643251" role=""/>
   <tag k="description" v="小峯発 桜町バスターミナル行 東稜高校経由"/>
   <tag k="from" v="小峯"/>
   <tag k="name" v="小峯京塚線"/>
@@ -24245,7 +24720,7 @@
   <tag k="type" v="route"/>
   <tag k="via" v="東稜高校前"/>
  </relation>
- <relation id="8114783" visible="true" version="5" changeset="158927990" timestamp="2024-11-09T11:02:07Z" user="mcdlee" uid="116515">
+ <relation id="8114783" visible="true" version="7" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <member type="node" ref="5479290026" role="stop"/>
   <member type="node" ref="5479388030" role="stop"/>
   <member type="node" ref="5479388029" role="stop"/>
@@ -24269,7 +24744,7 @@
   <member type="node" ref="5469385268" role="stop"/>
   <member type="node" ref="5469385269" role="stop"/>
   <member type="node" ref="5469385270" role="stop"/>
-  <member type="node" ref="5479290027" role="stop"/>
+  <member type="node" ref="5479290027" role="stop_exit_only"/>
   <member type="way" ref="569801654" role="backward"/>
   <member type="way" ref="569801652" role="backward"/>
   <member type="way" ref="376000663" role="backward"/>
@@ -24291,11 +24766,13 @@
   <member type="way" ref="1332169626" role="forward"/>
   <member type="way" ref="342111157" role="forward"/>
   <member type="way" ref="66444559" role="forward"/>
+  <member type="way" ref="1338538544" role="forward"/>
   <member type="way" ref="188409334" role=""/>
   <member type="way" ref="571844149" role=""/>
   <member type="way" ref="724518264" role=""/>
   <member type="way" ref="138840251" role=""/>
   <member type="way" ref="724518271" role=""/>
+  <member type="way" ref="1337643251" role=""/>
   <tag k="description" v="小峯発 桜町バスターミナル行"/>
   <tag k="from" v="小峯"/>
   <tag k="name" v="小峯京塚線"/>
@@ -24306,7 +24783,7 @@
   <tag k="to" v="桜町バスターミナル"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="8152488" visible="true" version="9" changeset="158927990" timestamp="2024-11-09T11:02:07Z" user="mcdlee" uid="116515">
+ <relation id="8152488" visible="true" version="12" changeset="159906136" timestamp="2024-12-04T06:54:27Z" user="Usatohu" uid="21219675">
   <member type="node" ref="5495097304" role="stop"/>
   <member type="node" ref="5508710667" role="stop"/>
   <member type="node" ref="5508710668" role="stop"/>
@@ -24336,11 +24813,14 @@
   <member type="way" ref="724518267" role=""/>
   <member type="way" ref="1134388097" role=""/>
   <member type="way" ref="1134388098" role=""/>
+  <member type="way" ref="1340007575" role=""/>
   <member type="way" ref="724518259" role=""/>
+  <member type="way" ref="1337643252" role=""/>
   <member type="way" ref="1134380713" role=""/>
   <member type="way" ref="724518270" role=""/>
   <member type="way" ref="724518262" role=""/>
   <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="1338765350" role=""/>
   <member type="way" ref="24768317" role=""/>
   <member type="way" ref="240494678" role=""/>
   <member type="way" ref="1332169624" role=""/>
@@ -24428,8 +24908,7 @@
   <tag k="wikimedia_commons" v="Category:Tsuboi River"/>
   <tag k="wikipedia" v="ja:坪井川 (熊本県)"/>
  </relation>
- <relation id="15349868" visible="true" version="6" changeset="158927990" timestamp="2024-11-09T11:02:07Z" user="mcdlee" uid="116515">
-  <member type="node" ref="7045498985" role="stop"/>
+ <relation id="15349868" visible="true" version="12" changeset="159868988" timestamp="2024-12-03T07:33:51Z" user="Usatohu" uid="21219675">
   <member type="node" ref="10276837255" role="stop"/>
   <member type="node" ref="10276865067" role="stop"/>
   <member type="node" ref="10276385707" role="stop"/>
@@ -24457,10 +24936,15 @@
   <member type="way" ref="724518269" role="forward"/>
   <member type="way" ref="1134380713" role="forward"/>
   <member type="way" ref="724518268" role="forward"/>
+  <member type="way" ref="1339769411" role="forward"/>
+  <member type="way" ref="1339760116" role="forward"/>
+  <member type="way" ref="1339756782" role="forward"/>
+  <member type="way" ref="1338894285" role="forward"/>
   <member type="way" ref="1134380712" role="forward"/>
   <member type="way" ref="138840251" role="backward"/>
   <member type="way" ref="724518264" role="backward"/>
   <member type="way" ref="138838402" role="forward"/>
+  <member type="way" ref="1338765350" role="forward"/>
   <member type="way" ref="24768317" role="forward"/>
   <member type="way" ref="240494678" role="forward"/>
   <member type="way" ref="1332169624" role="forward"/>
@@ -24489,7 +24973,7 @@
   <tag k="route" v="bus"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="15349958" visible="true" version="3" changeset="158927990" timestamp="2024-11-09T11:02:07Z" user="mcdlee" uid="116515">
+ <relation id="15349958" visible="true" version="6" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
   <member type="node" ref="10243642284" role="stop"/>
   <member type="node" ref="10243621384" role="stop"/>
   <member type="node" ref="10170376089" role="stop"/>
@@ -24513,7 +24997,6 @@
   <member type="node" ref="6185114033" role="stop"/>
   <member type="node" ref="6185160485" role="stop"/>
   <member type="node" ref="6185160381" role="stop"/>
-  <member type="node" ref="7045498985" role="stop"/>
   <member type="way" ref="410725593" role="forward"/>
   <member type="way" ref="138868476" role="forward"/>
   <member type="way" ref="410713505" role="backward"/>
@@ -24535,11 +25018,13 @@
   <member type="way" ref="1332169626" role="forward"/>
   <member type="way" ref="342111157" role="forward"/>
   <member type="way" ref="66444559" role="forward"/>
+  <member type="way" ref="1338538544" role="forward"/>
   <member type="way" ref="188409334" role="forward"/>
   <member type="way" ref="571844149" role="forward"/>
   <member type="way" ref="724518264" role="forward"/>
   <member type="way" ref="138840251" role="forward"/>
   <member type="way" ref="724518271" role="forward"/>
+  <member type="way" ref="1337643251" role="forward"/>
   <member type="way" ref="724518266" role="forward"/>
   <member type="way" ref="724518267" role="forward"/>
   <member type="way" ref="1134388098" role="forward"/>
@@ -24582,7 +25067,7 @@
   <tag k="wikidata" v="Q85883937"/>
   <tag k="wikipedia" v="ja:辛島公園"/>
  </relation>
- <relation id="17616923" visible="true" version="3" changeset="155438248" timestamp="2024-08-19T00:15:59Z" user="taketaketake" uid="4757277">
+ <relation id="17616923" visible="true" version="7" changeset="159979076" timestamp="2024-12-06T03:12:55Z" user="Usatohu" uid="21219675">
   <member type="way" ref="375141512" role=""/>
   <member type="way" ref="1124925894" role=""/>
   <member type="way" ref="134728027" role=""/>
@@ -24623,12 +25108,18 @@
   <member type="way" ref="253167075" role=""/>
   <member type="way" ref="253167074" role=""/>
   <member type="way" ref="138192142" role=""/>
+  <member type="way" ref="1340418243" role=""/>
+  <member type="way" ref="1340418244" role=""/>
   <member type="way" ref="1124918187" role=""/>
   <member type="way" ref="138198467" role=""/>
+  <member type="way" ref="1338879466" role=""/>
+  <member type="way" ref="1340418242" role=""/>
   <member type="way" ref="138837133" role=""/>
   <member type="way" ref="138837108" role=""/>
   <member type="way" ref="138837122" role=""/>
+  <member type="way" ref="1338765351" role=""/>
   <member type="way" ref="138837160" role=""/>
+  <member type="way" ref="1340279942" role=""/>
   <tag k="name" v="熊本県道1号熊本玉名線"/>
   <tag k="network" v="JP:prefectural:kumamoto"/>
   <tag k="ref" v="1"/>
@@ -24637,8 +25128,9 @@
   <tag k="wikidata" v="Q11568397"/>
   <tag k="wikipedia" v="ja:熊本県道1号熊本玉名線"/>
  </relation>
- <relation id="17618049" visible="true" version="9" changeset="158927990" timestamp="2024-11-09T11:02:07Z" user="mcdlee" uid="116515">
+ <relation id="17618049" visible="true" version="14" changeset="159906136" timestamp="2024-12-04T06:54:27Z" user="Usatohu" uid="21219675">
   <member type="way" ref="138288382" role=""/>
+  <member type="way" ref="1340007586" role=""/>
   <member type="way" ref="138288372" role=""/>
   <member type="way" ref="914876973" role=""/>
   <member type="way" ref="914876971" role=""/>
@@ -24649,19 +25141,25 @@
   <member type="way" ref="914878106" role=""/>
   <member type="way" ref="914878104" role=""/>
   <member type="way" ref="188456025" role=""/>
+  <member type="way" ref="1339769412" role=""/>
   <member type="way" ref="1132970785" role=""/>
   <member type="way" ref="138288310" role=""/>
+  <member type="way" ref="1339398438" role=""/>
+  <member type="way" ref="1338538528" role=""/>
   <member type="way" ref="138288357" role=""/>
   <member type="way" ref="138288371" role=""/>
   <member type="way" ref="188456024" role=""/>
   <member type="way" ref="188456023" role=""/>
+  <member type="way" ref="1338538529" role=""/>
   <member type="way" ref="138837200" role=""/>
   <member type="way" ref="1132970786" role=""/>
   <member type="way" ref="138837195" role=""/>
   <member type="way" ref="314940954" role=""/>
+  <member type="way" ref="1340007577" role=""/>
   <member type="way" ref="188409339" role=""/>
   <member type="way" ref="188603846" role=""/>
   <member type="way" ref="188603869" role=""/>
+  <member type="way" ref="1338765350" role=""/>
   <member type="way" ref="24768317" role=""/>
   <member type="way" ref="240494678" role=""/>
   <member type="way" ref="1332169624" role=""/>
@@ -24678,10 +25176,12 @@
   <member type="way" ref="1332169626" role=""/>
   <member type="way" ref="342111157" role=""/>
   <member type="way" ref="66444559" role=""/>
+  <member type="way" ref="1338538544" role=""/>
   <member type="way" ref="138837192" role=""/>
   <member type="way" ref="573644514" role=""/>
   <member type="way" ref="724518262" role=""/>
   <member type="way" ref="410997637" role=""/>
+  <member type="way" ref="1338765349" role=""/>
   <member type="way" ref="138838039" role=""/>
   <member type="way" ref="138837204" role=""/>
   <member type="way" ref="138837190" role=""/>
@@ -24836,8 +25336,9 @@
   <tag k="wikidata" v="Q11568482"/>
   <tag k="wikipedia" v="ja:熊本県道28号熊本高森線"/>
  </relation>
- <relation id="17622085" visible="true" version="2" changeset="151942823" timestamp="2024-05-28T12:43:20Z" user="Usatohu" uid="21219675">
+ <relation id="17622085" visible="true" version="4" changeset="159978582" timestamp="2024-12-06T02:36:57Z" user="Usatohu" uid="21219675">
   <member type="way" ref="138837160" role=""/>
+  <member type="way" ref="1338765351" role=""/>
   <member type="way" ref="138837122" role=""/>
   <member type="way" ref="138837108" role=""/>
   <member type="way" ref="138198493" role=""/>
@@ -24871,14 +25372,20 @@
   <member type="way" ref="138198485" role=""/>
   <member type="way" ref="138198484" role=""/>
   <member type="way" ref="137912637" role=""/>
+  <member type="way" ref="1340414341" role=""/>
   <member type="way" ref="137912635" role=""/>
+  <member type="way" ref="1340414344" role=""/>
   <member type="way" ref="137912708" role=""/>
   <member type="way" ref="425365657" role=""/>
   <member type="way" ref="425365656" role=""/>
   <member type="way" ref="137912721" role=""/>
+  <member type="way" ref="1340414345" role=""/>
   <member type="way" ref="375442466" role=""/>
+  <member type="way" ref="1340414347" role=""/>
   <member type="way" ref="137912683" role=""/>
+  <member type="way" ref="1340414348" role=""/>
   <member type="way" ref="137912632" role=""/>
+  <member type="way" ref="1340414349" role=""/>
   <member type="way" ref="137912627" role=""/>
   <member type="way" ref="137912674" role=""/>
   <member type="way" ref="137912644" role=""/>
@@ -24956,7 +25463,7 @@
   <tag k="wikidata" v="Q11568216"/>
   <tag k="wikipedia" v="ja:熊本県の県道一覧"/>
  </relation>
- <relation id="17968167" visible="true" version="4" changeset="155696985" timestamp="2024-08-24T13:37:52Z" user="Usatohu" uid="21219675">
+ <relation id="17968167" visible="true" version="5" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <member type="way" ref="1310847768" role="outer"/>
   <member type="way" ref="1310504317" role="outer"/>
   <member type="way" ref="1310847760" role="outer"/>
@@ -24968,6 +25475,11 @@
   <tag k="admin_level" v="10"/>
   <tag k="boundary" v="administrative"/>
   <tag k="name" v="手取本町"/>
+  <tag k="name:en" v="Tetorihon"/>
+  <tag k="name:fr" v="Tetorihon"/>
+  <tag k="name:ja-Hira" v="てとりほんちょう"/>
+  <tag k="name:ja-Latn" v="Tetorihon-chō"/>
+  <tag k="postal_code" v="860-0808"/>
   <tag k="type" v="boundary"/>
   <tag k="wikidata" v="Q129628412"/>
   <tag k="wikipedia" v="ja:手取本町"/>
@@ -25011,7 +25523,7 @@
   <tag k="wikidata" v="Q129628667"/>
   <tag k="wikipedia" v="ja:宮内 (熊本市)"/>
  </relation>
- <relation id="17969027" visible="true" version="3" changeset="155696985" timestamp="2024-08-24T13:37:52Z" user="Usatohu" uid="21219675">
+ <relation id="17969027" visible="true" version="4" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <member type="way" ref="1310839878" role="outer"/>
   <member type="way" ref="1310839874" role="outer"/>
   <member type="way" ref="1310839876" role="outer"/>
@@ -25019,9 +25531,13 @@
   <tag k="admin_level" v="10"/>
   <tag k="boundary" v="administrative"/>
   <tag k="name" v="本丸"/>
+  <tag k="name:en" v="Honmaru"/>
+  <tag k="name:fr" v="Honmaru"/>
+  <tag k="name:ja-Hira" v="ほんまる"/>
+  <tag k="name:ja-Latn" v="Honmaru"/>
   <tag k="type" v="boundary"/>
  </relation>
- <relation id="17969028" visible="true" version="2" changeset="155696985" timestamp="2024-08-24T13:37:52Z" user="Usatohu" uid="21219675">
+ <relation id="17969028" visible="true" version="3" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <member type="way" ref="1310839879" role="outer"/>
   <member type="way" ref="1310839874" role="outer"/>
   <member type="way" ref="1310847766" role="outer"/>
@@ -25029,11 +25545,16 @@
   <tag k="admin_level" v="10"/>
   <tag k="boundary" v="administrative"/>
   <tag k="name" v="千葉城町"/>
+  <tag k="name:en" v="Chibajō"/>
+  <tag k="name:fr" v="Chibajō"/>
+  <tag k="name:ja-Hira" v="ちばじょうまち"/>
+  <tag k="name:ja-Latn" v="Chibajō-machi"/>
+  <tag k="postal_code" v="860-0001"/>
   <tag k="type" v="boundary"/>
   <tag k="wikidata" v="Q126946753"/>
   <tag k="wikipedia" v="ja:千葉城町"/>
  </relation>
- <relation id="17969029" visible="true" version="2" changeset="155695580" timestamp="2024-08-24T13:12:00Z" user="Usatohu" uid="21219675">
+ <relation id="17969029" visible="true" version="3" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <member type="way" ref="1310839879" role="outer"/>
   <member type="way" ref="1310839881" role="outer"/>
   <member type="way" ref="1310808482" role="outer"/>
@@ -25044,6 +25565,10 @@
   <tag k="admin_level" v="10"/>
   <tag k="boundary" v="administrative"/>
   <tag k="name" v="二の丸"/>
+  <tag k="name:en" v="Ninomaru"/>
+  <tag k="name:fr" v="Ninomaru"/>
+  <tag k="name:ja-Hira" v="にのまる"/>
+  <tag k="name:ja-Latn" v="Ninomaru"/>
   <tag k="type" v="boundary"/>
  </relation>
  <relation id="17969030" visible="true" version="2" changeset="155695580" timestamp="2024-08-24T13:12:00Z" user="Usatohu" uid="21219675">
@@ -25061,16 +25586,20 @@
   <tag k="wikidata" v="Q86733803"/>
   <tag k="wikipedia" v="ja:桜町 (熊本市)"/>
  </relation>
- <relation id="17969032" visible="true" version="3" changeset="155696985" timestamp="2024-08-24T13:37:52Z" user="Usatohu" uid="21219675">
+ <relation id="17969032" visible="true" version="4" changeset="163726804" timestamp="2025-03-17T11:10:18Z" user="tartiflex" uid="507417">
   <member type="way" ref="1310839875" role="outer"/>
   <member type="way" ref="1310839890" role="outer"/>
   <member type="way" ref="1310847752" role="outer"/>
-  <member type="way" ref="1310839889" role=""/>
+  <member type="way" ref="1310839889" role="outer"/>
   <member type="way" ref="1310839886" role="outer"/>
   <member type="way" ref="1310839880" role="outer"/>
   <tag k="admin_level" v="10"/>
   <tag k="boundary" v="administrative"/>
   <tag k="name" v="花畑町"/>
+  <tag k="name:en" v="Hanabatacho"/>
+  <tag k="name:fr" v="Hanabata"/>
+  <tag k="name:ja-Hira" v="はなばたちょう"/>
+  <tag k="name:ja-Latn" v="Hanabata-chō"/>
   <tag k="type" v="boundary"/>
  </relation>
  <relation id="17969229" visible="true" version="1" changeset="155696985" timestamp="2024-08-24T13:37:52Z" user="Usatohu" uid="21219675">
@@ -25142,5 +25671,1139 @@
   <tag k="type" v="boundary"/>
   <tag k="wikidata" v="Q11360188"/>
   <tag k="wikipedia" v="ja:上通"/>
+ </relation>
+ <relation id="18329097" visible="true" version="3" changeset="159685700" timestamp="2024-11-28T05:09:29Z" user="Usatohu" uid="21219675">
+  <member type="way" ref="138836994" role=""/>
+  <member type="way" ref="1338538543" role=""/>
+  <member type="way" ref="138837001" role=""/>
+  <member type="way" ref="375059249" role=""/>
+  <member type="way" ref="1338538541" role=""/>
+  <member type="way" ref="138837007" role=""/>
+  <member type="way" ref="138837015" role=""/>
+  <member type="way" ref="138836991" role=""/>
+  <member type="way" ref="1338538540" role=""/>
+  <member type="way" ref="1136352223" role=""/>
+  <member type="way" ref="1136352224" role=""/>
+  <member type="way" ref="1136352225" role=""/>
+  <member type="way" ref="1136352230" role=""/>
+  <member type="way" ref="1136362408" role=""/>
+  <member type="way" ref="1136352233" role=""/>
+  <member type="way" ref="1136352234" role=""/>
+  <member type="way" ref="1136352240" role=""/>
+  <member type="way" ref="1136352271" role=""/>
+  <member type="way" ref="1136352270" role=""/>
+  <member type="way" ref="1136352276" role=""/>
+  <member type="way" ref="1136352277" role=""/>
+  <member type="way" ref="1136352280" role=""/>
+  <member type="way" ref="1136352281" role=""/>
+  <member type="way" ref="1136352292" role=""/>
+  <member type="way" ref="1136352293" role=""/>
+  <member type="way" ref="1136352294" role=""/>
+  <member type="way" ref="1136352295" role=""/>
+  <member type="way" ref="1136352296" role=""/>
+  <member type="way" ref="1136352297" role=""/>
+  <member type="way" ref="1136352298" role=""/>
+  <member type="way" ref="1136352299" role=""/>
+  <member type="way" ref="1136352300" role=""/>
+  <member type="way" ref="1136352301" role=""/>
+  <member type="way" ref="1136352302" role=""/>
+  <member type="way" ref="1136352304" role=""/>
+  <member type="way" ref="1136352305" role=""/>
+  <member type="way" ref="1136352306" role=""/>
+  <member type="way" ref="1136352307" role=""/>
+  <member type="way" ref="138836988" role=""/>
+  <member type="way" ref="413313641" role=""/>
+  <tag k="name" v="熊本県道303号四方寄熊本線"/>
+  <tag k="network" v="JP:prefectural"/>
+  <tag k="ref" v="303"/>
+  <tag k="route" v="road"/>
+  <tag k="type" v="route"/>
+  <tag k="wikidata" v="Q11568495"/>
+  <tag k="wikipedia" v="ja:熊本県道303号四方寄熊本線"/>
+ </relation>
+ <relation id="18329536" visible="true" version="6" changeset="159979076" timestamp="2024-12-06T03:12:55Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="11927406739" role="stop"/>
+  <member type="node" ref="11927406738" role="stop"/>
+  <member type="node" ref="11927406735" role="stop"/>
+  <member type="node" ref="11927406733" role="stop"/>
+  <member type="node" ref="11927406731" role="stop"/>
+  <member type="node" ref="11927406729" role="stop"/>
+  <member type="node" ref="11927406727" role="stop"/>
+  <member type="node" ref="11927406725" role="stop"/>
+  <member type="node" ref="10537238044" role="stop"/>
+  <member type="node" ref="11927406724" role="stop"/>
+  <member type="node" ref="5508710667" role="stop"/>
+  <member type="node" ref="10276865067" role="stop"/>
+  <member type="node" ref="10276385707" role="stop"/>
+  <member type="node" ref="10276088375" role="stop"/>
+  <member type="node" ref="10243683967" role="stop"/>
+  <member type="node" ref="10243666900" role="stop"/>
+  <member type="node" ref="10243666899" role="stop"/>
+  <member type="node" ref="9837545710" role="stop"/>
+  <member type="node" ref="9898596713" role="stop"/>
+  <member type="node" ref="9898617840" role="stop"/>
+  <member type="node" ref="10040934404" role="stop"/>
+  <member type="node" ref="10057393559" role="stop"/>
+  <member type="node" ref="10093748449" role="stop"/>
+  <member type="way" ref="138289356" role="backward"/>
+  <member type="way" ref="138289335" role="backward"/>
+  <member type="way" ref="138289812" role="backward"/>
+  <member type="way" ref="138840393" role="backward"/>
+  <member type="way" ref="138837654" role="backward"/>
+  <member type="way" ref="138837892" role="backward"/>
+  <member type="way" ref="1340007579" role="backward"/>
+  <member type="way" ref="1337640449" role="backward"/>
+  <member type="way" ref="138288268" role="backward"/>
+  <member type="way" ref="188409339" role="backward"/>
+  <member type="way" ref="188603846" role="backward"/>
+  <member type="way" ref="188603869" role="backward"/>
+  <member type="way" ref="314940955" role="backward"/>
+  <member type="way" ref="188603855" role="backward"/>
+  <member type="way" ref="724518271" role=""/>
+  <member type="way" ref="1337643250" role=""/>
+  <member type="way" ref="724518274" role=""/>
+  <member type="way" ref="724518259" role=""/>
+  <member type="way" ref="1340007575" role=""/>
+  <member type="way" ref="1134388098" role=""/>
+  <member type="way" ref="724518270" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="1338765350" role="backward"/>
+  <member type="way" ref="24768317" role="backward"/>
+  <member type="way" ref="240494678" role=""/>
+  <member type="way" ref="1332169624" role=""/>
+  <member type="way" ref="1332169625" role=""/>
+  <member type="way" ref="1134380715" role=""/>
+  <member type="way" ref="1134380716" role="forward"/>
+  <member type="way" ref="1132970783" role=""/>
+  <member type="way" ref="408093718" role="backward"/>
+  <member type="way" ref="1337640453" role="backward"/>
+  <member type="way" ref="138868187" role="backward"/>
+  <member type="way" ref="138870280" role="backward"/>
+  <member type="way" ref="138869522" role="backward"/>
+  <member type="way" ref="1337640454" role="backward"/>
+  <member type="way" ref="138290012" role=""/>
+  <member type="way" ref="1337640456" role=""/>
+  <member type="way" ref="138288680" role=""/>
+  <member type="way" ref="1285829874" role=""/>
+  <member type="way" ref="138290008" role="backward"/>
+  <member type="way" ref="1337640448" role="backward"/>
+  <member type="way" ref="414144739" role="backward"/>
+  <member type="way" ref="138288910" role="backward"/>
+  <member type="way" ref="138288716" role="backward"/>
+  <member type="way" ref="138289904" role="backward"/>
+  <member type="way" ref="138288786" role="backward"/>
+  <member type="way" ref="138288843" role="backward"/>
+  <member type="node" ref="12373016370" role="stop"/>
+  <member type="node" ref="12398956080" role="stop"/>
+  <tag k="from" v="城西校北"/>
+  <tag k="name" v="大江城西線（桜町バスターミナル方面行）"/>
+  <tag k="operator" v="熊本都市バス"/>
+  <tag k="ref" v="G3-2"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="桜町バスターミナル/県立劇場/水前寺駅北口"/>
+  <tag k="type" v="route"/>
+  <tag k="via" v="新町;桜町バスターミナル;県立劇場"/>
+ </relation>
+ <relation id="18329612" visible="true" version="1" changeset="159558772" timestamp="2024-11-25T06:30:38Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="5479290027" role=""/>
+  <member type="node" ref="5495097304" role=""/>
+  <member type="node" ref="12373016365" role=""/>
+  <member type="node" ref="12373016368" role=""/>
+  <member type="node" ref="12373016369" role=""/>
+  <member type="node" ref="12373016367" role=""/>
+  <member type="node" ref="12373016370" role=""/>
+  <member type="node" ref="12373016371" role=""/>
+  <member type="node" ref="12373016373" role=""/>
+  <member type="node" ref="12373016372" role=""/>
+  <member type="node" ref="12373016374" role=""/>
+  <member type="node" ref="12373016375" role=""/>
+  <member type="node" ref="12373016376" role=""/>
+  <member type="node" ref="12373016378" role=""/>
+  <member type="node" ref="12373016377" role=""/>
+  <member type="node" ref="12373016379" role=""/>
+  <member type="node" ref="6794695580" role=""/>
+  <member type="node" ref="12373016380" role=""/>
+  <member type="node" ref="9909870459" role=""/>
+  <member type="node" ref="12373016381" role=""/>
+  <member type="node" ref="12373016382" role=""/>
+  <member type="node" ref="12373016383" role=""/>
+  <member type="node" ref="12373016384" role=""/>
+  <member type="node" ref="12373016385" role=""/>
+  <member type="node" ref="12373016386" role=""/>
+  <member type="node" ref="12373016387" role=""/>
+  <member type="node" ref="9909870423" role=""/>
+  <member type="node" ref="9909807211" role=""/>
+  <member type="node" ref="12373016388" role=""/>
+  <tag k="name" v="桜町バスターミナル"/>
+  <tag k="public_transport" v="stop_area_group"/>
+  <tag k="type" v="public_transport"/>
+ </relation>
+ <relation id="18335375" visible="true" version="4" changeset="159978582" timestamp="2024-12-06T02:36:57Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="12375074634" role="stop"/>
+  <member type="node" ref="12375074632" role="stop"/>
+  <member type="node" ref="12375074631" role="stop"/>
+  <member type="node" ref="12375074628" role="stop"/>
+  <member type="node" ref="12375074626" role="stop"/>
+  <member type="node" ref="11927406729" role="stop"/>
+  <member type="node" ref="11927406727" role="stop"/>
+  <member type="node" ref="11927406725" role="stop"/>
+  <member type="node" ref="10537238044" role="stop"/>
+  <member type="node" ref="11927406724" role="stop"/>
+  <member type="node" ref="12373016384" role="stop"/>
+  <member type="way" ref="24768317" role="backward"/>
+  <member type="way" ref="1338765350" role="backward"/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="724518262" role="backward"/>
+  <member type="way" ref="724518270" role="backward"/>
+  <member type="way" ref="1134388098" role="backward"/>
+  <member type="way" ref="724518267" role="backward"/>
+  <member type="way" ref="724518266" role="backward"/>
+  <member type="way" ref="1337643251" role="backward"/>
+  <member type="way" ref="724518271" role="backward"/>
+  <member type="way" ref="188603855" role="backward"/>
+  <member type="way" ref="314940955" role="backward"/>
+  <member type="way" ref="188603869" role="backward"/>
+  <member type="way" ref="188603846" role="backward"/>
+  <member type="way" ref="188409339" role="backward"/>
+  <member type="way" ref="138288268" role="backward"/>
+  <member type="way" ref="1337640449" role="backward"/>
+  <member type="way" ref="1340007579" role="backward"/>
+  <member type="way" ref="138837892" role="backward"/>
+  <member type="way" ref="138837654" role="backward"/>
+  <member type="way" ref="138840393" role="backward"/>
+  <member type="way" ref="138289812" role="backward"/>
+  <member type="way" ref="795468510" role="backward"/>
+  <member type="way" ref="1338036604" role="backward"/>
+  <member type="way" ref="138289780" role="backward"/>
+  <member type="way" ref="138289420" role="backward"/>
+  <member type="way" ref="138288503" role="backward"/>
+  <member type="way" ref="138289244" role="backward"/>
+  <member type="way" ref="138288917" role="backward"/>
+  <member type="way" ref="138288697" role="backward"/>
+  <member type="way" ref="138288930" role="backward"/>
+  <member type="way" ref="1340007580" role="backward"/>
+  <member type="way" ref="138290001" role="backward"/>
+  <member type="way" ref="138192784" role="backward"/>
+  <member type="way" ref="138192272" role="backward"/>
+  <member type="way" ref="138193388" role="backward"/>
+  <member type="way" ref="138193637" role="backward"/>
+  <member type="way" ref="138193878" role="backward"/>
+  <member type="way" ref="138193912" role="backward"/>
+  <member type="way" ref="138192886" role="backward"/>
+  <member type="node" ref="5508710667" role="stop"/>
+  <member type="node" ref="10276865067" role="stop"/>
+  <member type="node" ref="5508710669" role="stop"/>
+  <member type="node" ref="12398956080" role="stop"/>
+  <tag k="from" v="谷尾崎"/>
+  <tag k="name" v="谷尾崎（水道町行）"/>
+  <tag k="operator" v="産交バス"/>
+  <tag k="ref" v="U4-2"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="水道町"/>
+  <tag k="type" v="route"/>
+  <tag k="via" v="筒口;新町;桜町バスターミナル"/>
+ </relation>
+ <relation id="18343501" visible="true" version="6" changeset="159906136" timestamp="2024-12-04T06:54:27Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="8540191414" role="stop"/>
+  <member type="node" ref="5487754256" role="stop"/>
+  <member type="node" ref="10537183617" role="stop"/>
+  <member type="node" ref="10537238043" role="stop"/>
+  <member type="node" ref="10537228526" role="stop"/>
+  <member type="node" ref="12381693749" role="stop"/>
+  <member type="node" ref="12373016376" role="stop"/>
+  <member type="node" ref="12381693748" role="stop"/>
+  <member type="node" ref="12381693750" role="stop"/>
+  <member type="node" ref="12381693751" role="stop"/>
+  <member type="node" ref="12324686170" role="stop"/>
+  <member type="node" ref="12381693752" role="stop"/>
+  <member type="node" ref="12381693753" role="stop"/>
+  <member type="node" ref="12377354634" role="stop"/>
+  <member type="node" ref="5469385270" role="stop"/>
+  <member type="node" ref="12373016375" role="stop"/>
+  <member type="node" ref="5495097306" role="stop"/>
+  <member type="node" ref="12192310303" role="stop"/>
+  <member type="way" ref="138839094" role=""/>
+  <member type="way" ref="138838620" role=""/>
+  <member type="way" ref="138837627" role=""/>
+  <member type="way" ref="138838480" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="61511748" role=""/>
+  <member type="way" ref="1338538533" role=""/>
+  <member type="way" ref="138839102" role=""/>
+  <member type="way" ref="138839438" role=""/>
+  <member type="way" ref="138839663" role=""/>
+  <member type="way" ref="138840572" role=""/>
+  <member type="way" ref="138840644" role=""/>
+  <member type="way" ref="138840489" role=""/>
+  <member type="way" ref="138839848" role=""/>
+  <member type="way" ref="1338538532" role=""/>
+  <member type="way" ref="138840698" role=""/>
+  <member type="way" ref="138840578" role=""/>
+  <member type="way" ref="138839450" role=""/>
+  <member type="way" ref="489068426" role=""/>
+  <member type="way" ref="138838352" role=""/>
+  <member type="way" ref="188603855" role=""/>
+  <member type="way" ref="188603852" role=""/>
+  <member type="way" ref="188603853" role=""/>
+  <member type="way" ref="188456030" role=""/>
+  <member type="way" ref="188456023" role=""/>
+  <member type="way" ref="188456024" role=""/>
+  <member type="way" ref="188456022" role=""/>
+  <member type="way" ref="1132970785" role=""/>
+  <member type="way" ref="1339769412" role=""/>
+  <member type="way" ref="1132970784" role=""/>
+  <member type="way" ref="442676147" role=""/>
+  <member type="way" ref="1132970781" role=""/>
+  <member type="way" ref="918091680" role=""/>
+  <member type="way" ref="1338538528" role=""/>
+  <member type="way" ref="138288357" role=""/>
+  <member type="way" ref="138288371" role=""/>
+  <member type="way" ref="138837200" role=""/>
+  <member type="way" ref="138840194" role=""/>
+  <member type="way" ref="138838807" role=""/>
+  <member type="way" ref="138838361" role=""/>
+  <member type="way" ref="1340007578" role=""/>
+  <member type="way" ref="1338538530" role=""/>
+  <member type="way" ref="996245127" role=""/>
+  <member type="way" ref="138839488" role=""/>
+  <member type="way" ref="1338538531" role=""/>
+  <member type="way" ref="138837590" role=""/>
+  <member type="way" ref="1338538538" role=""/>
+  <member type="way" ref="138840029" role=""/>
+  <member type="way" ref="138837774" role=""/>
+  <member type="way" ref="138837230" role=""/>
+  <member type="way" ref="138837337" role=""/>
+  <member type="way" ref="138840387" role=""/>
+  <member type="way" ref="138840381" role=""/>
+  <member type="way" ref="138838176" role=""/>
+  <member type="way" ref="138839357" role=""/>
+  <member type="way" ref="1338538539" role=""/>
+  <member type="way" ref="342110949" role=""/>
+  <member type="way" ref="1338538540" role=""/>
+  <member type="way" ref="138836991" role=""/>
+  <member type="way" ref="138837015" role=""/>
+  <member type="way" ref="138837007" role=""/>
+  <member type="way" ref="1338538541" role=""/>
+  <member type="way" ref="138840590" role=""/>
+  <member type="way" ref="138837754" role=""/>
+  <member type="way" ref="138838663" role=""/>
+  <member type="way" ref="1338538542" role=""/>
+  <member type="way" ref="138836994" role=""/>
+  <member type="way" ref="1338538544" role=""/>
+  <member type="way" ref="138837192" role=""/>
+  <member type="way" ref="138838402" role=""/>
+  <member type="way" ref="724518264" role=""/>
+  <member type="way" ref="138840251" role=""/>
+  <member type="way" ref="1134380712" role=""/>
+  <member type="way" ref="1338894285" role=""/>
+  <member type="way" ref="1339756782" role=""/>
+  <member type="way" ref="1339760116" role=""/>
+  <member type="way" ref="1339769411" role=""/>
+  <member type="way" ref="724518268" role=""/>
+  <member type="way" ref="1134380713" role=""/>
+  <member type="way" ref="724518269" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="1338538534" role=""/>
+  <member type="way" ref="1338538536" role=""/>
+  <member type="way" ref="1338538535" role=""/>
+  <member type="way" ref="1338538537" role=""/>
+  <tag k="from" v="熊本駅前"/>
+  <tag k="name" v="熊本城周遊バスしろめぐりん"/>
+  <tag k="ref" v="SS"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="熊本駅前"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="18347674" visible="true" version="4" changeset="159907069" timestamp="2024-12-04T07:34:45Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="12373016365" role="stop"/>
+  <member type="node" ref="12377354633" role="stop"/>
+  <member type="node" ref="12378712892" role="stop"/>
+  <member type="node" ref="12378712896" role="stop"/>
+  <member type="node" ref="12378712894" role="stop"/>
+  <member type="node" ref="12378712898" role="stop"/>
+  <member type="node" ref="12378712900" role="stop"/>
+  <member type="node" ref="12378731202" role="stop"/>
+  <member type="node" ref="12378731367" role="stop"/>
+  <member type="node" ref="10040939192" role="stop"/>
+  <member type="node" ref="12383617826" role="stop"/>
+  <member type="node" ref="12383617828" role="stop"/>
+  <member type="way" ref="1338765348" role=""/>
+  <member type="way" ref="724518274" role=""/>
+  <member type="way" ref="724518259" role=""/>
+  <member type="way" ref="1340007575" role=""/>
+  <member type="way" ref="1134388098" role=""/>
+  <member type="way" ref="724518270" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="1338765350" role=""/>
+  <member type="way" ref="1338538542" role=""/>
+  <member type="way" ref="138838891" role=""/>
+  <member type="way" ref="1338765351" role=""/>
+  <member type="way" ref="138837122" role=""/>
+  <member type="way" ref="138837108" role=""/>
+  <member type="way" ref="138198493" role=""/>
+  <member type="way" ref="1136352222" role=""/>
+  <member type="way" ref="1136352220" role=""/>
+  <member type="way" ref="1132970780" role=""/>
+  <member type="way" ref="996245134" role=""/>
+  <member type="way" ref="1137015365" role=""/>
+  <member type="way" ref="1137015366" role=""/>
+  <member type="way" ref="1136352335" role=""/>
+  <member type="way" ref="1136352334" role=""/>
+  <member type="way" ref="1136352333" role=""/>
+  <member type="way" ref="1136352332" role=""/>
+  <member type="way" ref="1136363270" role=""/>
+  <member type="way" ref="1340012787" role=""/>
+  <tag k="name" v="上熊本車庫線（壺井橋経由）"/>
+  <tag k="ref" v="B1-1"/>
+  <tag k="route" v="bus"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="18350589" visible="true" version="6" changeset="159979076" timestamp="2024-12-06T03:12:55Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="12373016365" role="stop"/>
+  <member type="node" ref="12372832673" role="stop"/>
+  <member type="node" ref="4813493369" role="stop"/>
+  <member type="node" ref="12372832676" role="stop"/>
+  <member type="node" ref="10537237985" role="stop"/>
+  <member type="node" ref="10537269641" role="stop"/>
+  <member type="node" ref="10537258796" role="stop"/>
+  <member type="node" ref="10040939192" role="stop"/>
+  <member type="node" ref="12383617828" role="stop"/>
+  <member type="node" ref="12383617826" role="stop"/>
+  <member type="way" ref="1338765348" role=""/>
+  <member type="way" ref="724518274" role=""/>
+  <member type="way" ref="724518259" role=""/>
+  <member type="way" ref="1340007575" role=""/>
+  <member type="way" ref="1134388098" role=""/>
+  <member type="way" ref="724518270" role=""/>
+  <member type="way" ref="138838480" role=""/>
+  <member type="way" ref="138837627" role=""/>
+  <member type="way" ref="138838620" role=""/>
+  <member type="way" ref="138840644" role=""/>
+  <member type="way" ref="138840489" role=""/>
+  <member type="way" ref="138839848" role=""/>
+  <member type="way" ref="1338538532" role=""/>
+  <member type="way" ref="138839094" role=""/>
+  <member type="way" ref="138837590" role=""/>
+  <member type="way" ref="1338538531" role=""/>
+  <member type="way" ref="138839488" role=""/>
+  <member type="way" ref="996245130" role=""/>
+  <member type="way" ref="996245123" role=""/>
+  <member type="way" ref="1340418241" role=""/>
+  <member type="way" ref="996245125" role=""/>
+  <member type="way" ref="1136352220" role=""/>
+  <member type="way" ref="1132970780" role=""/>
+  <member type="way" ref="996245134" role=""/>
+  <member type="way" ref="1137015365" role=""/>
+  <member type="way" ref="1137015366" role=""/>
+  <member type="way" ref="1136352335" role=""/>
+  <member type="way" ref="1136352334" role=""/>
+  <member type="way" ref="1136352333" role=""/>
+  <member type="way" ref="1136352332" role=""/>
+  <member type="way" ref="1136363270" role=""/>
+  <member type="way" ref="1340012787" role=""/>
+  <member type="way" ref="1137015365" role=""/>
+  <member type="way" ref="1137015366" role=""/>
+  <member type="way" ref="1136352335" role=""/>
+  <member type="way" ref="1136352334" role=""/>
+  <tag k="from" v="桜町バスターミナル"/>
+  <tag k="name" v="上熊本車庫線（段山経由）"/>
+  <tag k="operator" v="熊本都市バス"/>
+  <tag k="ref" v="U1-1"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="上熊本営業所"/>
+  <tag k="type" v="route"/>
+  <tag k="via" v="国立病院前"/>
+ </relation>
+ <relation id="18350590" visible="true" version="4" changeset="159979076" timestamp="2024-12-06T03:12:55Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="12373016365" role="stop"/>
+  <member type="node" ref="12377354633" role="stop"/>
+  <member type="node" ref="12378712892" role="stop"/>
+  <member type="node" ref="12378712894" role="stop"/>
+  <member type="node" ref="12378712896" role="stop"/>
+  <member type="node" ref="12378712898" role="stop"/>
+  <member type="node" ref="12378712900" role="stop"/>
+  <member type="node" ref="12378731202" role="stop"/>
+  <member type="node" ref="10537258799" role="stop"/>
+  <member type="node" ref="12378835539" role="stop"/>
+  <member type="node" ref="12378835543" role="stop"/>
+  <member type="node" ref="12378835544" role="stop"/>
+  <member type="node" ref="12378835547" role="stop"/>
+  <member type="node" ref="12378835548" role="stop"/>
+  <member type="node" ref="12378835551" role="stop"/>
+  <member type="node" ref="12378835552" role="stop"/>
+  <member type="node" ref="12378835555" role="stop"/>
+  <member type="way" ref="1338765348" role=""/>
+  <member type="way" ref="724518274" role=""/>
+  <member type="way" ref="724518259" role=""/>
+  <member type="way" ref="1340007575" role=""/>
+  <member type="way" ref="1134388098" role=""/>
+  <member type="way" ref="724518270" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="1338765350" role=""/>
+  <member type="way" ref="1338538542" role=""/>
+  <member type="way" ref="138838891" role=""/>
+  <member type="way" ref="1338765351" role=""/>
+  <member type="way" ref="138837122" role=""/>
+  <member type="way" ref="138837108" role=""/>
+  <member type="way" ref="138837133" role=""/>
+  <member type="way" ref="1340418242" role=""/>
+  <member type="way" ref="342111159" role=""/>
+  <member type="way" ref="1338879466" role=""/>
+  <member type="way" ref="1338879467" role=""/>
+  <member type="way" ref="138840504" role=""/>
+  <member type="way" ref="138840522" role=""/>
+  <member type="way" ref="138839460" role=""/>
+  <member type="way" ref="138840571" role=""/>
+  <member type="way" ref="1338879468" role=""/>
+  <member type="way" ref="138840755" role=""/>
+  <member type="way" ref="138840581" role=""/>
+  <member type="way" ref="138837738" role=""/>
+  <member type="way" ref="138840718" role=""/>
+  <member type="way" ref="138837987" role=""/>
+  <member type="way" ref="138840707" role=""/>
+  <member type="way" ref="138840576" role=""/>
+  <member type="way" ref="138837450" role=""/>
+  <member type="way" ref="138837273" role=""/>
+  <member type="way" ref="138837611" role=""/>
+  <member type="way" ref="138838089" role=""/>
+  <member type="way" ref="138840600" role=""/>
+  <member type="way" ref="138840612" role=""/>
+  <member type="way" ref="138837548" role=""/>
+  <member type="way" ref="138837354" role=""/>
+  <member type="way" ref="1338879470" role=""/>
+  <member type="node" ref="12378835556" role="stop"/>
+  <member type="node" ref="12378835541" role="stop"/>
+  <tag k="from" v="桜町バスターミナル"/>
+  <tag k="name" v="花園柿原線"/>
+  <tag k="ref" v="B1-2"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="柿原公民館前"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="18364730" visible="true" version="4" changeset="159899984" timestamp="2024-12-03T23:20:03Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="12392835187" role="stop"/>
+  <member type="node" ref="12372835201" role="stop"/>
+  <member type="node" ref="12372835203" role="stop"/>
+  <member type="node" ref="12392835333" role="stop"/>
+  <member type="node" ref="5509627751" role="stop"/>
+  <member type="node" ref="12392835331" role="stop"/>
+  <member type="node" ref="12372832688" role="stop"/>
+  <member type="node" ref="12389468380" role="stop"/>
+  <member type="node" ref="12389468378" role="stop"/>
+  <member type="node" ref="12393048321" role="stop"/>
+  <member type="node" ref="12392559823" role="stop"/>
+  <member type="node" ref="12392559825" role="stop"/>
+  <member type="node" ref="12392559831" role="stop"/>
+  <member type="node" ref="12392559833" role="stop"/>
+  <member type="node" ref="12392559853" role="stop"/>
+  <member type="node" ref="12392559855" role="stop"/>
+  <member type="node" ref="12392559857" role="stop"/>
+  <member type="node" ref="6794695580" role="stop"/>
+  <member type="node" ref="5509627754" role="stop"/>
+  <member type="node" ref="12392835324" role="stop"/>
+  <member type="node" ref="12372832693" role="stop"/>
+  <member type="node" ref="12392559827" role=""/>
+  <member type="node" ref="12392559852" role=""/>
+  <member type="way" ref="561948952" role=""/>
+  <member type="way" ref="1339756790" role=""/>
+  <member type="way" ref="561948953" role=""/>
+  <member type="way" ref="562026589" role=""/>
+  <member type="way" ref="562026590" role=""/>
+  <member type="way" ref="138838145" role=""/>
+  <member type="way" ref="561948954" role=""/>
+  <member type="way" ref="138887517" role=""/>
+  <member type="way" ref="1339756793" role=""/>
+  <member type="way" ref="138885887" role=""/>
+  <member type="way" ref="138884588" role=""/>
+  <member type="way" ref="138885369" role=""/>
+  <member type="way" ref="138885620" role=""/>
+  <member type="way" ref="138888426" role=""/>
+  <member type="way" ref="1181523244" role=""/>
+  <member type="way" ref="138883846" role=""/>
+  <member type="way" ref="138885102" role=""/>
+  <member type="way" ref="1339756795" role=""/>
+  <member type="way" ref="342111137" role=""/>
+  <member type="way" ref="548692634" role=""/>
+  <member type="way" ref="545268421" role=""/>
+  <member type="way" ref="546923709" role=""/>
+  <member type="way" ref="138887063" role=""/>
+  <member type="way" ref="138886000" role=""/>
+  <member type="way" ref="1339756786" role=""/>
+  <member type="way" ref="1339760119" role=""/>
+  <member type="way" ref="545766385" role=""/>
+  <member type="way" ref="138884613" role=""/>
+  <member type="way" ref="138885987" role=""/>
+  <member type="way" ref="138886212" role=""/>
+  <member type="way" ref="138885150" role=""/>
+  <member type="way" ref="138885093" role=""/>
+  <member type="way" ref="138884719" role=""/>
+  <member type="way" ref="1339756787" role=""/>
+  <member type="way" ref="414050094" role=""/>
+  <member type="way" ref="198019394" role=""/>
+  <member type="way" ref="138884139" role=""/>
+  <member type="way" ref="1339756797" role=""/>
+  <member type="way" ref="188466812" role=""/>
+  <member type="way" ref="1339756799" role=""/>
+  <member type="way" ref="138886222" role=""/>
+  <member type="way" ref="138885848" role=""/>
+  <member type="way" ref="138884456" role=""/>
+  <member type="way" ref="138885532" role=""/>
+  <member type="way" ref="138884869" role=""/>
+  <member type="way" ref="1339756802" role=""/>
+  <member type="way" ref="1339756801" role=""/>
+  <member type="way" ref="1339703194" role=""/>
+  <member type="way" ref="1339703191" role=""/>
+  <member type="way" ref="1339703193" role=""/>
+  <member type="way" ref="1339703195" role=""/>
+  <member type="way" ref="1339756782" role=""/>
+  <member type="way" ref="1338894285" role=""/>
+  <member type="way" ref="1134380712" role=""/>
+  <member type="way" ref="571844148" role=""/>
+  <member type="way" ref="410997637" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="138837192" role=""/>
+  <member type="way" ref="61511749" role=""/>
+  <member type="node" ref="12392559835" role="stop"/>
+  <tag k="from" v="桜町バスターミナル"/>
+  <tag k="name" v="流通団地線（平成町）"/>
+  <tag k="ref" v="P2-1"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="野越団地"/>
+  <tag k="type" v="route"/>
+  <tag k="via" v="下通筋;大学病院;済生会病院"/>
+ </relation>
+ <relation id="18364841" visible="true" version="3" changeset="160015894" timestamp="2024-12-07T05:06:21Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="6794695580" role="stop"/>
+  <member type="node" ref="12392835187" role="stop"/>
+  <member type="node" ref="12372835201" role="stop"/>
+  <member type="node" ref="12372835203" role="stop"/>
+  <member type="node" ref="12392835333" role="stop"/>
+  <member type="node" ref="5509627754" role="stop"/>
+  <member type="node" ref="5509627751" role="stop"/>
+  <member type="node" ref="10276935028" role="stop"/>
+  <member type="node" ref="12372832688" role="stop"/>
+  <member type="node" ref="12372832689" role="stop"/>
+  <member type="node" ref="12393016036" role="stop"/>
+  <member type="node" ref="12393031624" role="stop"/>
+  <member type="node" ref="12393031627" role="stop"/>
+  <member type="node" ref="12393031628" role="stop"/>
+  <member type="node" ref="12393031630" role="stop"/>
+  <member type="node" ref="12393031632" role="stop"/>
+  <member type="node" ref="6185114036" role="stop"/>
+  <member type="node" ref="6185114045" role="stop"/>
+  <member type="node" ref="5469385264" role="stop"/>
+  <member type="node" ref="5469385265" role="stop"/>
+  <member type="node" ref="5469385266" role="stop"/>
+  <member type="node" ref="6185114033" role="stop"/>
+  <member type="node" ref="5469385269" role="stop"/>
+  <member type="node" ref="6185160381" role="stop"/>
+  <member type="node" ref="5418576852" role=""/>
+  <member type="node" ref="12372832682" role=""/>
+  <member type="node" ref="12372832684" role=""/>
+  <member type="node" ref="12393031623" role=""/>
+  <member type="node" ref="12393031623" role=""/>
+  <member type="way" ref="138887772" role=""/>
+  <member type="way" ref="138887773" role=""/>
+  <member type="way" ref="1339766105" role=""/>
+  <member type="way" ref="342111155" role=""/>
+  <member type="way" ref="1339766106" role=""/>
+  <member type="way" ref="138888301" role=""/>
+  <member type="way" ref="138886975" role=""/>
+  <member type="way" ref="138889292" role=""/>
+  <member type="way" ref="138887038" role=""/>
+  <member type="way" ref="412042577" role=""/>
+  <member type="way" ref="911843175" role=""/>
+  <member type="way" ref="138889189" role=""/>
+  <member type="way" ref="911843178" role=""/>
+  <member type="way" ref="1124918636" role=""/>
+  <member type="way" ref="240494676" role=""/>
+  <member type="way" ref="1134388099" role=""/>
+  <member type="way" ref="1332169628" role=""/>
+  <member type="way" ref="1332169626" role=""/>
+  <member type="way" ref="342111157" role=""/>
+  <member type="way" ref="66444559" role=""/>
+  <member type="way" ref="1338538544" role=""/>
+  <member type="way" ref="138837192" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="724518269" role=""/>
+  <member type="way" ref="1134380713" role=""/>
+  <member type="way" ref="724518268" role=""/>
+  <member type="way" ref="1339769411" role=""/>
+  <member type="way" ref="1339760116" role=""/>
+  <member type="way" ref="1339756782" role=""/>
+  <member type="way" ref="1338894285" role=""/>
+  <member type="way" ref="1134380712" role=""/>
+  <member type="way" ref="571844148" role=""/>
+  <member type="way" ref="410997637" role=""/>
+  <member type="way" ref="61511749" role=""/>
+  <member type="way" ref="561948952" role=""/>
+  <member type="way" ref="1339756790" role=""/>
+  <member type="way" ref="561948953" role=""/>
+  <member type="way" ref="562026589" role=""/>
+  <member type="way" ref="562026590" role=""/>
+  <member type="way" ref="138838145" role=""/>
+  <member type="way" ref="561948954" role=""/>
+  <member type="way" ref="138887517" role=""/>
+  <member type="way" ref="1339756793" role=""/>
+  <member type="way" ref="1339766104" role=""/>
+  <member type="way" ref="138837045" role=""/>
+  <member type="way" ref="138883846" role=""/>
+  <member type="way" ref="138885102" role=""/>
+  <member type="way" ref="1339756795" role=""/>
+  <member type="way" ref="342111137" role=""/>
+  <tag k="name" v="八王子環状（南熊本廻り）"/>
+  <tag k="ref" v="P0-0"/>
+  <tag k="route" v="bus"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="18368965" visible="true" version="2" changeset="159919430" timestamp="2024-12-04T13:37:12Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="12392835187" role="stop"/>
+  <member type="node" ref="12392835187" role="stop"/>
+  <member type="node" ref="12372835201" role="stop"/>
+  <member type="node" ref="12372835203" role="stop"/>
+  <member type="node" ref="12392835333" role="stop"/>
+  <member type="node" ref="10276913724" role="stop"/>
+  <member type="node" ref="12389487661" role="stop"/>
+  <member type="node" ref="5509627751" role="stop"/>
+  <member type="node" ref="12392835331" role="stop"/>
+  <member type="node" ref="12392835324" role="stop"/>
+  <member type="node" ref="12372832693" role="stop"/>
+  <member type="node" ref="12372832688" role="stop"/>
+  <member type="node" ref="12384141728" role="stop"/>
+  <member type="node" ref="12384141731" role="stop"/>
+  <member type="node" ref="12384141732" role="stop"/>
+  <member type="node" ref="12384141734" role="stop"/>
+  <member type="node" ref="12384141736" role="stop"/>
+  <member type="node" ref="12393280500" role="stop"/>
+  <member type="node" ref="12393313702" role="stop"/>
+  <member type="node" ref="12393313704" role="stop"/>
+  <member type="node" ref="12393313705" role="stop"/>
+  <member type="node" ref="12393313708" role="stop"/>
+  <member type="node" ref="12393313710" role="stop"/>
+  <member type="node" ref="12393313712" role="stop"/>
+  <member type="node" ref="12393313714" role="stop"/>
+  <member type="node" ref="12393313716" role="stop"/>
+  <member type="node" ref="6794695580" role=""/>
+  <member type="node" ref="6794695580" role=""/>
+  <member type="node" ref="12372832688" role=""/>
+  <member type="way" ref="1339756782" role=""/>
+  <member type="way" ref="1338894285" role=""/>
+  <member type="way" ref="1134380712" role=""/>
+  <member type="way" ref="571844148" role=""/>
+  <member type="way" ref="410997637" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="138837192" role=""/>
+  <member type="way" ref="61511749" role=""/>
+  <member type="way" ref="561948952" role=""/>
+  <member type="way" ref="1339756790" role=""/>
+  <member type="way" ref="561948953" role=""/>
+  <member type="way" ref="562026589" role=""/>
+  <member type="way" ref="562026590" role=""/>
+  <member type="way" ref="138838145" role=""/>
+  <member type="way" ref="561948954" role=""/>
+  <member type="way" ref="138887517" role=""/>
+  <member type="way" ref="1339756793" role=""/>
+  <member type="way" ref="138885887" role=""/>
+  <member type="way" ref="138884588" role=""/>
+  <member type="way" ref="138885369" role=""/>
+  <member type="way" ref="138885620" role=""/>
+  <member type="way" ref="138888426" role=""/>
+  <member type="way" ref="1181523244" role=""/>
+  <member type="way" ref="138883846" role=""/>
+  <member type="way" ref="138885102" role=""/>
+  <member type="way" ref="1339756795" role=""/>
+  <member type="way" ref="342111137" role=""/>
+  <member type="way" ref="1339398439" role=""/>
+  <member type="way" ref="1339392502" role=""/>
+  <member type="way" ref="1339398440" role=""/>
+  <member type="way" ref="1339756794" role=""/>
+  <member type="way" ref="138883874" role=""/>
+  <member type="way" ref="1339954749" role=""/>
+  <member type="way" ref="138885404" role=""/>
+  <member type="way" ref="138888496" role=""/>
+  <member type="way" ref="138889900" role=""/>
+  <member type="way" ref="138888310" role=""/>
+  <member type="way" ref="138886850" role=""/>
+  <member type="way" ref="138886252" role=""/>
+  <member type="way" ref="138885141" role=""/>
+  <member type="way" ref="138889848" role=""/>
+  <member type="way" ref="138887056" role=""/>
+  <member type="way" ref="138885568" role=""/>
+  <member type="way" ref="138884703" role=""/>
+  <member type="way" ref="1339785800" role=""/>
+  <member type="way" ref="1339785799" role=""/>
+  <member type="way" ref="375291378" role=""/>
+  <member type="way" ref="375291377" role=""/>
+  <member type="way" ref="1339954750" role=""/>
+  <member type="way" ref="1339785801" role=""/>
+  <tag k="name" v="御幸木部線"/>
+  <tag k="ref" v="P2-2"/>
+  <tag k="route" v="bus"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="18370174" visible="true" version="2" changeset="159978582" timestamp="2024-12-06T02:36:57Z" user="Usatohu" uid="21219675">
+  <member type="node" ref="6185114033" role="stop"/>
+  <member type="node" ref="6185160381" role="stop"/>
+  <member type="node" ref="12373016380" role="stop"/>
+  <member type="node" ref="11927406723" role="stop"/>
+  <member type="node" ref="10537238043" role="stop"/>
+  <member type="node" ref="11927406726" role="stop"/>
+  <member type="node" ref="11927406728" role="stop"/>
+  <member type="node" ref="11927406730" role="stop"/>
+  <member type="node" ref="12375074627" role="stop"/>
+  <member type="node" ref="12375074629" role="stop"/>
+  <member type="node" ref="12375074630" role="stop"/>
+  <member type="node" ref="12375074633" role="stop"/>
+  <member type="node" ref="12375074634" role="stop"/>
+  <member type="node" ref="12375074632" role="stop"/>
+  <member type="node" ref="12375074631" role="stop"/>
+  <member type="node" ref="12394900195" role="stop"/>
+  <member type="node" ref="12394900197" role="stop"/>
+  <member type="node" ref="12394900198" role="stop"/>
+  <member type="node" ref="5935871851" role="stop"/>
+  <member type="node" ref="12394900199" role="stop"/>
+  <member type="node" ref="12394969702" role="stop"/>
+  <member type="node" ref="12394969704" role="stop"/>
+  <member type="node" ref="12394969706" role="stop"/>
+  <member type="node" ref="12394969707" role="stop"/>
+  <member type="node" ref="12394969708" role="stop"/>
+  <member type="node" ref="12394969709" role="stop"/>
+  <member type="node" ref="5313696521" role="stop"/>
+  <member type="node" ref="12394969710" role="stop"/>
+  <member type="node" ref="12394969712" role="stop"/>
+  <member type="node" ref="6185160381" role=""/>
+  <member type="node" ref="12394969702" role=""/>
+  <member type="way" ref="66444559" role=""/>
+  <member type="way" ref="1338538544" role=""/>
+  <member type="way" ref="138837192" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="724518269" role=""/>
+  <member type="way" ref="1134380713" role=""/>
+  <member type="way" ref="1337643252" role=""/>
+  <member type="way" ref="724518259" role=""/>
+  <member type="way" ref="1339769407" role=""/>
+  <member type="way" ref="724518272" role=""/>
+  <member type="way" ref="1340414340" role=""/>
+  <member type="way" ref="1338765348" role=""/>
+  <member type="way" ref="1338879464" role=""/>
+  <member type="way" ref="1134380712" role=""/>
+  <member type="way" ref="188603855" role=""/>
+  <member type="way" ref="138838308" role=""/>
+  <member type="way" ref="138838024" role=""/>
+  <member type="way" ref="138838039" role=""/>
+  <member type="way" ref="138837204" role=""/>
+  <member type="way" ref="138837190" role=""/>
+  <member type="way" ref="1340007577" role=""/>
+  <member type="way" ref="138288268" role=""/>
+  <member type="way" ref="1340007578" role=""/>
+  <member type="way" ref="138837892" role=""/>
+  <member type="way" ref="138837892" role=""/>
+  <member type="way" ref="138837654" role=""/>
+  <member type="way" ref="138840393" role=""/>
+  <member type="way" ref="138289812" role=""/>
+  <member type="way" ref="795468510" role=""/>
+  <member type="way" ref="1338036604" role=""/>
+  <member type="way" ref="138289780" role=""/>
+  <member type="way" ref="138289420" role=""/>
+  <member type="way" ref="138288503" role=""/>
+  <member type="way" ref="138289244" role=""/>
+  <member type="way" ref="138288917" role=""/>
+  <member type="way" ref="138288697" role=""/>
+  <member type="way" ref="138288930" role=""/>
+  <member type="way" ref="914876980" role=""/>
+  <member type="way" ref="1340007583" role=""/>
+  <member type="way" ref="138192784" role=""/>
+  <member type="way" ref="138192272" role=""/>
+  <member type="way" ref="138193388" role=""/>
+  <member type="way" ref="138193637" role=""/>
+  <member type="way" ref="138193878" role=""/>
+  <member type="way" ref="138193912" role=""/>
+  <member type="way" ref="138192886" role=""/>
+  <member type="way" ref="138288862" role=""/>
+  <member type="way" ref="138289098" role=""/>
+  <member type="way" ref="138288797" role=""/>
+  <member type="way" ref="414888084" role=""/>
+  <member type="way" ref="138192005" role=""/>
+  <member type="way" ref="1340007585" role=""/>
+  <member type="way" ref="138193179" role=""/>
+  <member type="way" ref="138192611" role=""/>
+  <member type="way" ref="138193195" role=""/>
+  <member type="way" ref="138289490" role=""/>
+  <member type="way" ref="138288870" role=""/>
+  <member type="way" ref="138288751" role=""/>
+  <member type="way" ref="138288693" role=""/>
+  <member type="way" ref="138288934" role=""/>
+  <member type="way" ref="138288925" role=""/>
+  <member type="way" ref="138289246" role=""/>
+  <member type="way" ref="138288741" role=""/>
+  <member type="way" ref="138289077" role=""/>
+  <member type="way" ref="138289010" role=""/>
+  <member type="way" ref="138288839" role=""/>
+  <member type="way" ref="138289155" role=""/>
+  <member type="way" ref="138288382" role=""/>
+  <member type="way" ref="1340007587" role=""/>
+  <member type="way" ref="138191903" role=""/>
+  <member type="way" ref="138191895" role=""/>
+  <member type="way" ref="1340007588" role=""/>
+  <member type="way" ref="1339961261" role=""/>
+  <member type="node" ref="12394969715" role="stop"/>
+  <member type="node" ref="12398956081" role="stop"/>
+  <tag k="from" v="水道町"/>
+  <tag k="name" v="小島産交（谷尾崎）"/>
+  <tag k="ref" v="U4-3"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="小島産交"/>
+  <tag k="type" v="route"/>
+  <tag k="via" v="新町;谷尾崎"/>
+ </relation>
+ <relation id="18376448" visible="true" version="1" changeset="159979076" timestamp="2024-12-06T03:12:55Z" user="Usatohu" uid="21219675">
+  <member type="way" ref="1337640448" role=""/>
+  <member type="way" ref="138290008" role=""/>
+  <member type="way" ref="1285829874" role=""/>
+  <member type="way" ref="138288680" role=""/>
+  <member type="way" ref="1337640456" role=""/>
+  <member type="way" ref="138290012" role=""/>
+  <member type="way" ref="1337640454" role=""/>
+  <member type="way" ref="414144739" role=""/>
+  <member type="way" ref="138288910" role=""/>
+  <member type="way" ref="138288716" role=""/>
+  <member type="way" ref="138289904" role=""/>
+  <member type="way" ref="138288786" role=""/>
+  <member type="way" ref="138288843" role=""/>
+  <member type="way" ref="138289104" role=""/>
+  <member type="way" ref="138289356" role=""/>
+  <member type="way" ref="138289335" role=""/>
+  <member type="way" ref="138289812" role=""/>
+  <member type="way" ref="138840393" role=""/>
+  <member type="way" ref="138837654" role=""/>
+  <member type="way" ref="138837892" role=""/>
+  <member type="way" ref="1340007578" role=""/>
+  <member type="way" ref="138288268" role=""/>
+  <member type="way" ref="1340007577" role=""/>
+  <member type="way" ref="138837190" role=""/>
+  <member type="way" ref="138837204" role=""/>
+  <member type="way" ref="138838039" role=""/>
+  <member type="way" ref="138838024" role=""/>
+  <member type="way" ref="138838308" role=""/>
+  <member type="way" ref="188603855" role=""/>
+  <member type="way" ref="1134380712" role=""/>
+  <member type="way" ref="1338879464" role=""/>
+  <member type="way" ref="1338765348" role=""/>
+  <member type="way" ref="1340414340" role=""/>
+  <member type="way" ref="724518272" role=""/>
+  <member type="way" ref="1339769407" role=""/>
+  <member type="way" ref="724518259" role=""/>
+  <member type="way" ref="1337643252" role=""/>
+  <member type="way" ref="1134380713" role=""/>
+  <member type="way" ref="724518269" role=""/>
+  <member type="way" ref="724518262" role=""/>
+  <member type="way" ref="573644514" role=""/>
+  <member type="way" ref="138837192" role=""/>
+  <member type="way" ref="1338538544" role=""/>
+  <member type="way" ref="66444559" role=""/>
+  <member type="way" ref="342111157" role=""/>
+  <member type="way" ref="1332169626" role=""/>
+  <member type="way" ref="1332169628" role=""/>
+  <member type="way" ref="1134388099" role=""/>
+  <member type="way" ref="1134388100" role=""/>
+  <member type="way" ref="1134380716" role=""/>
+  <member type="way" ref="1132970783" role=""/>
+  <member type="way" ref="408093718" role=""/>
+  <member type="way" ref="1337640453" role=""/>
+  <member type="way" ref="138868187" role=""/>
+  <member type="way" ref="138870280" role=""/>
+  <member type="way" ref="138869522" role=""/>
+  <member type="node" ref="10093748449" role="stop"/>
+  <member type="node" ref="10057393560" role="stop"/>
+  <member type="node" ref="10040934405" role="stop"/>
+  <member type="node" ref="9898617839" role="stop"/>
+  <member type="node" ref="9898596712" role="stop"/>
+  <member type="node" ref="5936296072" role="stop"/>
+  <member type="node" ref="10243666898" role="stop"/>
+  <member type="node" ref="5936284802" role="stop"/>
+  <member type="node" ref="10243683968" role="stop"/>
+  <member type="node" ref="6185114031" role="stop"/>
+  <member type="node" ref="6185114033" role="stop"/>
+  <member type="node" ref="6185160485" role="stop"/>
+  <member type="node" ref="6185160381" role="stop"/>
+  <member type="node" ref="12373016380" role="stop"/>
+  <member type="node" ref="12398956081" role="stop"/>
+  <member type="node" ref="11927406723" role="stop"/>
+  <member type="node" ref="10537238043" role="stop"/>
+  <member type="node" ref="11927406726" role="stop"/>
+  <member type="node" ref="11927406728" role="stop"/>
+  <member type="node" ref="11927406730" role="stop"/>
+  <member type="node" ref="11927406732" role="stop"/>
+  <member type="node" ref="11927406734" role="stop"/>
+  <member type="node" ref="11927406736" role="stop"/>
+  <member type="node" ref="11927406737" role="stop"/>
+  <member type="node" ref="11927406739" role="stop"/>
+  <tag k="from" v="水前寺駅北口/県立劇場/桜町バスターミナル"/>
+  <tag k="name" v="大江城西線（城西校北行）"/>
+  <tag k="operator" v="熊本都市バス"/>
+  <tag k="ref" v="U4-1"/>
+  <tag k="route" v="bus"/>
+  <tag k="to" v="城西校北"/>
+  <tag k="type" v="route"/>
+  <tag k="via" v="新町"/>
+ </relation>
+ <relation id="18376449" visible="true" version="1" changeset="159979076" timestamp="2024-12-06T03:12:55Z" user="Usatohu" uid="21219675">
+  <member type="relation" ref="18350589" role=""/>
+  <member type="relation" ref="18376415" role=""/>
+  <member type="relation" ref="18376414" role=""/>
+  <member type="relation" ref="18376447" role=""/>
+  <member type="relation" ref="18376448" role=""/>
+  <member type="relation" ref="18335375" role=""/>
+  <member type="relation" ref="18370174" role=""/>
+  <tag k="name" v="U系統【新町経由】"/>
+  <tag k="operator" v="熊本都市バス;産交バス"/>
+  <tag k="route_master" v="bus"/>
+  <tag k="type" v="route_master"/>
+ </relation>
+ <relation id="18562163" visible="true" version="1" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705">
+  <member type="node" ref="270867368" role="stop"/>
+  <member type="node" ref="12507150377" role="stop"/>
+  <member type="node" ref="12507150376" role="stop"/>
+  <member type="node" ref="12507150375" role="stop"/>
+  <member type="node" ref="9956968357" role="stop"/>
+  <member type="node" ref="9956968352" role="stop"/>
+  <member type="node" ref="12507150372" role="stop"/>
+  <member type="node" ref="12507150380" role="stop"/>
+  <member type="node" ref="9956968341" role="stop"/>
+  <member type="node" ref="12507150381" role="stop"/>
+  <member type="node" ref="9956968474" role="stop"/>
+  <member type="node" ref="12507150382" role="stop"/>
+  <member type="node" ref="12507150383" role="stop"/>
+  <member type="node" ref="12507150385" role="stop"/>
+  <member type="node" ref="9956968466" role="stop"/>
+  <member type="node" ref="12507150386" role="stop"/>
+  <member type="node" ref="9956968287" role="stop"/>
+  <member type="node" ref="9956968279" role="stop"/>
+  <member type="node" ref="9956968273" role="stop"/>
+  <member type="node" ref="9199386933" role="stop"/>
+  <member type="node" ref="12507150371" role="stop"/>
+  <member type="node" ref="9199386947" role="stop"/>
+  <member type="node" ref="9199386962" role="stop"/>
+  <member type="node" ref="9199386982" role="stop"/>
+  <member type="node" ref="12507150370" role="stop"/>
+  <member type="node" ref="9199386987" role="stop"/>
+  <member type="node" ref="12507150367" role="stop"/>
+  <member type="node" ref="4145597006" role="stop"/>
+  <member type="way" ref="1351848261" role=""/>
+  <member type="way" ref="1086686014" role=""/>
+  <member type="way" ref="1086686030" role=""/>
+  <member type="way" ref="1332169623" role=""/>
+  <member type="way" ref="1332169622" role=""/>
+  <member type="way" ref="1086686018" role=""/>
+  <member type="way" ref="1086686029" role=""/>
+  <member type="way" ref="1086686017" role=""/>
+  <member type="way" ref="996245121" role=""/>
+  <member type="way" ref="996245122" role=""/>
+  <member type="way" ref="996245120" role=""/>
+  <member type="way" ref="413212653" role=""/>
+  <tag k="colour" v="#00F"/>
+  <tag k="from" v="健軍町"/>
+  <tag k="from:en" v="Kengunmachi"/>
+  <tag k="name" v="B系統 (健軍町 =&gt; 上熊本駅)"/>
+  <tag k="name:en" v="B-Line (Kengunmachi =&gt; Kami-Kumamoto Station)"/>
+  <tag k="network" v="熊本市電"/>
+  <tag k="operator" v="熊本市交通局"/>
+  <tag k="operator:en" v="Kumamoto City Transportation Bureau"/>
+  <tag k="operator:ja" v="熊本市交通局"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="B"/>
+  <tag k="route" v="tram"/>
+  <tag k="to" v="上熊本駅"/>
+  <tag k="to:en" v="Kami-Kumamoto Station"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="18562164" visible="true" version="1" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705">
+  <member type="node" ref="270867368" role="stop"/>
+  <member type="node" ref="12507150377" role="stop"/>
+  <member type="node" ref="12507150376" role="stop"/>
+  <member type="node" ref="12507150375" role="stop"/>
+  <member type="node" ref="9956968357" role="stop"/>
+  <member type="node" ref="9956968352" role="stop"/>
+  <member type="node" ref="12507150372" role="stop"/>
+  <member type="node" ref="12507150380" role="stop"/>
+  <member type="node" ref="9956968341" role="stop"/>
+  <member type="node" ref="12507150381" role="stop"/>
+  <member type="node" ref="9956968474" role="stop"/>
+  <member type="node" ref="12507150382" role="stop"/>
+  <member type="node" ref="12507150383" role="stop"/>
+  <member type="node" ref="12507150385" role="stop"/>
+  <member type="node" ref="9956968466" role="stop"/>
+  <member type="node" ref="12507150386" role="stop"/>
+  <member type="node" ref="9956968287" role="stop"/>
+  <member type="node" ref="9956968279" role="stop"/>
+  <member type="node" ref="9956968273" role="stop"/>
+  <member type="node" ref="12507150387" role="stop"/>
+  <member type="node" ref="12507150388" role="stop"/>
+  <member type="node" ref="9956968153" role="stop"/>
+  <member type="node" ref="12507150389" role="stop"/>
+  <member type="node" ref="9956968222" role="stop"/>
+  <member type="node" ref="9956968213" role="stop"/>
+  <member type="node" ref="270882640" role="stop"/>
+  <member type="way" ref="1351848261" role=""/>
+  <member type="way" ref="1086686014" role=""/>
+  <member type="way" ref="1086686030" role=""/>
+  <member type="way" ref="1332169623" role=""/>
+  <member type="way" ref="1332169622" role=""/>
+  <member type="way" ref="1086686018" role=""/>
+  <member type="way" ref="1086686029" role=""/>
+  <member type="way" ref="1086686017" role=""/>
+  <member type="way" ref="1086686009" role=""/>
+  <member type="way" ref="1086686013" role=""/>
+  <member type="way" ref="1086686012" role=""/>
+  <member type="way" ref="1086686011" role=""/>
+  <member type="way" ref="1351848262" role=""/>
+  <tag k="colour" v="#F00"/>
+  <tag k="from" v="健軍町"/>
+  <tag k="from:en" v="Kengunmachi"/>
+  <tag k="name" v="A系統 (健軍町 =&gt; 田崎橋)"/>
+  <tag k="name:en" v="A-Line (Kengunmachi =&gt; Tasakibashi)"/>
+  <tag k="network" v="熊本市電"/>
+  <tag k="operator" v="熊本市交通局"/>
+  <tag k="operator:en" v="Kumamoto City Transportation Bureau"/>
+  <tag k="operator:ja" v="熊本市交通局"/>
+  <tag k="public_transport:version" v="2"/>
+  <tag k="ref" v="A"/>
+  <tag k="route" v="tram"/>
+  <tag k="to" v="田崎橋"/>
+  <tag k="to:en" v="Tasakibashi"/>
+  <tag k="type" v="route"/>
+ </relation>
+ <relation id="18562165" visible="true" version="1" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705">
+  <member type="relation" ref="2578717" role=""/>
+  <member type="relation" ref="18562163" role=""/>
+  <tag k="colour" v="#00F"/>
+  <tag k="name" v="B系統"/>
+  <tag k="name:en" v="B-Line"/>
+  <tag k="operator" v="熊本市交通局"/>
+  <tag k="operator:en" v="Kumamoto City Transportation Bureau"/>
+  <tag k="operator:ja" v="熊本市交通局"/>
+  <tag k="ref" v="B"/>
+  <tag k="route_master" v="tram"/>
+  <tag k="type" v="route_master"/>
+ </relation>
+ <relation id="18562166" visible="true" version="1" changeset="161423540" timestamp="2025-01-16T15:35:19Z" user="AlexM51" uid="174705">
+  <member type="relation" ref="2578716" role=""/>
+  <member type="relation" ref="18562164" role=""/>
+  <tag k="colour" v="#F00"/>
+  <tag k="name" v="A系統"/>
+  <tag k="name:en" v="A-Line"/>
+  <tag k="operator" v="熊本市交通局"/>
+  <tag k="operator:en" v="Kumamoto City Transportation Bureau"/>
+  <tag k="operator:ja" v="熊本市交通局"/>
+  <tag k="ref" v="A"/>
+  <tag k="route_master" v="tram"/>
+  <tag k="type" v="route_master"/>
  </relation>
 </osm>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2051430 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529585 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.2254100" minlon="135.1686000" maxlat="34.2300200" maxlon="135.1762900"/>
  <node id="262829287" visible="true" version="5" changeset="35190890" timestamp="2015-11-09T12:37:55Z" user="AYAGE" uid="521665" lat="34.2264349" lon="135.1829337"/>
  <node id="262829288" visible="true" version="5" changeset="35190890" timestamp="2015-11-09T12:37:55Z" user="AYAGE" uid="521665" lat="34.2264053" lon="135.1820277"/>
@@ -307,7 +307,7 @@
  <node id="1528959803" visible="true" version="3" changeset="35215102" timestamp="2015-11-10T13:34:41Z" user="AYAGE" uid="521665" lat="34.2298571" lon="135.1709817"/>
  <node id="1528959808" visible="true" version="5" changeset="46024733" timestamp="2017-02-12T16:52:06Z" user="K_Sakanoshita" uid="389520" lat="34.2298712" lon="135.1717025"/>
  <node id="1528959817" visible="true" version="4" changeset="46024733" timestamp="2017-02-12T16:52:06Z" user="K_Sakanoshita" uid="389520" lat="34.2298834" lon="135.1737666"/>
- <node id="1528960192" visible="true" version="4" changeset="46024733" timestamp="2017-02-12T16:52:06Z" user="K_Sakanoshita" uid="389520" lat="34.2304341" lon="135.1745172"/>
+ <node id="1528960192" visible="true" version="5" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2304391" lon="135.1744857"/>
  <node id="1528960196" visible="true" version="5" changeset="79489998" timestamp="2020-01-12T23:22:38Z" user="akt2" uid="9557853" lat="34.2304616" lon="135.1753173"/>
  <node id="1528960197" visible="true" version="5" changeset="79489998" timestamp="2020-01-12T23:22:38Z" user="akt2" uid="9557853" lat="34.2304856" lon="135.1761470"/>
  <node id="1528960390" visible="true" version="5" changeset="46081003" timestamp="2017-02-14T14:52:42Z" user="K_Sakanoshita" uid="389520" lat="34.2309764" lon="135.1705023"/>
@@ -317,16 +317,16 @@
   <tag k="highway" v="traffic_signals"/>
   <tag k="source" v="bing"/>
  </node>
- <node id="1528960413" visible="true" version="5" changeset="46048524" timestamp="2017-02-13T14:09:09Z" user="K_Sakanoshita" uid="389520" lat="34.2310196" lon="135.1745002"/>
- <node id="1528960584" visible="true" version="4" changeset="46024733" timestamp="2017-02-12T16:52:06Z" user="K_Sakanoshita" uid="389520" lat="34.2315527" lon="135.1744964"/>
+ <node id="1528960413" visible="true" version="6" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2310179" lon="135.1744814"/>
+ <node id="1528960584" visible="true" version="5" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2315560" lon="135.1744629"/>
  <node id="1528960773" visible="true" version="7" changeset="76010498" timestamp="2019-10-21T17:12:29Z" user="taki3hira" uid="1948193" lat="34.2320384" lon="135.1695704">
   <tag k="highway" v="traffic_signals"/>
   <tag k="name" v="城北橋南詰"/>
   <tag k="name:en" v="Johokubashi minamizume"/>
   <tag k="source" v="bing"/>
  </node>
- <node id="1528960813" visible="true" version="4" changeset="46024733" timestamp="2017-02-12T16:52:06Z" user="K_Sakanoshita" uid="389520" lat="34.2320792" lon="135.1745062"/>
- <node id="1528960924" visible="true" version="5" changeset="46048524" timestamp="2017-02-13T14:09:09Z" user="K_Sakanoshita" uid="389520" lat="34.2323803" lon="135.1744923"/>
+ <node id="1528960813" visible="true" version="5" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2320920" lon="135.1744700"/>
+ <node id="1528960924" visible="true" version="6" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2323797" lon="135.1744648"/>
  <node id="2270293581" visible="true" version="2" changeset="54751999" timestamp="2017-12-19T08:23:31Z" user="山口晶啓" uid="7286627" lat="34.2299260" lon="135.1756320">
   <tag k="covered" v="yes"/>
   <tag k="highway" v="bus_stop"/>
@@ -1547,13 +1547,13 @@
  <node id="4467562284" visible="true" version="1" changeset="43241410" timestamp="2016-10-28T09:04:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2279425" lon="135.1702969"/>
  <node id="4467562285" visible="true" version="1" changeset="43241410" timestamp="2016-10-28T09:04:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2279447" lon="135.1702671"/>
  <node id="4467562286" visible="true" version="1" changeset="43241410" timestamp="2016-10-28T09:04:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2279758" lon="135.1702724"/>
- <node id="4467562287" visible="true" version="1" changeset="43241410" timestamp="2016-10-28T09:04:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2279880" lon="135.1701839"/>
+ <node id="4467562287" visible="true" version="2" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2279654" lon="135.1701797"/>
  <node id="4467562489" visible="true" version="3" changeset="46245533" timestamp="2017-02-20T14:27:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2279695" lon="135.1722004"/>
  <node id="4467562490" visible="true" version="2" changeset="158688550" timestamp="2024-11-03T08:33:46Z" user="Daiji Maps" uid="10880270" lat="34.2281439" lon="135.1703060"/>
- <node id="4467562491" visible="true" version="1" changeset="43241410" timestamp="2016-10-28T09:04:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2280456" lon="135.1702215"/>
- <node id="4467562492" visible="true" version="1" changeset="43241410" timestamp="2016-10-28T09:04:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2280501" lon="135.1702724"/>
- <node id="4467562493" visible="true" version="1" changeset="43241410" timestamp="2016-10-28T09:04:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2280623" lon="135.1702577"/>
- <node id="4467562494" visible="true" version="1" changeset="43241410" timestamp="2016-10-28T09:04:59Z" user="HikaruKinkakuji" uid="1878070" lat="34.2280645" lon="135.1702416"/>
+ <node id="4467562491" visible="true" version="2" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2279925" lon="135.1702157"/>
+ <node id="4467562492" visible="true" version="2" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2279844" lon="135.1702592"/>
+ <node id="4467562493" visible="true" version="2" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2280153" lon="135.1702614"/>
+ <node id="4467562494" visible="true" version="2" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2280058" lon="135.1702421"/>
  <node id="4467562496" visible="true" version="2" changeset="43477010" timestamp="2016-11-08T01:14:50Z" user="HikaruKinkakuji" uid="1878070" lat="34.2281747" lon="135.1721367"/>
  <node id="4467562498" visible="true" version="2" changeset="158688550" timestamp="2024-11-03T08:33:46Z" user="Daiji Maps" uid="10880270" lat="34.2282285" lon="135.1703336"/>
  <node id="4467562499" visible="true" version="2" changeset="158688550" timestamp="2024-11-03T08:33:46Z" user="Daiji Maps" uid="10880270" lat="34.2282068" lon="135.1708884"/>
@@ -3860,18 +3860,18 @@
  <node id="4683537500" visible="true" version="1" changeset="46048524" timestamp="2017-02-13T14:08:57Z" user="K_Sakanoshita" uid="389520" lat="34.2307027" lon="135.1727937"/>
  <node id="4683537501" visible="true" version="1" changeset="46048524" timestamp="2017-02-13T14:08:57Z" user="K_Sakanoshita" uid="389520" lat="34.2299560" lon="135.1728064"/>
  <node id="4683537502" visible="true" version="1" changeset="46048524" timestamp="2017-02-13T14:08:57Z" user="K_Sakanoshita" uid="389520" lat="34.2298777" lon="135.1728078"/>
- <node id="4683537504" visible="true" version="1" changeset="46048524" timestamp="2017-02-13T14:08:57Z" user="K_Sakanoshita" uid="389520" lat="34.2309339" lon="135.1745017">
+ <node id="4683537504" visible="true" version="2" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2309322" lon="135.1744829">
   <tag k="highway" v="crossing"/>
  </node>
- <node id="4683537505" visible="true" version="1" changeset="46048524" timestamp="2017-02-13T14:08:58Z" user="K_Sakanoshita" uid="389520" lat="34.2311090" lon="135.1744986">
+ <node id="4683537505" visible="true" version="2" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2311073" lon="135.1744798">
   <tag k="highway" v="crossing"/>
  </node>
- <node id="4683537518" visible="true" version="1" changeset="46048524" timestamp="2017-02-13T14:08:58Z" user="K_Sakanoshita" uid="389520" lat="34.2320072" lon="135.1745048">
+ <node id="4683537518" visible="true" version="2" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2320200" lon="135.1744686">
   <tag k="highway" v="crossing"/>
  </node>
  <node id="4683537523" visible="true" version="1" changeset="46048524" timestamp="2017-02-13T14:08:58Z" user="K_Sakanoshita" uid="389520" lat="34.2303927" lon="135.1747568"/>
  <node id="4683537524" visible="true" version="1" changeset="46048524" timestamp="2017-02-13T14:08:58Z" user="K_Sakanoshita" uid="389520" lat="34.2302807" lon="135.1747567"/>
- <node id="4683537536" visible="true" version="2" changeset="46136643" timestamp="2017-02-16T13:08:51Z" user="K_Sakanoshita" uid="389520" lat="34.2321615" lon="135.1745032">
+ <node id="4683537536" visible="true" version="3" changeset="160576158" timestamp="2024-12-24T13:35:39Z" user="okadatsuneo" uid="10163840" lat="34.2321759" lon="135.1744703">
   <tag k="highway" v="crossing"/>
  </node>
  <node id="4684490792" visible="true" version="3" changeset="47015026" timestamp="2017-03-20T14:49:02Z" user="Tomoko Yamamoto" uid="2711677" lat="34.2299530" lon="135.1698227">
@@ -4381,9 +4381,9 @@
  </node>
  <node id="4691708589" visible="true" version="1" changeset="46185096" timestamp="2017-02-18T06:22:46Z" user="Tomoko Yamamoto" uid="2711677" lat="34.2288196" lon="135.1715512"/>
  <node id="4691708590" visible="true" version="1" changeset="46185096" timestamp="2017-02-18T06:22:46Z" user="Tomoko Yamamoto" uid="2711677" lat="34.2288185" lon="135.1712159"/>
- <node id="4691710694" visible="true" version="1" changeset="46185140" timestamp="2017-02-18T06:26:04Z" user="笹谷康之" uid="2133532" lat="34.2289696" lon="135.1716896">
+ <node id="4691710694" visible="true" version="2" changeset="158717369" timestamp="2024-11-03T21:07:29Z" user="user_5589" uid="5589" lat="34.2289696" lon="135.1716896">
   <tag k="natural" v="tree"/>
-  <tag k="species" v="Celtis sinensis Pers"/>
+  <tag k="species" v="Celtis sinensis"/>
   <tag k="species:ja" v="エノキ"/>
  </node>
  <node id="4691714092" visible="true" version="2" changeset="75935483" timestamp="2019-10-19T17:22:14Z" user="taki3hira" uid="1948193" lat="34.2272681" lon="135.1695263">
@@ -4938,14 +4938,14 @@
  <node id="4700795884" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2269826" lon="135.1696854">
   <tag k="natural" v="tree"/>
  </node>
- <node id="4700795885" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2269147" lon="135.1696948"/>
+ <node id="4700795885" visible="true" version="2" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2269131" lon="135.1696987"/>
  <node id="4700795886" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2269539" lon="135.1696688"/>
  <node id="4700795887" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2264719" lon="135.1709026"/>
  <node id="4700795888" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2262453" lon="135.1705289"/>
  <node id="4700800189" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2262208" lon="135.1705569"/>
  <node id="4700800190" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2261990" lon="135.1705289"/>
  <node id="4700800191" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2262235" lon="135.1705009"/>
- <node id="4700800192" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2263171" lon="135.1705643"/>
+ <node id="4700800192" visible="true" version="2" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2263025" lon="135.1705751"/>
  <node id="4700800193" visible="true" version="1" changeset="46330158" timestamp="2017-02-23T08:34:33Z" user="HikaruKinkakuji" uid="1878070" lat="34.2263687" lon="135.1707027">
   <tag k="drinking_water" v="no"/>
   <tag k="man_made" v="water_tap"/>
@@ -5649,7 +5649,7 @@
  <node id="9843001403" visible="true" version="1" changeset="122779912" timestamp="2022-06-24T01:47:01Z" user="Daiji Maps" uid="10880270" lat="34.2291176" lon="135.1721366">
   <tag k="natural" v="tree"/>
  </node>
- <node id="9843001404" visible="true" version="1" changeset="122779912" timestamp="2022-06-24T01:47:01Z" user="Daiji Maps" uid="10880270" lat="34.2288804" lon="135.1721181">
+ <node id="9843001404" visible="true" version="2" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2288255" lon="135.1721362">
   <tag k="natural" v="tree"/>
  </node>
  <node id="9843001405" visible="true" version="1" changeset="122779912" timestamp="2022-06-24T01:47:01Z" user="Daiji Maps" uid="10880270" lat="34.2285494" lon="135.1724064">
@@ -6794,6 +6794,58 @@
  <node id="12309441714" visible="true" version="1" changeset="158699167" timestamp="2024-11-03T13:25:02Z" user="Daiji Maps" uid="10880270" lat="34.2276014" lon="135.1728928"/>
  <node id="12309441715" visible="true" version="1" changeset="158699167" timestamp="2024-11-03T13:25:02Z" user="Daiji Maps" uid="10880270" lat="34.2276451" lon="135.1729193"/>
  <node id="12309441716" visible="true" version="1" changeset="158699167" timestamp="2024-11-03T13:25:02Z" user="Daiji Maps" uid="10880270" lat="34.2277164" lon="135.1726883"/>
+ <node id="12311227453" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2293440" lon="135.1699751">
+  <tag k="natural" v="tree"/>
+ </node>
+ <node id="12311227454" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2292368" lon="135.1700862">
+  <tag k="natural" v="tree"/>
+ </node>
+ <node id="12311227455" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2289378" lon="135.1700783">
+  <tag k="natural" v="tree"/>
+ </node>
+ <node id="12311227456" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2288753" lon="135.1699221">
+  <tag k="natural" v="tree"/>
+ </node>
+ <node id="12311227457" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2270764" lon="135.1697407"/>
+ <node id="12311227458" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2270341" lon="135.1697343"/>
+ <node id="12311227459" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2269394" lon="135.1697668"/>
+ <node id="12311227460" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2262922" lon="135.1706516"/>
+ <node id="12311227461" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2268837" lon="135.1712922"/>
+ <node id="12311227462" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2270123" lon="135.1718013"/>
+ <node id="12311227463" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2271502" lon="135.1726327"/>
+ <node id="12311227464" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2271318" lon="135.1727883"/>
+ <node id="12311227465" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2269829" lon="135.1709899"/>
+ <node id="12311227466" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2270638" lon="135.1708543"/>
+ <node id="12311227467" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270" lat="34.2280435" lon="135.1702702"/>
+ <node id="12548598547" visible="true" version="1" changeset="162001322" timestamp="2025-02-01T06:45:17Z" user="pseek" uid="21586509" lat="34.2292794" lon="135.1748801">
+  <tag k="addr:block_number" v="4"/>
+  <tag k="addr:city" v="和歌山市"/>
+  <tag k="addr:postcode" v="640-8799"/>
+  <tag k="addr:province" v="和歌山県"/>
+  <tag k="addr:quarter" v="一番丁"/>
+  <tag k="amenity" v="post_office"/>
+  <tag k="name" v="和歌山中央郵便局"/>
+  <tag k="name:en" v="Wakayama Central Post Office"/>
+  <tag k="name:en1" v="Wakayama Chuo Post Office"/>
+  <tag k="name:es" v="Oficina de Correos de Wakayama Central"/>
+  <tag k="name:ja" v="和歌山中央郵便局"/>
+  <tag k="name:ja-Hira" v="わかやま ちゅうおう ゆうびんきょく"/>
+  <tag k="name:pt" v="Correio de Wakayama Central"/>
+  <tag k="note" v="National-Land Numerical Information (Public Facility) 2006, MLIT Japan"/>
+  <tag k="note:ja" v="国土数値情報（公共施設データ）平成19年　国土交通省"/>
+  <tag k="opening_hours" v="Mo-Fr 09:00-17:00"/>
+  <tag k="operator" v="日本郵便"/>
+  <tag k="operator:en" v="Japan Post"/>
+  <tag k="operator:ja" v="日本郵便"/>
+  <tag k="operator:short" v="郵便局"/>
+  <tag k="operator:short:en" v="JP"/>
+  <tag k="operator:short:ja" v="郵便局"/>
+  <tag k="operator:wikidata" v="Q11509260"/>
+  <tag k="phone" v="+81-800-0800-111"/>
+  <tag k="source" v="KSJ2"/>
+  <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"/>
+  <tag k="wikidata" v="Q11417302"/>
+ </node>
  <way id="34614777" visible="true" version="15" changeset="98433671" timestamp="2021-01-31T00:34:07Z" user="Otenkiya" uid="4702051">
   <nd ref="333416759"/>
   <nd ref="402167488"/>
@@ -7550,15 +7602,16 @@
   <tag k="source" v="Bing, 2011-4"/>
   <tag k="water" v="basin"/>
  </way>
- <way id="363851295" visible="true" version="2" changeset="128273131" timestamp="2022-10-31T03:38:52Z" user="杉若百々音" uid="17483629">
+ <way id="363851295" visible="true" version="3" changeset="159470210" timestamp="2024-11-22T18:05:06Z" user="katfmy" uid="16499170">
   <nd ref="3679741362"/>
   <nd ref="3679741353"/>
   <nd ref="3679741360"/>
   <nd ref="3679741368"/>
   <nd ref="3679741362"/>
+  <tag k="addr:postcode" v="640-8511"/>
   <tag k="building" v="yes"/>
   <tag k="historic" v="castle"/>
-  <tag k="name" v="大天守"/>
+  <tag k="name" v="Wakayama Castle"/>
   <tag k="source" v="Bing, 2011-4"/>
  </way>
  <way id="363851296" visible="true" version="2" changeset="122785696" timestamp="2022-06-24T06:29:15Z" user="Daiji Maps" uid="10880270">
@@ -8480,13 +8533,14 @@
   <nd ref="4465842239"/>
   <tag k="highway" v="path"/>
  </way>
- <way id="449637526" visible="true" version="4" changeset="158698192" timestamp="2024-11-03T13:02:31Z" user="Daiji Maps" uid="10880270">
+ <way id="449637526" visible="true" version="5" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270">
   <nd ref="402167990"/>
   <nd ref="4691690457"/>
   <nd ref="4465842094"/>
   <nd ref="12309404215"/>
   <nd ref="4465842086"/>
   <nd ref="4700800192"/>
+  <nd ref="12311227460"/>
   <nd ref="4465842078"/>
   <tag k="highway" v="path"/>
  </way>
@@ -8658,11 +8712,14 @@
   <nd ref="4467191393"/>
   <tag k="barrier" v="hedge"/>
  </way>
- <way id="449784120" visible="true" version="2" changeset="46330158" timestamp="2017-02-23T08:34:34Z" user="HikaruKinkakuji" uid="1878070">
+ <way id="449784120" visible="true" version="3" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270">
   <nd ref="4467191240"/>
+  <nd ref="12311227457"/>
+  <nd ref="12311227458"/>
   <nd ref="4467191218"/>
   <nd ref="4700795886"/>
   <nd ref="4700795885"/>
+  <nd ref="12311227459"/>
   <tag k="barrier" v="retaining_wall"/>
  </way>
  <way id="449784121" visible="true" version="1" changeset="43234276" timestamp="2016-10-28T02:00:09Z" user="HikaruKinkakuji" uid="1878070">
@@ -8737,7 +8794,8 @@
   <nd ref="4467191421"/>
   <tag k="amenity" v="bicycle_parking"/>
  </way>
- <way id="449784132" visible="true" version="2" changeset="158689119" timestamp="2024-11-03T08:55:29Z" user="Daiji Maps" uid="10880270">
+ <way id="449784132" visible="true" version="3" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270">
+  <nd ref="12311227459"/>
   <nd ref="12309051183"/>
   <nd ref="12309051173"/>
   <nd ref="12309051174"/>
@@ -9316,9 +9374,10 @@
   <nd ref="4467562493"/>
   <tag k="highway" v="path"/>
  </way>
- <way id="449834003" visible="true" version="2" changeset="158688550" timestamp="2024-11-03T08:33:46Z" user="Daiji Maps" uid="10880270">
+ <way id="449834003" visible="true" version="3" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270">
   <nd ref="4466368892"/>
   <nd ref="12309068416"/>
+  <nd ref="12311227467"/>
   <nd ref="4467562493"/>
   <tag k="highway" v="path"/>
  </way>
@@ -12201,22 +12260,15 @@
   <tag k="building:levels" v="4"/>
   <tag k="source" v="GSImaps/std"/>
  </way>
- <way id="474614171" visible="true" version="5" changeset="152064720" timestamp="2024-05-31T06:51:44Z" user="tatsuno" uid="21320939">
+ <way id="474614171" visible="true" version="6" changeset="162001322" timestamp="2025-02-01T06:45:17Z" user="pseek" uid="21586509">
   <nd ref="4685287800"/>
   <nd ref="4685287799"/>
   <nd ref="4685287798"/>
   <nd ref="4685287797"/>
   <nd ref="4685287800"/>
-  <tag k="amenity" v="post_office"/>
   <tag k="building" v="yes"/>
   <tag k="building:levels" v="5"/>
-  <tag k="name" v="和歌山中央郵便局"/>
-  <tag k="name:en" v="Wakayama Central Post Office"/>
-  <tag k="note" v="National-Land Numerical Information (Public Facility) 2006, MLIT Japan"/>
-  <tag k="note:ja" v="国土数値情報（公共施設データ）平成19年　国土交通省"/>
   <tag k="source" v="KSJ2"/>
-  <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"/>
-  <tag k="wikidata" v="Q11417302"/>
  </way>
  <way id="474622142" visible="true" version="1" changeset="46080888" timestamp="2017-02-14T14:48:03Z" user="Tomoko Yamamoto" uid="2711677">
   <nd ref="4685355389"/>
@@ -15213,7 +15265,16 @@
   <nd ref="12309438723"/>
   <tag k="barrier" v="hedge"/>
  </way>
- <relation id="2281186" visible="true" version="148" changeset="156420732" timestamp="2024-09-10T04:17:24Z" user="palmafu" uid="21910180">
+ <way id="1330568095" visible="true" version="1" changeset="158726569" timestamp="2024-11-04T06:13:02Z" user="Daiji Maps" uid="10880270">
+  <nd ref="12311227466"/>
+  <nd ref="12311227465"/>
+  <nd ref="12311227461"/>
+  <nd ref="12311227462"/>
+  <nd ref="12311227463"/>
+  <nd ref="12311227464"/>
+  <tag k="barrier" v="retaining_wall"/>
+ </way>
+ <relation id="2281186" visible="true" version="151" changeset="165215981" timestamp="2025-04-21T00:28:07Z" user="taketaketake" uid="4757277">
   <member type="way" ref="795257402" role="forward"/>
   <member type="way" ref="46699200" role="forward"/>
   <member type="way" ref="46699201" role="forward"/>
@@ -15326,13 +15387,18 @@
   <member type="way" ref="475558308" role="forward"/>
   <member type="way" ref="540387898" role="forward"/>
   <member type="way" ref="342928123" role="forward"/>
+  <member type="way" ref="1353596260" role="forward"/>
   <member type="way" ref="1070841686" role="forward"/>
   <member type="way" ref="1070841696" role="forward"/>
+  <member type="way" ref="1353596261" role="forward"/>
   <member type="way" ref="1070841695" role="forward"/>
   <member type="way" ref="1070841689" role="forward"/>
   <member type="way" ref="1070841687" role="forward"/>
+  <member type="way" ref="1353596270" role="forward"/>
+  <member type="way" ref="1353596269" role="forward"/>
   <member type="way" ref="1070841693" role="forward"/>
   <member type="way" ref="1070841711" role="forward"/>
+  <member type="way" ref="1353596271" role="forward"/>
   <member type="way" ref="1070841698" role="forward"/>
   <member type="way" ref="1070841712" role="forward"/>
   <member type="way" ref="275704847" role="forward"/>
@@ -15344,16 +15410,7 @@
   <member type="way" ref="542147262" role="forward"/>
   <member type="way" ref="28245872" role="forward"/>
   <member type="way" ref="1264000191" role="forward"/>
-  <member type="way" ref="542147265" role="forward"/>
-  <member type="way" ref="542147264" role="forward"/>
-  <member type="way" ref="1070841713" role="forward"/>
-  <member type="way" ref="1069287031" role=""/>
-  <member type="way" ref="1069284185" role=""/>
-  <member type="way" ref="1069284179" role=""/>
-  <member type="way" ref="1070841690" role=""/>
-  <member type="way" ref="1070841688" role=""/>
-  <member type="way" ref="1070841694" role=""/>
-  <member type="way" ref="1070841680" role="forward"/>
+  <member type="way" ref="1353596259" role="forward"/>
   <member type="way" ref="1070841685" role="forward"/>
   <member type="way" ref="540387897" role="forward"/>
   <member type="way" ref="540387896" role="forward"/>
@@ -15469,6 +15526,7 @@
   <member type="way" ref="648414576" role="forward"/>
   <member type="way" ref="336660531" role="forward"/>
   <member type="way" ref="99871750" role="forward"/>
+  <member type="way" ref="1379209704" role="forward"/>
   <member type="way" ref="1231661825" role="forward"/>
   <member type="way" ref="125704713" role="forward"/>
   <member type="way" ref="435413819" role="forward"/>
@@ -15622,7 +15680,8 @@
   <member type="way" ref="381017641" role=""/>
   <member type="way" ref="381017635" role=""/>
   <member type="way" ref="381017631" role=""/>
-  <member type="way" ref="725215774" role=""/>
+  <member type="way" ref="1349143565" role=""/>
+  <member type="way" ref="1349143564" role=""/>
   <member type="way" ref="725215775" role=""/>
   <member type="way" ref="725215778" role=""/>
   <member type="way" ref="381017639" role=""/>
@@ -15818,7 +15877,7 @@
   <tag k="wikidata" v="Q1058171"/>
   <tag k="wikipedia" v="ja:国道24号"/>
  </relation>
- <relation id="2283740" visible="true" version="137" changeset="157970932" timestamp="2024-10-16T15:36:07Z" user="sinpo" uid="1969243">
+ <relation id="2283740" visible="true" version="141" changeset="163242486" timestamp="2025-03-05T12:15:23Z" user="tutuw002" uid="4531722">
   <member type="way" ref="23874437" role=""/>
   <member type="way" ref="658187861" role=""/>
   <member type="way" ref="162383070" role=""/>
@@ -15959,7 +16018,6 @@
   <member type="way" ref="173015742" role="forward"/>
   <member type="way" ref="167622170" role="forward"/>
   <member type="way" ref="167622160" role="forward"/>
-  <member type="way" ref="167622091" role="forward"/>
   <member type="way" ref="167622079" role="forward"/>
   <member type="way" ref="1323896973" role="forward"/>
   <member type="way" ref="245576900" role="forward"/>
@@ -16028,6 +16086,7 @@
   <member type="way" ref="727078950" role="forward"/>
   <member type="way" ref="727078951" role="forward"/>
   <member type="way" ref="281465095" role="forward"/>
+  <member type="way" ref="1338017076" role="forward"/>
   <member type="way" ref="1323896972" role="forward"/>
   <member type="way" ref="245576898" role="forward"/>
   <member type="way" ref="245576890" role="forward"/>
@@ -16090,10 +16149,14 @@
   <member type="way" ref="143983829" role=""/>
   <member type="way" ref="143983710" role=""/>
   <member type="way" ref="143983640" role=""/>
+  <member type="way" ref="1364742198" role=""/>
+  <member type="way" ref="1364742197" role=""/>
   <member type="way" ref="374335104" role=""/>
   <member type="way" ref="374335110" role=""/>
   <member type="way" ref="374335248" role=""/>
   <member type="way" ref="374335249" role=""/>
+  <member type="way" ref="1364742196" role=""/>
+  <member type="way" ref="1364742195" role=""/>
   <member type="way" ref="450286312" role=""/>
   <member type="way" ref="450286313" role=""/>
   <member type="way" ref="205290645" role=""/>
@@ -16104,26 +16167,39 @@
   <member type="way" ref="727014844" role=""/>
   <member type="way" ref="388610839" role=""/>
   <member type="way" ref="388869857" role=""/>
+  <member type="way" ref="1364742194" role=""/>
   <member type="way" ref="553394165" role=""/>
   <member type="way" ref="553394167" role=""/>
+  <member type="way" ref="1364742193" role=""/>
   <member type="way" ref="553394163" role=""/>
   <member type="way" ref="553394164" role=""/>
+  <member type="way" ref="1364742192" role=""/>
+  <member type="way" ref="1364742191" role=""/>
   <member type="way" ref="486512381" role=""/>
   <member type="way" ref="388869145" role=""/>
   <member type="way" ref="388871441" role=""/>
   <member type="way" ref="553394161" role=""/>
   <member type="way" ref="553394162" role=""/>
+  <member type="way" ref="1364742190" role=""/>
   <member type="way" ref="553394157" role=""/>
   <member type="way" ref="553394158" role=""/>
+  <member type="way" ref="1364742189" role=""/>
   <member type="way" ref="553394153" role=""/>
   <member type="way" ref="553394154" role=""/>
   <member type="way" ref="388872310" role=""/>
   <member type="way" ref="553394155" role=""/>
   <member type="way" ref="553394156" role=""/>
+  <member type="way" ref="1364742186" role=""/>
+  <member type="way" ref="1364742185" role=""/>
   <member type="way" ref="388874047" role=""/>
   <member type="way" ref="484318407" role=""/>
+  <member type="way" ref="1364742181" role=""/>
+  <member type="way" ref="1364742180" role=""/>
+  <member type="way" ref="1364742182" role=""/>
+  <member type="way" ref="1364742183" role=""/>
   <member type="way" ref="733887540" role=""/>
   <member type="way" ref="733887539" role=""/>
+  <member type="way" ref="1364742184" role=""/>
   <member type="way" ref="396241563" role=""/>
   <member type="way" ref="1010412327" role=""/>
   <member type="way" ref="396912225" role=""/>
@@ -16177,7 +16253,7 @@
   <tag k="wikidata" v="Q900533"/>
   <tag k="wikipedia" v="ja:国道26号"/>
  </relation>
- <relation id="2877152" visible="true" version="301" changeset="151880255" timestamp="2024-05-27T06:12:09Z" user="taketaketake" uid="4757277">
+ <relation id="2877152" visible="true" version="304" changeset="162767579" timestamp="2025-02-21T07:28:30Z" user="okadatsuneo" uid="10163840">
   <member type="way" ref="259064535" role="forward"/>
   <member type="way" ref="190521785" role="forward"/>
   <member type="way" ref="261835603" role="forward"/>
@@ -16706,8 +16782,6 @@
   <member type="way" ref="121317875" role=""/>
   <member type="way" ref="121317852" role=""/>
   <member type="way" ref="121317879" role=""/>
-  <member type="way" ref="121317865" role=""/>
-  <member type="way" ref="217316937" role=""/>
   <member type="way" ref="121317831" role=""/>
   <member type="way" ref="121317830" role=""/>
   <member type="way" ref="215138831" role=""/>
@@ -16866,7 +16940,11 @@
   <member type="way" ref="125875131" role=""/>
   <member type="way" ref="125874474" role=""/>
   <member type="way" ref="125875129" role=""/>
+  <member type="way" ref="1340649209" role=""/>
+  <member type="way" ref="1340649210" role=""/>
   <member type="way" ref="26589920" role=""/>
+  <member type="way" ref="1340649206" role=""/>
+  <member type="way" ref="1340649205" role=""/>
   <member type="way" ref="125875123" role=""/>
   <member type="way" ref="125874484" role=""/>
   <member type="way" ref="125875103" role=""/>
@@ -17376,6 +17454,24 @@
   <member type="way" ref="1280981427" role="forward"/>
   <member type="way" ref="583407679" role="forward"/>
   <member type="way" ref="381006735" role="forward"/>
+  <member type="way" ref="1016042588" role=""/>
+  <member type="way" ref="1341029354" role=""/>
+  <member type="way" ref="899690269" role=""/>
+  <member type="way" ref="1331574773" role=""/>
+  <member type="way" ref="1341029355" role=""/>
+  <member type="way" ref="899690268" role=""/>
+  <member type="way" ref="1331574780" role=""/>
+  <member type="way" ref="1331574781" role=""/>
+  <member type="way" ref="1341752018" role=""/>
+  <member type="way" ref="1086457961" role=""/>
+  <member type="way" ref="1086457956" role=""/>
+  <member type="way" ref="1086457962" role=""/>
+  <member type="way" ref="1086457959" role=""/>
+  <member type="way" ref="1086457960" role=""/>
+  <member type="way" ref="1086457955" role=""/>
+  <member type="way" ref="1341752017" role=""/>
+  <member type="way" ref="899690267" role=""/>
+  <member type="way" ref="1086457957" role=""/>
   <tag k="name" v="国道42号"/>
   <tag k="name:en" v="National Highway Route 42"/>
   <tag k="name:fr" v="Route nationale 42"/>
@@ -17923,7 +18019,7 @@
   <tag k="route_master" v="road"/>
   <tag k="type" v="route_master"/>
  </relation>
- <relation id="9484410" visible="true" version="9" changeset="151020065" timestamp="2024-05-07T16:58:33Z" user="Ikuta" uid="2217888">
+ <relation id="9484410" visible="true" version="10" changeset="160578041" timestamp="2024-12-24T14:32:54Z" user="okadatsuneo" uid="10163840">
   <member type="way" ref="396241565" role=""/>
   <member type="way" ref="486512378" role=""/>
   <member type="way" ref="778290870" role=""/>
@@ -17938,6 +18034,7 @@
   <member type="way" ref="335204918" role=""/>
   <member type="way" ref="553412464" role=""/>
   <member type="way" ref="380092265" role=""/>
+  <member type="way" ref="156637233" role=""/>
   <member type="way" ref="156637255" role=""/>
   <member type="way" ref="143983686" role=""/>
   <member type="way" ref="553412463" role=""/>
@@ -17971,6 +18068,10 @@
   <member type="way" ref="156637230" role=""/>
   <member type="way" ref="143983662" role=""/>
   <member type="way" ref="205750206" role=""/>
+  <member type="way" ref="1346003116" role=""/>
+  <member type="way" ref="1346003111" role=""/>
+  <member type="way" ref="1346003112" role=""/>
+  <member type="way" ref="1346003117" role=""/>
   <member type="way" ref="25588409" role=""/>
   <member type="way" ref="156637225" role=""/>
   <tag k="name" v="和歌山県道・大阪府道752号和歌山阪南線"/>

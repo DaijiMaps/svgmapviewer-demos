@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3329564 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2270276 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.0934900" minlon="135.8446800" maxlat="35.1008100" maxlon="135.8596600"/>
  <node id="669583451" visible="true" version="2" changeset="45157152" timestamp="2017-01-14T10:31:10Z" user="Jeffrey Friedl" uid="3091368" lat="35.0698725" lon="135.8237696"/>
  <node id="669583464" visible="true" version="3" changeset="45157166" timestamp="2017-01-14T10:32:09Z" user="Jeffrey Friedl" uid="3091368" lat="35.0727767" lon="135.8239878"/>
@@ -5127,7 +5127,7 @@
  <node id="12127457195" visible="true" version="1" changeset="155602022" timestamp="2024-08-22T11:59:30Z" user="dressed-pleasekin" uid="11175011" lat="35.0658093" lon="135.8299274"/>
  <node id="12127457196" visible="true" version="1" changeset="155602022" timestamp="2024-08-22T11:59:30Z" user="dressed-pleasekin" uid="11175011" lat="35.0657869" lon="135.8300940"/>
  <node id="12127457197" visible="true" version="1" changeset="155602022" timestamp="2024-08-22T11:59:30Z" user="dressed-pleasekin" uid="11175011" lat="35.0656909" lon="135.8306566"/>
- <way id="54390042" visible="true" version="28" changeset="157236947" timestamp="2024-09-29T05:53:37Z" user="setokynet" uid="21931672">
+ <way id="54390042" visible="true" version="29" changeset="162378293" timestamp="2025-02-11T07:09:05Z" user="setokynet" uid="21931672">
   <nd ref="685356084"/>
   <nd ref="685356072"/>
   <nd ref="4057911930"/>
@@ -5450,6 +5450,8 @@
   <tag k="ref" v="D22"/>
   <tag k="surface" v="asphalt"/>
   <tag k="toll" v="yes"/>
+  <tag k="wikidata" v="Q11547398"/>
+  <tag k="wikipedia" v="ja:比叡山ドライブウェイ"/>
  </way>
  <way id="121006827" visible="true" version="5" changeset="40130058" timestamp="2016-06-19T07:57:22Z" user="yasunari" uid="171028">
   <nd ref="1355409109"/>
@@ -5747,7 +5749,7 @@
   <tag k="highway" v="track"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
- <way id="121008544" visible="true" version="2" changeset="137354605" timestamp="2023-06-15T06:12:11Z" user="DollariusG" uid="15944146">
+ <way id="121008544" visible="true" version="3" changeset="159504623" timestamp="2024-11-23T15:29:16Z" user="新軽岡" uid="22072819">
   <nd ref="1355409531"/>
   <nd ref="1355409564"/>
   <nd ref="1355409587"/>
@@ -5779,6 +5781,7 @@
   <nd ref="1355410440"/>
   <nd ref="1355410434"/>
   <tag k="highway" v="path"/>
+  <tag k="name" v="東海自然歩道"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
  <way id="121008547" visible="true" version="4" changeset="40129231" timestamp="2016-06-19T07:05:00Z" user="yasunari" uid="171028">
@@ -5841,7 +5844,7 @@
   <tag k="highway" v="service"/>
   <tag k="source" v="GSImaps/std"/>
  </way>
- <way id="121008564" visible="true" version="2" changeset="137354605" timestamp="2023-06-15T06:12:11Z" user="DollariusG" uid="15944146">
+ <way id="121008564" visible="true" version="3" changeset="159504623" timestamp="2024-11-23T15:29:16Z" user="新軽岡" uid="22072819">
   <nd ref="1355410434"/>
   <nd ref="1355410447"/>
   <nd ref="1355410489"/>
@@ -5877,6 +5880,7 @@
   <nd ref="1355411244"/>
   <nd ref="1355411259"/>
   <tag k="highway" v="path"/>
+  <tag k="name" v="東海自然歩道"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
  <way id="121008565" visible="true" version="4" changeset="133231166" timestamp="2023-03-02T23:30:19Z" user="Ikuta" uid="2217888">
@@ -6274,13 +6278,13 @@
   <tag k="name:en" v="Reception"/>
   <tag k="shop" v="ticket"/>
  </way>
- <way id="402074675" visible="true" version="4" changeset="40130964" timestamp="2016-06-19T08:53:54Z" user="yasunari" uid="171028">
+ <way id="402074675" visible="true" version="5" changeset="161457906" timestamp="2025-01-17T14:32:04Z" user="tartiflex" uid="507417">
   <nd ref="4045084433"/>
   <nd ref="4045084438"/>
   <nd ref="4045084430"/>
   <nd ref="4045084420"/>
   <nd ref="4045084433"/>
-  <tag k="building" v="temple"/>
+  <tag k="building" v="pagoda"/>
   <tag k="name" v="根本如法塔"/>
   <tag k="name:en" v="Nyoho-To Tower"/>
   <tag k="religion" v="buddhist"/>
@@ -6705,7 +6709,7 @@
   <nd ref="4080113786"/>
   <nd ref="4080115389"/>
  </way>
- <way id="405868042" visible="true" version="14" changeset="149123789" timestamp="2024-03-25T10:29:04Z" user="tartiflex" uid="507417">
+ <way id="405868042" visible="true" version="15" changeset="161457906" timestamp="2025-01-17T14:32:04Z" user="tartiflex" uid="507417">
   <nd ref="4080113754"/>
   <nd ref="4080113751"/>
   <nd ref="4080113757"/>
@@ -6725,7 +6729,8 @@
   <nd ref="4080113748"/>
   <nd ref="4080113754"/>
   <tag k="amenity" v="place_of_worship"/>
-  <tag k="charge" v="1000 JPY;600 JPY;300 JPY"/>
+  <tag k="charge:adult" v="1000 JPY"/>
+  <tag k="charge:child" v="600 JPY;300 JPY"/>
   <tag k="denomination" v="tendai"/>
   <tag k="fee" v="yes"/>
   <tag k="name" v="横川"/>
@@ -10287,13 +10292,16 @@
   <nd ref="3639422146"/>
   <tag k="source" v="Bing"/>
  </way>
- <relation id="6045350" visible="true" version="9" changeset="149123789" timestamp="2024-03-25T10:29:04Z" user="tartiflex" uid="507417">
+ <relation id="6045350" visible="true" version="10" changeset="161457906" timestamp="2025-01-17T14:32:04Z" user="tartiflex" uid="507417">
   <member type="way" ref="403296381" role=""/>
   <member type="way" ref="405858914" role=""/>
   <member type="way" ref="405868042" role=""/>
+  <tag k="addr:full" v="滋賀県大津市坂本本町4220"/>
   <tag k="amenity" v="place_of_worship"/>
-  <tag k="charge" v="1000 JPY;600 JPY;300 JPY"/>
+  <tag k="charge:adult" v="1000 JPY"/>
+  <tag k="charge:child" v="600 JPY;300 JPY"/>
   <tag k="contact:facebook" v="hieizan.enryakuji"/>
+  <tag k="contact:fax" v="+81 77-578-0678"/>
   <tag k="contact:instagram" v="enryakuji"/>
   <tag k="contact:phone" v="+81 77-578-0001"/>
   <tag k="contact:tripadvisor" v="321090"/>

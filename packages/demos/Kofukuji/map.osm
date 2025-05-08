@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2421085 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2270293 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.6806300" minlon="135.8292100" maxlat="34.6849600" maxlon="135.8353300"/>
  <node id="252250869" visible="true" version="22" changeset="63666392" timestamp="2018-10-19T03:51:09Z" user="Rakkka" uid="4954428" lat="34.6844728" lon="135.8290198"/>
  <node id="252409965" visible="true" version="6" changeset="80741592" timestamp="2020-02-09T05:08:13Z" user="Jeffrey Friedl" uid="3091368" lat="34.6819779" lon="135.8275880"/>
@@ -20,13 +20,17 @@
  <node id="253490513" visible="true" version="4" changeset="55421189" timestamp="2018-01-14T03:25:19Z" user="HikaruKinkakuji" uid="1878070" lat="34.6825317" lon="135.8306309"/>
  <node id="256542013" visible="true" version="3" changeset="100538110" timestamp="2021-03-06T14:19:50Z" user="Daiji Maps" uid="10880270" lat="34.6827578" lon="135.8361104"/>
  <node id="256542014" visible="true" version="3" changeset="46329794" timestamp="2017-02-23T08:22:13Z" user="shirasayu" uid="4848983" lat="34.6829647" lon="135.8367876"/>
- <node id="332528201" visible="true" version="25" changeset="63666392" timestamp="2018-10-19T03:51:09Z" user="Rakkka" uid="4954428" lat="34.6845282" lon="135.8318814">
+ <node id="332528201" visible="true" version="26" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6845282" lon="135.8318814">
   <tag k="highway" v="traffic_signals"/>
   <tag k="name" v="奈良県庁西"/>
+  <tag k="name:en" v="Nara Pref. Office West"/>
+  <tag k="name:ja" v="奈良県庁西"/>
  </node>
- <node id="332528412" visible="true" version="15" changeset="63666392" timestamp="2018-10-19T03:51:09Z" user="Rakkka" uid="4954428" lat="34.6845308" lon="135.8347294">
+ <node id="332528412" visible="true" version="16" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6845308" lon="135.8347294">
   <tag k="highway" v="traffic_signals"/>
   <tag k="name" v="県庁東"/>
+  <tag k="name:en" v="Nara Pref. Office East"/>
+  <tag k="name:ja" v="県庁東"/>
  </node>
  <node id="332528413" visible="true" version="12" changeset="20225416" timestamp="2014-01-27T09:26:57Z" user="nakaovic" uid="550181" lat="34.6844223" lon="135.8348539"/>
  <node id="332528417" visible="true" version="13" changeset="44270621" timestamp="2016-12-09T00:20:49Z" user="yasushi00" uid="262345" lat="34.6843979" lon="135.8359927"/>
@@ -34,12 +38,17 @@
  <node id="332528419" visible="true" version="12" changeset="44270621" timestamp="2016-12-09T00:20:49Z" user="yasushi00" uid="262345" lat="34.6843134" lon="135.8365926"/>
  <node id="332528421" visible="true" version="11" changeset="14179286" timestamp="2012-12-06T19:50:34Z" user="Haack70" uid="139435" lat="34.6841970" lon="135.8369291"/>
  <node id="470331803" visible="true" version="6" changeset="101582624" timestamp="2021-03-23T14:50:23Z" user="Rakkka" uid="4954428" lat="34.6819779" lon="135.8287470"/>
- <node id="549465992" visible="true" version="9" changeset="63666392" timestamp="2018-10-19T03:51:09Z" user="Rakkka" uid="4954428" lat="34.6844189" lon="135.8287605">
+ <node id="549465992" visible="true" version="10" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6844189" lon="135.8287605">
   <tag k="highway" v="traffic_signals"/>
+  <tag k="name" v="東向"/>
+  <tag k="name:en" v="Higashimuki"/>
+  <tag k="name:ja" v="東向"/>
  </node>
- <node id="549465993" visible="true" version="7" changeset="63666392" timestamp="2018-10-19T03:51:09Z" user="Rakkka" uid="4954428" lat="34.6856926" lon="135.8347049">
+ <node id="549465993" visible="true" version="8" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6856926" lon="135.8347049">
   <tag k="highway" v="traffic_signals"/>
   <tag k="name" v="登大路町"/>
+  <tag k="name:en" v="Noboriojicho"/>
+  <tag k="name:ja" v="登大路町"/>
  </node>
  <node id="549465994" visible="true" version="5" changeset="63666392" timestamp="2018-10-19T03:51:09Z" user="Rakkka" uid="4954428" lat="34.6856322" lon="135.8318750"/>
  <node id="711422253" visible="true" version="5" changeset="40378579" timestamp="2016-06-29T22:56:45Z" user="Daichizu" uid="870675" lat="34.6738135" lon="135.8348385">
@@ -372,10 +381,6 @@
  <node id="1379765244" visible="true" version="4" changeset="63666392" timestamp="2018-10-19T03:51:10Z" user="Rakkka" uid="4954428" lat="34.6820781" lon="135.8338587"/>
  <node id="1379765258" visible="true" version="4" changeset="99804221" timestamp="2021-02-23T08:16:22Z" user="Rakkka" uid="4954428" lat="34.6838349" lon="135.8381190"/>
  <node id="1379765260" visible="true" version="5" changeset="44270621" timestamp="2016-12-09T00:20:49Z" user="yasushi00" uid="262345" lat="34.6843993" lon="135.8356400"/>
- <node id="1387113730" visible="true" version="3" changeset="78669860" timestamp="2019-12-20T07:01:09Z" user="s_akr" uid="10488498" lat="34.6848236" lon="135.8293412">
-  <tag k="name" v="奈良商工観光館"/>
-  <tag k="shop" v="gift"/>
- </node>
  <node id="1387126497" visible="true" version="2" changeset="71771419" timestamp="2019-07-01T05:20:35Z" user="ひーろ" uid="10121506" lat="34.6842175" lon="135.8280909">
   <tag k="amenity" v="vending_machine"/>
   <tag k="vending" v="drinks"/>
@@ -393,9 +398,11 @@
  <node id="1411009135" visible="true" version="3" changeset="63666392" timestamp="2018-10-19T03:51:10Z" user="Rakkka" uid="4954428" lat="34.6854480" lon="135.8320203"/>
  <node id="1411009142" visible="true" version="3" changeset="63666392" timestamp="2018-10-19T03:51:10Z" user="Rakkka" uid="4954428" lat="34.6855535" lon="135.8337069"/>
  <node id="1411009144" visible="true" version="3" changeset="63666392" timestamp="2018-10-19T03:51:10Z" user="Rakkka" uid="4954428" lat="34.6855682" lon="135.8333818"/>
- <node id="1411867444" visible="true" version="4" changeset="63666392" timestamp="2018-10-19T03:51:10Z" user="Rakkka" uid="4954428" lat="34.6845298" lon="135.8329693">
+ <node id="1411867444" visible="true" version="5" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6845298" lon="135.8329693">
   <tag k="highway" v="traffic_signals"/>
   <tag k="name" v="奈良県庁前"/>
+  <tag k="name:en" v="Nara Pref. Office"/>
+  <tag k="name:ja" v="奈良県庁前"/>
   <tag k="traffic_signals" v="signal"/>
  </node>
  <node id="1411867447" visible="true" version="6" changeset="63666392" timestamp="2018-10-19T03:51:10Z" user="Rakkka" uid="4954428" lat="34.6820767" lon="135.8331216"/>
@@ -612,7 +619,7 @@
  <node id="2299387627" visible="true" version="2" changeset="44727935" timestamp="2016-12-28T11:20:11Z" user="shirasayu" uid="4848983" lat="34.6809645" lon="135.8364186"/>
  <node id="2299387628" visible="true" version="2" changeset="44727935" timestamp="2016-12-28T11:20:11Z" user="shirasayu" uid="4848983" lat="34.6802764" lon="135.8378669"/>
  <node id="2299387629" visible="true" version="2" changeset="44727935" timestamp="2016-12-28T11:20:11Z" user="shirasayu" uid="4848983" lat="34.6811504" lon="135.8354376"/>
- <node id="2321906959" visible="true" version="2" changeset="55423226" timestamp="2018-01-14T06:53:12Z" user="HikaruKinkakuji" uid="1878070" lat="34.6825236" lon="135.8304445"/>
+ <node id="2321906959" visible="true" version="3" changeset="160221714" timestamp="2024-12-12T19:58:31Z" user="LocalLoco" uid="6299060" lat="34.6824817" lon="135.8304436"/>
  <node id="2321906961" visible="true" version="2" changeset="99804221" timestamp="2021-02-23T08:16:22Z" user="Rakkka" uid="4954428" lat="34.6840214" lon="135.8374492"/>
  <node id="2327857355" visible="true" version="1" changeset="16374213" timestamp="2013-06-01T07:22:32Z" user="nissyyu" uid="359289" lat="34.6808540" lon="135.8298120">
   <tag k="name" v="遊中川"/>
@@ -634,37 +641,56 @@
  <node id="2344234545" visible="true" version="3" changeset="59345863" timestamp="2018-05-28T17:01:39Z" user="shirasayu" uid="4848983" lat="34.6822012" lon="135.8346587"/>
  <node id="2344234547" visible="true" version="2" changeset="43862085" timestamp="2016-11-22T05:11:04Z" user="yasushi00" uid="262345" lat="34.6822712" lon="135.8347000"/>
  <node id="2344234549" visible="true" version="4" changeset="101651170" timestamp="2021-03-24T13:35:04Z" user="Rakkka" uid="4954428" lat="34.6827144" lon="135.8346915"/>
- <node id="2344234560" visible="true" version="5" changeset="77409778" timestamp="2019-11-22T07:12:14Z" user="nissyyu" uid="359289" lat="34.6843044" lon="135.8287584">
+ <node id="2344234560" visible="true" version="6" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6843044" lon="135.8287584">
   <tag k="highway" v="traffic_signals"/>
+  <tag k="name" v="東向"/>
+  <tag k="name:en" v="Higashimuki"/>
+  <tag k="name:ja" v="東向"/>
   <tag k="traffic_signals" v="signal"/>
  </node>
  <node id="2344234565" visible="true" version="2" changeset="43862408" timestamp="2016-11-22T05:42:40Z" user="yasushi00" uid="262345" lat="34.6843490" lon="135.8294281"/>
- <node id="2344234570" visible="true" version="5" changeset="63666392" timestamp="2018-10-19T03:51:13Z" user="Rakkka" uid="4954428" lat="34.6843268" lon="135.8330416">
+ <node id="2344234570" visible="true" version="6" changeset="165181877" timestamp="2025-04-20T08:25:42Z" user="SvenTX" uid="1784239" lat="34.6843268" lon="135.8330416">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
  <node id="2344234579" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:13Z" user="Rakkka" uid="4954428" lat="34.6843660" lon="135.8290315"/>
- <node id="2344234581" visible="true" version="4" changeset="63666392" timestamp="2018-10-19T03:51:13Z" user="Rakkka" uid="4954428" lat="34.6844153" lon="135.8347357">
+ <node id="2344234581" visible="true" version="5" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6844153" lon="135.8347357">
   <tag k="highway" v="traffic_signals"/>
+  <tag k="name" v="県庁東"/>
+  <tag k="name:en" v="Nara Pref. Office East"/>
+  <tag k="name:ja" v="県庁東"/>
   <tag k="source" v="bing"/>
  </node>
  <node id="2344234584" visible="true" version="2" changeset="20225416" timestamp="2014-01-27T09:26:55Z" user="nakaovic" uid="550181" lat="34.6844306" lon="135.8309686"/>
- <node id="2344234586" visible="true" version="3" changeset="63666392" timestamp="2018-10-19T03:51:13Z" user="Rakkka" uid="4954428" lat="34.6844286" lon="135.8318816">
+ <node id="2344234586" visible="true" version="4" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6844286" lon="135.8318816">
   <tag k="highway" v="traffic_signals"/>
   <tag k="name" v="奈良県庁西"/>
+  <tag k="name:en" v="Nara Pref. Office West"/>
+  <tag k="name:ja" v="奈良県庁西"/>
  </node>
- <node id="2344234588" visible="true" version="3" changeset="63666392" timestamp="2018-10-19T03:51:13Z" user="Rakkka" uid="4954428" lat="34.6844269" lon="135.8329702">
+ <node id="2344234588" visible="true" version="4" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6844269" lon="135.8329702">
   <tag k="highway" v="traffic_signals"/>
   <tag k="name" v="奈良県庁前"/>
+  <tag k="name:en" v="Nara Pref. Office"/>
+  <tag k="name:ja" v="奈良県庁前"/>
   <tag k="traffic_signals" v="signal"/>
  </node>
  <node id="2344234596" visible="true" version="3" changeset="52376634" timestamp="2017-09-26T08:24:18Z" user="nissyyu" uid="359289" lat="34.6845421" lon="135.8289493"/>
  <node id="2344234598" visible="true" version="1" changeset="16548193" timestamp="2013-06-14T10:12:04Z" user="nissyyu" uid="359289" lat="34.6845919" lon="135.8292880"/>
  <node id="2344234600" visible="true" version="4" changeset="140566832" timestamp="2023-08-30T03:32:29Z" user="桜吹雪" uid="19135489" lat="34.6846324" lon="135.8346020"/>
- <node id="2344234601" visible="true" version="3" changeset="44088580" timestamp="2016-12-01T15:13:05Z" user="shirasayu" uid="4848983" lat="34.6846019" lon="135.8310283"/>
- <node id="2344234605" visible="true" version="3" changeset="63666392" timestamp="2018-10-19T03:51:13Z" user="Rakkka" uid="4954428" lat="34.6846157" lon="135.8318634">
-  <tag k="crossing" v="traffic_signals"/>
+ <node id="2344234601" visible="true" version="8" changeset="165181877" timestamp="2025-04-20T08:28:23Z" user="SvenTX" uid="1784239" lat="34.6846019" lon="135.8310283">
+  <tag k="crossing:island" v="no"/>
+  <tag k="crossing:markings" v="yes"/>
+  <tag k="crossing:signals" v="no"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="2344234605" visible="true" version="5" changeset="165181877" timestamp="2025-04-20T08:27:24Z" user="SvenTX" uid="1784239" lat="34.6846157" lon="135.8318634">
+  <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
+  <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
  <node id="2344234607" visible="true" version="4" changeset="140566832" timestamp="2023-08-30T03:32:29Z" user="桜吹雪" uid="19135489" lat="34.6846540" lon="135.8346242"/>
  <node id="2344234609" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:13Z" user="Rakkka" uid="4954428" lat="34.6848010" lon="135.8330548"/>
@@ -729,7 +755,8 @@
  <node id="2508032689" visible="true" version="5" changeset="101582624" timestamp="2021-03-23T14:50:23Z" user="Rakkka" uid="4954428" lat="34.6810316" lon="135.8316599"/>
  <node id="2508032690" visible="true" version="4" changeset="101582624" timestamp="2021-03-23T14:50:23Z" user="Rakkka" uid="4954428" lat="34.6810412" lon="135.8314799"/>
  <node id="2508032691" visible="true" version="5" changeset="101582624" timestamp="2021-03-23T14:50:23Z" user="Rakkka" uid="4954428" lat="34.6811103" lon="135.8315779"/>
- <node id="2508035262" visible="true" version="10" changeset="141899751" timestamp="2023-09-29T07:52:07Z" user="higa4" uid="162590" lat="34.6843982" lon="135.8324633">
+ <node id="2508035262" visible="true" version="12" changeset="165181925" timestamp="2025-04-20T08:26:39Z" user="SvenTX" uid="1784239" lat="34.6843982" lon="135.8324633">
+  <tag k="bench" v="yes"/>
   <tag k="bus" v="yes"/>
   <tag k="description" v="3番のりば"/>
   <tag k="highway" v="bus_stop"/>
@@ -742,6 +769,7 @@
   <tag k="operator:ja" v="奈良交通"/>
   <tag k="public_transport" v="platform"/>
   <tag k="ref" v="3"/>
+  <tag k="shelter" v="yes"/>
   <tag k="source" v="survey"/>
  </node>
  <node id="2508035265" visible="true" version="11" changeset="144442078" timestamp="2023-11-25T14:04:19Z" user="Yusuke1109" uid="7538595" lat="34.6845806" lon="135.8321585">
@@ -807,8 +835,9 @@
  </node>
  <node id="2854340712" visible="true" version="3" changeset="59345863" timestamp="2018-05-28T17:01:39Z" user="shirasayu" uid="4848983" lat="34.6835645" lon="135.8342778"/>
  <node id="2854340722" visible="true" version="2" changeset="59265273" timestamp="2018-05-25T09:52:21Z" user="shirasayu" uid="4848983" lat="34.6827789" lon="135.8362224"/>
- <node id="2854340749" visible="true" version="2" changeset="55421189" timestamp="2018-01-14T03:25:20Z" user="HikaruKinkakuji" uid="1878070" lat="34.6831772" lon="135.8295168">
+ <node id="2854340749" visible="true" version="3" changeset="162875802" timestamp="2025-02-24T04:46:07Z" user="drizzlius" uid="21733912" lat="34.6831772" lon="135.8295168">
   <tag k="barrier" v="cycle_barrier"/>
+  <tag k="cycle_barrier" v="single"/>
   <tag k="foot" v="yes"/>
  </node>
  <node id="2854340766" visible="true" version="1" changeset="22303994" timestamp="2014-05-13T03:04:26Z" user="yoshitk" uid="1003241" lat="34.6835434" lon="135.8340219"/>
@@ -2430,18 +2459,33 @@
  <node id="3665526161" visible="true" version="1" changeset="32865194" timestamp="2015-07-25T06:27:48Z" user="yasunari" uid="171028" lat="34.6820302" lon="135.8351739"/>
  <node id="3665526162" visible="true" version="1" changeset="32865194" timestamp="2015-07-25T06:27:48Z" user="yasunari" uid="171028" lat="34.6820307" lon="135.8351583"/>
  <node id="3665526163" visible="true" version="4" changeset="133029078" timestamp="2023-02-26T04:50:10Z" user="Ikuta" uid="2217888" lat="34.6820669" lon="135.8351480"/>
- <node id="3665526164" visible="true" version="3" changeset="51960586" timestamp="2017-09-12T05:33:58Z" user="nyuriks" uid="339581" lat="34.6820122" lon="135.8351479">
+ <node id="3665526164" visible="true" version="4" changeset="162087082" timestamp="2025-02-03T13:32:49Z" user="tartiflex" uid="507417" lat="34.6820122" lon="135.8351479">
+  <tag k="contact:website" v="https://www.kasugataisha.or.jp/guidance/keidai-map1/modal-02/"/>
+  <tag k="denotation" v="natural_monument"/>
+  <tag k="genus" v="Pinus"/>
+  <tag k="leaf_cycle" v="evergreen"/>
+  <tag k="leaf_type" v="needleleaved"/>
   <tag k="name" v="影向之松"/>
+  <tag k="name:fr" v="Pin de Yōgō"/>
+  <tag k="name:ja-Hira" v="ようごう の まつ"/>
+  <tag k="name:ja-Latn" v="Yōgō-no-matsu"/>
   <tag k="natural" v="tree"/>
+  <tag k="species" v="thunbergii"/>
+  <tag k="taxon" v="クロマツ"/>
+  <tag k="taxon:en" v="Japanese black pine"/>
+  <tag k="taxon:fr" v="Pin noir du Japon"/>
+  <tag k="taxon:wikidata" v="Q854884"/>
   <tag k="wikidata" v="Q24862411"/>
+  <tag k="wikimedia_commons" v="Category:Yogo-no-Matsu of Kasuga-taisha"/>
   <tag k="wikipedia" v="ja:影向の松 (春日大社)"/>
  </node>
- <node id="3665526165" visible="true" version="2" changeset="154593347" timestamp="2024-07-30T08:15:56Z" user="some0ne" uid="12232602" lat="34.6820335" lon="135.8351361">
+ <node id="3665526165" visible="true" version="3" changeset="162009700" timestamp="2025-02-01T12:51:41Z" user="wheelmap_visitor" uid="290680" lat="34.6820335" lon="135.8351361">
   <tag k="board_type" v="history"/>
   <tag k="check_date" v="2024-07-30"/>
   <tag k="information" v="board"/>
   <tag k="name" v="御神木 影向之松"/>
   <tag k="tourism" v="information"/>
+  <tag k="wheelchair" v="yes"/>
  </node>
  <node id="3665530728" visible="true" version="1" changeset="32865249" timestamp="2015-07-25T06:35:31Z" user="yasunari" uid="171028" lat="34.6822805" lon="135.8352917"/>
  <node id="3665530729" visible="true" version="1" changeset="32865249" timestamp="2015-07-25T06:35:31Z" user="yasunari" uid="171028" lat="34.6822819" lon="135.8348943"/>
@@ -3484,21 +3528,27 @@
  <node id="4700756851" visible="true" version="1" changeset="46329794" timestamp="2017-02-23T08:22:11Z" user="shirasayu" uid="4848983" lat="34.6832835" lon="135.8324629"/>
  <node id="4700756855" visible="true" version="1" changeset="46329794" timestamp="2017-02-23T08:22:11Z" user="shirasayu" uid="4848983" lat="34.6842578" lon="135.8331265"/>
  <node id="4700756856" visible="true" version="1" changeset="46329794" timestamp="2017-02-23T08:22:11Z" user="shirasayu" uid="4848983" lat="34.6835243" lon="135.8331348"/>
- <node id="4700756859" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:16Z" user="Rakkka" uid="4954428" lat="34.6844273" lon="135.8331214">
+ <node id="4700756859" visible="true" version="3" changeset="165181877" timestamp="2025-04-20T08:25:27Z" user="SvenTX" uid="1784239" lat="34.6844273" lon="135.8331214">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
- <node id="4700756860" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:16Z" user="Rakkka" uid="4954428" lat="34.6845313" lon="135.8331181">
+ <node id="4700756860" visible="true" version="3" changeset="165181877" timestamp="2025-04-20T08:25:26Z" user="SvenTX" uid="1784239" lat="34.6845313" lon="135.8331181">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
- <node id="4700756861" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:16Z" user="Rakkka" uid="4954428" lat="34.6844243" lon="135.8327269">
+ <node id="4700756861" visible="true" version="4" changeset="165181911" timestamp="2025-04-20T08:26:07Z" user="SvenTX" uid="1784239" lat="34.6844243" lon="135.8327269">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="yes"/>
  </node>
- <node id="4700756862" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:16Z" user="Rakkka" uid="4954428" lat="34.6845298" lon="135.8327264">
+ <node id="4700756862" visible="true" version="4" changeset="165181911" timestamp="2025-04-20T08:26:05Z" user="SvenTX" uid="1784239" lat="34.6845298" lon="135.8327264">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
+  <tag k="traffic_signals:sound" v="yes"/>
  </node>
  <node id="4798664122" visible="true" version="4" changeset="108672302" timestamp="2021-07-27T08:44:11Z" user="Yuxian" uid="10084645" lat="34.6807573" lon="135.8317639">
   <tag k="brand" v="デイリーヤマザキ"/>
@@ -3925,7 +3975,6 @@
  <node id="5338420319" visible="true" version="1" changeset="55423226" timestamp="2018-01-14T06:53:09Z" user="HikaruKinkakuji" uid="1878070" lat="34.6824704" lon="135.8304907"/>
  <node id="5338420320" visible="true" version="1" changeset="55423226" timestamp="2018-01-14T06:53:09Z" user="HikaruKinkakuji" uid="1878070" lat="34.6824536" lon="135.8305269"/>
  <node id="5338424121" visible="true" version="1" changeset="55423226" timestamp="2018-01-14T06:53:09Z" user="HikaruKinkakuji" uid="1878070" lat="34.6824533" lon="135.8304443"/>
- <node id="5338424122" visible="true" version="1" changeset="55423226" timestamp="2018-01-14T06:53:09Z" user="HikaruKinkakuji" uid="1878070" lat="34.6825250" lon="135.8305293"/>
  <node id="5338424123" visible="true" version="2" changeset="85224703" timestamp="2020-05-14T21:48:03Z" user="tartiflex" uid="507417" lat="34.6825684" lon="135.8303641">
   <tag k="information" v="board"/>
   <tag k="name" v="賓頭盧"/>
@@ -3975,10 +4024,11 @@
   <tag k="man_made" v="lamp"/>
   <tag k="note" v="灯籠"/>
  </node>
- <node id="5338489445" visible="true" version="1" changeset="55423928" timestamp="2018-01-14T08:00:51Z" user="HikaruKinkakuji" uid="1878070" lat="34.6819206" lon="135.8348292">
+ <node id="5338489445" visible="true" version="2" changeset="162009707" timestamp="2025-02-01T12:51:50Z" user="wheelmap_visitor" uid="290680" lat="34.6819206" lon="135.8348292">
   <tag k="information" v="map"/>
   <tag k="name" v="奈良公園観光案内図"/>
   <tag k="tourism" v="information"/>
+  <tag k="wheelchair" v="yes"/>
  </node>
  <node id="5338489446" visible="true" version="3" changeset="116346883" timestamp="2022-01-19T15:20:26Z" user="VLD071" uid="8970376" lat="34.6827395" lon="135.8340443">
   <tag k="information" v="map"/>
@@ -4940,18 +4990,24 @@
   <tag k="public_transport" v="platform"/>
   <tag k="source" v="knowledge"/>
  </node>
- <node id="5647938505" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:16Z" user="Rakkka" uid="4954428" lat="34.6845286" lon="135.8319501">
+ <node id="5647938505" visible="true" version="3" changeset="165181877" timestamp="2025-04-20T08:27:17Z" user="SvenTX" uid="1784239" lat="34.6845286" lon="135.8319501">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
- <node id="5647938506" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:16Z" user="Rakkka" uid="4954428" lat="34.6844293" lon="135.8319493">
+ <node id="5647938506" visible="true" version="3" changeset="165181877" timestamp="2025-04-20T08:27:19Z" user="SvenTX" uid="1784239" lat="34.6844293" lon="135.8319493">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
  <node id="5647938507" visible="true" version="1" changeset="59343469" timestamp="2018-05-28T15:13:58Z" user="shirasayu" uid="4848983" lat="34.6843457" lon="135.8319496"/>
  <node id="5647938508" visible="true" version="1" changeset="59343469" timestamp="2018-05-28T15:13:59Z" user="shirasayu" uid="4848983" lat="34.6846175" lon="135.8319528"/>
  <node id="5647938509" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:16Z" user="Rakkka" uid="4954428" lat="34.6846108" lon="135.8318026"/>
- <node id="5647938510" visible="true" version="2" changeset="63666392" timestamp="2018-10-19T03:51:16Z" user="Rakkka" uid="4954428" lat="34.6843360" lon="135.8329580"/>
+ <node id="5647938510" visible="true" version="4" changeset="165181885" timestamp="2025-04-20T08:25:40Z" user="SvenTX" uid="1784239" lat="34.6843360" lon="135.8329580">
+  <tag k="barrier" v="kerb"/>
+  <tag k="kerb" v="flush"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
  <node id="5647938511" visible="true" version="1" changeset="59343469" timestamp="2018-05-28T15:13:59Z" user="shirasayu" uid="4848983" lat="34.6842675" lon="135.8331914"/>
  <node id="5647938512" visible="true" version="1" changeset="59343469" timestamp="2018-05-28T15:13:59Z" user="shirasayu" uid="4848983" lat="34.6842917" lon="135.8329788"/>
  <node id="5647938513" visible="true" version="1" changeset="59343469" timestamp="2018-05-28T15:13:59Z" user="shirasayu" uid="4848983" lat="34.6842999" lon="135.8317195"/>
@@ -5080,9 +5136,10 @@
   <tag k="highway" v="crossing"/>
  </node>
  <node id="5997001307" visible="true" version="1" changeset="63666392" timestamp="2018-10-19T03:51:07Z" user="Rakkka" uid="4954428" lat="34.6846214" lon="135.8330123"/>
- <node id="5997001308" visible="true" version="1" changeset="63666392" timestamp="2018-10-19T03:51:07Z" user="Rakkka" uid="4954428" lat="34.6845282" lon="135.8318020">
+ <node id="5997001308" visible="true" version="2" changeset="165181877" timestamp="2025-04-20T08:27:30Z" user="SvenTX" uid="1784239" lat="34.6845282" lon="135.8318020">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
  <node id="5997001309" visible="true" version="1" changeset="63666392" timestamp="2018-10-19T03:51:07Z" user="Rakkka" uid="4954428" lat="34.6844281" lon="135.8318006">
   <tag k="crossing" v="traffic_signals"/>
@@ -5096,17 +5153,21 @@
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
  </node>
- <node id="5997001312" visible="true" version="1" changeset="63666392" timestamp="2018-10-19T03:51:07Z" user="Rakkka" uid="4954428" lat="34.6845288" lon="135.8319066">
+ <node id="5997001312" visible="true" version="2" changeset="165181877" timestamp="2025-04-20T08:27:29Z" user="SvenTX" uid="1784239" lat="34.6845288" lon="135.8319066">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
- <node id="5997001313" visible="true" version="1" changeset="63666392" timestamp="2018-10-19T03:51:07Z" user="Rakkka" uid="4954428" lat="34.6845285" lon="135.8318506">
+ <node id="5997001313" visible="true" version="2" changeset="165181877" timestamp="2025-04-20T08:27:26Z" user="SvenTX" uid="1784239" lat="34.6845285" lon="135.8318506">
   <tag k="crossing" v="traffic_signals"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
- <node id="5997001314" visible="true" version="1" changeset="63666392" timestamp="2018-10-19T03:51:07Z" user="Rakkka" uid="4954428" lat="34.6844783" lon="135.8318804">
+ <node id="5997001314" visible="true" version="3" changeset="165181877" timestamp="2025-04-20T08:27:15Z" user="SvenTX" uid="1784239" lat="34.6844783" lon="135.8318804">
   <tag k="crossing" v="traffic_signals"/>
+  <tag k="crossing:island" v="no"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
  <node id="5997001315" visible="true" version="1" changeset="63666392" timestamp="2018-10-19T03:51:07Z" user="Rakkka" uid="4954428" lat="34.6843474" lon="135.8318013"/>
  <node id="5997001316" visible="true" version="1" changeset="63666392" timestamp="2018-10-19T03:51:07Z" user="Rakkka" uid="4954428" lat="34.6855857" lon="135.8334019"/>
@@ -5149,8 +5210,9 @@
   <tag k="historic" v="yes"/>
  </node>
  <node id="6859140922" visible="true" version="1" changeset="75396006" timestamp="2019-10-07T23:14:09Z" user="Carlos_N" uid="3242739" lat="34.6794230" lon="135.8205069"/>
- <node id="6976944686" visible="true" version="3" changeset="131299545" timestamp="2023-01-15T14:03:55Z" user="lxgwsierra" uid="12529349" lat="34.6848505" lon="135.8344468">
+ <node id="6976944686" visible="true" version="4" changeset="160530793" timestamp="2024-12-23T09:59:10Z" user="Yuh_4151" uid="21293085" lat="34.6848505" lon="135.8344468">
   <tag k="amenity" v="cafe"/>
+  <tag k="branch" v="奈良公園バスターミナル店"/>
   <tag k="brand" v="スターバックス"/>
   <tag k="brand:en" v="Starbucks"/>
   <tag k="brand:ja" v="スターバックス"/>
@@ -5164,11 +5226,6 @@
   <tag k="official_name:en" v="Starbucks Coffee"/>
   <tag k="official_name:ja" v="スターバックスコーヒー"/>
   <tag k="takeaway" v="yes"/>
- </node>
- <node id="7071480170" visible="true" version="3" changeset="86904060" timestamp="2020-06-20T08:39:26Z" user="topstone" uid="1696339" lat="34.6848048" lon="135.8296294">
-  <tag k="amenity" v="restaurant"/>
-  <tag k="name" v="やまと旬菜三笠"/>
-  <tag k="opening_hours" v="Mo-Sa 11:00-15:00, 17:00-22:00"/>
  </node>
  <node id="7196610740" visible="true" version="6" changeset="154983464" timestamp="2024-08-08T14:52:33Z" user="Popolon" uid="27454" lat="34.6819725" lon="135.8262568">
   <tag k="button_operated" v="no"/>
@@ -5257,7 +5314,8 @@
  <node id="8559136880" visible="true" version="1" changeset="101691346" timestamp="2021-03-25T06:15:46Z" user="Rakkka" uid="4954428" lat="34.6775589" lon="135.8462530"/>
  <node id="8559136881" visible="true" version="1" changeset="101691346" timestamp="2021-03-25T06:15:46Z" user="Rakkka" uid="4954428" lat="34.6775953" lon="135.8460036"/>
  <node id="8559136988" visible="true" version="1" changeset="101691346" timestamp="2021-03-25T06:15:46Z" user="Rakkka" uid="4954428" lat="34.6834205" lon="135.8416879"/>
- <node id="9027429732" visible="true" version="2" changeset="141899751" timestamp="2023-09-29T07:52:07Z" user="higa4" uid="162590" lat="34.6844042" lon="135.8324343">
+ <node id="9027429732" visible="true" version="4" changeset="165181925" timestamp="2025-04-20T08:26:37Z" user="SvenTX" uid="1784239" lat="34.6844042" lon="135.8324343">
+  <tag k="bench" v="yes"/>
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
   <tag k="name" v="県庁前・奈良公園バスターミナル B12"/>
@@ -5266,6 +5324,7 @@
   <tag k="operator" v="奈良交通"/>
   <tag k="public_transport" v="platform"/>
   <tag k="ref" v="B12"/>
+  <tag k="shelter" v="yes"/>
  </node>
  <node id="9027429733" visible="true" version="1" changeset="110084766" timestamp="2021-08-23T03:07:36Z" user="okadatsuneo" uid="10163840" lat="34.6845839" lon="135.8325322">
   <tag k="bus" v="yes"/>
@@ -5435,11 +5494,15 @@
  <node id="10694193186" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888" lat="34.6848220" lon="135.8304907"/>
  <node id="10694193187" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888" lat="34.6848232" lon="135.8306904"/>
  <node id="10694193188" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888" lat="34.6845262" lon="135.8306932"/>
- <node id="10694193189" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888" lat="34.6845988" lon="135.8304927">
+ <node id="10694193189" visible="true" version="3" changeset="165181877" timestamp="2025-04-20T08:28:55Z" user="SvenTX" uid="1784239" lat="34.6845988" lon="135.8304927">
+  <tag k="crossing:markings" v="yes"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
- <node id="10694193190" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888" lat="34.6846000" lon="135.8306925">
+ <node id="10694193190" visible="true" version="3" changeset="165181877" timestamp="2025-04-20T08:28:57Z" user="SvenTX" uid="1784239" lat="34.6846000" lon="135.8306925">
+  <tag k="crossing:markings" v="yes"/>
   <tag k="highway" v="crossing"/>
+  <tag k="tactile_paving" v="yes"/>
  </node>
  <node id="10694193191" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888" lat="34.6848239" lon="135.8308934"/>
  <node id="10694193192" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888" lat="34.6854445" lon="135.8308903"/>
@@ -5538,7 +5601,7 @@
  </node>
  <node id="11171938422" visible="true" version="1" changeset="140897424" timestamp="2023-09-06T14:14:15Z" user="higa4" uid="162590" lat="34.6787785" lon="135.8199765"/>
  <node id="11175776488" visible="true" version="1" changeset="140964198" timestamp="2023-09-08T02:00:02Z" user="higa4" uid="162590" lat="34.6842192" lon="135.8286771"/>
- <node id="11176045277" visible="true" version="2" changeset="145787173" timestamp="2024-01-02T07:45:04Z" user="okadatsuneo_import" uid="12352917" lat="34.6841158" lon="135.8331867">
+ <node id="11176045277" visible="true" version="3" changeset="161044894" timestamp="2025-01-06T05:47:31Z" user="okadatsuneo_import" uid="12352917" lat="34.6841158" lon="135.8331867">
   <tag k="addr:province" v="奈良県"/>
   <tag k="amenity" v="bicycle_rental"/>
   <tag k="authentication:app" v="yes"/>
@@ -5551,11 +5614,12 @@
   <tag k="gbfs:station_id" v="12237"/>
   <tag k="gbfs:system_id" v="hellocycling"/>
   <tag k="name" v="奈良公園登大路園地"/>
+  <tag k="name:ja" v="奈良公園登大路園地"/>
   <tag k="network" v="HELLO CYCLING"/>
   <tag k="network:ja" v="ハローサイクリング"/>
   <tag k="network:wikidata" v="Q91231927"/>
  </node>
- <node id="11176045280" visible="true" version="2" changeset="145787173" timestamp="2024-01-02T07:45:04Z" user="okadatsuneo_import" uid="12352917" lat="34.6808410" lon="135.8325970">
+ <node id="11176045280" visible="true" version="3" changeset="161044894" timestamp="2025-01-06T05:47:31Z" user="okadatsuneo_import" uid="12352917" lat="34.6808410" lon="135.8325970">
   <tag k="addr:province" v="奈良県"/>
   <tag k="amenity" v="bicycle_rental"/>
   <tag k="authentication:app" v="yes"/>
@@ -5568,6 +5632,7 @@
   <tag k="gbfs:station_id" v="12253"/>
   <tag k="gbfs:system_id" v="hellocycling"/>
   <tag k="name" v="飛鳥荘"/>
+  <tag k="name:ja" v="飛鳥荘"/>
   <tag k="network" v="HELLO CYCLING"/>
   <tag k="network:ja" v="ハローサイクリング"/>
   <tag k="network:wikidata" v="Q91231927"/>
@@ -5588,23 +5653,24 @@
  <node id="11226471341" visible="true" version="1" changeset="141899751" timestamp="2023-09-29T07:52:07Z" user="higa4" uid="162590" lat="34.6771272" lon="135.8348892"/>
  <node id="11226471418" visible="true" version="2" changeset="148769039" timestamp="2024-03-17T14:48:54Z" user="ryoro" uid="623097" lat="34.6739053" lon="135.8348675"/>
  <node id="11226471453" visible="true" version="2" changeset="148769039" timestamp="2024-03-17T14:48:54Z" user="ryoro" uid="623097" lat="34.6760778" lon="135.8348532"/>
- <node id="11433397738" visible="true" version="3" changeset="158655913" timestamp="2024-11-02T12:15:42Z" user="okadatsuneo_import" uid="12352917" lat="34.6807730" lon="135.8317020">
+ <node id="11433397738" visible="true" version="5" changeset="161333882" timestamp="2025-01-14T07:02:43Z" user="okadatsuneo" uid="10163840" lat="34.6807730" lon="135.8317020">
   <tag k="amenity" v="bicycle_rental"/>
   <tag k="authentication:app" v="yes"/>
   <tag k="brand" v="Docomo Bike Share"/>
   <tag k="brand:ja" v="ドコモ・バイクシェア"/>
   <tag k="brand:website" v="https://docomo-cycle.jp/"/>
   <tag k="brand:wikidata" v="Q55533296"/>
-  <tag k="capacity" v="9"/>
+  <tag k="capacity" v="4"/>
   <tag k="fee" v="yes"/>
   <tag k="gbfs:name" v="17.猿沢イン"/>
   <tag k="gbfs:station_id" v="75018"/>
   <tag k="gbfs:system_id" v="docomo-cycle"/>
   <tag k="name" v="猿沢イン"/>
+  <tag k="name:en" v="Sarusawa Inn"/>
   <tag k="name:ja" v="猿沢イン"/>
   <tag k="ref" v="17"/>
  </node>
- <node id="11433397743" visible="true" version="3" changeset="158655913" timestamp="2024-11-02T12:15:42Z" user="okadatsuneo_import" uid="12352917" lat="34.6841100" lon="135.8332020">
+ <node id="11433397743" visible="true" version="4" changeset="161333882" timestamp="2025-01-14T07:02:43Z" user="okadatsuneo" uid="10163840" lat="34.6841100" lon="135.8332020">
   <tag k="amenity" v="bicycle_rental"/>
   <tag k="authentication:app" v="yes"/>
   <tag k="brand" v="Docomo Bike Share"/>
@@ -5617,10 +5683,11 @@
   <tag k="gbfs:station_id" v="75015"/>
   <tag k="gbfs:system_id" v="docomo-cycle"/>
   <tag k="name" v="奈良公園登大路園地"/>
+  <tag k="name:en" v="Nara Park, Noborioji Park"/>
   <tag k="name:ja" v="奈良公園登大路園地"/>
   <tag k="ref" v="14"/>
  </node>
- <node id="11842565122" visible="true" version="1" changeset="150419496" timestamp="2024-04-24T00:49:35Z" user="okadatsuneo_import" uid="12352917" lat="34.6847562" lon="135.8337475">
+ <node id="11842565122" visible="true" version="2" changeset="161044894" timestamp="2025-01-06T05:47:31Z" user="okadatsuneo_import" uid="12352917" lat="34.6847562" lon="135.8337475">
   <tag k="addr:province" v="奈良県"/>
   <tag k="amenity" v="bicycle_rental"/>
   <tag k="authentication:app" v="yes"/>
@@ -5633,12 +5700,18 @@
   <tag k="gbfs:station_id" v="13142"/>
   <tag k="gbfs:system_id" v="hellocycling"/>
   <tag k="name" v="奈良公園バスターミナル"/>
+  <tag k="name:en" v="Nara Park Bus Terminal"/>
+  <tag k="name:ja" v="奈良公園バスターミナル"/>
   <tag k="network" v="HELLO CYCLING"/>
   <tag k="network:ja" v="ハローサイクリング"/>
   <tag k="network:wikidata" v="Q91231927"/>
  </node>
  <node id="11998654033" visible="true" version="1" changeset="152985016" timestamp="2024-06-21T09:58:00Z" user="pürierstab" uid="4393065" lat="34.6826510" lon="135.8298929"/>
  <node id="11998677534" visible="true" version="1" changeset="152985016" timestamp="2024-06-21T09:57:57Z" user="pürierstab" uid="4393065" lat="34.6831847" lon="135.8289054"/>
+ <node id="12564770439" visible="true" version="1" changeset="162232680" timestamp="2025-02-07T06:30:27Z" user="can1619" uid="22289931" lat="34.6848283" lon="135.8299268">
+  <tag k="name" v="AN-GRANDE HOTEL 奈良"/>
+  <tag k="tourism" v="hotel"/>
+ </node>
  <way id="23312095" visible="true" version="14" changeset="152985016" timestamp="2024-06-21T09:59:10Z" user="pürierstab" uid="4393065">
   <nd ref="737367563"/>
   <nd ref="1379765151"/>
@@ -5696,7 +5769,7 @@
   <tag k="oneway:bicycle" v="no"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="59465653" visible="true" version="13" changeset="142677143" timestamp="2023-10-16T17:41:42Z" user="tg4567" uid="12500589">
+ <way id="59465653" visible="true" version="14" changeset="164324199" timestamp="2025-03-31T10:52:18Z" user="tartiflex" uid="507417">
   <nd ref="737392663"/>
   <nd ref="737392667"/>
   <nd ref="737392672"/>
@@ -5725,11 +5798,14 @@
   <nd ref="737367630"/>
   <nd ref="737367629"/>
   <nd ref="737392663"/>
+  <tag k="contact:tripadvisor" v="1385972"/>
   <tag k="name" v="猿沢池"/>
   <tag k="name:en" v="Sarusawa Pond"/>
   <tag k="name:fr" v="Étang Sarusawa"/>
-  <tag k="name:ja_rm" v="Sarusawa-Ike"/>
+  <tag k="name:ja-Hira" v="さるさわいけ"/>
+  <tag k="name:ja-Latn" v="Sarusawa-ike"/>
   <tag k="natural" v="water"/>
+  <tag k="start_date" v="749"/>
   <tag k="water" v="pond"/>
   <tag k="wikidata" v="Q11572131"/>
   <tag k="wikimedia_commons" v="Category:Sarusawaike"/>
@@ -6205,13 +6281,13 @@
   <tag k="surface" v="sett"/>
   <tag k="tactile_paving" v="no"/>
  </way>
- <way id="120838656" visible="true" version="7" changeset="55423226" timestamp="2018-01-14T06:53:13Z" user="HikaruKinkakuji" uid="1878070">
+ <way id="120838656" visible="true" version="8" changeset="160221714" timestamp="2024-12-12T19:58:31Z" user="LocalLoco" uid="6299060">
   <nd ref="1353920531"/>
   <nd ref="5338221180"/>
   <nd ref="5338221177"/>
   <nd ref="5338424121"/>
   <nd ref="2321906959"/>
-  <nd ref="5338424122"/>
+  <nd ref="253490513"/>
   <tag k="foot" v="yes"/>
   <tag k="highway" v="path"/>
   <tag k="surface" v="paving_stones"/>
@@ -6298,7 +6374,7 @@
   <nd ref="1411009135"/>
   <tag k="source" v="KSJ2; Bing, Mar.-Oct. 2005"/>
  </way>
- <way id="127600011" visible="true" version="10" changeset="68627619" timestamp="2019-03-28T14:18:57Z" user="Jeffrey Friedl" uid="3091368">
+ <way id="127600011" visible="true" version="11" changeset="164312202" timestamp="2025-03-31T05:09:19Z" user="KevinMapsThings" uid="19860479">
   <nd ref="1411867444"/>
   <nd ref="2344234588"/>
   <nd ref="2344234570"/>
@@ -6311,7 +6387,7 @@
   <tag k="oneway" v="yes"/>
   <tag k="oneway:bicycle" v="no"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
-  <tag k="surface" v="paved"/>
+  <tag k="surface" v="asphalt"/>
  </way>
  <way id="128367154" visible="true" version="6" changeset="158454064" timestamp="2024-10-28T12:39:05Z" user="higa4" uid="162590">
   <nd ref="1418836683"/>
@@ -6342,18 +6418,18 @@
   <tag k="wikidata" v="Q11445048"/>
   <tag k="wikipedia" v="ja:奈良家庭裁判所"/>
  </way>
- <way id="158012425" visible="true" version="2" changeset="101006004" timestamp="2021-03-14T19:59:18Z" user="topstone" uid="1696339">
+ <way id="158012425" visible="true" version="3" changeset="162232561" timestamp="2025-02-07T06:22:50Z" user="can1619" uid="22289931">
   <nd ref="1702487163"/>
   <nd ref="1702487138"/>
   <nd ref="1702487136"/>
   <nd ref="1702487161"/>
   <nd ref="1702487163"/>
-  <tag k="building" v="yes"/>
   <tag k="building:levels" v="4"/>
-  <tag k="name" v="奈良県 中小企業会館"/>
+  <tag k="check_date" v="2025-01-31"/>
+  <tag k="landuse" v="construction"/>
   <tag k="source" v="Bing, 2010-6"/>
  </way>
- <way id="158012430" visible="true" version="1" changeset="11187215" timestamp="2012-04-05T10:06:56Z" user="krtex" uid="511197">
+ <way id="158012430" visible="true" version="2" changeset="162232668" timestamp="2025-02-07T06:29:09Z" user="can1619" uid="22289931">
   <nd ref="1702487166"/>
   <nd ref="1702487140"/>
   <nd ref="1702487142"/>
@@ -6363,8 +6439,9 @@
   <nd ref="1702487166"/>
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing, 2010-6"/>
+  <tag k="tourism" v="hotel"/>
  </way>
- <way id="158012431" visible="true" version="3" changeset="68714502" timestamp="2019-03-31T03:50:14Z" user="b-jazz-bot" uid="9451067">
+ <way id="158012431" visible="true" version="4" changeset="162232640" timestamp="2025-02-07T06:27:33Z" user="can1619" uid="22289931">
   <nd ref="1702487168"/>
   <nd ref="1702487156"/>
   <nd ref="1702487148"/>
@@ -6374,10 +6451,9 @@
   <nd ref="1702487160"/>
   <nd ref="1702487172"/>
   <nd ref="1702487168"/>
-  <tag k="building" v="yes"/>
-  <tag k="name" v="奈良商工会議所"/>
+  <tag k="check_date" v="2025-01-31"/>
+  <tag k="landuse" v="construction"/>
   <tag k="name:en" v="Nara Chamber of Commerce and Industry"/>
-  <tag k="name:ja" v="奈良商工会議所"/>
   <tag k="source" v="Bing, 2010-6"/>
   <tag k="website" v="https://www.nara-cci.or.jp/"/>
  </way>
@@ -6707,7 +6783,7 @@
   <tag k="source" v="survey;Bing"/>
   <tag k="surface" v="paving_stones"/>
  </way>
- <way id="225667255" visible="true" version="18" changeset="157335922" timestamp="2024-10-01T11:59:48Z" user="setokynet" uid="21931672">
+ <way id="225667255" visible="true" version="20" changeset="165181787" timestamp="2025-04-20T08:26:23Z" user="SvenTX" uid="1784239">
   <nd ref="2344234581"/>
   <nd ref="4700756859"/>
   <nd ref="2344234588"/>
@@ -6725,6 +6801,7 @@
   <tag k="bicycle" v="yes"/>
   <tag k="highway" v="trunk"/>
   <tag k="lanes" v="2"/>
+  <tag k="lit" v="yes"/>
   <tag k="maxspeed" v="50"/>
   <tag k="name" v="登大路"/>
   <tag k="nat_name" v="国道369号"/>
@@ -6734,6 +6811,8 @@
   <tag k="nat_name:ja_rm" v="Kokudō 369-gō"/>
   <tag k="oneway" v="yes"/>
   <tag k="ref" v="369"/>
+  <tag k="sidewalk:left" v="separate"/>
+  <tag k="sidewalk:right" v="no"/>
   <tag k="source" v="YahooJapan/ALPSMAP;Bing;survey"/>
   <tag k="surface" v="asphalt"/>
  </way>
@@ -6979,14 +7058,15 @@
   <tag k="source" v="GSImaps/std"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="260926900" visible="true" version="2" changeset="153996831" timestamp="2024-07-16T04:44:43Z" user="taketaketake" uid="4757277">
+ <way id="260926900" visible="true" version="3" changeset="165182073" timestamp="2025-04-20T08:29:41Z" user="SvenTX" uid="1784239">
   <nd ref="2639447167"/>
   <nd ref="2639447183"/>
   <tag k="highway" v="trunk_link"/>
+  <tag k="lane_markings" v="no"/>
   <tag k="motorroad" v="no"/>
   <tag k="source" v="bing"/>
  </way>
- <way id="260926907" visible="true" version="11" changeset="142878789" timestamp="2023-10-20T16:37:34Z" user="Ikuta" uid="2217888">
+ <way id="260926907" visible="true" version="12" changeset="164312202" timestamp="2025-03-31T05:09:15Z" user="KevinMapsThings" uid="19860479">
   <nd ref="1411867444"/>
   <nd ref="4700756860"/>
   <nd ref="11155237339"/>
@@ -7004,7 +7084,7 @@
   <tag k="oneway" v="yes"/>
   <tag k="ref" v="369"/>
   <tag k="source" v="YahooJapan/ALPSMAP;Bing;survey"/>
-  <tag k="surface" v="paved"/>
+  <tag k="surface" v="asphalt"/>
  </way>
  <way id="274229699" visible="true" version="6" changeset="101651170" timestamp="2021-03-24T13:35:04Z" user="Rakkka" uid="4954428">
   <nd ref="2789981163"/>
@@ -8901,7 +8981,7 @@
   <tag k="name" v="一刀彫 浦弘園"/>
   <tag k="source" v="GSImaps/std;Survey"/>
  </way>
- <way id="345464020" visible="true" version="1" changeset="31194885" timestamp="2015-05-16T07:46:40Z" user="kochizufan" uid="301283">
+ <way id="345464020" visible="true" version="2" changeset="162009680" timestamp="2025-02-01T12:51:15Z" user="wheelmap_visitor" uid="290680">
   <nd ref="3521292073"/>
   <nd ref="3521292067"/>
   <nd ref="3521292065"/>
@@ -8918,6 +8998,7 @@
   <tag k="building" v="yes"/>
   <tag k="name" v="四季亭"/>
   <tag k="tourism" v="hotel"/>
+  <tag k="wheelchair" v="yes"/>
  </way>
  <way id="345464027" visible="true" version="1" changeset="31194885" timestamp="2015-05-16T07:46:41Z" user="kochizufan" uid="301283">
   <nd ref="3521292079"/>
@@ -9358,7 +9439,7 @@
   <tag k="name:en" v="Noborioji Subway"/>
   <tag k="tunnel" v="yes"/>
  </way>
- <way id="351805770" visible="true" version="4" changeset="157321262" timestamp="2024-10-01T04:50:20Z" user="Florian V" uid="2956493">
+ <way id="351805770" visible="true" version="5" changeset="164312202" timestamp="2025-03-31T05:09:04Z" user="KevinMapsThings" uid="19860479">
   <nd ref="3576156305"/>
   <nd ref="3576156307"/>
   <nd ref="3576156308"/>
@@ -9369,6 +9450,7 @@
   <tag k="layer" v="-1"/>
   <tag k="name" v="登大路地下歩道"/>
   <tag k="name:en" v="Noborioji Subway"/>
+  <tag k="surface" v="paving_stones"/>
   <tag k="tunnel" v="yes"/>
  </way>
  <way id="351815525" visible="true" version="1" changeset="31762003" timestamp="2015-06-06T07:06:21Z" user="yasunari" uid="171028">
@@ -10709,7 +10791,7 @@
   <tag k="oneway" v="yes"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="476517332" visible="true" version="4" changeset="143095355" timestamp="2023-10-25T05:53:04Z" user="Dyrmann" uid="51901">
+ <way id="476517332" visible="true" version="5" changeset="165181787" timestamp="2025-04-20T08:22:14Z" user="SvenTX" uid="1784239">
   <nd ref="3576156302"/>
   <nd ref="4700756815"/>
   <nd ref="4545716370"/>
@@ -10727,6 +10809,7 @@
   <nd ref="4700756821"/>
   <tag k="footway" v="sidewalk"/>
   <tag k="highway" v="footway"/>
+  <tag k="lit" v="yes"/>
   <tag k="smoothness" v="intermediate"/>
   <tag k="source" v="survay"/>
   <tag k="surface" v="asphalt"/>
@@ -10780,7 +10863,7 @@
   <tag k="highway" v="footway"/>
   <tag k="surface" v="paving_stones"/>
  </way>
- <way id="527769704" visible="true" version="3" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888">
+ <way id="527769704" visible="true" version="5" changeset="165181787" timestamp="2025-04-20T08:27:40Z" user="SvenTX" uid="1784239">
   <nd ref="2705159753"/>
   <nd ref="2344234596"/>
   <nd ref="2344234598"/>
@@ -10792,6 +10875,8 @@
   <nd ref="5647938509"/>
   <tag k="footway" v="sidewalk"/>
   <tag k="highway" v="footway"/>
+  <tag k="lit" v="yes"/>
+  <tag k="surface" v="paving_stones"/>
  </way>
  <way id="552242724" visible="true" version="1" changeset="55338916" timestamp="2018-01-11T01:01:57Z" user="HikaruKinkakuji" uid="1878070">
   <nd ref="5332206236"/>
@@ -11954,13 +12039,15 @@
   <tag k="footway" v="sidewalk"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="591626191" visible="true" version="2" changeset="59345863" timestamp="2018-05-28T17:02:01Z" user="shirasayu" uid="4848983">
+ <way id="591626191" visible="true" version="4" changeset="165181787" timestamp="2025-04-20T08:24:40Z" user="SvenTX" uid="1784239">
   <nd ref="1137605100"/>
   <nd ref="5648071171"/>
   <nd ref="5648071169"/>
   <nd ref="3576156299"/>
   <tag k="footway" v="sidewalk"/>
   <tag k="highway" v="footway"/>
+  <tag k="lit" v="yes"/>
+  <tag k="surface" v="asphalt"/>
  </way>
  <way id="591626192" visible="true" version="1" changeset="59343469" timestamp="2018-05-28T15:14:01Z" user="shirasayu" uid="4848983">
   <nd ref="5647938510"/>
@@ -12188,7 +12275,7 @@
   <nd ref="5997001328"/>
   <tag k="building" v="roof"/>
  </way>
- <way id="770966101" visible="true" version="3" changeset="152985016" timestamp="2024-06-21T09:59:01Z" user="pürierstab" uid="4393065">
+ <way id="770966101" visible="true" version="4" changeset="165181787" timestamp="2025-04-20T08:27:57Z" user="SvenTX" uid="1784239">
   <nd ref="2344215266"/>
   <nd ref="1387126497"/>
   <nd ref="2344215262"/>
@@ -12199,6 +12286,7 @@
   <nd ref="3283217146"/>
   <tag k="footway" v="sidewalk"/>
   <tag k="highway" v="footway"/>
+  <tag k="lit" v="yes"/>
   <tag k="surface" v="concrete:plates"/>
  </way>
  <way id="770966109" visible="true" version="4" changeset="152985016" timestamp="2024-06-21T09:59:05Z" user="pürierstab" uid="4393065">
@@ -12460,7 +12548,7 @@
   <tag k="wikidata" v="Q1070863"/>
   <tag k="wikipedia" v="ja:興福寺"/>
  </way>
- <way id="1134481286" visible="true" version="12" changeset="150842905" timestamp="2024-05-03T15:12:58Z" user="真中あお" uid="16786727">
+ <way id="1134481286" visible="true" version="13" changeset="162087082" timestamp="2025-02-03T13:32:49Z" user="tartiflex" uid="507417">
   <nd ref="10576462001"/>
   <nd ref="3336676580"/>
   <nd ref="3336676614"/>
@@ -12530,30 +12618,33 @@
   <tag k="addr:postcode" v="630-8212"/>
   <tag k="addr:province" v="奈良県"/>
   <tag k="addr:quarter" v="春日野町"/>
-  <tag k="fax" v="+81 742 27 2114"/>
+  <tag k="alt_name:en" v="Kasuga Grand Shrine"/>
+  <tag k="alt_name:fr" v="Grand sanctuaire Kasuga"/>
+  <tag k="contact:fax" v="+81 742 27 2114"/>
+  <tag k="contact:phone" v="+81 742 22 7788"/>
+  <tag k="contact:website" v="https://www.kasugataisha.or.jp/"/>
+  <tag k="fee" v="no"/>
   <tag k="heritage" v="1"/>
   <tag k="heritage:operator" v="whc"/>
   <tag k="historic" v="heritage"/>
+  <tag k="historic:civilization" v="nara"/>
   <tag k="landuse" v="religious"/>
   <tag k="name" v="春日大社"/>
   <tag k="name:de" v="Kasuga-taisha"/>
   <tag k="name:en" v="Kasuga-taisha"/>
   <tag k="name:es" v="Kasuga-taisha"/>
   <tag k="name:fr" v="Kasuga-taisha"/>
-  <tag k="name:ja" v="春日大社"/>
-  <tag k="name:ja_kana" v="かすがたいしゃ"/>
-  <tag k="name:ja_rm" v="Kasuga-taisha"/>
+  <tag k="name:ja-Hira" v="かすがたいしゃ"/>
+  <tag k="name:ja-Latn" v="Kasuga-taisha"/>
   <tag k="name:ko" v="가스가타이샤"/>
   <tag k="name:ru" v="Касуга тайся"/>
   <tag k="name:th" v="ศาลเจ้าคะซุงะ"/>
   <tag k="name:zh" v="春日大社"/>
   <tag k="note" v="area:estimated"/>
   <tag k="opening_hours" v="Mo-Su 06:00-17:00"/>
-  <tag k="payment:cash" v="*"/>
-  <tag k="phone" v="+81 742 22 7788"/>
   <tag k="ref:whc" v="870-003"/>
   <tag k="religion" v="shinto"/>
-  <tag k="website" v="https://www.kasugataisha.or.jp/"/>
+  <tag k="start_date" v="768"/>
   <tag k="whc:criteria" v="(ii),(iii),(iv),(vi)"/>
   <tag k="whc:inscription_date" v="1998"/>
   <tag k="wikidata" v="Q714559"/>
@@ -12596,7 +12687,7 @@
   <tag k="footway" v="sidewalk"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="1149563969" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888">
+ <way id="1149563969" visible="true" version="2" changeset="165182039" timestamp="2025-04-20T08:28:50Z" user="SvenTX" uid="1784239">
   <nd ref="10694193185"/>
   <nd ref="10694193189"/>
   <nd ref="10694193186"/>
@@ -12604,6 +12695,7 @@
   <nd ref="10694193190"/>
   <nd ref="10694193188"/>
   <tag k="highway" v="service"/>
+  <tag k="surface" v="asphalt"/>
  </way>
  <way id="1149563970" visible="true" version="1" changeset="133029194" timestamp="2023-02-26T05:02:54Z" user="Ikuta" uid="2217888">
   <nd ref="10694193187"/>
@@ -14075,7 +14167,7 @@
   <tag k="source" v="knowledge"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="3967176" visible="true" version="8" changeset="149112891" timestamp="2024-03-25T04:19:37Z" user="taketaketake" uid="4757277">
+ <relation id="3967176" visible="true" version="9" changeset="165215981" timestamp="2025-04-21T00:28:07Z" user="taketaketake" uid="4757277">
   <member type="node" ref="2659041466" role=""/>
   <member type="node" ref="2629446394" role=""/>
   <member type="node" ref="2662915751" role=""/>
@@ -14154,7 +14246,6 @@
   <member type="way" ref="297671426" role=""/>
   <member type="way" ref="297671425" role=""/>
   <member type="way" ref="297671421" role=""/>
-  <member type="way" ref="780807617" role=""/>
   <member type="way" ref="99834832" role=""/>
   <member type="way" ref="1265991118" role=""/>
   <member type="way" ref="99860711" role=""/>
@@ -14291,7 +14382,7 @@
   <tag k="surface" v="asphalt"/>
   <tag k="type" v="multipolygon"/>
  </relation>
- <relation id="7790754" visible="true" version="71" changeset="148016690" timestamp="2024-02-28T14:54:09Z" user="ryoro" uid="623097">
+ <relation id="7790754" visible="true" version="72" changeset="161770839" timestamp="2025-01-26T07:50:29Z" user="Detteyou" uid="7184394">
   <member type="way" ref="259733279" role=""/>
   <member type="way" ref="55220188" role=""/>
   <member type="way" ref="208652064" role=""/>
@@ -14397,6 +14488,8 @@
   <member type="way" ref="69716924" role=""/>
   <member type="way" ref="305544863" role=""/>
   <member type="way" ref="305544864" role=""/>
+  <member type="way" ref="1354357112" role=""/>
+  <member type="way" ref="1354357111" role=""/>
   <member type="way" ref="70237860" role=""/>
   <member type="way" ref="70237867" role=""/>
   <member type="way" ref="69716939" role=""/>
@@ -14844,7 +14937,7 @@
   <tag k="wikidata" v="Q4499760"/>
   <tag k="wikipedia" v="ja:国道169号"/>
  </relation>
- <relation id="8326282" visible="true" version="1" changeset="59265273" timestamp="2018-05-25T09:52:21Z" user="shirasayu" uid="4848983">
+ <relation id="8326282" visible="true" version="2" changeset="162555815" timestamp="2025-02-16T01:09:20Z" user="Obanazawa Kuri" uid="17453820">
   <member type="way" ref="590964411" role="outer"/>
   <member type="way" ref="590964393" role="inner"/>
   <member type="way" ref="590964394" role="inner"/>
@@ -14855,6 +14948,7 @@
   <member type="way" ref="590964424" role="inner"/>
   <member type="way" ref="590964391" role="inner"/>
   <tag k="highway" v="pedestrian"/>
+  <tag k="surface" v="sett"/>
   <tag k="type" v="multipolygon"/>
  </relation>
  <relation id="8346167" visible="true" version="77" changeset="140875250" timestamp="2023-09-06T04:09:25Z" user="弥勒の道プロジェクト" uid="3758498">
@@ -15646,7 +15740,7 @@
   <tag k="wikidata" v="Q926383"/>
   <tag k="wikipedia" v="ja:一般国道"/>
  </relation>
- <relation id="9051274" visible="true" version="18" changeset="158292789" timestamp="2024-10-24T11:40:08Z" user="Daiji Maps" uid="10880270">
+ <relation id="9051274" visible="true" version="20" changeset="165182039" timestamp="2025-04-20T09:24:18Z" user="SvenTX" uid="1784239">
   <member type="way" ref="258860357" role=""/>
   <member type="way" ref="260926907" role=""/>
   <member type="way" ref="25743499" role=""/>
@@ -15679,6 +15773,7 @@
   <member type="way" ref="1039556905" role=""/>
   <member type="way" ref="656236994" role=""/>
   <member type="way" ref="656236993" role=""/>
+  <member type="way" ref="1379073439" role=""/>
   <member type="way" ref="59465325" role=""/>
   <member type="way" ref="378249347" role=""/>
   <member type="way" ref="105145331" role=""/>
@@ -15694,6 +15789,7 @@
   <member type="way" ref="176390805" role=""/>
   <member type="way" ref="176390888" role=""/>
   <member type="way" ref="654726172" role=""/>
+  <member type="way" ref="1368009330" role=""/>
   <member type="way" ref="654726176" role=""/>
   <member type="way" ref="377283016" role=""/>
   <member type="way" ref="136485733" role=""/>
