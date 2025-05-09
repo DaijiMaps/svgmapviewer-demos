@@ -1,5 +1,5 @@
-import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
 import { initAddresses, searchAddress } from '@daijimaps/svgmapviewer/search'
+import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
 import { addressEntries } from './address-data'
 import { searchInfo } from './data'
 import { Info } from './info'

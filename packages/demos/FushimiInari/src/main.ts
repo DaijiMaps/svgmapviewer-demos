@@ -1,9 +1,9 @@
 import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
 import {
   getMapLayers,
+  getMapMarkers,
   getMapObjects,
   getMapSymbols,
-  getMapMarkers,
 } from './map'
 import {
   mapCoord,
@@ -20,12 +20,13 @@ svgmapviewer({
   root: 'root',
   map: 'map1',
   origViewBox: mapViewBox,
-  zoomFactor: 2,
+  zoomFactor: 3,
   getMapLayers,
   getMapObjects,
   getMapSymbols,
   getMapMarkers,
   renderInfo: RenderInfo,
+  title: 'Fushimi-Inari',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   mapData,
   mapCoord,
