@@ -19,7 +19,7 @@ import {
 import { MultiPolygon, PointGeoJSON } from '@daijimaps/svgmapviewer/geo'
 import { V } from '@daijimaps/svgmapviewer/tuple'
 import internals from './data/internals.json'
-import { conv, trees } from './map-data'
+import { conv } from './map-data'
 import './map.css'
 
 export const getMapLayers: () => MapLayer[] = () => [
@@ -198,14 +198,6 @@ export const getMapObjects: () => MapObjects[] = () => [
     pointsFilter: (f) =>
       !!f.properties.other_tags?.match(/"tree"/) &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
-  },
-  {
-    name: 'trees2',
-    path: tree4x8Path,
-    width: 0.15,
-    data: (trees as PointGeoJSON).features
-      .map((f) => f.geometry.coordinates as unknown as V)
-      .map(conv),
   },
   {
     name: 'torii',

@@ -19,10 +19,7 @@ import multipolygons from './data/map-multipolygons.json'
 import points from './data/map-points.json'
 import measures from './data/measures.json'
 import origin from './data/origin.json'
-import trees from './data/trees.json'
 import viewbox from './data/viewbox.json'
-
-export { trees }
 
 //// mapData
 
