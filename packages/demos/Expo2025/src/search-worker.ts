@@ -6,7 +6,7 @@ import { Info } from './info'
 
 const ctx = initAddresses(addressEntries)
 
-onmessage = function (e: Readonly<MessageEvent<{ p: Vec; pgeo: Vec }>>) {
+onmessage = function (e: Readonly<MessageEvent<{ pgeo: Vec }>>) {
   const p = e.data.p
   const pgeo = e.data.pgeo
 
@@ -14,8 +14,8 @@ onmessage = function (e: Readonly<MessageEvent<{ p: Vec; pgeo: Vec }>>) {
 
   const info = loc === null ? null : searchInfo(loc.address, loc.lonlat)
 
-  const res: null | { p: Vec; pgeo: Vec; info: Info } =
-    loc === null || info === null ? null : { p, pgeo: loc.lonlat, info }
+  const res: null | { pgeo: Vec; info: Info } =
+    loc === null || info === null ? null : { pgeo: loc.lonlat, info }
 
   if (addressEntries === null) {
     this.postMessage(null)
