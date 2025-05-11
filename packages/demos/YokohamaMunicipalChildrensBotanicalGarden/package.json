@@ -4,6 +4,7 @@
     "dev": "vite --host 0.0.0.0",
     "dev:local": "vite --host 0.0.0.0 --config vite.config-local.ts",
     "build": "tsc -b && vite build",
+    "build:local": "tsc -b && vite build --config vite.config-local.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "pages:deploy": "pnpm build && cd dist && wrangler pages deploy ."
