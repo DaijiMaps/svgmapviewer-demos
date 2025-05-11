@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2270283 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2557182 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.6091000" minlon="135.7320000" maxlat="34.6161000" maxlon="135.7411000"/>
  <node id="287030681" visible="true" version="5" changeset="120657978" timestamp="2022-05-07T08:36:00Z" user="user_15089089" uid="15089089" lat="34.6073989" lon="135.7172993"/>
  <node id="287030687" visible="true" version="3" changeset="35430355" timestamp="2015-11-19T09:56:36Z" user="Chetan_Gowda" uid="2644101" lat="34.6073413" lon="135.7190231"/>
@@ -30306,7 +30306,7 @@
   <tag k="wikidata" v="Q123148254"/>
   <tag k="wikimedia_commons" v="Category:Great Treasure Galley, Horyu-ji"/>
  </relation>
- <relation id="8857556" visible="true" version="159" changeset="148942877" timestamp="2024-03-21T05:22:01Z" user="Usatohu" uid="21219675">
+ <relation id="8857556" visible="true" version="160" changeset="166019621" timestamp="2025-05-09T09:48:53Z" user="tartiflex" uid="507417">
   <member type="relation" ref="32989" role=""/>
   <member type="relation" ref="2064722" role=""/>
   <member type="relation" ref="2061678" role=""/>
@@ -30762,7 +30762,10 @@
   <tag k="name:af" v="Nasionale snelweë van Japan"/>
   <tag k="name:en" v="National Highway of Japan"/>
   <tag k="name:es" v="Ruta nacional de Japón"/>
+  <tag k="name:fr" v="Routes nationales du Japon"/>
   <tag k="name:ja" v="日本の一般国道"/>
+  <tag k="name:ja-Hira" v="にっぽん の いっぱん こくどう"/>
+  <tag k="name:ja-Latn" v="Nihon no ippan kokudō"/>
   <tag k="name:ko" v="일본의 일반 국도"/>
   <tag k="name:ru" v="Японские национальные дороги"/>
   <tag k="name:zh-Hans" v="日本一般国道"/>
@@ -30771,6 +30774,7 @@
   <tag k="route_master" v="road"/>
   <tag k="type" v="route_master"/>
   <tag k="wikidata" v="Q926383"/>
+  <tag k="wikimedia_commons" v="Category:National highways of Japan"/>
   <tag k="wikipedia" v="ja:一般国道"/>
  </relation>
  <relation id="9045425" visible="true" version="4" changeset="134959208" timestamp="2023-04-16T00:57:40Z" user="Otenkiya" uid="4702051">
