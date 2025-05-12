@@ -9,7 +9,7 @@ svgmapviewer({
   href: `${mapSvg}`,
   width: 580,
   height: 610,
-  zoomFactor: 2,
+  zoomFactor: 3,
   renderMap: RenderMap,
   renderInfo: RenderInfo,
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',

@@ -9,7 +9,7 @@ svgmapviewer({
   width: 300,
   height: 300,
   //origViewBox: { x: 0, y: 0, width: 595.275, height: 841.89 },
-  zoomFactor: 2,
+  zoomFactor: 3,
   renderMap: RenderMap,
   //renderInfo: RenderInfo,
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',

@@ -20,7 +20,7 @@ svgmapviewer({
   root: 'root',
   map: 'map1',
   origViewBox: mapViewBox,
-  zoomFactor: 2,
+  zoomFactor: 3,
   getMapLayers,
   getMapObjects,
   getMapSymbols,
