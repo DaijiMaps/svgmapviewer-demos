@@ -47,6 +47,7 @@ packages:
   - 'packages/demos/Toshodaiji'
   - 'packages/demos/TsurugaokaHachimanGu'
   - 'packages/demos/TsurumiPark'
+  - 'packages/demos/UenoPark'
   - 'packages/demos/UnivOfTokyo-Hongo'
   - 'packages/demos/UnivOfTokyo-Komaba'
   - 'packages/demos/WakayamaCastle'
