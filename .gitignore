@@ -1,8 +1,10 @@
-*.db
-*.tmp
-*.zip
 *~
-__pycache__
+*.db
 dist
 node_modules
+__pycache__
+*.qgs
+*.qgz
+*.tmp
 tmp
+*.zip
