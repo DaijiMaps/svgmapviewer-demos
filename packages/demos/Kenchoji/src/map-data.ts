@@ -13,6 +13,7 @@ import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
 import areas from './data/areas.json'
 import centroids from './data/map-centroids.json'
 import lines from './data/map-lines.json'
+import midpoints from './data/map-midpoints.json'
 import multilinestrings from './data/map-multilinestrings.json'
 import multipolygons from './data/map-multipolygons.json'
 import points from './data/map-points.json'
@@ -33,6 +34,7 @@ export const mapData: MapData = {
   multilinestrings,
   multipolygons,
   centroids,
+  midpoints,
 }
 
 //// mapCoord
@@ -79,13 +81,16 @@ type PointOrCentroidFeature =
 const pointNames: POI[] = mapData.points.features.flatMap((f) => {
   const name = filterName(f)
   const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-  return name === null ? [] : [{ name: splitName(name), pos, size: 1 }]
+  const area = 100 // XXX
+  return name === null ? [] : [{ name: splitName(name), pos, size: 1, area }]
 })
 
-const centroidNames: POI[] = mapData.centroids.features.flatMap((f) => {
+const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
   const name = filterName(f)
-  const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-  return name === null ? [] : [{ name: splitName(name), pos, size: 10 }]
+  const centroid = [f.properties.centroid_x, f.properties.centroid_y]
+  const pos = vVec(conv(centroid))
+  const area = 'area' in f.properties ? f.properties.area : undefined
+  return name === null ? [] : [{ name: splitName(name), pos, size: 10, area }]
 })
 
 export const mapNames: POI[] = [...pointNames, ...centroidNames]
@@ -114,7 +119,7 @@ function filterName(f: PointOrCentroidFeature): null | string {
   }
   // split name by keywords
   return name.replace(
-    /(カフェ|レストラン|ミュージアム|センター|門衛所|御休所|休憩所|案内図)/,
+    /(カフェ|レストラン|ミュージアム|センター|門衛所|御休所|休憩所|案内図|パビリオン|マーケットプレイス|ターミナル|停留所|エクスペリエンス|ポップアップステージ)/,
     ' $1 '
   )
 }
