@@ -850,7 +850,8 @@ def fixupVectorLayer(l: QgsVectorLayer) -> QgsVectorLayer:
             dups[f.id()] = osm_id
         else:
             all_osm_ids[osm_id] = 1
-    print('deleting duplicate features: ', list(dups.values()))
+    if dups != {}:
+        print('deleting duplicate features: ', list(dups.values()))
     provider.deleteFeatures(list(dups.keys()))
 
     # 1. fixup clockwise-ness
