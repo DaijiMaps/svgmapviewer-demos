@@ -13,6 +13,7 @@ import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
 import areas from './data/areas.json'
 import centroids from './data/map-centroids.json'
 import lines from './data/map-lines.json'
+import midpoints from './data/map-midpoints.json'
 import multilinestrings from './data/map-multilinestrings.json'
 import multipolygons from './data/map-multipolygons.json'
 import points from './data/map-points.json'
@@ -33,6 +34,7 @@ export const mapData: MapData = {
   multilinestrings,
   multipolygons,
   centroids,
+  midpoints,
 }
 
 //// mapCoord
@@ -45,21 +47,31 @@ export const { mapCoord, mapViewBox } = calcScale(mapData)
 //// mapNames
 
 export const mapHtmlStyle = `
+.poi-stars {
+  font-size: x-large;
+}
 .poi-names {
   font-size: small;
+}
+.poi-stars-item {
+  position: absolute;
+  padding: 0;
+  text-align: center;
 }
 .poi-names-item {
   position: absolute;
   padding: 0.5em;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.375);
   text-align: center;
   border-radius: 5em;
 }
 .poi-symbols-item > p,
+.poi-stars-item > p,
 .poi-names-item > p {
   margin: 0;
 }
 .poi-symbols-item {
+  position: absolute;
   font-size: 1.5em;
   color: white;
   background-color: black;
@@ -77,15 +89,24 @@ type PointOrCentroidFeature =
   | PointFeature<OsmPolygonProperties>
 
 const pointNames: POI[] = mapData.points.features.flatMap((f) => {
+  const id = Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
   const name = filterName(f)
   const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-  return name === null ? [] : [{ name: splitName(name), pos, size: 1 }]
+  const area = 100 // XXX
+  return name === null
+    ? []
+    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 1, area }]
 })
 
-const centroidNames: POI[] = mapData.centroids.features.flatMap((f) => {
+const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
+  const id = Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
   const name = filterName(f)
-  const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-  return name === null ? [] : [{ name: splitName(name), pos, size: 10 }]
+  const centroid = [f.properties.centroid_x, f.properties.centroid_y]
+  const pos = vVec(conv(centroid))
+  const area = 'area' in f.properties ? f.properties.area : undefined
+  return name === null
+    ? []
+    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 10, area }]
 })
 
 export const mapNames: POI[] = [...pointNames, ...centroidNames]
@@ -114,7 +135,7 @@ function filterName(f: PointOrCentroidFeature): null | string {
   }
   // split name by keywords
   return name.replace(
-    /(カフェ|レストラン|ミュージアム|センター|門衛所|御休所|休憩所|案内図)/,
+    /(カフェ|レストラン|ミュージアム|センター|門衛所|御休所|休憩所|案内図|パビリオン|マーケットプレイス|ターミナル|停留所|エクスペリエンス|ポップアップステージ)/,
     ' $1 '
   )
 }
