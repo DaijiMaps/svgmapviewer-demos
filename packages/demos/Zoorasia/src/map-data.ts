@@ -2,6 +2,7 @@ import {
   calcScale,
   CentroidsFilter,
   MapData,
+  MultiPolygonFeature,
   OsmPointProperties,
   OsmPolygonProperties,
   POI,
@@ -87,9 +88,10 @@ export const mapSymbols: POI[] = []
 type PointOrCentroidFeature =
   | PointFeature<OsmPointProperties>
   | PointFeature<OsmPolygonProperties>
+  | MultiPolygonFeature<OsmPolygonProperties>
 
 const pointNames: POI[] = mapData.points.features.flatMap((f) => {
-  const id = Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
+  const id = Number(f.properties.osm_id ?? '')
   const name = filterName(f)
   const pos = vVec(conv(f.geometry.coordinates as unknown as V))
   const area = 100 // XXX
@@ -101,9 +103,15 @@ const pointNames: POI[] = mapData.points.features.flatMap((f) => {
 const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
   const id = Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
   const name = filterName(f)
-  const centroid = [f.properties.centroid_x, f.properties.centroid_y]
+  if (f.properties.centroid_x === null || f.properties.centroid_y === null) {
+    return []
+  }
+  const centroid: V = [f.properties.centroid_x, f.properties.centroid_y]
   const pos = vVec(conv(centroid))
-  const area = 'area' in f.properties ? f.properties.area : undefined
+  const area =
+    'area' in f.properties && f.properties.area !== null
+      ? f.properties.area
+      : undefined
   return name === null
     ? []
     : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 10, area }]
@@ -113,7 +121,7 @@ export const mapNames: POI[] = [...pointNames, ...centroidNames]
 
 function filterName(f: PointOrCentroidFeature): null | string {
   const name = f.properties.name
-  if (name === null) {
+  if (name === null || typeof name !== 'string') {
     return null
   }
   if (f.properties.other_tags?.match(/"vending_machine"/)) {
