@@ -89,10 +89,28 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
+    name: 'footway access',
+    filter: (f) =>
+      !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/) &&
+      !!f.properties.highway?.match(/^(footway|path|pedestrian|steps)$/) &&
+      !f.properties.other_tags?.match(/"service"=>/) &&
+      !!f.properties.other_tags?.match(/"access"=>/),
+  },
+  {
+    type: 'line',
     name: 'cycleway',
     filter: (f) =>
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/) &&
       !!f.properties.highway?.match(/^(cycleway)$/) &&
+      !f.properties.other_tags?.match(/"service"=>/) &&
+      !f.properties.other_tags?.match(/"access"=>/),
+  },
+  {
+    type: 'line',
+    name: 'path',
+    filter: (f) =>
+      //!f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/) &&
+      !!f.properties.highway?.match(/^(path|track)$/) &&
       !f.properties.other_tags?.match(/"service"=>/) &&
       !f.properties.other_tags?.match(/"access"=>/),
   },
@@ -107,12 +125,21 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
+    name: 'service access',
+    filter: (f) =>
+      !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/) &&
+      !!f.properties.highway?.match(/^(service)$/) &&
+      !f.properties.other_tags?.match(/"service"=>/) &&
+      !!f.properties.other_tags?.match(/"access"=>/),
+  },
+  {
+    type: 'line',
     name: 'road',
     filter: (f) =>
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/) &&
       !!f.properties.highway?.match(/./) &&
       !f.properties.highway?.match(
-        /^(footway|path|pedestrian|steps|cycleway|service)$/
+        /^(footway|path|pedestrian|steps|cycleway|track|service)$/
       ) &&
       !f.properties.other_tags?.match(/"service"=>/) &&
       !f.properties.other_tags?.match(/"access"=>/),
@@ -133,7 +160,7 @@ export const getMapLayers: () => MapLayer[] = () => [
   },
   {
     type: 'line',
-    name: 'escalator-foreground',
+    name: 'escalator foreground',
     filter: (f) =>
       !!f.properties.highway?.match(/^(steps)$/) &&
       !!f.properties.other_tags?.match(/"conveying"=>"yes"/),
