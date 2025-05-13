@@ -19,9 +19,11 @@ export interface FacilityInfo {
   address?: string
 }
 
+export type XInfo = ShopInfo | FacilityInfo
+
 declare module '@daijimaps/svgmapviewer' {
   interface Info {
-    x: ShopInfo | FacilityInfo
+    x: XInfo
   }
 }
 

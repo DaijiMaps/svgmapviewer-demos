@@ -31,8 +31,7 @@ export const getMapLayers: () => MapLayer[] = () => [
   {
     type: 'multipolygon',
     name: 'grass',
-    filter: (f) =>
-      !!f.properties.landuse?.match(/grass/),
+    filter: (f) => !!f.properties.landuse?.match(/grass/),
   },
   {
     type: 'multipolygon',
@@ -85,7 +84,8 @@ export const getMapLayers: () => MapLayer[] = () => [
     filter: (f) =>
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/) &&
       !!f.properties.highway?.match(/^(footway|path|pedestrian|steps)$/) &&
-      !f.properties.other_tags?.match(/"service"=>/),
+      !f.properties.other_tags?.match(/"service"=>/) &&
+      !f.properties.other_tags?.match(/"access"=>/),
   },
   {
     type: 'line',
@@ -93,7 +93,8 @@ export const getMapLayers: () => MapLayer[] = () => [
     filter: (f) =>
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/) &&
       !!f.properties.highway?.match(/^(cycleway)$/) &&
-      !f.properties.other_tags?.match(/"service"=>/),
+      !f.properties.other_tags?.match(/"service"=>/) &&
+      !f.properties.other_tags?.match(/"access"=>/),
   },
   {
     type: 'line',
@@ -101,7 +102,8 @@ export const getMapLayers: () => MapLayer[] = () => [
     filter: (f) =>
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/) &&
       !!f.properties.highway?.match(/^(service)$/) &&
-      !f.properties.other_tags?.match(/"service"=>/),
+      !f.properties.other_tags?.match(/"service"=>/) &&
+      !f.properties.other_tags?.match(/"access"=>/),
   },
   {
     type: 'line',
@@ -112,12 +114,15 @@ export const getMapLayers: () => MapLayer[] = () => [
       !f.properties.highway?.match(
         /^(footway|path|pedestrian|steps|cycleway|service)$/
       ) &&
-      !f.properties.other_tags?.match(/"service"=>/),
+      !f.properties.other_tags?.match(/"service"=>/) &&
+      !f.properties.other_tags?.match(/"access"=>/),
   },
   {
     type: 'multipolygon',
     name: 'pedestrian-area',
-    filter: (f) => !!f.properties.other_tags?.match(/"pedestrian"/),
+    filter: (f) =>
+      !!f.properties.other_tags?.match(/"pedestrian"/) &&
+      !f.properties.other_tags?.match(/"access"=>/),
   },
   {
     type: 'line',
