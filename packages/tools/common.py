@@ -839,6 +839,20 @@ def fixupVectorLayer(l: QgsVectorLayer) -> QgsVectorLayer:
     if not (caps & QgsVectorDataProvider.ChangeAttributeValues):
         return l
 
+    # 0. de-duplicate features by osm_id/osm_way_id
+    all_osm_ids = {}
+    dups = {}
+    l.selectAll()
+    for f in l.selectedFeatures():
+        m = f.attributeMap()
+        osm_id = m['osm_id'] if ('osm_id' in m and m['osm_id'] != None) else m['osm_way_id'] if ('osm_way_id' in m and m['osm_way_id'] != None) else ''
+        if osm_id == '' or osm_id in all_osm_ids:
+            dups[f.id()] = osm_id
+        else:
+            all_osm_ids[osm_id] = 1
+    print('deleting duplicate features: ', list(dups.values()))
+    provider.deleteFeatures(list(dups.keys()))
+
     # 1. fixup clockwise-ness
     l.selectAll()
     for f in l.selectedFeatures():
