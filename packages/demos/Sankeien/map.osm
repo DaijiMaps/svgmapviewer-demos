@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529598 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2270291 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.4123000" minlon="139.6536000" maxlat="35.4207000" maxlon="139.6671000"/>
  <node id="255525074" visible="true" version="3" changeset="68567747" timestamp="2019-03-27T00:00:09Z" user="zyxzyx" uid="7707735" lat="35.4362269" lon="139.6692528"/>
  <node id="255525076" visible="true" version="3" changeset="68567747" timestamp="2019-03-27T00:00:09Z" user="zyxzyx" uid="7707735" lat="35.4354444" lon="139.6696111"/>
@@ -46418,7 +46418,7 @@
   <tag k="route" v="bus"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="4043805" visible="true" version="52" changeset="144360448" timestamp="2023-11-23T09:31:02Z" user="postown" uid="4480756">
+ <relation id="4043805" visible="true" version="53" changeset="165879127" timestamp="2025-05-06T08:06:48Z" user="ntzm" uid="12363857">
   <member type="node" ref="2207911042" role="stop"/>
   <member type="node" ref="2252082145" role="forward_\stop"/>
   <member type="node" ref="2252082107" role="stop_exit_only"/>
@@ -46628,6 +46628,7 @@
   <member type="way" ref="257422343" role="forward"/>
   <member type="way" ref="712611360" role="forward"/>
   <member type="way" ref="300945504" role="forward"/>
+  <member type="way" ref="1383946352" role="forward"/>
   <member type="way" ref="159833168" role="forward"/>
   <member type="way" ref="306336255" role="forward"/>
   <member type="way" ref="217857911" role="forward"/>
@@ -46908,7 +46909,7 @@
   <tag k="route" v="bus"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="4054270" visible="true" version="31" changeset="144360448" timestamp="2023-11-23T09:31:02Z" user="postown" uid="4480756">
+ <relation id="4054270" visible="true" version="32" changeset="165879127" timestamp="2025-05-06T08:06:48Z" user="ntzm" uid="12363857">
   <member type="node" ref="3076803244" role="platform_entry_only"/>
   <member type="node" ref="3187954582" role="platform"/>
   <member type="node" ref="3077685997" role="platform"/>
@@ -46981,6 +46982,7 @@
   <member type="way" ref="257422343" role=""/>
   <member type="way" ref="712611360" role=""/>
   <member type="way" ref="300945504" role=""/>
+  <member type="way" ref="1383946352" role=""/>
   <member type="way" ref="159833168" role=""/>
   <member type="way" ref="306336255" role=""/>
   <member type="way" ref="217857911" role=""/>
@@ -47360,7 +47362,7 @@
   <tag k="wikidata" v="Q1369525"/>
   <tag k="wikipedia" v="en:Shuto Expressway"/>
  </relation>
- <relation id="4569662" visible="true" version="29" changeset="144360448" timestamp="2023-11-23T09:31:02Z" user="postown" uid="4480756">
+ <relation id="4569662" visible="true" version="30" changeset="165879127" timestamp="2025-05-06T08:06:48Z" user="ntzm" uid="12363857">
   <member type="node" ref="2570983176" role="stop"/>
   <member type="node" ref="1808617749" role="backward_stop"/>
   <member type="node" ref="2279215810" role="forward_stop"/>
@@ -47425,6 +47427,7 @@
   <member type="way" ref="217857911" role="forward"/>
   <member type="way" ref="306336255" role="forward"/>
   <member type="way" ref="159833168" role="forward"/>
+  <member type="way" ref="1383946352" role="forward"/>
   <member type="way" ref="300945504" role="forward"/>
   <member type="way" ref="712611360" role="forward"/>
   <member type="way" ref="257422343" role="forward"/>
@@ -47518,7 +47521,7 @@
   <member type="relation" ref="4569661" role="forward"/>
   <tag k="colour" v="#dda0dd"/>
   <tag k="from" v="横浜駅前(東口)"/>
-  <tag k="name" v="横浜市営バス　26系統　横浜駅～本牧車庫前"/>
+  <tag k="name" v="横浜市営バス 26系統 横浜駅～本牧車庫前"/>
   <tag k="network" v="横浜市営バス"/>
   <tag k="network:en" v="Yokohama Municipal Bus"/>
   <tag k="network:ja" v="横浜市営バス"/>
@@ -47972,7 +47975,7 @@
   <tag k="route_master" v="hiking"/>
   <tag k="type" v="route_master"/>
  </relation>
- <relation id="6621553" visible="true" version="19" changeset="160079184" timestamp="2024-12-09T06:09:49Z" user="yoshitk" uid="1003241">
+ <relation id="6621553" visible="true" version="20" changeset="165879127" timestamp="2025-05-06T08:06:48Z" user="ntzm" uid="12363857">
   <member type="node" ref="4426268917" role="platform_entry_only"/>
   <member type="node" ref="3077685954" role="platform"/>
   <member type="node" ref="2282741146" role="platform"/>
@@ -48017,6 +48020,7 @@
   <member type="way" ref="257422343" role=""/>
   <member type="way" ref="712611360" role=""/>
   <member type="way" ref="300945504" role=""/>
+  <member type="way" ref="1383946352" role=""/>
   <member type="way" ref="159833168" role=""/>
   <member type="way" ref="306336255" role=""/>
   <member type="way" ref="217857911" role=""/>
@@ -48036,7 +48040,7 @@
   <member type="way" ref="871884654" role=""/>
   <tag k="colour" v="#008000"/>
   <tag k="from" v="三渓園"/>
-  <tag k="name" v="ぶらり三渓園BUS　三渓園 =&gt; 横浜駅前"/>
+  <tag k="name" v="ぶらり三渓園BUS 三渓園 =&gt; 横浜駅前"/>
   <tag k="network" v="横浜市営バス"/>
   <tag k="network:en" v="Yokohama Municipal Bus"/>
   <tag k="network:ja" v="横浜市営バス"/>
@@ -48150,7 +48154,7 @@
   <tag k="route_master" v="bus"/>
   <tag k="type" v="route_master"/>
  </relation>
- <relation id="8857556" visible="true" version="159" changeset="148942877" timestamp="2024-03-21T05:22:01Z" user="Usatohu" uid="21219675">
+ <relation id="8857556" visible="true" version="160" changeset="166019621" timestamp="2025-05-09T09:48:53Z" user="tartiflex" uid="507417">
   <member type="relation" ref="32989" role=""/>
   <member type="relation" ref="2064722" role=""/>
   <member type="relation" ref="2061678" role=""/>
@@ -48606,7 +48610,10 @@
   <tag k="name:af" v="Nasionale snelweë van Japan"/>
   <tag k="name:en" v="National Highway of Japan"/>
   <tag k="name:es" v="Ruta nacional de Japón"/>
+  <tag k="name:fr" v="Routes nationales du Japon"/>
   <tag k="name:ja" v="日本の一般国道"/>
+  <tag k="name:ja-Hira" v="にっぽん の いっぱん こくどう"/>
+  <tag k="name:ja-Latn" v="Nihon no ippan kokudō"/>
   <tag k="name:ko" v="일본의 일반 국도"/>
   <tag k="name:ru" v="Японские национальные дороги"/>
   <tag k="name:zh-Hans" v="日本一般国道"/>
@@ -48615,6 +48622,7 @@
   <tag k="route_master" v="road"/>
   <tag k="type" v="route_master"/>
   <tag k="wikidata" v="Q926383"/>
+  <tag k="wikimedia_commons" v="Category:National highways of Japan"/>
   <tag k="wikipedia" v="ja:一般国道"/>
  </relation>
  <relation id="11584393" visible="true" version="4" changeset="143447499" timestamp="2023-10-31T23:49:35Z" user="tartiflex" uid="507417">
@@ -50075,7 +50083,7 @@
   <tag k="to" v="本牧車庫前"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="12471773" visible="true" version="5" changeset="144360448" timestamp="2023-11-23T09:31:02Z" user="postown" uid="4480756">
+ <relation id="12471773" visible="true" version="6" changeset="165879127" timestamp="2025-05-06T08:06:48Z" user="ntzm" uid="12363857">
   <member type="node" ref="3076803244" role="platform_entry_only"/>
   <member type="node" ref="3187954582" role="platform"/>
   <member type="node" ref="3077685997" role="platform"/>
@@ -50148,6 +50156,7 @@
   <member type="way" ref="257422343" role=""/>
   <member type="way" ref="712611360" role=""/>
   <member type="way" ref="300945504" role=""/>
+  <member type="way" ref="1383946352" role=""/>
   <member type="way" ref="159833168" role=""/>
   <member type="way" ref="306336255" role=""/>
   <member type="way" ref="217857911" role=""/>
@@ -50176,7 +50185,7 @@
   <tag k="to" v="横浜駅前"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="12471774" visible="true" version="6" changeset="144360448" timestamp="2023-11-23T09:31:02Z" user="postown" uid="4480756">
+ <relation id="12471774" visible="true" version="7" changeset="165879127" timestamp="2025-05-06T08:06:48Z" user="ntzm" uid="12363857">
   <member type="node" ref="3076803255" role="platform_entry_only"/>
   <member type="node" ref="3077685997" role="platform"/>
   <member type="node" ref="3077685977" role="platform"/>
@@ -50246,6 +50255,7 @@
   <member type="way" ref="257422343" role=""/>
   <member type="way" ref="712611360" role=""/>
   <member type="way" ref="300945504" role=""/>
+  <member type="way" ref="1383946352" role=""/>
   <member type="way" ref="159833168" role=""/>
   <member type="way" ref="306336255" role=""/>
   <member type="way" ref="217857911" role=""/>
@@ -50346,7 +50356,7 @@
   <tag k="to" v="桜木町駅前"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="12471776" visible="true" version="5" changeset="144360448" timestamp="2023-11-23T09:31:02Z" user="postown" uid="4480756">
+ <relation id="12471776" visible="true" version="6" changeset="165879127" timestamp="2025-05-06T08:06:48Z" user="ntzm" uid="12363857">
   <member type="node" ref="2299274213" role="platform_entry_only"/>
   <member type="node" ref="3088392249" role="platform"/>
   <member type="node" ref="3077685954" role="platform"/>
@@ -50413,6 +50423,7 @@
   <member type="way" ref="257422343" role=""/>
   <member type="way" ref="712611360" role=""/>
   <member type="way" ref="300945504" role=""/>
+  <member type="way" ref="1383946352" role=""/>
   <member type="way" ref="159833168" role=""/>
   <member type="way" ref="306336255" role=""/>
   <member type="way" ref="217857911" role=""/>
