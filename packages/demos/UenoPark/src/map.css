@@ -87,6 +87,14 @@ body,
   stroke-linejoin: round;
 }
 
+.path {
+  fill: none;
+  stroke: khaki;
+  stroke-width: 1.25px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .cycleway {
   fill: none;
   stroke: white;
@@ -122,6 +130,10 @@ body,
   stroke-width: 1.25px;
   stroke-dasharray: 0.5, 0.5;
   stroke-dashoffset: 0.5;
+}
+
+.access {
+  stroke-opacity: 0.25;
 }
 
 .escalator-background {

@@ -26,7 +26,6 @@ svgmapviewer({
   getMapSymbols,
   getMapMarkers,
   renderInfo: RenderInfo,
-  title: 'Ueno Park',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   mapData,
   mapCoord,
