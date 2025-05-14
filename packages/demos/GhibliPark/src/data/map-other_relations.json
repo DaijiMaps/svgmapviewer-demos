@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "map-other_relations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "17923855", "name": null, "type": "restriction", "other_tags": "\"restriction\"=>\"no_left_turn\"", "area": null, "centroid_x": null, "centroid_y": null }, "geometry": { "type": "GeometryCollection", "geometries": [ { "type": "LineString", "coordinates": [ [ 137.08882, 35.1787124 ], [ 137.088814500000012, 35.1786239 ], [ 137.089057700000012, 35.1782987 ], [ 137.089092, 35.1781999 ] ] }, { "type": "Point", "coordinates": [ 137.089092, 35.1781999 ] }, { "type": "LineString", "coordinates": [ [ 137.089092, 35.1781999 ], [ 137.0891857, 35.1782592 ], [ 137.0892427, 35.1783081 ], [ 137.089265899999987, 35.1783727 ], [ 137.0893021, 35.1784192 ], [ 137.089356, 35.1784622 ], [ 137.0897491, 35.1786453 ], [ 137.0900797, 35.1787982 ], [ 137.09014590000001, 35.178822 ], [ 137.090214, 35.178836 ], [ 137.09032160000001, 35.1788456 ], [ 137.091388099999989, 35.1788822 ], [ 137.091384299999987, 35.1788097 ] ] } ] } }
+]
+}

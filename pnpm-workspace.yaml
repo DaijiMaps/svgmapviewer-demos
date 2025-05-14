@@ -4,6 +4,7 @@ packages:
   - packages/demos/EnoshimaJinja
   - packages/demos/Expo2025
   - packages/demos/FushimiInari
+  - packages/demos/GhibliPark
   - packages/demos/GoldenGatePark
   - packages/demos/Gumyoji
   - packages/demos/Hamarikyu

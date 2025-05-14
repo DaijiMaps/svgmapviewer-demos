@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "map-multilinestrings",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "osm_id": "19022390", "name": "どんどこ号", "type": "route", "other_tags": "\"name:en\"=>\"Dondoko-go\",\"route\"=>\"funicular\"", "area": null, "centroid_x": 137.09358685341419, "centroid_y": 35.170051122555684 }, "geometry": { "type": "MultiLineString", "coordinates": [ [ [ 137.09351430000001, 35.1703274 ], [ 137.0935498, 35.1702567 ] ], [ [ 137.093454799999989, 35.170361 ], [ 137.093507100000011, 35.1702771 ], [ 137.093594200000013, 35.1700913 ], [ 137.0936489, 35.1699628 ], [ 137.093660699999987, 35.1698705 ], [ 137.093632899999989, 35.1697357 ] ], [ [ 137.0935938, 35.1697184 ], [ 137.093662200000011, 35.1697162 ] ] ] } }
+]
+}
