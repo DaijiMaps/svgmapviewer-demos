@@ -1,7 +1,8 @@
-import { Like } from '@daijimaps/svgmapviewer'
+import { Like, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
   findProperties,
   getPropertyValue,
+  OsmLineProperties,
   OsmPointProperties,
   OsmPolygonProperties,
 } from '@daijimaps/svgmapviewer/geo'
@@ -12,8 +13,9 @@ export interface Props {
 }
 
 export function RenderInfo(props: Readonly<Props>) {
+  const cfg = svgMapViewerConfig.mapData
   const properties =
-    'address' in props.info.x ? findProperties(props.info.x.address) : null
+    'address' in props.info.x ? findProperties(props.info.x.address, cfg) : null
   if (properties === null) {
     return <p>XXX info not found (osm_id={props.info.x.address}) XXX</p>
   }
@@ -25,7 +27,7 @@ export function RenderInfo(props: Readonly<Props>) {
 function RenderShopInfo(
   props: Readonly<{
     x: ShopInfo
-    properties: OsmPointProperties | OsmPolygonProperties
+    properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
   }>
 ) {
   const website = getPropertyValue(props.properties, 'website')
@@ -57,12 +59,30 @@ function RenderShopInfo(
 function RenderFacilityInfo(
   props: Readonly<{
     x: FacilityInfo
-    properties: OsmPointProperties | OsmPolygonProperties
+    properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
   }>
 ) {
   return (
     <>
-      <p>{props.properties.name ?? props.x.name}</p>
+      <p>{props.x.title}</p>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          margin: '1em',
+        }}
+      >
+        <svg
+          style={{ display: 'block' }}
+          viewBox="-36 -36 72 72"
+          width="3em"
+          height="3em"
+        >
+          <use href="#XToilets" />
+        </svg>
+      </div>
+      <p>{props.x.properties.name}</p>
     </>
   )
 }

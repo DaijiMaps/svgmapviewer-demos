@@ -1,5 +1,11 @@
-import { Like } from '@daijimaps/svgmapviewer'
-import { findProperties, getPropertyValue } from '@daijimaps/svgmapviewer/geo'
+import { Like, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
+import {
+  findProperties,
+  getPropertyValue,
+  OsmLineProperties,
+  OsmPointProperties,
+  OsmPolygonProperties,
+} from '@daijimaps/svgmapviewer/geo'
 import { FacilityInfo, Info, ShopInfo } from './info'
 
 export interface Props {
@@ -7,21 +13,23 @@ export interface Props {
 }
 
 export function RenderInfo(props: Readonly<Props>) {
+  const cfg = svgMapViewerConfig.mapData
   const properties =
-    'address' in props.info.x ? findProperties(props.info.x.address) : null
+    'address' in props.info.x ? findProperties(props.info.x.address, cfg) : null
   if (properties === null) {
     return <p>XXX info not found (osm_id={props.info.x.address}) XXX</p>
   }
-  const props2 = {
-    ...props.info.x,
-    properties,
-  }
   return props.info.x.tag === 'shop'
-    ? RenderShopInfo(props2)
-    : RenderFacilityInfo(props2)
+    ? RenderShopInfo({ x: props.info.x, properties })
+    : RenderFacilityInfo({ x: props.info.x, properties })
 }
 
-function RenderShopInfo(props: Readonly<ShopInfo>) {
+function RenderShopInfo(
+  props: Readonly<{
+    x: ShopInfo
+    properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
+  }>
+) {
   const website = getPropertyValue(props.properties, 'website')
   const osm_id = Number(props.properties.osm_id ?? '')
   const osm_way_id = Number(
@@ -32,7 +40,7 @@ function RenderShopInfo(props: Readonly<ShopInfo>) {
   return (
     <>
       <p>
-        {props.properties.name ?? props.name} {id !== 0 && <Like _id={id} />}
+        {props.properties.name ?? props.x.name} {id !== 0 && <Like _id={id} />}
       </p>
       {website !== null && (
         <p>
@@ -48,10 +56,33 @@ function RenderShopInfo(props: Readonly<ShopInfo>) {
   )
 }
 
-function RenderFacilityInfo(props: Readonly<FacilityInfo>) {
+function RenderFacilityInfo(
+  props: Readonly<{
+    x: FacilityInfo
+    properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
+  }>
+) {
   return (
     <>
-      <p>{props.properties.name ?? props.name}</p>
+      <p>{props.x.title}</p>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          margin: '1em',
+        }}
+      >
+        <svg
+          style={{ display: 'block' }}
+          viewBox="-36 -36 72 72"
+          width="3em"
+          height="3em"
+        >
+          <use href="#XToilets" />
+        </svg>
+      </div>
+      <p>{props.x.properties.name}</p>
     </>
   )
 }
