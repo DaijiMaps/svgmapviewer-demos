@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2557198 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529589 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.5322300" minlon="139.7280900" maxlat="35.5355300" maxlon="139.7323500"/>
  <node id="303555818" visible="true" version="5" changeset="28298875" timestamp="2015-01-21T03:05:14Z" user="futurumspes" uid="651065" lat="35.5354347" lon="139.7264616">
   <tag k="highway" v="traffic_signals"/>

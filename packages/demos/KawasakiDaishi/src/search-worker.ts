@@ -7,7 +7,6 @@ import { Info } from './info'
 const ctx = initAddresses(addressEntries)
 
 onmessage = function (e: Readonly<MessageEvent<{ pgeo: Vec }>>) {
-  const p = e.data.p
   const pgeo = e.data.pgeo
 
   const loc = searchAddress(ctx, pgeo)
