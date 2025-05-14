@@ -4,16 +4,16 @@ import points from './data/map-points.json'
 
 const pointAddresses = () =>
   points.features.flatMap((f) => {
+    const osm_id = f.properties.osm_id
+    if (osm_id === null) {
+      return []
+    }
+    const x = f.geometry.coordinates[0]
+    const y = f.geometry.coordinates[1]
     if (f.properties.name?.match(/./)) {
-      const x = f.geometry.coordinates[0]
-      const y = f.geometry.coordinates[1]
-      const a = `lon=${x},lat=${y}`
-      return [{ a, lonlat: { x, y } }]
+      return [{ a: osm_id, lonlat: { x, y } }]
     } else if (f.properties.other_tags?.match(/"toilets"/)) {
-      const x = f.geometry.coordinates[0]
-      const y = f.geometry.coordinates[1]
-      const a = `lon=${x},lat=${y}`
-      return [{ a, lonlat: { x, y } }]
+      return [{ a: osm_id, lonlat: { x, y } }]
     } else {
       return []
     }
@@ -21,16 +21,18 @@ const pointAddresses = () =>
 
 const centroidAddresses = () =>
   centroids.features.flatMap((f) => {
+    const osm_id = f.properties.osm_id
+    const osm_way_id = f.properties.osm_way_id
+    const id = osm_id ?? osm_way_id
+    if (id === null) {
+      return []
+    }
+    const x = f.geometry.coordinates[0]
+    const y = f.geometry.coordinates[1]
     if (f.properties.name?.match(/./)) {
-      const x = f.geometry.coordinates[0]
-      const y = f.geometry.coordinates[1]
-      const a = `lon=${x},lat=${y}`
-      return [{ a, lonlat: { x, y } }]
+      return [{ a: id, lonlat: { x, y } }]
     } else if (f.properties.other_tags?.match(/"toilets"/)) {
-      const x = f.geometry.coordinates[0]
-      const y = f.geometry.coordinates[1]
-      const a = `lon=${x},lat=${y}`
-      return [{ a, lonlat: { x, y } }]
+      return [{ a: id, lonlat: { x, y } }]
     } else {
       return []
     }

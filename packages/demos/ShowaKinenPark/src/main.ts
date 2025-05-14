@@ -1,9 +1,9 @@
 import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
 import {
   getMapLayers,
+  getMapMarkers,
   getMapObjects,
   getMapSymbols,
-  getMapMarkers,
 } from './map'
 import {
   mapCoord,
