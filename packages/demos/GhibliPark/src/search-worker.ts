@@ -9,8 +9,5 @@ onmessage = function (e: Readonly<MessageEvent<{ pgeo: Vec }>>) {
 
   const loc = searchAddress(ctx, pgeo)
 
-  if (addressEntries === null) {
-    this.postMessage(null)
-  }
   this.postMessage(loc)
 }
