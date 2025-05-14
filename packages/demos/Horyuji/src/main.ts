@@ -1,9 +1,9 @@
 import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
 import {
   getMapLayers,
+  getMapMarkers,
   getMapObjects,
   getMapSymbols,
-  getMapMarkers,
 } from './map'
 import {
   mapCoord,
@@ -26,6 +26,7 @@ svgmapviewer({
   getMapSymbols,
   getMapMarkers,
   renderInfo: RenderInfo,
+  title: 'Horyuji',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   mapData,
   mapCoord,

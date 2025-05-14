@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2557182 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (764184 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.6091000" minlon="135.7320000" maxlat="34.6161000" maxlon="135.7411000"/>
  <node id="287030681" visible="true" version="5" changeset="120657978" timestamp="2022-05-07T08:36:00Z" user="user_15089089" uid="15089089" lat="34.6073989" lon="135.7172993"/>
  <node id="287030687" visible="true" version="3" changeset="35430355" timestamp="2015-11-19T09:56:36Z" user="Chetan_Gowda" uid="2644101" lat="34.6073413" lon="135.7190231"/>
@@ -1338,36 +1338,7 @@
   <tag k="source" v="KSJ2"/>
   <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"/>
  </node>
- <node id="1423070986" visible="true" version="4" changeset="161698843" timestamp="2025-01-24T06:17:39Z" user="pseek" uid="21586509" lat="34.6109710" lon="135.7377410">
-  <tag k="addr:block_number" v="12"/>
-  <tag k="addr:city" v="斑鳩町"/>
-  <tag k="addr:county" v="生駒郡"/>
-  <tag k="addr:housenumber" v="52"/>
-  <tag k="addr:neighbourhood" v="2丁目"/>
-  <tag k="addr:postcode" v="636-0116"/>
-  <tag k="addr:province" v="奈良県"/>
-  <tag k="addr:quarter" v="法隆寺"/>
-  <tag k="amenity" v="post_office"/>
-  <tag k="check_date" v="2023-09-07"/>
-  <tag k="name" v="法隆寺郵便局"/>
-  <tag k="name:es" v="Oficina de Correos de Horyuji"/>
-  <tag k="name:ja" v="法隆寺郵便局"/>
-  <tag k="name:ja-Hira" v="ほうりゅうじ ゆうびんきょく"/>
-  <tag k="name:pt" v="Correio de Horyuji"/>
-  <tag k="note" v="National-Land Numerical Information (Public Facility) 2006, MLIT Japan"/>
-  <tag k="note:ja" v="国土数値情報（公共施設データ）平成19年　国土交通省"/>
-  <tag k="opening_hours" v="Mo-Fr 09:00-17:00"/>
-  <tag k="operator" v="日本郵便"/>
-  <tag k="operator:en" v="Japan Post"/>
-  <tag k="operator:ja" v="日本郵便"/>
-  <tag k="operator:short" v="郵便局"/>
-  <tag k="operator:short:en" v="JP"/>
-  <tag k="operator:short:ja" v="郵便局"/>
-  <tag k="operator:wikidata" v="Q11509260"/>
-  <tag k="phone" v="+81-745-74-2300"/>
-  <tag k="source" v="KSJ2"/>
-  <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"/>
- </node>
+ <node id="1423070986" visible="true" version="5" changeset="166058768" timestamp="2025-05-10T08:27:31Z" user="桜吹雪" uid="19135489" lat="34.6109097" lon="135.7376670"/>
  <node id="1423090696" visible="true" version="1" changeset="9209066" timestamp="2011-09-04T14:38:01Z" user="watao" uid="393606" lat="34.6125420" lon="135.7353370">
   <tag k="amenity" v="police"/>
   <tag k="KSJ2:AdminArea" v="奈良県生駒郡斑鳩町"/>
@@ -9581,7 +9552,6 @@
  <node id="11163292304" visible="true" version="1" changeset="140728563" timestamp="2023-09-02T17:03:30Z" user="ryoro" uid="623097" lat="34.6110129" lon="135.7376647"/>
  <node id="11163292305" visible="true" version="1" changeset="140728563" timestamp="2023-09-02T17:03:30Z" user="ryoro" uid="623097" lat="34.6110154" lon="135.7378289"/>
  <node id="11163292306" visible="true" version="1" changeset="140728563" timestamp="2023-09-02T17:03:30Z" user="ryoro" uid="623097" lat="34.6109122" lon="135.7378313"/>
- <node id="11163292307" visible="true" version="1" changeset="140728563" timestamp="2023-09-02T17:03:30Z" user="ryoro" uid="623097" lat="34.6109097" lon="135.7376670"/>
  <node id="11163292308" visible="true" version="1" changeset="140728563" timestamp="2023-09-02T17:03:30Z" user="ryoro" uid="623097" lat="34.6108815" lon="135.7387052"/>
  <node id="11163292309" visible="true" version="1" changeset="140728563" timestamp="2023-09-02T17:03:30Z" user="ryoro" uid="623097" lat="34.6108752" lon="135.7385813"/>
  <node id="11163292310" visible="true" version="1" changeset="140728563" timestamp="2023-09-02T17:03:30Z" user="ryoro" uid="623097" lat="34.6109088" lon="135.7385789"/>
@@ -10950,12 +10920,7 @@
   <tag k="name" v="法隆寺保育所"/>
   <tag k="name:ja" v="法隆寺保育所"/>
  </node>
- <node id="11173309134" visible="true" version="1" changeset="140919385" timestamp="2023-09-07T03:06:01Z" user="higa4" uid="162590" lat="34.6099881" lon="135.7376537">
-  <tag k="check_date" v="2023-09-07"/>
-  <tag k="name" v="夢聖殿"/>
-  <tag k="name:ja" v="夢聖殿"/>
-  <tag k="shop" v="funeral_directors"/>
- </node>
+ <node id="11173309134" visible="true" version="2" changeset="166058851" timestamp="2025-05-10T08:30:27Z" user="桜吹雪" uid="19135489" lat="34.6099148" lon="135.7381301"/>
  <node id="11176689815" visible="true" version="1" changeset="140989334" timestamp="2023-09-08T14:21:53Z" user="Oos1812" uid="7163247" lat="34.6102173" lon="135.7353934"/>
  <node id="11176689816" visible="true" version="1" changeset="140989334" timestamp="2023-09-08T14:21:53Z" user="Oos1812" uid="7163247" lat="34.6102138" lon="135.7353788"/>
  <node id="11176689817" visible="true" version="1" changeset="140989334" timestamp="2023-09-08T14:21:53Z" user="Oos1812" uid="7163247" lat="34.6102066" lon="135.7353665"/>
@@ -11916,6 +11881,11 @@
  <node id="12285171486" visible="true" version="1" changeset="158292789" timestamp="2024-10-24T11:40:08Z" user="Daiji Maps" uid="10880270" lat="34.6137617" lon="135.7359287"/>
  <node id="12285171487" visible="true" version="1" changeset="158292789" timestamp="2024-10-24T11:40:08Z" user="Daiji Maps" uid="10880270" lat="34.6138109" lon="135.7359211"/>
  <node id="12285171488" visible="true" version="1" changeset="158292789" timestamp="2024-10-24T11:40:08Z" user="Daiji Maps" uid="10880270" lat="34.6139400" lon="135.7368582"/>
+ <node id="12825390334" visible="true" version="1" changeset="166058851" timestamp="2025-05-10T08:30:27Z" user="桜吹雪" uid="19135489" lat="34.6099103" lon="135.7378472"/>
+ <node id="12825390335" visible="true" version="1" changeset="166058851" timestamp="2025-05-10T08:30:27Z" user="桜吹雪" uid="19135489" lat="34.6098794" lon="135.7378008"/>
+ <node id="12825390336" visible="true" version="1" changeset="166058851" timestamp="2025-05-10T08:30:27Z" user="桜吹雪" uid="19135489" lat="34.6098366" lon="135.7378019"/>
+ <node id="12825390337" visible="true" version="1" changeset="166058851" timestamp="2025-05-10T08:30:27Z" user="桜吹雪" uid="19135489" lat="34.6098048" lon="135.7378461"/>
+ <node id="12825390338" visible="true" version="1" changeset="166058851" timestamp="2025-05-10T08:30:27Z" user="桜吹雪" uid="19135489" lat="34.6098084" lon="135.7381323"/>
  <way id="43549739" visible="true" version="2" changeset="92166001" timestamp="2020-10-08T10:03:27Z" user="Yukinobu Koyama" uid="3703864">
   <nd ref="549843927"/>
   <nd ref="549843934"/>
@@ -26355,13 +26325,40 @@
   <nd ref="11163292303"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="1204464580" visible="true" version="1" changeset="140728607" timestamp="2023-09-02T17:04:28Z" user="ryoro" uid="623097">
-  <nd ref="11163292307"/>
+ <way id="1204464580" visible="true" version="2" changeset="166058768" timestamp="2025-05-10T08:27:31Z" user="桜吹雪" uid="19135489">
+  <nd ref="1423070986"/>
   <nd ref="11163292306"/>
   <nd ref="11163292305"/>
   <nd ref="11163292304"/>
-  <nd ref="11163292307"/>
+  <nd ref="1423070986"/>
+  <tag k="addr:block_number" v="12"/>
+  <tag k="addr:city" v="斑鳩町"/>
+  <tag k="addr:county" v="生駒郡"/>
+  <tag k="addr:housenumber" v="52"/>
+  <tag k="addr:neighbourhood" v="法隆寺二丁目"/>
+  <tag k="addr:postcode" v="636-0116"/>
+  <tag k="addr:province" v="奈良県"/>
+  <tag k="amenity" v="post_office"/>
   <tag k="building" v="yes"/>
+  <tag k="check_date" v="2023-09-07"/>
+  <tag k="name" v="法隆寺郵便局"/>
+  <tag k="name:es" v="Oficina de Correos de Horyuji"/>
+  <tag k="name:ja" v="法隆寺郵便局"/>
+  <tag k="name:ja-Hira" v="ほうりゅうじゆうびんきょく"/>
+  <tag k="name:pt" v="Correio de Horyuji"/>
+  <tag k="note" v="National-Land Numerical Information (Public Facility) 2006, MLIT Japan"/>
+  <tag k="note:ja" v="国土数値情報（公共施設データ）平成19年　国土交通省"/>
+  <tag k="opening_hours" v="Mo-Fr 09:00-17:00"/>
+  <tag k="operator" v="日本郵便"/>
+  <tag k="operator:en" v="Japan Post"/>
+  <tag k="operator:ja" v="日本郵便"/>
+  <tag k="operator:short" v="郵便局"/>
+  <tag k="operator:short:en" v="JP"/>
+  <tag k="operator:short:ja" v="郵便局"/>
+  <tag k="operator:wikidata" v="Q11509260"/>
+  <tag k="phone" v="+81-745-74-2300"/>
+  <tag k="source" v="KSJ2"/>
+  <tag k="source_ref" v="http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"/>
  </way>
  <way id="1204464581" visible="true" version="1" changeset="140728607" timestamp="2023-09-02T17:04:28Z" user="ryoro" uid="623097">
   <nd ref="11163292323"/>
@@ -29773,6 +29770,27 @@
   <tag k="bridge" v="yes"/>
   <tag k="highway" v="footway"/>
   <tag k="layer" v="1"/>
+ </way>
+ <way id="1385288781" visible="true" version="1" changeset="166058851" timestamp="2025-05-10T08:30:27Z" user="桜吹雪" uid="19135489">
+  <nd ref="11173309134"/>
+  <nd ref="12825390334"/>
+  <nd ref="12825390335"/>
+  <nd ref="12825390336"/>
+  <nd ref="12825390337"/>
+  <nd ref="12825390338"/>
+  <nd ref="11173309134"/>
+  <tag k="addr:block_number" v="12"/>
+  <tag k="addr:city" v="斑鳩町"/>
+  <tag k="addr:county" v="生駒郡"/>
+  <tag k="addr:housenumber" v="40"/>
+  <tag k="addr:neighbourhood" v="法隆寺二丁目"/>
+  <tag k="addr:postcode" v="636-0116"/>
+  <tag k="addr:province" v="奈良県"/>
+  <tag k="building" v="yes"/>
+  <tag k="check_date" v="2023-09-07"/>
+  <tag k="name" v="夢聖殿"/>
+  <tag k="name:ja" v="夢聖殿"/>
+  <tag k="shop" v="funeral_directors"/>
  </way>
  <relation id="1247317" visible="true" version="224" changeset="162105569" timestamp="2025-02-03T23:13:41Z" user="taketaketake" uid="4757277">
   <member type="way" ref="26404996" role="forward"/>
