@@ -1,25 +1,25 @@
-import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
+import { AddressEntries } from '@daijimaps/svgmapviewer/search'
 import centroids from './data/map-centroids.json'
 import points from './data/map-points.json'
 
-const pointAddresses = () =>
+const pointAddresses = (): AddressEntries =>
   points.features.flatMap((f) => {
-    const osm_id = f.properties.osm_id
-    if (osm_id === null) {
+    const id = f.properties.osm_id
+    if (id === null) {
       return []
     }
     const x = f.geometry.coordinates[0]
     const y = f.geometry.coordinates[1]
     if (f.properties.name?.match(/./)) {
-      return [{ a: osm_id, lonlat: { x, y } }]
+      return [{ a: id, lonlat: { x, y } }]
     } else if (f.properties.other_tags?.match(/"toilets"/)) {
-      return [{ a: osm_id, lonlat: { x, y } }]
+      return [{ a: id, lonlat: { x, y } }]
     } else {
       return []
     }
   })
 
-const centroidAddresses = () =>
+const centroidAddresses = (): AddressEntries =>
   centroids.features.flatMap((f) => {
     const osm_id = f.properties.osm_id
     const osm_way_id = f.properties.osm_way_id
@@ -38,7 +38,7 @@ const centroidAddresses = () =>
     }
   })
 
-export const addressEntries: { a: string; lonlat: Vec }[] = [
+export const addressEntries: AddressEntries = [
   ...pointAddresses(),
   ...centroidAddresses(),
 ]
