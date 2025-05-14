@@ -1,13 +1,20 @@
 html,
-body {
-  background-color: lightblue;
-}
-
+body,
+:root,
 .content.svg {
   background-color: lightblue;
 }
 
+.container {
+  contain: paint;
+}
+
 .map {
+}
+
+.island {
+  fill: darkgray;
+  fill-opacity: 1;
 }
 
 .area {
@@ -19,6 +26,11 @@ body {
   fill: lightgray;
 }
 
+.roof {
+  fill: lightgray;
+  fill-opacity: 0.5;
+}
+
 .pedestrian-area {
   fill: white;
   stroke: white;
@@ -26,7 +38,7 @@ body {
 }
 
 .water {
-  fill: #aaeeff;
+  fill: lightblue;
 }
 
 .ditch {
@@ -45,22 +57,31 @@ body {
   stroke-linejoin: round;
 }
 
-.forest {
+.river {
+  fill: none;
+  stroke: #aaeeff;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.forest,
+.garden {
   fill: darkgreen;
-  fill-opacity: 0.25;
+  fill-opacity: 0.1;
 }
 
 .road {
   fill: none;
-  stroke: whitesmoke;
-  stroke-width: 4px;
+  stroke: white;
+  stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .service {
   fill: none;
-  stroke: whitesmoke;
+  stroke: white;
   stroke-width: 4px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -69,7 +90,7 @@ body {
 .cycleway {
   fill: none;
   stroke: white;
-  stroke-width: 2px;
+  stroke-width: 3px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -77,7 +98,7 @@ body {
 .footway {
   fill: none;
   stroke: white;
-  stroke-width: 1px;
+  stroke-width: 1.25px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -85,7 +106,7 @@ body {
 .footway-bridge {
   fill: none;
   stroke: black;
-  stroke-width: 4px;
+  stroke-width: 2.5px;
 }
 
 .steps > .bg {
@@ -93,28 +114,39 @@ body {
   stroke: white;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1px;
+  stroke-width: 1.25px;
 }
 .steps > .fg {
   fill: none;
-  stroke: gainsboro;
-  stroke-width: 1px;
+  stroke: lightgrey;
+  stroke-width: 1.25px;
   stroke-dasharray: 0.5, 0.5;
+  stroke-dashoffset: 0.5;
 }
 
-.hedge {
+.escalator-background {
   fill: none;
-  stroke: green;
-  stroke-opacity: 0.5;
-  stroke-width: 1px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  stroke: black;
+  stroke-width: 1.75px;
+}
+.escalator-foreground {
+  fill: none;
+  stroke: white;
+  stroke-width: 1.25px;
+  stroke-dasharray: 0.5, 0.5;
+  stroke-dashoffset: 0.5;
 }
 
 .wall {
   fill: none;
   stroke: black;
   stroke-width: 0.5px;
+}
+
+.fence {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.25px;
 }
 
 .retaining-wall {
