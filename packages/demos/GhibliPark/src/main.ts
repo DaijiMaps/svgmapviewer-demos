@@ -14,7 +14,7 @@ import {
   mapViewBox,
 } from './map-data'
 import { RenderInfo } from './render'
-import { workerSearchStart } from './search'
+import { workerSearchInit, workerSearchStart } from './search'
 
 svgmapviewer({
   root: 'root',
@@ -38,3 +38,5 @@ svgmapviewer({
 svgMapViewerConfig.searchCbs.add(workerSearchStart)
 
 document.title = `svgmapviewer @ ${window.location.host}`
+
+workerSearchInit()

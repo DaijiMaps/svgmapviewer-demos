@@ -2,22 +2,29 @@ import { svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import { findFeature } from '@daijimaps/svgmapviewer/geo'
 import { SearchAddressRes } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
+import { addressEntries } from './address-data'
 import { Info } from './info'
+import { SearchWorkerRes } from './search-worker/main'
 import SearchWorker from './search-worker/main?worker'
 
 const worker = new SearchWorker()
 
-worker.onmessage = (e: Readonly<MessageEvent<null | SearchAddressRes>>) => {
-  const res = e.data
-  if (res === null) {
+worker.onmessage = (e: Readonly<MessageEvent<null | SearchWorkerRes>>) => {
+  const ev = e.data
+  if (ev === null) {
     return
   }
-  const info = getInfo(res)
-  if (info === null) {
-    return
+  if (ev.type === 'INIT.DONE') {
+    // XXX
+  } else if (ev.type === 'SEARCH.DONE') {
+    const res = ev.res
+    const info = getInfo(res)
+    if (info === null) {
+      return
+    }
+    const psvg = svgMapViewerConfig.mapCoord.fromGeo(res.lonlat)
+    svgMapViewerConfig.searchDoneCbs.forEach((cb) => cb({ psvg, info }))
   }
-  const psvg = svgMapViewerConfig.mapCoord.fromGeo(res.lonlat)
-  svgMapViewerConfig.searchDoneCbs.forEach((cb) => cb({ psvg, info }))
 }
 
 export function getInfo(res: SearchAddressRes): null | Info {
@@ -67,7 +74,12 @@ worker.onmessageerror = (ev) => {
   console.log('messageerror', ev)
 }
 
+export function workerSearchInit() {
+  const entries = addressEntries()
+  worker.postMessage({ type: 'INIT', entries })
+}
+
 export function workerSearchStart(psvg: Vec) {
   const pgeo = svgMapViewerConfig.mapCoord.toGeo(psvg)
-  worker.postMessage({ pgeo })
+  worker.postMessage({ type: 'SEARCH', pgeo })
 }

@@ -1,13 +1,39 @@
-import { initAddresses, searchAddress } from '@daijimaps/svgmapviewer/search'
+import {
+  AddressEntries,
+  initAddresses,
+  searchAddress,
+  SearchAddressRes,
+  SearchContext,
+} from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
-import { addressEntries } from './data'
 
-const ctx = initAddresses(addressEntries)
+let ctx: null | SearchContext = null
 
-onmessage = function (e: Readonly<MessageEvent<{ pgeo: Vec }>>) {
-  const pgeo = e.data.pgeo
+export type SearchWorkerReq =
+  | { type: 'INIT'; entries: AddressEntries }
+  | { type: 'SEARCH'; pgeo: Vec }
+export type SearchWorkerRes =
+  | { type: 'INIT.DONE' }
+  | { type: 'SEARCH.DONE'; res: SearchAddressRes }
 
-  const res = searchAddress(ctx, pgeo)
+onmessage = function (e: Readonly<MessageEvent<SearchWorkerReq>>) {
+  if (e.data.type === 'INIT') {
+    ctx = initAddresses(e.data.entries)
+    this.postMessage({
+      type: 'INIT.DONE',
+    })
+  } else if (e.data.type === 'SEARCH') {
+    if (ctx === null) {
+      return
+    }
 
-  this.postMessage(res)
+    const pgeo = e.data.pgeo
+
+    const res = searchAddress(ctx, pgeo)
+
+    this.postMessage({
+      type: 'SEARCH.DONE',
+      res,
+    })
+  }
 }
