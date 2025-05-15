@@ -1,4 +1,9 @@
-import { AddressEntries } from '@daijimaps/svgmapviewer/search'
+import { findFeature } from '@daijimaps/svgmapviewer/geo'
+import {
+  AddressEntries,
+  SearchAddressRes,
+} from '@daijimaps/svgmapviewer/search'
+import { Info } from './info'
 import { mapData } from './map-data'
 
 const pointAddresses = (): AddressEntries =>
@@ -41,3 +46,42 @@ export const addressEntries = (): AddressEntries => [
   ...pointAddresses(),
   ...centroidAddresses(),
 ]
+
+export function getAddressInfo(res: SearchAddressRes): null | Info {
+  const feature = findFeature(res?.address, mapData)
+  if (feature === null) {
+    return null
+  }
+  const properties = feature.properties
+  let info: null | Info = null
+  if (properties?.other_tags?.match(/"toilets"/)) {
+    info = {
+      title: 'toilets',
+      x: {
+        tag: 'facility',
+        title: 'toilets',
+        address: res.address,
+        properties,
+      },
+    }
+  } else if (
+    'highway' in properties &&
+    properties?.highway?.match(/^bus_stop$/)
+  ) {
+    info = {
+      title: 'bus_stop',
+      x: {
+        tag: 'facility',
+        title: 'bus_stop',
+        address: res.address,
+        properties,
+      },
+    }
+  } else {
+    info = {
+      title: 'shop',
+      x: { tag: 'shop', address: res.address, properties },
+    }
+  }
+  return info
+}
