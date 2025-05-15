@@ -1,5 +1,5 @@
 import { svgMapViewerConfig } from '@daijimaps/svgmapviewer'
-import { findProperties } from '@daijimaps/svgmapviewer/geo'
+import { findFeature } from '@daijimaps/svgmapviewer/geo'
 import { SearchAddressRes } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
 import { Info } from './info'
@@ -8,34 +8,55 @@ import SearchWorker from './search-worker?worker'
 const worker = new SearchWorker()
 
 worker.onmessage = (e: Readonly<MessageEvent<null | SearchAddressRes>>) => {
-  const data = e.data
-  if (data === null) {
+  const res = e.data
+  if (res === null) {
     return
   }
-  const psvg = svgMapViewerConfig.mapCoord.fromGeo(data.lonlat)
-  const properties = findProperties(data?.address, svgMapViewerConfig.mapData)
-  if (properties) {
-    let info: null | Info = null
-    if (properties?.other_tags?.match(/"toilets"/)) {
-      info = {
+  const info = getInfo(res)
+  if (info === null) {
+    return
+  }
+  const psvg = svgMapViewerConfig.mapCoord.fromGeo(res.lonlat)
+  svgMapViewerConfig.searchDoneCbs.forEach((cb) => cb({ psvg, info }))
+}
+
+export function getInfo(res: SearchAddressRes): null | Info {
+  const feature = findFeature(res?.address, svgMapViewerConfig.mapData)
+  if (feature === null) {
+    return null
+  }
+  const properties = feature.properties
+  let info: null | Info = null
+  if (properties?.other_tags?.match(/"toilets"/)) {
+    info = {
+      title: 'toilets',
+      x: {
+        tag: 'facility',
         title: 'toilets',
-        x: {
-          tag: 'facility',
-          title: 'toilets',
-          address: data.address,
-          properties,
-        },
-      }
-    } else {
-      info = {
-        title: 'shop',
-        x: { tag: 'shop', address: data.address, properties },
-      }
+        address: res.address,
+        properties,
+      },
     }
-    if (info !== null) {
-      svgMapViewerConfig.searchDoneCbs.forEach((cb) => cb({ psvg, info }))
+  } else if (
+    'highway' in properties &&
+    properties?.highway?.match(/^bus_stop$/)
+  ) {
+    info = {
+      title: 'bus_stop',
+      x: {
+        tag: 'facility',
+        title: 'bus_stop',
+        address: res.address,
+        properties,
+      },
+    }
+  } else {
+    info = {
+      title: 'shop',
+      x: { tag: 'shop', address: res.address, properties },
     }
   }
+  return info
 }
 
 worker.onerror = (ev) => {

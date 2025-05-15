@@ -79,7 +79,8 @@ function RenderFacilityInfo(
           width="3em"
           height="3em"
         >
-          <use href="#XToilets" />
+          {props.x.title === 'bus_stop' && <use href="#XBus" />}
+          {props.x.title === 'toilets' && <use href="#XToilets" />}
         </svg>
       </div>
       <p>{props.x.properties.name}</p>

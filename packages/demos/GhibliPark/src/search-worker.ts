@@ -7,7 +7,7 @@ const ctx = initAddresses(addressEntries)
 onmessage = function (e: Readonly<MessageEvent<{ pgeo: Vec }>>) {
   const pgeo = e.data.pgeo
 
-  const loc = searchAddress(ctx, pgeo)
+  const res = searchAddress(ctx, pgeo)
 
-  this.postMessage(loc)
+  this.postMessage(res)
 }

@@ -12,7 +12,7 @@ const pointAddresses = (): AddressEntries =>
     const y = f.geometry.coordinates[1]
     if (f.properties.name?.match(/./)) {
       return [{ a: id, lonlat: { x, y } }]
-    } else if (f.properties.other_tags?.match(/"toilets"/)) {
+    } else if (f.properties.other_tags?.match(/("bus_stop"|"toilets")/)) {
       return [{ a: id, lonlat: { x, y } }]
     } else {
       return []
@@ -31,7 +31,7 @@ const centroidAddresses = (): AddressEntries =>
     const y = f.geometry.coordinates[1]
     if (f.properties.name?.match(/./)) {
       return [{ a: id, lonlat: { x, y } }]
-    } else if (f.properties.other_tags?.match(/"toilets"/)) {
+    } else if (f.properties.other_tags?.match(/("bus_stop"|"toilets")/)) {
       return [{ a: id, lonlat: { x, y } }]
     } else {
       return []
