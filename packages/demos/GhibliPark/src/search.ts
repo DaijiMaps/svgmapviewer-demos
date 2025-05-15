@@ -1,8 +1,8 @@
 import { svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
 import { addressEntries, getAddressInfo } from './address-data'
-import { SearchWorkerRes } from './search-worker/main'
-import SearchWorker from './search-worker/main?worker'
+import { SearchWorkerRes } from './search-worker'
+import SearchWorker from './search-worker?worker'
 
 const worker = new SearchWorker()
 
