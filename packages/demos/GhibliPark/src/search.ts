@@ -3,7 +3,7 @@ import { findFeature } from '@daijimaps/svgmapviewer/geo'
 import { SearchAddressRes } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
 import { Info } from './info'
-import SearchWorker from './search-worker?worker'
+import SearchWorker from './search-worker/main?worker'
 
 const worker = new SearchWorker()
 

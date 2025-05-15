@@ -1,6 +1,6 @@
 import { initAddresses, searchAddress } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
-import { addressEntries } from './address-data'
+import { addressEntries } from './data'
 
 const ctx = initAddresses(addressEntries)
 

@@ -1,6 +1,6 @@
 import { AddressEntries } from '@daijimaps/svgmapviewer/search'
-import centroids from './data/map-centroids.json'
-import points from './data/map-points.json'
+import centroids from '../data/map-centroids.json'
+import points from '../data/map-points.json'
 
 const pointAddresses = (): AddressEntries =>
   points.features.flatMap((f) => {
