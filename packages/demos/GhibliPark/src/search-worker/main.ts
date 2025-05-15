@@ -26,11 +26,11 @@ onmessage = function (e: Readonly<MessageEvent<SearchWorkerReq>>) {
     if (ctx === null) {
       return
     }
-
     const pgeo = e.data.pgeo
-
     const res = searchAddress(ctx, pgeo)
-
+    if (res === null) {
+      return
+    }
     this.postMessage({
       type: 'SEARCH.DONE',
       res,

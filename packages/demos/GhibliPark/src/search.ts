@@ -6,11 +6,8 @@ import SearchWorker from './search-worker/main?worker'
 
 const worker = new SearchWorker()
 
-worker.onmessage = (e: Readonly<MessageEvent<null | SearchWorkerRes>>) => {
+worker.onmessage = (e: Readonly<MessageEvent<SearchWorkerRes>>) => {
   const ev = e.data
-  if (ev === null) {
-    return
-  }
   if (ev.type === 'INIT.DONE') {
     // XXX
   } else if (ev.type === 'SEARCH.DONE') {
