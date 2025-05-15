@@ -1,24 +1,28 @@
 import { Info } from '@daijimaps/svgmapviewer'
+import {
+  OsmLineProperties,
+  OsmPointProperties,
+  OsmPolygonProperties,
+} from '@daijimaps/svgmapviewer/geo'
 
 export interface ShopInfo {
   tag: 'shop'
+  properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
+  title?: string
   name?: string
   address?: string
-  descrs?: string[]
+  website?: string
 }
 
 export interface FacilityInfo {
   tag: 'facility'
+  properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
+  title?: string
   name?: string
   address?: string
 }
 
 export type XInfo = ShopInfo | FacilityInfo
-
-//export type InfosJson = Record<string, Required<Pick<XInfo, 'name'>>>
-export type InfosJson = Record<string, Partial<XInfo>>
-export type ShopInfosJson = Record<string, Partial<ShopInfo>>
-export type FacilityInfosJson = Record<string, Partial<FacilityInfo>>
 
 declare module '@daijimaps/svgmapviewer' {
   interface Info {
