@@ -1,24 +1,39 @@
-import { initAddresses, searchAddress } from '@daijimaps/svgmapviewer/search'
+import {
+  AddressEntries,
+  initAddresses,
+  searchAddress,
+  SearchAddressRes,
+  SearchContext,
+} from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
-import { addressEntries } from './address-data'
-import { searchInfo } from './data'
-import { Info } from './info'
 
-const ctx = initAddresses(addressEntries)
+let ctx: null | SearchContext = null
 
-onmessage = function (e: Readonly<MessageEvent<{ pgeo: Vec }>>) {
-  const p = e.data.p
-  const pgeo = e.data.pgeo
+export type SearchWorkerReq =
+  | { type: 'INIT'; entries: AddressEntries }
+  | { type: 'SEARCH'; pgeo: Vec }
+export type SearchWorkerRes =
+  | { type: 'INIT.DONE' }
+  | { type: 'SEARCH.DONE'; res: SearchAddressRes }
 
-  const loc = searchAddress(ctx, pgeo)
-
-  const info = loc === null ? null : searchInfo(loc.address, loc.lonlat)
-
-  const res: null | { pgeo: Vec; info: Info } =
-    loc === null || info === null ? null : { pgeo: loc.lonlat, info }
-
-  if (addressEntries === null) {
-    this.postMessage(null)
+onmessage = function (e: Readonly<MessageEvent<SearchWorkerReq>>) {
+  if (e.data.type === 'INIT') {
+    ctx = initAddresses(e.data.entries)
+    this.postMessage({
+      type: 'INIT.DONE',
+    })
+  } else if (e.data.type === 'SEARCH') {
+    if (ctx === null) {
+      return
+    }
+    const pgeo = e.data.pgeo
+    const res = searchAddress(ctx, pgeo)
+    if (res === null) {
+      return
+    }
+    this.postMessage({
+      type: 'SEARCH.DONE',
+      res,
+    })
   }
-  this.postMessage(res)
 }

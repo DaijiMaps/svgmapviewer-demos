@@ -1,9 +1,9 @@
 import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
 import {
   getMapLayers,
+  getMapMarkers,
   getMapObjects,
   getMapSymbols,
-  getMapMarkers,
 } from './map'
 import {
   mapCoord,
@@ -14,7 +14,7 @@ import {
   mapViewBox,
 } from './map-data'
 import { RenderInfo } from './render'
-import { workerSearchStart } from './search'
+import { workerSearchInit, workerSearchStart } from './search'
 
 svgmapviewer({
   root: 'root',
@@ -26,6 +26,7 @@ svgmapviewer({
   getMapSymbols,
   getMapMarkers,
   renderInfo: RenderInfo,
+  title: 'Central Park',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   mapData,
   mapCoord,
@@ -37,3 +38,5 @@ svgmapviewer({
 svgMapViewerConfig.searchCbs.add(workerSearchStart)
 
 document.title = `svgmapviewer @ ${window.location.host}`
+
+workerSearchInit()
