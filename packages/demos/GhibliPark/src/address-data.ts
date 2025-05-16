@@ -1,11 +1,15 @@
-import { findFeature, OsmPointLikeFeature } from '@daijimaps/svgmapviewer/geo'
+import {
+  findFeature,
+  getOsmId,
+  OsmPointLikeFeature,
+} from '@daijimaps/svgmapviewer/geo'
 import {
   AddressEntries,
   AddressEntry,
   SearchAddressRes,
 } from '@daijimaps/svgmapviewer/search'
+import { mapData } from './data'
 import { Info } from './info'
-import { mapData } from './map-data'
 
 const pointAddresses = (): AddressEntries =>
   mapData.points.features.flatMap((f) => {
@@ -26,13 +30,7 @@ export const addressEntries = (): AddressEntries => [
 
 function filterFeature(f: OsmPointLikeFeature): null | AddressEntry {
   const { properties, geometry } = f
-  const id =
-    'osm_id' in properties && typeof properties['osm_id'] === 'string'
-      ? properties['osm_id']
-      : 'osm_way_id' in properties &&
-          typeof properties['osm_way_id'] === 'string'
-        ? properties['osm_way_id']
-        : null
+  const id = getOsmId(properties)
   if (id === null) {
     return null
   }
@@ -40,9 +38,10 @@ function filterFeature(f: OsmPointLikeFeature): null | AddressEntry {
     return null
   }
   const [x, y] = geometry.coordinates
-  if (properties.name?.match(/./)) {
-    return { a: id, lonlat: { x, y } }
-  } else if (properties.other_tags?.match(/("bus_stop"|"toilets")/)) {
+  if (
+    properties.name?.match(/./) ||
+    properties.other_tags?.match(/("bus_stop"|"toilets")/)
+  ) {
     return { a: id, lonlat: { x, y } }
   }
   return null

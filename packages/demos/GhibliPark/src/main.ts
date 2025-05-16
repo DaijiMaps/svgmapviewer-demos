@@ -1,18 +1,10 @@
 import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
-import {
-  getMapLayers,
-  getMapMarkers,
-  getMapObjects,
-  getMapSymbols,
-} from './map'
-import {
-  mapCoord,
-  mapData,
-  mapHtmlStyle,
-  mapNames,
-  mapSymbols,
-  mapViewBox,
-} from './map-data'
+import { mapCoord, mapData, mapViewBox } from './data'
+import { getMapLayers } from './map-layers'
+import { getMapMarkers } from './map-markers'
+import { mapHtmlStyle, mapNames, mapSymbols } from './map-names'
+import { getMapObjects } from './map-objects'
+import { getMapSymbols } from './map-symbols'
 import { RenderInfo } from './render'
 import { workerSearchInit, workerSearchStart } from './search'
 
