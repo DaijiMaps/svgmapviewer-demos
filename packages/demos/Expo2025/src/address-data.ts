@@ -1,44 +1,87 @@
-import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
-import centroids from './data/map-centroids.json'
-import points from './data/map-points.json'
+import {
+  findFeature,
+  getOsmId,
+  OsmPointLikeFeature,
+} from '@daijimaps/svgmapviewer/geo'
+import {
+  AddressEntries,
+  AddressEntry,
+  SearchAddressRes,
+} from '@daijimaps/svgmapviewer/search'
+import { mapData } from './data'
+import { Info } from './info'
 
-const pointAddresses = () =>
-  points.features.flatMap((f) => {
-    const osm_id = f.properties.osm_id
-    if (osm_id === null) {
-      return []
-    }
-    const x = f.geometry.coordinates[0]
-    const y = f.geometry.coordinates[1]
-    if (f.properties.name?.match(/./)) {
-      return [{ a: osm_id, lonlat: { x, y } }]
-    } else if (f.properties.other_tags?.match(/"toilets"/)) {
-      return [{ a: osm_id, lonlat: { x, y } }]
-    } else {
-      return []
-    }
+const pointAddresses = (): AddressEntries =>
+  mapData.points.features.flatMap((f) => {
+    const e = filterFeature(f)
+    return e === null ? [] : [e]
   })
 
-const centroidAddresses = () =>
-  centroids.features.flatMap((f) => {
-    const osm_id = f.properties.osm_id
-    const osm_way_id = f.properties.osm_way_id
-    const id = osm_id ?? osm_way_id
-    if (id === null) {
-      return []
-    }
-    const x = f.geometry.coordinates[0]
-    const y = f.geometry.coordinates[1]
-    if (f.properties.name?.match(/./)) {
-      return [{ a: id, lonlat: { x, y } }]
-    } else if (f.properties.other_tags?.match(/"toilets"/)) {
-      return [{ a: id, lonlat: { x, y } }]
-    } else {
-      return []
-    }
+const centroidAddresses = (): AddressEntries =>
+  mapData.centroids.features.flatMap((f) => {
+    const e = filterFeature(f)
+    return e === null ? [] : [e]
   })
 
-export const addressEntries: { a: string; lonlat: Vec }[] = [
+export const addressEntries = (): AddressEntries => [
   ...pointAddresses(),
   ...centroidAddresses(),
 ]
+
+function filterFeature(f: OsmPointLikeFeature): null | AddressEntry {
+  const { properties, geometry } = f
+  const id = getOsmId(properties)
+  if (id === null) {
+    return null
+  }
+  if (geometry.coordinates.length != 2) {
+    return null
+  }
+  const [x, y] = geometry.coordinates
+  if (
+    properties.name?.match(/./) ||
+    properties.other_tags?.match(/("bus_stop"|"toilets")/)
+  ) {
+    return { a: id, lonlat: { x, y } }
+  }
+  return null
+}
+
+export function getAddressInfo(res: SearchAddressRes): null | Info {
+  const feature = findFeature(res?.address, mapData)
+  if (feature === null) {
+    return null
+  }
+  const properties = feature.properties
+  let info: null | Info = null
+  if (properties?.other_tags?.match(/"toilets"/)) {
+    info = {
+      title: 'toilets',
+      x: {
+        tag: 'facility',
+        title: 'toilets',
+        address: res.address,
+        properties,
+      },
+    }
+  } else if (
+    'highway' in properties &&
+    properties?.highway?.match(/^bus_stop$/)
+  ) {
+    info = {
+      title: 'bus_stop',
+      x: {
+        tag: 'facility',
+        title: 'bus_stop',
+        address: res.address,
+        properties,
+      },
+    }
+  } else {
+    info = {
+      title: 'shop',
+      x: { tag: 'shop', address: res.address, properties },
+    }
+  }
+  return info
+}

@@ -59,10 +59,10 @@ const pointNames: POI[] = mapData.points.features.flatMap((f) => {
   const id = Number(f.properties.osm_id ?? '')
   const name = filterName(f)
   const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-  const area = 100 // XXX
+  const area = undefined
   return name === null
     ? []
-    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 1, area }]
+    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 0, area }]
 })
 
 const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
@@ -79,7 +79,7 @@ const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
       : undefined
   return name === null
     ? []
-    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 10, area }]
+    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 0, area }]
 })
 
 export const mapNames: POI[] = [...pointNames, ...centroidNames]

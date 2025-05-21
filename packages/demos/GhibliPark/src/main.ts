@@ -1,4 +1,8 @@
-import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
+import {
+  configActor,
+  svgMapViewerConfig,
+  svgmapviewer,
+} from '@daijimaps/svgmapviewer'
 import { mapCoord, mapData, mapViewBox } from './data'
 import { getMapLayers } from './map-layers'
 import { getMapMarkers } from './map-markers'
@@ -27,6 +31,8 @@ svgmapviewer({
   mapNames,
 })
 
+configActor.start()
+configActor.send({ type: 'ADD.CB', searchCb: workerSearchStart })
 svgMapViewerConfig.searchCbs.add(workerSearchStart)
 
 document.title = `svgmapviewer @ ${window.location.host}`

@@ -1,20 +1,12 @@
-import { svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
-import {
-  getMapLayers,
-  getMapMarkers,
-  getMapObjects,
-  getMapSymbols,
-} from './map'
-import {
-  mapCoord,
-  mapData,
-  mapHtmlStyle,
-  mapNames,
-  mapSymbols,
-  mapViewBox,
-} from './map-data'
+import { configActor, svgMapViewerConfig, svgmapviewer } from '@daijimaps/svgmapviewer'
+import { mapCoord, mapData, mapViewBox } from './data'
+import { getMapLayers } from './map-layers'
+import { getMapMarkers } from './map-markers'
+import { mapHtmlStyle, mapNames, mapSymbols } from './map-names'
+import { getMapObjects } from './map-objects'
+import { getMapSymbols } from './map-symbols'
 import { RenderInfo } from './render'
-import { workerSearchStart } from './search'
+import { workerSearchInit, workerSearchStart } from './search'
 
 svgmapviewer({
   root: 'root',
@@ -35,6 +27,9 @@ svgmapviewer({
   mapNames,
 })
 
-svgMapViewerConfig.searchCbs.add(workerSearchStart)
+configActor.start()
+configActor.send({ type: 'ADD.CB', searchCb: workerSearchStart })
 
 document.title = `svgmapviewer @ ${window.location.host}`
+
+workerSearchInit()
