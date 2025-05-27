@@ -1,5 +1,6 @@
 import { configSend, svgmapviewer } from '@daijimaps/svgmapviewer'
 import { mapCoord, mapData, mapViewBox } from './data'
+import './index.css' // XXX
 import { getMapLayers } from './map-layers'
 import { getMapMarkers } from './map-markers'
 import { mapHtmlStyle, mapNames, mapSymbols } from './map-names'
