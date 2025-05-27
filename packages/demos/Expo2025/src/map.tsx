@@ -16,10 +16,8 @@ import {
   vendingMachinePath,
   wasteBasketPath,
 } from '@daijimaps/svgmapviewer/carto-objects'
-import { MultiPolygon, PointGeoJSON } from '@daijimaps/svgmapviewer/geo'
-import { V } from '@daijimaps/svgmapviewer/tuple'
+import { MultiPolygon } from '@daijimaps/svgmapviewer/geo'
 import internals from './data/internals.json'
-import { conv } from './map-data'
 import './map.css'
 
 export const getMapLayers: () => MapLayer[] = () => [

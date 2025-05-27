@@ -1,4 +1,4 @@
-import { configActor, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
+import { notifySearchDone, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
 import { addressEntries, getAddressInfo } from './address-data'
 import { SearchWorkerRes } from './search-worker'
@@ -17,9 +17,7 @@ worker.onmessage = (e: Readonly<MessageEvent<SearchWorkerRes>>) => {
       return
     }
     const psvg = svgMapViewerConfig.mapCoord.fromGeo(res.lonlat)
-    configActor
-      .getSnapshot()
-      .context.searchDoneCbs.forEach((cb) => cb({ psvg, info }))
+    notifySearchDone(psvg, info)
   }
 }
 
