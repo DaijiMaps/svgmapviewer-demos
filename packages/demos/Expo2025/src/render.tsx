@@ -40,16 +40,16 @@ function RenderShopInfo(
   return (
     <>
       <p>
-        {props.properties.name ?? props.x.name} {id !== 0 && <Like _id={id} />}
+        {props.properties.name ?? props.x.name}
+        {id !== 0 && <Like _id={id} />}
       </p>
-      {website !== null && (
-        <p>
-          website:{' '}
+      <p>
+        {website !== null && (
           <a target="_blank" href={website}>
-            {website}
+            🌐
           </a>
-        </p>
-      )}
+        )}
+      </p>
       {osm_id !== 0 && <p>osm_id: {osm_id}</p>}
       {osm_way_id !== 0 && <p>osm_way_id: {osm_way_id}</p>}
     </>
