@@ -1,4 +1,5 @@
 import { configSend, svgmapviewer } from '@daijimaps/svgmapviewer'
+import { addressEntries } from './address-data'
 import { mapCoord, mapData, mapViewBox } from './data'
 import './index.css' // XXX
 import { getMapLayers } from './map-layers'
@@ -32,4 +33,4 @@ configSend({ type: 'ADD.CB', searchCb: workerSearchStart })
 
 document.title = `svgmapviewer @ ${window.location.host}`
 
-workerSearchInit()
+workerSearchInit(addressEntries())

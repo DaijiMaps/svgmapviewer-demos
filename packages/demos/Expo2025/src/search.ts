@@ -1,6 +1,10 @@
 import { notifySearchDone, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
+import {
+  AddressEntries,
+  SearchAddressRes,
+} from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
-import { addressEntries, getAddressInfo } from './address-data'
+import { getAddressInfo } from './address-data'
 import { SearchWorkerRes } from './search-worker'
 import SearchWorker from './search-worker?worker'
 
@@ -21,6 +25,15 @@ worker.onmessage = (e: Readonly<MessageEvent<SearchWorkerRes>>) => {
   }
 }
 
+function handleSearchRes(res: SearchAddressRes): void {
+  const info = getAddressInfo(res)
+  if (info === null) {
+    return
+  }
+  const psvg = svgMapViewerConfig.mapCoord.fromGeo(res.lonlat)
+  notifySearchDone(psvg, info)
+}
+
 worker.onerror = (ev) => {
   console.log('error', ev)
 }
@@ -29,8 +42,7 @@ worker.onmessageerror = (ev) => {
   console.log('messageerror', ev)
 }
 
-export function workerSearchInit() {
-  const entries = addressEntries()
+export function workerSearchInit(entries: AddressEntries) {
   worker.postMessage({ type: 'INIT', entries })
 }
 
