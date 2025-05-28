@@ -15,13 +15,7 @@ worker.onmessage = (e: Readonly<MessageEvent<SearchWorkerRes>>) => {
   if (ev.type === 'INIT.DONE') {
     // XXX
   } else if (ev.type === 'SEARCH.DONE') {
-    const res = ev.res
-    const info = getAddressInfo(res)
-    if (info === null) {
-      return
-    }
-    const psvg = svgMapViewerConfig.mapCoord.fromGeo(res.lonlat)
-    notifySearchDone(psvg, info)
+    handleSearchRes(ev.res)
   }
 }
 
