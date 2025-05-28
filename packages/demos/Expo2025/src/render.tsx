@@ -49,9 +49,20 @@ function RenderShopInfo(
             🌐
           </a>
         )}
+        {osm_id !== 0 && (
+          <a target="_blank" href={`https://openstreetmap.org/node/${osm_id}`}>
+            🗺️
+          </a>
+        )}
+        {osm_way_id !== 0 && (
+          <a
+            target="_blank"
+            href={`https://openstreetmap.org/way/${osm_way_id}`}
+          >
+            🗺️
+          </a>
+        )}
       </p>
-      {osm_id !== 0 && <p>osm_id: {osm_id}</p>}
-      {osm_way_id !== 0 && <p>osm_way_id: {osm_way_id}</p>}
     </>
   )
 }
