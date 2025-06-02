@@ -1,3 +1,8 @@
+/* eslint-disable functional/no-expression-statements */
+/* eslint-disable functional/no-conditional-statements */
+/* eslint-disable functional/no-let */
+/* eslint-disable functional/prefer-immutable-types */
+/* eslint-disable functional/functional-parameters */
 import {
   findFeature,
   getOsmId,

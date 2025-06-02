@@ -85,6 +85,16 @@ a:link {
   text-decoration: none;
 }
 
+#viewer,
+#map-svg,
+#map-html {
+  contain: content;
+}
+.map,
+.map > * {
+  contain: content;
+}
+
 .container {
   width: 100vw;
   height: 100vh;
@@ -100,6 +110,12 @@ a:link {
   background-color: white;
 
   scrollbar-width: thin;
+}
+
+#viewer,
+#map-svg,
+#map-html {
+  contain: content;
 }
 
 .content.html {
@@ -155,12 +171,18 @@ a:link {
   position: absolute;
 }
 
+.map,
+.map > * {
+  contain: content;
+}
+
 .balloon-container,
 .balloon {
   position: absolute;
   left: 0;
   top: 0;
   pointer-events: none;
+  z-index: 10;
 }
 
 .balloon > path.bg {
@@ -188,6 +210,7 @@ a:link {
   overflow: scroll;
   pointer-events: initial;
   box-sizing: border-box;
+  z-index: 11;
 }
 
 .detail > h3,
@@ -207,7 +230,6 @@ a:link {
 
 .footer {
   padding: 0.4em;
-  width: 100vw;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -263,9 +285,24 @@ a:link {
   fill: none;
 }
 
+.footer > h2 {
+  font-size: x-small;
+  margin: 0;
+}
+
+.guides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100svh;
+  pointer-events: none;
+  z-index: 2;
+}
+
 .header {
   padding: 0.5em;
-  width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -294,15 +331,8 @@ a:link {
   cursor: default;
 }
 
-.header > h2 {
-  font-size: x-small;
-  margin: 0;
-}
-
 .right {
   padding: 0.4em;
-  height: 100vh;
-  height: 100svh;
   position: absolute;
   top: 0;
   right: 0;
@@ -329,7 +359,7 @@ a:link {
 
 .zoom {
   font-size: large;
-  margin: 0.4em;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -337,7 +367,7 @@ a:link {
 }
 
 .zoom-item {
-  margin: 1.6px 0;
+  margin: 1.6px;
   padding: 0.4em;
   border: 1.6px black solid;
 }
@@ -364,5 +394,16 @@ a:link {
   top: 0;
   width: 100vw;
   height: 100vh;
+}
+
+#ui > * {
+  contain: content;
+}
+#ui > .detail-balloon {
+  contain: initial;
+}
+.balloon,
+.detail {
+  contain: content;
 }
 

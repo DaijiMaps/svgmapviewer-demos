@@ -1,6 +1,7 @@
 import {
   calcScale,
   CentroidsFilter,
+  getOsmId,
   MapData,
   MultiPolygonFeature,
   OsmPointProperties,
@@ -103,7 +104,7 @@ const pointNames: POI[] = mapData.points.features.flatMap((f) => {
 })
 
 const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
-  const id = Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
+  const id = getOsmId(f.properties)
   const name = filterName(f)
   const centroid: null | V =
     f.properties.centroid_x === null || f.properties.centroid_y === null
@@ -125,12 +126,20 @@ const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
   // XXX
   return name === null
     ? []
-    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 0, area }]
+    : [
+        {
+          id: id === null ? null : Number(id),
+          name: splitName(name),
+          pos,
+          size: 0,
+          area,
+        },
+      ]
 })
 
 export const mapNames: POI[] = [...pointNames, ...centroidNames]
 
-function filterName(f: PointOrCentroidFeature): null | string {
+function filterName(f: Readonly<PointOrCentroidFeature>): null | string {
   const name = f.properties.name
   if (name === null) {
     return null
@@ -173,7 +182,7 @@ export interface AllFilters {
   centroids?: CentroidsFilter
 }
 
-export function getAll({ points, centroids }: AllFilters): V[] {
+export function getAll({ points, centroids }: Readonly<AllFilters>): V[] {
   return [
     points === undefined ? [] : getPoints(points),
     centroids === undefined ? [] : getCentroids(centroids),

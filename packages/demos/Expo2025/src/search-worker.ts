@@ -1,3 +1,7 @@
+/* eslint-disable functional/no-conditional-statements */
+/* eslint-disable functional/no-return-void */
+/* eslint-disable functional/no-expression-statements */
+/* eslint-disable functional/no-let */
 import {
   AddressEntries,
   initAddresses,

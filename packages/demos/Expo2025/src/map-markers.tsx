@@ -1,6 +1,7 @@
 import { MapMarkers } from '@daijimaps/svgmapviewer/carto'
 import './map.css'
 
+// eslint-disable-next-line functional/functional-parameters
 export const getMapMarkers: () => MapMarkers[] = () => [
   {
     name: 'all',

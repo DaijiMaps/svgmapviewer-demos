@@ -1,3 +1,7 @@
+/* eslint-disable functional/no-conditional-statements */
+/* eslint-disable functional/no-return-void */
+/* eslint-disable functional/immutable-data */
+/* eslint-disable functional/no-expression-statements */
 import { notifySearchDone, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
   AddressEntries,
@@ -19,7 +23,7 @@ worker.onmessage = (e: Readonly<MessageEvent<SearchWorkerRes>>) => {
   }
 }
 
-function handleSearchRes(res: SearchAddressRes): void {
+function handleSearchRes(res: Readonly<SearchAddressRes>): void {
   const info = getAddressInfo(res)
   if (info === null) {
     return
@@ -36,11 +40,11 @@ worker.onmessageerror = (ev) => {
   console.log('messageerror', ev)
 }
 
-export function workerSearchInit(entries: AddressEntries) {
+export function workerSearchInit(entries: Readonly<AddressEntries>) {
   worker.postMessage({ type: 'INIT', entries })
 }
 
-export function workerSearchStart(psvg: Vec) {
+export function workerSearchStart(psvg: Readonly<Vec>) {
   const pgeo = svgMapViewerConfig.mapCoord.toGeo(psvg)
   worker.postMessage({ type: 'SEARCH', pgeo })
 }

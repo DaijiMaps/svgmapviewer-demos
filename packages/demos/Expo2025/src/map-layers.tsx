@@ -1,3 +1,4 @@
+/* eslint-disable functional/functional-parameters */
 import { MapLayer } from '@daijimaps/svgmapviewer/carto'
 import { MultiPolygon } from '@daijimaps/svgmapviewer/geo'
 import internals from './data/internals.json'

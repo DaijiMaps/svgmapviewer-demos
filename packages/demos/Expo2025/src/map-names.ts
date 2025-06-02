@@ -4,6 +4,7 @@ import {
   OsmPolygonProperties,
   POI,
   PointFeature,
+  getOsmId,
 } from '@daijimaps/svgmapviewer/geo'
 import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
 import { mapCoord, mapData } from './data'
@@ -73,7 +74,8 @@ const pointNames: POI[] = mapData.points.features.flatMap((f) => {
 })
 
 const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
-  const id = Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
+  const id = //Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
+    getOsmId(f.properties)
   const name = filterName(f)
   if (f.properties.centroid_x === null || f.properties.centroid_y === null) {
     return []
@@ -86,12 +88,20 @@ const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
       : undefined
   return name === null
     ? []
-    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 0, area }]
+    : [
+        {
+          id: id === null ? null : Number(id),
+          name: splitName(name),
+          pos,
+          size: 0,
+          area,
+        },
+      ]
 })
 
 export const mapNames: POI[] = [...pointNames, ...centroidNames]
 
-function filterName(f: PointOrCentroidFeature): null | string {
+function filterName(f: DeepReadonly<PointOrCentroidFeature>): null | string {
   const name = f.properties.name
   if (name === null || typeof name !== 'string') {
     return null
@@ -129,4 +139,14 @@ function splitName(s: string): string[] {
 
 function conv(p: V): V {
   return vUnvec(mapCoord.fromGeo(vVec(p)))
+}
+
+type DeepReadonly<T> = {
+  readonly [P in keyof T]: T[P] extends (
+    ...args: Readonly<unknown[]>
+  ) => unknown
+    ? T[P]
+    : T[P] extends object
+      ? DeepReadonly<T[P]>
+      : T[P]
 }

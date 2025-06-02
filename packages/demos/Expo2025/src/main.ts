@@ -10,18 +10,19 @@ import { getMapSymbols } from './map-symbols'
 import { RenderInfo } from './render'
 import { workerSearchInit, workerSearchStart } from './search'
 
+import userConfig from '../svgmapviewer.config'
+
 svgmapviewer({
+  ...userConfig,
   root: 'root',
   map: 'map1',
   origViewBox: mapViewBox,
-  zoomFactor: 3,
+  zoomFactor: 5,
   getMapLayers,
   getMapObjects,
   getMapSymbols,
   getMapMarkers,
   renderInfo: RenderInfo,
-  title: 'Expo 2025',
-  copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   mapData,
   mapCoord,
   mapHtmlStyle,

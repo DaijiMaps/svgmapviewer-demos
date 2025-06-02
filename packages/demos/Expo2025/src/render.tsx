@@ -1,4 +1,5 @@
 import { Like, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
+import { objectNameMap } from '@daijimaps/svgmapviewer/carto-objects'
 import {
   findProperties,
   getPropertyValue,
@@ -73,6 +74,8 @@ function RenderFacilityInfo(
     properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
   }>
 ) {
+  const symbol = props.x.title !== undefined && objectNameMap.get(props.x.title)
+
   return (
     <>
       <p>{props.x.title}</p>
@@ -84,15 +87,16 @@ function RenderFacilityInfo(
           margin: '1em',
         }}
       >
-        <svg
-          style={{ display: 'block' }}
-          viewBox="-36 -36 72 72"
-          width="3em"
-          height="3em"
-        >
-          {props.x.title === 'bus_stop' && <use href="#XBus" />}
-          {props.x.title === 'toilets' && <use href="#XToilets" />}
-        </svg>
+        {symbol && (
+          <svg
+            style={{ display: 'block' }}
+            viewBox="-36 -36 72 72"
+            width="3em"
+            height="3em"
+          >
+            <use href={symbol} />
+          </svg>
+        )}
       </div>
       <p>{props.x.properties.name}</p>
     </>

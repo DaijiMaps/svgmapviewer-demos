@@ -1,3 +1,4 @@
+/* eslint-disable functional/functional-parameters */
 import { MapObjects } from '@daijimaps/svgmapviewer/carto'
 import {
   benchPath,
