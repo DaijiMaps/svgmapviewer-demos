@@ -7,6 +7,11 @@ const LIB = '../../../../svgmapviewer/packages/lib/src/lib'
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '',
+  server: {
+    fs: {
+      allow: ['.', '../../../../svgmapviewer/packages/lib'],
+    },
+  },
   plugins: [react()],
   resolve: {
     alias: {
@@ -46,10 +51,7 @@ export default defineConfig({
         __dirname,
         `${LIB}/vec/prefixed/index.ts`
       ),
-      '@daijimaps/svgmapviewer': path.resolve(
-        __dirname,
-        `${LIB}/index.ts`
-      ),
+      '@daijimaps/svgmapviewer': path.resolve(__dirname, `${LIB}/index.ts`),
     },
   },
 })
