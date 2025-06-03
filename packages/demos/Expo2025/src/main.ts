@@ -1,4 +1,4 @@
-import { configSend, svgmapviewer } from '@daijimaps/svgmapviewer'
+import { registerCbs, svgmapviewer } from '@daijimaps/svgmapviewer'
 import './index.css' // XXX
 import { mapCoord, mapData, mapMap, mapViewBox } from './map-data'
 import { getMapLayers } from './map-layers'
@@ -31,7 +31,9 @@ svgmapviewer({
   mapNames,
 })
 
-configSend({ type: 'ADD.CB', searchCb: workerSearchStart })
+registerCbs({
+  searchCb: workerSearchStart,
+})
 
 document.title = `svgmapviewer @ ${window.location.host}`
 
