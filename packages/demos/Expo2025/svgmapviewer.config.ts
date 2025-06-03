@@ -6,4 +6,6 @@ const userConfig: SvgMapViewerConfigUser = {
   zoomFactor: 5,
 }
 
+document.title = `svgmapviewer @ ${window.location.host}`
+
 export default userConfig

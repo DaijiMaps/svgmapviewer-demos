@@ -29,5 +29,3 @@ svgmapviewer({
   mapNames,
   searchEntries,
 })
-
-document.title = `svgmapviewer @ ${window.location.host}`
