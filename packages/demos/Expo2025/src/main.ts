@@ -1,7 +1,7 @@
 import { configSend, svgmapviewer } from '@daijimaps/svgmapviewer'
 import { addressEntries } from './address-data'
-import { mapCoord, mapData, mapViewBox } from './data'
 import './index.css' // XXX
+import { mapCoord, mapData, mapMap, mapViewBox } from './map-data'
 import { getMapLayers } from './map-layers'
 import { getMapMarkers } from './map-markers'
 import { mapHtmlStyle, mapNames, mapSymbols } from './map-names'
@@ -24,6 +24,7 @@ svgmapviewer({
   getMapMarkers,
   renderInfo: RenderInfo,
   mapData,
+  mapMap,
   mapCoord,
   mapHtmlStyle,
   mapSymbols,

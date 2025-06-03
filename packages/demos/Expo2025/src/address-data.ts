@@ -13,8 +13,8 @@ import {
   AddressEntry,
   SearchAddressRes,
 } from '@daijimaps/svgmapviewer/search'
-import { mapData } from './data'
 import { Info } from './info'
+import { mapData } from './map-data'
 
 const pointAddresses = (): AddressEntries =>
   mapData.points.features.flatMap((f) => {

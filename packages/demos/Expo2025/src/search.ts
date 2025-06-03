@@ -28,7 +28,7 @@ function handleSearchRes(res: Readonly<SearchAddressRes>): void {
   if (info === null) {
     return
   }
-  const psvg = svgMapViewerConfig.mapCoord.fromGeo(res.lonlat)
+  const psvg = svgMapViewerConfig.mapCoord.matrix.transformPoint(res.lonlat)
   notifySearchDone(psvg, info)
 }
 
@@ -45,6 +45,6 @@ export function workerSearchInit(entries: Readonly<AddressEntries>) {
 }
 
 export function workerSearchStart(psvg: Readonly<Vec>) {
-  const pgeo = svgMapViewerConfig.mapCoord.toGeo(psvg)
+  const pgeo = svgMapViewerConfig.mapCoord.matrix.inverse().transformPoint(psvg)
   worker.postMessage({ type: 'SEARCH', pgeo })
 }

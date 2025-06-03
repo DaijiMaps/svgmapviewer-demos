@@ -7,7 +7,7 @@ import {
   getOsmId,
 } from '@daijimaps/svgmapviewer/geo'
 import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
-import { mapCoord, mapData } from './data'
+import { mapCoord, mapData } from './map-data'
 
 //// mapHtmlStyle
 //// mapSymbols
@@ -138,7 +138,7 @@ function splitName(s: string): string[] {
 }
 
 function conv(p: V): V {
-  return vUnvec(mapCoord.fromGeo(vVec(p)))
+  return vUnvec(mapCoord.matrix.transformPoint(vVec(p)))
 }
 
 type DeepReadonly<T> = {
