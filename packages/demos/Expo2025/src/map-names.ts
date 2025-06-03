@@ -6,8 +6,9 @@ export const mapSymbols: POI[] = []
 
 const pointNames: POI[] = mapData.points.features.flatMap((f) => {
   const id = getOsmId(f.properties)
-  const name = filterName(f)
   const pos = vVec(conv(f.geometry.coordinates as unknown as V))
+
+  const name = filterName(f)
   return name === null
     ? []
     : [
@@ -23,16 +24,14 @@ const pointNames: POI[] = mapData.points.features.flatMap((f) => {
 
 const polygonNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
   const id = getOsmId(f.properties)
-  const name = filterName(f)
   if (f.properties.centroid_x === null || f.properties.centroid_y === null) {
     return []
   }
   const centroid: V = [f.properties.centroid_x, f.properties.centroid_y]
   const pos = vVec(conv(centroid))
-  const area =
-    'area' in f.properties && f.properties.area !== null
-      ? f.properties.area
-      : undefined
+  const area = f.properties.area !== null ? f.properties.area : undefined
+
+  const name = filterName(f)
   return name === null
     ? []
     : [
