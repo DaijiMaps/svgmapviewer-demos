@@ -9,7 +9,7 @@ export const getMapSymbols: () => MapSymbols[] = () => [
     pointsFilter: (f) =>
       !!f.properties.other_tags?.match(/"toilets"/) &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
-    centroidsFilter: (f) =>
+    polygonsFilter: (f) =>
       (!!f.properties.other_tags?.match(/"toilets"/) ||
         f.properties.amenity === 'toilets') &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
@@ -20,7 +20,7 @@ export const getMapSymbols: () => MapSymbols[] = () => [
     pointsFilter: (f) =>
       !!f.properties.other_tags?.match(/"parking"/) &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
-    centroidsFilter: (f) =>
+    polygonsFilter: (f) =>
       !!f.properties.other_tags?.match(/"parking"/) &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
   },
@@ -70,7 +70,7 @@ export const getMapSymbols: () => MapSymbols[] = () => [
       !!f.properties.other_tags?.match(/"tourism"=>"information"/) &&
       !!f.properties.other_tags?.match(/"information"=>"office"/) &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
-    centroidsFilter: (f) =>
+    polygonsFilter: (f) =>
       !!f.properties.other_tags?.match(/"tourist"=>"information"/) &&
       !!f.properties.other_tags?.match(/"information"=>"office"/) &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
