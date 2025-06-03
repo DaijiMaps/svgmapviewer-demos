@@ -27,7 +27,4 @@ export const mapData: MapData = {
 
 export const mapMap: MapMap = mapMapFromMapData(mapData)
 
-//// mapCoord
-//// mapViewBox
-
 export const { mapCoord, mapViewBox } = calcScale(mapData)
