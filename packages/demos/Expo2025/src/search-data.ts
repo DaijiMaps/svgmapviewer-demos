@@ -1,11 +1,10 @@
 /* eslint-disable functional/prefer-immutable-types */
-/* eslint-disable functional/functional-parameters */
 import {
   findFeature,
   getOsmId,
   MapData,
   OsmFeature,
-  OsmProperties,
+  SearchEntry,
 } from '@daijimaps/svgmapviewer/geo'
 import {
   AddressEntries,
@@ -43,10 +42,9 @@ function filterFeature({ properties }: OsmFeature): null | AddressEntry {
     return null
   }
   const matches = entries.filter((entry) => entry.filter(properties))
-  if (matches.length > 0) {
-    return { a: id + '', lonlat: { x: centroid_x, y: centroid_y } }
-  }
-  return null
+  return matches.length === 0
+    ? null
+    : { a: id + '', lonlat: { x: centroid_x, y: centroid_y } }
 }
 
 ////
@@ -68,7 +66,7 @@ export function getAddressInfo(
 
 ////
 
-const entries: readonly Entry[] = [
+const entries: readonly SearchEntry[] = [
   {
     // toilets
     filter: (properties) => !!properties?.other_tags?.match(/"toilets"/),
@@ -104,8 +102,3 @@ const entries: readonly Entry[] = [
     }),
   },
 ]
-
-interface Entry {
-  filter: (p: OsmProperties) => boolean
-  getInfo: (p: OsmProperties, a: string) => Info
-}
