@@ -18,7 +18,7 @@ const pointAddresses = (): AddressEntries =>
     return e === null ? [] : [e]
   })
 
-const centroidAddresses = (): AddressEntries =>
+const polygonAddresses = (): AddressEntries =>
   mapData.multipolygons.features.flatMap((f) => {
     const e = filterFeature(f)
     return e === null ? [] : [e]
@@ -26,7 +26,7 @@ const centroidAddresses = (): AddressEntries =>
 
 export const addressEntries = (): AddressEntries => [
   ...pointAddresses(),
-  ...centroidAddresses(),
+  ...polygonAddresses(),
 ]
 
 function filterFeature(f: OsmFeature): null | AddressEntry {
