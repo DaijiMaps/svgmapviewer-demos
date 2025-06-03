@@ -41,6 +41,7 @@ packages:
   - packages/demos/ShinjukuGyoenNationalPark
   - packages/demos/ShowaKinenPark
   - packages/demos/TaimaDera
+  - packages/demos/TamaZoologicalPark
   - packages/demos/Todaiji
   - packages/demos/TohokuUniv
   - packages/demos/TokyoDisneyLand
@@ -61,4 +62,4 @@ packages:
   - packages/demos/Zoorasia
   - packages/tools
 overrides:
-  '@daijimaps/svgmapviewer': link:../../../../.local/share/pnpm/global/5/node_modules/@daijimaps/svgmapviewer
+  '@daijimaps/svgmapviewer': link:../svgmapviewer/packages/lib
