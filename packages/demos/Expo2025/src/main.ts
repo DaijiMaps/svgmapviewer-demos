@@ -6,6 +6,7 @@ import { getMapMarkers } from './map-markers'
 import { mapNames, mapSymbols } from './map-names'
 import { getMapObjects } from './map-objects'
 import { getMapSymbols } from './map-symbols'
+import './map.css' // XXX
 import { RenderInfo } from './render'
 import { workerSearchInit, workerSearchStart } from './search'
 import { addressEntries } from './search-data'
@@ -34,4 +35,4 @@ configSend({ type: 'ADD.CB', searchCb: workerSearchStart })
 
 document.title = `svgmapviewer @ ${window.location.host}`
 
-workerSearchInit(addressEntries())
+workerSearchInit(addressEntries(mapData))

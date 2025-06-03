@@ -1,33 +1,37 @@
-/* eslint-disable functional/no-expression-statements */
-/* eslint-disable functional/no-conditional-statements */
-/* eslint-disable functional/no-let */
 /* eslint-disable functional/prefer-immutable-types */
 /* eslint-disable functional/functional-parameters */
-import { findFeature, getOsmId, OsmFeature } from '@daijimaps/svgmapviewer/geo'
+import {
+  findFeature,
+  getOsmId,
+  MapData,
+  OsmFeature,
+  OsmProperties,
+} from '@daijimaps/svgmapviewer/geo'
 import {
   AddressEntries,
   AddressEntry,
   SearchAddressRes,
 } from '@daijimaps/svgmapviewer/search'
 import { Info } from './info'
-import { mapData } from './map-data'
 
-const pointAddresses = (): AddressEntries =>
+const pointAddresses = (mapData: MapData): AddressEntries =>
   mapData.points.features.flatMap((f) => {
     const e = filterFeature(f)
     return e === null ? [] : [e]
   })
 
-const polygonAddresses = (): AddressEntries =>
+const polygonAddresses = (mapData: MapData): AddressEntries =>
   mapData.multipolygons.features.flatMap((f) => {
     const e = filterFeature(f)
     return e === null ? [] : [e]
   })
 
-export const addressEntries = (): AddressEntries => [
-  ...pointAddresses(),
-  ...polygonAddresses(),
+export const addressEntries = (mapData: MapData): AddressEntries => [
+  ...pointAddresses(mapData),
+  ...polygonAddresses(mapData),
 ]
+
+////
 
 function filterFeature({ properties }: OsmFeature): null | AddressEntry {
   const id = getOsmId(properties)
@@ -38,50 +42,70 @@ function filterFeature({ properties }: OsmFeature): null | AddressEntry {
   if (centroid_x === null || centroid_y === null) {
     return null
   }
-  if (
-    properties.name?.match(/./) ||
-    properties.other_tags?.match(/("bus_stop"|"toilets")/)
-  ) {
+  const matches = entries.filter((entry) => entry.filter(properties))
+  if (matches.length > 0) {
     return { a: id + '', lonlat: { x: centroid_x, y: centroid_y } }
   }
   return null
 }
 
-export function getAddressInfo(res: SearchAddressRes): null | Info {
+////
+
+export function getAddressInfo(
+  mapData: MapData,
+  res: SearchAddressRes
+): null | Info {
   const feature = findFeature(res?.address, mapData)
   if (feature === null) {
     return null
   }
   const properties = feature.properties
-  let info: null | Info = null
-  if (properties?.other_tags?.match(/"toilets"/)) {
-    info = {
+  const matches = entries.flatMap((entry) =>
+    !entry.filter(properties) ? [] : [entry.getInfo(properties, res.address)]
+  )
+  return matches.length === 0 ? null : matches[0]
+}
+
+////
+
+const entries: readonly Entry[] = [
+  {
+    // toilets
+    filter: (properties) => !!properties?.other_tags?.match(/"toilets"/),
+    getInfo: (properties, address) => ({
       title: 'toilets',
       x: {
         tag: 'facility',
         title: 'toilets',
-        address: res.address,
+        address: address,
         properties,
       },
-    }
-  } else if (
-    'highway' in properties &&
-    properties?.highway?.match(/^bus_stop$/)
-  ) {
-    info = {
+    }),
+  },
+  {
+    // bus_stop
+    filter: (properties) => !!properties?.other_tags?.match(/"bus_stop"/),
+    getInfo: (properties, address) => ({
       title: 'bus_stop',
       x: {
         tag: 'facility',
         title: 'bus_stop',
-        address: res.address,
+        address: address,
         properties,
       },
-    }
-  } else {
-    info = {
+    }),
+  },
+  {
+    // others (shop)
+    filter: (properties) => !!properties.name?.match(/./),
+    getInfo: (properties, address) => ({
       title: 'shop',
-      x: { tag: 'shop', address: res.address, properties },
-    }
-  }
-  return info
+      x: { tag: 'shop', address, properties },
+    }),
+  },
+]
+
+interface Entry {
+  filter: (p: OsmProperties) => boolean
+  getInfo: (p: OsmProperties, a: string) => Info
 }

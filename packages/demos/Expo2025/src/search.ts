@@ -24,7 +24,7 @@ worker.onmessage = (e: Readonly<MessageEvent<SearchWorkerRes>>) => {
 }
 
 function handleSearchRes(res: Readonly<SearchAddressRes>): void {
-  const info = getAddressInfo(res)
+  const info = getAddressInfo(svgMapViewerConfig.mapData, res)
   if (info === null) {
     return
   }
