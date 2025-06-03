@@ -9,8 +9,9 @@ import { getMapSymbols } from './map-symbols'
 import './map.css' // XXX
 import { RenderInfo } from './render'
 import { workerSearchInit, workerSearchStart } from './search'
-import { addressEntries } from './search-data'
+import { searchEntries } from './search-data'
 
+import { getAddressEntries } from '@daijimaps/svgmapviewer/search'
 import userConfig from '../svgmapviewer.config'
 
 svgmapviewer({
@@ -18,7 +19,6 @@ svgmapviewer({
   root: 'root',
   map: 'map1',
   origViewBox: mapViewBox,
-  zoomFactor: 5,
   getMapLayers,
   getMapObjects,
   getMapSymbols,
@@ -29,6 +29,7 @@ svgmapviewer({
   mapCoord,
   mapSymbols,
   mapNames,
+  searchEntries,
 })
 
 registerCbs({
@@ -37,4 +38,4 @@ registerCbs({
 
 document.title = `svgmapviewer @ ${window.location.host}`
 
-workerSearchInit(addressEntries(mapData))
+workerSearchInit(getAddressEntries(mapData, searchEntries))
