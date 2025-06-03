@@ -1,4 +1,3 @@
-/* eslint-disable functional/prefer-immutable-types */
 import { SearchEntry } from '@daijimaps/svgmapviewer/geo'
 
 export const searchEntries: SearchEntry[] = [
