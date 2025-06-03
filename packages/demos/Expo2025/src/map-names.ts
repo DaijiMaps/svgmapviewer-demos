@@ -5,14 +5,14 @@ import { mapCoord, mapData } from './map-data'
 export const mapSymbols: POI[] = []
 
 const pointNames: POI[] = mapData.points.features.flatMap((f) => {
-  const id = Number(f.properties.osm_id ?? '')
+  const id = getOsmId(f.properties)
   const name = filterName(f)
   const pos = vVec(conv(f.geometry.coordinates as unknown as V))
   return name === null
     ? []
     : [
         {
-          id: id === 0 ? null : id,
+          id: id === null ? null : id,
           name: splitName(name),
           pos,
           size: 0,
@@ -22,8 +22,7 @@ const pointNames: POI[] = mapData.points.features.flatMap((f) => {
 })
 
 const polygonNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
-  const id = //Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
-    getOsmId(f.properties)
+  const id = getOsmId(f.properties)
   const name = filterName(f)
   if (f.properties.centroid_x === null || f.properties.centroid_y === null) {
     return []
@@ -38,7 +37,7 @@ const polygonNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
     ? []
     : [
         {
-          id: id === null ? null : Number(id),
+          id: id === null ? null : id,
           name: splitName(name),
           pos,
           size: 0,

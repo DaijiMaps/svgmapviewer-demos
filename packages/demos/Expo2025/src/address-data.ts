@@ -44,7 +44,7 @@ function filterFeature(f: OsmFeature): null | AddressEntry {
     properties.name?.match(/./) ||
     properties.other_tags?.match(/("bus_stop"|"toilets")/)
   ) {
-    return { a: id, lonlat: { x, y } }
+    return { a: id + '', lonlat: { x, y } }
   }
   return null
 }
