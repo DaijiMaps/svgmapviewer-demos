@@ -3,9 +3,7 @@ import { objectNameMap } from '@daijimaps/svgmapviewer/carto-objects'
 import {
   findProperties,
   getPropertyValue,
-  OsmLineProperties,
-  OsmPointProperties,
-  OsmPolygonProperties,
+  OsmProperties,
 } from '@daijimaps/svgmapviewer/geo'
 import { FacilityInfo, Info, ShopInfo } from './info'
 
@@ -28,7 +26,7 @@ export function RenderInfo(props: Readonly<Props>) {
 function RenderShopInfo(
   props: Readonly<{
     x: ShopInfo
-    properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
+    properties: OsmProperties
   }>
 ) {
   const website = getPropertyValue(props.properties, 'website')
@@ -71,7 +69,7 @@ function RenderShopInfo(
 function RenderFacilityInfo(
   props: Readonly<{
     x: FacilityInfo
-    properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
+    properties: OsmProperties
   }>
 ) {
   const symbol = props.x.title !== undefined && objectNameMap.get(props.x.title)

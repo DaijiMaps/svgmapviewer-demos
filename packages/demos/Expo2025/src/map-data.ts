@@ -5,9 +5,7 @@ import {
   mapMapFromMapData,
 } from '@daijimaps/svgmapviewer/geo'
 import areas from './data/areas.json'
-import centroids from './data/map-centroids.json'
 import lines from './data/map-lines.json'
-import midpoints from './data/map-midpoints.json'
 import multilinestrings from './data/map-multilinestrings.json'
 import multipolygons from './data/map-multipolygons.json'
 import points from './data/map-points.json'
@@ -25,8 +23,6 @@ export const mapData: MapData = {
   lines,
   multilinestrings,
   multipolygons,
-  centroids,
-  midpoints,
 }
 
 export const mapMap: MapMap = mapMapFromMapData(mapData)
