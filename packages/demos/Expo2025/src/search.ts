@@ -8,7 +8,7 @@ import {
   SearchAddressRes,
 } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
-import { getAddressInfo } from './address-data'
+import { getAddressInfo } from './search-data'
 import { SearchWorkerRes } from './search-worker'
 import SearchWorker from './search-worker?worker'
 

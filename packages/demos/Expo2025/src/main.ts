@@ -1,5 +1,4 @@
 import { configSend, svgmapviewer } from '@daijimaps/svgmapviewer'
-import { addressEntries } from './address-data'
 import './index.css' // XXX
 import { mapCoord, mapData, mapMap, mapViewBox } from './map-data'
 import { getMapLayers } from './map-layers'
@@ -9,6 +8,7 @@ import { getMapObjects } from './map-objects'
 import { getMapSymbols } from './map-symbols'
 import { RenderInfo } from './render'
 import { workerSearchInit, workerSearchStart } from './search'
+import { addressEntries } from './search-data'
 
 import userConfig from '../svgmapviewer.config'
 

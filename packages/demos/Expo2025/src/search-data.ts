@@ -29,8 +29,7 @@ export const addressEntries = (): AddressEntries => [
   ...polygonAddresses(),
 ]
 
-function filterFeature(f: OsmFeature): null | AddressEntry {
-  const { properties } = f
+function filterFeature({ properties }: OsmFeature): null | AddressEntry {
   const id = getOsmId(properties)
   if (id === null) {
     return null
@@ -39,12 +38,11 @@ function filterFeature(f: OsmFeature): null | AddressEntry {
   if (centroid_x === null || centroid_y === null) {
     return null
   }
-  const [x, y] = [centroid_x, centroid_y]
   if (
     properties.name?.match(/./) ||
     properties.other_tags?.match(/("bus_stop"|"toilets")/)
   ) {
-    return { a: id + '', lonlat: { x, y } }
+    return { a: id + '', lonlat: { x: centroid_x, y: centroid_y } }
   }
   return null
 }

@@ -1,7 +1,7 @@
 import { Like, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import { objectNameMap } from '@daijimaps/svgmapviewer/carto-objects'
 import {
-  findProperties,
+  findProperties2,
   getPropertyValue,
   OsmProperties,
 } from '@daijimaps/svgmapviewer/geo'
@@ -12,9 +12,10 @@ export interface Props {
 }
 
 export function RenderInfo(props: Readonly<Props>) {
-  const cfg = svgMapViewerConfig.mapData
+  const mapMap = svgMapViewerConfig.mapMap
+  const id = Number(props.info.x.address)
   const properties =
-    'address' in props.info.x ? findProperties(props.info.x.address, cfg) : null
+    'address' in props.info.x ? findProperties2(id, mapMap) : null
   if (properties === null) {
     return <p>XXX info not found (osm_id={props.info.x.address}) XXX</p>
   }
