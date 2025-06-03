@@ -1,5 +1,5 @@
 import { Like, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
-import { objectNameMap } from '@daijimaps/svgmapviewer/carto-objects'
+import { symbolNameMap } from '@daijimaps/svgmapviewer/carto-symbols'
 import {
   findProperties2,
   getPropertyValue,
@@ -73,7 +73,7 @@ function RenderFacilityInfo(
     properties: OsmProperties
   }>
 ) {
-  const symbol = props.x.title !== undefined && objectNameMap.get(props.x.title)
+  const symbol = props.x.title !== undefined && symbolNameMap.get(props.x.title)
 
   return (
     <>
