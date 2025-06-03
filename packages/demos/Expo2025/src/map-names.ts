@@ -1,11 +1,4 @@
-import {
-  MultiPolygonFeature,
-  OsmPointProperties,
-  OsmPolygonProperties,
-  POI,
-  PointFeature,
-  getOsmId,
-} from '@daijimaps/svgmapviewer/geo'
+import { OsmFeature, POI, getOsmId } from '@daijimaps/svgmapviewer/geo'
 import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
 import { mapCoord, mapData } from './map-data'
 
@@ -50,11 +43,6 @@ export const mapHtmlStyle = `
 `
 
 export const mapSymbols: POI[] = []
-
-type PointOrCentroidFeature =
-  | PointFeature<OsmPointProperties>
-  | PointFeature<OsmPolygonProperties>
-  | MultiPolygonFeature<OsmPolygonProperties>
 
 const pointNames: POI[] = mapData.points.features.flatMap((f) => {
   const id = Number(f.properties.osm_id ?? '')
@@ -101,7 +89,8 @@ const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
 
 export const mapNames: POI[] = [...pointNames, ...centroidNames]
 
-function filterName(f: DeepReadonly<PointOrCentroidFeature>): null | string {
+// eslint-disable-next-line functional/prefer-immutable-types
+function filterName(f: DeepReadonly<OsmFeature>): null | string {
   const name = f.properties.name
   if (name === null || typeof name !== 'string') {
     return null
