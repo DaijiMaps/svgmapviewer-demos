@@ -3,11 +3,7 @@
 /* eslint-disable functional/no-let */
 /* eslint-disable functional/prefer-immutable-types */
 /* eslint-disable functional/functional-parameters */
-import {
-  findFeature,
-  getOsmId,
-  OsmPointLikeFeature,
-} from '@daijimaps/svgmapviewer/geo'
+import { findFeature, getOsmId, OsmFeature } from '@daijimaps/svgmapviewer/geo'
 import {
   AddressEntries,
   AddressEntry,
@@ -23,7 +19,7 @@ const pointAddresses = (): AddressEntries =>
   })
 
 const centroidAddresses = (): AddressEntries =>
-  mapData.centroids.features.flatMap((f) => {
+  mapData.multipolygons.features.flatMap((f) => {
     const e = filterFeature(f)
     return e === null ? [] : [e]
   })
@@ -33,16 +29,17 @@ export const addressEntries = (): AddressEntries => [
   ...centroidAddresses(),
 ]
 
-function filterFeature(f: OsmPointLikeFeature): null | AddressEntry {
-  const { properties, geometry } = f
+function filterFeature(f: OsmFeature): null | AddressEntry {
+  const { properties } = f
   const id = getOsmId(properties)
   if (id === null) {
     return null
   }
-  if (geometry.coordinates.length != 2) {
+  const { centroid_x, centroid_y } = properties
+  if (centroid_x === null || centroid_y === null) {
     return null
   }
-  const [x, y] = geometry.coordinates
+  const [x, y] = [centroid_x, centroid_y]
   if (
     properties.name?.match(/./) ||
     properties.other_tags?.match(/("bus_stop"|"toilets")/)

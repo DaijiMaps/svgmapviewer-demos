@@ -1,16 +1,10 @@
 import {
   calcScale,
-  CentroidsFilter,
   getOsmId,
   MapMap,
   mapMapFromMapData,
-  MultiPolygonFeature,
-  OsmPointProperties,
-  OsmPolygonProperties,
+  OsmFeature,
   POI,
-  Point,
-  PointFeature,
-  PointsFilter,
 } from '@daijimaps/svgmapviewer/geo'
 import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
 import { mapData } from './data'
@@ -66,11 +60,6 @@ export const mapHtmlStyle = `
 
 export const mapSymbols: POI[] = []
 
-type PointOrCentroidFeature =
-  | PointFeature<OsmPointProperties>
-  | PointFeature<OsmPolygonProperties>
-  | MultiPolygonFeature<OsmPolygonProperties>
-
 const pointNames: POI[] = mapData.points.features.flatMap((f) => {
   const id = Number(
     f.properties.osm_id ?? '' /*+ f.properties.osm_way_id ?? ''*/
@@ -119,7 +108,8 @@ const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
 
 export const mapNames: POI[] = [...pointNames, ...centroidNames]
 
-function filterName(f: Readonly<PointOrCentroidFeature>): null | string {
+// eslint-disable-next-line functional/prefer-immutable-types
+function filterName(f: OsmFeature): null | string {
   const name = f.properties.name
   if (name === null) {
     return null
@@ -155,34 +145,6 @@ function splitName(s: string): string[] {
     .map((s) => s.trim())
 }
 
-////  getAll
-
-export interface AllFilters {
-  points?: PointsFilter
-  centroids?: CentroidsFilter
-}
-
-export function getAll({ points, centroids }: Readonly<AllFilters>): V[] {
-  return [
-    points === undefined ? [] : getPoints(points),
-    centroids === undefined ? [] : getCentroids(centroids),
-  ].flatMap((vs) => vs)
-}
-
-export function getPoints(filter: PointsFilter): Point[] {
-  return mapData.points.features
-    .filter(filter)
-    .map((f) => f.geometry.coordinates as unknown as V)
-    .map(conv)
-}
-
-export function getCentroids(filter: CentroidsFilter) {
-  return mapData.centroids.features
-    .filter(filter)
-    .map((f) => f.geometry.coordinates as unknown as V)
-    .map(conv)
-}
-
 // XXX
 // XXX
 // XXX
@@ -192,3 +154,11 @@ export function conv(p: V): V {
 // XXX
 // XXX
 // XXX
+
+export type DeepReadonly<T> = {
+  readonly [P in keyof T]: T[P] extends (...args: readonly unknown[]) => unknown
+    ? T[P]
+    : T[P] extends object
+      ? DeepReadonly<T[P]>
+      : T[P]
+}
