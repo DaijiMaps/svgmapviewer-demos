@@ -279,7 +279,7 @@ export const getMapSymbols: () => MapSymbols[] = () => [
   {
     name: 'escalators',
     href: '#XEscalator',
-    midpointsFilter: (f) =>
+    linesFilter: (f) =>
       !!f.properties.highway?.match(/steps/) &&
       !!f.properties.other_tags?.match(/"conveying"=>"yes"/) &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
@@ -287,7 +287,7 @@ export const getMapSymbols: () => MapSymbols[] = () => [
   {
     name: 'stairs',
     href: '#XStairs',
-    midpointsFilter: (f) =>
+    linesFilter: (f) =>
       !!f.properties.highway?.match(/steps/) &&
       !f.properties.other_tags?.match(/"conveying"=>"yes"/) &&
       !f.properties.other_tags?.match(/"level"=>"[1-9][^"]*"/),
