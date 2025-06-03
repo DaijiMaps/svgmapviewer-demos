@@ -61,7 +61,7 @@ const pointNames: POI[] = mapData.points.features.flatMap((f) => {
       ]
 })
 
-const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
+const polygonNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
   const id = //Number(f.properties.osm_id ?? '' + f.properties.osm_way_id ?? '')
     getOsmId(f.properties)
   const name = filterName(f)
@@ -87,7 +87,7 @@ const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
       ]
 })
 
-export const mapNames: POI[] = [...pointNames, ...centroidNames]
+export const mapNames: POI[] = [...pointNames, ...polygonNames]
 
 // eslint-disable-next-line functional/prefer-immutable-types
 function filterName(f: DeepReadonly<OsmFeature>): null | string {
