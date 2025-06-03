@@ -1,15 +1,33 @@
 import {
   calcScale,
-  getOsmId,
+  MapData,
   MapMap,
   mapMapFromMapData,
-  OsmFeature,
-  POI,
 } from '@daijimaps/svgmapviewer/geo'
-import { V, vUnvec, vVec } from '@daijimaps/svgmapviewer/tuple'
-import { mapData } from './data'
+import areas from './data/areas.json'
+import centroids from './data/map-centroids.json'
+import lines from './data/map-lines.json'
+import midpoints from './data/map-midpoints.json'
+import multilinestrings from './data/map-multilinestrings.json'
+import multipolygons from './data/map-multipolygons.json'
+import points from './data/map-points.json'
+import measures from './data/measures.json'
+import origin from './data/origin.json'
+import viewbox from './data/viewbox.json'
 
-export { mapData }
+export const mapData: MapData = {
+  areas,
+  origin,
+  measures,
+  viewbox,
+
+  points,
+  lines,
+  multilinestrings,
+  multipolygons,
+  centroids,
+  midpoints,
+}
 
 export const mapMap: MapMap = mapMapFromMapData(mapData)
 
@@ -17,148 +35,3 @@ export const mapMap: MapMap = mapMapFromMapData(mapData)
 //// mapViewBox
 
 export const { mapCoord, mapViewBox } = calcScale(mapData)
-
-//// mapHtmlStyle
-//// mapSymbols
-//// mapNames
-
-export const mapHtmlStyle = `
-.poi-stars {
-  font-size: x-large;
-}
-.poi-names {
-  font-size: small;
-}
-.poi-stars-item {
-  position: absolute;
-  padding: 0;
-  text-align: center;
-}
-.poi-names-item {
-  position: absolute;
-  padding: 0.5em;
-  background-color: rgba(255, 255, 255, 0.375);
-  text-align: center;
-  border-radius: 5em;
-}
-.poi-symbols-item > p,
-.poi-stars-item > p,
-.poi-names-item > p {
-  margin: 0;
-}
-.poi-symbols-item {
-  position: absolute;
-  font-size: 1.5em;
-  color: white;
-  background-color: black;
-  border-radius: 0.05em;
-}
-.poi-symbols-item > p > span {
-  display: block;
-}
-`
-
-export const mapSymbols: POI[] = []
-
-const pointNames: POI[] = mapData.points.features.flatMap((f) => {
-  const id = Number(
-    f.properties.osm_id ?? '' /*+ f.properties.osm_way_id ?? ''*/
-  )
-  const name = filterName(f)
-  const pos = vVec(conv(f.geometry.coordinates as unknown as V))
-  const area = undefined
-  return name === null
-    ? []
-    : [{ id: id === 0 ? null : id, name: splitName(name), pos, size: 0, area }]
-})
-
-const centroidNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
-  const id = getOsmId(f.properties)
-  const name = filterName(f)
-  const centroid: null | V =
-    f.properties.centroid_x === null || f.properties.centroid_y === null
-      ? null
-      : [f.properties.centroid_x, f.properties.centroid_y]
-  // XXX
-  // XXX
-  // XXX
-  const pos = centroid === null ? { x: 0, y: 0 } : vVec(conv(centroid))
-  // XXX
-  // XXX
-  // XXX
-  const area =
-    'area' in f.properties && f.properties.area !== null
-      ? f.properties.area
-      : undefined
-  // XXX
-  // XXX
-  // XXX
-  return name === null
-    ? []
-    : [
-        {
-          id: id === null ? null : Number(id),
-          name: splitName(name),
-          pos,
-          size: 0,
-          area,
-        },
-      ]
-})
-
-export const mapNames: POI[] = [...pointNames, ...centroidNames]
-
-// eslint-disable-next-line functional/prefer-immutable-types
-function filterName(f: OsmFeature): null | string {
-  const name = f.properties.name
-  if (name === null) {
-    return null
-  }
-  if (f.properties.other_tags?.match(/"vending_machine"/)) {
-    return null
-  }
-  if (
-    name.match(/門$/) &&
-    'osm_way_id' in f.properties &&
-    f.properties.osm_way_id !== null
-  ) {
-    return null
-  }
-  if (
-    name.match(
-      /丁目$|町$|売店$|レストハウス|^新宿御苑$|センター|案内図$|Ticket|シラカシ/
-    )
-  ) {
-    return null
-  }
-  // split name by keywords
-  return name.replace(
-    /(カフェ|レストラン|ミュージアム|センター|門衛所|御休所|休憩所|案内図|パビリオン|マーケットプレイス|ターミナル|停留所|エクスペリエンス|ポップアップステージ)/,
-    ' $1 '
-  )
-}
-
-function splitName(s: string): string[] {
-  return s
-    .trim()
-    .split(/  */)
-    .map((s) => s.trim())
-}
-
-// XXX
-// XXX
-// XXX
-export function conv(p: V): V {
-  return vUnvec(mapCoord.matrix.transformPoint(vVec(p)))
-}
-// XXX
-// XXX
-// XXX
-
-export type DeepReadonly<T> = {
-  readonly [P in keyof T]: T[P] extends (...args: readonly unknown[]) => unknown
-    ? T[P]
-    : T[P] extends object
-      ? DeepReadonly<T[P]>
-      : T[P]
-}
