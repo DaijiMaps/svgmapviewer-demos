@@ -1,25 +1,5 @@
 /* eslint-disable functional/prefer-immutable-types */
-import { findFeature, MapData, SearchEntry } from '@daijimaps/svgmapviewer/geo'
-import { SearchAddressRes } from '@daijimaps/svgmapviewer/search'
-import { Info } from './info'
-
-export function getAddressInfo(
-  mapData: MapData,
-  entries: SearchEntry[],
-  res: SearchAddressRes
-): null | Info {
-  const feature = findFeature(res?.address, mapData)
-  if (feature === null) {
-    return null
-  }
-  const properties = feature.properties
-  const matches = entries.flatMap((entry) =>
-    !entry.filter(properties) ? [] : [entry.getInfo(properties, res.address)]
-  )
-  return matches.length === 0 ? null : matches[0]
-}
-
-////
+import { SearchEntry } from '@daijimaps/svgmapviewer/geo'
 
 export const searchEntries: SearchEntry[] = [
   {

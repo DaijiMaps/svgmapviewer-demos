@@ -5,10 +5,10 @@
 import { notifySearchDone, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
   AddressEntries,
+  getAddressInfo,
   SearchAddressRes,
 } from '@daijimaps/svgmapviewer/search'
 import { VecVec as Vec } from '@daijimaps/svgmapviewer/vec'
-import { getAddressInfo } from './search-data'
 import { SearchWorkerRes } from './search-worker'
 import SearchWorker from './search-worker?worker'
 
