@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167565 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858167 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.7001400" minlon="139.3860800" maxlat="35.7212200" maxlon="139.4130300"/>
  <node id="190137942" visible="true" version="11" changeset="157252696" timestamp="2024-09-29T13:16:18Z" user="seichan1028" uid="6427548" lat="35.7233781" lon="139.4069838">
   <tag k="highway" v="traffic_signals"/>
@@ -47007,7 +47007,7 @@
   <tag k="highway" v="residential"/>
   <tag k="oneway" v="yes"/>
  </way>
- <relation id="1543125" visible="true" version="351" changeset="167113292" timestamp="2025-06-03T01:11:06Z" user="Rokomo35" uid="19071241">
+ <relation id="1543125" visible="true" version="352" changeset="167157501" timestamp="2025-06-04T02:19:15Z" user="Rokomo35" uid="19071241">
   <member type="node" ref="265018692" role="admin_centre"/>
   <member type="way" ref="285975526" role="outer"/>
   <member type="way" ref="357954032" role="outer"/>
@@ -47042,6 +47042,8 @@
   <member type="way" ref="475417983" role="outer"/>
   <member type="way" ref="564029331" role="outer"/>
   <member type="way" ref="1222683859" role="outer"/>
+  <member type="way" ref="1391972172" role="outer"/>
+  <member type="way" ref="1391972175" role="outer"/>
   <member type="way" ref="1391723583" role="outer"/>
   <member type="way" ref="1391723582" role="outer"/>
   <member type="way" ref="355038055" role="outer"/>
