@@ -248,6 +248,7 @@ a:link {
   pointer-events: initial;
 }
 
+.footer h2,
 .footer p {
   user-select: none;
   -webkit-user-select: none;
@@ -299,6 +300,12 @@ a:link {
   height: 100svh;
   pointer-events: none;
   z-index: 2;
+}
+
+.distance > text,
+.coordinate > text {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .header {

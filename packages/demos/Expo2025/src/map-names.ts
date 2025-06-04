@@ -47,7 +47,6 @@ const polygonNames: POI[] = mapData.multipolygons.features.flatMap((f) => {
 
 export const mapNames: POI[] = [...pointNames, ...polygonNames]
 
-// eslint-disable-next-line functional/prefer-immutable-types
 function filterName(f: DeepReadonly<OsmFeature>): null | string {
   const name = f.properties.name
   if (name === null || typeof name !== 'string') {

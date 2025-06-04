@@ -5,6 +5,7 @@ import {
   mapMapFromMapData,
 } from '@daijimaps/svgmapviewer/geo'
 import areas from './data/areas.json'
+import internals from './data/internals.json'
 import lines from './data/map-lines.json'
 import multilinestrings from './data/map-multilinestrings.json'
 import multipolygons from './data/map-multipolygons.json'
@@ -15,6 +16,7 @@ import viewbox from './data/viewbox.json'
 
 export const mapData: MapData = {
   areas,
+  internals,
   origin,
   measures,
   viewbox,
