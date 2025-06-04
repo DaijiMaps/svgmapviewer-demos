@@ -2,6 +2,7 @@ import react from '@vitejs/plugin-react'
 import path from 'node:path'
 import { defineConfig } from 'vite'
 
+const APP = '../../../../svgmapviewer/packages/app/src'
 const LIB = '../../../../svgmapviewer/packages/lib/src/lib'
 
 // https://vitejs.dev/config/
@@ -9,12 +10,17 @@ export default defineConfig({
   base: '',
   server: {
     fs: {
-      allow: ['.', '../../../../svgmapviewer/packages/lib'],
+      allow: [
+        '.',
+        '../../../../svgmapviewer/packages/app',
+        '../../../../svgmapviewer/packages/lib',
+      ],
     },
   },
   plugins: [react()],
   resolve: {
     alias: {
+      '@daijimaps/svgmapviewer-app': path.resolve(__dirname, `${APP}/index.ts`),
       '@daijimaps/svgmapviewer/box': path.resolve(
         __dirname,
         `${LIB}/box/prefixed/index.ts`

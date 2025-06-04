@@ -63,3 +63,4 @@ packages:
   - packages/tools
 overrides:
   '@daijimaps/svgmapviewer': link:../svgmapviewer/packages/lib
+  '@daijimaps/svgmapviewer-app': link:../svgmapviewer/packages/app

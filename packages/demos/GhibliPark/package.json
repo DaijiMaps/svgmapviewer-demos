@@ -3,31 +3,32 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "dev:local": "vite --host 0.0.0.0 --config vite.config-local.ts",
-    "build": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src && tsc -b && vite build",
-    "build:local": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src && tsc -b && vite build --config vite.config-local.ts",
+    "build": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src/lib.css && cp node_modules/@daijimaps/svgmapviewer-app/dist/index.css src/app.css && tsc -b && vite build",
+    "build:local": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src/lib.css && cp node_modules/@daijimaps/svgmapviewer-app/dist/index.css src/app.css && tsc -b && vite build --config vite.config-local.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "pages:deploy": "pnpm build && cd dist && wrangler pages deploy ."
   },
   "dependencies": {
     "@daijimaps/svgmapviewer": "link:../../../../svgmapviewer/packages/lib",
+    "@daijimaps/svgmapviewer-app": "link:../../../../svgmapviewer/packages/app",
     "@vitejs/plugin-basic-ssl": "^2.0.0",
-    "@xstate/react": "^5.0.4",
+    "@xstate/react": "^5.0.5",
     "flatbush": "^4.4.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "xstate": "^5.19.3"
+    "xstate": "^5.19.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
     "@testing-library/react": "^16.3.0",
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
-    "@vitejs/plugin-react": "^4.5.0",
-    "eslint": "^9.27.0",
+    "@vitejs/plugin-react": "^4.5.1",
+    "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
-    "eslint-plugin-functional": "^9.0.1",
-    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-functional": "^9.0.2",
+    "eslint-plugin-prettier": "^5.4.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
@@ -36,7 +37,7 @@
     "prettier-plugin-organize-imports": "^4.1.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^5.8.3",
-    "typescript-eslint": "^8.33.0",
+    "typescript-eslint": "^8.33.1",
     "vite": "^6.3.5",
     "vite-plugin-svgr": "^4.3.0"
   }

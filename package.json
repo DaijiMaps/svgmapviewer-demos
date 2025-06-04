@@ -2,6 +2,7 @@
   "name": "@daijimaps/svgmapviewer-demos",
   "type": "module",
   "dependencies": {
-    "@daijimaps/svgmapviewer": "link:../svgmapviewer/packages/lib"
+    "@daijimaps/svgmapviewer": "link:../svgmapviewer/packages/lib",
+    "@daijimaps/svgmapviewer-app": "link:../svgmapviewer/packages/app"
   }
 }

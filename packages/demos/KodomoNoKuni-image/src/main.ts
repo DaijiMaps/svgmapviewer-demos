@@ -1,18 +1,15 @@
-import { svgmapviewer, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
-import mapSvg from './assets/floors.svg'
-import { RenderInfo, RenderMap } from './render'
-import { workerSearchStart } from './search'
+import { svgmapviewer } from '@daijimaps/svgmapviewer'
+import { appConfig } from '@daijimaps/svgmapviewer-app'
+import './app.css' // XXX
+import './lib.css' // XXX
+import { mapConfig } from './map-data'
+
+import userConfig from '../svgmapviewer.config'
 
 svgmapviewer({
+  ...mapConfig,
+  ...appConfig,
+  ...userConfig,
   root: 'root',
   map: 'map1',
-  href: `${mapSvg}`,
-  width: 580,
-  height: 610,
-  zoomFactor: 3,
-  renderMap: RenderMap,
-  renderInfo: RenderInfo,
-  copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
 })
-
-svgMapViewerConfig.searchCbs.add(workerSearchStart)
