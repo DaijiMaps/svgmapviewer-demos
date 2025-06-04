@@ -1,4 +1,7 @@
 {
   "name": "@daijimaps/svgmapviewer-demos",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@daijimaps/svgmapviewer": "link:../svgmapviewer/packages/lib"
+  }
 }
