@@ -1,3 +1,4 @@
+import { SvgMapViewerConfig } from '@daijimaps/svgmapviewer'
 import {
   calcScale,
   MapData,
@@ -14,7 +15,7 @@ import measures from './data/measures.json'
 import origin from './data/origin.json'
 import viewbox from './data/viewbox.json'
 
-export const mapData: MapData = {
+const mapData: MapData = {
   areas,
   internals,
   origin,
@@ -27,6 +28,13 @@ export const mapData: MapData = {
   multipolygons,
 }
 
-export const mapMap: MapMap = mapMapFromMapData(mapData)
+const mapMap: MapMap = mapMapFromMapData(mapData)
 
-export const { mapCoord, mapViewBox } = calcScale(mapData)
+const { mapCoord, mapViewBox: origViewBox } = calcScale(mapData)
+
+export const mapConfig: Partial<SvgMapViewerConfig> = {
+  mapData,
+  mapMap,
+  mapCoord,
+  origViewBox,
+}
