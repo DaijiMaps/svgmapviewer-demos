@@ -1,21 +1,31 @@
 import { svgmapviewer } from '@daijimaps/svgmapviewer'
-import floors from './assets/floors.svg'
-import { RenderMap } from './map'
+import './index.css' // XXX
+import { mapCoord, mapData, mapMap, mapViewBox } from './map-data'
+import { getMapLayers } from './map-layers'
+import { getMapMarkers } from './map-markers'
+import { mapNames, mapSymbols } from './map-names'
+import { getMapObjects } from './map-objects'
+import { getMapSymbols } from './map-symbols'
+import './map.css' // XXX
+import { RenderInfo } from './render'
+import { searchEntries } from './search-data'
+
+import userConfig from '../svgmapviewer.config'
 
 svgmapviewer({
+  ...userConfig,
   root: 'root',
   map: 'map1',
-  href: `${floors}`,
-  width: 300,
-  height: 300,
-  //origViewBox: { x: 0, y: 0, width: 595.275, height: 841.89 },
-  zoomFactor: 3,
-  renderMap: RenderMap,
-  //renderInfo: RenderInfo,
-  copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
-  //mapData,
-  //mapCoord,
-  //mapHtmlStyle,
-  //mapSymbols,
-  //mapNames,
+  origViewBox: mapViewBox,
+  getMapLayers,
+  getMapObjects,
+  getMapSymbols,
+  getMapMarkers,
+  renderInfo: RenderInfo,
+  mapData,
+  mapMap,
+  mapCoord,
+  mapSymbols,
+  mapNames,
+  searchEntries,
 })

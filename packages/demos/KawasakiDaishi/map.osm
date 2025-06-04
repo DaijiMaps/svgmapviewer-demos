@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529589 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858188 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.5322300" minlon="139.7280900" maxlat="35.5355300" maxlon="139.7323500"/>
  <node id="303555818" visible="true" version="5" changeset="28298875" timestamp="2015-01-21T03:05:14Z" user="futurumspes" uid="651065" lat="35.5354347" lon="139.7264616">
   <tag k="highway" v="traffic_signals"/>
@@ -724,13 +724,6 @@
   <tag k="name:en" v="Mikuji (Fortune Slip) Returning Station"/>
   <tag k="source" v="survey"/>
  </node>
- <node id="3362872077" visible="true" version="4" changeset="93575976" timestamp="2020-11-05T05:21:07Z" user="Daiji Maps" uid="10880270" lat="35.5341344" lon="139.7291279">
-  <tag k="historic" v="building"/>
-  <tag k="name" v="不動堂"/>
-  <tag k="name:en" v="Fudodo (Acala Naatha House)"/>
-  <tag k="source" v="survey"/>
-  <tag k="wheelchair" v="no"/>
- </node>
  <node id="3362872079" visible="true" version="4" changeset="93527841" timestamp="2020-11-04T08:45:43Z" user="Daiji Maps" uid="10880270" lat="35.5333435" lon="139.7302493"/>
  <node id="3362872080" visible="true" version="8" changeset="113101475" timestamp="2021-10-28T23:59:22Z" user="hatochan" uid="38591" lat="35.5344018" lon="139.7292411"/>
  <node id="3362872081" visible="true" version="5" changeset="113101475" timestamp="2021-10-28T23:59:22Z" user="hatochan" uid="38591" lat="35.5336543" lon="139.7289681"/>
@@ -750,12 +743,6 @@
  <node id="3362872085" visible="true" version="2" changeset="41661956" timestamp="2016-08-24T12:19:58Z" user="_Yuki_K_" uid="3933181" lat="35.5348310" lon="139.7301830">
   <tag k="description" v="喫煙所"/>
   <tag k="smoking:outside" v="yes"/>
-  <tag k="source" v="survey"/>
- </node>
- <node id="3362872086" visible="true" version="3" changeset="93539831" timestamp="2020-11-04T11:35:07Z" user="Daiji Maps" uid="10880270" lat="35.5348882" lon="139.7302287">
-  <tag k="historic" v="building"/>
-  <tag k="name" v="聖徳太子堂"/>
-  <tag k="name:en" v="House Enshrining Prince Shotoku"/>
   <tag k="source" v="survey"/>
  </node>
  <node id="3362872087" visible="true" version="5" changeset="113124359" timestamp="2021-10-29T13:11:54Z" user="hatochan" uid="38591" lat="35.5344625" lon="139.7301483"/>
@@ -1795,10 +1782,6 @@
  <node id="5721640611" visible="true" version="1" changeset="60199240" timestamp="2018-06-27T04:02:59Z" user="Kkairri" uid="2961192" lat="35.5313477" lon="139.7295246"/>
  <node id="5721640619" visible="true" version="1" changeset="60199240" timestamp="2018-06-27T04:02:59Z" user="Kkairri" uid="2961192" lat="35.5323523" lon="139.7326296"/>
  <node id="6273631191" visible="true" version="1" changeset="67122364" timestamp="2019-02-12T07:07:01Z" user="maripogoda" uid="6108657" lat="35.5319140" lon="139.7295267"/>
- <node id="6320388254" visible="true" version="1" changeset="67836043" timestamp="2019-03-06T09:04:31Z" user="かわさきまっぷ" uid="9502578" lat="35.5347469" lon="139.7293004">
-  <tag k="name" v="川崎大師"/>
-  <tag k="tourism" v="attraction"/>
- </node>
  <node id="6403889315" visible="true" version="3" changeset="140873670" timestamp="2023-09-06T02:21:42Z" user="Sohlman" uid="7546893" lat="35.5349661" lon="139.7344510">
   <tag k="crossing" v="marked"/>
   <tag k="crossing:markings" v="yes"/>
@@ -6382,11 +6365,12 @@
   <tag k="highway" v="residential"/>
   <tag k="oneway" v="yes"/>
  </way>
- <way id="113627265" visible="true" version="2" changeset="108031026" timestamp="2021-07-15T08:21:19Z" user="Zaneo" uid="13734811">
+ <way id="113627265" visible="true" version="3" changeset="166924943" timestamp="2025-05-29T14:17:41Z" user="yoshitk" uid="1003241">
   <nd ref="1288323676"/>
   <nd ref="1288322849"/>
-  <tag k="highway" v="residential"/>
+  <tag k="highway" v="service"/>
   <tag k="motor_vehicle" v="destination"/>
+  <tag k="service" v="alley"/>
  </way>
  <way id="113627308" visible="true" version="4" changeset="139073414" timestamp="2023-07-27T08:18:27Z" user="片倉1980" uid="19706099">
   <nd ref="320894296"/>
@@ -6530,7 +6514,7 @@
   <tag k="oneway" v="yes"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
- <way id="161462634" visible="true" version="9" changeset="144310676" timestamp="2023-11-22T05:17:52Z" user="SD 永田" uid="9934816">
+ <way id="161462634" visible="true" version="10" changeset="166924943" timestamp="2025-05-29T14:17:41Z" user="yoshitk" uid="1003241">
   <nd ref="1734274318"/>
   <nd ref="4197232930"/>
   <nd ref="1734274362"/>
@@ -6542,8 +6526,9 @@
   <tag k="bicycle" v="designated"/>
   <tag k="est_width" v="3.0m〜5.5m"/>
   <tag k="foot" v="designated"/>
-  <tag k="highway" v="path"/>
+  <tag k="highway" v="service"/>
   <tag k="motor_vehicle" v="destination"/>
+  <tag k="service" v="alley"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
   <tag k="surface" v="paved"/>
  </way>
@@ -7013,7 +6998,7 @@
   <tag k="name:en" v="Main House"/>
   <tag k="wheelchair" v="limited"/>
  </way>
- <way id="329396995" visible="true" version="6" changeset="93571623" timestamp="2020-11-05T03:57:56Z" user="Daiji Maps" uid="10880270">
+ <way id="329396995" visible="true" version="7" changeset="166481910" timestamp="2025-05-19T15:05:39Z" user="Daiji Maps" uid="10880270">
   <nd ref="3362734633"/>
   <nd ref="3362734634"/>
   <nd ref="3362734635"/>
@@ -7032,6 +7017,7 @@
   <nd ref="3362734633"/>
   <tag k="building" v="temple"/>
   <tag k="name" v="不動堂"/>
+  <tag k="name:en" v="Fudodo (Acala Naatha House)"/>
   <tag k="source" v="bing"/>
  </way>
  <way id="329397029" visible="true" version="2" changeset="113124359" timestamp="2021-10-29T13:11:57Z" user="hatochan" uid="38591">
@@ -8034,7 +8020,7 @@
   <tag k="name" v="やすらぎ広場"/>
   <tag k="natural" v="sand"/>
  </way>
- <way id="329398381" visible="true" version="4" changeset="93580814" timestamp="2020-11-05T06:39:30Z" user="Daiji Maps" uid="10880270">
+ <way id="329398381" visible="true" version="5" changeset="166481910" timestamp="2025-05-19T15:05:39Z" user="Daiji Maps" uid="10880270">
   <nd ref="3362751815"/>
   <nd ref="3362751816"/>
   <nd ref="8083522484"/>
@@ -8043,6 +8029,7 @@
   <nd ref="3362751815"/>
   <tag k="building" v="temple"/>
   <tag k="name" v="聖徳太子堂"/>
+  <tag k="name:en" v="House Enshrining Prince Shotoku"/>
   <tag k="source" v="bing"/>
  </way>
  <way id="329398383" visible="true" version="4" changeset="113124359" timestamp="2021-10-29T13:11:57Z" user="hatochan" uid="38591">

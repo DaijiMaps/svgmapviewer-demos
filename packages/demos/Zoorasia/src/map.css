@@ -5,13 +5,6 @@ body,
   background-color: darkgray;
 }
 
-.container {
-  contain: paint;
-}
-
-.map {
-}
-
 .area {
   fill: #bcd35f;
   fill-opacity: 1;
@@ -90,7 +83,7 @@ body,
 .path {
   fill: none;
   stroke: khaki;
-  stroke-width: 2px;
+  stroke-width: 1.25px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }

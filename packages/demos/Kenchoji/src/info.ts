@@ -1,12 +1,10 @@
 import { Info } from '@daijimaps/svgmapviewer'
-import {
-  OsmPointProperties,
-  OsmPolygonProperties,
-} from '@daijimaps/svgmapviewer/geo'
+import { OsmProperties } from '@daijimaps/svgmapviewer/geo'
 
 export interface ShopInfo {
   tag: 'shop'
-  properties: OsmPointProperties | OsmPolygonProperties
+  properties: OsmProperties
+  title?: string
   name?: string
   address?: string
   website?: string
@@ -14,7 +12,8 @@ export interface ShopInfo {
 
 export interface FacilityInfo {
   tag: 'facility'
-  properties: OsmPointProperties | OsmPolygonProperties
+  properties: OsmProperties
+  title?: string
   name?: string
   address?: string
 }

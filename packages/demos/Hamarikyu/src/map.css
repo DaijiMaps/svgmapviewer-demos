@@ -2,19 +2,7 @@ html,
 body,
 :root,
 .content.svg {
-  background-color: lightblue;
-}
-
-.container {
-  contain: paint;
-}
-
-.map {
-}
-
-.island {
-  fill: darkgray;
-  fill-opacity: 1;
+  background-color: darkgray;
 }
 
 .area {
@@ -73,7 +61,7 @@ body,
 .forest,
 .garden {
   fill: darkgreen;
-  fill-opacity: 0.1;
+  fill-opacity: 0.25;
 }
 
 .road {
@@ -88,6 +76,14 @@ body,
   fill: none;
   stroke: white;
   stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.path {
+  fill: none;
+  stroke: khaki;
+  stroke-width: 1.25px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -127,6 +123,10 @@ body,
   stroke-width: 1.25px;
   stroke-dasharray: 0.5, 0.5;
   stroke-dashoffset: 0.5;
+}
+
+.access {
+  stroke-opacity: 0.25;
 }
 
 .escalator-background {

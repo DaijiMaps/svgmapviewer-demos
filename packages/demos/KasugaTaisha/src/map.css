@@ -1,8 +1,8 @@
+html,
+body,
+:root,
 .content.svg {
-  background-color: darkgrey;
-}
-
-.map {
+  background-color: darkgray;
 }
 
 .area {
@@ -14,6 +14,11 @@
   fill: lightgray;
 }
 
+.roof {
+  fill: lightgray;
+  fill-opacity: 0.5;
+}
+
 .pedestrian-area {
   fill: white;
   stroke: white;
@@ -21,12 +26,12 @@
 }
 
 .water {
-  fill: #aaeeff;
+  fill: lightblue;
 }
 
 .ditch {
   fill: none;
-  stroke: #aaeeff;
+  stroke: lightblue;
   stroke-width: 0.25px;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -34,29 +39,51 @@
 
 .stream {
   fill: none;
-  stroke: #aaeeff;
+  stroke: lightblue;
   stroke-width: 1px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.forest {
+.river {
+  fill: none;
+  stroke: lightblue;
+  stroke-width: 5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.grass {
+  fill: khaki;
+  fill-opacity: 0.5;
+}
+
+.forest,
+.garden {
   fill: darkgreen;
   fill-opacity: 0.25;
 }
 
 .road {
   fill: none;
-  stroke: whitesmoke;
-  stroke-width: 4px;
+  stroke: white;
+  stroke-width: 6px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .service {
   fill: none;
-  stroke: whitesmoke;
+  stroke: white;
   stroke-width: 4px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.path {
+  fill: none;
+  stroke: khaki;
+  stroke-width: 1.25px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -64,7 +91,7 @@
 .cycleway {
   fill: none;
   stroke: white;
-  stroke-width: 2px;
+  stroke-width: 3px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -72,7 +99,7 @@
 .footway {
   fill: none;
   stroke: white;
-  stroke-width: 1px;
+  stroke-width: 1.25px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
@@ -80,7 +107,7 @@
 .footway-bridge {
   fill: none;
   stroke: black;
-  stroke-width: 4px;
+  stroke-width: 2.5px;
 }
 
 .steps > .bg {
@@ -88,28 +115,43 @@
   stroke: white;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke-width: 1px;
+  stroke-width: 1.25px;
 }
 .steps > .fg {
   fill: none;
-  stroke: gainsboro;
-  stroke-width: 1px;
+  stroke: lightgrey;
+  stroke-width: 1.25px;
   stroke-dasharray: 0.5, 0.5;
+  stroke-dashoffset: 0.5;
 }
 
-.hedge {
+.access {
+  stroke-opacity: 0.25;
+}
+
+.escalator-background {
   fill: none;
-  stroke: green;
-  stroke-opacity: 0.5;
-  stroke-width: 1px;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+  stroke: black;
+  stroke-width: 1.75px;
+}
+.escalator-foreground {
+  fill: none;
+  stroke: white;
+  stroke-width: 1.25px;
+  stroke-dasharray: 0.5, 0.5;
+  stroke-dashoffset: 0.5;
 }
 
 .wall {
   fill: none;
   stroke: black;
   stroke-width: 0.5px;
+}
+
+.fence {
+  fill: none;
+  stroke: black;
+  stroke-width: 0.25px;
 }
 
 .retaining-wall {

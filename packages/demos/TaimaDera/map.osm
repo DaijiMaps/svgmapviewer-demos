@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2270294 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167585 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.5141700" minlon="135.6916000" maxlat="34.5178600" maxlon="135.6976100"/>
  <node id="549189556" visible="true" version="3" changeset="131462628" timestamp="2023-01-19T11:43:22Z" user="okadatsuneo" uid="10163840" lat="34.5161970" lon="135.6771658"/>
  <node id="549190358" visible="true" version="2" changeset="4427477" timestamp="2010-04-15T01:05:29Z" user="miyabi" uid="180468" lat="34.5169490" lon="135.6771150"/>
@@ -3960,6 +3960,13 @@
  <node id="12290466128" visible="true" version="1" changeset="158385424" timestamp="2024-10-26T17:07:35Z" user="Daiji Maps" uid="10880270" lat="34.5155298" lon="135.6964835"/>
  <node id="12290466129" visible="true" version="1" changeset="158385424" timestamp="2024-10-26T17:07:35Z" user="Daiji Maps" uid="10880270" lat="34.5155569" lon="135.6964835"/>
  <node id="12290466130" visible="true" version="1" changeset="158385424" timestamp="2024-10-26T17:07:35Z" user="Daiji Maps" uid="10880270" lat="34.5155395" lon="135.6967609"/>
+ <node id="12828636860" visible="true" version="1" changeset="166113846" timestamp="2025-05-11T15:23:09Z" user="AerostarKt" uid="22844554" lat="34.5161369" lon="135.6952830">
+  <tag k="board_type" v="history"/>
+  <tag k="information" v="board"/>
+  <tag k="name" v="謡曲「当麻」と中将姫"/>
+  <tag k="operator" v="謡曲史跡保存会"/>
+  <tag k="tourism" v="information"/>
+ </node>
  <way id="161661964" visible="true" version="3" changeset="131466395" timestamp="2023-01-19T13:10:30Z" user="okadatsuneo" uid="10163840">
   <nd ref="1736314046"/>
   <nd ref="6238965542"/>

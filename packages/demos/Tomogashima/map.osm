@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529607 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167558 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.2743000" minlon="134.9971000" maxlat="34.2950000" maxlon="135.0283000"/>
  <node id="401626578" visible="true" version="2" changeset="56774295" timestamp="2018-03-01T04:04:26Z" user="taketaketake" uid="4757277" lat="34.2761510" lon="135.0704846"/>
  <node id="401626579" visible="true" version="1" changeset="1211966" timestamp="2009-05-16T16:54:10Z" user="Nahainec" uid="96268" lat="34.2773970" lon="135.0705137"/>
@@ -4713,7 +4713,7 @@
   <nd ref="1224757425"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="131091607" visible="true" version="4" changeset="154602530" timestamp="2024-07-30T11:57:14Z" user="tartiflex" uid="507417">
+ <way id="131091607" visible="true" version="5" changeset="166553341" timestamp="2025-05-21T07:11:57Z" user="taku0326" uid="22897291">
   <nd ref="1443385765"/>
   <nd ref="1443385761"/>
   <nd ref="1443385753"/>
@@ -4814,6 +4814,7 @@
   <nd ref="1443385789"/>
   <nd ref="3990150213"/>
   <nd ref="1443385765"/>
+  <tag k="description" v="立ち入り禁止になっている。"/>
   <tag k="name" v="神島"/>
   <tag k="name:en" v="Kamijima Island"/>
   <tag k="name:etymology:wikidata" v="Q524158"/>
@@ -7611,7 +7612,7 @@
   <nd ref="3982494486"/>
   <tag k="natural" v="coastline"/>
  </way>
- <way id="395345079" visible="true" version="2" changeset="154602530" timestamp="2024-07-30T11:57:14Z" user="tartiflex" uid="507417">
+ <way id="395345079" visible="true" version="3" changeset="166553341" timestamp="2025-05-21T07:11:57Z" user="taku0326" uid="22897291">
   <nd ref="12082911337"/>
   <nd ref="3982494532"/>
   <nd ref="3982494524"/>
@@ -7622,6 +7623,8 @@
   <nd ref="3982494529"/>
   <nd ref="3982494530"/>
   <nd ref="3982494531"/>
+  <tag k="check_date" v="2025-05-06"/>
+  <tag k="description" v="立ち入り禁止になっている"/>
   <tag k="highway" v="path"/>
   <tag k="source" v="YahooJapan/ALPSMAP"/>
  </way>
@@ -9088,9 +9091,10 @@
   <nd ref="12082911333"/>
   <tag k="highway" v="path"/>
  </way>
- <way id="1304632684" visible="true" version="1" changeset="154602530" timestamp="2024-07-30T11:57:14Z" user="tartiflex" uid="507417">
+ <way id="1304632684" visible="true" version="2" changeset="166553341" timestamp="2025-05-21T07:11:57Z" user="taku0326" uid="22897291">
   <nd ref="12082911336"/>
   <nd ref="12082911337"/>
+  <tag k="description" v="立ち入り禁止になっている。"/>
   <tag k="ford" v="yes"/>
   <tag k="highway" v="path"/>
  </way>

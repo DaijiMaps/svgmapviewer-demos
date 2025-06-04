@@ -1,10 +1,9 @@
 import { Like, svgMapViewerConfig } from '@daijimaps/svgmapviewer'
+import { symbolNameMap } from '@daijimaps/svgmapviewer/carto-symbols'
 import {
-  findProperties,
+  findProperties2,
   getPropertyValue,
-  OsmLineProperties,
-  OsmPointProperties,
-  OsmPolygonProperties,
+  OsmProperties,
 } from '@daijimaps/svgmapviewer/geo'
 import { FacilityInfo, Info, ShopInfo } from './info'
 
@@ -13,9 +12,10 @@ export interface Props {
 }
 
 export function RenderInfo(props: Readonly<Props>) {
-  const cfg = svgMapViewerConfig.mapData
+  const mapMap = svgMapViewerConfig.mapMap
+  const id = Number(props.info.x.address)
   const properties =
-    'address' in props.info.x ? findProperties(props.info.x.address, cfg) : null
+    'address' in props.info.x ? findProperties2(id, mapMap) : null
   if (properties === null) {
     return <p>XXX info not found (osm_id={props.info.x.address}) XXX</p>
   }
@@ -27,7 +27,7 @@ export function RenderInfo(props: Readonly<Props>) {
 function RenderShopInfo(
   props: Readonly<{
     x: ShopInfo
-    properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
+    properties: OsmProperties
   }>
 ) {
   const website = getPropertyValue(props.properties, 'website')
@@ -40,18 +40,29 @@ function RenderShopInfo(
   return (
     <>
       <p>
-        {props.properties.name ?? props.x.name} {id !== 0 && <Like _id={id} />}
+        {props.properties.name ?? props.x.name}
+        {id !== 0 && <Like _id={id} />}
       </p>
-      {website !== null && (
-        <p>
-          website:{' '}
+      <p>
+        {website !== null && (
           <a target="_blank" href={website}>
-            {website}
+            🌐
           </a>
-        </p>
-      )}
-      {osm_id !== 0 && <p>osm_id: {osm_id}</p>}
-      {osm_way_id !== 0 && <p>osm_way_id: {osm_way_id}</p>}
+        )}
+        {osm_id !== 0 && (
+          <a target="_blank" href={`https://openstreetmap.org/node/${osm_id}`}>
+            🗺️
+          </a>
+        )}
+        {osm_way_id !== 0 && (
+          <a
+            target="_blank"
+            href={`https://openstreetmap.org/way/${osm_way_id}`}
+          >
+            🗺️
+          </a>
+        )}
+      </p>
     </>
   )
 }
@@ -59,9 +70,11 @@ function RenderShopInfo(
 function RenderFacilityInfo(
   props: Readonly<{
     x: FacilityInfo
-    properties: OsmPointProperties | OsmLineProperties | OsmPolygonProperties
+    properties: OsmProperties
   }>
 ) {
+  const symbol = props.x.title !== undefined && symbolNameMap.get(props.x.title)
+
   return (
     <>
       <p>{props.x.title}</p>
@@ -73,14 +86,16 @@ function RenderFacilityInfo(
           margin: '1em',
         }}
       >
-        <svg
-          style={{ display: 'block' }}
-          viewBox="-36 -36 72 72"
-          width="3em"
-          height="3em"
-        >
-          <use href="#XToilets" />
-        </svg>
+        {symbol && (
+          <svg
+            style={{ display: 'block' }}
+            viewBox="-36 -36 72 72"
+            width="3em"
+            height="3em"
+          >
+            <use href={symbol} />
+          </svg>
+        )}
       </div>
       <p>{props.x.properties.name}</p>
     </>

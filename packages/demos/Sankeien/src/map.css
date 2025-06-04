@@ -5,13 +5,6 @@ body,
   background-color: darkgray;
 }
 
-.container {
-  contain: paint;
-}
-
-.map {
-}
-
 .area {
   fill: #bcd35f;
   fill-opacity: 1;

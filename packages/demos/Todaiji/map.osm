@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529593 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167559 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.6827000" minlon="135.8340000" maxlat="34.6942000" maxlon="135.8499000"/>
  <node id="251381458" visible="true" version="21" changeset="131628921" timestamp="2023-01-24T00:23:41Z" user="okadatsuneo" uid="10163840" lat="34.6848342" lon="135.8396119"/>
  <node id="252250221" visible="true" version="24" changeset="35416844" timestamp="2015-11-18T19:25:15Z" user="calfarome" uid="2511706" lat="34.6936222" lon="135.8348047"/>
@@ -16460,7 +16460,7 @@
   <nd ref="1475622801"/>
   <tag k="highway" v="unclassified"/>
  </way>
- <way id="97082272" visible="true" version="11" changeset="164324199" timestamp="2025-03-31T10:52:18Z" user="tartiflex" uid="507417">
+ <way id="97082272" visible="true" version="13" changeset="166995331" timestamp="2025-05-31T02:29:04Z" user="Eranwe" uid="21838229">
   <nd ref="3899168118"/>
   <nd ref="1124752901"/>
   <nd ref="1124752897"/>
@@ -16508,7 +16508,7 @@
   <tag k="fee" v="yes"/>
   <tag k="leisure" v="garden"/>
   <tag k="name" v="依水園"/>
-  <tag k="name:en" v="Isui Garden"/>
+  <tag k="name:en" v="Isuien Garden"/>
   <tag k="name:fr" v="Jardin Isui"/>
   <tag k="name:ja-Hira" v="いすいえん"/>
   <tag k="name:ja-Latn" v="Isui-en"/>
@@ -17943,7 +17943,7 @@
   <nd ref="2163544678"/>
   <tag k="building" v="retail"/>
  </way>
- <way id="206347056" visible="true" version="6" changeset="131299545" timestamp="2023-01-15T14:03:55Z" user="lxgwsierra" uid="12529349">
+ <way id="206347056" visible="true" version="6" changeset="131299545" timestamp="2023-01-15T14:03:55Z" user="user_12529349" uid="12529349">
   <nd ref="2163544721"/>
   <nd ref="2163544720"/>
   <nd ref="2163544718"/>
@@ -40472,7 +40472,7 @@
   <tag k="parking" v="surface"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="886113387" visible="true" version="2" changeset="96048617" timestamp="2020-12-18T07:12:23Z" user="Yuu OKuyama" uid="12165481">
+ <way id="886113387" visible="true" version="3" changeset="167136040" timestamp="2025-06-03T13:34:54Z" user="kanta0409" uid="22897294">
   <nd ref="8239558400"/>
   <nd ref="781666631"/>
   <nd ref="8239550926"/>
@@ -40480,6 +40480,7 @@
   <nd ref="1389233711"/>
   <nd ref="781666004"/>
   <tag k="highway" v="residential"/>
+  <tag k="maxspeed" v="30"/>
  </way>
  <way id="893236082" visible="true" version="1" changeset="97147174" timestamp="2021-01-08T06:22:06Z" user="yukao" uid="12165472">
   <nd ref="8301963034"/>
@@ -41627,7 +41628,7 @@
   <tag k="parking" v="street_side"/>
   <tag k="parking:orientation" v="perpendicular"/>
  </way>
- <way id="1061637481" visible="true" version="2" changeset="131299545" timestamp="2023-01-15T14:03:55Z" user="lxgwsierra" uid="12529349">
+ <way id="1061637481" visible="true" version="2" changeset="131299545" timestamp="2023-01-15T14:03:55Z" user="user_12529349" uid="12529349">
   <nd ref="9753844358"/>
   <nd ref="9753844359"/>
   <nd ref="2163544736"/>
@@ -45067,7 +45068,7 @@
   <tag k="landuse" v="forest"/>
   <tag k="type" v="multipolygon"/>
  </relation>
- <relation id="7790754" visible="true" version="72" changeset="161770839" timestamp="2025-01-26T07:50:29Z" user="Detteyou" uid="7184394">
+ <relation id="7790754" visible="true" version="78" changeset="166998191" timestamp="2025-05-31T06:27:08Z" user="LiddMann" uid="22825497">
   <member type="way" ref="259733279" role=""/>
   <member type="way" ref="55220188" role=""/>
   <member type="way" ref="208652064" role=""/>
@@ -45121,16 +45122,22 @@
   <member type="way" ref="168582990" role=""/>
   <member type="way" ref="168582991" role=""/>
   <member type="way" ref="168582996" role=""/>
+  <member type="way" ref="1389211782" role=""/>
   <member type="way" ref="23368901" role=""/>
   <member type="way" ref="473950305" role=""/>
   <member type="way" ref="621065799" role=""/>
+  <member type="way" ref="1389030386" role=""/>
+  <member type="way" ref="1389030385" role=""/>
   <member type="way" ref="33433423" role=""/>
+  <member type="way" ref="1390589215" role=""/>
   <member type="way" ref="1046041866" role=""/>
   <member type="way" ref="1046041867" role=""/>
   <member type="way" ref="1046041868" role=""/>
   <member type="way" ref="1046041869" role=""/>
+  <member type="way" ref="1390842823" role=""/>
   <member type="way" ref="1144245330" role=""/>
   <member type="way" ref="1144245331" role=""/>
+  <member type="way" ref="1391098383" role=""/>
   <member type="way" ref="33433416" role=""/>
   <member type="way" ref="380594170" role=""/>
   <member type="way" ref="380594172" role=""/>
@@ -45565,9 +45572,6 @@
   <member type="way" ref="121365456" role=""/>
   <member type="way" ref="211827801" role=""/>
   <member type="way" ref="121335939" role=""/>
-  <member type="way" ref="273893301" role=""/>
-  <member type="way" ref="121365377" role=""/>
-  <member type="way" ref="121365240" role=""/>
   <member type="way" ref="121365201" role=""/>
   <member type="way" ref="121335890" role=""/>
   <member type="way" ref="121335769" role=""/>

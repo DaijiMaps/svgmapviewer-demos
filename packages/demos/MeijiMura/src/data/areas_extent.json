@@ -1,0 +1,7 @@
+{
+"type": "FeatureCollection",
+"name": "areas_extent",
+"features": [
+{ "type": "Feature", "properties": { "MINX": 1.7976931348623157e+308, "MINY": 1.7976931348623157e+308, "MAXX": -1.7976931348623157e+308, "MAXY": -1.7976931348623157e+308 }, "geometry": { "type": "Polygon", "coordinates": [ ] } }
+]
+}

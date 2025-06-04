@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2557179 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167584 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.3228000" minlon="139.5526000" maxlat="35.3286000" maxlon="139.5586000"/>
  <node id="255479295" visible="true" version="18" changeset="123894816" timestamp="2022-07-21T13:33:11Z" user="postown" uid="4480756" lat="35.3237250" lon="139.5549006">
   <tag k="crossing" v="uncontrolled"/>
@@ -651,14 +651,14 @@
  <node id="588511971" visible="true" version="5" changeset="43793141" timestamp="2016-11-19T09:02:53Z" user="M_Kakuda" uid="689252" lat="35.3233130" lon="139.5538201"/>
  <node id="588511972" visible="true" version="1" changeset="3363519" timestamp="2009-12-13T14:57:07Z" user="miurahr" uid="21118" lat="35.3237706" lon="139.5583033"/>
  <node id="588511973" visible="true" version="4" changeset="91672340" timestamp="2020-09-29T02:23:56Z" user="Daiji Maps" uid="10880270" lat="35.3264264" lon="139.5557492"/>
- <node id="588511974" visible="true" version="1" changeset="3363519" timestamp="2009-12-13T14:57:07Z" user="miurahr" uid="21118" lat="35.3242488" lon="139.5573463"/>
+ <node id="588511974" visible="true" version="2" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3241733" lon="139.5574120"/>
  <node id="588511976" visible="true" version="3" changeset="43884101" timestamp="2016-11-23T00:42:04Z" user="M_Kakuda" uid="689252" lat="35.3246648" lon="139.5583222"/>
  <node id="588511977" visible="true" version="1" changeset="3363519" timestamp="2009-12-13T14:57:07Z" user="miurahr" uid="21118" lat="35.3240127" lon="139.5584616"/>
  <node id="588511978" visible="true" version="1" changeset="3363519" timestamp="2009-12-13T14:57:07Z" user="miurahr" uid="21118" lat="35.3240120" lon="139.5585796"/>
  <node id="588511979" visible="true" version="2" changeset="11900049" timestamp="2012-06-14T23:12:47Z" user="hayashi" uid="621319" lat="35.3243845" lon="139.5586565"/>
  <node id="588511980" visible="true" version="3" changeset="43884101" timestamp="2016-11-23T00:42:04Z" user="M_Kakuda" uid="689252" lat="35.3245911" lon="139.5587147"/>
  <node id="588511981" visible="true" version="3" changeset="43884101" timestamp="2016-11-23T00:42:04Z" user="M_Kakuda" uid="689252" lat="35.3251906" lon="139.5590971"/>
- <node id="588511983" visible="true" version="2" changeset="4264284" timestamp="2010-03-29T05:45:26Z" user="ikiya" uid="69966" lat="35.3260946" lon="139.5587659"/>
+ <node id="588511983" visible="true" version="3" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3261712" lon="139.5587605"/>
  <node id="588511985" visible="true" version="3" changeset="69341089" timestamp="2019-04-18T11:29:39Z" user="muramototomoya" uid="610947" lat="35.3266713" lon="139.5559405"/>
  <node id="588511987" visible="true" version="2" changeset="69341089" timestamp="2019-04-18T11:29:39Z" user="muramototomoya" uid="610947" lat="35.3265266" lon="139.5558378"/>
  <node id="588511989" visible="true" version="4" changeset="160035521" timestamp="2024-12-07T18:07:57Z" user="xpisar" uid="19474201" lat="35.3273330" lon="139.5557143"/>
@@ -671,7 +671,7 @@
  <node id="588512006" visible="true" version="4" changeset="160035521" timestamp="2024-12-07T18:07:57Z" user="xpisar" uid="19474201" lat="35.3275904" lon="139.5559217"/>
  <node id="588512008" visible="true" version="4" changeset="160035521" timestamp="2024-12-07T18:07:57Z" user="xpisar" uid="19474201" lat="35.3276880" lon="139.5558929"/>
  <node id="588512009" visible="true" version="1" changeset="3363519" timestamp="2009-12-13T14:57:08Z" user="miurahr" uid="21118" lat="35.3239896" lon="139.5596061"/>
- <node id="588512013" visible="true" version="3" changeset="11823573" timestamp="2012-06-07T10:12:22Z" user="M_Kakuda" uid="689252" lat="35.3256249" lon="139.5600243"/>
+ <node id="588512013" visible="true" version="4" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3256829" lon="139.5600256"/>
  <node id="606299777" visible="true" version="3" changeset="4310114" timestamp="2010-04-03T07:11:57Z" user="ikiya" uid="69966" lat="35.3200394" lon="139.5526337"/>
  <node id="606299778" visible="true" version="3" changeset="4310114" timestamp="2010-04-03T07:11:57Z" user="ikiya" uid="69966" lat="35.3201913" lon="139.5527247"/>
  <node id="606299781" visible="true" version="6" changeset="45209328" timestamp="2017-01-16T08:11:43Z" user="M_Kakuda" uid="689252" lat="35.3206715" lon="139.5530148"/>
@@ -849,11 +849,11 @@
  <node id="677291487" visible="true" version="5" changeset="43793141" timestamp="2016-11-19T09:02:54Z" user="M_Kakuda" uid="689252" lat="35.3291891" lon="139.5570809"/>
  <node id="677291489" visible="true" version="3" changeset="34898849" timestamp="2015-10-27T08:51:01Z" user="andygol" uid="94578" lat="35.3283842" lon="139.5553198"/>
  <node id="677291490" visible="true" version="4" changeset="37861338" timestamp="2016-03-16T04:39:50Z" user="yoshitk" uid="1003241" lat="35.3288655" lon="139.5559551"/>
- <node id="677291826" visible="true" version="1" changeset="4264284" timestamp="2010-03-29T05:45:22Z" user="ikiya" uid="69966" lat="35.3259700" lon="139.5586867"/>
- <node id="677291833" visible="true" version="2" changeset="11900049" timestamp="2012-06-14T23:12:48Z" user="hayashi" uid="621319" lat="35.3253707" lon="139.5579637"/>
- <node id="677291851" visible="true" version="1" changeset="4264284" timestamp="2010-03-29T05:45:23Z" user="ikiya" uid="69966" lat="35.3254715" lon="139.5584041"/>
- <node id="677291856" visible="true" version="1" changeset="4264284" timestamp="2010-03-29T05:45:23Z" user="ikiya" uid="69966" lat="35.3253991" lon="139.5583340"/>
- <node id="677291862" visible="true" version="1" changeset="4264284" timestamp="2010-03-29T05:45:23Z" user="ikiya" uid="69966" lat="35.3253542" lon="139.5582256"/>
+ <node id="677291826" visible="true" version="2" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3258775" lon="139.5584721"/>
+ <node id="677291833" visible="true" version="3" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3253597" lon="139.5578536"/>
+ <node id="677291851" visible="true" version="2" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3255634" lon="139.5585597"/>
+ <node id="677291856" visible="true" version="2" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3254341" lon="139.5583622"/>
+ <node id="677291862" visible="true" version="2" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3254078" lon="139.5579379"/>
  <node id="677292428" visible="true" version="2" changeset="158766460" timestamp="2024-11-05T06:54:57Z" user="無限の刃" uid="11887540" lat="35.3275712" lon="139.5587827"/>
  <node id="677292429" visible="true" version="2" changeset="158766460" timestamp="2024-11-05T06:54:57Z" user="無限の刃" uid="11887540" lat="35.3273328" lon="139.5594217"/>
  <node id="677292430" visible="true" version="2" changeset="158766460" timestamp="2024-11-05T06:54:57Z" user="無限の刃" uid="11887540" lat="35.3284306" lon="139.5584862"/>
@@ -1532,7 +1532,6 @@
  <node id="1781571406" visible="true" version="3" changeset="157239185" timestamp="2024-09-29T07:27:42Z" user="Takaharatan" uid="9271780" lat="35.3320263" lon="139.5604876"/>
  <node id="1787974497" visible="true" version="2" changeset="43884101" timestamp="2016-11-23T00:42:03Z" user="M_Kakuda" uid="689252" lat="35.3240413" lon="139.5584276"/>
  <node id="1787974498" visible="true" version="2" changeset="43884101" timestamp="2016-11-23T00:42:03Z" user="M_Kakuda" uid="689252" lat="35.3241049" lon="139.5580831"/>
- <node id="1787974499" visible="true" version="2" changeset="43884101" timestamp="2016-11-23T00:42:03Z" user="M_Kakuda" uid="689252" lat="35.3241535" lon="139.5584676"/>
  <node id="1787974500" visible="true" version="2" changeset="43884101" timestamp="2016-11-23T00:42:04Z" user="M_Kakuda" uid="689252" lat="35.3241028" lon="139.5584500"/>
  <node id="1787974501" visible="true" version="2" changeset="43884101" timestamp="2016-11-23T00:42:04Z" user="M_Kakuda" uid="689252" lat="35.3241617" lon="139.5580994"/>
  <node id="1787974502" visible="true" version="2" changeset="43884101" timestamp="2016-11-23T00:42:04Z" user="M_Kakuda" uid="689252" lat="35.3242278" lon="139.5584878"/>
@@ -2399,8 +2398,7 @@
  <node id="6413945740" visible="true" version="3" changeset="91671713" timestamp="2020-09-29T01:53:43Z" user="Daiji Maps" uid="10880270" lat="35.3232230" lon="139.5563334"/>
  <node id="6413945741" visible="true" version="1" changeset="69341089" timestamp="2019-04-18T11:29:32Z" user="muramototomoya" uid="610947" lat="35.3241911" lon="139.5572381"/>
  <node id="6413945742" visible="true" version="1" changeset="69341089" timestamp="2019-04-18T11:29:32Z" user="muramototomoya" uid="610947" lat="35.3249888" lon="139.5577651"/>
- <node id="6413945743" visible="true" version="1" changeset="69341089" timestamp="2019-04-18T11:29:32Z" user="muramototomoya" uid="610947" lat="35.3253597" lon="139.5578536"/>
- <node id="6413945744" visible="true" version="1" changeset="69341089" timestamp="2019-04-18T11:29:32Z" user="muramototomoya" uid="610947" lat="35.3253564" lon="139.5579019"/>
+ <node id="6413945744" visible="true" version="2" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3253548" lon="139.5579126"/>
  <node id="6413945745" visible="true" version="1" changeset="69341089" timestamp="2019-04-18T11:29:32Z" user="muramototomoya" uid="610947" lat="35.3254965" lon="139.5579636"/>
  <node id="6413945746" visible="true" version="1" changeset="69341089" timestamp="2019-04-18T11:29:32Z" user="muramototomoya" uid="610947" lat="35.3256278" lon="139.5579140"/>
  <node id="6413945747" visible="true" version="1" changeset="69341089" timestamp="2019-04-18T11:29:32Z" user="muramototomoya" uid="610947" lat="35.3256945" lon="139.5577799"/>
@@ -5009,10 +5007,6 @@
  <node id="6642315662" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3259193" lon="139.5583990"/>
  <node id="6642315663" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3259489" lon="139.5583250"/>
  <node id="6642315664" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3260168" lon="139.5583659"/>
- <node id="6642315665" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3245270" lon="139.5577574"/>
- <node id="6642315666" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3243837" lon="139.5577158"/>
- <node id="6642315667" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3244089" lon="139.5575854"/>
- <node id="6642315668" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3245522" lon="139.5576270"/>
  <node id="6642315669" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3264983" lon="139.5582460"/>
  <node id="6642315670" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3264982" lon="139.5581963"/>
  <node id="6642315671" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:56Z" user="ikiya" uid="69966" lat="35.3264156" lon="139.5580789"/>
@@ -7502,7 +7496,10 @@
  <node id="12460416544" visible="true" version="1" changeset="160739649" timestamp="2024-12-29T07:47:55Z" user="yoshitk" uid="1003241" lat="35.3273523" lon="139.5455188"/>
  <node id="12460416545" visible="true" version="1" changeset="160739649" timestamp="2024-12-29T07:47:55Z" user="yoshitk" uid="1003241" lat="35.3272511" lon="139.5454582"/>
  <node id="12460416546" visible="true" version="1" changeset="160739649" timestamp="2024-12-29T07:47:55Z" user="yoshitk" uid="1003241" lat="35.3272946" lon="139.5453591"/>
- <way id="23592809" visible="true" version="41" changeset="147553708" timestamp="2024-02-17T00:49:57Z" user="funtonite" uid="617166">
+ <node id="12829809766" visible="true" version="1" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3244079" lon="139.5573959"/>
+ <node id="12829809767" visible="true" version="1" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3243814" lon="139.5574544"/>
+ <node id="12829809768" visible="true" version="1" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540" lat="35.3242693" lon="139.5573907"/>
+ <way id="23592809" visible="true" version="41" changeset="147553708" timestamp="2024-02-17T00:49:57Z" user="bijsgohsdacu" uid="617166">
   <nd ref="286527273"/>
   <nd ref="270426640"/>
   <nd ref="1778085187"/>
@@ -7769,7 +7766,7 @@
   <tag k="highway" v="footway"/>
   <tag k="layer" v="1"/>
  </way>
- <way id="34550401" visible="true" version="9" changeset="156604387" timestamp="2024-09-14T10:00:06Z" user="tartiflex" uid="507417">
+ <way id="34550401" visible="true" version="10" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540">
   <nd ref="400905742"/>
   <nd ref="400905745"/>
   <nd ref="6413945749"/>
@@ -7778,9 +7775,11 @@
   <nd ref="6413945747"/>
   <nd ref="6413945746"/>
   <nd ref="6413945745"/>
+  <nd ref="677291862"/>
   <nd ref="6413945744"/>
-  <nd ref="6413945743"/>
+  <nd ref="677291833"/>
   <nd ref="6413945742"/>
+  <nd ref="12829809766"/>
   <nd ref="6413945741"/>
   <nd ref="7953022134"/>
   <nd ref="7953022133"/>
@@ -8720,7 +8719,7 @@
   <tag k="name" v="神宛ぼたん園"/>
   <tag k="name:en" v="Peony Garden"/>
  </way>
- <way id="46158367" visible="true" version="5" changeset="132924168" timestamp="2023-02-23T12:34:54Z" user="dame ningen" uid="16787918">
+ <way id="46158367" visible="true" version="6" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540">
   <nd ref="1787974562"/>
   <nd ref="1787974552"/>
   <nd ref="1787974541"/>
@@ -8736,12 +8735,22 @@
   <nd ref="588511961"/>
   <nd ref="1787974588"/>
   <nd ref="1787974562"/>
+  <tag k="addr:block_number" v="5"/>
+  <tag k="addr:city" v="鎌倉市"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:neighbourhood" v="雪ノ下三丁目"/>
+  <tag k="addr:postcode" v="248-0005"/>
+  <tag k="addr:province" v="神奈川県"/>
   <tag k="amenity" v="school"/>
   <tag k="building" v="yes"/>
-  <tag k="name" v="横浜国立大学附属鎌倉中学校"/>
-  <tag k="note" v="estimated"/>
+  <tag k="contact:fax" v="+81 467 23 5216"/>
+  <tag k="contact:phone" v="+81 467 22 2033"/>
+  <tag k="contact:website" v="https://kamachu.ynu.ac.jp/"/>
+  <tag k="name" v="横浜国立大学教育学部附属鎌倉中学校"/>
+  <tag k="wikidata" v="Q11542951"/>
+  <tag k="wikipedia" v="ja:横浜国立大学教育学部附属鎌倉中学校"/>
  </way>
- <way id="46158369" visible="true" version="3" changeset="11757953" timestamp="2012-05-31T12:14:07Z" user="M_Kakuda" uid="689252">
+ <way id="46158369" visible="true" version="4" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540">
   <nd ref="588511974"/>
   <nd ref="588511972"/>
   <nd ref="588511977"/>
@@ -8753,8 +8762,18 @@
   <nd ref="677291851"/>
   <nd ref="677291856"/>
   <nd ref="677291862"/>
+  <nd ref="6413945744"/>
   <nd ref="677291833"/>
+  <nd ref="6413945742"/>
+  <nd ref="12829809766"/>
+  <nd ref="12829809767"/>
+  <nd ref="12829809768"/>
   <nd ref="588511974"/>
+  <tag k="addr:block_number" v="5"/>
+  <tag k="addr:city" v="鎌倉市"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:neighbourhood" v="雪ノ下三丁目"/>
+  <tag k="addr:postcode" v="248-0005"/>
   <tag k="amenity" v="school"/>
  </way>
  <way id="46158371" visible="true" version="1" changeset="3363519" timestamp="2009-12-13T14:57:09Z" user="miurahr" uid="21118">
@@ -8762,9 +8781,8 @@
   <nd ref="400905746"/>
   <tag k="highway" v="steps"/>
  </way>
- <way id="46158372" visible="true" version="5" changeset="132924168" timestamp="2023-02-23T12:34:54Z" user="dame ningen" uid="16787918">
+ <way id="46158372" visible="true" version="6" changeset="166138494" timestamp="2025-05-12T08:06:04Z" user="無限の刃" uid="11887540">
   <nd ref="1787974502"/>
-  <nd ref="1787974499"/>
   <nd ref="1787974500"/>
   <nd ref="1787974497"/>
   <nd ref="1787974498"/>
@@ -8782,10 +8800,20 @@
   <nd ref="1787974509"/>
   <nd ref="1787974503"/>
   <nd ref="1787974502"/>
+  <tag k="addr:block_number" v="5"/>
+  <tag k="addr:city" v="鎌倉市"/>
+  <tag k="addr:housenumber" v="10"/>
+  <tag k="addr:neighbourhood" v="雪ノ下三丁目"/>
+  <tag k="addr:postcode" v="248-0005"/>
+  <tag k="addr:province" v="神奈川県"/>
   <tag k="amenity" v="school"/>
   <tag k="building" v="yes"/>
-  <tag k="name" v="横浜国立大学附属鎌倉小学校"/>
-  <tag k="note" v="estimated"/>
+  <tag k="contact:fax" v="+81 467 22 0244"/>
+  <tag k="contact:phone" v="+81 467 22 0647"/>
+  <tag k="contact:website" v="https://www.kamakurasho.ynu.ac.jp/"/>
+  <tag k="name" v="横浜国立大学教育学部附属鎌倉小学校"/>
+  <tag k="wikidata" v="Q11542953"/>
+  <tag k="wikipedia" v="ja:横浜国立大学教育学部附属鎌倉小学校"/>
  </way>
  <way id="46158373" visible="true" version="2" changeset="69341089" timestamp="2019-04-18T11:29:43Z" user="muramototomoya" uid="610947">
   <nd ref="588511985"/>
@@ -15597,15 +15625,6 @@
   <nd ref="6642315649"/>
   <nd ref="6642315650"/>
   <nd ref="6642315643"/>
-  <tag k="building" v="yes"/>
-  <tag k="source" v="GSImaps/std"/>
- </way>
- <way id="706840970" visible="true" version="1" changeset="72581638" timestamp="2019-07-24T02:58:58Z" user="ikiya" uid="69966">
-  <nd ref="6642315668"/>
-  <nd ref="6642315665"/>
-  <nd ref="6642315666"/>
-  <nd ref="6642315667"/>
-  <nd ref="6642315668"/>
   <tag k="building" v="yes"/>
   <tag k="source" v="GSImaps/std"/>
  </way>

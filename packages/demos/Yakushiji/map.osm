@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2270280 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167574 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.6646000" minlon="135.7824000" maxlat="34.6721000" maxlon="135.7873000"/>
  <node id="335843252" visible="true" version="4" changeset="61628291" timestamp="2018-08-13T14:03:36Z" user="Ryo-a" uid="631141" lat="34.6713547" lon="135.7831552"/>
  <node id="335843253" visible="true" version="14" changeset="163614302" timestamp="2025-03-14T15:14:08Z" user="naminami_" uid="22516598" lat="34.6704649" lon="135.7831842">
@@ -316,10 +316,10 @@
  <node id="1490099905" visible="true" version="4" changeset="163402812" timestamp="2025-03-09T14:22:43Z" user="naminami_" uid="22516598" lat="34.6722715" lon="135.7827999"/>
  <node id="1490099912" visible="true" version="3" changeset="163402812" timestamp="2025-03-09T14:22:43Z" user="naminami_" uid="22516598" lat="34.6723054" lon="135.7812270"/>
  <node id="1490099927" visible="true" version="1" changeset="9727246" timestamp="2011-11-03T03:16:55Z" user="yasushi00" uid="262345" lat="34.6734881" lon="135.7798737"/>
- <node id="1498189541" visible="true" version="4" changeset="163548382" timestamp="2025-03-12T22:59:58Z" user="naminami_" uid="22516598" lat="34.6693186" lon="135.7829986">
+ <node id="1498189541" visible="true" version="5" changeset="166141494" timestamp="2025-05-12T09:14:36Z" user="Loowood" uid="22317641" lat="34.6693186" lon="135.7829986">
   <tag k="bus" v="yes"/>
   <tag k="highway" v="bus_stop"/>
-  <tag k="name" v="西ノ京駅 (Nishinokyo Staion)"/>
+  <tag k="name" v="西ノ京駅 (Nishinokyo Station)"/>
   <tag k="name:ja" v="西ノ京駅"/>
   <tag k="public_transport" v="platform"/>
   <tag k="source" v="www.narakotsu.co.jp"/>
@@ -5640,7 +5640,7 @@
   <tag k="landuse" v="farmland"/>
   <tag k="source" v="image;Bing,2010-06"/>
  </way>
- <way id="161658641" visible="true" version="4" changeset="127890558" timestamp="2022-10-21T15:20:41Z" user="user_16318098" uid="16318098">
+ <way id="161658641" visible="true" version="5" changeset="166499259" timestamp="2025-05-19T22:43:57Z" user="naminami_" uid="22516598">
   <nd ref="1736278878"/>
   <nd ref="1736278874"/>
   <nd ref="1736278876"/>
@@ -5648,10 +5648,17 @@
   <nd ref="1736278880"/>
   <nd ref="1736278878"/>
   <tag k="building" v="temple"/>
+  <tag k="building:colour" v="#E9E2D0"/>
+  <tag k="building:material" v="wood"/>
+  <tag k="height" v="36.4"/>
+  <tag k="man_made" v="pagoda"/>
   <tag k="name" v="西塔"/>
   <tag k="name:en" v="West Pagoda"/>
   <tag k="name:ja" v="西塔"/>
   <tag k="name:ja-Hira" v="さいとう"/>
+  <tag k="roof:colour" v="#5A5A50"/>
+  <tag k="roof:material" v="roof_tiles"/>
+  <tag k="roof:shape" v="pyramidal"/>
   <tag k="source" v="image;Bing,2010-06"/>
  </way>
  <way id="161658643" visible="true" version="4" changeset="163567940" timestamp="2025-03-13T12:20:49Z" user="naminami_" uid="22516598">

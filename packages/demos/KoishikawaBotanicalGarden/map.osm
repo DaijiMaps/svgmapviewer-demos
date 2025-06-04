@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529597 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167577 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.7171000" minlon="139.7405000" maxlat="35.7235000" maxlon="139.7482000"/>
  <node id="248188475" visible="true" version="6" changeset="9336115" timestamp="2011-09-18T18:48:20Z" user="CyrusDreams" uid="45439" lat="35.7262529" lon="139.7457692"/>
  <node id="279159033" visible="true" version="7" changeset="34582348" timestamp="2015-10-12T05:02:04Z" user="abkwtks" uid="3215696" lat="35.7196131" lon="139.7509467">
@@ -11834,7 +11834,7 @@
  <node id="9892991116" visible="true" version="1" changeset="123714815" timestamp="2022-07-17T09:58:51Z" user="higa4" uid="162590" lat="35.7233170" lon="139.7375204"/>
  <node id="9892995417" visible="true" version="1" changeset="123714815" timestamp="2022-07-17T09:58:51Z" user="higa4" uid="162590" lat="35.7235174" lon="139.7373353"/>
  <node id="9892995461" visible="true" version="1" changeset="123714815" timestamp="2022-07-17T09:58:51Z" user="higa4" uid="162590" lat="35.7214073" lon="139.7342240"/>
- <node id="9892995462" visible="true" version="1" changeset="123714815" timestamp="2022-07-17T09:58:51Z" user="higa4" uid="162590" lat="35.7215924" lon="139.7341623"/>
+ <node id="9892995462" visible="true" version="2" changeset="165788223" timestamp="2025-05-04T08:28:43Z" user="近場行き" uid="12272282" lat="35.7216079" lon="139.7341611"/>
  <node id="9892995463" visible="true" version="1" changeset="123714815" timestamp="2022-07-17T09:58:51Z" user="higa4" uid="162590" lat="35.7216403" lon="139.7341784"/>
  <node id="9892995464" visible="true" version="1" changeset="123714815" timestamp="2022-07-17T09:58:51Z" user="higa4" uid="162590" lat="35.7216860" lon="139.7342280"/>
  <node id="9892995465" visible="true" version="1" changeset="123714815" timestamp="2022-07-17T09:58:51Z" user="higa4" uid="162590" lat="35.7217764" lon="139.7345726"/>
@@ -34595,7 +34595,7 @@
   <tag k="to" v="6 ラクーア"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="5748318" visible="true" version="31" changeset="165542702" timestamp="2025-04-28T10:32:53Z" user="tartiflex" uid="507417">
+ <relation id="5748318" visible="true" version="32" changeset="166207230" timestamp="2025-05-13T14:47:22Z" user="vbertola" uid="4347030">
   <member type="node" ref="12644659543" role="platform"/>
   <member type="node" ref="12644659565" role="platform"/>
   <member type="node" ref="12644659589" role="platform"/>
@@ -34629,6 +34629,7 @@
   <member type="way" ref="386291081" role=""/>
   <member type="way" ref="386291096" role=""/>
   <member type="way" ref="237175814" role=""/>
+  <member type="way" ref="1386142616" role=""/>
   <member type="way" ref="1365452630" role=""/>
   <member type="way" ref="1365452632" role=""/>
   <member type="way" ref="237175818" role=""/>
@@ -35603,7 +35604,7 @@
   <tag k="source" v="GSImaps/experimental_jhj"/>
   <tag k="type" v="boundary"/>
  </relation>
- <relation id="18139069" visible="true" version="3" changeset="163384397" timestamp="2025-03-09T01:16:45Z" user="Rokomo35" uid="19071241">
+ <relation id="18139069" visible="true" version="4" changeset="165782000" timestamp="2025-05-04T02:10:21Z" user="Rokomo35" uid="19071241">
   <member type="node" ref="8388908581" role="label"/>
   <member type="way" ref="1322145355" role="outer"/>
   <member type="way" ref="1365646233" role="outer"/>
@@ -35619,7 +35620,6 @@
   <tag k="place" v="neighbourhood"/>
   <tag k="source" v="GSImaps/experimental_jhj"/>
   <tag k="type" v="boundary"/>
-  <tag k="wikidata" v="Q2666269"/>
  </relation>
  <relation id="18139075" visible="true" version="7" changeset="163384397" timestamp="2025-03-09T01:16:45Z" user="Rokomo35" uid="19071241">
   <member type="node" ref="12646760436" role="label"/>
@@ -35730,7 +35730,7 @@
   <tag k="source" v="GSImaps/experimental_jhj"/>
   <tag k="type" v="boundary"/>
  </relation>
- <relation id="18147123" visible="true" version="9" changeset="164201585" timestamp="2025-03-28T10:49:05Z" user="tartiflex" uid="507417">
+ <relation id="18147123" visible="true" version="10" changeset="165869424" timestamp="2025-05-06T01:02:14Z" user="Rokomo35" uid="19071241">
   <member type="node" ref="12646760591" role="label"/>
   <member type="way" ref="1365646245" role="outer"/>
   <member type="way" ref="1365646244" role="outer"/>
@@ -35758,6 +35758,7 @@
   <tag k="name" v="白山"/>
   <tag k="name:en" v="Hakusan"/>
   <tag k="name:fr" v="Hakusan"/>
+  <tag k="name:ja" v="白山"/>
   <tag k="name:ja-Hira" v="はくさん"/>
   <tag k="name:ja-Latn" v="Hakusan"/>
   <tag k="source" v="GSImaps/experimental_jhj"/>
@@ -35801,7 +35802,7 @@
   <tag k="source" v="GSImaps/experimental_jhj"/>
   <tag k="type" v="boundary"/>
  </relation>
- <relation id="18152273" visible="true" version="8" changeset="164201585" timestamp="2025-03-28T10:49:05Z" user="tartiflex" uid="507417">
+ <relation id="18152273" visible="true" version="9" changeset="165868873" timestamp="2025-05-06T00:28:13Z" user="Rokomo35" uid="19071241">
   <member type="node" ref="12646778780" role="label"/>
   <member type="way" ref="1365647400" role="outer"/>
   <member type="way" ref="1365647399" role="outer"/>
@@ -35823,6 +35824,7 @@
   <tag k="name" v="千石"/>
   <tag k="name:en" v="Sengoku"/>
   <tag k="name:fr" v="Sengoku"/>
+  <tag k="name:ja" v="千石"/>
   <tag k="name:ja-Hira" v="せんごく"/>
   <tag k="name:ja-Latn" v="Sengoku"/>
   <tag k="source" v="GSImaps/experimental_jhj"/>

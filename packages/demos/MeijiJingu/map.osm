@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3529602 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167577 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.6685000" minlon="139.6947000" maxlat="35.6814000" maxlon="139.7051000"/>
  <node id="132108993" visible="true" version="12" changeset="19189555" timestamp="2013-11-30T05:51:49Z" user="Retired Account" uid="741163" lat="35.6714289" lon="139.7027348"/>
  <node id="132109053" visible="true" version="1" changeset="613082" timestamp="2007-11-25T11:38:54Z" user="gaku" uid="19532" lat="35.6721020" lon="139.7029055">
@@ -8952,7 +8952,8 @@
  <node id="3424152084" visible="true" version="2" changeset="55491805" timestamp="2018-01-16T12:39:59Z" user="Bigmorr" uid="6802110" lat="35.6692787" lon="139.7025873"/>
  <node id="3424152086" visible="true" version="3" changeset="94025004" timestamp="2020-11-13T01:21:07Z" user="Bigmorr" uid="6802110" lat="35.6693202" lon="139.7028054"/>
  <node id="3424152087" visible="true" version="3" changeset="94025004" timestamp="2020-11-13T01:21:07Z" user="Bigmorr" uid="6802110" lat="35.6693323" lon="139.7027505"/>
- <node id="3424152088" visible="true" version="1" changeset="29817048" timestamp="2015-03-29T00:12:13Z" user="ribbon" uid="192905" lat="35.6693394" lon="139.7027226">
+ <node id="3424152088" visible="true" version="2" changeset="166380965" timestamp="2025-05-17T08:23:04Z" user="WebFreak" uid="8240092" lat="35.6693394" lon="139.7027226">
+  <tag k="check_date" v="2025-05-17"/>
   <tag k="information" v="map"/>
   <tag k="map_size" v="city"/>
   <tag k="map_type" v="street"/>
@@ -9405,7 +9406,7 @@
  </node>
  <node id="3899237680" visible="true" version="1" changeset="36039524" timestamp="2015-12-19T04:58:32Z" user="muramototomoya" uid="610947" lat="35.6797366" lon="139.7052641"/>
  <node id="3899237684" visible="true" version="1" changeset="36039524" timestamp="2015-12-19T04:58:32Z" user="muramototomoya" uid="610947" lat="35.6797227" lon="139.7054537"/>
- <node id="3994749659" visible="true" version="4" changeset="146463978" timestamp="2024-01-20T02:53:14Z" user="funtonite" uid="617166" lat="35.6688547" lon="139.7050727">
+ <node id="3994749659" visible="true" version="4" changeset="146463978" timestamp="2024-01-20T02:53:14Z" user="bijsgohsdacu" uid="617166" lat="35.6688547" lon="139.7050727">
   <tag k="check_date" v="2024-01-20"/>
   <tag k="disused:amenity" v="cafe"/>
   <tag k="name" v="東京アパートメントカフェ"/>
@@ -9486,8 +9487,9 @@
   <tag k="name:ko" v="요요기공원 입구"/>
   <tag k="tourism" v="information"/>
  </node>
- <node id="4368070656" visible="true" version="2" changeset="55491805" timestamp="2018-01-16T12:39:59Z" user="Bigmorr" uid="6802110" lat="35.6692913" lon="139.7026177">
+ <node id="4368070656" visible="true" version="3" changeset="166379979" timestamp="2025-05-17T08:23:12Z" user="WebFreak" uid="8240092" lat="35.6692913" lon="139.7026177">
   <tag k="crossing" v="uncontrolled"/>
+  <tag k="crossing:island" v="no"/>
   <tag k="highway" v="crossing"/>
  </node>
  <node id="4368070659" visible="true" version="1" changeset="41717886" timestamp="2016-08-26T15:50:58Z" user="Mapier" uid="616884" lat="35.6695049" lon="139.7025377"/>
@@ -10567,21 +10569,21 @@
  <node id="5262363316" visible="true" version="2" changeset="122832948" timestamp="2022-06-25T10:46:20Z" user="KKK-jp" uid="10375512" lat="35.6687054" lon="139.7054003"/>
  <node id="5262363317" visible="true" version="1" changeset="54305240" timestamp="2017-12-03T18:25:23Z" user="Bigmorr" uid="6802110" lat="35.6686940" lon="139.7052913"/>
  <node id="5262363318" visible="true" version="2" changeset="122832948" timestamp="2022-06-25T10:46:20Z" user="KKK-jp" uid="10375512" lat="35.6686938" lon="139.7053528"/>
- <node id="5283583632" visible="true" version="2" changeset="65144273" timestamp="2018-12-04T02:16:23Z" user="maripogoda" uid="6108657" lat="35.6710329" lon="139.7041546">
+ <node id="5283583632" visible="true" version="3" changeset="166634732" timestamp="2025-05-23T01:50:04Z" user="gc27" uid="7130304" lat="35.6710329" lon="139.7041546">
   <tag k="addr:block_number" v="15"/>
   <tag k="addr:city" v="渋谷区"/>
-  <tag k="addr:housenumber" v="4 バルビゾン76 1F"/>
-  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:neighbourhood" v="神宮前1丁目"/>
   <tag k="addr:postcode" v="150-0001"/>
   <tag k="addr:province" v="東京都"/>
-  <tag k="addr:quarter" v="神宮前"/>
   <tag k="amenity" v="restaurant"/>
   <tag k="capacity" v="30"/>
   <tag k="cuisine" v="japanese;soba"/>
+  <tag k="level" v="0"/>
   <tag k="lunch" v="Fr,Su,PH 12:00-15:00"/>
   <tag k="name" v="素楽庵"/>
   <tag k="name:en" v="Sora-an"/>
-  <tag k="opening_hours" v="Fr-Su 12:00-15:00,17:00-23:00;PH 12:00-15:00"/>
+  <tag k="opening_hours" v="Fr-Su 12:00-15:00,17:00-23:00; PH 12:00-15:00"/>
  </node>
  <node id="5291746464" visible="true" version="1" changeset="54732004" timestamp="2017-12-18T14:14:30Z" user="hazelnut kingdom" uid="370313" lat="35.6714896" lon="139.7048367">
   <tag k="amenity" v="cafe"/>
@@ -11423,7 +11425,8 @@
  <node id="6856536042" visible="true" version="1" changeset="75356515" timestamp="2019-10-07T04:30:32Z" user="nihombashi19" uid="1842888" lat="35.6701169" lon="139.6994439">
   <tag k="tourism" v="picnic_site"/>
  </node>
- <node id="6856536053" visible="true" version="1" changeset="75356515" timestamp="2019-10-07T04:30:32Z" user="nihombashi19" uid="1842888" lat="35.6691108" lon="139.7016259">
+ <node id="6856536053" visible="true" version="2" changeset="166380965" timestamp="2025-05-17T08:27:02Z" user="WebFreak" uid="8240092" lat="35.6691108" lon="139.7016259">
+  <tag k="check_date" v="2025-05-17"/>
   <tag k="information" v="map"/>
   <tag k="map_size" v="site"/>
   <tag k="tourism" v="information"/>
@@ -12107,6 +12110,7 @@
  <node id="8951062346" visible="true" version="1" changeset="108616206" timestamp="2021-07-26T10:38:33Z" user="近場行き" uid="12272282" lat="35.6696424" lon="139.7030615"/>
  <node id="8951062347" visible="true" version="2" changeset="122850701" timestamp="2022-06-25T21:33:43Z" user="KKK-jp" uid="10375512" lat="35.6696241" lon="139.7031564"/>
  <node id="8951111262" visible="true" version="1" changeset="108618023" timestamp="2021-07-26T10:59:15Z" user="近場行き" uid="12272282" lat="35.6806216" lon="139.7023917"/>
+ <node id="8989141819" visible="true" version="2" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092" lat="35.6684113" lon="139.7039410"/>
  <node id="9150425183" visible="true" version="2" changeset="122850701" timestamp="2022-06-25T21:33:43Z" user="KKK-jp" uid="10375512" lat="35.6698191" lon="139.7029567">
   <tag k="ele" v="37.3"/>
   <tag k="information" v="board"/>
@@ -14467,8 +14471,12 @@
  </node>
  <node id="11889140687" visible="true" version="1" changeset="151057845" timestamp="2024-05-08T13:57:43Z" user="tartiflex" uid="507417" lat="35.6701254" lon="139.6958475"/>
  <node id="11889140688" visible="true" version="1" changeset="151057845" timestamp="2024-05-08T13:57:43Z" user="tartiflex" uid="507417" lat="35.6702266" lon="139.6957898"/>
- <node id="11993560455" visible="true" version="1" changeset="152935886" timestamp="2024-06-20T10:14:24Z" user="8177" uid="20067380" lat="35.6643401" lon="139.7022067"/>
- <node id="12052115330" visible="true" version="1" changeset="153914065" timestamp="2024-07-14T01:17:45Z" user="funtonite" uid="617166" lat="35.6698981" lon="139.7035252">
+ <node id="11993560455" visible="true" version="3" changeset="166379683" timestamp="2025-05-17T07:39:29Z" user="WebFreak" uid="8240092" lat="35.6643401" lon="139.7022067">
+  <tag k="barrier" v="kerb"/>
+  <tag k="kerb" v="flush"/>
+  <tag k="tactile_paving" v="yes"/>
+ </node>
+ <node id="12052115330" visible="true" version="1" changeset="153914065" timestamp="2024-07-14T01:17:45Z" user="bijsgohsdacu" uid="617166" lat="35.6698981" lon="139.7035252">
   <tag k="amenity" v="restaurant"/>
   <tag k="check_date" v="2024-07-14"/>
   <tag k="name" v="Hohokam Diner"/>
@@ -14476,7 +14484,7 @@
   <tag k="phone" v="050-5385-3811"/>
   <tag k="website" v="https://hohokamdiner.com/"/>
  </node>
- <node id="12052151970" visible="true" version="1" changeset="153914124" timestamp="2024-07-14T01:22:54Z" user="funtonite" uid="617166" lat="35.6697900" lon="139.7034093">
+ <node id="12052151970" visible="true" version="1" changeset="153914124" timestamp="2024-07-14T01:22:54Z" user="bijsgohsdacu" uid="617166" lat="35.6697900" lon="139.7034093">
   <tag k="amenity" v="vending_machine"/>
   <tag k="brand" v="コカ・コーラ"/>
   <tag k="brand:en" v="Coca-Cola"/>
@@ -14945,7 +14953,7 @@
   <tag k="name" v="グリム原宿店"/>
  </node>
  <node id="12762512918" visible="true" version="1" changeset="165075490" timestamp="2025-04-17T14:35:20Z" user="yoshitk" uid="1003241" lat="35.6685985" lon="139.7064485"/>
- <node id="12793325101" visible="true" version="1" changeset="165521642" timestamp="2025-04-27T19:55:08Z" user="PSEUDOZ" uid="22839309" lat="35.6709562" lon="139.7046703">
+ <node id="12793325101" visible="true" version="2" changeset="165853589" timestamp="2025-05-05T16:03:51Z" user="b-jazz-bot" uid="9451067" lat="35.6709562" lon="139.7046703">
   <tag k="addr:street" v="竹下通り"/>
   <tag k="contact:instagram" v="acdcrag_harajuku"/>
   <tag k="contact:twitter" v="acdcrag"/>
@@ -14954,9 +14962,16 @@
   <tag k="opening_hours" v="Mo-Su 11:00-19:00"/>
   <tag k="phone" v="045-479-3696"/>
   <tag k="shop" v="clothes"/>
-  <tag k="website" v="http://acdcrag.com"/>
+  <tag k="website" v="https://acdcrag.com/"/>
  </node>
  <node id="12796498221" visible="true" version="1" changeset="165570518" timestamp="2025-04-29T01:22:39Z" user="Netzach" uid="2352862" lat="35.6695797" lon="139.7027499"/>
+ <node id="12843630363" visible="true" version="1" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092" lat="35.6684707" lon="139.7039053"/>
+ <node id="12843630364" visible="true" version="1" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092" lat="35.6685547" lon="139.7037469"/>
+ <node id="12843630365" visible="true" version="1" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092" lat="35.6685101" lon="139.7038504"/>
+ <node id="12843630366" visible="true" version="1" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092" lat="35.6684651" lon="139.7038905"/>
+ <node id="12843630367" visible="true" version="1" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092" lat="35.6683972" lon="139.7038189"/>
+ <node id="12843630368" visible="true" version="1" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092" lat="35.6685773" lon="139.7038179"/>
+ <node id="12843630369" visible="true" version="1" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092" lat="35.6685152" lon="139.7038661"/>
  <way id="15772071" visible="true" version="32" changeset="163672843" timestamp="2025-03-16T01:51:57Z" user="Netzach" uid="2352862">
   <nd ref="1111686947"/>
   <nd ref="5342859178"/>
@@ -15467,7 +15482,7 @@
   <tag k="maxspeed" v="40"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="41521073" visible="true" version="19" changeset="165177375" timestamp="2025-04-20T05:02:22Z" user="funtonite" uid="617166">
+ <way id="41521073" visible="true" version="19" changeset="165177375" timestamp="2025-04-20T05:02:22Z" user="bijsgohsdacu" uid="617166">
   <nd ref="309701891"/>
   <nd ref="10574987647"/>
   <nd ref="309701902"/>
@@ -16268,13 +16283,16 @@
   <tag k="oneway" v="yes"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="93855208" visible="true" version="4" changeset="149802479" timestamp="2024-04-10T05:00:23Z" user="Sonja Emilie" uid="680876">
+ <way id="93855208" visible="true" version="7" changeset="166381046" timestamp="2025-05-17T08:25:51Z" user="WebFreak" uid="8240092">
   <nd ref="1090844710"/>
   <nd ref="1090844716"/>
   <tag k="bridge" v="yes"/>
   <tag k="handrail" v="yes"/>
   <tag k="highway" v="steps"/>
   <tag k="incline" v="down"/>
+  <tag k="ramp" v="no"/>
+  <tag k="surface" v="paving_stones"/>
+  <tag k="tactile_paving" v="yes"/>
  </way>
  <way id="93855209" visible="true" version="4" changeset="149802479" timestamp="2024-04-10T05:00:22Z" user="Sonja Emilie" uid="680876">
   <nd ref="1090844710"/>
@@ -16355,7 +16373,7 @@
   <tag k="oneway" v="yes"/>
   <tag k="source" v="Bing,2007-04"/>
  </way>
- <way id="107719960" visible="true" version="9" changeset="159760692" timestamp="2024-11-30T01:03:42Z" user="funtonite" uid="617166">
+ <way id="107719960" visible="true" version="9" changeset="159760692" timestamp="2024-11-30T01:03:42Z" user="bijsgohsdacu" uid="617166">
   <nd ref="1237503179"/>
   <nd ref="6282956800"/>
   <nd ref="1237503157"/>
@@ -21136,7 +21154,7 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing,2007-04"/>
  </way>
- <way id="139072558" visible="true" version="4" changeset="125227478" timestamp="2022-08-22T13:26:27Z" user="Human65536" uid="1502046">
+ <way id="139072558" visible="true" version="5" changeset="166634732" timestamp="2025-05-23T01:50:04Z" user="gc27" uid="7130304">
   <nd ref="1524410288"/>
   <nd ref="1524410262"/>
   <nd ref="1524410166"/>
@@ -21145,10 +21163,9 @@
   <tag k="addr:block_number" v="16"/>
   <tag k="addr:city" v="渋谷区"/>
   <tag k="addr:housenumber" v="4"/>
-  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:neighbourhood" v="神宮前1丁目"/>
   <tag k="addr:postcode" v="150-0001"/>
   <tag k="addr:province" v="東京都"/>
-  <tag k="addr:quarter" v="神宮前"/>
   <tag k="building" v="retail"/>
   <tag k="name" v="原宿アルタ"/>
   <tag k="name:en" v="ALTA"/>
@@ -21157,17 +21174,17 @@
   <tag k="source" v="Bing,2007-04;survey"/>
   <tag k="website" v="https://www.altastyle.com/harajuku/"/>
  </way>
- <way id="139072559" visible="true" version="2" changeset="60309850" timestamp="2018-06-30T20:29:03Z" user="gurikoshama" uid="8487840">
+ <way id="139072559" visible="true" version="3" changeset="166634732" timestamp="2025-05-23T01:50:04Z" user="gc27" uid="7130304">
   <nd ref="1524410149"/>
   <nd ref="1524410144"/>
   <nd ref="1524410093"/>
   <nd ref="1524410104"/>
   <nd ref="1524410149"/>
-  <tag k="addr:block_number" v="15-4"/>
-  <tag k="addr:city" v="東京都"/>
-  <tag k="addr:neighbourhood" v="1丁目"/>
-  <tag k="addr:quarter" v="神宮前"/>
-  <tag k="addr:suburb" v="渋谷区"/>
+  <tag k="addr:block_number" v="15"/>
+  <tag k="addr:city" v="渋谷区"/>
+  <tag k="addr:housenumber" v="4"/>
+  <tag k="addr:neighbourhood" v="神宮前1丁目"/>
+  <tag k="addr:province" v="東京都"/>
   <tag k="amenity" v="cafe"/>
   <tag k="building" v="yes"/>
   <tag k="name" v="DESSERT CAFE 雪のはな 東京原宿店"/>
@@ -22248,7 +22265,7 @@
   <tag k="source" v="Bing,2007-04"/>
   <tag k="surface" v="paving_stones"/>
  </way>
- <way id="139117891" visible="true" version="4" changeset="55491805" timestamp="2018-01-16T12:40:00Z" user="Bigmorr" uid="6802110">
+ <way id="139117891" visible="true" version="5" changeset="166379981" timestamp="2025-05-17T08:24:52Z" user="WebFreak" uid="8240092">
   <nd ref="1090844716"/>
   <nd ref="5342859176"/>
   <nd ref="5342859177"/>
@@ -22257,7 +22274,7 @@
   <tag k="footway" v="sidewalk"/>
   <tag k="highway" v="footway"/>
   <tag k="source" v="Bing,2007-04"/>
-  <tag k="surface" v="paved"/>
+  <tag k="surface" v="paving_stones"/>
  </way>
  <way id="139117892" visible="true" version="4" changeset="133431241" timestamp="2023-03-08T08:33:05Z" user="近場行き" uid="12272282">
   <nd ref="1524820119"/>
@@ -27667,7 +27684,7 @@
   <tag k="source" v="Bing,2007-04"/>
   <tag k="surface" v="paved"/>
  </way>
- <way id="165913324" visible="true" version="33" changeset="140207483" timestamp="2023-08-22T03:37:39Z" user="NorthCrab" uid="15215305">
+ <way id="165913324" visible="true" version="34" changeset="165969693" timestamp="2025-05-08T07:53:17Z" user="SerialDesignationCYN" uid="22042457">
   <nd ref="1774195132"/>
   <nd ref="9320533205"/>
   <nd ref="267805288"/>
@@ -27705,6 +27722,7 @@
   <tag k="highway" v="motorway"/>
   <tag k="lanes" v="2"/>
   <tag k="layer" v="2"/>
+  <tag k="lit" v="yes"/>
   <tag k="maxspeed" v="50"/>
   <tag k="motorcar" v="designated"/>
   <tag k="motorcycle" v="designated"/>
@@ -27772,7 +27790,7 @@
   <tag k="surface" v="paved"/>
   <tag k="toll" v="yes"/>
  </way>
- <way id="165913326" visible="true" version="32" changeset="140207483" timestamp="2023-08-22T03:37:39Z" user="NorthCrab" uid="15215305">
+ <way id="165913326" visible="true" version="33" changeset="165969693" timestamp="2025-05-08T07:53:17Z" user="SerialDesignationCYN" uid="22042457">
   <nd ref="1774195134"/>
   <nd ref="8380891842"/>
   <nd ref="267810128"/>
@@ -27810,6 +27828,7 @@
   <tag k="highway" v="motorway"/>
   <tag k="lanes" v="2"/>
   <tag k="layer" v="2"/>
+  <tag k="lit" v="yes"/>
   <tag k="maxspeed" v="60"/>
   <tag k="motorcar" v="designated"/>
   <tag k="motorcycle" v="designated"/>
@@ -29466,7 +29485,7 @@
   <tag k="lit" v="yes"/>
   <tag k="surface" v="paving_stones"/>
  </way>
- <way id="335297248" visible="true" version="3" changeset="130904580" timestamp="2023-01-05T12:52:06Z" user="osm-sputnik" uid="167417">
+ <way id="335297248" visible="true" version="4" changeset="166379981" timestamp="2025-05-17T08:24:24Z" user="WebFreak" uid="8240092">
   <nd ref="1524820037"/>
   <nd ref="3424152084"/>
   <tag k="bridge" v="yes"/>
@@ -29476,7 +29495,7 @@
   <tag k="name" v="五輪橋"/>
   <tag k="name:en" v="Gorin Bridge"/>
   <tag k="source" v="Bing,2007-04"/>
-  <tag k="surface" v="paved"/>
+  <tag k="surface" v="paving_stones"/>
  </way>
  <way id="335297249" visible="true" version="2" changeset="122850701" timestamp="2022-06-25T21:33:43Z" user="KKK-jp" uid="10375512">
   <nd ref="3424152086"/>
@@ -30349,7 +30368,7 @@
   <tag k="source" v="Bing,2007-04"/>
   <tag k="surface" v="compacted"/>
  </way>
- <way id="469908925" visible="true" version="25" changeset="161045881" timestamp="2025-01-06T06:54:43Z" user="Pythoner" uid="21939480">
+ <way id="469908925" visible="true" version="26" changeset="165667998" timestamp="2025-05-01T10:07:49Z" user="tartiflex" uid="507417">
   <nd ref="4641692497"/>
   <nd ref="4641692496"/>
   <nd ref="4641692495"/>
@@ -30417,7 +30436,7 @@
   <tag k="contact:youtube" v="UCwBMJNpNM2saJaKF6O6S5bw"/>
   <tag k="emergency" v="assembly_point"/>
   <tag k="name" v="明治神宮"/>
-  <tag k="name:en" v="Meiji Jingu Shrine"/>
+  <tag k="name:en" v="Meiji Shrine"/>
   <tag k="name:es" v="Meiji Jingu"/>
   <tag k="name:fr" v="Sanctuaire Meiji"/>
   <tag k="name:it" v="Meiji Jingu"/>
@@ -31514,7 +31533,7 @@
   <nd ref="5291746471"/>
   <tag k="amenity" v="parking"/>
  </way>
- <way id="548694425" visible="true" version="5" changeset="141192260" timestamp="2023-09-13T06:38:43Z" user="tg4567" uid="12500589">
+ <way id="548694425" visible="true" version="6" changeset="167074832" timestamp="2025-06-02T05:19:53Z" user="Zunyu" uid="19079224">
   <nd ref="5300650692"/>
   <nd ref="5300650693"/>
   <nd ref="8113338587"/>
@@ -31536,10 +31555,9 @@
   <tag k="addr:block_number" v="14"/>
   <tag k="addr:city" v="渋谷区"/>
   <tag k="addr:housenumber" v="30"/>
-  <tag k="addr:neighbourhood" v="1丁目"/>
+  <tag k="addr:neighbourhood" v="神宮前一丁目"/>
   <tag k="addr:postcode" v="150-0001"/>
   <tag k="addr:province" v="東京都"/>
-  <tag k="addr:quarter" v="神宮前"/>
   <tag k="building" v="commercial"/>
   <tag k="name" v="WITH HARAJUKU"/>
   <tag k="name:ja_kana" v="ウィズ ハラジュク"/>
@@ -31550,26 +31568,28 @@
   <tag k="wikimedia_commons" v="Category:With Harajuku"/>
   <tag k="wikipedia" v="ja:ウィズ原宿"/>
  </way>
- <way id="553522499" visible="true" version="5" changeset="141192260" timestamp="2023-09-13T06:38:43Z" user="tg4567" uid="12500589">
+ <way id="553522499" visible="true" version="6" changeset="165667998" timestamp="2025-05-01T10:07:49Z" user="tartiflex" uid="507417">
   <nd ref="4492209190"/>
   <nd ref="5342859168"/>
   <nd ref="5342859169"/>
   <nd ref="5342859170"/>
   <nd ref="4492209190"/>
+  <tag k="contact:tripadvisor" v="13287787"/>
   <tag k="layer" v="1"/>
   <tag k="man_made" v="bridge"/>
   <tag k="name" v="神宮橋"/>
   <tag k="name:en" v="Jingu Bridge"/>
   <tag k="name:it" v="Ponte Jingu"/>
-  <tag k="name:ja" v="神宮橋"/>
-  <tag k="name:ja-Latn" v="Jingū bashi"/>
+  <tag k="name:ja-Hira" v="じゅいんぐうばし"/>
+  <tag k="name:ja-Latn" v="Jingū-bashi"/>
   <tag k="name:zh" v="神宮橋"/>
+  <tag k="start_date" v="1920-09"/>
   <tag k="tourism" v="attraction"/>
   <tag k="wikidata" v="Q11589493"/>
   <tag k="wikimedia_commons" v="Category:Jingu Bashi"/>
   <tag k="wikipedia" v="en:Jingūbashi"/>
  </way>
- <way id="553522503" visible="true" version="3" changeset="143280304" timestamp="2023-10-28T19:45:31Z" user="Arlo James Barnes" uid="682928">
+ <way id="553522503" visible="true" version="4" changeset="165667998" timestamp="2025-05-01T10:07:49Z" user="tartiflex" uid="507417">
   <nd ref="5342859171"/>
   <nd ref="5342859172"/>
   <nd ref="5342859173"/>
@@ -31579,9 +31599,10 @@
   <tag k="man_made" v="bridge"/>
   <tag k="name" v="五輪橋"/>
   <tag k="name:en" v="Gorin bridge"/>
+  <tag k="name:fr" v="Pont des anneaux olympiques"/>
   <tag k="name:it" v="Ponte Gorin"/>
-  <tag k="name:ja" v="五輪橋"/>
-  <tag k="name:ja-Latn" v="Gorin bashi"/>
+  <tag k="name:ja-Hira" v="おうりんばし"/>
+  <tag k="name:ja-Latn" v="Gorin-bashi"/>
   <tag k="name:zh" v="五輪橋"/>
  </way>
  <way id="553522505" visible="true" version="3" changeset="133073780" timestamp="2023-02-27T07:23:31Z" user="chemol" uid="8934940">
@@ -33587,7 +33608,7 @@
   <tag k="maxspeed" v="40"/>
   <tag k="surface" v="asphalt"/>
  </way>
- <way id="967529920" visible="true" version="8" changeset="165177375" timestamp="2025-04-20T05:02:09Z" user="funtonite" uid="617166">
+ <way id="967529920" visible="true" version="8" changeset="165177375" timestamp="2025-04-20T05:02:09Z" user="bijsgohsdacu" uid="617166">
   <nd ref="508427003"/>
   <nd ref="258038134"/>
   <nd ref="1091129918"/>
@@ -36336,6 +36357,18 @@
   <tag k="highway" v="service"/>
   <tag k="service" v="alley"/>
  </way>
+ <way id="1387452941" visible="true" version="1" changeset="166380844" timestamp="2025-05-17T08:19:12Z" user="WebFreak" uid="8240092">
+  <nd ref="12843630364"/>
+  <nd ref="12843630367"/>
+  <nd ref="8989141819"/>
+  <nd ref="12843630363"/>
+  <nd ref="12843630366"/>
+  <nd ref="12843630369"/>
+  <nd ref="12843630365"/>
+  <nd ref="12843630368"/>
+  <nd ref="12843630364"/>
+  <tag k="landuse" v="garages"/>
+ </way>
  <relation id="443284" visible="true" version="109" changeset="165176902" timestamp="2025-04-20T04:17:07Z" user="tutuw002" uid="4531722">
   <member type="node" ref="9339029496" role="stop_entry_only"/>
   <member type="way" ref="238907003" role="platform_entry_only"/>
@@ -36631,7 +36664,7 @@
   <tag k="building" v="yes"/>
   <tag k="type" v="multipolygon"/>
  </relation>
- <relation id="1942951" visible="true" version="137" changeset="164984216" timestamp="2025-04-15T13:04:58Z" user="postown" uid="4480756">
+ <relation id="1942951" visible="true" version="138" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="2461068499" role="stop"/>
   <member type="node" ref="264240113" role="stop"/>
   <member type="node" ref="281366192" role="stop"/>
@@ -36692,6 +36725,7 @@
   <member type="way" ref="498841697" role=""/>
   <member type="way" ref="918375678" role=""/>
   <member type="way" ref="918375675" role=""/>
+  <member type="way" ref="1385062980" role="forward"/>
   <member type="way" ref="355800957" role="forward"/>
   <member type="way" ref="238814403" role="forward"/>
   <member type="way" ref="238814404" role="forward"/>
@@ -36991,7 +37025,7 @@
   <tag k="wikidata" v="Q4803320"/>
   <tag k="wikipedia" v="ja:ふじさん (列車)"/>
  </relation>
- <relation id="1942963" visible="true" version="142" changeset="165466212" timestamp="2025-04-26T13:35:49Z" user="tom_konda" uid="283100">
+ <relation id="1942963" visible="true" version="143" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="way" ref="246544360" role=""/>
   <member type="way" ref="198415022" role=""/>
   <member type="way" ref="237486602" role=""/>
@@ -37089,6 +37123,7 @@
   <member type="way" ref="238814404" role=""/>
   <member type="way" ref="238814403" role=""/>
   <member type="way" ref="355800957" role=""/>
+  <member type="way" ref="1385062980" role=""/>
   <member type="way" ref="683615535" role=""/>
   <member type="way" ref="279532496" role=""/>
   <member type="way" ref="1234208208" role=""/>
@@ -37543,7 +37578,7 @@
   <tag k="route" v="railway"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="1943145" visible="true" version="167" changeset="164984216" timestamp="2025-04-15T13:04:58Z" user="postown" uid="4480756">
+ <relation id="1943145" visible="true" version="168" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="2461068499" role="stop"/>
   <member type="node" ref="264240113" role="stop"/>
   <member type="node" ref="264240493" role="stop"/>
@@ -37694,6 +37729,7 @@
   <member type="way" ref="143458584" role="forward"/>
   <member type="way" ref="254766093" role=""/>
   <member type="way" ref="520552634" role=""/>
+  <member type="way" ref="1385062980" role="forward"/>
   <member type="way" ref="355800957" role="forward"/>
   <member type="way" ref="238814403" role="forward"/>
   <member type="way" ref="238814404" role="forward"/>
@@ -37856,7 +37892,7 @@
   <tag k="wikidata" v="Q5379447"/>
   <tag k="wikipedia" v="ja:えのしま (列車)"/>
  </relation>
- <relation id="1972920" visible="true" version="116" changeset="165455872" timestamp="2025-04-26T09:29:53Z" user="近場行き" uid="12272282">
+ <relation id="1972920" visible="true" version="117" changeset="165984331" timestamp="2025-05-08T13:39:45Z" user="kojingharang" uid="623058">
   <member type="node" ref="3589537624" role="stop"/>
   <member type="way" ref="249319604" role="platform"/>
   <member type="node" ref="3708277009" role="stop"/>
@@ -38079,6 +38115,8 @@
   <member type="way" ref="211240812" role=""/>
   <member type="way" ref="211240865" role=""/>
   <member type="way" ref="211240863" role=""/>
+  <member type="way" ref="1384655043" role=""/>
+  <member type="way" ref="1384655044" role=""/>
   <member type="way" ref="203193834" role=""/>
   <member type="way" ref="211240831" role=""/>
   <member type="way" ref="211240829" role=""/>
@@ -38123,7 +38161,7 @@
   <tag k="wikidata" v="Q693036"/>
   <tag k="wikipedia" v="ja:山手線"/>
  </relation>
- <relation id="1972960" visible="true" version="121" changeset="165455872" timestamp="2025-04-26T09:29:53Z" user="近場行き" uid="12272282">
+ <relation id="1972960" visible="true" version="122" changeset="165984331" timestamp="2025-05-08T13:39:45Z" user="kojingharang" uid="623058">
   <member type="node" ref="3589537622" role="stop"/>
   <member type="way" ref="249319604" role="platform"/>
   <member type="node" ref="7293401980" role="stop"/>
@@ -38188,6 +38226,8 @@
   <member type="way" ref="211240844" role=""/>
   <member type="way" ref="211240813" role=""/>
   <member type="way" ref="211240834" role=""/>
+  <member type="way" ref="1384655042" role=""/>
+  <member type="way" ref="1384655041" role=""/>
   <member type="way" ref="203241888" role=""/>
   <member type="way" ref="211240815" role=""/>
   <member type="way" ref="211240850" role=""/>
@@ -39270,7 +39310,7 @@
   <tag k="wikidata" v="Q384862"/>
   <tag k="wikipedia" v="en:Toei Ōedo Line"/>
  </relation>
- <relation id="3413154" visible="true" version="91" changeset="165466212" timestamp="2025-04-26T13:35:49Z" user="tom_konda" uid="283100">
+ <relation id="3413154" visible="true" version="92" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="7483522311" role="stop"/>
   <member type="node" ref="6125716122" role=""/>
   <member type="way" ref="230395544" role=""/>
@@ -39281,6 +39321,7 @@
   <member type="way" ref="355800964" role="forward"/>
   <member type="way" ref="356054328" role="forward"/>
   <member type="way" ref="238814399" role="forward"/>
+  <member type="way" ref="1385062980" role="forward"/>
   <member type="way" ref="355800957" role="forward"/>
   <member type="way" ref="238814403" role="forward"/>
   <member type="way" ref="238814404" role="forward"/>
@@ -39787,7 +39828,7 @@
   <tag k="route" v="bicycle"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="4243861" visible="true" version="60" changeset="165466212" timestamp="2025-04-26T13:35:49Z" user="tom_konda" uid="283100">
+ <relation id="4243861" visible="true" version="61" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="7483522311" role="stop"/>
   <member type="node" ref="6281974025" role="stop"/>
   <member type="way" ref="25795831" role=""/>
@@ -39975,6 +40016,7 @@
   <member type="way" ref="254766094" role=""/>
   <member type="way" ref="355800959" role=""/>
   <member type="way" ref="355800961" role=""/>
+  <member type="way" ref="1385062980" role=""/>
   <member type="way" ref="355800957" role=""/>
   <member type="way" ref="137189945" role=""/>
   <member type="way" ref="355800984" role=""/>
@@ -40221,7 +40263,7 @@
   <tag k="wheelchair" v="yes"/>
   <tag k="wikipedia" v="ja:はこね (列車)"/>
  </relation>
- <relation id="4243864" visible="true" version="70" changeset="165466212" timestamp="2025-04-26T13:35:49Z" user="tom_konda" uid="283100">
+ <relation id="4243864" visible="true" version="71" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="7483522311" role="stop"/>
   <member type="node" ref="281366192" role="stop"/>
   <member type="node" ref="6125716122" role=""/>
@@ -40233,6 +40275,7 @@
   <member type="way" ref="355800964" role="forward"/>
   <member type="way" ref="356054328" role="forward"/>
   <member type="way" ref="238814399" role="forward"/>
+  <member type="way" ref="1385062980" role="forward"/>
   <member type="way" ref="355800957" role="forward"/>
   <member type="way" ref="238814403" role="forward"/>
   <member type="way" ref="238814404" role="forward"/>
@@ -40596,7 +40639,7 @@
   <tag k="wheelchair" v="yes"/>
   <tag k="wikipedia" v="ja:はこね (列車)"/>
  </relation>
- <relation id="4243866" visible="true" version="69" changeset="165466212" timestamp="2025-04-26T13:35:49Z" user="tom_konda" uid="283100">
+ <relation id="4243866" visible="true" version="70" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="2461068499" role="stop"/>
   <member type="node" ref="264240113" role="stop"/>
   <member type="node" ref="281366192" role="stop"/>
@@ -40610,6 +40653,7 @@
   <member type="way" ref="355800964" role="forward"/>
   <member type="way" ref="356054328" role="forward"/>
   <member type="way" ref="238814399" role="forward"/>
+  <member type="way" ref="1385062980" role="forward"/>
   <member type="way" ref="355800957" role="forward"/>
   <member type="way" ref="238814403" role="forward"/>
   <member type="way" ref="238814404" role="forward"/>
@@ -43216,7 +43260,7 @@
   <tag k="wikidata" v="Q1332908"/>
   <tag k="wikipedia" v="en:Tokyo Metro Fukutoshin Line"/>
  </relation>
- <relation id="5376382" visible="true" version="51" changeset="165455872" timestamp="2025-04-26T09:29:53Z" user="近場行き" uid="12272282">
+ <relation id="5376382" visible="true" version="52" changeset="165984331" timestamp="2025-05-08T13:39:45Z" user="kojingharang" uid="623058">
   <member type="way" ref="146060234" role="platform"/>
   <member type="way" ref="146060233" role="platform"/>
   <member type="way" ref="144430695" role="platform"/>
@@ -43400,6 +43444,8 @@
   <member type="way" ref="211240812" role=""/>
   <member type="way" ref="211240865" role=""/>
   <member type="way" ref="211240863" role=""/>
+  <member type="way" ref="1384655043" role=""/>
+  <member type="way" ref="1384655044" role=""/>
   <member type="way" ref="203193834" role=""/>
   <member type="way" ref="211240831" role=""/>
   <member type="way" ref="211240829" role=""/>
@@ -43423,6 +43469,8 @@
   <member type="way" ref="211240844" role=""/>
   <member type="way" ref="211240813" role=""/>
   <member type="way" ref="211240834" role=""/>
+  <member type="way" ref="1384655042" role=""/>
+  <member type="way" ref="1384655041" role=""/>
   <member type="way" ref="203241888" role=""/>
   <member type="way" ref="211240815" role=""/>
   <member type="way" ref="211240850" role=""/>
@@ -46111,7 +46159,7 @@
   <tag k="wikidata" v="Q135176"/>
   <tag k="wikipedia" v="ja:小田急小田原線"/>
  </relation>
- <relation id="9483255" visible="true" version="76" changeset="165466212" timestamp="2025-04-26T13:35:49Z" user="tom_konda" uid="283100">
+ <relation id="9483255" visible="true" version="77" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="242548818" role="stop"/>
   <member type="node" ref="281365073" role="stop"/>
   <member type="node" ref="7812486754" role="stop"/>
@@ -46355,6 +46403,7 @@
   <member type="way" ref="254766094" role=""/>
   <member type="way" ref="355800959" role=""/>
   <member type="way" ref="355800961" role=""/>
+  <member type="way" ref="1385062980" role=""/>
   <member type="way" ref="355800957" role=""/>
   <member type="way" ref="137189945" role=""/>
   <member type="way" ref="355800984" role=""/>
@@ -47815,7 +47864,7 @@
   <tag k="wikidata" v="Q11430772"/>
   <tag k="wikipedia" v="ja:多摩急行"/>
  </relation>
- <relation id="11273527" visible="true" version="35" changeset="164984216" timestamp="2025-04-15T13:04:58Z" user="postown" uid="4480756">
+ <relation id="11273527" visible="true" version="36" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="5356567361" role="stop"/>
   <member type="way" ref="238704004" role="platform"/>
   <member type="node" ref="6794031840" role="stop"/>
@@ -47935,6 +47984,7 @@
   <member type="way" ref="254766094" role=""/>
   <member type="way" ref="355800959" role=""/>
   <member type="way" ref="355800961" role=""/>
+  <member type="way" ref="1385062980" role=""/>
   <member type="way" ref="355800957" role=""/>
   <member type="way" ref="137189945" role=""/>
   <member type="way" ref="355800984" role=""/>
@@ -49162,7 +49212,7 @@
   <tag k="wikidata" v="Q1369067"/>
   <tag k="wikipedia" v="ja:成田エクスプレス"/>
  </relation>
- <relation id="11694684" visible="true" version="29" changeset="165261556" timestamp="2025-04-22T00:03:32Z" user="近場行き" uid="12272282">
+ <relation id="11694684" visible="true" version="31" changeset="167034771" timestamp="2025-06-01T04:16:57Z" user="近場行き" uid="12272282">
   <member type="node" ref="6002844222" role="stop"/>
   <member type="node" ref="298330905" role="stop"/>
   <member type="node" ref="4351266707" role="stop"/>
@@ -49178,9 +49228,11 @@
   <member type="node" ref="1968448616" role="stop"/>
   <member type="node" ref="7858255373" role="stop"/>
   <member type="way" ref="904621355" role=""/>
+  <member type="way" ref="1391290502" role=""/>
   <member type="way" ref="636578137" role=""/>
   <member type="way" ref="636578129" role=""/>
   <member type="way" ref="636578130" role=""/>
+  <member type="way" ref="1391290503" role=""/>
   <member type="way" ref="636578131" role=""/>
   <member type="way" ref="619916710" role=""/>
   <member type="way" ref="638399116" role=""/>
@@ -49244,6 +49296,7 @@
   <member type="way" ref="215609386" role=""/>
   <member type="way" ref="215609373" role=""/>
   <member type="way" ref="160439516" role=""/>
+  <member type="way" ref="1382699145" role=""/>
   <member type="way" ref="1092867990" role=""/>
   <member type="way" ref="638608008" role=""/>
   <member type="way" ref="160439513" role=""/>
@@ -49817,7 +49870,7 @@
   <tag k="wheelchair" v="yes"/>
   <tag k="wikipedia" v="ja:はこね (列車)"/>
  </relation>
- <relation id="12458960" visible="true" version="29" changeset="165466212" timestamp="2025-04-26T13:35:49Z" user="tom_konda" uid="283100">
+ <relation id="12458960" visible="true" version="30" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="7483522313" role="stop"/>
   <member type="way" ref="238904496" role="platform"/>
   <member type="node" ref="3408553604" role="stop"/>
@@ -50050,6 +50103,7 @@
   <member type="way" ref="254766094" role=""/>
   <member type="way" ref="355800959" role=""/>
   <member type="way" ref="355800961" role=""/>
+  <member type="way" ref="1385062980" role=""/>
   <member type="way" ref="355800957" role=""/>
   <member type="way" ref="137189945" role=""/>
   <member type="way" ref="355800984" role=""/>
@@ -50492,7 +50546,7 @@
   <tag k="wikidata" v="Q11430772"/>
   <tag k="wikipedia" v="ja:多摩急行"/>
  </relation>
- <relation id="12463785" visible="true" version="17" changeset="164984216" timestamp="2025-04-15T13:04:58Z" user="postown" uid="4480756">
+ <relation id="12463785" visible="true" version="18" changeset="166025602" timestamp="2025-05-09T12:20:19Z" user="kojingharang" uid="623058">
   <member type="node" ref="6450983374" role="stop"/>
   <member type="relation" ref="12463696" role="platform"/>
   <member type="node" ref="3286006638" role="stop"/>
@@ -50654,6 +50708,7 @@
   <member type="way" ref="254766094" role=""/>
   <member type="way" ref="355800959" role=""/>
   <member type="way" ref="355800961" role=""/>
+  <member type="way" ref="1385062980" role=""/>
   <member type="way" ref="355800957" role=""/>
   <member type="way" ref="238814403" role=""/>
   <member type="way" ref="238814404" role=""/>
@@ -51516,19 +51571,21 @@
   <tag k="wikimedia_commons" v="Category:Jingūmae, Shibuya"/>
   <tag k="wikipedia" v="ja:神宮前 (渋谷区)"/>
  </relation>
- <relation id="17054664" visible="true" version="1" changeset="146464464" timestamp="2024-01-20T03:40:01Z" user="Rokomo35" uid="19071241">
+ <relation id="17054664" visible="true" version="2" changeset="165667998" timestamp="2025-05-01T10:07:49Z" user="tartiflex" uid="507417">
+  <member type="node" ref="8370128670" role="label"/>
   <member type="way" ref="1241250730" role="outer"/>
   <member type="way" ref="1241231236" role="outer"/>
   <member type="way" ref="1241250732" role="outer"/>
   <member type="way" ref="1241250722" role="outer"/>
   <member type="way" ref="1241250725" role="outer"/>
   <member type="way" ref="1241250731" role="outer"/>
-  <member type="node" ref="8370128670" role="label"/>
   <tag k="admin_level" v="10"/>
   <tag k="boundary" v="administrative"/>
   <tag k="name" v="千駄ヶ谷三丁目"/>
   <tag k="name:en" v="Sendagaya 3"/>
-  <tag k="name:ja" v="千駄ヶ谷三丁目"/>
+  <tag k="name:fr" v="Sendagaya 3"/>
+  <tag k="name:ja-Hira" v="せながやさんちょうめ"/>
+  <tag k="name:ja-Latn" v="Sendagaya san-chōme"/>
   <tag k="type" v="boundary"/>
  </relation>
  <relation id="17054665" visible="true" version="1" changeset="146464464" timestamp="2024-01-20T03:40:01Z" user="Rokomo35" uid="19071241">
@@ -51544,7 +51601,7 @@
   <tag k="name:ja" v="千駄ヶ谷四丁目"/>
   <tag k="type" v="boundary"/>
  </relation>
- <relation id="17054668" visible="true" version="5" changeset="149218437" timestamp="2024-03-27T10:41:25Z" user="tartiflex" uid="507417">
+ <relation id="17054668" visible="true" version="6" changeset="165667998" timestamp="2025-05-01T10:07:49Z" user="tartiflex" uid="507417">
   <member type="node" ref="11738013406" role="label"/>
   <member type="way" ref="1241231233" role="outer"/>
   <member type="way" ref="1241231236" role="outer"/>
@@ -51575,6 +51632,7 @@
   <tag k="name:fr" v="Sendagaya"/>
   <tag k="name:ja-Hira" v="せんだがや"/>
   <tag k="name:ja-Latn" v="Sendagaya"/>
+  <tag k="postal_code" v="151-0051"/>
   <tag k="type" v="boundary"/>
   <tag k="wikidata" v="Q263347"/>
   <tag k="wikimedia_commons" v="Category:Sendagaya"/>
@@ -51864,7 +51922,7 @@
   <tag k="route" v="bus"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="18842913" visible="true" version="2" changeset="165570009" timestamp="2025-04-29T00:50:15Z" user="Netzach" uid="2352862">
+ <relation id="18842913" visible="true" version="3" changeset="166547314" timestamp="2025-05-21T02:18:25Z" user="CR86" uid="1879503">
   <member type="node" ref="2235081820" role="platform_entry_only"/>
   <member type="node" ref="2235081804" role="platform"/>
   <member type="node" ref="12669269641" role="platform"/>
@@ -52026,17 +52084,23 @@
   <member type="way" ref="1368012334" role=""/>
   <tag k="name" v="都営バス早81系統 早大正門⇒千駄ヶ谷駅⇒渋谷駅（循環）（休日ルート）"/>
   <tag k="network" v="都営バス"/>
+  <tag k="network:en" v="Toei Bus"/>
+  <tag k="network:ja" v="都営バス"/>
+  <tag k="network:wikidata" v="Q859227"/>
   <tag k="operator" v="東京都交通局"/>
   <tag k="public_transport:version" v="2"/>
   <tag k="ref" v="早81"/>
   <tag k="route" v="bus"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="18842914" visible="true" version="1" changeset="163673289" timestamp="2025-03-16T02:23:20Z" user="Netzach" uid="2352862">
+ <relation id="18842914" visible="true" version="2" changeset="166547314" timestamp="2025-05-21T02:18:25Z" user="CR86" uid="1879503">
   <member type="relation" ref="18842913" role=""/>
   <member type="relation" ref="18842912" role=""/>
   <tag k="name" v="都営バス早81系統 早大正門-千駄ヶ谷駅-渋谷駅（循環）"/>
   <tag k="network" v="都営バス"/>
+  <tag k="network:en" v="Toei Bus"/>
+  <tag k="network:ja" v="都営バス"/>
+  <tag k="network:wikidata" v="Q859227"/>
   <tag k="operator" v="東京都交通局"/>
   <tag k="ref" v="早81"/>
   <tag k="route_master" v="bus"/>

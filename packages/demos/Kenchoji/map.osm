@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2270291 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167571 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.3292000" minlon="139.5512000" maxlat="35.3355000" maxlon="139.5603000"/>
  <node id="255479334" visible="true" version="7" changeset="34898986" timestamp="2015-10-27T09:00:43Z" user="andygol" uid="94578" lat="35.3274695" lon="139.5561919"/>
  <node id="255479427" visible="true" version="8" changeset="34898695" timestamp="2015-10-27T08:38:44Z" user="andygol" uid="94578" lat="35.3290518" lon="139.5542108"/>
@@ -7166,7 +7166,7 @@
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625030" visible="true" version="5" changeset="94969153" timestamp="2020-11-29T05:06:04Z" user="pizzaiolo" uid="1772368">
+ <way id="53625030" visible="true" version="6" changeset="166281982" timestamp="2025-05-15T01:38:22Z" user="無限の刃" uid="11887540">
   <nd ref="677292822"/>
   <nd ref="2051311247"/>
   <nd ref="677292809"/>
@@ -7187,11 +7187,16 @@
   <nd ref="677292818"/>
   <nd ref="677292832"/>
   <nd ref="677292822"/>
+  <tag k="addr:block_number" v="110"/>
+  <tag k="addr:city" v="鎌倉市"/>
+  <tag k="addr:neighbourhood" v="山ノ内"/>
+  <tag k="addr:postcode" v="247-0062"/>
+  <tag k="addr:province" v="神奈川県"/>
   <tag k="amenity" v="school"/>
-  <tag k="layer" v="-2"/>
-  <tag k="name" v="鎌倉学園中・高等学校"/>
-  <tag k="source" v="NRPB of MLIT Japan"/>
-  <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
+  <tag k="contact:phone" v="+81 467 22 0994"/>
+  <tag k="contact:website" v="https://www.kamagaku.ac.jp/"/>
+  <tag k="name" v="鎌倉学園"/>
+  <tag k="operator:type" v="private"/>
   <tag k="wikidata" v="Q11650888"/>
  </way>
  <way id="53625031" visible="true" version="1" changeset="4264300" timestamp="2010-03-29T05:53:11Z" user="ikiya" uid="69966">
