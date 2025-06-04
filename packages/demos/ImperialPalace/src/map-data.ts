@@ -1,4 +1,4 @@
-import { SvgMapViewerConfig } from '@daijimaps/svgmapviewer'
+import { DataConfig } from '@daijimaps/svgmapviewer'
 import {
   calcScale,
   MapData,
@@ -32,7 +32,7 @@ const mapMap: MapMap = mapMapFromMapData(mapData)
 
 const { mapCoord, mapViewBox: origViewBox } = calcScale(mapData)
 
-export const mapConfig: Partial<SvgMapViewerConfig> = {
+export const dataConfig: DataConfig = {
   mapData,
   mapMap,
   mapCoord,

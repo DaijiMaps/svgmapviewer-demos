@@ -1,10 +1,11 @@
 proc() {
   rm src/*.*
-  cp ../Expo2025/src/*.* src
-  cp ../Expo2025/vite.* .
-  cp ../Expo2025/package.json .
-  pnpm i
-  #../../tools/regen.sh
+  cp ../${src}/src/*.* src
+  : cp ../${src}/vite.* .
+  : cp ../${src}/package.json .
+  : pnpm install
+  #: ../../tools/regen.sh
+  pnpm build
 }
 
 src=$1 # Expo2025
@@ -28,5 +29,6 @@ for f in ${dirs}; do
   fi
   pushd $d >/dev/null
   echo $name
+  proc
   popd >/dev/null
 done
