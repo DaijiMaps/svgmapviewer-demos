@@ -3,8 +3,8 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "dev:local": "vite --host 0.0.0.0 --config vite.config-local.ts",
-    "build": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src/lib.css && cp node_modules/@daijimaps/svgmapviewer-app/dist/index.css src/app.css && tsc -b && vite build",
-    "build:local": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src/lib.css && cp node_modules/@daijimaps/svgmapviewer-app/dist/index.css src/app.css && tsc -b && vite build --config vite.config-local.ts",
+    "build": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src/lib.css && tsc -b && vite build",
+    "build:local": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src/lib.css && tsc -b && vite build --config vite.config-local.ts",
     "lint": "eslint .",
     "preview": "vite preview",
     "pages:deploy": "pnpm build && cd dist && wrangler pages deploy ."
