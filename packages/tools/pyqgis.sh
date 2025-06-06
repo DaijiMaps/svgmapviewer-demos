@@ -11,6 +11,9 @@ _p2=${_p}/plugins
 _p3=${_p}/plugins/processing
 PYTHONPATH="${_p1}:${_p2}:${_p3}"
 
+dir=${0%/*}
+
 exec env \
     PYTHONPATH="${PYTHONPATH}" \
+    OSM_CONFIG_FILE="${dir}/osmconf.ini" \
     ${_exe} $@
