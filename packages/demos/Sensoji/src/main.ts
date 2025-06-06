@@ -1,6 +1,5 @@
 import { svgmapviewer } from '@daijimaps/svgmapviewer'
 import { renderConfig } from '@daijimaps/svgmapviewer-app'
-import './app.css' // XXX
 import './lib.css' // XXX
 import { dataConfig } from './map-data'
 
