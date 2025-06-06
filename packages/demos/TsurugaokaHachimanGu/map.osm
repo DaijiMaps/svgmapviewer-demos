@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167584 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167556 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.3228000" minlon="139.5526000" maxlat="35.3286000" maxlon="139.5586000"/>
  <node id="255479295" visible="true" version="18" changeset="123894816" timestamp="2022-07-21T13:33:11Z" user="postown" uid="4480756" lat="35.3237250" lon="139.5549006">
   <tag k="crossing" v="uncontrolled"/>
@@ -19604,7 +19604,7 @@
   <tag k="to" v="大塔宮（鎌倉宮）"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="3805585" visible="true" version="56" changeset="131225266" timestamp="2023-01-13T11:23:31Z" user="muramototomoya" uid="610947">
+ <relation id="3805585" visible="true" version="57" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <member type="way" ref="180205092" role=""/>
   <member type="way" ref="180205093" role=""/>
   <member type="way" ref="215668885" role=""/>
@@ -19727,12 +19727,16 @@
   <tag k="name" v="神奈川県道21号"/>
   <tag k="name:en" v="Kanagawa Prefectural Road Route 21"/>
   <tag k="name:es" v="Carretera prefectural 21 Kanagawa"/>
+  <tag k="name:fr" v="Route préfectorale 21 de Kanagawa"/>
+  <tag k="name:ja-Hira" v="かながわけんどう 21 ごう"/>
+  <tag k="name:ja-Latn" v="Kanagawa kendō 21-gō"/>
   <tag k="network" v="JP:prefectural:kanagawa"/>
   <tag k="official_name" v="横浜鎌倉線"/>
   <tag k="ref" v="21"/>
   <tag k="route" v="road"/>
   <tag k="type" v="route"/>
   <tag k="wikidata" v="Q11589263"/>
+  <tag k="wikimedia_commons" v="Category:Kanagawa prefectural road route 21"/>
   <tag k="wikipedia" v="ja:神奈川県道21号横浜鎌倉線"/>
  </relation>
  <relation id="4231018" visible="true" version="14" changeset="124013426" timestamp="2022-07-24T15:04:57Z" user="postown" uid="4480756">

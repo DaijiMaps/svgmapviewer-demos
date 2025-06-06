@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167582 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167558 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.7106300" minlon="139.7934800" maxlat="35.7168000" maxlon="139.7986400"/>
  <node id="57449354" visible="true" version="4" changeset="7515387" timestamp="2011-03-10T16:07:27Z" user="marek kleciak" uid="338611" lat="35.7174635" lon="139.8056858">
   <tag k="source" v="PGS"/>
@@ -18572,6 +18572,21 @@
   <tag k="name" v="スギ薬局"/>
   <tag k="name:en" v="Sugi Pharmacy"/>
   <tag k="name:ja" v="スギ薬局"/>
+ </node>
+ <node id="12888777401" visible="true" version="1" changeset="167222863" timestamp="2025-06-05T13:12:15Z" user="Marco Bresciani" uid="14353462" lat="35.7150454" lon="139.7946280">
+  <tag k="addr:housenumber" v="2-7-21"/>
+  <tag k="addr:postcode" v="111-0032"/>
+  <tag k="contact:facebook" v="%E3%83%9B%E3%83%86%E3%83%AB%E7%B5%90%E3%81%AE%E3%82%84-621180144958173"/>
+  <tag k="contact:instagram" v="yuinoya_asakusa"/>
+  <tag k="contact:line" v="891tgaaw"/>
+  <tag k="contact:twitter" v="xrJpyPrEA12IbiN"/>
+  <tag k="email" v="yuinoya2019@gmail.com"/>
+  <tag k="internet_access" v="wlan"/>
+  <tag k="name" v="結のや"/>
+  <tag k="name:en" v="Hotel Yuinoya"/>
+  <tag k="phone" v="+8108059618385"/>
+  <tag k="tourism" v="guest_house"/>
+  <tag k="website" v="https://yuinoya.jp/"/>
  </node>
  <way id="24878671" visible="true" version="88" changeset="142760459" timestamp="2023-10-18T12:10:23Z" user="tutuw002" uid="4531722">
   <nd ref="1926189622"/>
@@ -48919,7 +48934,7 @@
   <tag k="wikidata" v="Q13360900"/>
   <tag k="wikipedia" v="en:Tobu Skytree Line"/>
  </relation>
- <relation id="12856997" visible="true" version="38" changeset="164825472" timestamp="2025-04-11T16:53:03Z" user="近場行き" uid="12272282">
+ <relation id="12856997" visible="true" version="39" changeset="167168282" timestamp="2025-06-04T09:11:11Z" user="tartiflex" uid="507417">
   <member type="way" ref="24490217" role="forward"/>
   <member type="way" ref="717149025" role="forward"/>
   <member type="way" ref="717149020" role="forward"/>
@@ -49190,8 +49205,13 @@
   <member type="way" ref="1290604062" role=""/>
   <member type="way" ref="44956025" role=""/>
   <tag k="name" v="環状三号線"/>
+  <tag k="name:en" v="Circular Route 3"/>
+  <tag k="name:fr" v="Route circulaire 3"/>
+  <tag k="name:ja-Hira" v="かんじょうさんごうせん"/>
+  <tag k="name:ja-Latn" v="Kanjō san-gōsen"/>
   <tag k="network" v="JP:prefectural:tokyo"/>
   <tag k="official_name" v="主要地方道環状三号線"/>
+  <tag k="official_name:fr" v="Route circulaire préfectorale principale 3"/>
   <tag k="ref" v="319"/>
   <tag k="route" v="road"/>
   <tag k="type" v="route"/>

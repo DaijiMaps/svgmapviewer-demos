@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167576 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167561 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.6806300" minlon="135.8292100" maxlat="34.6849600" maxlon="135.8353300"/>
  <node id="252250869" visible="true" version="22" changeset="63666392" timestamp="2018-10-19T03:51:09Z" user="Rakkka" uid="4954428" lat="34.6844728" lon="135.8290198"/>
  <node id="252409965" visible="true" version="6" changeset="80741592" timestamp="2020-02-09T05:08:13Z" user="Jeffrey Friedl" uid="3091368" lat="34.6819779" lon="135.8275880"/>
@@ -14395,7 +14395,7 @@
   <tag k="surface" v="asphalt"/>
   <tag k="type" v="multipolygon"/>
  </relation>
- <relation id="7790754" visible="true" version="78" changeset="166998191" timestamp="2025-05-31T06:27:08Z" user="LiddMann" uid="22825497">
+ <relation id="7790754" visible="true" version="79" changeset="167192421" timestamp="2025-06-04T18:48:25Z" user="LiddMann" uid="22825497">
   <member type="way" ref="259733279" role=""/>
   <member type="way" ref="55220188" role=""/>
   <member type="way" ref="208652064" role=""/>
@@ -14439,8 +14439,6 @@
   <member type="way" ref="700639364" role=""/>
   <member type="way" ref="818730560" role=""/>
   <member type="way" ref="600706832" role=""/>
-  <member type="way" ref="240333426" role=""/>
-  <member type="way" ref="67503136" role=""/>
   <member type="way" ref="67503131" role=""/>
   <member type="way" ref="725027870" role=""/>
   <member type="way" ref="725027869" role=""/>

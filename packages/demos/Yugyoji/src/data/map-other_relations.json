@@ -3,6 +3,6 @@
 "name": "map-other_relations",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "osm_id": "16313290", "name": null, "type": "restriction", "other_tags": "\"restriction\"=>\"no_right_turn\"", "area": null, "centroid_x": null, "centroid_y": null }, "geometry": { "type": "GeometryCollection", "geometries": [ { "type": "LineString", "coordinates": [ [ 139.4873126, 35.3467965 ], [ 139.4874757, 35.3467205 ], [ 139.4876811, 35.3466484 ], [ 139.4878372, 35.3465831 ], [ 139.4879669, 35.3465177 ] ] }, { "type": "Point", "coordinates": [ 139.4879669, 35.3465177 ] }, { "type": "LineString", "coordinates": [ [ 139.487907400000012, 35.3464468 ], [ 139.4879669, 35.3465177 ] ] } ] } }
+
 ]
 }

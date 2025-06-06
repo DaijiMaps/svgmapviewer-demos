@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167580 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167579 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="32.8009800" minlon="130.6997100" maxlat="32.8105100" maxlon="130.7118300"/>
  <node id="269156421" visible="true" version="4" changeset="34655913" timestamp="2015-10-15T14:20:39Z" user="DannyAiquipa" uid="2226712" lat="32.8021112" lon="130.7132925">
   <tag k="highway" v="crossing"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167574 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167560 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="34.6646000" minlon="135.7824000" maxlat="34.6721000" maxlon="135.7873000"/>
  <node id="335843252" visible="true" version="4" changeset="61628291" timestamp="2018-08-13T14:03:36Z" user="Ryo-a" uid="631141" lat="34.6713547" lon="135.7831552"/>
  <node id="335843253" visible="true" version="14" changeset="163614302" timestamp="2025-03-14T15:14:08Z" user="naminami_" uid="22516598" lat="34.6704649" lon="135.7831842">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167571 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167574 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.3292000" minlon="139.5512000" maxlat="35.3355000" maxlon="139.5603000"/>
  <node id="255479334" visible="true" version="7" changeset="34898986" timestamp="2015-10-27T09:00:43Z" user="andygol" uid="94578" lat="35.3274695" lon="139.5561919"/>
  <node id="255479427" visible="true" version="8" changeset="34898695" timestamp="2015-10-27T08:38:44Z" user="andygol" uid="94578" lat="35.3290518" lon="139.5542108"/>
@@ -4780,8 +4780,11 @@
  </node>
  <node id="7886120708" visible="true" version="2" changeset="90903251" timestamp="2020-09-15T06:44:57Z" user="Daiji Maps" uid="10880270" lat="35.3345154" lon="139.5585353"/>
  <node id="7886120709" visible="true" version="2" changeset="90903251" timestamp="2020-09-15T06:44:57Z" user="Daiji Maps" uid="10880270" lat="35.3345006" lon="139.5585698"/>
- <node id="7886120710" visible="true" version="1" changeset="90562858" timestamp="2020-09-08T06:11:36Z" user="Daiji Maps" uid="10880270" lat="35.3345270" lon="139.5584479">
+ <node id="7886120710" visible="true" version="2" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417" lat="35.3345270" lon="139.5584479">
   <tag k="name" v="富士見台"/>
+  <tag k="name:fr" v="Plateforme d'observation du mont Fuji"/>
+  <tag k="name:ja-Hira" v="ふじみだい"/>
+  <tag k="name:ja-Latn" v="Fuji-midai"/>
   <tag k="tourism" v="viewpoint"/>
  </node>
  <node id="7886120711" visible="true" version="1" changeset="90562858" timestamp="2020-09-08T06:11:36Z" user="Daiji Maps" uid="10880270" lat="35.3345237" lon="139.5584321"/>
@@ -7209,7 +7212,7 @@
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625048" visible="true" version="7" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
+ <way id="53625048" visible="true" version="8" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677293614"/>
   <nd ref="681208769"/>
   <nd ref="677293594"/>
@@ -7219,8 +7222,12 @@
   <nd ref="7907593834"/>
   <nd ref="677293614"/>
   <tag k="building" v="roof"/>
+  <tag k="building:wikidata" v="Q3192940"/>
   <tag k="description:en" v="Former gate of Zozo Temple in 1647"/>
   <tag k="description:fr" v="Ancienne porte du temple Zozo en 1647"/>
+  <tag k="heritage" v="2"/>
+  <tag k="heritage:operator" v="文部科学省"/>
+  <tag k="heritage:type" v="重要文化財"/>
   <tag k="name" v="唐門"/>
   <tag k="name:en" v="Chinese Gate"/>
   <tag k="name:fr" v="Porte Chinoise"/>
@@ -7246,14 +7253,17 @@
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625050" visible="true" version="7" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
+ <way id="53625050" visible="true" version="8" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677293582"/>
   <nd ref="677293612"/>
   <nd ref="677293601"/>
   <nd ref="677293571"/>
   <nd ref="677293582"/>
   <tag k="building" v="shrine"/>
+  <tag k="building:wikidata" v="Q28224125"/>
   <tag k="heritage" v="2"/>
+  <tag k="heritage:operator" v="文部科学省"/>
+  <tag k="heritage:type" v="重要文化財"/>
   <tag k="name" v="法堂"/>
   <tag k="name:en" v="Dharma Hall"/>
   <tag k="name:fr" v="Pavillon du Dharma"/>
@@ -7347,7 +7357,7 @@
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625055" visible="true" version="7" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
+ <way id="53625055" visible="true" version="8" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677293588"/>
   <nd ref="5629060464"/>
   <nd ref="677293563"/>
@@ -7355,15 +7365,24 @@
   <nd ref="681154656"/>
   <nd ref="677293596"/>
   <nd ref="677293588"/>
+  <tag k="alt_name" v="狸門"/>
+  <tag k="alt_name:en" v="Tanuki Gate"/>
+  <tag k="alt_name::fr" v="Porte Tanuki"/>
+  <tag k="alt_name:ja-Hira" v="たぬきもん"/>
+  <tag k="alt_name:ja-Latn" v="Tanuki-mon"/>
   <tag k="building" v="gatehouse"/>
   <tag k="building:levels" v="2"/>
+  <tag k="building:wikidata" v="Q2975604"/>
   <tag k="heritage" v="2"/>
-  <tag k="name" v="三門"/>
+  <tag k="heritage:operator" v="文部科学省"/>
+  <tag k="heritage:type" v="重要文化財"/>
+  <tag k="material" v="wood"/>
+  <tag k="name" v="山門"/>
   <tag k="name:en" v="Three Gate"/>
-  <tag k="name:fr" v="Trois Portes"/>
+  <tag k="name:fr" v="Porte de la Montagne"/>
   <tag k="name:ja-Hira" v="さんもん"/>
   <tag k="name:ja-Latn" v="San-mon"/>
-  <tag k="start_date" v="1775"/>
+  <tag k="start_date" v="1754"/>
   <tag k="website" v="https://scontent.fosl1-1.fna.fbcdn.net/v/t1.0-9/31632017_10212303320919046_2082648221858922496_o.jpg?_nc_cat=0&amp;oh=4b58823df64d0722c20546ed08de4ef0&amp;oe=5B8B2B75"/>
  </way>
  <way id="53625056" visible="true" version="6" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
@@ -7397,7 +7416,7 @@
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625058" visible="true" version="7" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
+ <way id="53625058" visible="true" version="8" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677293599"/>
   <nd ref="677293579"/>
   <nd ref="677293567"/>
@@ -7405,8 +7424,11 @@
   <nd ref="677293599"/>
   <tag k="building" v="shrine"/>
   <tag k="heritage" v="2"/>
+  <tag k="heritage:operator" v="文部科学省"/>
+  <tag k="heritage:type" v="重要文化財"/>
+  <tag k="material" v="wood"/>
   <tag k="name" v="仏殿"/>
-  <tag k="name:en" v="Buddha hall"/>
+  <tag k="name:en" v="Buddha Hall"/>
   <tag k="name:fr" v="Pavillon de Bouddha"/>
   <tag k="name:ja-Hira" v="ぶつでん"/>
   <tag k="name:ja-Latn" v="Butsu-den"/>
@@ -7433,7 +7455,7 @@
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625128" visible="true" version="4" changeset="90567485" timestamp="2020-09-08T07:13:09Z" user="Daiji Maps" uid="10880270">
+ <way id="53625128" visible="true" version="5" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677294737"/>
   <nd ref="677294714"/>
   <nd ref="7875905081"/>
@@ -7448,14 +7470,16 @@
   <nd ref="7875905079"/>
   <nd ref="7875905080"/>
   <nd ref="677294737"/>
-  <tag k="amenity" v="place_of_worship"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="shrine"/>
   <tag k="name" v="天源院"/>
+  <tag k="name:fr" v="Sous-temple Tengen"/>
+  <tag k="name:ja-Hira" v="てんげんいん"/>
+  <tag k="name:ja-Latn" v="Tengen-in"/>
   <tag k="religion" v="buddhist"/>
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625129" visible="true" version="5" changeset="90567485" timestamp="2020-09-08T07:13:09Z" user="Daiji Maps" uid="10880270">
+ <way id="53625129" visible="true" version="6" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677294721"/>
   <nd ref="677294729"/>
   <nd ref="681218863"/>
@@ -7468,15 +7492,17 @@
   <nd ref="6648078805"/>
   <nd ref="6648078804"/>
   <nd ref="677294721"/>
-  <tag k="amenity" v="place_of_worship"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="shrine"/>
   <tag k="name" v="正統院"/>
   <tag k="name:en" v="Shotoin"/>
+  <tag k="name:fr" v="Sous-temple Shōtō"/>
+  <tag k="name:ja-Hira" v="しょうとういん"/>
+  <tag k="name:ja-Latn" v="Shōtō-in"/>
   <tag k="religion" v="buddhist"/>
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625130" visible="true" version="5" changeset="90567485" timestamp="2020-09-08T07:13:09Z" user="Daiji Maps" uid="10880270">
+ <way id="53625130" visible="true" version="6" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677294713"/>
   <nd ref="7876026011"/>
   <nd ref="7876026010"/>
@@ -7492,15 +7518,17 @@
   <nd ref="7876026006"/>
   <nd ref="7876026005"/>
   <nd ref="677294713"/>
-  <tag k="amenity" v="place_of_worship"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="shrine"/>
   <tag k="name" v="宝珠院"/>
   <tag k="name:en" v="Hōshuin"/>
+  <tag k="name:fr" v="Sous-temple Hōshu"/>
+  <tag k="name:ja-Hira" v="ほうしゅいん"/>
+  <tag k="name:ja-Latn" v="Hōshu-in"/>
   <tag k="religion" v="buddhist"/>
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625131" visible="true" version="6" changeset="90795590" timestamp="2020-09-12T14:13:19Z" user="Daiji Maps" uid="10880270">
+ <way id="53625131" visible="true" version="7" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677294746"/>
   <nd ref="7899985757"/>
   <nd ref="7899985756"/>
@@ -7517,10 +7545,12 @@
   <nd ref="7899985759"/>
   <nd ref="7899985758"/>
   <nd ref="677294746"/>
-  <tag k="amenity" v="place_of_worship"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="shrine"/>
   <tag k="name" v="龍峰院"/>
   <tag k="name:en" v="Ryuhoin"/>
+  <tag k="name:fr" v="Sous-temple Ryūhō"/>
+  <tag k="name:ja-Hira" v="りゅうほういん"/>
+  <tag k="name:ja-Latn" v="Ryūhō-in"/>
   <tag k="religion" v="buddhist"/>
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
@@ -7559,7 +7589,7 @@
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
  </way>
- <way id="53625162" visible="true" version="5" changeset="90991347" timestamp="2020-09-16T13:52:05Z" user="Daiji Maps" uid="10880270">
+ <way id="53625162" visible="true" version="6" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677295206"/>
   <nd ref="677295253"/>
   <nd ref="7913213557"/>
@@ -7573,10 +7603,12 @@
   <nd ref="677295214"/>
   <nd ref="6648078905"/>
   <nd ref="677295206"/>
-  <tag k="amenity" v="place_of_worship"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="shrine"/>
   <tag k="name" v="回春院"/>
   <tag k="name:en" v="Kaishunin"/>
+  <tag k="name:fr" v="Sous-temple Kaishun"/>
+  <tag k="name:ja-Hira" v="かいしゅんいん"/>
+  <tag k="name:ja-Latn" v="Kaishun-in"/>
   <tag k="religion" v="buddhist"/>
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
@@ -7598,15 +7630,14 @@
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
   <tag k="website" v="https://scontent.fosl1-1.fna.fbcdn.net/v/t1.0-9/31944879_10212303270637789_5750790578883264512_o.jpg?_nc_cat=0&amp;oh=86aeda5733772edafa3921d11ce60f4d&amp;oe=5B92EC20"/>
  </way>
- <way id="53625186" visible="true" version="3" changeset="90932830" timestamp="2020-09-15T14:40:44Z" user="Daiji Maps" uid="10880270">
+ <way id="53625186" visible="true" version="4" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="677295494"/>
   <nd ref="677295487"/>
   <nd ref="7907694080"/>
   <nd ref="677295493"/>
   <nd ref="677295491"/>
   <nd ref="677295494"/>
-  <tag k="amenity" v="place_of_worship"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="shrine"/>
   <tag k="religion" v="buddhist"/>
   <tag k="source" v="NRPB of MLIT Japan"/>
   <tag k="source:ja" v="国土画像情報（オルソ化空中写真）国土計画局"/>
@@ -8935,7 +8966,7 @@
   <tag k="layer" v="1"/>
   <tag k="name" v="天下門"/>
  </way>
- <way id="54020728" visible="true" version="9" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
+ <way id="54020728" visible="true" version="10" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="681149175"/>
   <nd ref="681149149"/>
   <nd ref="681149182"/>
@@ -8943,12 +8974,14 @@
   <nd ref="681149144"/>
   <nd ref="681149175"/>
   <tag k="building" v="roof"/>
+  <tag k="building:wikidata" v="Q8192099"/>
   <tag k="man_made" v="tower"/>
   <tag k="name" v="梵鐘"/>
-  <tag k="name:en" v="Bonshō"/>
-  <tag k="name:fr" v="Bonshō"/>
+  <tag k="name:en" v="Buddhist bell"/>
+  <tag k="name:fr" v="Cloche bouddhique"/>
   <tag k="name:ja-Hira" v="ぼんしょう"/>
   <tag k="name:ja-Latn" v="Bonshō"/>
+  <tag k="start_date" v="1255"/>
   <tag k="tower:construction" v="freestanding"/>
   <tag k="tower:type" v="bell_tower"/>
  </way>
@@ -9060,14 +9093,16 @@
   <nd ref="681205441"/>
   <tag k="leisure" v="garden"/>
  </way>
- <way id="54028637" visible="true" version="2" changeset="126449544" timestamp="2022-09-21T06:51:48Z" user="Daiji Maps" uid="10880270">
+ <way id="54028637" visible="true" version="3" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="681205465"/>
   <nd ref="681205483"/>
   <nd ref="681205513"/>
   <nd ref="681205457"/>
   <nd ref="681205465"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="retail"/>
   <tag k="name" v="売店"/>
+  <tag k="name:ja-Hira" v="ばいてん"/>
+  <tag k="name:ja-Latn" v="Baiten"/>
  </way>
  <way id="54028638" visible="true" version="2" changeset="90918722" timestamp="2020-09-15T10:31:22Z" user="Daiji Maps" uid="10880270">
   <nd ref="681205433"/>
@@ -9079,7 +9114,7 @@
   <nd ref="681205433"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="54028640" visible="true" version="6" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
+ <way id="54028640" visible="true" version="7" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="681205518"/>
   <nd ref="11930350950"/>
   <nd ref="7875917393"/>
@@ -9089,6 +9124,8 @@
   <nd ref="681205451"/>
   <nd ref="681205518"/>
   <tag k="building" v="gatehouse"/>
+  <tag k="building:wikidata" v="Q3511697"/>
+  <tag k="material" v="wood"/>
   <tag k="name" v="総門"/>
   <tag k="name:en" v="Main Gate"/>
   <tag k="name:fr" v="Porte Principale"/>
@@ -9247,7 +9284,7 @@
   <nd ref="7886120687"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="54029324" visible="true" version="6" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
+ <way id="54029324" visible="true" version="7" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="681208807"/>
   <nd ref="681208820"/>
   <nd ref="7907593785"/>
@@ -9258,7 +9295,8 @@
   <nd ref="681208807"/>
   <tag k="access" v="customers"/>
   <tag k="amenity" v="toilets"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="service"/>
+  <tag k="building:levels" v="1"/>
   <tag k="fee" v="no"/>
   <tag k="name" v="東司"/>
   <tag k="toilets:handwashing" v="yes"/>
@@ -9491,7 +9529,7 @@
   <tag k="name:ja-Hira" v="ちゅう ていえん"/>
   <tag k="name:ja-Latn" v="Chū-teien"/>
  </way>
- <way id="54146610" visible="true" version="25" changeset="127619111" timestamp="2022-10-16T14:16:32Z" user="yasunari" uid="171028">
+ <way id="54146610" visible="true" version="26" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="255479438"/>
   <nd ref="255479439"/>
   <nd ref="681149180"/>
@@ -9583,7 +9621,9 @@
   <tag k="lanes" v="2"/>
   <tag k="name" v="横浜鎌倉線"/>
   <tag k="name:en" v="Yokohama Kamakura line"/>
+  <tag k="name:fr" v="Route Yokohama Kamakura"/>
   <tag k="name:ja-Hira" v="よこはまかまくらせん"/>
+  <tag k="name:ja-Latn" v="Yokohama Kamakura sen"/>
   <tag k="ref" v="21"/>
   <tag k="source" v="Bing 2012"/>
   <tag k="surface" v="paved"/>
@@ -10378,7 +10418,7 @@
   <nd ref="681196198"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="695599052" visible="true" version="6" changeset="151763900" timestamp="2024-05-24T11:14:00Z" user="tartiflex" uid="507417">
+ <way id="695599052" visible="true" version="7" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="6531855549"/>
   <nd ref="6531855548"/>
   <nd ref="6531855547"/>
@@ -10444,7 +10484,9 @@
   <nd ref="6531829683"/>
   <nd ref="6531855549"/>
   <tag k="amenity" v="place_of_worship"/>
-  <tag k="charge" v="500 JPY;200 JPY"/>
+  <tag k="chare:disabled" v="0 JPY"/>
+  <tag k="charge:adult" v="500 JPY"/>
+  <tag k="charge:child" v="200 JPY"/>
   <tag k="contact:facebook" v="kenchoji"/>
   <tag k="contact:instagram" v="kenchoji.official"/>
   <tag k="contact:phone" v="+81 467-22-0981"/>
@@ -10616,7 +10658,7 @@
   <nd ref="6625122107"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="705286521" visible="true" version="3" changeset="132522667" timestamp="2023-02-14T07:40:08Z" user="solenoid jam" uid="10129333">
+ <way id="705286521" visible="true" version="4" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="6625122111"/>
   <nd ref="6625122110"/>
   <nd ref="6625122109"/>
@@ -10625,13 +10667,21 @@
   <nd ref="6625122111"/>
   <tag k="addr:housenumber" v="鎌倉市山ノ内１５４３"/>
   <tag k="amenity" v="place_of_worship"/>
+  <tag k="contact:phone" v="+81 467-25-1095"/>
+  <tag k="contact:tripadvisor" v="592301"/>
+  <tag k="contact:website" v="https://kamakura-ennouji.jp/"/>
+  <tag k="fee" v="no"/>
   <tag k="name" v="円応寺"/>
-  <tag k="name:en" v="Enno-ji"/>
-  <tag k="name:es" v="Enno-ji"/>
+  <tag k="name:en" v="Ennō-ji"/>
+  <tag k="name:es" v="Ennō-ji"/>
+  <tag k="name:fr" v="Temple Ennō"/>
+  <tag k="name:ja-Hira" v="えんのうじ"/>
+  <tag k="name:ja-Latn" v="Ennō-ji"/>
   <tag k="opening_hours" v="Mo-Su 09:00-16:00"/>
-  <tag k="phone" v="0467-25-1095"/>
   <tag k="religion" v="buddhist"/>
+  <tag k="start_date" v="1250"/>
   <tag k="wikidata" v="Q17239362"/>
+  <tag k="wikimedia_commons" v="Category:Ennō-ji (Kamakura)"/>
   <tag k="wikipedia" v="ja:円応寺"/>
  </way>
  <way id="705286522" visible="true" version="1" changeset="72366681" timestamp="2019-07-17T22:15:47Z" user="muramototomoya" uid="610947">
@@ -10719,7 +10769,7 @@
   <tag k="access" v="customers"/>
   <tag k="amenity" v="parking"/>
  </way>
- <way id="705286533" visible="true" version="3" changeset="132522667" timestamp="2023-02-14T07:40:08Z" user="solenoid jam" uid="10129333">
+ <way id="705286533" visible="true" version="4" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="6625122179"/>
   <nd ref="6625122178"/>
   <nd ref="6625122177"/>
@@ -10740,6 +10790,9 @@
   <tag k="name" v="禅居院"/>
   <tag k="name:en" v="Zenkyo-in"/>
   <tag k="name:es" v="Zenkyo-in"/>
+  <tag k="name:fr" v="Temple Zenkyo"/>
+  <tag k="name:ja-Hira" v="ぜん きょいん"/>
+  <tag k="name:ja-Latn" v="Zenkyo-in"/>
   <tag k="religion" v="buddhist"/>
  </way>
  <way id="705286534" visible="true" version="1" changeset="72366681" timestamp="2019-07-17T22:15:47Z" user="muramototomoya" uid="610947">
@@ -11886,14 +11939,21 @@
   <tag k="highway" v="service"/>
   <tag k="source" v="GSI/KIBAN 2500"/>
  </way>
- <way id="707456386" visible="true" version="2" changeset="90904730" timestamp="2020-09-15T07:06:17Z" user="Daiji Maps" uid="10880270">
+ <way id="707456386" visible="true" version="3" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="6648150788"/>
   <nd ref="7907766779"/>
   <nd ref="6648150787"/>
   <nd ref="6648150786"/>
   <nd ref="6648150785"/>
   <nd ref="6648150788"/>
-  <tag k="building" v="yes"/>
+  <tag k="building" v="shrine"/>
+  <tag k="building:wikidata" v="Q111317498"/>
+  <tag k="name" v="地蔵堂"/>
+  <tag k="name:en" v="Jizō-dō"/>
+  <tag k="name:fr" v="Pavillon du Jizō"/>
+  <tag k="name:ja-Hira" v="じぞうどう"/>
+  <tag k="name:ja-Latn" v="Jizō-dō"/>
+  <tag k="religion" v="buddhist"/>
   <tag k="source" v="GSI/KIBAN 2500"/>
  </way>
  <way id="707456387" visible="true" version="1" changeset="72662526" timestamp="2019-07-25T21:04:52Z" user="hatochan" uid="38591">
@@ -14838,7 +14898,7 @@
   <nd ref="7907593815"/>
   <tag k="barrier" v="wall"/>
  </way>
- <way id="847398302" visible="true" version="2" changeset="100483971" timestamp="2021-03-05T10:36:32Z" user="sebastic" uid="665748">
+ <way id="847398302" visible="true" version="3" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <nd ref="681149182"/>
   <nd ref="681149144"/>
   <nd ref="681149175"/>
@@ -16556,7 +16616,7 @@
   <tag k="to" v="鎌倉駅"/>
   <tag k="type" v="route"/>
  </relation>
- <relation id="3805585" visible="true" version="56" changeset="131225266" timestamp="2023-01-13T11:23:31Z" user="muramototomoya" uid="610947">
+ <relation id="3805585" visible="true" version="57" changeset="167214704" timestamp="2025-06-05T10:01:49Z" user="tartiflex" uid="507417">
   <member type="way" ref="180205092" role=""/>
   <member type="way" ref="180205093" role=""/>
   <member type="way" ref="215668885" role=""/>
@@ -16679,12 +16739,16 @@
   <tag k="name" v="神奈川県道21号"/>
   <tag k="name:en" v="Kanagawa Prefectural Road Route 21"/>
   <tag k="name:es" v="Carretera prefectural 21 Kanagawa"/>
+  <tag k="name:fr" v="Route préfectorale 21 de Kanagawa"/>
+  <tag k="name:ja-Hira" v="かながわけんどう 21 ごう"/>
+  <tag k="name:ja-Latn" v="Kanagawa kendō 21-gō"/>
   <tag k="network" v="JP:prefectural:kanagawa"/>
   <tag k="official_name" v="横浜鎌倉線"/>
   <tag k="ref" v="21"/>
   <tag k="route" v="road"/>
   <tag k="type" v="route"/>
   <tag k="wikidata" v="Q11589263"/>
+  <tag k="wikimedia_commons" v="Category:Kanagawa prefectural road route 21"/>
   <tag k="wikipedia" v="ja:神奈川県道21号横浜鎌倉線"/>
  </relation>
  <relation id="6136875" visible="true" version="7" changeset="160739649" timestamp="2024-12-29T07:47:55Z" user="yoshitk" uid="1003241">

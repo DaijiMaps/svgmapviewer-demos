@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167576 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167560 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.5557600" minlon="139.4836700" maxlat="35.5681600" maxlon="139.4986900"/>
  <node id="307424287" visible="true" version="5" changeset="154286365" timestamp="2024-07-23T03:14:45Z" user="postown" uid="4480756" lat="35.5710369" lon="139.4828730"/>
  <node id="307424293" visible="true" version="3" changeset="103158881" timestamp="2021-04-19T01:43:45Z" user="postown" uid="4480756" lat="35.5698989" lon="139.4847855"/>
@@ -31551,7 +31551,7 @@
   <nd ref="12853472490"/>
   <tag k="highway" v="service"/>
  </way>
- <relation id="1543125" visible="true" version="351" changeset="167113292" timestamp="2025-06-03T01:11:06Z" user="Rokomo35" uid="19071241">
+ <relation id="1543125" visible="true" version="352" changeset="167157501" timestamp="2025-06-04T02:19:15Z" user="Rokomo35" uid="19071241">
   <member type="node" ref="265018692" role="admin_centre"/>
   <member type="way" ref="285975526" role="outer"/>
   <member type="way" ref="357954032" role="outer"/>
@@ -31586,6 +31586,8 @@
   <member type="way" ref="475417983" role="outer"/>
   <member type="way" ref="564029331" role="outer"/>
   <member type="way" ref="1222683859" role="outer"/>
+  <member type="way" ref="1391972172" role="outer"/>
+  <member type="way" ref="1391972175" role="outer"/>
   <member type="way" ref="1391723583" role="outer"/>
   <member type="way" ref="1391723582" role="outer"/>
   <member type="way" ref="355038055" role="outer"/>

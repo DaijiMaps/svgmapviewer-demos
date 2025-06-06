@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167565 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167559 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.6577000" minlon="139.6748000" maxlat="35.6645000" maxlon="139.6896000"/>
  <node id="252674916" visible="true" version="6" changeset="127575929" timestamp="2022-10-15T15:08:08Z" user="近場行き" uid="12272282" lat="35.6631165" lon="139.6914492"/>
  <node id="252675052" visible="true" version="6" changeset="127575929" timestamp="2022-10-15T15:08:08Z" user="近場行き" uid="12272282" lat="35.6626902" lon="139.6935031"/>
@@ -49159,7 +49159,7 @@
   <tag k="wikidata" v="Q1191300"/>
   <tag k="wikipedia" v="ja:京王井の頭線"/>
  </relation>
- <relation id="1543125" visible="true" version="351" changeset="167113292" timestamp="2025-06-03T01:11:06Z" user="Rokomo35" uid="19071241">
+ <relation id="1543125" visible="true" version="352" changeset="167157501" timestamp="2025-06-04T02:19:15Z" user="Rokomo35" uid="19071241">
   <member type="node" ref="265018692" role="admin_centre"/>
   <member type="way" ref="285975526" role="outer"/>
   <member type="way" ref="357954032" role="outer"/>
@@ -49194,6 +49194,8 @@
   <member type="way" ref="475417983" role="outer"/>
   <member type="way" ref="564029331" role="outer"/>
   <member type="way" ref="1222683859" role="outer"/>
+  <member type="way" ref="1391972172" role="outer"/>
+  <member type="way" ref="1391972175" role="outer"/>
   <member type="way" ref="1391723583" role="outer"/>
   <member type="way" ref="1391723582" role="outer"/>
   <member type="way" ref="355038055" role="outer"/>
