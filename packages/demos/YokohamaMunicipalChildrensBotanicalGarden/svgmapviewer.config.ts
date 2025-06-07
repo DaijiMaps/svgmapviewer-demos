@@ -1,7 +1,7 @@
 import { SvgMapViewerConfigUser } from '@daijimaps/svgmapviewer'
 
 const userConfig: SvgMapViewerConfigUser = {
-  title: 'YokohamaMunicipalChildrensBotanicalGarden',
+  title: 'Yokohama Municipal Childrens Botanical Garden',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   zoomFactor: 5,
 }

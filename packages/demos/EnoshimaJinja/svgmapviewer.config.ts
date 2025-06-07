@@ -1,7 +1,7 @@
 import { SvgMapViewerConfigUser } from '@daijimaps/svgmapviewer'
 
 const userConfig: SvgMapViewerConfigUser = {
-  title: 'EnoshimaJinja',
+  title: 'Enoshima-Jinja',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   zoomFactor: 5,
 }

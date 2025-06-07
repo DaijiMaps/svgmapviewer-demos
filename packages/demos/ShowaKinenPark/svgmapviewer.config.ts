@@ -1,7 +1,7 @@
 import { SvgMapViewerConfigUser } from '@daijimaps/svgmapviewer'
 
 const userConfig: SvgMapViewerConfigUser = {
-  title: 'ShowaKinenPark',
+  title: 'Showa-kinen Park',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   zoomFactor: 3,
 }

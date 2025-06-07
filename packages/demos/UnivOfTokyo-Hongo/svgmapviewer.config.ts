@@ -1,7 +1,7 @@
 import { SvgMapViewerConfigUser } from '@daijimaps/svgmapviewer'
 
 const userConfig: SvgMapViewerConfigUser = {
-  title: 'UnivOfTokyo-Hongo',
+  title: 'Univ of Tokyo - Hongo',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   zoomFactor: 5,
 }

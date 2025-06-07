@@ -1,7 +1,7 @@
 import { SvgMapViewerConfigUser } from '@daijimaps/svgmapviewer'
 
 const userConfig: SvgMapViewerConfigUser = {
-  title: 'KanazawaZoo',
+  title: 'Kanazawa Zoo',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   zoomFactor: 5,
 }
