@@ -63,8 +63,8 @@ osmLayerNames = [
 ]
 
 extraLayerNames = [
-    ('midpoints', 'point'),
-    ('centroids', 'point'),
+    #('midpoints', 'point'),
+    #('centroids', 'point'),
 ]
 
 # ./map*.osm
