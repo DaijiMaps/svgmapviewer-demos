@@ -119,7 +119,9 @@ a:link {
 }
 
 .content.html {
+  /*
   transform: translate3d(0px, 0px, 0px);
+  */
 }
 
 .poi-stars {
@@ -156,26 +158,6 @@ a:link {
   display: block;
 }
 
-.content {
-  position: absolute;
-  left: 0;
-  top: 0;
-  pointer-events: none;
-}
-
-.content.svg {
-  transform: translate3d(0px, 0px, 0px);
-}
-
-.content.svg > svg {
-  position: absolute;
-}
-
-.map,
-.map > * {
-  contain: content;
-}
-
 .balloon-container,
 .balloon {
   position: absolute;
@@ -194,38 +176,6 @@ a:link {
   fill: white;
   stroke: white;
   stroke-width: 1px;
-}
-
-.content {
-  overflow: hidden;
-}
-
-.detail {
-  width: 50vmin;
-  height: 50vmin;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding: 0.5em;
-  overflow: scroll;
-  pointer-events: initial;
-  box-sizing: border-box;
-  z-index: 11;
-}
-
-.detail > h3,
-.detail p {
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.detail > h3 {
-  margin: 1.5em;
-  text-align: center;
-}
-
-.detail > p {
-  margin: 0.5em;
 }
 
 .footer {
@@ -401,6 +351,67 @@ a:link {
   top: 0;
   width: 100vw;
   height: 100vh;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+
+.content.svg {
+  /*
+  transform: translate3d(0px, 0px, 0px);
+  */
+}
+
+.content.svg > svg {
+  position: absolute;
+}
+
+.map,
+.map > * {
+  contain: content;
+}
+
+html,
+body,
+:root,
+.content.svg {
+  background-color: darkgray;
+}
+
+.content {
+  overflow: hidden;
+}
+
+.detail {
+  width: 50vmin;
+  height: 50vmin;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.5em;
+  overflow: scroll;
+  pointer-events: initial;
+  box-sizing: border-box;
+  z-index: 11;
+}
+
+.detail > h3,
+.detail p {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.detail > h3 {
+  margin: 1.5em;
+  text-align: center;
+}
+
+.detail > p {
+  margin: 0.5em;
 }
 
 #ui > * {
