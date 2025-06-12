@@ -3,6 +3,7 @@
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "dev:local": "vite --host 0.0.0.0 --config vite.config-local.ts",
+    "dev:local:ssl": "vite --host 0.0.0.0 --config vite.config-local-ssl.ts",
     "build": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src/lib.css && tsc -b && vite build",
     "build:local": "cp node_modules/@daijimaps/svgmapviewer/dist/index.css src/lib.css && tsc -b && vite build --config vite.config-local.ts",
     "lint": "eslint .",
