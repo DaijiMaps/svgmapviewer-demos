@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react'
+import os from 'node:os'
 import path from 'node:path'
 import { defineConfig } from 'vite'
 import basicSsl from '@vitejs/plugin-basic-ssl'
@@ -18,7 +19,7 @@ export default defineConfig({
       ],
     },
   },
-  plugins: [react(), basicSsl({ name: 'ubuntu', domains: ['*.ubuntu'], certDir: '/home/uebayasi'})],
+  plugins: [react(), basicSsl({ name: 'ubuntu', domains: ['*.ubuntu'], certDir: os.homedir()})],
   resolve: {
     alias: {
       '@daijimaps/svgmapviewer-app': path.resolve(__dirname, `${APP}/index.ts`),
