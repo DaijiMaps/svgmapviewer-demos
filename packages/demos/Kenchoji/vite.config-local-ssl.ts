@@ -3,14 +3,25 @@ import path from 'node:path'
 import { defineConfig } from 'vite'
 import basicSsl from '@vitejs/plugin-basic-ssl'
 
+const APP = '../../../../svgmapviewer/packages/app/src'
 const LIB = '../../../../svgmapviewer/packages/lib/src/lib'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '',
+  server: {
+    fs: {
+      allow: [
+        '.',
+        '../../../../svgmapviewer/packages/app',
+        '../../../../svgmapviewer/packages/lib',
+      ],
+    },
+  },
   plugins: [react(), basicSsl({ name: 'ubuntu', domains: ['*.ubuntu'], certDir: '/home/uebayasi'})],
   resolve: {
     alias: {
+      '@daijimaps/svgmapviewer-app': path.resolve(__dirname, `${APP}/index.ts`),
       '@daijimaps/svgmapviewer/box': path.resolve(
         __dirname,
         `${LIB}/box/prefixed/index.ts`
@@ -47,10 +58,7 @@ export default defineConfig({
         __dirname,
         `${LIB}/vec/prefixed/index.ts`
       ),
-      '@daijimaps/svgmapviewer': path.resolve(
-        __dirname,
-        `${LIB}/index.ts`
-      ),
+      '@daijimaps/svgmapviewer': path.resolve(__dirname, `${LIB}/index.ts`),
     },
   },
 })
