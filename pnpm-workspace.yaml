@@ -35,6 +35,7 @@ packages:
   - packages/demos/OmiwaJinja
   - packages/demos/OsakaCastle
   - packages/demos/OsakaUniv
+  - packages/demos/RoyalBotanicGardensMelbourne
   - packages/demos/Saidaiji
   - packages/demos/Sankeien
   - packages/demos/Sensoji

@@ -5,8 +5,8 @@ const userConfig: SvgMapViewerConfigUser = {
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   zoomFactor: 5,
   cartoConfig: {
-    skipNamePattern: /丁目$|町$|売店$|レストハウス|^新宿御苑$|センター|案内図$|Ticket|シラカシ/,
-    splitNamePattern: /(カフェ|レストラン|ミュージアム|センター|門衛所|御休所|休憩所|案内図|パビリオン|マーケットプレイス|ターミナル|停留所|エクスペリエンス|ポップアップステージ)/,
+    skipNamePattern: /(ゾーン$|大屋根リング|日本国際博覧会|予定地|コンテナ埠頭)/,
+    splitNamePattern: /(カフェ|レストラン|ミュージアム|センター|休憩所|案内図|パビリオン|マーケットプレイス|ターミナル|停留所|エクスペリエンス|ポップアップステージ)/,
   },
 }
 
