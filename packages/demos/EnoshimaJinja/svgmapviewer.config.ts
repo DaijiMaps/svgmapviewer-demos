@@ -4,6 +4,9 @@ const userConfig: SvgMapViewerConfigUser = {
   title: 'Enoshima-Jinja',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   zoomFactor: 5,
+  cartoConfig: {
+    backgroundColor: 'lightblue',
+  },
 }
 
 document.title = `svgmapviewer @ ${window.location.host}`
