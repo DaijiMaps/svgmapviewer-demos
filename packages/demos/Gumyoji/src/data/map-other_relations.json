@@ -3,6 +3,6 @@
 "name": "map-other_relations",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-
+{ "type": "Feature", "properties": { "osm_id": "11557970", "name": "弘明寺", "type": "public_transport", "other_tags": "\"public_transport\"=>\"stop_area\"", "area": null, "centroid_x": null, "centroid_y": null }, "geometry": { "type": "GeometryCollection", "geometries": [ { "type": "Point", "coordinates": [ 139.5968085, 35.424389 ] }, { "type": "Polygon", "coordinates": [ [ [ 139.596772499999986, 35.4245805 ], [ 139.596934800000014, 35.4240418 ], [ 139.5971802, 35.4232571 ], [ 139.59720440000001, 35.4232648 ], [ 139.597102400000011, 35.4235948 ], [ 139.5971266, 35.4236025 ], [ 139.59682620000001, 35.4245904 ], [ 139.596772499999986, 35.4245805 ] ] ] } ] } }
 ]
 }

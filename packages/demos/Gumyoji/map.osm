@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167577 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858174 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.4236700" minlon="139.5968900" maxlat="35.4248000" maxlon="139.5981100"/>
  <node id="263273957" visible="true" version="4" changeset="34197578" timestamp="2015-09-23T05:20:14Z" user="etajin" uid="2480327" lat="35.4237110" lon="139.5970135"/>
  <node id="263273966" visible="true" version="5" changeset="34197578" timestamp="2015-09-23T05:20:14Z" user="etajin" uid="2480327" lat="35.4226741" lon="139.5973269"/>
@@ -1238,7 +1238,7 @@
   <tag k="usage" v="main"/>
   <tag k="voltage" v="1500"/>
  </way>
- <way id="28744317" visible="true" version="6" changeset="46260387" timestamp="2017-02-21T01:37:57Z" user="futurumspes" uid="651065">
+ <way id="28744317" visible="true" version="7" changeset="167871891" timestamp="2025-06-20T13:48:12Z" user="Daiji Maps" uid="10880270">
   <nd ref="315837790"/>
   <nd ref="1879126189"/>
   <nd ref="1879103341"/>
@@ -1257,6 +1257,7 @@
   <tag k="oneway" v="yes"/>
   <tag k="source" v="Bing 2014"/>
   <tag k="surface" v="paved"/>
+  <tag k="width" v="4"/>
  </way>
  <way id="28744318" visible="true" version="4" changeset="46260387" timestamp="2017-02-21T01:37:57Z" user="futurumspes" uid="651065">
   <nd ref="316045942"/>
@@ -1282,7 +1283,7 @@
   <tag k="source" v="bing"/>
   <tag k="surface" v="paved"/>
  </way>
- <way id="177472054" visible="true" version="3" changeset="48087969" timestamp="2017-04-24T11:32:50Z" user="futurumspes" uid="651065">
+ <way id="177472054" visible="true" version="4" changeset="167871891" timestamp="2025-06-20T13:48:12Z" user="Daiji Maps" uid="10880270">
   <nd ref="1879103342"/>
   <nd ref="1879103340"/>
   <nd ref="1879103334"/>
@@ -1291,6 +1292,7 @@
   <tag k="oneway" v="no"/>
   <tag k="source" v="bing"/>
   <tag k="surface" v="paved"/>
+  <tag k="width" v="4"/>
  </way>
  <way id="177480358" visible="true" version="2" changeset="48087969" timestamp="2017-04-24T11:32:50Z" user="futurumspes" uid="651065">
   <nd ref="1879184683"/>
@@ -1344,18 +1346,20 @@
   <tag k="public_transport" v="platform"/>
   <tag k="railway" v="platform"/>
  </way>
- <way id="214720469" visible="true" version="2" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
+ <way id="214720469" visible="true" version="3" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032502"/>
   <nd ref="7927029674"/>
   <nd ref="2241995643"/>
   <tag k="highway" v="steps"/>
+  <tag k="width" v="2"/>
  </way>
- <way id="214720471" visible="true" version="3" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
+ <way id="214720471" visible="true" version="4" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="2241995638"/>
   <nd ref="7927032526"/>
   <tag k="highway" v="footway"/>
+  <tag k="width" v="2"/>
  </way>
- <way id="214720473" visible="true" version="2" changeset="48087969" timestamp="2017-04-24T11:33:06Z" user="futurumspes" uid="651065">
+ <way id="214720473" visible="true" version="3" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="1879103330"/>
   <nd ref="2241995636"/>
   <nd ref="2241995643"/>
@@ -1363,6 +1367,7 @@
   <tag k="oneway" v="no"/>
   <tag k="source" v="bing"/>
   <tag k="surface" v="paved"/>
+  <tag k="width" v="2"/>
  </way>
  <way id="248280772" visible="true" version="1" changeset="19111853" timestamp="2013-11-25T15:54:35Z" user="Retired Account" uid="741163">
   <nd ref="2550873306"/>
@@ -1474,7 +1479,7 @@
   <nd ref="3295940528"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="322796755" visible="true" version="2" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270">
+ <way id="322796755" visible="true" version="3" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="2241995636"/>
   <nd ref="3295940523"/>
   <nd ref="7927776214"/>
@@ -1483,6 +1488,7 @@
   <nd ref="7927776217"/>
   <nd ref="3295940538"/>
   <tag k="highway" v="footway"/>
+  <tag k="width" v="3"/>
  </way>
  <way id="322796757" visible="true" version="3" changeset="92979326" timestamp="2020-10-24T06:21:12Z" user="Daiji Maps" uid="10880270">
   <nd ref="3295940510"/>
@@ -1588,7 +1594,7 @@
   <tag k="source" v="bing"/>
   <tag k="surface" v="paved"/>
  </way>
- <way id="375393116" visible="true" version="3" changeset="48087969" timestamp="2017-04-24T11:33:06Z" user="futurumspes" uid="651065">
+ <way id="375393116" visible="true" version="4" changeset="167871782" timestamp="2025-06-20T13:45:43Z" user="Daiji Maps" uid="10880270">
   <nd ref="2241995642"/>
   <nd ref="1879103323"/>
   <nd ref="1879103322"/>
@@ -1598,6 +1604,7 @@
   <tag k="oneway" v="no"/>
   <tag k="source" v="bing"/>
   <tag k="surface" v="paved"/>
+  <tag k="width" v="3"/>
  </way>
  <way id="475970685" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T00:46:35Z" user="futurumspes" uid="651065">
   <nd ref="4696464790"/>
@@ -2323,7 +2330,7 @@
   <tag k="barrier" v="retaining_wall"/>
   <tag k="height" v="2"/>
  </way>
- <way id="849655850" visible="true" version="2" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270">
+ <way id="849655850" visible="true" version="3" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927029644"/>
   <nd ref="7927776226"/>
   <nd ref="7927032642"/>
@@ -2331,6 +2338,7 @@
   <nd ref="7927776224"/>
   <nd ref="7927032656"/>
   <tag k="highway" v="footway"/>
+  <tag k="width" v="2"/>
  </way>
  <way id="849655851" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032541"/>
@@ -2468,11 +2476,12 @@
   <nd ref="7927029633"/>
   <tag k="highway" v="steps"/>
  </way>
- <way id="849655870" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
+ <way id="849655870" visible="true" version="2" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032502"/>
   <nd ref="7927032584"/>
   <nd ref="2241995642"/>
   <tag k="highway" v="residential"/>
+  <tag k="width" v="2"/>
  </way>
  <way id="849655871" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032590"/>
@@ -2511,12 +2520,13 @@
   <tag k="amenity" v="toilets"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="849655876" visible="true" version="2" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270">
+ <way id="849655876" visible="true" version="3" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927029684"/>
   <nd ref="7927873999"/>
   <nd ref="7927874002"/>
   <nd ref="7927032609"/>
   <tag k="highway" v="footway"/>
+  <tag k="width" v="2"/>
  </way>
  <way id="849655877" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032583"/>
@@ -2631,10 +2641,11 @@
   <nd ref="7927032520"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="849655892" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
+ <way id="849655892" visible="true" version="2" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032526"/>
   <nd ref="7927029684"/>
   <tag k="highway" v="steps"/>
+  <tag k="width" v="2"/>
  </way>
  <way id="849655893" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927029659"/>
@@ -2691,11 +2702,12 @@
   <tag k="ford" v="yes"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="849655901" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
+ <way id="849655901" visible="true" version="2" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032609"/>
   <nd ref="7927032639"/>
   <nd ref="7927029644"/>
   <tag k="highway" v="steps"/>
+  <tag k="width" v="2"/>
  </way>
  <way id="849655902" visible="true" version="2" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032642"/>
