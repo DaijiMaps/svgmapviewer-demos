@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2858174 spike-06.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (167568 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.4236700" minlon="139.5968900" maxlat="35.4248000" maxlon="139.5981100"/>
  <node id="263273957" visible="true" version="4" changeset="34197578" timestamp="2015-09-23T05:20:14Z" user="etajin" uid="2480327" lat="35.4237110" lon="139.5970135"/>
  <node id="263273966" visible="true" version="5" changeset="34197578" timestamp="2015-09-23T05:20:14Z" user="etajin" uid="2480327" lat="35.4226741" lon="139.5973269"/>
@@ -13,11 +13,11 @@
  <node id="316045939" visible="true" version="2" changeset="12830693" timestamp="2012-08-23T09:57:29Z" user="Ryo-a" uid="631141" lat="35.4243239" lon="139.5981277"/>
  <node id="316045940" visible="true" version="2" changeset="12830693" timestamp="2012-08-23T09:57:29Z" user="Ryo-a" uid="631141" lat="35.4242783" lon="139.5980954"/>
  <node id="316045941" visible="true" version="2" changeset="12830693" timestamp="2012-08-23T09:57:29Z" user="Ryo-a" uid="631141" lat="35.4242375" lon="139.5980527"/>
- <node id="316045942" visible="true" version="2" changeset="12830693" timestamp="2012-08-23T09:57:29Z" user="Ryo-a" uid="631141" lat="35.4242125" lon="139.5979436"/>
- <node id="316045943" visible="true" version="2" changeset="12830693" timestamp="2012-08-23T09:57:29Z" user="Ryo-a" uid="631141" lat="35.4241321" lon="139.5979706"/>
+ <node id="316045942" visible="true" version="3" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4242104" lon="139.5979365"/>
+ <node id="316045943" visible="true" version="3" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241259" lon="139.5979683"/>
  <node id="316045944" visible="true" version="2" changeset="12830693" timestamp="2012-08-23T09:57:29Z" user="Ryo-a" uid="631141" lat="35.4240737" lon="139.5979890"/>
  <node id="316045952" visible="true" version="1" changeset="19804" timestamp="2008-12-01T13:44:34Z" user="karida" uid="19528" lat="35.4240255" lon="139.5980161"/>
- <node id="316045960" visible="true" version="1" changeset="19804" timestamp="2008-12-01T13:44:35Z" user="karida" uid="19528" lat="35.4239845" lon="139.5980587"/>
+ <node id="316045960" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4239743" lon="139.5980658"/>
  <node id="316045969" visible="true" version="2" changeset="12830693" timestamp="2012-08-23T09:57:29Z" user="Ryo-a" uid="631141" lat="35.4239560" lon="139.5981270"/>
  <node id="316045974" visible="true" version="2" changeset="12830693" timestamp="2012-08-23T09:57:29Z" user="Ryo-a" uid="631141" lat="35.4238809" lon="139.5983545"/>
  <node id="1664155507" visible="true" version="1" changeset="10898757" timestamp="2012-03-07T11:24:56Z" user="muramototomoya" uid="610947" lat="35.4247193" lon="139.5975743"/>
@@ -39,7 +39,7 @@
  <node id="1879103323" visible="true" version="1" changeset="12830767" timestamp="2012-08-23T10:05:05Z" user="Ryo-a" uid="631141" lat="35.4235326" lon="139.5978672"/>
  <node id="1879103328" visible="true" version="1" changeset="12830767" timestamp="2012-08-23T10:05:05Z" user="Ryo-a" uid="631141" lat="35.4235613" lon="139.5971884"/>
  <node id="1879103330" visible="true" version="1" changeset="12830767" timestamp="2012-08-23T10:05:06Z" user="Ryo-a" uid="631141" lat="35.4236967" lon="139.5971541"/>
- <node id="1879103331" visible="true" version="1" changeset="12830767" timestamp="2012-08-23T10:05:06Z" user="Ryo-a" uid="631141" lat="35.4240153" lon="139.5980267"/>
+ <node id="1879103331" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4239914" lon="139.5980333"/>
  <node id="1879103334" visible="true" version="1" changeset="12830767" timestamp="2012-08-23T10:05:06Z" user="Ryo-a" uid="631141" lat="35.4241818" lon="139.5970237"/>
  <node id="1879103340" visible="true" version="1" changeset="12830767" timestamp="2012-08-23T10:05:06Z" user="Ryo-a" uid="631141" lat="35.4244893" lon="139.5969515"/>
  <node id="1879103341" visible="true" version="1" changeset="12830767" timestamp="2012-08-23T10:05:06Z" user="Ryo-a" uid="631141" lat="35.4245292" lon="139.5988754"/>
@@ -86,7 +86,7 @@
  <node id="2080820269" visible="true" version="1" changeset="14386671" timestamp="2012-12-24T07:43:53Z" user="Zawaja" uid="1040662" lat="35.4245805" lon="139.5967725"/>
  <node id="2080820281" visible="true" version="1" changeset="14386671" timestamp="2012-12-24T07:43:53Z" user="Zawaja" uid="1040662" lat="35.4236025" lon="139.5971266"/>
  <node id="2241995636" visible="true" version="2" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240127" lon="139.5975007"/>
- <node id="2241995638" visible="true" version="1" changeset="15566896" timestamp="2013-04-01T12:07:20Z" user="muramototomoya" uid="610947" lat="35.4239762" lon="139.5980138"/>
+ <node id="2241995638" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4239652" lon="139.5980100"/>
  <node id="2241995642" visible="true" version="1" changeset="15566896" timestamp="2013-04-01T12:07:20Z" user="muramototomoya" uid="610947" lat="35.4239373" lon="139.5980009"/>
  <node id="2241995643" visible="true" version="2" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239730" lon="139.5976399"/>
  <node id="2550873303" visible="true" version="1" changeset="19111853" timestamp="2013-11-25T15:54:04Z" user="Retired Account" uid="741163" lat="35.4239550" lon="139.5968283"/>
@@ -155,7 +155,7 @@
   <tag k="name" v="地蔵祠"/>
   <tag k="tourism" v="artwork"/>
  </node>
- <node id="3283295403" visible="true" version="2" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240182" lon="139.5977057">
+ <node id="3283295403" visible="true" version="3" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240135" lon="139.5977044">
   <tag k="artwork_type" v="statue"/>
   <tag k="name" v="身代地蔵菩薩"/>
   <tag k="tourism" v="artwork"/>
@@ -375,7 +375,7 @@
  <node id="4696515177" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:48Z" user="futurumspes" uid="651065" lat="35.4242959" lon="139.5972397"/>
  <node id="4696515178" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:48Z" user="futurumspes" uid="651065" lat="35.4247757" lon="139.5976876"/>
  <node id="4696515179" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:48Z" user="futurumspes" uid="651065" lat="35.4245925" lon="139.5980720"/>
- <node id="4696515180" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:48Z" user="futurumspes" uid="651065" lat="35.4241856" lon="139.5978794"/>
+ <node id="4696515180" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241850" lon="139.5979044"/>
  <node id="4696515181" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:48Z" user="futurumspes" uid="651065" lat="35.4247549" lon="139.5977748"/>
  <node id="4696515182" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:48Z" user="futurumspes" uid="651065" lat="35.4244271" lon="139.5971794"/>
  <node id="4696515183" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:48Z" user="futurumspes" uid="651065" lat="35.4251018" lon="139.5977944"/>
@@ -425,7 +425,7 @@
  <node id="4696515275" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:49Z" user="futurumspes" uid="651065" lat="35.4245718" lon="139.5970192"/>
  <node id="4696515277" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:49Z" user="futurumspes" uid="651065" lat="35.4245095" lon="139.5978118"/>
  <node id="4696515278" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:49Z" user="futurumspes" uid="651065" lat="35.4247440" lon="139.5980658"/>
- <node id="4696515281" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:50Z" user="futurumspes" uid="651065" lat="35.4241379" lon="139.5978614"/>
+ <node id="4696515281" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241173" lon="139.5979281"/>
  <node id="4696515286" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:50Z" user="futurumspes" uid="651065" lat="35.4246325" lon="139.5976139"/>
  <node id="4696515287" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:50Z" user="futurumspes" uid="651065" lat="35.4247543" lon="139.5980975"/>
  <node id="4696515288" visible="true" version="1" changeset="46260387" timestamp="2017-02-21T01:37:50Z" user="futurumspes" uid="651065" lat="35.4243112" lon="139.5972263"/>
@@ -597,7 +597,7 @@
  <node id="4696620418" visible="true" version="1" changeset="46262467" timestamp="2017-02-21T03:50:44Z" user="futurumspes" uid="651065" lat="35.4241928" lon="139.5981210"/>
  <node id="4696620426" visible="true" version="1" changeset="46262467" timestamp="2017-02-21T03:50:44Z" user="futurumspes" uid="651065" lat="35.4240217" lon="139.5981375"/>
  <node id="4696620440" visible="true" version="1" changeset="46262467" timestamp="2017-02-21T03:50:44Z" user="futurumspes" uid="651065" lat="35.4242037" lon="139.5980030"/>
- <node id="4696620442" visible="true" version="1" changeset="46262467" timestamp="2017-02-21T03:50:44Z" user="futurumspes" uid="651065" lat="35.4241805" lon="139.5979809"/>
+ <node id="4696620442" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241778" lon="139.5979687"/>
  <node id="4696620561" visible="true" version="1" changeset="46262467" timestamp="2017-02-21T03:50:45Z" user="futurumspes" uid="651065" lat="35.4240556" lon="139.5980597"/>
  <node id="4696692505" visible="true" version="1" changeset="46263493" timestamp="2017-02-21T05:16:27Z" user="futurumspes" uid="651065" lat="35.4235689" lon="139.5978262"/>
  <node id="4696692524" visible="true" version="1" changeset="46263493" timestamp="2017-02-21T05:16:27Z" user="futurumspes" uid="651065" lat="35.4237226" lon="139.5972446"/>
@@ -710,7 +710,7 @@
  <node id="7926708676" visible="true" version="1" changeset="91193540" timestamp="2020-09-21T02:32:05Z" user="Daiji Maps" uid="10880270" lat="35.4244653" lon="139.5976286"/>
  <node id="7926708677" visible="true" version="1" changeset="91193540" timestamp="2020-09-21T02:32:05Z" user="Daiji Maps" uid="10880270" lat="35.4244675" lon="139.5973550"/>
  <node id="7927029604" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244091" lon="139.5976141"/>
- <node id="7927029605" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240697" lon="139.5977151"/>
+ <node id="7927029605" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240800" lon="139.5976981"/>
  <node id="7927029606" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241141" lon="139.5974408">
   <tag k="name" v="納経所"/>
   <tag k="tourism" v="information"/>
@@ -718,12 +718,12 @@
  <node id="7927029607" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244423" lon="139.5976789">
   <tag k="man_made" v="torii"/>
  </node>
- <node id="7927029608" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239958" lon="139.5976768"/>
+ <node id="7927029608" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240101" lon="139.5976779"/>
  <node id="7927029609" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239623" lon="139.5973518">
   <tag k="natural" v="tree"/>
  </node>
  <node id="7927029610" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243989" lon="139.5976872"/>
- <node id="7927029611" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240954" lon="139.5977215"/>
+ <node id="7927029611" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241016" lon="139.5977220"/>
  <node id="7927029612" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240729" lon="139.5978389">
   <tag k="artwork_type" v="statue"/>
   <tag k="tourism" v="artwork"/>
@@ -757,14 +757,14 @@
   <tag k="name" v="仙台しだれ桜"/>
   <tag k="natural" v="tree"/>
  </node>
- <node id="7927029637" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239936" lon="139.5977064"/>
- <node id="7927029638" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240070" lon="139.5977104"/>
+ <node id="7927029637" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240083" lon="139.5977055"/>
+ <node id="7927029638" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240203" lon="139.5977042"/>
  <node id="7927029639" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240556" lon="139.5973939"/>
  <node id="7927029640" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244230" lon="139.5976564"/>
  <node id="7927029641" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239923" lon="139.5979396"/>
  <node id="7927029642" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240110" lon="139.5973700"/>
  <node id="7927029643" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243828" lon="139.5977715"/>
- <node id="7927029644" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241150" lon="139.5976400"/>
+ <node id="7927029644" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241192" lon="139.5976427"/>
  <node id="7927029645" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240084" lon="139.5972722"/>
  <node id="7927029646" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243415" lon="139.5977083"/>
  <node id="7927029647" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243072" lon="139.5977352"/>
@@ -791,7 +791,7 @@
   <tag k="natural" v="tree"/>
  </node>
  <node id="7927029659" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244027" lon="139.5977722"/>
- <node id="7927029660" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241207" lon="139.5976631"/>
+ <node id="7927029660" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241250" lon="139.5976641"/>
  <node id="7927029661" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240624" lon="139.5978702">
   <tag k="artwork_type" v="statue"/>
   <tag k="tourism" v="artwork"/>
@@ -816,7 +816,7 @@
  <node id="7927029672" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4242705" lon="139.5977277"/>
  <node id="7927029673" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244250" lon="139.5976977"/>
  <node id="7927029674" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239825" lon="139.5976939"/>
- <node id="7927029675" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240099" lon="139.5976955"/>
+ <node id="7927029675" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240210" lon="139.5976839"/>
  <node id="7927029676" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244150" lon="139.5977241"/>
  <node id="7927029677" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240820" lon="139.5976889"/>
  <node id="7927029678" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244033" lon="139.5977939"/>
@@ -828,12 +828,12 @@
  <node id="7927029682" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244090" lon="139.5975278"/>
  <node id="7927029683" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243265" lon="139.5975989"/>
  <node id="7927029684" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240008" lon="139.5979430"/>
- <node id="7927032485" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240965" lon="139.5975672"/>
+ <node id="7927032485" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240945" lon="139.5975773"/>
  <node id="7927032486" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244282" lon="139.5977364">
   <tag k="natural" v="tree"/>
  </node>
- <node id="7927032487" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240157" lon="139.5976754"/>
- <node id="7927032488" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240568" lon="139.5977438"/>
+ <node id="7927032487" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240333" lon="139.5976629"/>
+ <node id="7927032488" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240555" lon="139.5977423"/>
  <node id="7927032489" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240434" lon="139.5973678">
   <tag k="artwork_type" v="statue"/>
   <tag k="tourism" v="artwork"/>
@@ -849,7 +849,7 @@
   <tag k="man_made" v="water_well"/>
  </node>
  <node id="7927032498" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239977" lon="139.5977633"/>
- <node id="7927032499" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240603" lon="139.5977507"/>
+ <node id="7927032499" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240682" lon="139.5977248"/>
  <node id="7927032500" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241815" lon="139.5977224">
   <tag k="amenity" v="bench"/>
  </node>
@@ -858,12 +858,12 @@
   <tag k="tourism" v="artwork"/>
  </node>
  <node id="7927032502" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239747" lon="139.5978034"/>
- <node id="7927032503" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239927" lon="139.5976664"/>
+ <node id="7927032503" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240025" lon="139.5976654"/>
  <node id="7927032504" visible="true" version="2" changeset="91479529" timestamp="2020-09-25T04:46:04Z" user="Daiji Maps" uid="10880270" lat="35.4240291" lon="139.5974034">
   <tag k="historic" v="memorial"/>
   <tag k="name" v="橘家圓蔵之碑"/>
  </node>
- <node id="7927032505" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241053" lon="139.5977169"/>
+ <node id="7927032505" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241105" lon="139.5977169"/>
  <node id="7927032506" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240516" lon="139.5977686"/>
  <node id="7927032507" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241540" lon="139.5972365"/>
  <node id="7927032508" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243378" lon="139.5976686">
@@ -874,18 +874,18 @@
   <tag k="tourism" v="artwork"/>
  </node>
  <node id="7927032510" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239868" lon="139.5974368"/>
- <node id="7927032511" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240112" lon="139.5976230"/>
+ <node id="7927032511" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240197" lon="139.5976237"/>
  <node id="7927032512" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239796" lon="139.5978253"/>
- <node id="7927032513" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239982" lon="139.5976913">
+ <node id="7927032513" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240043" lon="139.5976928">
   <tag k="highway" v="street_lamp"/>
  </node>
  <node id="7927032514" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244124" lon="139.5977067"/>
  <node id="7927032515" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240091" lon="139.5975544"/>
- <node id="7927032516" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240223" lon="139.5976905"/>
+ <node id="7927032516" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240350" lon="139.5976786"/>
  <node id="7927032517" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240459" lon="139.5974560"/>
  <node id="7927032518" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244034" lon="139.5977192"/>
- <node id="7927032519" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240466" lon="139.5976753"/>
- <node id="7927032520" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240703" lon="139.5977741"/>
+ <node id="7927032519" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240536" lon="139.5976674"/>
+ <node id="7927032520" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240753" lon="139.5977742"/>
  <node id="7927032521" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239827" lon="139.5974013">
   <tag k="highway" v="street_lamp"/>
  </node>
@@ -895,8 +895,8 @@
   <tag k="highway" v="street_lamp"/>
  </node>
  <node id="7927032525" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244559" lon="139.5976232"/>
- <node id="7927032526" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239981" lon="139.5979521"/>
- <node id="7927032527" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241118" lon="139.5975738"/>
+ <node id="7927032526" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4239960" lon="139.5979554"/>
+ <node id="7927032527" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241085" lon="139.5975849"/>
  <node id="7927032528" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239820" lon="139.5978076"/>
  <node id="7927032529" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240898" lon="139.5975943"/>
  <node id="7927032530" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243658" lon="139.5976631"/>
@@ -927,7 +927,7 @@
  </node>
  <node id="7927032545" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4242724" lon="139.5977096"/>
  <node id="7927032546" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244405" lon="139.5977069"/>
- <node id="7927032547" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239987" lon="139.5976541">
+ <node id="7927032547" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240089" lon="139.5976475">
   <tag k="historic" v="monument"/>
  </node>
  <node id="7927032548" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239350" lon="139.5972478"/>
@@ -949,11 +949,11 @@
   <tag k="tourism" v="artwork"/>
  </node>
  <node id="7927032557" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243794" lon="139.5975895"/>
- <node id="7927032558" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240513" lon="139.5976724"/>
+ <node id="7927032558" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240569" lon="139.5976649"/>
  <node id="7927032559" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244302" lon="139.5976413"/>
- <node id="7927032560" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240605" lon="139.5977185"/>
- <node id="7927032561" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240502" lon="139.5977185"/>
- <node id="7927032562" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239938" lon="139.5976165"/>
+ <node id="7927032560" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240742" lon="139.5976996"/>
+ <node id="7927032561" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240634" lon="139.5977027"/>
+ <node id="7927032562" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240069" lon="139.5976270"/>
  <node id="7927032563" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240777" lon="139.5977761">
   <tag k="natural" v="tree"/>
  </node>
@@ -963,11 +963,11 @@
  <node id="7927032565" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239933" lon="139.5974298"/>
  <node id="7927032566" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243412" lon="139.5976465"/>
  <node id="7927032567" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4245063" lon="139.5974838"/>
- <node id="7927032568" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239908" lon="139.5976936"/>
+ <node id="7927032568" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4239975" lon="139.5976832"/>
  <node id="7927032569" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240220" lon="139.5977514">
   <tag k="natural" v="tree"/>
  </node>
- <node id="7927032570" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240163" lon="139.5976725"/>
+ <node id="7927032570" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240276" lon="139.5976555"/>
  <node id="7927032571" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244595" lon="139.5976414"/>
  <node id="7927032572" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239647" lon="139.5978870"/>
  <node id="7927032573" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240340" lon="139.5973572">
@@ -989,11 +989,11 @@
  <node id="7927032582" visible="true" version="3" changeset="166233561" timestamp="2025-05-14T04:10:31Z" user="Daiji Maps" uid="10880270" lat="35.4239859" lon="139.5976944"/>
  <node id="7927032583" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244469" lon="139.5976870"/>
  <node id="7927032584" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239597" lon="139.5978276"/>
- <node id="7927032585" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240095" lon="139.5976663">
+ <node id="7927032585" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240156" lon="139.5976603">
   <tag k="historic" v="memorial"/>
  </node>
  <node id="7927032586" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244069" lon="139.5977735"/>
- <node id="7927032587" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241330" lon="139.5976450"/>
+ <node id="7927032587" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241359" lon="139.5976461"/>
  <node id="7927032588" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240362" lon="139.5978139"/>
  <node id="7927032589" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240880" lon="139.5974388"/>
  <node id="7927032590" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4242048" lon="139.5975189"/>
@@ -1009,10 +1009,10 @@
  <node id="7927032597" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240969" lon="139.5975969"/>
  <node id="7927032598" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240637" lon="139.5974058"/>
  <node id="7927032599" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244341" lon="139.5977037"/>
- <node id="7927032600" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240991" lon="139.5977173">
+ <node id="7927032600" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241059" lon="139.5977174">
   <tag k="natural" v="tree"/>
  </node>
- <node id="7927032601" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240538" lon="139.5977600"/>
+ <node id="7927032601" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240546" lon="139.5977554"/>
  <node id="7927032602" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239836" lon="139.5973781"/>
  <node id="7927032603" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243867" lon="139.5977987"/>
  <node id="7927032604" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4242452" lon="139.5975278">
@@ -1029,7 +1029,7 @@
  <node id="7927032609" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240441" lon="139.5978200"/>
  <node id="7927032610" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240847" lon="139.5976557"/>
  <node id="7927032611" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243097" lon="139.5975784"/>
- <node id="7927032612" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239849" lon="139.5976532"/>
+ <node id="7927032612" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4239900" lon="139.5976443"/>
  <node id="7927032613" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240776" lon="139.5976377"/>
  <node id="7927032614" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244030" lon="139.5976527"/>
  <node id="7927032615" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239975" lon="139.5977512"/>
@@ -1038,7 +1038,7 @@
   <tag k="historic" v="wayside_shrine"/>
   <tag k="name" v="弘明寺稲荷"/>
  </node>
- <node id="7927032618" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240502" lon="139.5977364"/>
+ <node id="7927032618" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240624" lon="139.5977209"/>
  <node id="7927032619" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240193" lon="139.5973862">
   <tag k="historic" v="memorial"/>
   <tag k="name" v="島田貞吉之碑"/>
@@ -1068,19 +1068,19 @@
  <node id="7927032636" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239945" lon="139.5977325">
   <tag k="natural" v="tree"/>
  </node>
- <node id="7927032637" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239948" lon="139.5976596"/>
+ <node id="7927032637" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240068" lon="139.5976541"/>
  <node id="7927032638" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240980" lon="139.5976491"/>
- <node id="7927032639" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240613" lon="139.5977686"/>
+ <node id="7927032639" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240643" lon="139.5977694"/>
  <node id="7927032640" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240081" lon="139.5974568"/>
  <node id="7927032641" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4239838" lon="139.5979387"/>
- <node id="7927032642" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4241360" lon="139.5975843"/>
+ <node id="7927032642" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241315" lon="139.5975971"/>
  <node id="7927032643" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243327" lon="139.5975921"/>
  <node id="7927032644" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4243140" lon="139.5977150"/>
  <node id="7927032645" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244276" lon="139.5977484">
   <tag k="natural" v="stone"/>
  </node>
- <node id="7927032646" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240404" lon="139.5977536"/>
- <node id="7927032647" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240358" lon="139.5977394"/>
+ <node id="7927032646" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240497" lon="139.5977434"/>
+ <node id="7927032647" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240479" lon="139.5977271"/>
  <node id="7927032648" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4240618" lon="139.5974664"/>
  <node id="7927032649" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270" lat="35.4244475" lon="139.5976601"/>
  <node id="7927032650" visible="true" version="2" changeset="91349715" timestamp="2020-09-23T08:31:56Z" user="Daiji Maps" uid="10880270" lat="35.4240639" lon="139.5978666">
@@ -1111,8 +1111,8 @@
  <node id="7927776222" visible="true" version="1" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270" lat="35.4241084" lon="139.5976181"/>
  <node id="7927776223" visible="true" version="1" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270" lat="35.4241321" lon="139.5975486"/>
  <node id="7927776224" visible="true" version="1" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270" lat="35.4241529" lon="139.5975274"/>
- <node id="7927776225" visible="true" version="1" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270" lat="35.4241230" lon="139.5975786"/>
- <node id="7927776226" visible="true" version="1" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270" lat="35.4241227" lon="139.5976239"/>
+ <node id="7927776225" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241184" lon="139.5975891"/>
+ <node id="7927776226" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4241230" lon="139.5976236"/>
  <node id="7927776227" visible="true" version="1" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270" lat="35.4243667" lon="139.5975246"/>
  <node id="7927776228" visible="true" version="1" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270" lat="35.4243468" lon="139.5974254"/>
  <node id="7927776229" visible="true" version="1" changeset="91218470" timestamp="2020-09-21T09:47:39Z" user="Daiji Maps" uid="10880270" lat="35.4244406" lon="139.5973906"/>
@@ -1140,12 +1140,12 @@
  <node id="7927874006" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4240031" lon="139.5978373"/>
  <node id="7927874007" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4240194" lon="139.5978117"/>
  <node id="7927874008" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4240053" lon="139.5978227"/>
- <node id="7927874009" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4240649" lon="139.5977843"/>
+ <node id="7927874009" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240676" lon="139.5977854"/>
  <node id="7927874010" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4240530" lon="139.5978227"/>
- <node id="7927874011" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4240675" lon="139.5977773"/>
+ <node id="7927874011" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240697" lon="139.5977786"/>
  <node id="7927874012" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4240901" lon="139.5977970"/>
  <node id="7927874013" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4241001" lon="139.5977715"/>
- <node id="7927874014" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4240797" lon="139.5977585"/>
+ <node id="7927874014" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4240858" lon="139.5977626"/>
  <node id="7927874015" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4245408" lon="139.5976993"/>
  <node id="7927874016" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4245906" lon="139.5976679"/>
  <node id="7927874017" visible="true" version="1" changeset="91221527" timestamp="2020-09-21T10:28:27Z" user="Daiji Maps" uid="10880270" lat="35.4245825" lon="139.5976502"/>
@@ -1180,7 +1180,7 @@
  <node id="7940877120" visible="true" version="1" changeset="91479529" timestamp="2020-09-25T04:46:04Z" user="Daiji Maps" uid="10880270" lat="35.4244726" lon="139.5974966"/>
  <node id="7940877121" visible="true" version="1" changeset="91479529" timestamp="2020-09-25T04:46:04Z" user="Daiji Maps" uid="10880270" lat="35.4240357" lon="139.5974301"/>
  <node id="7940877122" visible="true" version="1" changeset="91479529" timestamp="2020-09-25T04:46:04Z" user="Daiji Maps" uid="10880270" lat="35.4240381" lon="139.5974148"/>
- <node id="7940877123" visible="true" version="1" changeset="91479529" timestamp="2020-09-25T04:46:04Z" user="Daiji Maps" uid="10880270" lat="35.4242504" lon="139.5977461">
+ <node id="7940877123" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4242488" lon="139.5977290">
   <tag k="natural" v="tree"/>
  </node>
  <node id="7940877124" visible="true" version="1" changeset="91479529" timestamp="2020-09-25T04:46:04Z" user="Daiji Maps" uid="10880270" lat="35.4244561" lon="139.5976968">
@@ -1211,6 +1211,7 @@
  <node id="12835653177" visible="true" version="1" changeset="166233471" timestamp="2025-05-14T04:05:55Z" user="Daiji Maps" uid="10880270" lat="35.4245513" lon="139.5977065"/>
  <node id="12835657521" visible="true" version="1" changeset="166233561" timestamp="2025-05-14T04:10:31Z" user="Daiji Maps" uid="10880270" lat="35.4239785" lon="139.5978045"/>
  <node id="12835657522" visible="true" version="1" changeset="166233561" timestamp="2025-05-14T04:10:31Z" user="Daiji Maps" uid="10880270" lat="35.4239658" lon="139.5978319"/>
+ <node id="12931904610" visible="true" version="1" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270" lat="35.4239884" lon="139.5979776"/>
  <way id="24302004" visible="true" version="12" changeset="97236977" timestamp="2021-01-10T06:30:10Z" user="fuk" uid="550066">
   <nd ref="263273957"/>
   <nd ref="263273966"/>
@@ -1353,8 +1354,9 @@
   <tag k="highway" v="steps"/>
   <tag k="width" v="2"/>
  </way>
- <way id="214720471" visible="true" version="4" changeset="167871654" timestamp="2025-06-20T13:42:52Z" user="Daiji Maps" uid="10880270">
+ <way id="214720471" visible="true" version="5" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270">
   <nd ref="2241995638"/>
+  <nd ref="12931904610"/>
   <nd ref="7927032526"/>
   <tag k="highway" v="footway"/>
   <tag k="width" v="2"/>
@@ -2295,13 +2297,13 @@
   <nd ref="3295940523"/>
   <tag k="highway" v="footway"/>
  </way>
- <way id="849655846" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
-  <nd ref="7927032638"/>
-  <nd ref="7927029677"/>
-  <nd ref="7927032558"/>
-  <nd ref="7927032519"/>
-  <nd ref="7927032562"/>
+ <way id="849655846" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032515"/>
+  <nd ref="7927032562"/>
+  <nd ref="7927032519"/>
+  <nd ref="7927032558"/>
+  <nd ref="7927029677"/>
+  <nd ref="7927032638"/>
   <tag k="barrier" v="retaining_wall"/>
   <tag k="height" v="5"/>
  </way>
@@ -2323,10 +2325,10 @@
   <nd ref="7927032545"/>
   <tag k="building" v="roof"/>
  </way>
- <way id="849655849" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
-  <nd ref="7927032570"/>
-  <nd ref="7927029605"/>
+ <way id="849655849" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032499"/>
+  <nd ref="7927029605"/>
+  <nd ref="7927032570"/>
   <tag k="barrier" v="retaining_wall"/>
   <tag k="height" v="2"/>
  </way>
@@ -2573,11 +2575,12 @@
   <nd ref="7927029668"/>
   <tag k="building" v="roof"/>
  </way>
- <way id="849655883" visible="true" version="1" changeset="91198734" timestamp="2020-09-21T04:58:18Z" user="Daiji Maps" uid="10880270">
+ <way id="849655883" visible="true" version="2" changeset="167873496" timestamp="2025-06-20T14:26:02Z" user="Daiji Maps" uid="10880270">
   <nd ref="7927032560"/>
   <nd ref="7927032618"/>
   <nd ref="7927032646"/>
   <nd ref="7927029637"/>
+  <nd ref="7927029675"/>
   <nd ref="7927032487"/>
   <nd ref="7927032560"/>
   <tag k="building" v="roof"/>
