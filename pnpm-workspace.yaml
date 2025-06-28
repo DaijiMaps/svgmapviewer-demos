@@ -21,9 +21,11 @@ packages:
   - packages/demos/KawasakiDaishi
   - packages/demos/Kenchoji
   - packages/demos/KiiFudokiNoOka
+  - packages/demos/KimiiDera
   - packages/demos/KodomoNoKuni
   - packages/demos/Kofukuji
   - packages/demos/KoishikawaBotanicalGarden
+  - packages/demos/KokawaDera
   - packages/demos/Kotokuin
   - packages/demos/KumamotoCastle
   - packages/demos/KyotoUniv
