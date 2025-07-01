@@ -3,7 +3,7 @@ import { SvgMapViewerConfigUser } from '@daijimaps/svgmapviewer'
 const userConfig: SvgMapViewerConfigUser = {
   title: 'Tokyo National Museum',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
-  zoomFactor: 5,
+  zoomFactor: 3,
 }
 
 document.title = `svgmapviewer @ ${window.location.host}`
