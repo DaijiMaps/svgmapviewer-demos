@@ -35,6 +35,7 @@ packages:
   - packages/demos/MeijiJingu
   - packages/demos/NagoyaCastle
   - packages/demos/NagoyaUniv
+  - packages/demos/NegoroDera
   - packages/demos/NogeyamaZoo
   - packages/demos/NonHoiPark
   - packages/demos/OmiwaJinja
