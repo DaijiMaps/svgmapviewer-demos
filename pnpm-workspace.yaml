@@ -1,5 +1,6 @@
 packages:
   - packages/demos/CentralPark
+  - packages/demos/CincinnatiZoo
   - packages/demos/Engakuji
   - packages/demos/EnoshimaJinja
   - packages/demos/Expo2025
@@ -12,6 +13,7 @@ packages:
   - packages/demos/HeijoKyuseki
   - packages/demos/Hieizan
   - packages/demos/Hieizan-Yokawa
+  - packages/demos/HimejiCastle
   - packages/demos/HokkaidoUniv
   - packages/demos/Horyuji
   - packages/demos/ImperialPalace
@@ -36,6 +38,7 @@ packages:
   - packages/demos/NogeyamaZoo
   - packages/demos/NonHoiPark
   - packages/demos/OmiwaJinja
+  - packages/demos/Onzanso
   - packages/demos/OsakaCastle
   - packages/demos/OsakaUniv
   - packages/demos/RoyalBotanicGardensMelbourne
@@ -61,6 +64,7 @@ packages:
   - packages/demos/Yakushiji
   - packages/demos/YamashitaPark
   - packages/demos/YokohamaMunicipalChildrensBotanicalGarden
+  - packages/demos/Yosuien
   - packages/demos/YoyogiPark
   - packages/demos/Yugyoji
   - packages/demos/Zoorasia
