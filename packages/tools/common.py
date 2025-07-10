@@ -358,6 +358,8 @@ def dumpGeoJSON(l: QgsVectorLayer, fn: str) -> tuple[QgsVectorFileWriter.WriterE
 
     opts = QgsVectorFileWriter.SaveVectorOptions()
     opts.driverName = "GeoJSON"
+    if not os.path.exists(ctx.srcdir):
+        os.makedirs(ctx.srcdir)
     return QgsVectorFileWriter.writeAsVectorFormatV3(l, fn, tx, opts)
 
 def dumpCSV(l: QgsVectorLayer, fn: str) -> tuple[QgsVectorFileWriter.WriterError, str, str, str]:
@@ -940,6 +942,9 @@ def makeExtent():
         internals_extent = getExtent(internals, 'memory:')
         res = dumpGeoJSON(internals_extent, ctx.internals_extentGJ)
         print(res)
+    else:
+        shutil.copy(ctx.areasGJ, ctx.internalsGJ)
+        shutil.copy(ctx.areas_extentGJ, ctx.internals_extentGJ)
 
 def makeOrigin():
     areas = openVector(ctx.areasGJ, "areas")
