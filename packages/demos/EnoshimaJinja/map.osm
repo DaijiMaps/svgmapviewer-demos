@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (2514290 spike-07.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
+<osm version="0.6" generator="openstreetmap-cgimap 2.0.1 (3864037 spike-08.openstreetmap.org)" copyright="OpenStreetMap and contributors" attribution="http://www.openstreetmap.org/copyright" license="http://opendatacommons.org/licenses/odbl/1-0/">
  <bounds minlat="35.2960000" minlon="139.4734000" maxlat="35.3036000" maxlon="139.4890000"/>
  <node id="191549529" visible="true" version="9" changeset="95322881" timestamp="2020-12-05T05:01:37Z" user="ffff23" uid="10888797" lat="35.2979805" lon="139.4850570"/>
  <node id="191549532" visible="true" version="5" changeset="29822766" timestamp="2015-03-29T10:42:18Z" user="U20" uid="1687166" lat="35.3048829" lon="139.4823922"/>
@@ -7362,9 +7362,10 @@
   <tag k="name" v="江の島モース臨海実験所跡推定地"/>
   <tag k="name:en" v="Enoshima Morse Marine Laboratory Site"/>
  </node>
- <node id="5966183225" visible="true" version="1" changeset="63305991" timestamp="2018-10-08T10:44:18Z" user="U20" uid="1687166" lat="35.3022094" lon="139.4813251">
+ <node id="5966183225" visible="true" version="2" changeset="168291387" timestamp="2025-06-30T05:14:38Z" user="かとしょー" uid="23051588" lat="35.3022094" lon="139.4813251">
   <tag k="amenity" v="restaurant"/>
   <tag k="level" v="1"/>
+  <tag k="name" v="貝作"/>
  </node>
  <node id="5966183226" visible="true" version="1" changeset="63305991" timestamp="2018-10-08T10:44:18Z" user="U20" uid="1687166" lat="35.3021939" lon="139.4813725">
   <tag k="level" v="0"/>
@@ -7536,9 +7537,10 @@
  <node id="6775717649" visible="true" version="4" changeset="91975303" timestamp="2020-10-05T09:50:28Z" user="Daiji Maps" uid="10880270" lat="35.3003827" lon="139.4797125"/>
  <node id="6775717650" visible="true" version="3" changeset="162313697" timestamp="2025-02-09T13:08:09Z" user="tartiflex" uid="507417" lat="35.3002926" lon="139.4798662"/>
  <node id="6775717651" visible="true" version="4" changeset="167721274" timestamp="2025-06-17T05:20:13Z" user="Daiji Maps" uid="10880270" lat="35.3005249" lon="139.4798872"/>
- <node id="6775804205" visible="true" version="2" changeset="91955216" timestamp="2020-10-05T04:38:38Z" user="Daiji Maps" uid="10880270" lat="35.3020880" lon="139.4810689">
+ <node id="6775804205" visible="true" version="3" changeset="168441944" timestamp="2025-07-03T12:20:40Z" user="Daiji Maps" uid="10880270" lat="35.3020880" lon="139.4810689">
   <tag k="height" v="5"/>
   <tag k="man_made" v="torii"/>
+  <tag k="name" v="青銅の鳥居"/>
  </node>
  <node id="6775816648" visible="true" version="3" changeset="167766631" timestamp="2025-06-18T06:39:00Z" user="Daiji Maps" uid="10880270" lat="35.3006008" lon="139.4802516"/>
  <node id="6775870726" visible="true" version="2" changeset="166498252" timestamp="2025-05-19T21:58:13Z" user="postown" uid="4480756" lat="35.3018721" lon="139.4817319"/>
@@ -7983,8 +7985,9 @@
   <tag k="entrance" v="yes"/>
  </node>
  <node id="7075765134" visible="true" version="3" changeset="167766631" timestamp="2025-06-18T06:39:00Z" user="Daiji Maps" uid="10880270" lat="35.3004804" lon="139.4801312"/>
- <node id="7075765135" visible="true" version="4" changeset="167766631" timestamp="2025-06-18T06:39:00Z" user="Daiji Maps" uid="10880270" lat="35.3006562" lon="139.4802953">
+ <node id="7075765135" visible="true" version="5" changeset="168441944" timestamp="2025-07-03T12:20:40Z" user="Daiji Maps" uid="10880270" lat="35.3006562" lon="139.4802953">
   <tag k="man_made" v="torii"/>
+  <tag k="name" v="朱の鳥居"/>
   <tag k="wikimedia_commons" v="Category:Red Torii (Enoshima Shrine)"/>
  </node>
  <node id="7075773651" visible="true" version="1" changeset="78719161" timestamp="2019-12-21T18:50:21Z" user="Geekly" uid="10278480" lat="35.3022900" lon="139.4808327"/>
@@ -8391,8 +8394,9 @@
   <tag k="highway" v="street_lamp"/>
  </node>
  <node id="7975496357" visible="true" version="1" changeset="91955216" timestamp="2020-10-05T04:38:38Z" user="Daiji Maps" uid="10880270" lat="35.3007176" lon="139.4802483"/>
- <node id="7975496358" visible="true" version="1" changeset="91955216" timestamp="2020-10-05T04:38:38Z" user="Daiji Maps" uid="10880270" lat="35.3006575" lon="139.4799504">
+ <node id="7975496358" visible="true" version="2" changeset="168441944" timestamp="2025-07-03T12:20:40Z" user="Daiji Maps" uid="10880270" lat="35.3006575" lon="139.4799504">
   <tag k="historic" v="memorial"/>
+  <tag k="name" v="永野泉山の句碑"/>
  </node>
  <node id="7975496359" visible="true" version="1" changeset="91955216" timestamp="2020-10-05T04:38:38Z" user="Daiji Maps" uid="10880270" lat="35.3003481" lon="139.4798382">
   <tag k="man_made" v="water_tap"/>
@@ -10139,6 +10143,30 @@
  <node id="12922824990" visible="true" version="1" changeset="167771031" timestamp="2025-06-18T08:43:07Z" user="Daiji Maps" uid="10880270" lat="35.2993719" lon="139.4808071"/>
  <node id="12922824991" visible="true" version="1" changeset="167771031" timestamp="2025-06-18T08:43:07Z" user="Daiji Maps" uid="10880270" lat="35.2994224" lon="139.4807703"/>
  <node id="12925037222" visible="true" version="1" changeset="167805403" timestamp="2025-06-19T02:49:06Z" user="Daiji Maps" uid="10880270" lat="35.2992466" lon="139.4747278"/>
+ <node id="12963779862" visible="true" version="1" changeset="168291387" timestamp="2025-06-30T05:14:38Z" user="かとしょー" uid="23051588" lat="35.3014383" lon="139.4796919">
+  <tag k="name" v="富士見浜"/>
+  <tag k="natural" v="beach"/>
+ </node>
+ <node id="12963779863" visible="true" version="1" changeset="168291387" timestamp="2025-06-30T05:14:38Z" user="かとしょー" uid="23051588" lat="35.3013114" lon="139.4802176">
+  <tag k="name" v="岩本楼本館"/>
+  <tag k="tourism" v="hotel"/>
+ </node>
+ <node id="12963779864" visible="true" version="1" changeset="168291387" timestamp="2025-06-30T05:14:38Z" user="かとしょー" uid="23051588" lat="35.3014797" lon="139.4804654">
+  <tag k="name" v="民宿ゑじま"/>
+  <tag k="tourism" v="guest_house"/>
+ </node>
+ <node id="12963779865" visible="true" version="1" changeset="168291387" timestamp="2025-06-30T05:14:38Z" user="かとしょー" uid="23051588" lat="35.3020463" lon="139.4816147">
+  <tag k="name" v="藤浪"/>
+  <tag k="shop" v="seafood"/>
+ </node>
+ <node id="12963779866" visible="true" version="1" changeset="168291387" timestamp="2025-06-30T05:14:38Z" user="かとしょー" uid="23051588" lat="35.3019839" lon="139.4816903">
+  <tag k="name" v="魚華 本店"/>
+  <tag k="shop" v="seafood"/>
+ </node>
+ <node id="12963779867" visible="true" version="1" changeset="168291387" timestamp="2025-06-30T05:14:38Z" user="かとしょー" uid="23051588" lat="35.3016196" lon="139.4820318">
+  <tag k="name" v="江の島ホテル"/>
+  <tag k="tourism" v="hotel"/>
+ </node>
  <way id="26359130" visible="true" version="20" changeset="166448824" timestamp="2025-05-18T20:57:52Z" user="postown" uid="4480756">
   <nd ref="288791315"/>
   <nd ref="301067517"/>
@@ -15179,7 +15207,7 @@
   <tag k="source" v="GSI/KIBAN 2500"/>
   <tag k="source_ref" v="http://wiki.osm.org/wiki/GSI_KIBAN"/>
  </way>
- <way id="191660035" visible="true" version="2" changeset="74153048" timestamp="2019-09-05T23:41:43Z" user="Carlos_N" uid="3242739">
+ <way id="191660035" visible="true" version="3" changeset="168291560" timestamp="2025-06-30T05:24:26Z" user="かとしょー" uid="23051588">
   <nd ref="2022455045"/>
   <nd ref="2022455043"/>
   <nd ref="2022455035"/>
@@ -15195,6 +15223,7 @@
   <nd ref="2022455045"/>
   <tag k="amenity" v="restaurant"/>
   <tag k="building" v="yes"/>
+  <tag k="name" v="ハワイアンカフェ Moke's Hawaii Enoshima"/>
   <tag k="name:es" v="Moke's Hawaii"/>
   <tag k="source" v="GSI/KIBAN 2500"/>
   <tag k="source_ref" v="http://wiki.osm.org/wiki/GSI_KIBAN"/>
@@ -16633,7 +16662,7 @@
   <tag k="source" v="GSI/KIBAN 2500"/>
   <tag k="source_ref" v="http://wiki.osm.org/wiki/GSI_KIBAN"/>
  </way>
- <way id="191660172" visible="true" version="2" changeset="74153048" timestamp="2019-09-05T23:41:43Z" user="Carlos_N" uid="3242739">
+ <way id="191660172" visible="true" version="3" changeset="168291560" timestamp="2025-06-30T05:24:26Z" user="かとしょー" uid="23051588">
   <nd ref="2022455093"/>
   <nd ref="2022455088"/>
   <nd ref="2022455099"/>
@@ -16643,6 +16672,7 @@
   <nd ref="2022455093"/>
   <tag k="amenity" v="cafe"/>
   <tag k="building" v="yes"/>
+  <tag k="name" v="カフェーマル"/>
   <tag k="name:es" v="Cafe Maru"/>
   <tag k="source" v="GSI/KIBAN 2500"/>
   <tag k="source_ref" v="http://wiki.osm.org/wiki/GSI_KIBAN"/>
@@ -16919,7 +16949,7 @@
   <tag k="source" v="GSI/KIBAN 2500"/>
   <tag k="source_ref" v="http://wiki.osm.org/wiki/GSI_KIBAN"/>
  </way>
- <way id="191660192" visible="true" version="2" changeset="74153048" timestamp="2019-09-05T23:41:43Z" user="Carlos_N" uid="3242739">
+ <way id="191660192" visible="true" version="3" changeset="168291560" timestamp="2025-06-30T05:24:26Z" user="かとしょー" uid="23051588">
   <nd ref="2022454975"/>
   <nd ref="2022455000"/>
   <nd ref="2022455002"/>
@@ -16931,6 +16961,7 @@
   <nd ref="2022454975"/>
   <tag k="amenity" v="restaurant"/>
   <tag k="building" v="yes"/>
+  <tag k="name" v="湘南海鮮 座々丸"/>
   <tag k="name:es" v="Zazamaru"/>
   <tag k="source" v="GSI/KIBAN 2500"/>
   <tag k="source_ref" v="http://wiki.osm.org/wiki/GSI_KIBAN"/>
