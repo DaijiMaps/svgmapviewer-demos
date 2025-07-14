@@ -5,6 +5,7 @@ packages:
   - packages/demos/EnoshimaJinja
   - packages/demos/Expo2025
   - packages/demos/FushimiInari
+  - packages/demos/ForbiddenCity
   - packages/demos/GhibliPark
   - packages/demos/GoldenGatePark
   - packages/demos/Gumyoji
@@ -29,6 +30,7 @@ packages:
   - packages/demos/KoishikawaBotanicalGarden
   - packages/demos/KokawaDera
   - packages/demos/Kotokuin
+  - packages/demos/KozuShima
   - packages/demos/KumamotoCastle
   - packages/demos/KyotoUniv
   - packages/demos/KyushuUniv
@@ -45,7 +47,9 @@ packages:
   - packages/demos/RoyalBotanicGardensMelbourne
   - packages/demos/Saidaiji
   - packages/demos/Sankeien
+  - packages/demos/Sarushima
   - packages/demos/Sensoji
+  - packages/demos/ShikineJima
   - packages/demos/ShinjukuGyoenNationalPark
   - packages/demos/ShowaKinenPark
   - packages/demos/TaimaDera

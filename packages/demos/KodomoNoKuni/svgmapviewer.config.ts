@@ -1,7 +1,7 @@
 import { SvgMapViewerConfigUser } from '@daijimaps/svgmapviewer'
 
 const userConfig: SvgMapViewerConfigUser = {
-  title: 'Kodomo-no-kuni',
+  title: 'Kodomo-no-Kuni',
   copyright: '@ Daiji Maps | map data @ OpenStreetMap contributers',
   zoomFactor: 3,
 }

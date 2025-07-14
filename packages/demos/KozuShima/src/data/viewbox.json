@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "viewbox",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "direction": null, "distance": null, "ellipsoidal_distance": null }, "geometry": { "type": "LineString", "coordinates": [ [ 139.15607, 34.213554 ], [ 139.119262, 34.243917 ] ] } },
+{ "type": "Feature", "properties": { "direction": null, "distance": null, "ellipsoidal_distance": null }, "geometry": { "type": "LineString", "coordinates": [ [ 139.119262, 34.243917 ], [ 139.176164, 34.184524 ] ] } }
+]
+}
