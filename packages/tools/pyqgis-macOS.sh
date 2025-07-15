@@ -1,7 +1,5 @@
 #!/usr/bin/env sh
 #
-# Usage: ./pyqgis.sh extractAreas.py Gumyoji 'name' '弘明寺'
-#
 
 QGIS_PREFIX_PATH="/Applications/QGIS-LTR.app/Contents/MacOS"
 
