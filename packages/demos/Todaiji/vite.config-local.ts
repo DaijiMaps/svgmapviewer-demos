@@ -41,6 +41,10 @@ export default defineConfig({
         __dirname,
         `${LIB}/geo/index.ts`
       ),
+      '@daijimaps/svgmapviewer/map': path.resolve(
+        __dirname,
+        `${LIB}/map/index.ts`
+      ),
       '@daijimaps/svgmapviewer/matrix': path.resolve(
         __dirname,
         `${LIB}/matrix/prefixed/index.ts`
@@ -57,7 +61,7 @@ export default defineConfig({
         __dirname,
         `${LIB}/vec/prefixed/index.ts`
       ),
-      '@daijimaps/svgmapviewer': path.resolve(__dirname, `${LIB}/index.ts`),
+      '@daijimaps/svgmapviewer': path.resolve(__dirname, `${LIB}/../index.ts`),
     },
   },
 })
