@@ -34,6 +34,7 @@ packages:
   - packages/demos/KumamotoCastle
   - packages/demos/KyotoUniv
   - packages/demos/KyushuUniv
+  - packages/demos/LaLaport-Yokohama
   - packages/demos/MeijiJingu
   - packages/demos/NagoyaCastle
   - packages/demos/NagoyaUniv
